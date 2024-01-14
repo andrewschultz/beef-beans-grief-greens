@@ -13,6 +13,9 @@ volume other stuff
 chapter Reeve Row
 
 sco-heave-ho is a truth state that varies.
+sco-leave-lo is a truth state that varies.
+
+sco-believe-below is a truth state that varies.
 
 chapter unsorted globals
 
