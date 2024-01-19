@@ -10,6 +10,8 @@ entry-in-series is 8.
 
 volume other stuff
 
+gender-variable is a number that varies. gender-variable is 0.
+
 chapter Reeve Row
 
 sco-heave-ho is a truth state that varies.
