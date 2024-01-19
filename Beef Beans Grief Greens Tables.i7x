@@ -10,7 +10,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "jade"	"jug"	--	--	false	true	true	false	reeve row	vc-jade-jug rule	vr-jade-jug rule	--	--
 "heave"	"ho"	--	--	false	true	true	false	reeve row	vc-heave-ho rule	vr-heave-ho rule	--	--
 "leave"	"lo"	--	--	false	true	true	false	reeve row	vc-leave-lo rule	vr-leave-lo rule	--	--
-"believe"	"below"	--	--	false	true	true	false	reeve row	vc-believe-below rule	vr-believe-below rule	--	--
+"believe"	"below"	--	--	false	true	true	false	reeve row	vc-believe-below rule	vr-believe-below rule	--	"You can [b]BELIEVE BELOW[r] [once-now of vc-believe-below rule] you see a possible way down from [here-in of reeve row]."
 
 chapter reeve row scoring
 
@@ -55,17 +55,16 @@ this is the vr-believe-below rule:
 
 a goodrhyme rule (this is the vc-leave-lo rule):
 	if player is not in reeve row, unavailable;
-	if sco-leave-lo is false:
-		vcp "You still need to do something!";
-		not-yet;
-	if sco-leave-lo is true:
-		vcal "You already did this!";
-		already-done;
 	ready;
 
 this is the vr-leave-lo rule:
+	if sco-leave-lo is false:
+		say "Sometimes you just need the right time to say a simple phrase to get you going. And you do, here.";
+		open-psg outside and wandering where;
+	else:
+		say "[i][bracket]You can just go [b]OUT[r][i] or [b]N/NORTH[r][i] for fewer keystrokes.[close bracket]";
 	now sco-leave-lo is true;
-	say "Well, that's that. You just up and leave.";
+	move player to Wandering Where;
 
 a goodrhyme rule (this is the vc-heave-ho rule):
 	if player is not in reeve row, unavailable;
