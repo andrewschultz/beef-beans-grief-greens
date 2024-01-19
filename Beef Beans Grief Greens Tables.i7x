@@ -11,6 +11,10 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "heave"	"ho"	--	--	false	true	true	false	reeve row	vc-heave-ho rule	vr-heave-ho rule	--	--
 "leave"	"lo"	--	--	false	true	true	false	reeve row	vc-leave-lo rule	vr-leave-lo rule	--	--
 "believe"	"below"	--	--	false	true	true	false	reeve row	vc-believe-below rule	vr-believe-below rule	--	"You can [b]BELIEVE BELOW[r] [once-now of vc-believe-below rule] you see a possible way down from [here-in of reeve row]."
+"pondering"	"pair"	--	--	false	true	true	false	wandering where	vc-pondering-pair rule	vr-pondering-pair rule	--	--
+"squandering"	"square"	--	--	false	true	true	false	wandering where	vc-squandering-square rule	vr-squandering-square rule	--	--
+"maundering"	"mare"	--	--	false	true	true	false	wandering where	vc-maundering-mare rule	vr-maundering-mare rule	--	--
+"laundering"	"lair"	--	--	false	true	true	false	wandering where	vc-laundering-lair rule	vr-laundering-lair rule	--	--
 
 chapter reeve row scoring
 
@@ -80,7 +84,41 @@ this is the vr-heave-ho rule:
 	now sco-heave-ho is true;
 	say "Hooray! You figured what to do! You get a point!";
 
-chapter general flips
+chapter wandering where scoring
+
+a goodrhyme rule (this is the vc-pondering-pair rule):
+	if player is not in wandering where, unavailable;
+	ready;
+
+this is the vr-pondering-pair rule:
+	now sco-pondering-pair is true;
+	wander ponpa;
+
+a goodrhyme rule (this is the vc-squandering-square rule):
+	if player is not in wandering where, unavailable;
+	ready;
+
+this is the vr-squandering-square rule:
+	now sco-squandering-square is true;
+	wander squandering square;
+
+a goodrhyme rule (this is the vc-maundering-mare rule):
+	if player is not in wandering where, unavailable;
+	ready;
+
+this is the vr-maundering-mare rule:
+	now sco-maundering-mare is true;
+	wander monma;
+
+a goodrhyme rule (this is the vc-laundering-lair rule):
+	if player is not in wandering where, unavailable;
+	ready;
+
+this is the vr-laundering-lair rule:
+	now sco-laundering-lair is true;
+	wander laundering lair;
+
+book general flip stubs
 
 to rug-check:
 	say "[line break]The rug ";

@@ -25,6 +25,11 @@ chapter unsorted globals
 sco-made-mug is a truth state that varies.
 sco-jade-jug is a truth state that varies.
 
+sco-pondering-pair is a truth state that varies.
+sco-squandering-square is a truth state that varies.
+sco-maundering-mare is a truth state that varies.
+sco-laundering-lair is a truth state that varies.
+
 Beef Beans Grief Greens Globals ends here.
 
 ---- DOCUMENTATION ----

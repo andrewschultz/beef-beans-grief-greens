@@ -52,6 +52,16 @@ to decide whether good-say-guess:
 
 to say optional-hint-think-item: say "";
 
+chapter wandering
+
+a wandroom is a kind of room. A wandroom has a direction called wanddir.
+
+to wander (rm - a room):
+	say "You [if rm is unvisited]think and reminisce, and yes, there is a way[else]You find your way back[end if] to [rm][if rm is unvisited], though maybe it's easier to type [wanddir of rm] in the future[end if].";
+	if rm is unvisited:
+		open-psg (wanddir of rm) and rm;
+	move player to rm;
+
 chapter conglomerations
 
 to decide which number is rug-score:

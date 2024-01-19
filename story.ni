@@ -42,7 +42,7 @@ volume rooms
 
 book reeve row
 
-Reeve Row is a room. "You remember buying this from the old owner, Steve Stowe. He knew you were the right person to continue living here. But it feels empty now."
+Reeve Row is a room. "You remember buying this from the old owner, Steve Stowe. He knew you were the right person to continue living here. But it feels empty now[if sco-leave-lo is true]. You feel you could go out again, if you wanted[end if]."
 
 check going north in Reeve Row: try going outside instead;
 
@@ -52,9 +52,15 @@ Yves Eve O is a person. description of Yves is "You are [if gender-variable is 0
 
 chapter rayed rug
 
-the rayed rug is a rhymable in Reeve Row. "A rayed rug covers part of the floor here."
+the rayed rug is a rhymable in Reeve Row. "A rayed rug covers part of the floor here.". description is "Rays of what you'd guess are sunlight stretch from the center."
 
 guess-table of rayed rug is the table of rayed rug guesses.
+
+volume "where" rooms
+
+after printing the locale description for a wandroom:
+	say "You can also go back [b][printed name of opposite of wanddir of location of player in upper case][r] to [where].";
+	continue the action;
 
 book wandering where
 
@@ -63,8 +69,36 @@ Wandering Where is a room. Printed name is "Wandering ... Where?". description i
 check going south in Wandering Where: try going inside instead;
 
 after looking in Wandering Where when Wandering Where is unvisited:
-	say "[i]From now on, you can go back south or inside to Reeve Row, or north or outside back here.[r]";
+	say "[i]From now on, you can go back inside to Reeve Row, or outside back here.[r]";
 	continue the action;
+
+book squandering square
+
+Squandering Square is a wandroom. wanddir of Squandering Square is east.
+
+book pondering pair
+
+ponpa is a privately-named wandroom. wanddir of ponpa is north. printed name is "Pondering Pair".
+
+The pondering pair are plural-named people in ponpa.
+
+section ponpa name - not for release
+
+understand "ponpa" as ponpa.
+
+book laundering lair
+
+Laundering Lair is a wandroom. wanddir of Laundering Lair is west.
+
+book maundering mare
+
+monma is a privately-named wandroom. wanddir of monma is south. printed name is "Maundering Mare"
+
+The maundering mare is a person in monma.
+
+section monma name - not for release
+
+understand "monma" as monma.
 
 volume weird verbs
 
