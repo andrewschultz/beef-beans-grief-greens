@@ -6,19 +6,46 @@ volume the main thing
 
 table of verb checks
 w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	idid	best-room	check-rule	run-rule	wfull (topic)	think-advice (text)
+"made"	"mug"	--	--	false	true	true	false	reeve row	vc-made-mug rule	vr-made-mug rule	--	--
+"jade"	"jug"	--	--	false	true	true	false	reeve row	vc-jade-jug rule	vr-jade-jug rule	--	--
 "heave"	"ho"	--	--	false	true	true	false	reeve row	vc-heave-ho rule	vr-heave-ho rule	--	--
 "leave"	"lo"	--	--	false	true	true	false	reeve row	vc-leave-lo rule	vr-leave-lo rule	--	--
 "believe"	"below"	--	--	false	true	true	false	reeve row	vc-believe-below rule	vr-believe-below rule	--	--
 
-section reeve row scoring
+chapter reeve row scoring
+
+section rayed rug flips
+
+a goodrhyme rule (this is the vc-made-mug rule):
+	if rayed rug is not touchable, unavailable;
+	if sco-made-mug is true:
+		vcal "You already have a made/maid mug for the meal.";
+		already-done;
+	ready;
+
+this is the vr-made-mug rule:
+	now sco-made-mug is true;
+	say "A made mug apppears. It will be useful for the meal.";
+	rug-check;
+
+a goodrhyme rule (this is the vc-jade-jug rule):
+	if rayed rug is not touchable, unavailable;
+	if sco-jade-jug is true:
+		vcal "You already have a jade jug for the meal.";
+		already-done;
+	ready;
+
+this is the vr-jade-jug rule:
+	now sco-jade-jug is true;
+	say "A jade jug appears. It will be useful for the meal.";
+	rug-check;
+
+section reeve row general flips
 
 a goodrhyme rule (this is the vc-believe-below rule):
 	if player is not in reeve row, unavailable;
-	if sco-believe-below is false:
-		vcp "You still need to do something!";
-		not-yet;
 	if sco-believe-below is true:
-		vcal "You already did this!";
+		vcal "You already believed in, and found, a passage down.";
 		already-done;
 	ready;
 
@@ -38,7 +65,7 @@ a goodrhyme rule (this is the vc-leave-lo rule):
 
 this is the vr-leave-lo rule:
 	now sco-leave-lo is true;
-	say "Hooray! You figured what to do! You get a point!";
+	say "Well, that's that. You just up and leave.";
 
 a goodrhyme rule (this is the vc-heave-ho rule):
 	if player is not in reeve row, unavailable;
@@ -53,6 +80,16 @@ a goodrhyme rule (this is the vc-heave-ho rule):
 this is the vr-heave-ho rule:
 	now sco-heave-ho is true;
 	say "Hooray! You figured what to do! You get a point!";
+
+chapter general flips
+
+to rug-check:
+	say "[line break]The rug ";
+	if rug-score is 2:
+		say "vanishes. You think you see an outline of ... well, something in the floor. No. You'd feel silly, having missed it all these years. Right? It might take something extra to find it!";
+		moot rayed rug;
+	else:
+		say "wobbles a bit. Perhaps it still hides something."
 
 volume can't go
 

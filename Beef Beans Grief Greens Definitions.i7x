@@ -52,6 +52,11 @@ to decide whether good-say-guess:
 
 to say optional-hint-think-item: say "";
 
+chapter conglomerations
+
+to decide which number is rug-score:
+	decide on (boolval of sco-made-mug + boolval of sco-jade-jug);
+
 volume big rule
 
 this is the verb-checker rule:

@@ -40,9 +40,28 @@ include Beef Beans Grief Greens Tests by Andrew Schultz.
 
 volume rooms
 
-Yves Eve O is a person. description of Yves is "You are [if gender-variable is 0]Yves (or Eve) O. Sorry, I forgot to ask. You can choose if you want, or you can leave it undefined[else if gender-variable is 1]Yves O[else]Eve O[end if]. You haven't worried much about appearances, recently.". the player is Yves Eve O.
+book reeve row
 
-Reeve Row is a room. the player is in Reeve Row. the player is neuter.
+Reeve Row is a room. "You remember buying this from the old owner, Steve Stowe. He knew you were the right person to continue living here. But it feels empty now."
+
+chapter you
+
+Yves Eve O is a person. description of Yves is "You are [if gender-variable is 0]Yves (or Eve) O. Sorry, I forgot to ask. You can choose if you want, or you can leave it undefined[else if gender-variable is 1]Yves O[else]Eve O[end if]. You haven't worried much about appearances, recently.". the player is Yves Eve O. the player is in Reeve Row. the player is neuter.
+
+chapter rayed rug
+
+the rayed rug is a rhymable in Reeve Row. "A rayed rug covers part of the floor here."
+
+guess-table of rayed rug is the table of rayed rug guesses.
+
+book wandering where
+
+Wandering Where is a room. Printed name is "Wandering ... Where?". description is "You haven't found anywhere to wander yet."
+
+volume weird verbs
+
+check taking:
+	if player does not have noun, say "You don't need to take anything in [this-game]." instead;
 
 volume name detection
 

@@ -7,6 +7,21 @@ volume main
 to current-table-note-x (tn - a table name):
 	current-table-note tn;
 
+book room tables
+
+book thing tables
+
+table of rayed rug guesses
+mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
+"bade"	"bug"	--	false	--	"You don't need to deal with insects AND grief."
+"charade"	"shrug"	--	false	--	"<CLEVER REJECT TEXT>"
+"fade"	"fug"	--	false	--	"Alas, the fog in your brain remains."
+"glade"	"glug"	--	false	--	"You have better things to do than get drunk and pass out in bushes."
+"heyd"	"hug"	--	false	--	"<CLEVER REJECT TEXT>"
+"paid"	"pug"	--	false	--	"<CLEVER REJECT TEXT>"
+"slayed"	"slug"	--	false	--	"<CLEVER REJECT TEXT>"
+"theyd"	"thug"	--	false	--	"<CLEVER REJECT TEXT>"
+
 volume auxiliary general
 
 table of general good guesses
