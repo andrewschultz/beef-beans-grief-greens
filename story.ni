@@ -102,6 +102,14 @@ understand "monma" as monma.
 
 volume endgame
 
+book Trappy Trawl
+
+Trappy Trawl is a room in Home Haw. "You're not sure which way to go here. You could go back up, but it seems pointless."
+
+chapter Scrappy Scrawl
+
+the scrappy scrawl is scenery. "Bust through a common roadblock with an irregular description."
+
 book Happy Hall
 
 Happy Hall is a room in Gnome Gnaw.

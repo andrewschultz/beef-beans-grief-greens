@@ -15,6 +15,8 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "squandering"	"square"	--	--	false	true	true	false	wandering where	vc-squandering-square rule	vr-squandering-square rule	--	--
 "maundering"	"mare"	--	--	false	true	true	false	wandering where	vc-maundering-mare rule	vr-maundering-mare rule	--	--
 "laundering"	"lair"	--	--	false	true	true	false	wandering where	vc-laundering-lair rule	vr-laundering-lair rule	--	--
+"scrappy"	"scrawl"	--	--	false	true	true	false	trappy trawl	vc-scrappy-scrawl rule	vr-scrappy-scrawl rule	--	--
+"whappy"	"wall"	--	--	false	true	true	false	trappy trawl	vc-whappy-wall rule	vr-whappy-wall rule	--	--
 "wheat"	"well"	--	--	false	true	true	false	compete compel	vc-wheat-well rule	vr-wheat-well rule	--	--
 "sheet"	"shell"	--	--	false	true	true	false	compete compel	vc-sheet-shell rule	vr-sheet-shell rule	--	--
 "feet"	"fell"	--	--	false	true	true	false	compete compel	vc-feet-fell rule	vr-feet-fell rule	--	--
@@ -227,6 +229,31 @@ this is the vr-repeat-repel rule:
 	now sco-repeat-repel is true;
 	say "Leet Lel wasn't so bad.";
 
+chapter trappy trawl scoring
+
+a goodrhyme rule (this is the vc-scrappy-scrawl rule):
+	abide by the trawl-not-hall rule;
+	if sco-scrappy-scrawl is true:
+		vcal "You already found the scrappy scrawl!";
+		already-done;
+	ready;
+
+this is the vr-scrappy-scrawl rule:
+	now sco-scrappy-scrawl is true;
+	say "Hooray! You figured what to do! You get a point!";
+
+a goodrhyme rule (this is the vc-whappy-wall rule):
+	abide by the trawl-not-hall rule;
+	if sco-scrappy-scrawl is false:
+		vcal "But you have no indication where a wall might sound whappy. Well, not yet.";
+		not-yet;
+	ready;
+
+this is the vr-whappy-wall rule:
+	now sco-whappy-wall is true;
+	say "Whunk. Whunk. The wall makes the same noise, until ... WHAP! There it is! You tap at it a bit, and a passage opens up to ...";
+	move player to Happy Hall;
+
 book general flip stubs
 
 chapter Reeve Row
@@ -238,6 +265,14 @@ to rug-check:
 		moot rayed rug;
 	else:
 		say "wobbles a bit. Perhaps it still hides something."
+
+chapter Trappy Trawl
+
+this is the trawl-not-hall rule:
+	if player is in happy hall:
+		vcal "You already navigated the trappy trawl.";
+		already-done;
+	if player is not in trappy trawl, unavailable;
 
 chapter Compete Compel
 

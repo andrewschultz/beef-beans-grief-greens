@@ -51,6 +51,9 @@ sco-sweet-swell is a truth state that varies.
 sco-heat-hell is a truth state that varies.
 sco-repeat-repel is a truth state that varies.
 
+sco-scrappy-scrawl is a truth state that varies.
+sco-whappy-wall is a truth state that varies.
+
 Beef Beans Grief Greens Globals ends here.
 
 ---- DOCUMENTATION ----
