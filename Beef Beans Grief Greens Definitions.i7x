@@ -65,7 +65,10 @@ to wander (rm - a room):
 chapter conglomerations
 
 to decide which number is rug-score:
-	decide on (boolval of sco-made-mug + boolval of sco-jade-jug);
+	decide on (boolval of sco-made-mug) + (boolval of sco-jade-jug);
+
+to decide which number is well-score:
+	decide on (boolval of sco-feet-fell) + (boolval of sco-wheat-well) + (boolval of sco-sheet-shell) + (boolval of sco-beat-bell) + (boolval of sco-meet-mel);
 
 volume big rule
 

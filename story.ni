@@ -108,7 +108,7 @@ Happy Hall is a room in Gnome Gnaw.
 
 book Wheat Well
 
-Compete Compel is a room in Gnome Gnaw.
+Compete Compel is a room in Gnome Gnaw. printed name is "[if sco-feet-fell is false]Compete! Compel![else]Wheat Well[end if]"
 
 chapter Sheet Shell
 
