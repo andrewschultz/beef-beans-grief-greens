@@ -100,6 +100,20 @@ section monma name - not for release
 
 understand "monma" as monma.
 
+volume endgame
+
+book Happy Hall
+
+Happy Hall is a room in Gnome Gnaw.
+
+book Wheat Well
+
+Compete Compel is a room in Gnome Gnaw.
+
+chapter Sheet Shell
+
+Sheet Shell is a thing.
+
 volume weird verbs
 
 check taking:

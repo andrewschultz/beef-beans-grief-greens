@@ -8,27 +8,48 @@ core-max is 1.
 
 entry-in-series is 8.
 
-volume other stuff
+gender-variable is a number that varies. gender-variable is 0. [ 1 = Yves, 2 = Eve ]
 
-gender-variable is a number that varies. gender-variable is 0.
+chapter regions
 
-chapter Reeve Row
+Home Haw is a region.
+
+Roam Raw is a region.
+
+Gnome Gnaw is a region.
+
+volume general globals
+
+chapter Reeve Row globals
 
 sco-heave-ho is a truth state that varies.
 sco-leave-lo is a truth state that varies.
 
 sco-believe-below is a truth state that varies.
 
-chapter unsorted globals
-
+section rug-specific globals
 
 sco-made-mug is a truth state that varies.
 sco-jade-jug is a truth state that varies.
+
+chapter Wandering Where globals
 
 sco-pondering-pair is a truth state that varies.
 sco-squandering-square is a truth state that varies.
 sco-maundering-mare is a truth state that varies.
 sco-laundering-lair is a truth state that varies.
+
+chapter unsorted globals
+
+
+sco-wheat-well is a truth state that varies.
+sco-sheet-shell is a truth state that varies.
+sco-feet-fell is a truth state that varies.
+sco-beat-bell is a truth state that varies.
+sco-meet-mel is a truth state that varies.
+sco-sweet-swell is a truth state that varies.
+sco-heat-hell is a truth state that varies.
+sco-repeat-repel is a truth state that varies.
 
 Beef Beans Grief Greens Globals ends here.
 
