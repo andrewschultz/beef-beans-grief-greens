@@ -11,6 +11,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "heave"	"ho"	--	--	false	true	true	false	reeve row	vc-heave-ho rule	vr-heave-ho rule	--	--
 "leave"	"lo"	--	--	false	true	true	false	reeve row	vc-leave-lo rule	vr-leave-lo rule	--	--
 "believe"	"below"	--	--	false	true	true	false	reeve row	vc-believe-below rule	vr-believe-below rule	--	"You can [b]BELIEVE BELOW[r] [once-now of vc-believe-below rule] you see a possible way down from [here-in of reeve row]."
+"grieve"	"grow"	--	--	false	true	true	false	reeve row	vc-grieve-grow rule	vr-grieve-grow rule	--	--
 "pondering"	"pair"	--	--	false	true	true	false	wandering where	vc-pondering-pair rule	vr-pondering-pair rule	--	--
 "squandering"	"square"	--	--	false	true	true	false	wandering where	vc-squandering-square rule	vr-squandering-square rule	--	--
 "maundering"	"mare"	--	--	false	true	true	false	wandering where	vc-maundering-mare rule	vr-maundering-mare rule	--	--
@@ -91,17 +92,31 @@ this is the vr-leave-lo rule:
 
 a goodrhyme rule (this is the vc-heave-ho rule):
 	if player is not in reeve row, unavailable;
-	if sco-heave-ho is false:
-		vcp "You still need to do something!";
+	if rayed rug is in reeve row:
+		vcp "You try to pull the rayed rug, but it feels glued down.";
+		not-yet;
+	if sco-believe-below is false:
+		vcp "Oh, sure, it'd be nice if something was under the faint outline, but you have no faith there is.";
 		not-yet;
 	if sco-heave-ho is true:
-		vcal "You already did this!";
+		vcal "You already pulled open the outline under the rug!";
 		already-done;
 	ready;
 
 this is the vr-heave-ho rule:
 	now sco-heave-ho is true;
-	say "Hooray! You figured what to do! You get a point!";
+	say "Ah! Like so! You resolve yourself to pulling open the floor, figuring how it works, to see what's below. And you do.";
+
+a goodrhyme rule (this is the vc-grieve-grow rule):
+	if player is not in reeve row, unavailable;
+	if sco-grieve-grow is true:
+		vcal "Too much grief will undo the growing you did.";
+		already-done;
+	ready;
+
+this is the vr-grieve-grow rule:
+	now sco-grieve-grow is true;
+	say "You reflect on things. You recognize too much of this is bad. All the same, it puts you in a mindset to do what you must do.";
 
 chapter wandering where scoring
 

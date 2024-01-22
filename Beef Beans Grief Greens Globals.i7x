@@ -75,6 +75,8 @@ sco-carrot-cake is a truth state that varies.
 
 sco-zap-zoo is a truth state that varies.
 
+sco-grieve-grow is a truth state that varies.
+
 Beef Beans Grief Greens Globals ends here.
 
 ---- DOCUMENTATION ----

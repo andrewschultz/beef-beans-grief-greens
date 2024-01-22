@@ -46,6 +46,11 @@ Reeve Row is a room. "You remember buying this from the old owner, Steve Stowe. 
 
 check going north in Reeve Row: try going outside instead;
 
+check going down in Reeve Row:
+	if rayed rug is in Reeve Row, say "It's possible something is under the rug, but ... well, you'd have to be prepared, for a special occasion." instead;
+	if sco-heave-ho is false, say "There's an outline leading down, but you can't figure the way to remove it." instead;
+	if sco-grieve-grow is false, say "You're not emotionally ready, yet. Yet. How can you steel yourself, so you know it's worth it?" instead;
+
 chapter you
 
 Yves Eve O is a person. description of Yves is "You are [if gender-variable is 0]Yves (or Eve) O. Sorry, I forgot to ask. You can choose if you want, or you can leave it undefined[else if gender-variable is 1]Yves O[else]Eve O[end if]. You haven't worried much about appearances, recently.". the player is Yves Eve O. the player is in Reeve Row. the player is neuter.
