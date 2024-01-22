@@ -6,6 +6,7 @@ volume the main thing
 
 table of verb checks
 w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	idid	best-room	check-rule	run-rule	wfull (topic)	think-advice (text)
+"sassed"	"ceased"	--	--	false	true	false	false	--	vc-sassed-ceased rule	vr-sassed-ceased rule	--	--
 "made"	"mug"	--	--	false	true	true	false	reeve row	vc-made-mug rule	vr-made-mug rule	--	--
 "jade"	"jug"	--	--	false	true	true	false	reeve row	vc-jade-jug rule	vr-jade-jug rule	--	--
 "heave"	"ho"	--	--	false	true	true	false	reeve row	vc-heave-ho rule	vr-heave-ho rule	--	--
@@ -35,6 +36,20 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "repeat"	"repel"	--	--	false	true	true	false	compete compel	vc-repeat-repel rule	vr-repeat-repel rule	--	--
 "zap"	"zoo"	--	--	false	true	true	false	Gap Goo	vc-zap-zoo rule	vr-zap-zoo rule	--	--
 "carrot"	"cake"	--	--	false	true	true	false	Gap Goo	vc-carrot-cake rule	vr-carrot-cake rule	--	--
+
+chapter all the time
+
+a goodrhyme rule (this is the vc-sassed-ceased rule):
+	if player does not have fast feast, unavailable;
+	if sco-sassed-ceased is true:
+		vcal "You already felt relief things settled down!";
+		already-done;
+	ready;
+
+this is the vr-sassed-ceased rule:
+	now sco-sassed-ceased is true;
+	say "Yes, you're glad you were given this responsibility, and people snickered about how flaky you were.";
+
 
 chapter reeve row scoring
 

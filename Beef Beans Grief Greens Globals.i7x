@@ -4,7 +4,9 @@ Version 1/240113 of Beef Beans Grief Greens Globals by Andrew Schultz begins her
 
 volume variables
 
-core-max is 1.
+core-max is 29.
+
+max-bonus is 1.
 
 entry-in-series is 8.
 
@@ -76,6 +78,8 @@ sco-carrot-cake is a truth state that varies.
 sco-zap-zoo is a truth state that varies.
 
 sco-grieve-grow is a truth state that varies.
+
+sco-sassed-ceased is a truth state that varies.
 
 Beef Beans Grief Greens Globals ends here.
 
