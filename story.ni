@@ -114,6 +114,14 @@ book Happy Hall
 
 Happy Hall is a room in Gnome Gnaw.
 
+chapter Pappy Paul
+
+Pappy Paul is a rhymable.
+
+chapter Sappy Saul
+
+Sappy Saul is a rhymable.
+
 book Wheat Well
 
 Compete Compel is a room in Gnome Gnaw. printed name is "[if sco-feet-fell is false]Compete! Compel![else]Wheat Well[end if]"

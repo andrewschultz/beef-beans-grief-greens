@@ -54,6 +54,12 @@ sco-repeat-repel is a truth state that varies.
 sco-scrappy-scrawl is a truth state that varies.
 sco-whappy-wall is a truth state that varies.
 
+sco-pappy-paul is a truth state that varies.
+sco-sappy-saul is a truth state that varies.
+sco-cappy-caul is a truth state that varies.
+sco-yappy-yall is a truth state that varies.
+sco-bappy-ball is a truth state that varies.
+
 Beef Beans Grief Greens Globals ends here.
 
 ---- DOCUMENTATION ----

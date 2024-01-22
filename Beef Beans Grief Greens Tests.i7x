@@ -4,6 +4,8 @@ Version 1/240113 of Beef Beans Grief Greens Tests by Andrew Schultz begins here.
 
 volume test chunks
 
+test thru with "test trtr/test hh/test final".
+
 test trtr with "scrappy scrawl/whappy wall".
 
 test hh with "pappy paul/sappy saul//cappy caul/yappy yall/bappy ball".

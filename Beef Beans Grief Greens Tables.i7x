@@ -17,6 +17,11 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "laundering"	"lair"	--	--	false	true	true	false	wandering where	vc-laundering-lair rule	vr-laundering-lair rule	--	--
 "scrappy"	"scrawl"	--	--	false	true	true	false	trappy trawl	vc-scrappy-scrawl rule	vr-scrappy-scrawl rule	--	--
 "whappy"	"wall"	--	--	false	true	true	false	trappy trawl	vc-whappy-wall rule	vr-whappy-wall rule	--	--
+"pappy"	"paul"	--	--	false	true	true	false	happy hall	vc-pappy-paul rule	vr-pappy-paul rule	--	--
+"sappy"	"saul"	--	--	false	true	true	false	happy hall	vc-sappy-saul rule	vr-sappy-saul rule	--	--
+"cappy"	"caul"	--	--	false	true	true	false	happy hall	vc-cappy-caul rule	vr-cappy-caul rule	--	--
+"yappy"	"yall"	--	--	false	true	true	false	happy hall	vc-yappy-yall rule	vr-yappy-yall rule	--	--
+"bappy"	"ball"	--	--	false	true	true	false	happy hall	vc-bappy-ball rule	vr-bappy-ball rule	--	--
 "wheat"	"well"	--	--	false	true	true	false	compete compel	vc-wheat-well rule	vr-wheat-well rule	--	--
 "sheet"	"shell"	--	--	false	true	true	false	compete compel	vc-sheet-shell rule	vr-sheet-shell rule	--	--
 "feet"	"fell"	--	--	false	true	true	false	compete compel	vc-feet-fell rule	vr-feet-fell rule	--	--
@@ -128,6 +133,94 @@ this is the vr-laundering-lair rule:
 	now sco-laundering-lair is true;
 	wander laundering lair;
 
+chapter trappy trawl scoring
+
+a goodrhyme rule (this is the vc-scrappy-scrawl rule):
+	abide by the trawl-not-hall rule;
+	if sco-scrappy-scrawl is true:
+		vcal "You already found the scrappy scrawl!";
+		already-done;
+	ready;
+
+this is the vr-scrappy-scrawl rule:
+	now sco-scrappy-scrawl is true;
+	say "Hooray! You figured what to do! You get a point!";
+
+a goodrhyme rule (this is the vc-whappy-wall rule):
+	abide by the trawl-not-hall rule;
+	if sco-scrappy-scrawl is false:
+		vcal "But you have no indication where a wall might sound whappy. Well, not yet.";
+		not-yet;
+	ready;
+
+this is the vr-whappy-wall rule:
+	now sco-whappy-wall is true;
+	say "Whunk. Whunk. The wall makes the same noise, until ... WHAP! There it is! You tap at it a bit, and a passage opens up to ...";
+	move player to Happy Hall;
+
+chapter happy hall scoring
+
+a goodrhyme rule (this is the vc-pappy-paul rule):
+	if player is not in happy hall, unavailable;
+	if sco-pappy-paul is true:
+		vcal "You already summoned Pappy Paul!";
+		already-done;
+	ready;
+
+this is the vr-pappy-paul rule:
+	now sco-pappy-paul is true;
+	say "Pappy Paul appears when summoned.";
+	move Pappy Paul to Happy Hall;
+
+a goodrhyme rule (this is the vc-sappy-saul rule):
+	if player is not in happy hall, unavailable;
+	if sco-sappy-saul is true:
+		vcal "You already summoned Sappy Saul!";
+		already-done;
+	ready;
+
+this is the vr-sappy-saul rule:
+	now sco-sappy-saul is true;
+	say "Sappy Saul appears when summoned.";
+	move Sappy Saul to Happy Hall;
+
+a goodrhyme rule (this is the vc-cappy-caul rule):
+	if player is not in happy hall, unavailable;
+	if sco-cappy-caul is true:
+		vcal "You already retrieved your ceremonial garb!";
+		already-done;
+	ready;
+
+this is the vr-cappy-caul rule:
+	now sco-cappy-caul is true;
+	say "You retrieved your ceremonial garb. Now is the time to stimulate discussion.";
+
+a goodrhyme rule (this is the vc-yappy-yall rule):
+	if player is not in happy hall, unavailable;
+	if sco-cappy-caul is false:
+		vcp "You need to retrieve your ceremonial garb!";
+		not-yet;
+	if sco-yappy-yall is true:
+		vcal "You already held a discussion. Now it is time for games.";
+		already-done;
+	ready;
+
+this is the vr-yappy-yall rule:
+	now sco-yappy-yall is true;
+	say "Everyone has a say about the deceased.!";
+
+a goodrhyme rule (this is the vc-bappy-ball rule):
+	if player is not in happy hall, unavailable;
+	if sco-yappy-yall is false:
+		vcp "First, discussion.";
+		not-yet;
+	ready;
+
+this is the vr-bappy-ball rule:
+	now sco-bappy-ball is true;
+	say "A long game of bappy-ball is played. Everyone is exhausted and hungry afterwards. They eat everything that is put in front of them. You doze off, and you are given a vision... one where you are forced to be more, or less, popular than your associate. Yes, 'associate' is the right word.";
+	move player to Compete Compel
+
 chapter Compete Compel scoring
 
 a goodrhyme rule (this is the vc-wheat-well rule):
@@ -228,31 +321,6 @@ a goodrhyme rule (this is the vc-repeat-repel rule):
 this is the vr-repeat-repel rule:
 	now sco-repeat-repel is true;
 	say "Leet Lel wasn't so bad.";
-
-chapter trappy trawl scoring
-
-a goodrhyme rule (this is the vc-scrappy-scrawl rule):
-	abide by the trawl-not-hall rule;
-	if sco-scrappy-scrawl is true:
-		vcal "You already found the scrappy scrawl!";
-		already-done;
-	ready;
-
-this is the vr-scrappy-scrawl rule:
-	now sco-scrappy-scrawl is true;
-	say "Hooray! You figured what to do! You get a point!";
-
-a goodrhyme rule (this is the vc-whappy-wall rule):
-	abide by the trawl-not-hall rule;
-	if sco-scrappy-scrawl is false:
-		vcal "But you have no indication where a wall might sound whappy. Well, not yet.";
-		not-yet;
-	ready;
-
-this is the vr-whappy-wall rule:
-	now sco-whappy-wall is true;
-	say "Whunk. Whunk. The wall makes the same noise, until ... WHAP! There it is! You tap at it a bit, and a passage opens up to ...";
-	move player to Happy Hall;
 
 book general flip stubs
 
