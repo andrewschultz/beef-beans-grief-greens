@@ -17,6 +17,8 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "laundering"	"lair"	--	--	false	true	true	false	wandering where	vc-laundering-lair rule	vr-laundering-lair rule	--	--
 "scrappy"	"scrawl"	--	--	false	true	true	false	trappy trawl	vc-scrappy-scrawl rule	vr-scrappy-scrawl rule	--	--
 "whappy"	"wall"	--	--	false	true	true	false	trappy trawl	vc-whappy-wall rule	vr-whappy-wall rule	--	--
+"lone"	"laura"	--	--	false	true	true	false	happy hall	vc-lone-laura rule	vr-lone-laura rule	--	--
+"known"	"nora"	--	--	false	true	true	false	happy hall	vc-known-nora rule	vr-known-nora rule	--	--
 "pappy"	"paul"	--	--	false	true	true	false	happy hall	vc-pappy-paul rule	vr-pappy-paul rule	--	--
 "sappy"	"saul"	--	--	false	true	true	false	happy hall	vc-sappy-saul rule	vr-sappy-saul rule	--	--
 "cappy"	"caul"	--	--	false	true	true	false	happy hall	vc-cappy-caul rule	vr-cappy-caul rule	--	--
@@ -160,6 +162,8 @@ this is the vr-whappy-wall rule:
 
 chapter happy hall scoring
 
+section room proper
+
 a goodrhyme rule (this is the vc-pappy-paul rule):
 	if player is not in happy hall, unavailable;
 	if sco-pappy-paul is true:
@@ -220,6 +224,30 @@ this is the vr-bappy-ball rule:
 	now sco-bappy-ball is true;
 	say "A long game of bappy-ball is played. Everyone is exhausted and hungry afterwards. They eat everything that is put in front of them. You doze off, and you are given a vision... one where you are forced to be more, or less, popular than your associate. Yes, 'associate' is the right word.";
 	move player to Compete Compel
+
+section own aura
+
+a goodrhyme rule (this is the vc-lone-laura rule):
+	if player is not in happy hall, unavailable;
+	if sco-lone-laura is true:
+		vcal "You already summoned Lone Laura!";
+		already-done;
+	ready;
+
+this is the vr-lone-laura rule:
+	now sco-lone-laura is true;
+	say "Lone Laura appears!";
+
+a goodrhyme rule (this is the vc-known-nora rule):
+	if player is not in happy hall, unavailable;
+	if sco-known-nora is true:
+		vcal "You already summoned Known Nora!";
+		already-done;
+	ready;
+
+this is the vr-known-nora rule:
+	now sco-known-nora is true;
+	say "Known Nora appears!";
 
 chapter Compete Compel scoring
 

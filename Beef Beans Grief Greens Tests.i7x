@@ -8,7 +8,7 @@ test thru with "test trtr/test hh/test final".
 
 test trtr with "scrappy scrawl/whappy wall".
 
-test hh with "pappy paul/sappy saul//cappy caul/yappy yall/bappy ball".
+test hh with "pappy paul/sappy saul/known nora/lone laura/cappy caul/yappy yall/bappy ball".
 
 test final with "wheat well/feet fell/sheet shell/beat bell/meet mel/repeat repel".
 

@@ -112,7 +112,7 @@ the scrappy scrawl is scenery. "Bust through a common roadblock with an irregula
 
 book Happy Hall
 
-Happy Hall is a room in Gnome Gnaw.
+Happy Hall is a room in Gnome Gnaw. "The happy hall really does have its own aura."
 
 chapter Pappy Paul
 
@@ -121,6 +121,14 @@ Pappy Paul is a rhymable.
 chapter Sappy Saul
 
 Sappy Saul is a rhymable.
+
+chapter Known Nora
+
+Known Nora is a rhymable.
+
+chapter Lone Laura
+
+Lone Laura is a rhymable.
 
 book Wheat Well
 

@@ -39,8 +39,25 @@ sco-squandering-square is a truth state that varies.
 sco-maundering-mare is a truth state that varies.
 sco-laundering-lair is a truth state that varies.
 
-chapter unsorted globals
+chapter Trappy Trawl globals
 
+sco-scrappy-scrawl is a truth state that varies.
+sco-whappy-wall is a truth state that varies.
+
+chapter Happy Hall globals
+
+sco-pappy-paul is a truth state that varies.
+sco-sappy-saul is a truth state that varies.
+sco-cappy-caul is a truth state that varies.
+sco-yappy-yall is a truth state that varies.
+sco-bappy-ball is a truth state that varies.
+
+section aura-specific globals
+
+sco-lone-laura is a truth state that varies.
+sco-known-nora is a truth state that varies.
+
+chapter Compete Compel globals
 
 sco-wheat-well is a truth state that varies.
 sco-sheet-shell is a truth state that varies.
@@ -51,14 +68,7 @@ sco-sweet-swell is a truth state that varies.
 sco-heat-hell is a truth state that varies.
 sco-repeat-repel is a truth state that varies.
 
-sco-scrappy-scrawl is a truth state that varies.
-sco-whappy-wall is a truth state that varies.
-
-sco-pappy-paul is a truth state that varies.
-sco-sappy-saul is a truth state that varies.
-sco-cappy-caul is a truth state that varies.
-sco-yappy-yall is a truth state that varies.
-sco-bappy-ball is a truth state that varies.
+chapter unsorted globals
 
 Beef Beans Grief Greens Globals ends here.
 

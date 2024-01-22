@@ -68,7 +68,7 @@ to decide which number is rug-score:
 	decide on (boolval of sco-made-mug) + (boolval of sco-jade-jug);
 
 to decide which number is hall-pal-score:
-	decide on (boolval of sco-pappy-paul) + (boolval of sco-sappy-saul);
+	decide on (boolval of sco-pappy-paul) + (boolval of sco-sappy-saul) + (boolval of sco-lone-laura) + (boolval of sco-known-nora);
 
 to decide which number is well-score:
 	decide on (boolval of sco-feet-fell) + (boolval of sco-wheat-well) + (boolval of sco-sheet-shell) + (boolval of sco-beat-bell) + (boolval of sco-meet-mel);
