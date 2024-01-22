@@ -46,7 +46,13 @@ the jade jug is an auxiliary feastitem. fdesc of jade jug is "large drink holder
 
 the carrot cake is a feastitem. fdesc of carrot cake is "cake, of course". description is "It looks delicious."
 
-the knives are a silverware feastitem. fdesc of knives is "Just a bunch of knives."
+the soup is a feastitem. fdesc of soup is "an appetizer, sort of". description is "It looks delicious."
+
+chapter silverware
+
+the plates are a silverware feastitem. description is "Just a bunch of plates."
+
+the knives are a silverware feastitem. description is "Just a bunch of knives."
 
 volume rooms
 
@@ -123,6 +129,10 @@ Gap Goo is a wandroom. wanddir of Gap Goo is south. printed name is "Gap, Goo". 
 chapter lotus life
 
 the lotus life is scenery. "The lotus blossoms look wonderful. [if sco-notice-knife is false]Maybe they hide something.[else]They even netted you some knives![end if]"
+
+chapter tree troop
+
+the tree troop is a plural-named rhymable. "They sit around, waiting for you to ask for just the right thing. But you get the sense you could even gesture somehow."
 
 chapter Ferret Fake
 
