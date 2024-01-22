@@ -32,6 +32,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "sweet"	"swell"	--	--	false	true	true	false	compete compel	vc-sweet-swell rule	vr-sweet-swell rule	--	--
 "heat"	"hell"	--	--	false	true	true	false	compete compel	vc-heat-hell rule	vr-heat-hell rule	--	--
 "repeat"	"repel"	--	--	false	true	true	false	compete compel	vc-repeat-repel rule	vr-repeat-repel rule	--	--
+"zap"	"zoo"	--	--	false	true	true	false	Gap Goo	vc-zap-zoo rule	vr-zap-zoo rule	--	--
 "carrot"	"cake"	--	--	false	true	true	false	Gap Goo	vc-carrot-cake rule	vr-carrot-cake rule	--	--
 
 chapter reeve row scoring
@@ -136,7 +137,22 @@ this is the vr-laundering-lair rule:
 	now sco-laundering-lair is true;
 	wander laundering lair;
 
-chapter Maundering Mare scoring
+chapter Gap Goo scoring
+
+a goodrhyme rule (this is the vc-zap-zoo rule):
+	if player is not in gap goo, unavailable;
+	if sco-zap-zoo is true:
+		vcal "But you already converted the goo to a zoo!";
+		already-done;
+	ready;
+
+this is the vr-zap-zoo rule:
+	now sco-zap-zoo is true;
+	say "Yes, yes. Much better now. The terrain changes!";
+	move ferret fake to gap goo;
+
+
+section items in MM
 
 a goodrhyme rule (this is the vc-carrot-cake rule):
 	if ferret fake is not touchable, unavailable;

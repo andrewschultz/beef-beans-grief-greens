@@ -96,7 +96,7 @@ Gap Goo is a wandroom. wanddir of Gap Goo is south. printed name is "Gap, Goo".
 
 chapter Ferret Fake
 
-the ferret fake is a thing in Gap Goo. printed name is "ferret, fake".
+the ferret fake is a thing. printed name is "ferret, fake".
 
 section carrot cake
 
