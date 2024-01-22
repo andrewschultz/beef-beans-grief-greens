@@ -176,6 +176,12 @@ chapter Sheet Shell
 
 Sheet Shell is a thing.
 
+volume Dome D'Aww
+
+Stuck State is a room in Dome D'Aww. "Oh man! You're stuck here and don't know what to do! What sort of action can you take?"
+
+guess-table of stuck state is the table of stuck state guesses.
+
 volume unsorted
 
 volume standard vebs

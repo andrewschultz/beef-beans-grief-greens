@@ -17,6 +17,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "squandering"	"square"	--	--	false	true	true	false	wandering where	vc-squandering-square rule	vr-squandering-square rule	--	--
 "maundering"	"mare"	--	--	false	true	true	false	wandering where	vc-maundering-mare rule	vr-maundering-mare rule	--	--
 "laundering"	"lair"	--	--	false	true	true	false	wandering where	vc-laundering-lair rule	vr-laundering-lair rule	--	--
+"pluck"	"plate"	--	--	false	true	true	false	stuck state	vc-pluck-plate rule	vr-pluck-plate rule	--	--
 "scrappy"	"scrawl"	--	--	false	true	true	false	trappy trawl	vc-scrappy-scrawl rule	vr-scrappy-scrawl rule	--	--
 "whappy"	"wall"	--	--	false	true	true	false	trappy trawl	vc-whappy-wall rule	vr-whappy-wall rule	--	--
 "lone"	"laura"	--	--	false	true	true	false	happy hall	vc-lone-laura rule	vr-lone-laura rule	--	--
@@ -218,6 +219,18 @@ this is the vr-carrot-cake rule:
 	now sco-carrot-cake is true;
 	say "Splat! The Ferret, Fake runs off to reveal an untouched carrot cake!";
 	now player has carrot cake;
+
+chapter stuck state scoring
+
+a goodrhyme rule (this is the vc-pluck-plate rule):
+	if player is not in stuck state, unavailable;
+	ready;
+
+this is the vr-pluck-plate rule:
+	now sco-pluck-plate is true;
+	say "You find one plate, and it helps you out of your slump, and you find a bunch! You walk out of the fog to ...";
+	now player has plates;
+	move player to wandering where, without printing a room description;
 
 chapter Trappy Trawl scoring
 

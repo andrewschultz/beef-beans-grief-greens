@@ -9,6 +9,20 @@ to current-table-note-x (tn - a table name):
 
 book room tables
 
+table of stuck state guesses
+mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
+"buck"	"bait"	--	false	--	"<CLEVER REJECT TEXT>"
+"duck"	"date"	--	false	--	"<CLEVER REJECT TEXT>"
+"fuck"	"fate"	--	false	--	"<CLEVER REJECT TEXT>"
+"huck"	"hate"	--	false	--	"<CLEVER REJECT TEXT>"
+"luck"	"late"	--	false	--	"<CLEVER REJECT TEXT>"
+"puck"	"pate"	--	false	--	"<CLEVER REJECT TEXT>"
+"ruck"	"rate"	--	false	--	"<CLEVER REJECT TEXT>"
+"struck"	"straight"	--	false	--	"<CLEVER REJECT TEXT>"
+"suck"	"sate"	--	false	--	"<CLEVER REJECT TEXT>"
+"uck"	"ate"	--	false	--	"<CLEVER REJECT TEXT>"
+"yuck"	"yate"	--	false	--	"<CLEVER REJECT TEXT>"
+
 book thing tables
 
 table of rayed rug guesses
