@@ -38,6 +38,14 @@ include Beef Beans Grief Greens Tables by Andrew Schultz.
 
 include Beef Beans Grief Greens Tests by Andrew Schultz.
 
+volume feast items
+
+the made mug is a feastitem. fdesc of made mug is "small drinking container(s)".
+
+the jade jug is a feastitem. fdesc of jade jug is "large drink holder".
+
+the carrot cake is a feastitem. fdesc of carrot cake is "cake, of course". description is "It looks delicious."
+
 volume rooms
 
 book reeve row
@@ -50,10 +58,21 @@ check going down in Reeve Row:
 	if rayed rug is in Reeve Row, say "It's possible something is under the rug, but ... well, you'd have to be prepared, for a special occasion." instead;
 	if sco-heave-ho is false, say "There's an outline leading down, but you can't figure the way to remove it." instead;
 	if sco-grieve-grow is false, say "You're not emotionally ready, yet. Yet. How can you steel yourself, so you know it's worth it?" instead;
+	if number of not carried feastitems > 0, say "You look at [feast]. You don't have everything, yet." instead;
 
 chapter you
 
 Yves Eve O is a person. description of Yves is "You are [if gender-variable is 0]Yves (or Eve) O. Sorry, I forgot to ask. You can choose if you want, or you can leave it undefined[else if gender-variable is 1]Yves O[else]Eve O[end if]. You haven't worried much about appearances, recently.". the player is Yves Eve O. the player is in Reeve Row. the player is neuter.
+
+section Last Least Fast Feast
+
+Last Least Fast Feast is a rhymable. the player carries Last Least Fast Feast. description of Last Least Fast Feast is "It's a vague description of the stuff you need for the end-of-year memorial feast."
+
+guess-table of fast feast is the table of fast feast guesses.
+
+report examining Last Least Fast Feast:
+	repeat with F running through feastitems:
+		say "[fixed letter spacing]([if player has F]X[else] [end if]) [fdesc of F][variable letter spacing][line break]";
 
 chapter rayed rug
 
@@ -102,10 +121,6 @@ Gap Goo is a wandroom. wanddir of Gap Goo is south. printed name is "Gap, Goo".
 chapter Ferret Fake
 
 the ferret fake is a thing. printed name is "ferret, fake".
-
-section carrot cake
-
-the carrot cake is a feastitem. description is "It looks delicious."
 
 volume endgame
 

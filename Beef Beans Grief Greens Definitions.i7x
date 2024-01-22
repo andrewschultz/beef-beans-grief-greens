@@ -54,7 +54,7 @@ to say optional-hint-think-item: say "";
 
 chapter types
 
-a feastitem is a kind of thing.
+a feastitem is a kind of thing. a feastitem has text called fdesc.
 
 chapter wandering
 

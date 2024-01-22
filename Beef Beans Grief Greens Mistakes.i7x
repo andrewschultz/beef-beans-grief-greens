@@ -22,6 +22,10 @@ mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 "slayed"	"slug"	--	false	--	"<CLEVER REJECT TEXT>"
 "theyd"	"thug"	--	false	--	"<CLEVER REJECT TEXT>"
 
+table of fast feast guesses
+mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
+"past"	"pieced"	--	false	--	"The past will be pieced at the feast."
+
 volume auxiliary general
 
 table of general good guesses
