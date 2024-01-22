@@ -35,6 +35,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "heat"	"hell"	--	--	false	true	true	false	compete compel	vc-heat-hell rule	vr-heat-hell rule	--	--
 "repeat"	"repel"	--	--	false	true	true	false	compete compel	vc-repeat-repel rule	vr-repeat-repel rule	--	--
 "zap"	"zoo"	--	--	false	true	true	false	Gap Goo	vc-zap-zoo rule	vr-zap-zoo rule	--	--
+"notice"	"knife"	--	--	false	true	true	false	Gap Goo	vc-notice-knife rule	vr-notice-knife rule	--	--
 "carrot"	"cake"	--	--	false	true	true	false	Gap Goo	vc-carrot-cake rule	vr-carrot-cake rule	--	--
 
 chapter all the time
@@ -92,7 +93,6 @@ a goodrhyme rule (this is the vc-believe-below rule):
 
 this is the vr-believe-below rule:
 	now sco-believe-below is true;
-	say "Hooray! You figured what to do! You get a point!";
 
 a goodrhyme rule (this is the vc-leave-lo rule):
 	if player is not in reeve row, unavailable;
@@ -183,6 +183,19 @@ this is the vr-zap-zoo rule:
 	say "Yes, yes. Much better now. The terrain changes!";
 	move ferret fake to gap goo;
 
+section lotus life scoring
+
+a goodrhyme rule (this is the vc-notice-knife rule):
+	if lotus life is not touchable, unavailable;
+	if sco-notice-knife is true:
+		vcal "You already noticed the knife! There is nothing more.";
+		already-done;
+	ready;
+
+this is the vr-notice-knife rule:
+	now sco-notice-knife is true;
+	say "Ah! Yes! The lotus life almost took over parts of the zoo. You had to look for the knife, but it is there. And once you do, you notice a whole bunch of knives. Wow, when this zoo blossoms, it blossoms.";
+	now player has knives;
 
 section items in MM
 

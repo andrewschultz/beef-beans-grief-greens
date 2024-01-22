@@ -88,6 +88,8 @@ sco-repeat-repel is a truth state that varies.
 
 chapter unsorted globals
 
+sco-notice-knife is a truth state that varies.
+
 Beef Beans Grief Greens Globals ends here.
 
 ---- DOCUMENTATION ----

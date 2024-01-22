@@ -40,11 +40,13 @@ include Beef Beans Grief Greens Tests by Andrew Schultz.
 
 volume feast items
 
-the made mug is a feastitem. fdesc of made mug is "small drinking container(s)".
+the made mug is an auxiliary feastitem. fdesc of made mug is "small drinking container(s)".
 
-the jade jug is a feastitem. fdesc of jade jug is "large drink holder".
+the jade jug is an auxiliary feastitem. fdesc of jade jug is "large drink holder".
 
 the carrot cake is a feastitem. fdesc of carrot cake is "cake, of course". description is "It looks delicious."
+
+the knives are a silverware feastitem. fdesc of knives is "Just a bunch of knives."
 
 volume rooms
 
@@ -116,7 +118,11 @@ Laundering Lair is a wandroom. wanddir of Laundering Lair is west.
 
 book Gap Goo
 
-Gap Goo is a wandroom. wanddir of Gap Goo is south. printed name is "Gap, Goo".
+Gap Goo is a wandroom. wanddir of Gap Goo is south. printed name is "Gap, Goo". "[if sco-zap-zoo is false]Ugh, not very lively here.[else]The zoo is now bursting with lotus life![end if]"
+
+chapter lotus life
+
+the lotus life is scenery. "The lotus blossoms look wonderful. [if sco-notice-knife is false]Maybe they hide something.[else]They even netted you some knives![end if]"
 
 chapter Ferret Fake
 

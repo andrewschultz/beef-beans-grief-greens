@@ -54,7 +54,7 @@ to say optional-hint-think-item: say "";
 
 chapter types
 
-a feastitem is a kind of thing. a feastitem has text called fdesc.
+a feastitem is a kind of thing. a feastitem has text called fdesc. a feastitem can be toeat, auxiliary or silverware. a feastitem is usually silverware.
 
 chapter wandering
 
