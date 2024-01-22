@@ -70,6 +70,9 @@ sco-repeat-repel is a truth state that varies.
 
 chapter unsorted globals
 
+sco-tferret-fake is a truth state that varies.
+sco-carrot-cake is a truth state that varies.
+
 Beef Beans Grief Greens Globals ends here.
 
 ---- DOCUMENTATION ----

@@ -52,6 +52,10 @@ to decide whether good-say-guess:
 
 to say optional-hint-think-item: say "";
 
+chapter types
+
+a feastitem is a kind of thing.
+
 chapter wandering
 
 a wandroom is a kind of room. A wandroom has a direction called wanddir.
@@ -67,7 +71,7 @@ chapter conglomerations
 to decide which number is rug-score:
 	decide on (boolval of sco-made-mug) + (boolval of sco-jade-jug);
 
-to decide which number is hall-pal-score:
+to decide which number is hall-guest-score:
 	decide on (boolval of sco-pappy-paul) + (boolval of sco-sappy-saul) + (boolval of sco-lone-laura) + (boolval of sco-known-nora);
 
 to decide which number is well-score:

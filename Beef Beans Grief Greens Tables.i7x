@@ -32,6 +32,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "sweet"	"swell"	--	--	false	true	true	false	compete compel	vc-sweet-swell rule	vr-sweet-swell rule	--	--
 "heat"	"hell"	--	--	false	true	true	false	compete compel	vc-heat-hell rule	vr-heat-hell rule	--	--
 "repeat"	"repel"	--	--	false	true	true	false	compete compel	vc-repeat-repel rule	vr-repeat-repel rule	--	--
+"carrot"	"cake"	--	--	false	true	true	false	Gap Goo	vc-carrot-cake rule	vr-carrot-cake rule	--	--
 
 chapter reeve row scoring
 
@@ -125,7 +126,7 @@ a goodrhyme rule (this is the vc-maundering-mare rule):
 
 this is the vr-maundering-mare rule:
 	now sco-maundering-mare is true;
-	wander monma;
+	wander Gap Goo;
 
 a goodrhyme rule (this is the vc-laundering-lair rule):
 	if player is not in wandering where, unavailable;
@@ -135,7 +136,18 @@ this is the vr-laundering-lair rule:
 	now sco-laundering-lair is true;
 	wander laundering lair;
 
-chapter trappy trawl scoring
+chapter Maundering Mare scoring
+
+a goodrhyme rule (this is the vc-carrot-cake rule):
+	if ferret fake is not touchable, unavailable;
+	ready;
+
+this is the vr-carrot-cake rule:
+	now sco-carrot-cake is true;
+	say "Splat! The Ferret, Fake runs off to reveal an untouched carrot cake!";
+	now player has carrot cake;
+
+chapter Trappy Trawl scoring
 
 a goodrhyme rule (this is the vc-scrappy-scrawl rule):
 	abide by the trawl-not-hall rule;
@@ -193,6 +205,9 @@ a goodrhyme rule (this is the vc-cappy-caul rule):
 	if sco-cappy-caul is true:
 		vcal "You already retrieved your ceremonial garb!";
 		already-done;
+	if hall-guest-score < 4:
+		say "You can't wear the ceremonial gear until everyone's here!";
+		not-yet;
 	ready;
 
 this is the vr-cappy-caul rule:

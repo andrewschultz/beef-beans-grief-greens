@@ -90,15 +90,17 @@ book laundering lair
 
 Laundering Lair is a wandroom. wanddir of Laundering Lair is west.
 
-book maundering mare
+book Gap Goo
 
-monma is a privately-named wandroom. wanddir of monma is south. printed name is "Maundering Mare"
+Gap Goo is a wandroom. wanddir of Gap Goo is south. printed name is "Gap, Goo".
 
-The maundering mare is a person in monma.
+chapter Ferret Fake
 
-section monma name - not for release
+the ferret fake is a thing in Gap Goo. printed name is "ferret, fake".
 
-understand "monma" as monma.
+section carrot cake
+
+the carrot cake is a feastitem. description is "It looks delicious."
 
 volume endgame
 
@@ -137,6 +139,8 @@ Compete Compel is a room in Gnome Gnaw. printed name is "[if sco-feet-fell is fa
 chapter Sheet Shell
 
 Sheet Shell is a thing.
+
+volume unsorted
 
 volume weird verbs
 
