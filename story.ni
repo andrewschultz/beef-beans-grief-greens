@@ -162,7 +162,16 @@ Sheet Shell is a thing.
 
 volume unsorted
 
-volume weird verbs
+volume standard vebs
+
+book taking inventory
+
+check taking inventory:
+	if player has fast feast and inventory-warn-yet is false:
+		say "NOTE: X on its own may be more useful for the items you have, since it views the list you need for [this-game].";
+		now inventory-warn-yet is true;
+
+book taking
 
 check taking:
 	if player does not have noun, say "You don't need to take anything in [this-game]." instead;

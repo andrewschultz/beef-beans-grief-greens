@@ -65,6 +65,7 @@ a goodrhyme rule (this is the vc-made-mug rule):
 this is the vr-made-mug rule:
 	now sco-made-mug is true;
 	say "A made mug apppears. It will be useful for the meal.";
+	now player has made mug;
 	rug-check;
 
 a goodrhyme rule (this is the vc-jade-jug rule):
@@ -77,6 +78,7 @@ a goodrhyme rule (this is the vc-jade-jug rule):
 this is the vr-jade-jug rule:
 	now sco-jade-jug is true;
 	say "A jade jug appears. It will be useful for the meal.";
+	now player has jade jug;
 	rug-check;
 
 section reeve row general flips
@@ -258,7 +260,9 @@ a goodrhyme rule (this is the vc-cappy-caul rule):
 
 this is the vr-cappy-caul rule:
 	now sco-cappy-caul is true;
-	say "You retrieved your ceremonial garb. Now is the time to stimulate discussion.";
+	say "You retrieved your ceremonial garb. For the first rite, you sacrifice [feast]. There are other copies of it.[paragraph break]Now is the time to stimulate discussion.";
+	moot fast feast;
+	if sco-sassed-ceased is false, max-down;
 
 a goodrhyme rule (this is the vc-yappy-yall rule):
 	if player is not in happy hall, unavailable;

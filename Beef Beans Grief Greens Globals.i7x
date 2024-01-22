@@ -22,12 +22,22 @@ Gnome Gnaw is a region.
 
 volume general globals
 
+chapter game states
+
+inventory-warn-yet is a truth state that varies.
+
+chapter all around
+
+sco-sassed-ceased is a truth state that varies.
+
 chapter Reeve Row globals
 
 sco-heave-ho is a truth state that varies.
 sco-leave-lo is a truth state that varies.
 
 sco-believe-below is a truth state that varies.
+
+sco-grieve-grow is a truth state that varies.
 
 section rug-specific globals
 
@@ -40,6 +50,12 @@ sco-pondering-pair is a truth state that varies.
 sco-squandering-square is a truth state that varies.
 sco-maundering-mare is a truth state that varies.
 sco-laundering-lair is a truth state that varies.
+
+chapter Gap Goo globals
+
+sco-zap-zoo is a truth state that varies.
+
+sco-carrot-cake is a truth state that varies.
 
 chapter Trappy Trawl globals
 
@@ -71,15 +87,6 @@ sco-heat-hell is a truth state that varies.
 sco-repeat-repel is a truth state that varies.
 
 chapter unsorted globals
-
-sco-tferret-fake is a truth state that varies.
-sco-carrot-cake is a truth state that varies.
-
-sco-zap-zoo is a truth state that varies.
-
-sco-grieve-grow is a truth state that varies.
-
-sco-sassed-ceased is a truth state that varies.
 
 Beef Beans Grief Greens Globals ends here.
 
