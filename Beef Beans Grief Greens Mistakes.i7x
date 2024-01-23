@@ -9,6 +9,16 @@ to current-table-note-x (tn - a table name):
 
 book room tables
 
+table of reeve row guesses
+mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
+"eve"	"oh"	--	false	--	"<CLEVER REJECT TEXT>"
+"peeve"	"po|poe"	--	false	--	"<CLEVER REJECT TEXT>"
+"retrieve"	"retro"	--	false	--	"<CLEVER REJECT TEXT>"
+"reprieve"	"repro"	--	false	--	"<CLEVER REJECT TEXT>"
+"sleeve"	"slow"	--	false	--	"<CLEVER REJECT TEXT>"
+"weave"	"woe"	--	false	--	"<CLEVER REJECT TEXT>"
+"yeve"	"yo"	--	false	--	"<CLEVER REJECT TEXT>"
+
 table of stuck state guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 "buck"	"bait"	--	false	--	"<CLEVER REJECT TEXT>"

@@ -60,6 +60,8 @@ book reeve row
 
 Reeve Row is a room. "You remember buying this from the old owner, Steve Stowe. He knew you were the right person to continue living here. But it feels empty now[if sco-leave-lo is true]. You feel you could go out again, if you wanted[end if]."
 
+guess-table of Reeve Row is table of Reeve Row guesses.
+
 check going north in Reeve Row: try going outside instead;
 
 check going down in Reeve Row:
