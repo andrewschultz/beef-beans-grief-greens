@@ -291,12 +291,12 @@ a goodrhyme rule (this is the vc-scrappy-scrawl rule):
 
 this is the vr-scrappy-scrawl rule:
 	now sco-scrappy-scrawl is true;
-	say "Hooray! You figured what to do! You get a point!";
+	say "Ah! You had confidence you could find scrappy scrawl, and you do. The instructions seem to make sense. You need to look to break open a passage where there is none, yet. An unexpectedly hollow place. But how?";
 
 a goodrhyme rule (this is the vc-whappy-wall rule):
 	abide by the trawl-not-hall rule;
 	if sco-scrappy-scrawl is false:
-		vcal "But you have no indication where a wall might sound whappy. Well, not yet.";
+		vcp "But you have no indication where a wall might sound whappy. Well, not yet.";
 		not-yet;
 	ready;
 
@@ -339,7 +339,7 @@ a goodrhyme rule (this is the vc-cappy-caul rule):
 		vcal "You already retrieved your ceremonial garb!";
 		already-done;
 	if hall-guest-score < 4:
-		say "You can't wear the ceremonial gear until everyone's here!";
+		vcp "You can't wear the ceremonial gear until everyone's here!";
 		not-yet;
 	ready;
 
@@ -451,7 +451,7 @@ a goodrhyme rule (this is the vc-beat-bell rule):
 
 this is the vr-beat-bell rule:
 	now sco-beat-bell is true;
-	say "Hooray! You figured what to do! You get a point!";
+	say "Aaand ... pursuant to the rules of dream logic, you just make it! But now you have no clue what your mail carrier's name is!";
 
 a goodrhyme rule (this is the vc-meet-mel rule):
 	if player is not in compete compel, unavailable;
