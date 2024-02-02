@@ -17,6 +17,9 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "squandering"	"square"	--	--	false	true	true	false	wandering where	vc-squandering-square rule	vr-squandering-square rule	--	--
 "maundering"	"mare"	--	--	false	true	true	false	wandering where	vc-maundering-mare rule	vr-maundering-mare rule	--	--
 "laundering"	"lair"	--	--	false	true	true	false	wandering where	vc-laundering-lair rule	vr-laundering-lair rule	--	--
+"lovin"	"lout"	--	--	false	true	true	false	dove n doubt	vc-lovin-lout rule	vr-lovin-lout rule	--	--
+"shovin"	"shout"	--	--	false	true	true	false	dove n doubt	vc-shovin-shout rule	vr-shovin-shout rule	--	--
+"oven"	"out"	--	--	false	true	true	false	dove n doubt	vc-oven-out rule	vr-oven-out rule	--	--
 "pluck"	"plate"	--	--	false	true	true	false	stuck state	vc-pluck-plate rule	vr-pluck-plate rule	--	--
 "scrappy"	"scrawl"	--	--	false	true	true	false	trappy trawl	vc-scrappy-scrawl rule	vr-scrappy-scrawl rule	--	--
 "whappy"	"wall"	--	--	false	true	true	false	trappy trawl	vc-whappy-wall rule	vr-whappy-wall rule	--	--
@@ -169,7 +172,52 @@ a goodrhyme rule (this is the vc-laundering-lair rule):
 
 this is the vr-laundering-lair rule:
 	now sco-laundering-lair is true;
-	wander laundering lair;
+	wander Dove N Doubt;
+
+chapter Dove N Doubt scoring
+
+a goodrhyme rule (this is the vc-lovin-lout rule):
+	if player is not in dove n doubt, unavailable;
+	if sco-lovin-lout is true:
+		vcal "The lovin['] lout already appeared to help you!";
+		already-done;
+	ready;
+
+this is the vr-lovin-lout rule:
+	now sco-lovin-lout is true;
+	say "A lovin['] lout strolls sheepishly into view, not sure to explain whether they've been terribly loyal, or they didn't mean to do the stuff the bad people suggested they do, or else. You assure them that's over now, and you want someone who can help a bit. For what, you're not sure yet.";
+	move lovin lout to Dove N Doubt;
+
+a goodrhyme rule (this is the vc-shovin-shout rule):
+	if player is not in dove n doubt, unavailable;
+	if sco-lovin-lout is false:
+		vcp "A shout won't be enough to move the oven on your own.";
+		not-yet;
+	if sco-shovin-shout is true:
+		vcal "You already shouted with the lout! It's time to [if sco-oven-out is true]look elsewhere[else]finish removing the oven[end if].";
+		already-done;
+	ready;
+
+this is the vr-shovin-shout rule:
+	now sco-shovin-shout is true;
+	say "You and the lovin['] lout get together and push the oven forward. Something seems to crumble loose. There must be just one more thing to do.";
+
+section dove n doubt scoring
+
+a goodrhyme rule (this is the vc-oven-out rule):
+	if player is not in dove n doubt and oven is not touchable, unavailable;
+	if sco-shovin-shout is false:
+		vcp "You may need to dislodge the oven a bit before really moving it.";
+		not-yet;
+	if sco-oven-out is true:
+		vcal "But you've already moved the oven back to Reeve Row!";
+		already-done;
+	ready;
+
+this is the vr-oven-out rule:
+	now sco-oven-out is true;
+	say "With the right commands and pacing, you and [the lout] move the oven from its former position. The lout, very unloutishly indeed, asks if you need the oven to move anywhere. You defer all 'Oh, it'd be too much!' but after some nonsense back-and-forhting, you both realize that's wasted energy. You move the oven back to Reeve Row, to cook what you need.";
+	move oven to Reeve Row;
 
 chapter Gap Goo scoring
 
@@ -493,7 +541,11 @@ mything	hom-rule (a rule)	myhom (topic)	custom-msg (text)
 
 table of room homonyms
 loc	hom-rule (a rule)	myhom (topic)	custom-msg (text)
-(a room)	--	--	--
+dove n doubt	vh-love-shove rule		"loving/shoving"	--
+
+this is the vh-love-shove rule:
+	say "No, here [if oven-score is 0]will be[else if oven-score is 1]should still be[else]was[end if] the place for slight colloquialisms."
+
 
 Beef Beans Grief Greens Tables ends here.
 

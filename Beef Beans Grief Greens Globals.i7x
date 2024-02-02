@@ -96,6 +96,11 @@ sco-see-soup is a truth state that varies.
 
 sco-pluck-plate is a truth state that varies.
 
+sco-lovin-lout is a truth state that varies.
+sco-shovin-shout is a truth state that varies.
+
+sco-oven-out is a truth state that varies.
+
 Beef Beans Grief Greens Globals ends here.
 
 ---- DOCUMENTATION ----

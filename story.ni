@@ -120,9 +120,28 @@ section ponpa name - not for release
 
 understand "ponpa" as ponpa.
 
-book laundering lair
+book Dove 'N Doubt
 
-Laundering Lair is a wandroom. wanddir of Laundering Lair is west.
+Dove N Doubt is a wandroom. wanddir of Dove N Doubt is west. printed name of Dove N Doubt is "Dove [']N Doubt". "This is obviously a front for illegal activity."
+
+chapter lovin' lout
+
+the lovin lout is a person. "A lovin['] lout stands around awkwardly, flexing their muscles, waiting for a command.". description is "They look like a kind sort. Perhaps they were suckered into being a part of  the whole operation. They needed the money, status, friends, etc. They seem to want to make up for it, any way they can.". printed name is "lovin['] lout".
+
+chapter oven
+
+The oven is a thing in Dove N Doubt. "[if player is in reeve row]The oven you moved from [dove] is here, ready to cook raw materials and such[else]An oven is parked here[oven-move]. Useful for cooking a big meal, you suspect[end if]."
+
+to say oven-move:
+	if sco-shovin-shout is false:
+		say "but it's really wedged in";
+	else:
+		say "a bit loose. It could be moved, with the right command"
+
+check taking oven:
+	if player is in Reeve Row, say "You already moved it here. It's in the right place to get cooking." instead;
+	if sco-lovin-lout is true, say "You try, then the lout tries. It doesn't move. You need a command[if sco-shovin-shout is false] or two[end if]." instead;
+	say "Can't do too much on your own. It appears to be stuck." instead;
 
 book Gap Goo
 
