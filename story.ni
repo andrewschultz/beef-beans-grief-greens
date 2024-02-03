@@ -76,13 +76,21 @@ Yves Eve O is a person. description of Yves is "You are [if gender-variable is 0
 
 section Last Least Fast Feast
 
-Last Least Fast Feast is a rhymable. the player carries Last Least Fast Feast. description of Last Least Fast Feast is "It's a vague description of the stuff you need for the end-of-year memorial feast."
+Last Least Fast Feast is a rhymable. the player carries Last Least Fast Feast. description of Last Least Fast Feast is "It's a vague description of the stuff you need for the end-of-year memorial feast. Perhaps they wanted to allow you artistic license, or perhaps they (or I) realized it'd not be a really fulfilling quest if they were specific. Or perhaps there's some weird obscure reason the feast tastes better or is more spiritually nourishing if it's prepared ad-hoc."
 
 guess-table of fast feast is the table of fast feast guesses.
 
 report examining Last Least Fast Feast:
-	repeat with F running through feastitems:
-		say "[fixed letter spacing]([if player has F]X[else] [end if]) [fdesc of F][variable letter spacing][line break]";
+	repeat with F running through not silverware feastitems:
+		say "[fixed letter spacing]( [if player has F]X[else]-[end if] ) [fdesc of F][variable letter spacing][line break]";
+	say "[fixed letter spacing]([number of carried silverware feastitems]/[number of silverware feastitems]) silverware and such[variable letter spacing][line break]";
+	if Trappy Trawl is unvisited:
+		say "[line break]";
+		if oven is in reeve row:
+			say "You've moved an oven to Reeve Row, too.";
+		else:
+			say "You'll probably need to cook up some ingredients, but you don't have the right appliance(s), yet.";
+	continue the action;
 
 chapter rayed rug
 
@@ -213,6 +221,11 @@ check taking inventory:
 	if player has fast feast and inventory-warn-yet is false:
 		say "NOTE: X on its own may be more useful for the items you have, since it views the list you need for [this-game].";
 		now inventory-warn-yet is true;
+
+report taking inventory:
+	if oven is in reeve row and trappy trawl is unvisited:
+		say "You moved an oven [here-in of Reeve Row], too.";
+	continue the action;
 
 book taking
 
