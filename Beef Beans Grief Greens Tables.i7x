@@ -148,7 +148,7 @@ a goodrhyme rule (this is the vc-pondering-pair rule):
 
 this is the vr-pondering-pair rule:
 	now sco-pondering-pair is true;
-	wander ponpa;
+	wander oh oh;
 
 a goodrhyme rule (this is the vc-squandering-square rule):
 	if player is not in wandering where, unavailable;
@@ -156,7 +156,7 @@ a goodrhyme rule (this is the vc-squandering-square rule):
 
 this is the vr-squandering-square rule:
 	now sco-squandering-square is true;
-	wander squandering square;
+	wander squalor square;
 
 a goodrhyme rule (this is the vc-maundering-mare rule):
 	if player is not in wandering where, unavailable;

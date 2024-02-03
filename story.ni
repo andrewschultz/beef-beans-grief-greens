@@ -114,19 +114,17 @@ after looking in Wandering Where when Wandering Where is unvisited:
 	say "[i]From now on, you can go back inside to Reeve Row, or outside back here.[r]";
 	continue the action;
 
-book squandering square
+book Squalor square
 
-Squandering Square is a wandroom. wanddir of Squandering Square is east.
+Squalor Square is a wandroom. wanddir of Squalor Square is east.
 
 book pondering pair
 
-ponpa is a privately-named wandroom. wanddir of ponpa is north. printed name is "Pondering Pair".
+Oh Oh is a wandroom. wanddir of Oh Oh is north. printed name is "Oh, Oh...".
 
-The pondering pair are plural-named people in ponpa.
+Jojo is a person in Oh Oh.
 
-section ponpa name - not for release
-
-understand "ponpa" as ponpa.
+Bobo is a person in Oh Oh.
 
 book Dove 'N Doubt
 
