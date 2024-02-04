@@ -58,7 +58,7 @@ volume rooms
 
 book reeve row
 
-Reeve Row is a room. "You remember buying this from the old owner, Steve Stowe. He knew you were the right person to continue living here. But it feels empty now[if sco-leave-lo is true]. You feel you could go out again, if you wanted[end if]."
+Reeve Row is a room in Home Haw. "You remember buying this from the old owner, Steve Stowe. He knew you were the right person to continue living here. But it feels empty now[if sco-leave-lo is true]. You feel you could go out again, if you wanted[end if]."
 
 guess-table of Reeve Row is table of Reeve Row guesses.
 
@@ -106,7 +106,7 @@ after printing the locale description for a wandroom:
 
 book wandering where
 
-Wandering Where is a room. Printed name is "Wandering ... Where?". description is "You haven't found anywhere to wander yet. But you can go back in or south to Reeve Row."
+Wandering Where is a room in Roam Raw. Printed name is "Wandering ... Where?". description is "You haven't found anywhere to wander yet. But you can go back in or south to Reeve Row."
 
 check going south in Wandering Where: try going inside instead;
 
@@ -114,13 +114,13 @@ after looking in Wandering Where when Wandering Where is unvisited:
 	say "[i]From now on, you can go back inside to Reeve Row, or outside back here.[r]";
 	continue the action;
 
-book Squalor square
+book Squalor Square
 
-Squalor Square is a wandroom. wanddir of Squalor Square is east.
+Squalor Square is a wandroom in Roam Raw. wanddir of Squalor Square is east.
 
 book pondering pair
 
-Oh Oh is a wandroom. wanddir of Oh Oh is north. printed name is "Oh, Oh...".
+Oh Oh is a wandroom in Roam Raw. wanddir of Oh Oh is north. printed name is "Oh, Oh...".
 
 Jojo is a person in Oh Oh.
 
@@ -128,7 +128,7 @@ Bobo is a person in Oh Oh.
 
 book Dove 'N Doubt
 
-Dove N Doubt is a wandroom. wanddir of Dove N Doubt is west. printed name of Dove N Doubt is "Dove [']N Doubt". "This is obviously a front for illegal activity."
+Dove N Doubt is a wandroom in Roam Raw. wanddir of Dove N Doubt is west. printed name of Dove N Doubt is "Dove [']N Doubt". "This is obviously a front for illegal activity."
 
 chapter lovin' lout
 
@@ -151,7 +151,7 @@ check taking oven:
 
 book Gap Goo
 
-Gap Goo is a wandroom. wanddir of Gap Goo is south. printed name is "Gap, Goo". "[if sco-zap-zoo is false]Ugh, not very lively here.[else]The zoo is now bursting with lotus life![end if]"
+Gap Goo is a wandroom in Roam Raw. wanddir of Gap Goo is south. printed name is "Gap, Goo". "[if sco-zap-zoo is false]Ugh, not very lively here.[else]The zoo is now bursting with lotus life![end if]"
 
 chapter lotus life
 
@@ -248,3 +248,19 @@ rule for printing a parser error when gender-variable is 0:
 	say ". You haven't felt yourself lately.";
 	now gender-variable is temp;
 	the rule succeeds;
+
+volume index map nonsense
+
+index map with Wandering Where mapped northwest of Reeve Row.
+index map with Stuck State mapped northwest of Wandering Where.
+index map with Gazy Gap mapped northeast of Wandering Where.
+index map with Hidey House mapped southwest of Wandering Where.
+
+index map with Oh Oh mapped north of Wandering Where.
+index map with Squalor Square mapped east of Wandering Where.
+index map with Dove N Doubt mapped west of Wandering Where.
+index map with Gap Goo mapped south of Wandering Where.
+
+index map with Trappy Trawl mapped south of Reeve Row.
+index map with Happy Hall mapped west of Trappy Trawl.
+index map with Compete Compel mapped west of Happy Hall.
