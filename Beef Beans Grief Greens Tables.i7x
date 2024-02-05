@@ -46,6 +46,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "notice"	"knife"	--	--	false	true	true	false	Gap Goo	vc-notice-knife rule	vr-notice-knife rule	--	--
 "carrot"	"cake"	--	--	false	true	true	false	Gap Goo	vc-carrot-cake rule	vr-carrot-cake rule	--	--
 "see"	"soup"	--	--	false	true	true	false	gap goo	vc-see-soup rule	vr-see-soup rule	--	--
+"dented"	"dials"	--	--	false	true	true	false	gap goo	vc-dented-dials rule	vr-dented-dials rule	--	--
 
 chapter all the time
 
@@ -330,6 +331,20 @@ this is the vr-carrot-cake rule:
 	now sco-carrot-cake is true;
 	say "Splat! The Ferret, Fake runs off to reveal an untouched carrot cake!";
 	now player has carrot cake;
+
+a goodrhyme rule (this is the vc-dented-dials rule):
+	if player is not in gap goo, unavailable;
+	if sco-dented-dials is false:
+		vcp "You still need to do something!";
+		not-yet;
+	if sco-dented-dials is true:
+		vcal "You already did this!";
+		already-done;
+	ready;
+
+this is the vr-dented-dials rule:
+	now sco-dented-dials is true;
+	say "Hooray! You figured what to do! You get a point!";
 
 chapter stuck state scoring
 

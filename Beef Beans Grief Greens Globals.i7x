@@ -108,6 +108,8 @@ sco-white-wires is a truth state that varies.
 
 sco-played-plug is a truth state that varies.
 
+sco-dented-dials is a truth state that varies.
+
 Beef Beans Grief Greens Globals ends here.
 
 ---- DOCUMENTATION ----

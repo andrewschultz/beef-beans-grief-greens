@@ -98,6 +98,10 @@ the rayed rug is a rhymable in Reeve Row. "A rayed rug covers part of the floor 
 
 guess-table of rayed rug is the table of rayed rug guesses.
 
+chapter played plug
+
+the played plug is a rhymable. description is "It looks serviceable enough to provide power. You don't know much about electricity."
+
 volume "where" rooms
 
 after printing the locale description for a wandroom:
@@ -120,7 +124,7 @@ Squalor Square is a wandroom in Roam Raw. wanddir of Squalor Square is east.
 
 chapter light lyres
 
-The light lyres are a rhymable. They are scenery. "They are burning very slowly! They are useless to actually play, but maybe there is some use for them."
+The light lyres are a rhymable. They are scenery. "[if sco-fight-fires is false]They are burning very slowly! They are useless to actually play, but maybe there is some use for them[else]The fire has damaged them, but you sense you can salvage something[end if]."
 
 book Oh Oh
 
@@ -168,6 +172,10 @@ Gap Goo is a wandroom in Roam Raw. wanddir of Gap Goo is south. printed name is 
 chapter lotus life
 
 the lotus life is scenery. "The lotus blossoms look wonderful. [if sco-notice-knife is false]Maybe they hide something.[else]They even netted you some knives![end if]"
+
+chapter vented vials
+
+the vented vials are a thing. description is "They don't seem to be much use in their present form.".
 
 chapter tree troop
 
