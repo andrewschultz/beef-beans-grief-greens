@@ -45,6 +45,7 @@ section rug-specific globals
 
 sco-made-mug is a truth state that varies.
 sco-jade-jug is a truth state that varies.
+sco-played-plug is a truth state that varies.
 
 chapter Wandering Where globals
 
@@ -53,11 +54,39 @@ sco-squandering-square is a truth state that varies.
 sco-maundering-mare is a truth state that varies.
 sco-laundering-lair is a truth state that varies.
 
+chapter Oh Oh globals
+
+sco-cocoa is a truth state that varies.
+
+sco-massive-mitt is a truth state that varies.
+
+chapter Dove N Doubt globals
+
+sco-lovin-lout is a truth state that varies.
+sco-shovin-shout is a truth state that varies.
+
+sco-oven-out is a truth state that varies.
+
+chapter Squalor Square globals
+
+sco-fight-fires is a truth state that varies.
+sco-white-wires is a truth state that varies.
+
 chapter Gap Goo globals
 
 sco-zap-zoo is a truth state that varies.
 
+sco-notice-knife is a truth state that varies.
+
 sco-carrot-cake is a truth state that varies.
+
+sco-see-soup is a truth state that varies.
+
+sco-dented-dials is a truth state that varies.
+
+chapter Stuck State globals
+
+sco-pluck-plate is a truth state that varies.
 
 chapter Trappy Trawl globals
 
@@ -89,26 +118,6 @@ sco-heat-hell is a truth state that varies.
 sco-repeat-repel is a truth state that varies.
 
 chapter unsorted globals
-
-sco-notice-knife is a truth state that varies.
-
-sco-see-soup is a truth state that varies.
-
-sco-pluck-plate is a truth state that varies.
-
-sco-lovin-lout is a truth state that varies.
-sco-shovin-shout is a truth state that varies.
-
-sco-oven-out is a truth state that varies.
-
-sco-massive-mitt is a truth state that varies.
-
-sco-fight-fires is a truth state that varies.
-sco-white-wires is a truth state that varies.
-
-sco-played-plug is a truth state that varies.
-
-sco-dented-dials is a truth state that varies.
 
 Beef Beans Grief Greens Globals ends here.
 
