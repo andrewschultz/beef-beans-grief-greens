@@ -9,6 +9,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "sassed"	"ceased"	--	--	false	true	false	false	--	vc-sassed-ceased rule	vr-sassed-ceased rule	--	--
 "made"	"mug"	--	--	false	true	true	false	reeve row	vc-made-mug rule	vr-made-mug rule	--	--
 "jade"	"jug"	--	--	false	true	true	false	reeve row	vc-jade-jug rule	vr-jade-jug rule	--	--
+"played"	"plug"	--	--	false	true	true	false	reeve row	vc-played-plug rule	vr-played-plug rule	--	--
 "heave"	"ho"	--	--	false	true	true	false	reeve row	vc-heave-ho rule	vr-heave-ho rule	--	--
 "leave"	"lo"	--	--	false	true	true	false	reeve row	vc-leave-lo rule	vr-leave-lo rule	--	--
 "believe"	"below"	--	--	false	true	true	false	reeve row	vc-believe-below rule	vr-believe-below rule	--	"You can [b]BELIEVE BELOW[r] [once-now of vc-believe-below rule] you see a possible way down from [here-in of reeve row]."
@@ -59,7 +60,6 @@ this is the vr-sassed-ceased rule:
 	now sco-sassed-ceased is true;
 	say "Yes, you're glad you were given this responsibility, and people snickered about how flaky you were.";
 
-
 chapter reeve row scoring
 
 section rayed rug flips
@@ -89,6 +89,18 @@ this is the vr-jade-jug rule:
 	say "A jade jug appears. It will be useful for the meal.";
 	now player has jade jug;
 	rug-check;
+
+a goodrhyme rule (this is the vc-played-plug rule):
+	if rayed rug is not touchable, unavailable;
+	if sco-played-plug is true:
+		vcal "You already got a played plug!";
+		already-done;
+	ready;
+
+this is the vr-played-plug rule:
+	now sco-played-plug is true;
+	say "Ah, that's what the bump in the rayed rug is.";
+	now player has played plug;
 
 section reeve row general flips
 
