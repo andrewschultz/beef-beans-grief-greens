@@ -17,6 +17,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "squandering"	"square"	--	--	false	true	true	false	wandering where	vc-squandering-square rule	vr-squandering-square rule	--	--
 "maundering"	"mare"	--	--	false	true	true	false	wandering where	vc-maundering-mare rule	vr-maundering-mare rule	--	--
 "laundering"	"lair"	--	--	false	true	true	false	wandering where	vc-laundering-lair rule	vr-laundering-lair rule	--	--
+"massive"	"mitt"	--	--	false	true	true	false	oh oh	vc-massive-mitt rule	vr-massive-mitt rule	--	--
 "lovin"	"lout"	--	--	false	true	true	false	dove n doubt	vc-lovin-lout rule	vr-lovin-lout rule	--	--
 "shovin"	"shout"	--	--	false	true	true	false	dove n doubt	vc-shovin-shout rule	vr-shovin-shout rule	--	--
 "oven"	"out"	--	--	false	true	true	false	dove n doubt	vc-oven-out rule	vr-oven-out rule	--	--
@@ -174,6 +175,24 @@ this is the vr-laundering-lair rule:
 	now sco-laundering-lair is true;
 	wander Dove N Doubt;
 
+chapter oh oh scoring
+
+section passive pit
+
+a goodrhyme rule (this is the vc-massive-mitt rule):
+	if player is not in oh oh, unavailable;
+	if sco-massive-mitt is false:
+		vcp "You still need to do something!";
+		not-yet;
+	if sco-massive-mitt is true:
+		vcal "You already did this!";
+		already-done;
+	ready;
+
+this is the vr-massive-mitt rule:
+	now sco-massive-mitt is true;
+	say "Hooray! You figured what to do! You get a point!";
+
 chapter Dove N Doubt scoring
 
 a goodrhyme rule (this is the vc-lovin-lout rule):
@@ -185,8 +204,8 @@ a goodrhyme rule (this is the vc-lovin-lout rule):
 
 this is the vr-lovin-lout rule:
 	now sco-lovin-lout is true;
-	say "A lovin['] lout strolls sheepishly into view, not sure to explain whether they've been terribly loyal, or they didn't mean to do the stuff the bad people suggested they do, or else. You assure them that's over now, and you want someone who can help a bit. For what, you're not sure yet.";
-	move lovin lout to Dove N Doubt;
+	say "A lovin['] lout strolls sheepishly into view, not sure to explain whether they've been terribly loyal, or they didn't mean to do the stuff the bad people suggested they do, or else. You assure them that's over now, and you want someone who can help a bit. For what, you're not sure yet.[paragraph break]";
+	move oven to Dove N Doubt;
 
 a goodrhyme rule (this is the vc-shovin-shout rule):
 	if player is not in dove n doubt, unavailable;
