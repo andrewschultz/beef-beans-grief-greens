@@ -118,7 +118,11 @@ book Squalor Square
 
 Squalor Square is a wandroom in Roam Raw. wanddir of Squalor Square is east.
 
-book pondering pair
+chapter light lyres
+
+The light lyres are a rhymable. They are scenery. "They are burning very slowly! They are useless to actually play, but maybe there is some use for them."
+
+book Oh Oh
 
 Oh Oh is a wandroom in Roam Raw. wanddir of Oh Oh is north. printed name is "Oh, Oh...".
 
