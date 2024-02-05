@@ -138,6 +138,10 @@ chapter bobo
 
 Bobo is a person in Oh Oh.
 
+chapter cocoa
+
+the cocoa is a rhymable. description is "Well, it's currently powdered, but you'll find a way to put it in boiling water, you're sure."
+
 chapter passive pit
 
 the passive pit is scenery. "It's full of weird rubbish. [if sco-massive-mitt is true]There might be other stuff here. But not now.[else]If only you knew what to look for! You could find it.[end if]"

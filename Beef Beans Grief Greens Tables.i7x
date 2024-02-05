@@ -19,6 +19,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "maundering"	"mare"	--	--	false	true	true	false	wandering where	vc-maundering-mare rule	vr-maundering-mare rule	--	--
 "laundering"	"lair"	--	--	false	true	true	false	wandering where	vc-laundering-lair rule	vr-laundering-lair rule	--	--
 "massive"	"mitt"	--	--	false	true	true	false	oh oh	vc-massive-mitt rule	vr-massive-mitt rule	--	--
+"co"	"coa"	--	--	false	true	true	false	oh oh	vc-co-coa rule	vr-co-coa rule	"cocoa"	--
 "fight"	"fires"	--	--	false	true	true	false	squalor square	vc-fight-fires rule	vr-fight-fires rule	--	--
 "white"	"wires"	--	--	false	true	true	false	squalor square	vc-white-wires rule	vr-white-wires rule	--	--
 "lovin"	"lout"	--	--	false	true	true	false	dove n doubt	vc-lovin-lout rule	vr-lovin-lout rule	--	--
@@ -191,6 +192,17 @@ this is the vr-laundering-lair rule:
 	wander Dove N Doubt;
 
 chapter oh oh scoring
+
+a goodrhyme rule (this is the vc-co-coa rule):
+	if player is not in oh oh, unavailable;
+	if sco-cocoa is true:
+		vcal "You already got cocoa!";
+		already-done;
+	ready;
+
+this is the vr-co-coa rule:
+	now sco-cocoa is true;
+	say "Bobo and Jojo found your little skirmish heartwarming. They're glad to help maybe warm you later. You enjoy a cup of cocoa, and they give you some powdered cocoa for later.";
 
 section passive pit
 
