@@ -127,7 +127,22 @@ after printing the locale description for a wandroom:
 
 book wandering where
 
-Wandering Where is a room in Roam Raw. Printed name is "Wandering ... Where?". description is "You haven't found anywhere to wander yet. But you can go back in or south to Reeve Row."
+Wandering Where is a room in Roam Raw. Printed name is "Wandering ... Where?". description is "[psg-list] go back [b]INSIDE[r] to your temporary home in Reeve Row."
+
+to say psg-list:
+	if number of wanderable directions is 0:
+		say "You have no clue where to wander yet, but you can";
+	else:
+		say "You can go [dirlist]. You can also";
+
+to say dirlist:
+	now name-loc is true;
+	say "[list of wanderable directions]";
+	now name-loc is false;
+
+before printing the name of a direction (called di) when name-loc is true:
+	say "[b][printed name of di in upper case][r] to [the room di of location of player]";
+	the rule succeeds;
 
 check going south in Wandering Where: try going inside instead;
 
@@ -189,11 +204,11 @@ the lovin lout is a person. "A lovin['] lout stands around awkwardly, flexing th
 
 chapter oven
 
-The oven is a thing in Dove N Doubt. "[if player is in reeve row]The oven you moved from [dove] is here, ready to cook raw materials and such[else]An oven is parked here[oven-move]. Useful for cooking a big meal, you suspect[end if]."
+The oven is a thing in Dove N Doubt. "[if player is in reeve row]The oven you moved from [dove] is here, ready to cook raw materials and such[else]An oven is parked here, but it's [oven-move]. Useful for cooking a big meal, you suspect[end if]."
 
 to say oven-move:
 	if sco-shovin-shout is false:
-		say "but it's really wedged in";
+		say "really wedged in";
 	else:
 		say "a bit loose. It could be moved, with the right command"
 
