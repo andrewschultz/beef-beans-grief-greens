@@ -62,13 +62,13 @@ Reeve Row is a room in Home Haw. "You remember buying this from the old owner, S
 
 guess-table of Reeve Row is table of Reeve Row guesses.
 
-check going north in Reeve Row: try going outside instead;
-
 check going down in Reeve Row:
 	if rayed rug is in Reeve Row, say "It's possible something is under the rug, but ... well, you'd have to be prepared, for a special occasion." instead;
 	if sco-heave-ho is false, say "There's an outline leading down, but you can't figure the way to remove it." instead;
 	if sco-grieve-grow is false, say "You're not emotionally ready, yet. Yet. How can you steel yourself, so you know it's worth it?" instead;
 	if number of not carried feastitems > 0, say "You look at [feast]. You don't have everything, yet." instead;
+
+check going outside in Reeve Row when Lovin Lout is in Reeve Row: say "You sense the lout could help with the rayed rug in some way." instead; [??GT must be inoperative]
 
 chapter you
 
@@ -121,6 +121,10 @@ check going south in Wandering Where: try going inside instead;
 after looking in Wandering Where when Wandering Where is unvisited:
 	say "[i]From now on, you can go back inside to Reeve Row, or outside back here.[r]";
 	continue the action;
+
+chapter Bopper Bee
+
+the Bopper Bee is a rhymable.
 
 book Squalor Square
 

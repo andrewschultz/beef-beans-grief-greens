@@ -127,12 +127,17 @@ section reeve row general flips
 a goodrhyme rule (this is the vc-believe-below rule):
 	if player is not in reeve row, unavailable;
 	if sco-believe-below is true:
-		vcal "You already believed in, and found, a passage down.";
+		vcal "You already believed in[if sco-heave-ho is true], and found,[end if] a passage down.";
 		already-done;
 	ready;
 
 this is the vr-believe-below rule:
+	if sco-heave-ho is false:
+		say "You believe something must be below. Below that rug, you'd guess. You might not be able to remove it by yourself. But you have faith now!";
+	else:
+		say "Aha! You wondered if something was below the rug. Now you see the outline of a trap door beneath the rug."; [?? if rug there and you believed, you'd like to remove it]
 	now sco-believe-below is true;
+	trigger-bee;
 
 a goodrhyme rule (this is the vc-leave-lo rule):
 	if player is not in reeve row, unavailable;
@@ -149,20 +154,20 @@ this is the vr-leave-lo rule:
 
 a goodrhyme rule (this is the vc-heave-ho rule):
 	if player is not in reeve row, unavailable;
-	if rayed rug is in reeve row:
-		vcp "You try to pull the rayed rug, but it feels glued down.";
-		not-yet;
-	if sco-believe-below is false:
-		vcp "Oh, sure, it'd be nice if something was under the faint outline, but you have no faith there is.";
-		not-yet;
 	if sco-heave-ho is true:
-		vcal "You already pulled open the outline under the rug!";
+		vcal "You already pulled the rug away!";
 		already-done;
+	if sco-oven-out is false:
+		vcp "You try to pull the rayed rug, but it feels glued down. You can't move it by yourself!";
+		not-yet;
 	ready;
 
 this is the vr-heave-ho rule:
 	now sco-heave-ho is true;
-	say "Ah! Like so! You resolve yourself to pulling open the floor, figuring how it works, to see what's below. And you do.";
+	say "You and [the lout] pull on one, two, THREE! It takes a couple of times, but the rug bursts free from the floor. You see [if sco-believe-below is true]nothing under the rug. You were sort of hoping for a new passage. Maybe you can do more than just hope.[paragraph break]Maybe there's a way to visualize a way down[else]an outline of the passage you believed was there[end if].[paragraph break]You shake hands with [the lout], who exits and nods to wish you the best.";
+	moot lout;
+	say "[line break]Also, you take some time to look inside the oven. You find something called a goon guide. But you can't use it, because you're not a goon. Or can you?";
+	trigger-bee;
 
 a goodrhyme rule (this is the vc-grieve-grow rule):
 	if player is not in reeve row, unavailable;
@@ -296,8 +301,6 @@ this is the vr-shovin-shout rule:
 	now sco-shovin-shout is true;
 	say "You and the lovin['] lout get together and push the oven forward. Something seems to crumble loose. There must be just one more thing to do.";
 
-section dove n doubt scoring
-
 a goodrhyme rule (this is the vc-oven-out rule):
 	if player is not in dove n doubt and oven is not touchable, unavailable;
 	if sco-shovin-shout is false:
@@ -310,8 +313,10 @@ a goodrhyme rule (this is the vc-oven-out rule):
 
 this is the vr-oven-out rule:
 	now sco-oven-out is true;
-	say "With the right commands and pacing, you and [the lout] move the oven from its former position. The lout, very unloutishly indeed, asks if you need the oven to move anywhere. You defer all 'Oh, it'd be too much!' but after some nonsense back-and-forhting, you both realize that's wasted energy. You move the oven back to Reeve Row, to cook what you need.";
+	say "With the right commands and pacing, you and [the lout] move the oven from its former position. The lout, very unloutishly indeed, asks if you need the oven to move anywhere. You defer all 'Oh, it'd be too much!' but after some nonsense back-and-forthing, you both realize that's wasted energy. You both move the oven back to Reeve Row pretty quickly. The oven is -- well, you sense it isn't ready to cook anything, but it's a lot easier to repair here.[paragraph break]The [lout] waits around, as if they suspect they could help you with one more thing.";
 	move oven to Reeve Row;
+	move lovin lout to Reeve Row;
+	move player to Reeve Row, without printing a room description;
 
 chapter Gap Goo scoring
 
@@ -613,12 +618,12 @@ book general flip stubs
 chapter Reeve Row
 
 to rug-check:
-	say "[line break]The rug ";
-	if rug-score is 2:
-		say "vanishes. You think you see an outline of ... well, something in the floor. No. You'd feel silly, having missed it all these years. Right? It might take something extra to find it!";
-		moot rayed rug;
-	else:
-		say "wobbles a bit. Perhaps it still hides something."
+	say "[line break]A ray vanishes from the rug. [if rug-score is 3]There are no more. It stays uselessly off to the side[else]Perhaps the rug offers more[end if]";
+
+to trigger-bee:
+	if sco-heave-ho is true and sco-believe-below is true:
+		say "You hear an odd, insistent buzzing from outside.";
+		move bopper bee to Wandering Where;
 
 chapter Trappy Trawl
 
