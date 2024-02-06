@@ -19,6 +19,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "squandering"	"square"	--	--	false	true	true	false	wandering where	vc-squandering-square rule	vr-squandering-square rule	--	--
 "maundering"	"mare"	--	--	false	true	true	false	wandering where	vc-maundering-mare rule	vr-maundering-mare rule	--	--
 "laundering"	"lair"	--	--	false	true	true	false	wandering where	vc-laundering-lair rule	vr-laundering-lair rule	--	--
+"flopper"	"flea"	--	--	false	true	true	false	wandering where	vc-flopper-flea rule	vr-flopper-flea rule	--	--
 "massive"	"mitt"	--	--	false	true	true	false	oh oh	vc-massive-mitt rule	vr-massive-mitt rule	--	--
 "co"	"coa"	--	--	false	true	true	false	oh oh	vc-co-coa rule	vr-co-coa rule	"cocoa"	--
 "fight"	"fires"	--	--	false	true	true	false	squalor square	vc-fight-fires rule	vr-fight-fires rule	--	--
@@ -213,6 +214,19 @@ a goodrhyme rule (this is the vc-laundering-lair rule):
 this is the vr-laundering-lair rule:
 	now sco-laundering-lair is true;
 	wander Dove N Doubt;
+
+section bopper bee scoring
+
+a goodrhyme rule (this is the vc-flopper-flea rule):
+	if copper key is not touchable and bopper bee is not touchable, unavailable;
+	if sco-flopper-flea is true:
+		vcal "You already got rid of the bopper bee!";
+		already-done;
+	ready;
+
+this is the vr-flopper-flea rule:
+	now sco-flopper-flea is true;
+	say "Hooray! You figured what to do! You get a point!";
 
 chapter oh oh scoring
 

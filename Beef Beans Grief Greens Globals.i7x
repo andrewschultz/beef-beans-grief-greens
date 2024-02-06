@@ -58,6 +58,8 @@ sco-squandering-square is a truth state that varies.
 sco-maundering-mare is a truth state that varies.
 sco-laundering-lair is a truth state that varies.
 
+sco-flopper-flea is a truth state that varies.
+
 chapter Oh Oh globals
 
 sco-cocoa is a truth state that varies.

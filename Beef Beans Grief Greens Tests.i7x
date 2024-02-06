@@ -4,7 +4,13 @@ Version 1/240113 of Beef Beans Grief Greens Tests by Andrew Schultz begins here.
 
 volume test chunks
 
+test start with "test row/test lair".
+
 test thru with "test trtr/test hh/test final".
+
+test row with "made mug/jade jug/leave lo".
+
+test lair with "laundering lair/w/lovin lout/shovin shout/oven out/heave ho"
 
 test trtr with "scrappy scrawl/whappy wall".
 

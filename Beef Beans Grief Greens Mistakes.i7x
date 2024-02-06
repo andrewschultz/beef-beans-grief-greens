@@ -49,6 +49,13 @@ table of fast feast guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 "past"	"pieced"	--	false	--	"The past will be pieced at the feast."
 
+table of bopper bee guesses
+mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
+"copper"	"key"	--	false	--	"Why, a copper key would be just the thing! One that somehow magically fits the lock to the basement! No, I'm afraid it'll be a bit trickier than that. The bee has to become something a little more like it. Or a little less unlike it."
+"hopper"	"he|hee"	--	false	--	"<CLEVER REJECT TEXT>"
+"pauper|popper"	"pee"	--	false	--	"<CLEVER REJECT TEXT>"
+"shopper"	"she|shee"	--	false	--	"<CLEVER REJECT TEXT>"
+
 volume auxiliary general
 
 table of general good guesses

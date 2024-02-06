@@ -60,6 +60,11 @@ book reeve row
 
 Reeve Row is a room in Home Haw. "You remember buying this from the old owner, Steve Stowe. He knew you were the right person to continue living here. But it feels empty now[if sco-leave-lo is true]. You feel you could go out again, if you wanted[end if]."
 
+after printing the locale description for Reeve Row when player has copper key:
+	say "You use the copper key on the trap door down. And it works!";
+	moot copper key;
+	continue the action;
+
 guess-table of Reeve Row is table of Reeve Row guesses.
 
 check going down in Reeve Row:
@@ -122,9 +127,17 @@ after looking in Wandering Where when Wandering Where is unvisited:
 	say "[i]From now on, you can go back inside to Reeve Row, or outside back here.[r]";
 	continue the action;
 
+check going in Wandering Where when bopper bee is in Wandering Where: say "You have a battle to win with the bopper bee first." instead;
+
 chapter Bopper Bee
 
-the Bopper Bee is a rhymable.
+the Bopper Bee is a rhymable. "A bopper bee floats about here, agile and bigger and more aggressive than you.". description is "Something looks off about it. Perhaps it can be transformed into a flying animal less harmful."
+
+guess-table of bopper bee is the table of bopper bee guesses.
+
+chapter Copper Key
+
+the copper key is a thing. "You hope it opens passage below Reeve Row.".
 
 book Squalor Square
 
