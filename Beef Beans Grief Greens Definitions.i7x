@@ -26,6 +26,11 @@ definition: a direction (called di) is viable:
 	if room di of location of player is nowhere, no;
 	yes;
 
+definition: a direction (called di) is wanderable:
+	if room di of location of player is nowhere, no;
+	if di is inside, no;
+	yes;
+
 to decide whether rhyme-mechanism-known:
 	yes;
 
@@ -65,6 +70,26 @@ to wander (rm - a room):
 	if rm is unvisited:
 		open-psg (wanddir of rm) and rm;
 	move player to rm;
+
+a wandroom has a rule called native-clear-rule.
+
+check going when player is in a wandroom (this is the stuck-state-check rule): [?? not perfect -- GT REEVE ROW will dump us in Wandering Where for the moment. This is a very minor nuisance bug, but it's possible to fix if the major ones are down. Define dumproom and then put the player in dumproom.]
+	consider native-clear-rule of location of player;
+	if the rule failed, continue the action;
+	if player is not in Dove n Doubt and Stuck State is unvisited:
+		say "Ugh. Somehow, it's not so easy to wander back. You wonder if you really deserved to find even some of the things you needed for the big feast. It wasn't a real quest, was it? Preoccupied with this, you go off the beaten path...";
+		move player to Stuck State instead;
+
+check gotoing when player is in a wandroom:
+	abide by the stuck-state-check rule;
+
+check going to a wandroom when sco-prune-pride is false and sco-oven-out is true:
+	consider native-clear-rule of room gone to;
+	if the rule failed, continue the action;
+	if player-room-allow-threshold is points-left:
+		say "You sort of anticipate the guide gong. Perhaps you can revisit [room gone to] later, but not now." instead;
+	else:
+		say "Hmm. It feels a bit empty. You wonder if you're wasting your time at the moment.";
 
 chapter conglomerations
 

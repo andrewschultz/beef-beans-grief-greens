@@ -334,6 +334,29 @@ book taking
 check taking:
 	if player does not have noun, say "You don't need to take anything in [this-game]." instead;
 
+volume rules
+
+native-clear-rule of Oh Oh is ohoh-clear rule.
+native-clear-rule of Dove N Doubt is dove-clear rule.
+native-clear-rule of Squalor Square is square-clear rule.
+native-clear-rule of Gap Goo is goo-clear rule.
+
+this is the ohoh-clear rule:
+	if sco-cocoa is false, the rule fails;
+	the rule succeeds;
+
+this is the dove-clear rule:
+	if sco-oven-out is false, the rule fails;
+	the rule succeeds;
+
+this is the square-clear rule:
+	if 1 is 0, the rule fails;
+	the rule succeeds;
+
+this is the goo-clear rule: [this is not right but it works for general purposes!]
+	if sco-zap-zoo is false, the rule fails;
+	the rule succeeds;
+
 volume name detection
 
 rule for printing a parser error when gender-variable is 0:
