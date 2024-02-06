@@ -27,6 +27,10 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "lovin"	"lout"	--	--	false	true	true	false	dove n doubt	vc-lovin-lout rule	vr-lovin-lout rule	--	--
 "shovin"	"shout"	--	--	false	true	true	false	dove n doubt	vc-shovin-shout rule	vr-shovin-shout rule	--	--
 "oven"	"out"	--	--	false	true	true	false	dove n doubt	vc-oven-out rule	vr-oven-out rule	--	--
+"hook"	"hard"	--	--	false	true	true	false	dove n doubt	vc-hook-hard rule	vr-hook-hard rule	--	--
+"book"	"bard"	--	--	false	true	true	false	took tarred	vc-book-bard rule	vr-book-bard rule	--	--
+"cook"	"card"	--	--	false	true	true	false	took tarred	vc-cook-card rule	vr-cook-card rule	--	--
+"look"	"lard"	--	--	false	true	true	false	took tarred	vc-look-lard rule	vr-look-lard rule	--	--
 "pluck"	"plate"	--	--	false	true	true	false	stuck state	vc-pluck-plate rule	vr-pluck-plate rule	--	--
 "scrappy"	"scrawl"	--	--	false	true	true	false	trappy trawl	vc-scrappy-scrawl rule	vr-scrappy-scrawl rule	--	--
 "whappy"	"wall"	--	--	false	true	true	false	trappy trawl	vc-whappy-wall rule	vr-whappy-wall rule	--	--
@@ -66,7 +70,7 @@ this is the vr-prune-pride rule:
 	move passive pit to Oh Oh;
 	move vented vials to Gap Goo;
 	move Light Lyres to Squalor Square;
-
+	move shook shard to Dove n Doubt;
 
 chapter all the time
 
@@ -122,6 +126,7 @@ this is the vr-played-plug rule:
 	now sco-played-plug is true;
 	say "Ah, that's what the bump in the rayed rug is.";
 	now player has played plug;
+	oven-check;
 
 section reeve row general flips
 
@@ -332,6 +337,20 @@ this is the vr-oven-out rule:
 	move lovin lout to Reeve Row;
 	move player to Reeve Row, without printing a room description;
 
+section shook shard scoring
+
+a goodrhyme rule (this is the vc-hook-hard rule):
+	if took tarred is visited and player is not in took tarred and cook card is not moot:
+		vcal "You already held the shard.";
+		already-done;
+	ready;
+
+this is the vr-hook-hard rule:
+	now sco-hook-hard is true;
+	say "You grab the shard and feel pulled to somewhere new...";
+	move player to Took Tarred, without printing a room description;
+	moot shook shard;
+
 chapter Gap Goo scoring
 
 a goodrhyme rule (this is the vc-zap-zoo rule):
@@ -394,6 +413,62 @@ a goodrhyme rule (this is the vc-dented-dials rule):
 this is the vr-dented-dials rule:
 	now sco-dented-dials is true;
 	say "Hooray! You figured what to do! You get a point!";
+
+chapter Took Tarred scoring
+
+to get-untarred:
+	if shard-score < 3:
+		say "You feel the area's hold on you weaken.";
+	else:
+		say "You feel sucked out of whatever the shard held you in. As you come back to [dove], the shard shatters.";
+
+this is the shardy rule:
+	if shook shard is touchable:
+		vcp "The shard is calling to you. You must grasp it and find where it leads.";
+		not-yet;
+	if took tarred is visited and player is not in took tarred and cook card is not moot:
+		vcal "You got what you needed from the shard.";
+		already-done;
+	if player is not in took tarred, unavailable;
+
+a goodrhyme rule (this is the vc-book-bard rule):
+	abide by the shardy rule;
+	if sco-book-bard is false:
+		vcp "You still need to do something!";
+		not-yet;
+	if sco-book-bard is true:
+		vcal "You already did this!";
+		already-done;
+	ready;
+
+this is the vr-book-bard rule:
+	now sco-book-bard is true;
+	say "Hooray! You figured what to do! You get a point!";
+	get-untarred;
+
+a goodrhyme rule (this is the vc-cook-card rule):
+	abide by the shardy rule;
+	if sco-cook-card is true:
+		vcal "You already found a card with cooking tips!";
+		already-done;
+	ready;
+
+this is the vr-cook-card rule:
+	now sco-cook-card is true;
+	say "Hooray! You figured what to do! You get a point!";
+	get-untarred;
+
+a goodrhyme rule (this is the vc-look-lard rule):
+	abide by the shardy rule;
+	if sco-look-lard is true:
+		vcal "You already got some lard!";
+		already-done;
+	ready;
+
+this is the vr-look-lard rule:
+	now sco-look-lard is true;
+	say "Hooray! You figured what to do! You get a point!";
+	get-untarred;
 
 chapter stuck state scoring
 

@@ -60,9 +60,17 @@ book reeve row
 
 Reeve Row is a room in Home Haw. "You remember buying this from the old owner, Steve Stowe. He knew you were the right person to continue living here. But it feels empty now[if sco-leave-lo is true]. You feel you could go out again, if you wanted[end if]."
 
-after printing the locale description for Reeve Row when player has copper key:
-	say "You use the copper key on the trap door down. And it works!";
-	moot copper key;
+to oven-check:
+	if oven-fix-score is 3 and oven-fixed-yet is false:
+		say "With the plug, wires and dials, you replace the faulty parts of the oven.";
+		now oven-fixed-yet is true;
+
+after printing the locale description for Reeve Row:
+	if player has copper key:
+		say "You use the copper key on the trap door down. And it works!";
+		moot copper key;
+	else:
+		oven-check;
 	continue the action;
 
 guess-table of Reeve Row is table of Reeve Row guesses.
@@ -190,6 +198,10 @@ check taking oven:
 	if sco-lovin-lout is true, say "You try, then the lout tries. It doesn't move. You need a command[if sco-shovin-shout is false] or two[end if]." instead;
 	say "Can't do too much on your own. It appears to be stuck." instead;
 
+chapter shook shard
+
+the shook shard is a rhymable.
+
 book Gap Goo
 
 Gap Goo is a wandroom in Roam Raw. wanddir of Gap Goo is south. printed name is "Gap, Goo". "[if sco-zap-zoo is false]Ugh, not very lively here.[else]The zoo is now bursting with lotus life![end if]"
@@ -250,9 +262,21 @@ Sheet Shell is a thing.
 
 volume Dome D'Aww
 
+book Stuck State
+
 Stuck State is a room in Dome D'Aww. "Oh man! You're stuck here and don't know what to do! What sort of action can you take?"
 
 guess-table of stuck state is the table of stuck state guesses.
+
+book Took Tarred
+
+Took Tarred is a room in Dome D'Aww. printed name is "Took, Tarred".
+
+chapter cook card
+
+the cook card is a thing.
+
+the lard is a thing.
 
 volume unsorted
 
@@ -298,8 +322,7 @@ volume index map nonsense
 
 index map with Wandering Where mapped northwest of Reeve Row.
 index map with Stuck State mapped northwest of Wandering Where.
-index map with Gazy Gap mapped northeast of Wandering Where.
-index map with Hidey House mapped southwest of Wandering Where.
+index map with Took Tarred mapped southwest of Wandering Where.
 
 index map with Oh Oh mapped north of Wandering Where.
 index map with Squalor Square mapped east of Wandering Where.
@@ -309,3 +332,6 @@ index map with Gap Goo mapped south of Wandering Where.
 index map with Trappy Trawl mapped south of Reeve Row.
 index map with Happy Hall mapped west of Trappy Trawl.
 index map with Compete Compel mapped west of Happy Hall.
+
+index map with Gazy Gap mapped east of Trappy Trawl.
+index map with Hidey House mapped east of Reeve Row.

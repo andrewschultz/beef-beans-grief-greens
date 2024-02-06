@@ -28,6 +28,8 @@ chapter game states
 
 inventory-warn-yet is a truth state that varies.
 
+oven-fixed-yet is a truth state that varies.
+
 chapter all around
 
 sco-sassed-ceased is a truth state that varies.
@@ -70,8 +72,14 @@ chapter Dove N Doubt globals
 
 sco-lovin-lout is a truth state that varies.
 sco-shovin-shout is a truth state that varies.
-
 sco-oven-out is a truth state that varies.
+
+section shard globals
+
+sco-hook-hard is a truth state that varies.
+sco-book-bard is a truth state that varies.
+sco-cook-card is a truth state that varies.
+sco-look-lard is a truth state that varies.
 
 chapter Squalor Square globals
 
