@@ -175,6 +175,10 @@ chapter passive pit
 
 the passive pit is scenery. "It's full of weird rubbish. [if sco-massive-mitt is true]There might be other stuff here. But not now.[else]If only you knew what to look for! You could find it.[end if]"
 
+chapter massive mitt
+
+the massive mitt is a thing.
+
 book Dove 'N Doubt
 
 Dove N Doubt is a wandroom in Roam Raw. wanddir of Dove N Doubt is west. printed name of Dove N Doubt is "Dove [']N Doubt". "This is obviously a front for illegal activity."
@@ -213,6 +217,10 @@ the lotus life is scenery. "The lotus blossoms look wonderful. [if sco-notice-kn
 chapter vented vials
 
 the vented vials are a thing. description is "They don't seem to be much use in their present form.".
+
+chapter dented dials
+
+the dented dials are a thing.
 
 chapter tree troop
 

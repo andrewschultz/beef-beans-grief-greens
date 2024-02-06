@@ -173,6 +173,7 @@ this is the vr-heave-ho rule:
 	say "You and [the lout] pull on one, two, THREE! It takes a couple of times, but the rug bursts free from the floor. You see [if sco-believe-below is true]nothing under the rug. You were sort of hoping for a new passage. Maybe you can do more than just hope.[paragraph break]Maybe there's a way to visualize a way down[else]an outline of the passage you believed was there[end if].[paragraph break]You shake hands with [the lout], who exits and nods to wish you the best.";
 	moot lout;
 	say "[line break]Also, you take some time to look inside the oven. You find something called a goon guide. But you can't use it, because you're not a goon. Or can you?";
+	now player has goon guide;
 	trigger-bee;
 
 a goodrhyme rule (this is the vc-grieve-grow rule):
@@ -250,25 +251,20 @@ section passive pit
 
 a goodrhyme rule (this is the vc-massive-mitt rule):
 	if player is not in oh oh, unavailable;
-	if sco-massive-mitt is false:
-		vcp "You still need to do something!";
-		not-yet;
 	if sco-massive-mitt is true:
-		vcal "You already did this!";
+		vcal "You already got the massive mitt from the passive pit!";
 		already-done;
 	ready;
 
 this is the vr-massive-mitt rule:
 	now sco-massive-mitt is true;
-	say "Hooray! You figured what to do! You get a point!";
+	say "Now that you know what to look for, you are patient enough to look through the passive pit. You sift through a remote control, some matches, a paddleball, a thermos, and oil cans with gun holes in them before you uncover a massive mitt.";
+	now player has massive mitt;
 
 section squalor square scoring
 
 a goodrhyme rule (this is the vc-fight-fires rule):
-	if player is not in squalor square, unavailable;
-	if sco-fight-fires is false:
-		vcp "You still need to do something!";
-		not-yet;
+	if light lyres are not touchable, unavailable;
 	if sco-fight-fires is true:
 		vcal "You already fought the fires!";
 		already-done;
@@ -364,6 +360,8 @@ this is the vr-zap-zoo rule:
 	now sco-zap-zoo is true;
 	say "Yes, yes. Much better now. The terrain changes!";
 	move ferret fake to gap goo;
+	move tree troop to gap goo;
+	move lotus life to gap goo;
 
 section items in Gap Goo
 
@@ -402,17 +400,15 @@ this is the vr-carrot-cake rule:
 
 a goodrhyme rule (this is the vc-dented-dials rule):
 	if player is not in gap goo, unavailable;
-	if sco-dented-dials is false:
-		vcp "You still need to do something!";
-		not-yet;
 	if sco-dented-dials is true:
-		vcal "You already did this!";
+		vcal "You already got the dented dials!";
 		already-done;
 	ready;
 
 this is the vr-dented-dials rule:
 	now sco-dented-dials is true;
-	say "Hooray! You figured what to do! You get a point!";
+	say "The vented vials seem useless, but dented dials less so. They transmogrify. You take them.";
+	now player has dented dials;
 
 chapter Took Tarred scoring
 
@@ -420,7 +416,8 @@ to get-untarred:
 	if shard-score < 3:
 		say "You feel the area's hold on you weaken.";
 	else:
-		say "You feel sucked out of whatever the shard held you in. As you come back to [dove], the shard shatters.";
+		say "You feel sucked out of whatever the shard held you in. As you come back to [dove], the shard shatters. You sense there's nothing more to do here, so you walk back to the center of the action.";
+		move the player to Wandering Where, without printing a room description;
 
 this is the shardy rule:
 	if shook shard is touchable:
@@ -433,11 +430,8 @@ this is the shardy rule:
 
 a goodrhyme rule (this is the vc-book-bard rule):
 	abide by the shardy rule;
-	if sco-book-bard is false:
-		vcp "You still need to do something!";
-		not-yet;
 	if sco-book-bard is true:
-		vcal "You already did this!";
+		vcal "You already booked a bard!";
 		already-done;
 	ready;
 
