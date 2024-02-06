@@ -282,6 +282,18 @@ volume unsorted
 
 volume standard vebs
 
+understand "x" as examining.
+
+book examining
+
+rule for supplying a missing noun when examining:
+	if player has fast feast:
+		if inventory-warn-yet is false:
+			say "NOTE: X on its own defaults to [the feast] for a long as you carry it.";
+			now inventory-warn-yet is true;
+		now noun is fast feast;
+	continue the action;
+
 book taking inventory
 
 check taking inventory:
