@@ -102,6 +102,10 @@ chapter played plug
 
 the played plug is a rhymable. description is "It looks serviceable enough to provide power. You don't know much about electricity."
 
+chapter goon guide
+
+the goon guide is a rhymable. description is "[if sco-prune-pride is false]Not for you. You don't want to be condescending[else]Ah. It makes sense now[end if]."
+
 volume "where" rooms
 
 after printing the locale description for a wandroom:

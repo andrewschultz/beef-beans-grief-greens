@@ -14,6 +14,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "leave"	"lo"	--	--	false	true	true	false	reeve row	vc-leave-lo rule	vr-leave-lo rule	--	--
 "believe"	"below"	--	--	false	true	true	false	reeve row	vc-believe-below rule	vr-believe-below rule	--	"You can [b]BELIEVE BELOW[r] [once-now of vc-believe-below rule] you see a possible way down from [here-in of reeve row]."
 "grieve"	"grow"	--	--	false	true	true	false	reeve row	vc-grieve-grow rule	vr-grieve-grow rule	--	--
+"prune"	"pride"	--	--	false	true	true	false	reeve row	vc-prune-pride rule	vr-prune-pride rule	--	--
 "pondering"	"pair"	--	--	false	true	true	false	wandering where	vc-pondering-pair rule	vr-pondering-pair rule	--	--
 "squandering"	"square"	--	--	false	true	true	false	wandering where	vc-squandering-square rule	vr-squandering-square rule	--	--
 "maundering"	"mare"	--	--	false	true	true	false	wandering where	vc-maundering-mare rule	vr-maundering-mare rule	--	--
@@ -48,6 +49,23 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "carrot"	"cake"	--	--	false	true	true	false	Gap Goo	vc-carrot-cake rule	vr-carrot-cake rule	--	--
 "see"	"soup"	--	--	false	true	true	false	gap goo	vc-see-soup rule	vr-see-soup rule	--	--
 "dented"	"dials"	--	--	false	true	true	false	gap goo	vc-dented-dials rule	vr-dented-dials rule	--	--
+
+section goon guide
+
+a goodrhyme rule (this is the vc-prune-pride rule):
+	if goon guide is not touchable, unavailable;
+	if sco-prune-pride is true:
+		vcal "You're already humble enough.";
+		already-done;
+	ready;
+
+this is the vr-prune-pride rule:
+	now sco-prune-pride is true;
+	say "You get over your rage at the goon guide allowing bad people to make food as tasty as good people could make. You realize you are not the judge.[paragraph break]The goon guide will be there with further technical help when you need it, to help repair the oven. You have an idea of the exact parts that are missing now. You will be more observant in the future when you look around.";
+	move passive pit to Oh Oh;
+	move vented vials to Gap Goo;
+	move Light Lyres to Squalor Square;
+
 
 chapter all the time
 

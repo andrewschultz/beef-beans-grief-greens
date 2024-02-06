@@ -47,6 +47,10 @@ sco-made-mug is a truth state that varies.
 sco-jade-jug is a truth state that varies.
 sco-played-plug is a truth state that varies.
 
+section oven-specific globals
+
+sco-prune-pride is a truth state that varies.
+
 chapter Wandering Where globals
 
 sco-pondering-pair is a truth state that varies.
