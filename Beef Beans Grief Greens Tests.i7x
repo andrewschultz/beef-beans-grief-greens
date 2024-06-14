@@ -6,20 +6,24 @@ volume test chunks
 
 book big tests
 
-test firstlair with "test opt/test w1/test lair".
+test sofar with "test opt/test w1/test w2w".
 
 test thru with "test trtr/test hh/test final/test allend".
 
-test jthru with "test w1a/test lair/test postlair/out/e/w/pluck plate/in/out/test pair/test square/test mare/test shard/in/believe below/test bee/d/test thru".
+test jthru with "test w1a/test w2w1/test w2w2/out/e/w/pluck plate/in/out/test pair/test square/test mare/test shard/in/believe below/test bee/d/test thru".
 
 book verified tests that are part of the game
 
-test w1 with "made mug/jade jug/leave lo". [start of game]
-test w1a with "grieve grow/test w1/sassed ceased." [start of game with bonus points]
+test w1 with "grieve grow/made mug/jade jug/leave lo". [start of game]
+test w1a with "test w1/sassed ceased." [start of game with bonus points]
 
 book tests for wandering where branches
 
-test lair with "laundering lair/w/lovin lout/shovin shout/oven out/heave ho".
+[the west is made first as you get the oven and learn what pieces are needed for it]
+
+test w2w with "test w2w1/test w2w2".
+test w2w1 with "laundering lair/lovin lout/shovin shout/oven out/heave ho".
+test w2w2 with "prune pride/played plug".
 
 test pair with "pondering pair/cocoa/massive mitt/s". [north]
 
@@ -28,8 +32,6 @@ test square with "squandering square/fight fires/white wires/w". [east]
 test mare with "maundering mare/zap zoo/see soup/notice knife/dented dials/carrot cake/n". [west]
 
 book partial tests
-
-test postlair with "prune pride/played plug".
 
 test opt with "sassed ceased". [optional point]
 

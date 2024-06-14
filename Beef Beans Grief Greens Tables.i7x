@@ -301,7 +301,7 @@ a goodrhyme rule (this is the vc-lovin-lout rule):
 this is the vr-lovin-lout rule:
 	now sco-lovin-lout is true;
 	say "A lovin['] lout strolls sheepishly into view, not sure to explain whether they've been terribly loyal, or they didn't mean to do the stuff the bad people suggested they do, or else. You assure them that's over now, and you want someone who can help a bit. For what, you're not sure yet.[paragraph break]You take a closer look at the oven. It's missing a lot! You probably need to find bits and pieces to make it serviceable again.";
-	move oven to Dove N Doubt;
+	move lout to Dove N Doubt;
 
 a goodrhyme rule (this is the vc-shovin-shout rule):
 	if player is not in dove n doubt, unavailable;
@@ -319,6 +319,9 @@ this is the vr-shovin-shout rule:
 
 a goodrhyme rule (this is the vc-oven-out rule):
 	if player is not in dove n doubt and oven is not touchable, unavailable;
+	if sco-lovin-lout is false:
+		vcp "You can't move the oven out by yourself!";
+		not-yet;
 	if sco-shovin-shout is false:
 		vcp "You may need to dislodge the oven a bit before really moving it.";
 		not-yet;
@@ -763,6 +766,7 @@ volume can't go
 table of noways
 noway-rm	noway-txt
 Reeve Row	"Weird. No directions here."
+Wandering Where	"You feel you should be able to go [noun]. [if number of wanderable directions is 0]You need to guess at where the roads might lead[else]You already were able to make your way [list of wanderable directions], after all[end if]."
 
 volume homonyms
 

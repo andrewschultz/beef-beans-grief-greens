@@ -108,7 +108,7 @@ report examining Last Least Fast Feast:
 
 chapter rayed rug
 
-the rayed rug is a rhymable in Reeve Row. "A rayed rug covers part of the floor here.". description is "[if rug-score is 0]All the rays are dim now[else if rug-score is 1]About one-third of the rays are still bright[else if rug-score is 1]About two-thirds of the rays are still bright[else]There are a lot of bright rays on the rug[end if]."
+the rayed rug is a rhymable in Reeve Row. "A rayed rug covers part of the floor here.". description is "[if rug-score is 3]All the rays are dim now[else if rug-score is 2]About one-third of the rays are still bright[else if rug-score is 1]About two-thirds of the rays are still bright[else]There are a lot of bright rays on the rug[end if]."
 
 guess-table of rayed rug is the table of rayed rug guesses.
 
@@ -119,6 +119,10 @@ the played plug is a rhymable. description is "It looks serviceable enough to pr
 chapter goon guide
 
 the goon guide is a rhymable. description is "[if sco-prune-pride is false]Not for you. You don't want to be condescending[else]Ah. It makes sense now[end if]."
+
+after examining goon guide when sco-prune-pride is true:
+	say "(placeholder for things you need.)";
+	continue the action;
 
 volume "where" rooms
 
@@ -144,8 +148,6 @@ to say dirlist:
 for printing the name of a direction (called di) when name-loc is true:
 	say "[b][printed name of di in upper case][r] to [the room di of location of player]";
 	the rule succeeds;
-
-check going south in Wandering Where: try going inside instead;
 
 after looking in Wandering Where when Wandering Where is unvisited:
 	say "[i]From now on, you can go back inside to Reeve Row, or outside back here.[r]";
@@ -376,6 +378,7 @@ check taking:
 volume game specific verbs
 
 check talktoing:
+	if noun is lovin lout, say "The lovin['] lout blinks and smiles and waves at you. They are probably better at physical activity than words." instead;
 	if noun is a rhymeperson:
 		if sco-yappy-yall is true, say "But the talking has already occurred. It is time for vigorous action and exercise." instead;
 		say "The ceremony is not the time for small talk with any individual. [noun] is an important part of the ceremony. You sense anything you have to say should be shared collectively, encouraging others to speak up, too." instead;
