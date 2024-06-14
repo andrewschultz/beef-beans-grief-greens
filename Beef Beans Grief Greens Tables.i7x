@@ -675,6 +675,7 @@ a goodrhyme rule (this is the vc-sweet-swell rule):
 this is the vr-sweet-swell rule:
 	now sco-sweet-swell is true;
 	say "Leet Lel was pretty awesome.";
+	end-stub;
 
 a goodrhyme rule (this is the vc-heat-hell rule):
 	if player is not in compete compel, unavailable;
@@ -686,6 +687,7 @@ a goodrhyme rule (this is the vc-heat-hell rule):
 this is the vr-heat-hell rule:
 	now sco-heat-hell is true;
 	say "Leet Lel was pretty awful.";
+	end-stub;
 
 a goodrhyme rule (this is the vc-repeat-repel rule):
 	if player is not in compete compel, unavailable;
@@ -697,6 +699,7 @@ a goodrhyme rule (this is the vc-repeat-repel rule):
 this is the vr-repeat-repel rule:
 	now sco-repeat-repel is true;
 	say "Leet Lel wasn't so bad.";
+	end-stub;
 
 book general flip stubs
 
@@ -731,6 +734,13 @@ to kick-off-bell:
 	if well-score is 3:
 		move Sheet Shell to Compete Compel;
 		say "[line break]Suddenly, with the Sheet Shell in place, ready for a book, you hear your postal delivery person in the distance. You hope to rush to the door, wherever that is. You know if you don't show up, they won't leave any potential package. But how? You need motivation and hustle!"
+
+to end-stub:
+	if allow-win is false:
+		say "In testing, so we try again.";
+		continue the action;
+	end the game saying "Cease seeking: Peace? PEAKING!";
+	follow the shutdown rules;
 
 volume can't go
 

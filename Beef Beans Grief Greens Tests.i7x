@@ -6,13 +6,20 @@ volume test chunks
 
 book big tests
 
-test start with "test opt/test row/test lair".
+test firstlair with "test opt/test w1/test lair".
 
-test thru with "test trtr/test hh/test final".
+test thru with "test trtr/test hh/test final/test allend".
 
-test jthru with "grieve grow/test start/out/e/w/pluck plate/in/played plug/prune pride/out/test pair/test square/test mare/test shard/in/believe below/test bee/gonear trappy trawl/test thru/winx".
+test jthru with "test w1a/test lair/test postlair/out/e/w/pluck plate/in/out/test pair/test square/test mare/test shard/in/believe below/test bee/d/test thru".
 
-book temporary tests
+book verified tests that are part of the game
+
+test w1 with "made mug/jade jug/leave lo". [start of game]
+test w1a with "grieve grow/test w1/sassed ceased." [start of game with bonus points]
+
+book tests for wandering where branches
+
+test lair with "laundering lair/w/lovin lout/shovin shout/oven out/heave ho".
 
 test pair with "pondering pair/cocoa/massive mitt/s". [north]
 
@@ -22,11 +29,9 @@ test mare with "maundering mare/zap zoo/see soup/notice knife/dented dials/carro
 
 book partial tests
 
-test opt with "sassed ceased".
+test postlair with "prune pride/played plug".
 
-test row with "made mug/jade jug/leave lo".
-
-test lair with "laundering lair/w/lovin lout/shovin shout/oven out/heave ho".
+test opt with "sassed ceased". [optional point]
 
 test shard with "w/hook hard/book bard/cook card/look lard".
 
@@ -36,9 +41,41 @@ test trtr with "scrappy scrawl/whappy wall".
 
 test hh with "pappy paul/sappy saul/known nora/lone laura/cappy caul/yappy yall/bappy ball".
 
-test final with "wheat well/feet fell/sheet shell/beat bell/meet mel/repeat repel".
+test final with "wheat well/feet fell/sheet shell/beat bell/meet mel".
+
+test finaln with "test final/repeat repel".
+
+book endings test
+
+test allend with "winoff/sweet swell/heat hell/repeat repel/winon/repeat repel".
 
 volume test command(s)
+
+to set-win-flags (t - a truth state):
+	say "Allowing the win flag at the end is [if t is allow-win]already[else]now[end if] set to [t].";
+	now allow-win is t;
+
+chapter winoffing
+
+winoffing is an action out of world.
+
+understand the command "winoff" as something new.
+
+understand "winoff" as winoffing.
+
+carry out winoffing:
+	set-win-flags false;
+
+chapter winoning
+
+winoning is an action out of world.
+
+understand the command "winon" as something new.
+
+understand "winon" as winoning.
+
+carry out winoning:
+	set-win-flags true;
 
 chapter winxing
 

@@ -137,6 +137,10 @@ sco-repeat-repel is a truth state that varies.
 
 chapter unsorted globals
 
+volume test globals
+
+allow-win is a truth state that varies. allow-win is true.
+
 Beef Beans Grief Greens Globals ends here.
 
 ---- DOCUMENTATION ----
