@@ -254,8 +254,37 @@ Trappy Trawl is a room in Home Haw. "You're not sure which way to go here. You c
 
 for printing a locale paragraph about a rhymeperson (called rp):
 	if rp is mentioned, continue the action;
-	say "So far, you have summoned [list of rhymepersons in location of player] here, and [if number of rhymepersons in location of player > 1]they are[else]they are[end if] ready for the ceremony.";
+	if hall-guest-score is 0:
+		say "It's very empty here. You sense you should bring people here. Maybe not the most important, but people with their own styles, maybe even people who contrast with others.";
+	else if hall-guest-score is 1:
+		say "[RP] looks a bit lonely by [if RP is male]himself[else]herself[end if]. You need more people.";
+	else if hall-guest-score is 2:
+		if hall-female-guest-score is 1:
+			say "You sense [list of rhymepersons in happy hall] both need an opposite near for full harmony.";
+		else:
+			say "[list of rhymepersons in happy hall] seem to balance each other out nicely, but you sense another pair is needed.";
+	else if hall-guest-score is 3:
+		if hall-female-guest-score is 1:
+			say "[list of female rhymepersons in happy hall] seem to provide a pleasing contrast with each other, but [random male rhymeperson in happy hall] seems a bit out of place and needs someone to contrast with.";
+		else:
+			say "[list of male rhymepersons in happy hall] seem to provide a pleasing contrast with each other, but [random female rhymeperson in happy hall] seems a bit out of place and needs someone to contrast with.";
+	else if hall-guest-score is 4:
+		say "Everyone seems to be here now! They seem to be waiting for [if sco-yappy-yall is false]permission to speak freely[else]a more active, less talkative part of the ritual. The final bit[end if].[paragraph break]";
+		if sco-cappy-caul is false:
+			say "You sense you do not have the proper ceremonial garb.";
+		else if sco-yappy-yall is false:
+			say "There's an uneasy silence in the air. How to break it?";
+		else:
+			say "Nobody here is hungry yet. Perhaps it is time to play something odd, something unique to the gnome world, something with an odd name, something humans would not consider a sport. But it is to you gnomes, and it's an important one.";
 	now all rhymepersons in location of player are mentioned.
+
+to say they-he-she-trawl:
+	if number of rhymepersons in location of player > 1:
+		say "they are";
+	else if hall-female-guest-score is 1:
+		say "she is";
+	else:
+		say "he is"
 
 chapter Scrappy Scrawl
 
@@ -263,23 +292,23 @@ the scrappy scrawl is scenery. "Bust through a common roadblock with an irregula
 
 book Happy Hall
 
-Happy Hall is a room in Gnome Gnaw. "The happy hall really does have its own aura."
+Happy Hall is a room in Gnome Gnaw. "The happy hall really does have its own aura, one [if hall-female-guest-score is 0]that mystifies you, but you sense it holds important secrets[else if hall-female-guest-score is 1]you sense you've figured out halfway[else]you are fully comfortable in[end if]."
 
 chapter Pappy Paul
 
-Pappy Paul is a rhymeperson. description is "Pappy Paul knows he is a bit too serious at times, but it's who he is. [if sco-sappy-saul is true]Fortunately, Sappy Saul is here to balance him out[else]He needs someone to balance him out[end if]."
+Pappy Paul is a male rhymeperson. description is "Pappy Paul knows he is a bit too serious at times, but it's who he is. [if sco-sappy-saul is true]Fortunately, Sappy Saul is here to balance him out[else]He needs someone to balance him out[end if]."
 
 chapter Sappy Saul
 
-Sappy Saul is a rhymeperson. description is "Sappy Saul knows he is a bit too joking or friendly at times, but it's who he is. [if sco-sappy-saul is true]Fortunately, Pappy Paul is here to balance him out[else]He needs someone to balance him out[end if]."
+Sappy Saul is a male rhymeperson. description is "Sappy Saul knows he is a bit too joking or friendly at times, but it's who he is. [if sco-sappy-saul is true]Fortunately, Pappy Paul is here to balance him out[else]He needs someone to balance him out[end if]."
 
 chapter Known Nora
 
-Known Nora is a rhymeperson. description is "Known Nora is very social indeed, sometimes around people who need their space, but it's who she is. [if sco-lone-laura is true]Fortunately, Lone Laura is here to balance her out[else]She needs someone to balance her out[end if]."
+Known Nora is a female rhymeperson. description is "Known Nora is very social indeed, sometimes around people who need their space, but it's who she is. [if sco-lone-laura is true]Fortunately, Lone Laura is here to balance her out[else]She needs someone to balance her out[end if]."
 
 chapter Lone Laura
 
-Lone Laura is a rhymeperson. description is "Lone Laura keeps to herself, sometimes fearing her quite good advice would be unwelcome. But it's who she is. [if sco-lone-laura is true]Fortunately, Known Nora is here to balance her out[else]She needs someone to balance her out[end if]."
+Lone Laura is a female rhymeperson. description is "Lone Laura keeps to herself, sometimes fearing her quite good advice would be unwelcome. But it's who she is. [if sco-lone-laura is true]Fortunately, Known Nora is here to balance her out[else]She needs someone to balance her out[end if]."
 
 book Wheat Well
 

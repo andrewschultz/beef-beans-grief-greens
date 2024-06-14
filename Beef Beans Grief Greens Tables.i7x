@@ -516,7 +516,7 @@ a goodrhyme rule (this is the vc-pappy-paul rule):
 this is the vr-pappy-paul rule:
 	now sco-pappy-paul is true;
 	say "Pappy Paul appears when summoned.";
-	move Pappy Paul to Happy Hall;
+	hall-move Pappy Paul;
 
 a goodrhyme rule (this is the vc-sappy-saul rule):
 	if player is not in happy hall, unavailable;
@@ -527,8 +527,8 @@ a goodrhyme rule (this is the vc-sappy-saul rule):
 
 this is the vr-sappy-saul rule:
 	now sco-sappy-saul is true;
-	say "Sappy Saul appears when summoned.";
-	move Sappy Saul to Happy Hall;
+	say "Sappy Saul seems almost too happy to be summoned, then apologetic when he is.";
+	hall-move Sappy Saul;
 
 a goodrhyme rule (this is the vc-cappy-caul rule):
 	if player is not in happy hall, unavailable;
@@ -558,7 +558,7 @@ a goodrhyme rule (this is the vc-yappy-yall rule):
 
 this is the vr-yappy-yall rule:
 	now sco-yappy-yall is true;
-	say "Everyone has a say about the deceased.!";
+	say "Everyone has a say about the deceased.";
 
 a goodrhyme rule (this is the vc-bappy-ball rule):
 	if player is not in happy hall, unavailable;
@@ -584,7 +584,7 @@ a goodrhyme rule (this is the vc-lone-laura rule):
 this is the vr-lone-laura rule:
 	now sco-lone-laura is true;
 	say "Lone Laura appears!";
-	move Lone Laura to Happy Hall;
+	hall-move Lone Laura;
 
 a goodrhyme rule (this is the vc-known-nora rule):
 	if player is not in happy hall, unavailable;
@@ -596,7 +596,7 @@ a goodrhyme rule (this is the vc-known-nora rule):
 this is the vr-known-nora rule:
 	now sco-known-nora is true;
 	say "Known Nora appears!";
-	move Known Nora to Happy Hall;
+	hall-move Known Nora;
 
 chapter Compete Compel scoring
 
@@ -716,13 +716,20 @@ to trigger-bee:
 		say "You hear an odd, insistent buzzing from outside.";
 		move bopper bee to Wandering Where;
 
-chapter Trappy Trawl
+chapter Trappy Trawl / Happy Hall
 
 this is the trawl-not-hall rule:
 	if player is in happy hall:
 		vcal "You already navigated the trappy trawl.";
 		already-done;
 	if player is not in trappy trawl, unavailable;
+
+to hall-move (rh - a rhymable):
+	move rh to Happy Hall;
+	if rh is female:
+		set pronoun her to rh;
+	else:
+		set pronoun him to rh;
 
 chapter Compete Compel
 

@@ -69,12 +69,12 @@ chapter types
 
 a feastitem is a kind of thing. a feastitem has text called fdesc. a feastitem can be toeat, auxiliary or silverware. a feastitem is usually silverware.
 
-a rhymeperson is a kind of rhymable. a rhymeperson is proper-named.
+a rhymeperson is a kind of rhymable. a rhymeperson is proper-named. a rhymeperson can be male or female.
 
 after doing something with a rhymeperson:
 	set the pronoun it to noun;
-	set the pronoun him to noun;
-	set the pronoun her to noun;
+	if noun is male, set the pronoun him to noun;
+	if noun is female, set the pronoun her to noun;
 	set the pronoun them to noun;
 	continue the action;
 
@@ -132,6 +132,12 @@ to decide which number is shard-score:
 
 to decide which number is hall-guest-score:
 	decide on (boolval of sco-pappy-paul) + (boolval of sco-sappy-saul) + (boolval of sco-lone-laura) + (boolval of sco-known-nora);
+
+to decide which number is hall-male-score:
+	decide on (boolval of sco-pappy-paul) + (boolval of sco-sappy-saul);
+
+to decide which number is hall-female-guest-score:
+	decide on (boolval of sco-lone-laura) + (boolval of sco-known-nora);
 
 to decide which number is well-score:
 	decide on (boolval of sco-feet-fell) + (boolval of sco-wheat-well) + (boolval of sco-sheet-shell) + (boolval of sco-beat-bell) + (boolval of sco-meet-mel);
