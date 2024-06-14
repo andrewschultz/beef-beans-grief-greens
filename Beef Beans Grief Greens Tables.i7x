@@ -701,7 +701,13 @@ book general flip stubs
 chapter Reeve Row
 
 to rug-check:
-	say "[line break]A ray vanishes from the rug. [if rug-score is 3]There are no more. It stays uselessly off to the side[else]Perhaps the rug offers more[end if]";
+	say "[line break]A ray vanishes from the rug. ";
+	if rug-score is 3:
+		say "There are no more. The rug flops uselessly off to the side";
+	else if rug-score is 2:
+		say "There's just one ray left now";
+	else:
+		say "A couple rays still remain";
 
 to trigger-bee:
 	if sco-heave-ho is true and sco-believe-below is true:

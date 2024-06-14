@@ -36,6 +36,7 @@ book thing tables
 
 table of rayed rug guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
+"aid"	"ugh"	--	false	--	"You let out a sigh of frustration. You need help."
 "bade"	"bug"	--	false	--	"You don't need to deal with insects AND grief."
 "charade"	"shrug"	--	false	--	"You reiterate to yourself you're in no mood for games."
 "fade"	"fug"	--	false	--	"Alas, the fog in your brain remains."

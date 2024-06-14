@@ -107,7 +107,7 @@ report examining Last Least Fast Feast:
 
 chapter rayed rug
 
-the rayed rug is a rhymable in Reeve Row. "A rayed rug covers part of the floor here.". description is "Rays of what you'd guess are sunlight stretch from the center."
+the rayed rug is a rhymable in Reeve Row. "A rayed rug covers part of the floor here.". description is "[if rug-score is 0]All the rays are dim now[else if rug-score is 1]About one-third of the rays are still bright[else if rug-score is 1]About two-thirds of the rays are still bright[else]There are a lot of bright rays on the rug[end if]."
 
 guess-table of rayed rug is the table of rayed rug guesses.
 
@@ -140,7 +140,7 @@ to say dirlist:
 	say "[list of wanderable directions]";
 	now name-loc is false;
 
-before printing the name of a direction (called di) when name-loc is true:
+for printing the name of a direction (called di) when name-loc is true:
 	say "[b][printed name of di in upper case][r] to [the room di of location of player]";
 	the rule succeeds;
 

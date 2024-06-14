@@ -66,7 +66,7 @@ chapter wandering
 a wandroom is a kind of room. A wandroom has a direction called wanddir.
 
 to wander (rm - a room):
-	say "You [if rm is unvisited]think and reminisce, and yes, there is a way[else]You find your way back[end if] to [rm][if rm is unvisited], though maybe it's easier to type [wanddir of rm] in the future[end if].";
+	say "You [if rm is unvisited]think and reminisce, and yes, there is a way[else]You find your way back[end if] to [if rm is unvisited]such a place, though maybe it's easier to go [wanddir of rm] in the future. The name is a bit more specific than what you'd imagined[else][rm][end if].";
 	if rm is unvisited:
 		open-psg (wanddir of rm) and rm;
 	move player to rm;
