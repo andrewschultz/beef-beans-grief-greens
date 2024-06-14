@@ -282,7 +282,11 @@ Compete Compel is a room in Gnome Gnaw. printed name is "[if sco-feet-fell is fa
 
 chapter Sheet Shell
 
-Sheet Shell is a thing. description of sheet shell is "[one of]Why, it's a biography of someone who passed this year, someone who you had various opinions about. Someone you couldn't put out of your mind for stretches. Someone who taught you so much but could be pretty annoying at times.[paragraph break][i]Leet Lel[r], by Pete Pell.[paragraph break]It's up to you, what your final opinion of Lel is. But now is the time to decide and move on[or]You don't have the time or emotional energy to read through it again. You need to make a decision on what kind of fate Leet Lel deserves, what kind of person Leet Lel was, and move on.[stopping]".
+Sheet Shell is a thing. description of sheet shell is "While you're probably not going to be bugged here, the sheet shell gives double secret plus solitude, for reading something truly important."
+
+chapter Leet Lel by Pete Pell
+
+Leet Lel by Pete Pell is a thing. printed name is "[i]Leet Lel[r], by Pete Pell". description is "[one of]It's a biography of someone who passed this year, someone who you had various strong opinions about. Someone you couldn't put out of your mind for stretches. Someone who taught you so much but could be pretty annoying at times. They had ... baggage. They could've been a heck of a lot nicer. Pete Pell has laid out the facts, though, and it's up to you to decide whether Lel's good outweighs the bad, or vice versa, or they balance out.[paragraph break]It's up to you, what your final opinion of Lel is. But now is the time to decide and move on[or]You don't have the time or emotional energy to read through it again. You need to make a decision on what kind of fate Leet Lel deserves, what kind of person Leet Lel was, based on your interpretations of the readings, and move on. Good, neutral, bad?[stopping]".
 
 volume Dome D'Aww
 

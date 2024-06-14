@@ -648,7 +648,7 @@ a goodrhyme rule (this is the vc-beat-bell rule):
 
 this is the vr-beat-bell rule:
 	now sco-beat-bell is true;
-	say "Aaand ... pursuant to the rules of dream logic, you just make it! But now you have no clue what your mail carrier's name is!";
+	say "Aaand ... pursuant to general dream/fantasy logic rules, you just make it! But now, what with the Internet taking over with emails, you often forget what your lovable mail carrier's name is! There must be a clue to the ";
 
 a goodrhyme rule (this is the vc-meet-mel rule):
 	if player is not in compete compel, unavailable;
@@ -662,7 +662,7 @@ a goodrhyme rule (this is the vc-meet-mel rule):
 
 this is the vr-meet-mel rule:
 	now sco-meet-mel is true;
-	say "Yes! You go out to meet Mel! Mel gives you something.[paragraph break]A sheet shell. That's a fancy name for a particularly noteworthy or gaudy book in these here parts.";
+	say "Yes! You go out to meet Mel! Mel gives you something.[paragraph break][pete pell]. Memories come back to you, of Leet Lel, a larger-than-life figure that showed you so much, but who also seemed to have scorn for you.";
 	now player has sheet shell;
 
 a goodrhyme rule (this is the vc-sweet-swell rule):
@@ -674,7 +674,7 @@ a goodrhyme rule (this is the vc-sweet-swell rule):
 
 this is the vr-sweet-swell rule:
 	now sco-sweet-swell is true;
-	say "Leet Lel was pretty awesome.";
+	say "You decide that, although little well could be pretty crude at times, they showed you so much, and you really can't put that aside. After all, you didn't focus on the bad stuff, and they work exactly bigoted. You realize you were able to take the good stuff from them and leave the bad parts of their personality, yet, at the same time, you realize they were a bit braver than you, and you could have used even more of that bravery. Your overall evaluation is favorable. After all, how many inventors and such were jerks who left great work for non-jerks to enjoy? You were lucky to have had Leet Lel as part of your life.";
 	end-stub;
 
 a goodrhyme rule (this is the vc-heat-hell rule):
@@ -686,7 +686,7 @@ a goodrhyme rule (this is the vc-heat-hell rule):
 
 this is the vr-heat-hell rule:
 	now sco-heat-hell is true;
-	say "Leet Lel was pretty awful.";
+	say "True, Leet Lel showed you a lot of things that maybe nobody else would show you. But it was always tied up with him pointing out your inadequacies, or your shortcomings, or how you should really have noted in the 1st place, without really showing you how to figure these things out for yourself. And it wasn't just you. It was other people, and sometimes, you were just glad that you didn't have Leet Lel's wrath to put up with, or sarcasm. You felt as though you were subsisting at times. You felt guilty saying you liked people less exciting, and you even felt reaching out to them left them with the Mark of the Bore.[paragraph break]Leet Lel did a lot for you. But it came with strings attached. Striings beyond just being grateful, or reciprocity. You recall now other people warning you about Leet Lel, but Leet Lel showed you so much at first. Then, less, with time.[paragraph break]Maybe you will remember other awful things, or clues you should have seen, with time. You hope you do not dwell on it, but when it comes up, you won't turn it down. Perhaps there are ways you still need to find to let go, and the only way to start is to admit you have frustration still to let go of. A lot of it.[paragraph break]You also think of other people less abrasive than Leet Lel you were genuinely sad to see depart, or those who were less abrasive, and you said 'If I can put up with Leet Lel, I better put up with them.' But you did not really need to.[paragraph break]You will think about Leet Lel when you need to, and it will help you put aside things in the present.";
 	end-stub;
 
 a goodrhyme rule (this is the vc-repeat-repel rule):
@@ -698,7 +698,7 @@ a goodrhyme rule (this is the vc-repeat-repel rule):
 
 this is the vr-repeat-repel rule:
 	now sco-repeat-repel is true;
-	say "Leet Lel wasn't so bad.";
+	say "Leet Lel left a complex legacy. You can't deny the practical help they gave, or the cool songs or movies or books they showed you, but it came with a price. However, things just about balanced out. For all Leet Lel's thoughtlessness and condescension, there was a lot. And yet. There were times Leet Lel would be upset you knew something they didn't.[paragraph break]Taking the good with the bad is a cliche, but you feel you don't need to trumpet how Leet Lel could be a total jerk, and you don't need to feel too indebted for the neat things they showed you.[paragraph break]You do know there were times Leet Lel could be thoughtless and cruel when it seemed easier not to, and there were times Leet Lel would surprise you with something neat, just because. The two were not necessarily bound. You hope to do more of the second with your acquaintances remaining in this world.";
 	end-stub;
 
 book general flip stubs
