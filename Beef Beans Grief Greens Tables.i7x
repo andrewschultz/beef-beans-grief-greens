@@ -232,7 +232,8 @@ a goodrhyme rule (this is the vc-flopper-flea rule):
 
 this is the vr-flopper-flea rule:
 	now sco-flopper-flea is true;
-	say "Hooray! You figured what to do! You get a point!";
+	say "Wait! Something about the bee looks funny! Yes, it is not really a bee, but a less aggressive animal in disguise. Just knowing it is a flopper flea makes you less scared. Without fear, your running around gets more strategic, until it gets exhausted chasing you.";
+	moot bopper bee;
 
 chapter oh oh scoring
 

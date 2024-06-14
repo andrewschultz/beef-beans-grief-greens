@@ -76,10 +76,11 @@ after printing the locale description for Reeve Row:
 guess-table of Reeve Row is table of Reeve Row guesses.
 
 check going down in Reeve Row:
-	if rayed rug is in Reeve Row, say "It's possible something is under the rug, but ... well, you'd have to be prepared, for a special occasion." instead;
+	if rug-score < 3, say "It's possible something is under the rug, but ... well, you'd have to be prepared, for a special occasion." instead;
 	if sco-heave-ho is false, say "There's an outline leading down, but you can't figure the way to remove it." instead;
 	if sco-grieve-grow is false, say "You're not emotionally ready, yet. Yet. How can you steel yourself, so you know it's worth it?" instead;
 	if number of not carried feastitems > 0, say "You look at [feast]. You don't have everything, yet." instead;
+	move player to trappy trawl instead;
 
 check going outside in Reeve Row when Lovin Lout is in Reeve Row: say "You sense the lout could help with the rayed rug in some way." instead; [??GT must be inoperative]
 
