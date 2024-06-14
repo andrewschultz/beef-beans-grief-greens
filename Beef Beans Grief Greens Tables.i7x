@@ -662,7 +662,8 @@ a goodrhyme rule (this is the vc-meet-mel rule):
 
 this is the vr-meet-mel rule:
 	now sco-meet-mel is true;
-	say "Yes! You go out to meet Mel! Mel gives you something to read.";
+	say "Yes! You go out to meet Mel! Mel gives you something.[paragraph break]A sheet shell. That's a fancy name for a particularly noteworthy or gaudy book in these here parts.";
+	now player has sheet shell;
 
 a goodrhyme rule (this is the vc-sweet-swell rule):
 	if player is not in compete compel, unavailable;
@@ -704,11 +705,12 @@ chapter Reeve Row
 to rug-check:
 	say "[line break]A ray vanishes from the rug. ";
 	if rug-score is 3:
-		say "There are no more. The rug flops uselessly off to the side";
+		say "The final rays on the rug grow dull. The rug flops uselessly off to the side";
 	else if rug-score is 2:
-		say "There's just one ray left now";
+		say "The rug's rays go from one-third dull to one-third bright";
 	else:
-		say "A couple rays still remain";
+		say "Several rays on the rug (you'd say one-third) grow duller";
+	say "."
 
 to trigger-bee:
 	if sco-heave-ho is true and sco-believe-below is true:

@@ -282,7 +282,7 @@ Compete Compel is a room in Gnome Gnaw. printed name is "[if sco-feet-fell is fa
 
 chapter Sheet Shell
 
-Sheet Shell is a thing.
+Sheet Shell is a thing. description of sheet shell is "[one of]Why, it's a biography of someone who passed this year, someone who you had various opinions about. Someone you couldn't put out of your mind for stretches. Someone who taught you so much but could be pretty annoying at times.[paragraph break][i]Leet Lel[r], by Pete Pell.[paragraph break]It's up to you, what your final opinion of Lel is. But now is the time to decide and move on[or]You don't have the time or emotional energy to read through it again. You need to make a decision on what kind of fate Leet Lel deserves, what kind of person Leet Lel was, and move on.[stopping]".
 
 volume Dome D'Aww
 
