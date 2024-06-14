@@ -232,7 +232,8 @@ a goodrhyme rule (this is the vc-flopper-flea rule):
 
 this is the vr-flopper-flea rule:
 	now sco-flopper-flea is true;
-	say "Wait! Something about the bee looks funny! Yes, it is not really a bee, but a less aggressive animal in disguise. Just knowing it is a flopper flea makes you less scared. Without fear, your running around gets more strategic, until it gets exhausted chasing you.";
+	say "Wait! Something about the bee looks funny! Yes, it is not really a bee, but a less aggressive animal in disguise. Just knowing it is a flopper flea makes you less scared. Without fear, your running around gets more strategic, until it gets exhausted chasing you.[paragraph break]It buzzes and mumbles off. You're not surprised that, as it does, it drops a copper key.";
+	now player has copper key;
 	moot bopper bee;
 
 chapter oh oh scoring
@@ -288,6 +289,7 @@ a goodrhyme rule (this is the vc-white-wires rule):
 this is the vr-white-wires rule:
 	now sco-white-wires is true;
 	say "You see what to look for in the lyres. The white wires have to come in handy to fix the oven.";
+	now player has white wires;
 
 chapter Dove N Doubt scoring
 
@@ -348,7 +350,7 @@ a goodrhyme rule (this is the vc-hook-hard rule):
 this is the vr-hook-hard rule:
 	now sco-hook-hard is true;
 	say "You grab the shard and feel pulled to somewhere new...";
-	move player to Took Tarred, without printing a room description;
+	drop-player-at took tarred;
 	moot shook shard;
 
 chapter Gap Goo scoring
@@ -453,7 +455,8 @@ a goodrhyme rule (this is the vc-cook-card rule):
 
 this is the vr-cook-card rule:
 	now sco-cook-card is true;
-	say "Hooray! You figured what to do! You get a point!";
+	say "Oh my goodness. Could it be ... is it ... the missing insert from the goon guide? What luck!";
+	now player has cook card;
 	get-untarred;
 
 a goodrhyme rule (this is the vc-look-lard rule):

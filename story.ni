@@ -79,6 +79,7 @@ check going down in Reeve Row:
 	if rug-score < 3, say "It's possible something is under the rug, but ... well, you'd have to be prepared, for a special occasion." instead;
 	if sco-heave-ho is false, say "There's an outline leading down, but you can't figure the way to remove it." instead;
 	if sco-grieve-grow is false, say "You're not emotionally ready, yet. Yet. How can you steel yourself, so you know it's worth it?" instead;
+	if copper key is not moot, say "But you haven't unlocked the way down yet." instead;
 	if number of not carried feastitems > 0, say "You look at [feast]. You don't have everything, yet." instead;
 	if oven-fixed-yet is false, say "But you haven't found a way to cook [the list of toeat feastitems] yet." instead;
 	move player to trappy trawl instead;
@@ -91,14 +92,14 @@ Yves Eve O is a person. description of Yves is "You are [if gender-variable is 0
 
 section Last Least Fast Feast
 
-Last Least Fast Feast is a rhymable. the player carries Last Least Fast Feast. description of Last Least Fast Feast is "It's a vague description of the stuff you need for the end-of-year memorial feast. Perhaps they wanted to allow you artistic license, or perhaps they (or I) realized it'd not be a really fulfilling quest if they were specific. Or perhaps there's some weird obscure reason the feast tastes better or is more spiritually nourishing if it's prepared ad-hoc."
+Last Least Fast Feast is a rhymable. the player carries Last Least Fast Feast. description of Last Least Fast Feast is "[one of][fast feast] is a vague description of the stuff you need for the end-of-year memorial feast. Perhaps they wanted to allow you artistic license, or perhaps they (or I) realized it'd not be a really fulfilling quest if they were specific. Or perhaps there's some weird obscure reason the feast tastes better or is more spiritually nourishing if it's prepared ad-hoc[or]You check [fast feast] again for what you need[stopping]."
 
 guess-table of fast feast is the table of fast feast guesses.
 
 report examining Last Least Fast Feast:
 	repeat with F running through not silverware feastitems:
 		say "[fixed letter spacing]( [if player has F]X[else]-[end if] ) [fdesc of F][variable letter spacing][line break]";
-	say "[fixed letter spacing]([number of carried silverware feastitems]/[number of silverware feastitems]) silverware and such[variable letter spacing][line break]";
+	say "[fixed letter spacing]([number of carried silverware feastitems]/[number of silverware feastitems]) silverware and such[variable letter spacing][if number of silverware feastitems > 0]([list of silverware feastitems])[line break]";
 	if Trappy Trawl is unvisited:
 		say "[line break]";
 		if oven is in reeve row:
@@ -115,14 +116,22 @@ guess-table of rayed rug is the table of rayed rug guesses.
 
 chapter played plug
 
-the played plug is a rhymable. description is "It looks serviceable enough to provide power. You don't know much about electricity."
+the played plug is an oventhing. description is "It's not just a plug, but a plug with a cord! It looks serviceable enough to provide power. You don't know much about electricity.". fdesc is "a replacement cord for the oven".
 
 chapter goon guide
 
-the goon guide is a rhymable. description is "[if sco-prune-pride is false]Not for you. You don't want to be condescending[else]Ah. It makes sense now[end if]."
+the goon guide is a rhymable. description is "[one of]Now you've pruned your pride, you focus on the content of the goon guide. It tells you what to do to fix an oven and make very very tasty foods indeed[or]You revisit the goon guide to determine what you need[stopping].[paragraph break]There's even a handy checklist on the first page!"
+
+check examining goon guide when sco-prune-pride is false:
+	say "You think about it, but you're no goon. You hope you've lived a clean enough life, you could never be considered one. In your current state of mind, alas, you feel reading a goon guide might raise such suspicions." instead;
 
 after examining goon guide when sco-prune-pride is true:
-	say "(placeholder for things you need.)";
+	say "[fixed letter spacing]";
+	repeat with x running through oventhings:
+		say "([if player has x]X[else] [end if]) [fdesc of x][line break]";
+	say "[variable letter spacing]";
+	if cook card is off-stage:
+		say "[line break]Oh. It appears that there was also a list of extra-special recipes that was in one of the flaps, but it fell out. Maybe by some crazy coincidence, you can find it.";
 	continue the action;
 
 volume "where" rooms
@@ -164,7 +173,7 @@ guess-table of bopper bee is the table of bopper bee guesses.
 
 chapter Copper Key
 
-the copper key is a thing. "You hope it opens passage below Reeve Row.".
+the copper key is a thing. "You hope it opens passage below [here-in of reeve row].".
 
 book Squalor Square
 
@@ -233,7 +242,7 @@ check taking oven:
 
 chapter shook shard
 
-the shook shard is a rhymable.
+the shook shard is a rhymable. description is "It seems to have a weird hold on you, or have a bigger hold on you than it does.".
 
 book Gap Goo
 
@@ -373,14 +382,33 @@ rule for supplying a missing noun when examining:
 
 book taking inventory
 
+the bbgg inventory rule is listed instead of the print standard inventory rule in the carry out taking inventory rulebook.
+
+carry out taking inventory (this is the bbgg inventory rule):
+	say "Currently carrying:[line break]";
+	if number of carried not silverware feastitems > 0, say "  [list of carried not silverware feastitems] (tableware)[line break]";
+	if number of carried silverware feastitems > 0, say "  [list of carried silverware feastitems] (utensils)[line break]";
+	if number of carried oventhings > 0, say "  [list of carried oventhings] (to fix the oven [here-in of reeve row])[line break]";
+	now all things carried by player are marked for listing;
+	now all feastitems are not marked for listing;
+	now all oventhings are not marked for listing;
+	list the contents of the player, with newlines, indented, including contents, giving inventory information, with extra indentation, listing marked items only.
+
+[before listing contents when taking inventory:
+	group feastitems together;
+	group oventhings together;
+
+after grouping together feastitems: say " (for the feast)";
+after grouping together oventhings: say " (to repair and use the oven)";]
+
 check taking inventory:
 	if player has fast feast and inventory-warn-yet is false:
 		say "NOTE: X on its own may be more useful for the items you have, since it views the list you need for [this-game].";
 		now inventory-warn-yet is true;
 
 report taking inventory:
-	if oven is in reeve row and trappy trawl is unvisited:
-		say "You moved an oven [here-in of Reeve Row], too.";
+	if oven is in reeve row and number of carried oventhings is 0:
+		say "You moved an oven [here-in of Reeve Row], too, with the help of [the lout].";
 	continue the action;
 
 book taking
