@@ -20,8 +20,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "maundering"	"mare"	--	--	false	true	true	false	wandering where	vc-maundering-mare rule	vr-maundering-mare rule	--	--
 "laundering"	"lair"	--	--	false	true	true	false	wandering where	vc-laundering-lair rule	vr-laundering-lair rule	--	--
 "flopper"	"flea"	--	--	false	true	true	false	wandering where	vc-flopper-flea rule	vr-flopper-flea rule	--	--
-"massive"	"mitt"	--	--	false	true	true	false	oh oh	vc-massive-mitt rule	vr-massive-mitt rule	--	--
-"co"	"coa"	--	--	false	true	true	false	oh oh	vc-co-coa rule	vr-co-coa rule	"cocoa"	--
+"massive"	"mitt"	--	--	false	true	true	false	Ooh Ooh	vc-massive-mitt rule	vr-massive-mitt rule	--	--
 "fight"	"fires"	--	--	false	true	true	false	squalor square	vc-fight-fires rule	vr-fight-fires rule	--	--
 "white"	"wires"	--	--	false	true	true	false	squalor square	vc-white-wires rule	vr-white-wires rule	--	--
 "lovin"	"lout"	--	--	false	true	true	false	dove n doubt	vc-lovin-lout rule	vr-lovin-lout rule	--	--
@@ -33,6 +32,11 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "carrot"	"cake"	--	--	false	true	true	false	Gap Goo	vc-carrot-cake rule	vr-carrot-cake rule	--	--
 "see"	"soup"	--	--	false	true	true	false	gap goo	vc-see-soup rule	vr-see-soup rule	--	--
 "dented"	"dials"	--	--	false	true	true	false	gap goo	vc-dented-dials rule	vr-dented-dials rule	--	--
+"muu"	"muu"	--	--	false	true	true	false	ooh ooh	vc-muu-muu rule	vr-muu-muu rule	"mumu/muumuu"	--
+"tu"	"tu"	--	--	false	true	true	false	ooh ooh	vc-tu-tu rule	vr-tu-tu rule	--	--
+"doo"	"doo"	--	--	false	true	true	false	ooh ooh	vc-doo-doo rule	vr-doo-doo rule	--	--
+"poo"	"poo"	--	--	false	true	true	false	ooh ooh	vc-poo-poo rule	vr-poo-poo rule	--	--
+"boo"	"boo"	--	--	false	true	true	false	ooh ooh	vc-boo-boo rule	vr-boo-boo rule	--	--
 "book"	"bard"	--	--	false	true	true	false	took tarred	vc-book-bard rule	vr-book-bard rule	--	--
 "cook"	"card"	--	--	false	true	true	false	took tarred	vc-cook-card rule	vr-cook-card rule	--	--
 "look"	"lard"	--	--	false	true	true	false	took tarred	vc-look-lard rule	vr-look-lard rule	--	--
@@ -67,7 +71,7 @@ a goodrhyme rule (this is the vc-prune-pride rule):
 this is the vr-prune-pride rule:
 	now sco-prune-pride is true;
 	say "You get over your rage at the goon guide allowing bad people to make food as tasty as good people could make. You realize you are not the judge.[paragraph break]The goon guide will be there with further technical help when you need it, to help repair the oven. You have an idea of the exact parts that are missing now. You will be more observant in the future when you look around.";
-	move passive pit to Oh Oh;
+	move passive pit to Ooh Ooh;
 	move vented vials to Gap Goo;
 	move Light Lyres to Squalor Square;
 	move shook shard to Dove n Doubt;
@@ -195,7 +199,7 @@ a goodrhyme rule (this is the vc-pondering-pair rule):
 
 this is the vr-pondering-pair rule:
 	now sco-pondering-pair is true;
-	wander oh oh;
+	wander Ooh Ooh;
 
 a goodrhyme rule (this is the vc-squandering-square rule):
 	if player is not in wandering where, unavailable;
@@ -236,23 +240,84 @@ this is the vr-flopper-flea rule:
 	now player has copper key;
 	moot bopper bee;
 
-chapter oh oh scoring
+chapter Ooh Ooh scoring
 
-a goodrhyme rule (this is the vc-co-coa rule):
-	if player is not in oh oh, unavailable;
-	if sco-cocoa is true:
-		vcal "You already got cocoa!";
+section ooh ooh scoring
+
+a goodrhyme rule (this is the vc-muu-muu rule):
+	if player is not in ooh ooh, unavailable;
+	if sco-muu-muu is false:
+		vcp "You still need to do something!";
+		not-yet;
+	if sco-muu-muu is true:
+		vcal "You already did this!";
 		already-done;
 	ready;
 
-this is the vr-co-coa rule:
-	now sco-cocoa is true;
-	say "Bobo and Jojo found your little skirmish heartwarming. They're glad to help maybe warm you later. You enjoy a cup of cocoa, and they give you some powdered cocoa for later.";
+this is the vr-muu-muu rule:
+	now sco-muu-muu is true;
+	say "Hooray! You figured what to do! You get a point!";
+
+a goodrhyme rule (this is the vc-tu-tu rule):
+	if player is not in ooh ooh, unavailable;
+	if sco-tu-tu is false:
+		vcp "You still need to do something!";
+		not-yet;
+	if sco-tu-tu is true:
+		vcal "You already did this!";
+		already-done;
+	ready;
+
+this is the vr-tu-tu rule:
+	now sco-tu-tu is true;
+	say "Hooray! You figured what to do! You get a point!";
+
+a goodrhyme rule (this is the vc-doo-doo rule):
+	if player is not in ooh ooh, unavailable;
+	if sco-doo-doo is false:
+		vcp "You still need to do something!";
+		not-yet;
+	if sco-doo-doo is true:
+		vcal "You already did this!";
+		already-done;
+	ready;
+
+this is the vr-doo-doo rule:
+	now sco-doo-doo is true;
+	say "Hooray! You figured what to do! You get a point!";
+
+a goodrhyme rule (this is the vc-poo-poo rule):
+	if player is not in ooh ooh, unavailable;
+	if sco-poo-poo is false:
+		vcp "You still need to do something!";
+		not-yet;
+	if sco-poo-poo is true:
+		vcal "You already did this!";
+		already-done;
+	ready;
+
+this is the vr-poo-poo rule:
+	now sco-poo-poo is true;
+	say "Hooray! You figured what to do! You get a point!";
+
+a goodrhyme rule (this is the vc-boo-boo rule):
+	if player is not in ooh ooh, unavailable;
+	if sco-boo-boo is false:
+		vcp "You still need to do something!";
+		not-yet;
+	if sco-boo-boo is true:
+		vcal "You already did this!";
+		already-done;
+	ready;
+
+this is the vr-boo-boo rule:
+	now sco-boo-boo is true;
+	say "Hooray! You figured what to do! You get a point!";
 
 section passive pit
 
 a goodrhyme rule (this is the vc-massive-mitt rule):
-	if player is not in oh oh, unavailable;
+	if player is not in Ooh Ooh, unavailable;
 	if sco-massive-mitt is true:
 		vcal "You already got the massive mitt from the passive pit!";
 		already-done;
@@ -274,7 +339,7 @@ a goodrhyme rule (this is the vc-fight-fires rule):
 
 this is the vr-fight-fires rule:
 	now sco-fight-fires is true;
-	say "Hooray! You figured what to do! You get a point!";
+	say "What a good citizen you are! What a patron of the arts beyond giving money! You manage to stop the lyres from burning.[paragraph break]Perhaps some part of them that you can use is left, though.";
 
 a goodrhyme rule (this is the vc-white-wires rule):
 	if light lyres are not touchable, unavailable;

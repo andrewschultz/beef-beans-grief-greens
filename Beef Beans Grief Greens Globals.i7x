@@ -66,9 +66,13 @@ sco-laundering-lair is a truth state that varies.
 
 sco-flopper-flea is a truth state that varies.
 
-chapter Oh Oh globals
+chapter Ooh Ooh globals
 
-sco-cocoa is a truth state that varies.
+sco-muu-muu is a truth state that varies.
+sco-tu-tu is a truth state that varies.
+sco-doo-doo is a truth state that varies.
+sco-poo-poo is a truth state that varies.
+sco-boo-boo is a truth state that varies.
 
 sco-massive-mitt is a truth state that varies.
 

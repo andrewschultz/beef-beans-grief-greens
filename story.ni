@@ -194,21 +194,21 @@ chapter white whires
 
 the white wires are an oventhing. description is "You assume the goon guide will show you what wires to put, where.". fdesc is "revamped oven circuitry".
 
-book Oh Oh
+book Ooh Ooh
 
-Oh Oh is a wandroom in Roam Raw. wanddir of Oh Oh is north. printed name is "Oh, Oh...".
+Ooh Ooh is a wandroom in Roam Raw. wanddir of Ooh Ooh is north. printed name is "Ooh, Ooh...!".
 
 chapter jojo
 
-Jojo is a person in Oh Oh.
+Juju is a person in Ooh Ooh.
 
 chapter bobo
 
-Bobo is a person in Oh Oh.
+Lulu is a person in Ooh Ooh.
 
 chapter cocoa
 
-the cocoa is a rhymable. description is "Well, it's currently powdered, but you'll find a way to put it in boiling water, you're sure."
+the cocoa is a rhymable. description is "Well, it's currently powdered, but when the time comes to dump it in boiling water, you have confidence you'll come through!"
 
 chapter passive pit
 
@@ -434,13 +434,13 @@ check talktoing:
 
 volume rules
 
-native-clear-rule of Oh Oh is ohoh-clear rule.
+native-clear-rule of Ooh Ooh is oohooh-clear rule.
 native-clear-rule of Dove N Doubt is dove-clear rule.
 native-clear-rule of Squalor Square is square-clear rule.
 native-clear-rule of Gap Goo is goo-clear rule.
 
-this is the ohoh-clear rule:
-	if sco-cocoa is false, the rule fails;
+this is the oohooh-clear rule:
+	if cocoa is off-stage, the rule fails; [?? booleans will be tricky here?]
 	the rule succeeds;
 
 this is the dove-clear rule:
@@ -480,7 +480,7 @@ index map with Wandering Where mapped northwest of Reeve Row.
 index map with Stuck State mapped northwest of Wandering Where.
 index map with Took Tarred mapped southwest of Wandering Where.
 
-index map with Oh Oh mapped north of Wandering Where.
+index map with Ooh Ooh mapped north of Wandering Where.
 index map with Squalor Square mapped east of Wandering Where.
 index map with Dove N Doubt mapped west of Wandering Where.
 index map with Gap Goo mapped south of Wandering Where.
