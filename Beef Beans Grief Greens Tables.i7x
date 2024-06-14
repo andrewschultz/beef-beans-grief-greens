@@ -51,9 +51,9 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "feet"	"fell"	--	--	false	true	true	false	compete compel	vc-feet-fell rule	vr-feet-fell rule	--	--
 "beat"	"bell"	--	--	false	true	true	false	compete compel	vc-beat-bell rule	vr-beat-bell rule	--	--
 "meet"	"mel"	--	--	false	true	true	false	compete compel	vc-meet-mel rule	vr-meet-mel rule	--	--
-"sweet"	"swell"	--	--	false	true	true	false	compete compel	vc-sweet-swell rule	vr-sweet-swell rule	--	--
-"heat"	"hell"	--	--	false	true	true	false	compete compel	vc-heat-hell rule	vr-heat-hell rule	--	--
-"repeat"	"repel"	--	--	false	true	true	false	compete compel	vc-repeat-repel rule	vr-repeat-repel rule	--	--
+"heat"	"hell"	--	--	false	true	true	false	compete compel	vc-heat-hell rule	vr-heat-hell rule	--	"[final-judge-think of -1]."
+"repeat"	"repel"	--	--	false	true	true	false	compete compel	vc-repeat-repel rule	vr-repeat-repel rule	--	"[final-judge-think of 0]."
+"sweet"	"swell"	--	--	false	true	true	false	compete compel	vc-sweet-swell rule	vr-sweet-swell rule	--	"[final-judge-think of 1]."
 
 section goon guide
 
@@ -665,20 +665,7 @@ a goodrhyme rule (this is the vc-meet-mel rule):
 this is the vr-meet-mel rule:
 	now sco-meet-mel is true;
 	say "Yes! You go out to meet Mel! Mel gives you something.[paragraph break][pete pell]. Memories come back to you, of Leet Lel, a larger-than-life figure that showed you so much, but who also seemed to have scorn for you.";
-	now player has sheet shell;
-
-a goodrhyme rule (this is the vc-sweet-swell rule):
-	now eet-ell is 1;
-	abide by the try-final-point rule;
-
-this is the vr-sweet-swell rule:
-	now sco-sweet-swell is true;
-	say "You decide that, although little well could be pretty crude at times, they showed you so much, and you really can't put that aside. After all, you didn't focus on the bad stuff, and they work exactly bigoted. You realize you were able to take the good stuff from them and leave the bad parts of their personality, yet, at the same time, you realize they were a bit braver than you, and you could have used even more of that bravery. Your overall evaluation is favorable. After all, how many inventors and such were jerks who left great work for non-jerks to enjoy? You were lucky to have had Leet Lel as part of your life.";
-	end-stub;
-
-a goodrhyme rule (this is the vc-heat-hell rule):
-	now eet-ell is -1;
-	abide by the try-final-point rule;
+	now player has pete pell;
 
 this is the vr-heat-hell rule:
 	now sco-heat-hell is true;
@@ -695,14 +682,19 @@ this is the vr-repeat-repel rule:
 	say "Leet Lel left a complex legacy. You can't deny the practical help they gave, or the cool songs or movies or books they showed you, but it came with a price. However, things just about balanced out. For all Leet Lel's thoughtlessness and condescension, there was a lot. And yet. There were times Leet Lel would be upset you knew something they didn't.[paragraph break]Taking the good with the bad is a cliche, but you feel you don't need to trumpet how Leet Lel could be a total jerk, and you don't need to feel too indebted for the neat things they showed you.[paragraph break]You do know there were times Leet Lel could be thoughtless and cruel when it seemed easier not to, and there were times Leet Lel would surprise you with something neat, just because. The two were not necessarily bound. You hope to do more of the second with your acquaintances remaining in this world.";
 	end-stub;
 
-this is the try-final-point rule:
-	if player is not in compete compel, unavailable;
-	if well-score < 5:
-		vcp "You haven't reflected enough for [if eet-ell is 0]a balanced[else if eet-ell < 0]an angry[else if eet-ell > 0]a favorable[end if] judgement, yet.";
-		not-yet;
-	if pete pell is not examined:
-		vcp "You get a sense such a judgement would be more appropriate once you've examined [pete pell].";
-		not-yet;
+a goodrhyme rule (this is the vc-sweet-swell rule):
+	now eet-ell is 1;
+	abide by the try-final-point rule;
+	ready;
+
+this is the vr-sweet-swell rule:
+	now sco-sweet-swell is true;
+	say "You decide that, although little well could be pretty crude at times, they showed you so much, and you really can't put that aside. After all, you didn't focus on the bad stuff, and they work exactly bigoted. You realize you were able to take the good stuff from them and leave the bad parts of their personality, yet, at the same time, you realize they were a bit braver than you, and you could have used even more of that bravery. Your overall evaluation is favorable. After all, how many inventors and such were jerks who left great work for non-jerks to enjoy? You were lucky to have had Leet Lel as part of your life.";
+	end-stub;
+
+a goodrhyme rule (this is the vc-heat-hell rule):
+	now eet-ell is -1;
+	abide by the try-final-point rule;
 	ready;
 
 book general flip stubs
@@ -734,6 +726,16 @@ this is the trawl-not-hall rule:
 
 chapter Compete Compel
 
+this is the try-final-point rule:
+	if player is not in compete compel, unavailable;
+	if well-score < 5:
+		vcp "You haven't reflected enough for [if eet-ell is 0]a balanced[else if eet-ell < 0]an angry[else if eet-ell > 0]a favorable[end if] judgement, yet.";
+		not-yet;
+	if pete pell is not examined:
+		vcp "You get a sense such a judgement would be more appropriate once you've examined [pete pell].";
+		not-yet;
+	ready;
+
 to kick-off-bell:
 	if well-score is 3:
 		move Sheet Shell to Compete Compel;
@@ -745,6 +747,9 @@ to end-stub:
 		continue the action;
 	end the game saying "Cease seeking: Peace? PEAKING!";
 	follow the shutdown rules;
+
+to say final-judge-think of (nu - a number):
+	say "You need a story to reflect on before concluding [b][if nu is -1]HEAT HELL[else if nu is 1]SWEET SWELL[else]REPEAT REPEL[end if][r]".
 
 volume can't go
 
@@ -764,7 +769,6 @@ dove n doubt	vh-love-shove rule		"loving/shoving"	--
 
 this is the vh-love-shove rule:
 	say "No, here [if oven-score is 0]will be[else if oven-score is 1]should still be[else]was[end if] the place for slight colloquialisms."
-
 
 Beef Beans Grief Greens Tables ends here.
 
