@@ -288,7 +288,7 @@ to say they-he-she-trawl:
 
 chapter Scrappy Scrawl
 
-the scrappy scrawl is scenery. "Bust through a common roadblock with an irregular description."
+the scrappy scrawl is scenery. "It's weird. It's a drawing of someone busting through a barrier and using grawlyxed-out words."
 
 book Happy Hall
 
@@ -316,11 +316,11 @@ Compete Compel is a room in Gnome Gnaw. printed name is "[if sco-feet-fell is fa
 
 chapter Sheet Shell
 
-Sheet Shell is a thing. description of sheet shell is "It's a place for reading. While you're probably not going to be bugged in the Wheat Well, the sheet shell gives double secret plus solitude, for reading something truly important. Sometimes, you need that.". "A sheet shell sits off to the side, for when you need to feel extra privacy reading books and thinking tricky thoughts."
+Sheet Shell is a thing. description of sheet shell is "It's a place for reading. While you're probably not going to be bugged in the Wheat Well, the sheet shell gives double secret plus solitude, for reading something truly important. Sometimes, you need that.". "A sheet shell sits off to the side[if leet lel is examined], but you already used it to read. Now you must draw your own conclusions[else], for when you need to feel extra privacy reading books and thinking tricky thoughts[end if]."
 
 chapter Leet Lel by Pete Pell
 
-Leet Lel by Pete Pell is a thing. printed name is "[i]Leet Lel[r], by Pete Pell". description is "[one of]It's a biography of someone who passed this year, someone who you had various strong opinions about. Someone you couldn't put out of your mind for stretches. Someone who taught you so much but could be pretty annoying at times. They had ... baggage. They could've been a heck of a lot nicer. Pete Pell has laid out the facts, though, and it's up to you to decide whether Lel's good outweighs the bad, or vice versa, or they balance out.[paragraph break]It's up to you, what your final opinion of Lel is. But now is the time to decide and move on[or]You don't have the time or emotional energy to read through it again. You need to make a decision on what kind of fate Leet Lel deserves, what kind of person Leet Lel was, based on your interpretations of the readings, and move on. Good, neutral, bad?[stopping]".
+Leet Lel by Pete Pell is a thing. printed name is "[i]Leet Lel[r], by Pete Pell". description is "[one of]It's a biography of someone who passed this year, someone who you had various strong opinions about. Someone you couldn't put out of your mind for stretches. Someone who taught you so much but could be pretty annoying at times. They had ... baggage. They could've been a heck of a lot nicer.[paragraph break]Pete Pell has laid out the facts, though, and it's up to you to decide whether Lel's good outweighs the bad, or vice versa, or they balance out.[paragraph break]It's up to you, what your final opinion of Lel is. But now is the time to decide and move on.[paragraph break]Do you wish to hold on to positive or negative feelings? Or do you wish to cast them out all together? You sense [leet lel] has given you enough motivation for any of the three, without judgement[or]You don't have the time or emotional energy to read through it again. You need to make a decision on what kind of fate Leet Lel deserves, what kind of person Leet Lel was, based on your interpretations of the readings, and move on.[paragraph break]Positive? Neutral? Or just beat back any feelings at all about Leet Lel?[stopping]".
 
 volume Dome D'Aww
 
@@ -376,7 +376,9 @@ check taking:
 volume game specific verbs
 
 check talktoing:
-	if noun is a rhymeperson, say "The ceremony is not the time for small talk. [noun] is an important part of the ceremony." instead;
+	if noun is a rhymeperson:
+		if sco-yappy-yall is true, say "But the talking has already occurred. It is time for vigorous action and exercise." instead;
+		say "The ceremony is not the time for small talk with any individual. [noun] is an important part of the ceremony. You sense anything you have to say should be shared collectively, encouraging others to speak up, too." instead;
 	say "You don't need to talk to [the noun]." instead;
 
 volume rules

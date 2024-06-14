@@ -41,7 +41,7 @@ test trtr with "scrappy scrawl/whappy wall".
 
 test hh with "pappy paul/sappy saul/known nora/lone laura/cappy caul/yappy yall/bappy ball".
 
-test final with "wheat well/feet fell/sheet shell/beat bell/meet mel".
+test final with "wheat well/feet fell/sheet shell/beat bell/meet mel/x leet lel".
 
 test finaln with "test final/repeat repel".
 
