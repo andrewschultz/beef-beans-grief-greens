@@ -44,15 +44,15 @@ the made mug is an auxiliary feastitem. fdesc of made mug is "small drinking con
 
 the jade jug is an auxiliary feastitem. fdesc of jade jug is "large drink holder".
 
-the carrot cake is a feastitem. fdesc of carrot cake is "cake, of course". description is "It looks delicious."
+the carrot cake is a toeat feastitem. fdesc of carrot cake is "cake, of course". description is "It looks delicious."
 
-the soup is a feastitem. fdesc of soup is "an appetizer, sort of". description is "It looks delicious."
+the soup is a toeat feastitem. fdesc of soup is "an appetizer, sort of". description is "It looks delicious."
 
 chapter silverware
 
-the plates are a silverware feastitem. description is "Just a bunch of plates."
+the plates are a plural-named silverware feastitem. description is "Just a bunch of plates."
 
-the knives are a silverware feastitem. description is "Just a bunch of knives."
+the knives are a plural-named silverware feastitem. description is "Just a bunch of knives."
 
 volume rooms
 
@@ -80,6 +80,7 @@ check going down in Reeve Row:
 	if sco-heave-ho is false, say "There's an outline leading down, but you can't figure the way to remove it." instead;
 	if sco-grieve-grow is false, say "You're not emotionally ready, yet. Yet. How can you steel yourself, so you know it's worth it?" instead;
 	if number of not carried feastitems > 0, say "You look at [feast]. You don't have everything, yet." instead;
+	if oven-fixed-yet is false, say "But you haven't found a way to cook [the list of toeat feastitems] yet." instead;
 	move player to trappy trawl instead;
 
 check going outside in Reeve Row when Lovin Lout is in Reeve Row: say "You sense the lout could help with the rayed rug in some way." instead; [??GT must be inoperative]
@@ -173,6 +174,10 @@ chapter light lyres
 
 The light lyres are a rhymable. They are scenery. "[if sco-fight-fires is false]They are burning very slowly! They are useless to actually play, but maybe there is some use for them[else]The fire has damaged them, but you sense you can salvage something[end if]."
 
+chapter white whires
+
+the white wires are an oventhing. description is "You assume the goon guide will show you what wires to put, where.". fdesc is "revamped oven circuitry".
+
 book Oh Oh
 
 Oh Oh is a wandroom in Roam Raw. wanddir of Oh Oh is north. printed name is "Oh, Oh...".
@@ -195,7 +200,7 @@ the passive pit is scenery. "It's full of weird rubbish. [if sco-massive-mitt is
 
 chapter massive mitt
 
-the massive mitt is a thing.
+the massive mitt is an oventhing. description is "It's not just big, it's well-padded. There is no way you could burn yourself wearing it, no matter how klutzy you are.". fdesc is "hand protection from the heat".
 
 book Dove 'N Doubt
 
@@ -207,7 +212,13 @@ the lovin lout is a person. "A lovin['] lout stands around awkwardly, flexing th
 
 chapter oven
 
-The oven is a thing in Dove N Doubt. "[if player is in reeve row]The oven you moved from [dove] is here, ready to cook raw materials and such[else]An oven is parked here, but it's [oven-move]. Useful for cooking a big meal, you suspect[end if]."
+The oven is a thing in Dove N Doubt. "[if player is in reeve row]The oven you moved from [dove] is here, [oven-status][else]An oven is parked here, but it's [oven-move]. Useful for cooking a big meal, you suspect[end if]."
+
+to say oven-status:
+	if oven-fix-score is 3:
+		say "ready to cook raw materials and such";
+	else:
+		say "but it seems broken"
 
 to say oven-move:
 	if sco-shovin-shout is false:
@@ -234,11 +245,11 @@ the lotus life is scenery. "The lotus blossoms look wonderful. [if sco-notice-kn
 
 chapter vented vials
 
-the vented vials are a thing. description is "They don't seem to be much use in their present form.".
+the vented vials are a thing. "Vented vials lie cluttered here.". description is "They don't seem to be much use in their present form.".
 
 chapter dented dials
 
-the dented dials are a thing.
+the dented dials are an oventhing. description is "They look very old and dingy but serviceable. You could screw them into an appliance that was missing them.". fdesc is "ways to adjust oven heat".
 
 chapter tree troop
 
@@ -338,7 +349,9 @@ Took Tarred is a room in Dome D'Aww. printed name is "Took, Tarred".
 
 chapter cook card
 
-the cook card is a thing.
+chapter cook card
+
+the cook card is an oventhing. description is "Ah! The card of very special recipes that fell out of the goon guide!". fdesc is "a missing insert from the goon guide (okay, you wrote that in, just in case)".
 
 the lard is a thing.
 

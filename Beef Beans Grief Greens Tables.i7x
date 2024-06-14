@@ -714,6 +714,11 @@ to rug-check:
 		say "Several rays on the rug (you'd say one-third) grow duller";
 	say "."
 
+to oven-check:
+	if oven-fix-score is 3:
+		say "With the plug, wires and dials, you replace the faulty parts of the oven.";
+		now oven-fixed-yet is true;
+
 to trigger-bee:
 	if sco-heave-ho is true and sco-believe-below is true:
 		say "You hear an odd, insistent buzzing from outside.";

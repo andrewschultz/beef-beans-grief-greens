@@ -69,6 +69,10 @@ chapter types
 
 a feastitem is a kind of thing. a feastitem has text called fdesc. a feastitem can be toeat, auxiliary or silverware. a feastitem is usually silverware.
 
+a feastitem can be cooked or uncooked. a feastitem is usually uncooked.
+
+an oventhing is a kind of thing. an oventhing has text called fdesc.
+
 a rhymeperson is a kind of rhymable. a rhymeperson is proper-named. a rhymeperson can be male or female.
 
 after doing something with a rhymeperson:
