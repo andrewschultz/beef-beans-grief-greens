@@ -2,6 +2,14 @@ Version 1/240113 of Beef Beans Grief Greens Definitions by Andrew Schultz begins
 
 "This encompasses small stubs, particularly <to decide which> and <definition> that would clutter up the main code and be hard to find otherwise. You can see what could or should be sent here with def.py."
 
+volume examineables
+
+a thing can be examined. a thing is usually not examined.
+
+after examining:
+	now noun is examined;
+	continue the action;
+
 volume game specific
 
 to decide whether (ru - a rule) is spaceable: yes;
@@ -60,6 +68,15 @@ to say optional-hint-think-item: say "";
 chapter types
 
 a feastitem is a kind of thing. a feastitem has text called fdesc. a feastitem can be toeat, auxiliary or silverware. a feastitem is usually silverware.
+
+a rhymeperson is a kind of rhymable. a rhymeperson is proper-named.
+
+after doing something with a rhymeperson:
+	set the pronoun it to noun;
+	set the pronoun him to noun;
+	set the pronoun her to noun;
+	set the pronoun them to noun;
+	continue the action;
 
 chapter wandering
 

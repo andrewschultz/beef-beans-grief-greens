@@ -135,6 +135,8 @@ sco-sweet-swell is a truth state that varies.
 sco-heat-hell is a truth state that varies.
 sco-repeat-repel is a truth state that varies.
 
+eet-ell is a number that varies. [ negative = hell, positive = swell, neutral = repel ]
+
 chapter unsorted globals
 
 volume test globals

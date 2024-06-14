@@ -28,6 +28,11 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "shovin"	"shout"	--	--	false	true	true	false	dove n doubt	vc-shovin-shout rule	vr-shovin-shout rule	--	--
 "oven"	"out"	--	--	false	true	true	false	dove n doubt	vc-oven-out rule	vr-oven-out rule	--	--
 "hook"	"hard"	--	--	false	true	true	false	dove n doubt	vc-hook-hard rule	vr-hook-hard rule	--	--
+"zap"	"zoo"	--	--	false	true	true	false	Gap Goo	vc-zap-zoo rule	vr-zap-zoo rule	--	--
+"notice"	"knife"	--	--	false	true	true	false	Gap Goo	vc-notice-knife rule	vr-notice-knife rule	--	--
+"carrot"	"cake"	--	--	false	true	true	false	Gap Goo	vc-carrot-cake rule	vr-carrot-cake rule	--	--
+"see"	"soup"	--	--	false	true	true	false	gap goo	vc-see-soup rule	vr-see-soup rule	--	--
+"dented"	"dials"	--	--	false	true	true	false	gap goo	vc-dented-dials rule	vr-dented-dials rule	--	--
 "book"	"bard"	--	--	false	true	true	false	took tarred	vc-book-bard rule	vr-book-bard rule	--	--
 "cook"	"card"	--	--	false	true	true	false	took tarred	vc-cook-card rule	vr-cook-card rule	--	--
 "look"	"lard"	--	--	false	true	true	false	took tarred	vc-look-lard rule	vr-look-lard rule	--	--
@@ -49,11 +54,6 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "sweet"	"swell"	--	--	false	true	true	false	compete compel	vc-sweet-swell rule	vr-sweet-swell rule	--	--
 "heat"	"hell"	--	--	false	true	true	false	compete compel	vc-heat-hell rule	vr-heat-hell rule	--	--
 "repeat"	"repel"	--	--	false	true	true	false	compete compel	vc-repeat-repel rule	vr-repeat-repel rule	--	--
-"zap"	"zoo"	--	--	false	true	true	false	Gap Goo	vc-zap-zoo rule	vr-zap-zoo rule	--	--
-"notice"	"knife"	--	--	false	true	true	false	Gap Goo	vc-notice-knife rule	vr-notice-knife rule	--	--
-"carrot"	"cake"	--	--	false	true	true	false	Gap Goo	vc-carrot-cake rule	vr-carrot-cake rule	--	--
-"see"	"soup"	--	--	false	true	true	false	gap goo	vc-see-soup rule	vr-see-soup rule	--	--
-"dented"	"dials"	--	--	false	true	true	false	gap goo	vc-dented-dials rule	vr-dented-dials rule	--	--
 
 section goon guide
 
@@ -584,6 +584,7 @@ a goodrhyme rule (this is the vc-lone-laura rule):
 this is the vr-lone-laura rule:
 	now sco-lone-laura is true;
 	say "Lone Laura appears!";
+	move Lone Laura to Happy Hall;
 
 a goodrhyme rule (this is the vc-known-nora rule):
 	if player is not in happy hall, unavailable;
@@ -595,6 +596,7 @@ a goodrhyme rule (this is the vc-known-nora rule):
 this is the vr-known-nora rule:
 	now sco-known-nora is true;
 	say "Known Nora appears!";
+	move Known Nora to Happy Hall;
 
 chapter Compete Compel scoring
 
@@ -666,11 +668,8 @@ this is the vr-meet-mel rule:
 	now player has sheet shell;
 
 a goodrhyme rule (this is the vc-sweet-swell rule):
-	if player is not in compete compel, unavailable;
-	if well-score < 5:
-		vcp "You haven't reflected enough for a thrilling judgement, yet.";
-		not-yet;
-	ready;
+	now eet-ell is 1;
+	abide by the try-final-point rule;
 
 this is the vr-sweet-swell rule:
 	now sco-sweet-swell is true;
@@ -678,11 +677,8 @@ this is the vr-sweet-swell rule:
 	end-stub;
 
 a goodrhyme rule (this is the vc-heat-hell rule):
-	if player is not in compete compel, unavailable;
-	if well-score < 5:
-		vcp "You haven't reflected enough for an angry judgement, yet.";
-		not-yet;
-	ready;
+	now eet-ell is -1;
+	abide by the try-final-point rule;
 
 this is the vr-heat-hell rule:
 	now sco-heat-hell is true;
@@ -690,16 +686,24 @@ this is the vr-heat-hell rule:
 	end-stub;
 
 a goodrhyme rule (this is the vc-repeat-repel rule):
-	if player is not in compete compel, unavailable;
-	if well-score < 5:
-		vcp "You haven't reflected enough for a balanced judgement, yet.";
-		not-yet;
+	now eet-ell is 0;
+	abide by the try-final-point rule;
 	ready;
 
 this is the vr-repeat-repel rule:
 	now sco-repeat-repel is true;
 	say "Leet Lel left a complex legacy. You can't deny the practical help they gave, or the cool songs or movies or books they showed you, but it came with a price. However, things just about balanced out. For all Leet Lel's thoughtlessness and condescension, there was a lot. And yet. There were times Leet Lel would be upset you knew something they didn't.[paragraph break]Taking the good with the bad is a cliche, but you feel you don't need to trumpet how Leet Lel could be a total jerk, and you don't need to feel too indebted for the neat things they showed you.[paragraph break]You do know there were times Leet Lel could be thoughtless and cruel when it seemed easier not to, and there were times Leet Lel would surprise you with something neat, just because. The two were not necessarily bound. You hope to do more of the second with your acquaintances remaining in this world.";
 	end-stub;
+
+this is the try-final-point rule:
+	if player is not in compete compel, unavailable;
+	if well-score < 5:
+		vcp "You haven't reflected enough for [if eet-ell is 0]a balanced[else if eet-ell < 0]an angry[else if eet-ell > 0]a favorable[end if] judgement, yet.";
+		not-yet;
+	if pete pell is not examined:
+		vcp "You get a sense such a judgement would be more appropriate once you've examined [pete pell].";
+		not-yet;
+	ready;
 
 book general flip stubs
 

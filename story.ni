@@ -252,6 +252,11 @@ book Trappy Trawl
 
 Trappy Trawl is a room in Home Haw. "You're not sure which way to go here. You could go back up, but it seems pointless."
 
+for printing a locale paragraph about a rhymeperson (called rp):
+	if rp is mentioned, continue the action;
+	say "So far, you have summoned [list of rhymepersons in location of player] here, and [if number of rhymepersons in location of player > 1]they are[else]they are[end if] ready for the ceremony.";
+	now all rhymepersons in location of player are mentioned.
+
 chapter Scrappy Scrawl
 
 the scrappy scrawl is scenery. "Bust through a common roadblock with an irregular description."
@@ -262,19 +267,19 @@ Happy Hall is a room in Gnome Gnaw. "The happy hall really does have its own aur
 
 chapter Pappy Paul
 
-Pappy Paul is a rhymable.
+Pappy Paul is a rhymeperson. description is "Pappy Paul knows he is a bit too serious at times, but it's who he is. [if sco-sappy-saul is true]Fortunately, Sappy Saul is here to balance him out[else]He needs someone to balance him out[end if]."
 
 chapter Sappy Saul
 
-Sappy Saul is a rhymable.
+Sappy Saul is a rhymeperson. description is "Sappy Saul knows he is a bit too joking or friendly at times, but it's who he is. [if sco-sappy-saul is true]Fortunately, Pappy Paul is here to balance him out[else]He needs someone to balance him out[end if]."
 
 chapter Known Nora
 
-Known Nora is a rhymable.
+Known Nora is a rhymeperson. description is "Known Nora is very social indeed, sometimes around people who need their space, but it's who she is. [if sco-lone-laura is true]Fortunately, Lone Laura is here to balance her out[else]She needs someone to balance her out[end if]."
 
 chapter Lone Laura
 
-Lone Laura is a rhymable.
+Lone Laura is a rhymeperson. description is "Lone Laura keeps to herself, sometimes fearing her quite good advice would be unwelcome. But it's who she is. [if sco-lone-laura is true]Fortunately, Known Nora is here to balance her out[else]She needs someone to balance her out[end if]."
 
 book Wheat Well
 
@@ -282,7 +287,7 @@ Compete Compel is a room in Gnome Gnaw. printed name is "[if sco-feet-fell is fa
 
 chapter Sheet Shell
 
-Sheet Shell is a thing. description of sheet shell is "While you're probably not going to be bugged here, the sheet shell gives double secret plus solitude, for reading something truly important."
+Sheet Shell is a thing. description of sheet shell is "It's a place for reading. While you're probably not going to be bugged in the Wheat Well, the sheet shell gives double secret plus solitude, for reading something truly important. Sometimes, you need that.". "A sheet shell sits off to the side, for when you need to feel extra privacy reading books and thinking tricky thoughts."
 
 chapter Leet Lel by Pete Pell
 
@@ -338,6 +343,12 @@ book taking
 
 check taking:
 	if player does not have noun, say "You don't need to take anything in [this-game]." instead;
+
+volume game specific verbs
+
+check talktoing:
+	if noun is a rhymeperson, say "The ceremony is not the time for small talk. [noun] is an important part of the ceremony." instead;
+	say "You don't need to talk to [the noun]." instead;
 
 volume rules
 
