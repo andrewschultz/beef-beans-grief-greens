@@ -60,19 +60,6 @@ book reeve row
 
 Reeve Row is a room in Home Haw. "You remember buying this from the old owner, Steve Stowe. He knew you were the right person to continue living here. But it feels empty now[if sco-leave-lo is true]. You feel you could go out again, if you wanted[end if]."
 
-to oven-check:
-	if oven-fix-score is 3 and oven-fixed-yet is false:
-		say "With the plug, wires and dials, you replace the faulty parts of the oven.";
-		now oven-fixed-yet is true;
-
-after printing the locale description for Reeve Row:
-	if player has copper key:
-		say "You use the copper key on the trap door down. And it works!";
-		moot copper key;
-	else:
-		oven-check;
-	continue the action;
-
 guess-table of Reeve Row is table of Reeve Row guesses.
 
 check going down in Reeve Row:
@@ -85,6 +72,26 @@ check going down in Reeve Row:
 	move player to trappy trawl instead;
 
 check going outside in Reeve Row when Lovin Lout is in Reeve Row: say "You sense the lout could help with the rayed rug in some way." instead; [??GT must be inoperative]
+
+after printing the locale description for Reeve Row (this is the Reeve Row check passage down rule):
+	if player has copper key:
+		say "You use the copper key on the trap door down. And it works!";
+		moot copper key;
+	continue the action;
+
+after printing the locale description for reeve row when oven-fixed-yet is false (this is the Reeve Row fix oven rule):
+	oven-check;
+	continue the action;
+
+after printing the locale description for reeve row when oven-fixed-yet is true (this is the Reeve Row get cooking rule):
+	if number of uncooked toeat feastitems carried by the player > 1:
+		now all uncooked toeat feastitems are cooked;
+		say "You re-check the goon guide to see how to cook [the list of uncooked toeat feastitems carried by player].[paragraph break]";
+		if number of uncooked toeat feastitems is 0:
+			say "You've cooked everything you need for the feast!";
+		else:
+			say "There is still more, though.";
+	continue the action;
 
 chapter you
 
