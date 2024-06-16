@@ -588,7 +588,7 @@ this is the vr-pluck-plate rule:
 	now sco-pluck-plate is true;
 	say "You find one plate, and it helps you out of your slump, and you find a bunch! You walk out of the fog to ...";
 	now player has plates;
-	move player to wandering where, without printing a room description;
+	drop-player-at wandering where;
 
 chapter Trappy Trawl scoring
 

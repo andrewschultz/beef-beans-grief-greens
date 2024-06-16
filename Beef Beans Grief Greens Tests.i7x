@@ -12,6 +12,8 @@ test thru with "test trtr/test hh/test final/test allend".
 
 test jthru with "test w1a/test w2w1/test w2w2/out/e/w/pluck plate/in/out/test pair/test square/test mare/test shard/in/believe below/test bee/d/test thru".
 
+test wthru with "test w1a/test w2w/out/pluck plate/test w2e".
+
 book verified tests that are part of the game
 
 test w1 with "grieve grow/made mug/jade jug/leave lo". [start of game]
@@ -24,6 +26,10 @@ book tests for wandering where branches
 test w2w with "test w2w1/test w2w2".
 test w2w1 with "laundering lair/lovin lout/shovin shout/oven out/heave ho".
 test w2w2 with "prune pride/played plug".
+
+test w2e with "test w2e1/test w2e2".
+test w2e1 with "squandering square/neat note/meat moat/beet boat".
+test w2e2 with "fight fires/white wires".
 
 test pair with "pondering pair/cocoa/massive mitt/s". [north]
 
