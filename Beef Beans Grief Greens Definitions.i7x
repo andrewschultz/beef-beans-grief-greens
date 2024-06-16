@@ -102,20 +102,29 @@ to wander (rm - a room):
 
 a wandroom has a rule called native-clear-rule.
 
-this is the to-stuck-state rule:
+this is the side puzzle rooms rule:
 	if Stuck State is unvisited:
 		say "Ugh. Somehow, it's not so easy to wander back. You wonder if you really deserved to find even some of the things you needed for the big feast. It wasn't a real quest, was it? Preoccupied with this, you go off the beaten path...";
 		move player to Stuck State instead;
+	if Toy Toss is unvisited:
+		say "As you trudge back, a weird voice tells you you're looking bummed, and you don't need to. Behind you see big smiling mouths with small bodies, hands and feet.[paragraph break]Joy Jaws![paragraph break]They are going to make you feel happy whether or not you want to, and they are going to make sure you're really happy and not just fake smiling, because nothing's worse than a fibber.[paragraph break]They have ufun and games planned for you! They take you to a place called the Toy Toss, which seems a little off because, well... you get the sense they're not going to listen.[paragraph break]You're quite bad at the toy toss. But they make you play until you win, which is rather more torture than your failures at a few ring games as a kid.[paragraph break]After an hour, win you do, but now ... you must decide on a prize! You're set to decline and trudge back, but the jaws (and the host) aren't going to let you off the hook that easily. It'd make them feel like failures![paragraph break]You are getting a gift, and that's that. Just, well, the right one.";
+		move player to Toy Toss instead;
+	if Hi Ho I Owe is unvisited:
+		say "Oh no! Another area completed, another distraction. You failed to watch where you were going, and you wind up by a combination thrift store/bakery. Because it's so cheap, service is lacking. You won't get any help perusing the vast selection. In fact, you probably won't get any help unless you ask for something in stock.";
+		move player to Hi Ho I Owe instead;
+	say "You're worried you'll be whisked off somewhere else after your latest marginal success, but surprisingly, you know your way around well enough now that you see another passage open up. It's weird and winding and you suspect anything you find there will be unnecessary. But still, it might be fun to explore.";
+	now slow slurry is mapped outside Wandering Where;
+	now Wandering Where is mapped inside slow slurry;
 
 check going outside when player is in Reeve Row:
 	if sco-heave-ho is true:
-		abide by the to-stuck-state rule;
+		abide by the side puzzle rooms rule;
 
 check going when player is in a wandroom (this is the stuck-state-check rule): [?? not perfect -- GT REEVE ROW will dump us in Wandering Where for the moment. This is a very minor nuisance bug, but it's possible to fix if the major ones are down. Define dumproom and then put the player in dumproom.]
 	consider native-clear-rule of location of player;
 	if the rule failed, continue the action;
 	if player is not in Dove n Doubt:
-		abide by the to-stuck-state rule;
+		abide by the side puzzle rooms rule;
 
 check gotoing when player is in a wandroom:
 	abide by the stuck-state-check rule;

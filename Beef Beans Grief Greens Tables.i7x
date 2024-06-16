@@ -44,6 +44,8 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "cook"	"card"	--	--	false	true	true	false	took tarred	vc-cook-card rule	vr-cook-card rule	--	--
 "look"	"lard"	--	--	false	true	true	false	took tarred	vc-look-lard rule	vr-look-lard rule	--	--
 "pluck"	"plate"	--	--	false	true	true	false	stuck state	vc-pluck-plate rule	vr-pluck-plate rule	--	--
+"pie"	"po"	--	--	false	true	true	false	sty sto	vc-pie-po rule	vr-pie-po rule	--	--
+"soy"	"sauce"	--	--	false	true	true	false	toy toss	vc-soy-sauce rule	vr-soy-sauce rule	--	--
 "scrappy"	"scrawl"	--	--	false	true	true	false	trappy trawl	vc-scrappy-scrawl rule	vr-scrappy-scrawl rule	--	--
 "whappy"	"wall"	--	--	false	true	true	false	trappy trawl	vc-whappy-wall rule	vr-whappy-wall rule	--	--
 "lone"	"laura"	--	--	false	true	true	false	happy hall	vc-lone-laura rule	vr-lone-laura rule	--	--
@@ -569,13 +571,14 @@ this is the vr-cook-card rule:
 a goodrhyme rule (this is the vc-look-lard rule):
 	abide by the shardy rule;
 	if sco-look-lard is true:
-		vcal "You already got some lard!";
+		vcal "You're not sure why you need lard, but you're pretty sure you don't need too much of it.";
 		already-done;
 	ready;
 
 this is the vr-look-lard rule:
 	now sco-look-lard is true;
-	say "Hooray! You figured what to do! You get a point!";
+	say "Lard, man. You're still not sure if you really need it, even if the cookbooks say you should. You've never had the guts to rebel and just prepare that dish without lard. Now's not the time to start. So you're glad you looked so diligently, and you're glad it turned up.";
+	now player has lard;
 	get-untarred;
 
 chapter stuck state scoring
@@ -589,6 +592,29 @@ this is the vr-pluck-plate rule:
 	say "You find one plate, and it helps you out of your slump, and you find a bunch! You walk out of the fog to ...";
 	now player has plates;
 	drop-player-at wandering where;
+
+chapter Sty Sto scoring
+
+a goodrhyme rule (this is the vc-pie-po rule):
+	if player is not in sty sto, unavailable;
+	ready;
+
+this is the vr-pie-po rule:
+	now sco-pie-po is true;
+	say "You realize you're kind of broke, and you figure out what the cheapest item on the menu might be. It looks surprisingly good, and it's large, too.[paragraph break]Bri-Bro whispers to you , 'So many people demand the house special. I give them something frou-frou, but it's not really what I enjoy cooking. Now I'll have to pretend to kick you out pushes you out of the establishment, but you complain you don't know the way back. Fortunately, he helps you...";
+	now player has pie po;
+	drop-player-at Wandering Where;
+
+section toy toss scoring
+
+a goodrhyme rule (this is the vc-soy-sauce rule):
+	if player is not in toy toss, unavailable;
+	ready;
+
+this is the vr-soy-sauce rule:
+	now sco-soy-sauce is true;
+	say "[ross] nods. 'Here you go. Not just packets. A whole big bottle! Don't drink it all at once. Heh.'[paragraph break]You fail to laugh at this joke, and your punishment is to be whisked back from whence you came.[paragraph break]Which, to be honest, is a big help, because you were pretty sure you couldn't find the way back.";
+	drop-player-at Wandering Where;
 
 chapter Trappy Trawl scoring
 

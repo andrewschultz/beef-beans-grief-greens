@@ -188,7 +188,7 @@ Squalor Square is a wandroom in Roam Raw. wanddir of Squalor Square is east.
 
 chapter light lyres
 
-The light lyres are a rhymable. "Some light lyres lie here, [if sco-fight-fires is true]unplayable, but maybe some parts will be useful[else]burning very slowly indeed. Weird! Maybe you can save something from them[end if].". description is "[if sco-fight-fires is false]They are burning very slowly! They are useless to actually play, but maybe there is some use for them[else]The fire has damaged them, but you sense you can salvage something[end if]."
+The light lyres are a rhymable. "Some light lyres lie here, [if sco-white-wires is true]but you pulled what you needed from them[else if sco-fight-fires is true]unplayable, but maybe some parts will be useful[else]burning very slowly indeed. Weird! Maybe you can save something from them[end if].". description is "[if sco-fight-fires is false]They are burning very slowly! They are useless to actually play, but maybe there is some use for them[else]The fire has damaged them, but you sense you can salvage something[end if]."
 
 chapter white wires
 
@@ -289,7 +289,7 @@ book Trappy Trawl
 
 Trappy Trawl is a room in Home Haw. "You're not sure which way to go here. You could go back up, but it seems pointless."
 
-for printing a locale paragraph about a rhymeperson (called rp):
+for printing a locale paragraph about a rhymeperson (called rp) in Trappy Trawl:
 	if rp is mentioned, continue the action;
 	if hall-guest-score is 0:
 		say "It's very empty here. You sense you should bring people here. Maybe not the most important, but people with their own styles, maybe even people who contrast with others.";
@@ -373,11 +373,45 @@ Took Tarred is a room in Dome D'Aww. printed name is "Took, Tarred".
 
 chapter cook card
 
-chapter cook card
-
 the cook card is an oventhing. description is "Ah! The card of very special recipes that fell out of the goon guide!". fdesc is "a missing insert from the goon guide (okay, you wrote that in, just in case)".
 
 the lard is a thing.
+
+book Toy Toss
+
+Toy Toss is a room in Dome D'Aww. "Okay, so the joy jaws brought you to a place where apparently you're supposed to be happy."
+
+chapter Boy Boss Roy Ross
+
+Boy Boss Roy Ross is a rhymable in Toy Toss. "Boy Boss Roy Ross stands here, waiting for you to claim whatever gift you want, as long as it's the right one."
+
+book Hi Ho I Owe Sty Sto
+
+Hi Ho I Owe Sty Sto is a room in Dome D'Aww. printed name is "'Hi-Ho, I Owe' Sty-Sto"
+
+chapter bri bro
+
+Bri Bro is a rhymable in Hi Ho I Owe Sty Sto. "A fellow whose nametag reads BRI-BRO stands here, waiting for what you need to ask for."
+
+chapter pie po
+
+the pie po is a rhymable. "I guess it is the pie equivalent of a po['] boy sandwich.".
+
+chapter Woe Worry Slow Slurry
+
+Woe Worry Slow Slurry is a room in Dome D'Aww. "You don't have to stay here, you know. You still worry about missing anything and if you look rude leaving."
+
+section cray cruel fey fool
+
+the cray cruel fey fool is a rhymeperson in Slow Slurry. description is "They look very bored with plain stuff."
+
+section Moneyed Ma'am
+
+the Moneyed Ma'am is a female rhymeperson in Slow Slurry.
+
+section Fussed Fellow
+
+the fussed fellow is a male rhymeperson in Slow Slurry.
 
 volume unsorted
 
@@ -463,6 +497,8 @@ this is the goo-clear rule: [this is not strictly right but it works for general
 	if sco-zap-zoo is false, the rule fails;
 	the rule succeeds;
 
+every turn when player is in squalor square: say "[square-food-score].";
+
 volume name detection
 
 rule for printing a parser error when gender-variable is 0:
@@ -485,13 +521,17 @@ rule for printing a parser error when gender-variable is 0:
 volume index map nonsense
 
 index map with Wandering Where mapped northwest of Reeve Row.
-index map with Stuck State mapped northwest of Wandering Where.
-index map with Took Tarred mapped southwest of Wandering Where.
 
 index map with Ooh Ooh mapped north of Wandering Where.
 index map with Squalor Square mapped east of Wandering Where.
 index map with Dove N Doubt mapped west of Wandering Where.
 index map with Gap Goo mapped south of Wandering Where.
+
+index map with Stuck State mapped northwest of Wandering Where.
+index map with Hi Ho I Owe mapped northeast of Wandering Where.
+index map with Took Tarred mapped west of Dove N Doubt.
+index map with Toy Toss mapped southwest of Wandering Where.
+index map with Slow Slurry mapped west of Toy Toss.
 
 index map with Trappy Trawl mapped south of Reeve Row.
 index map with Happy Hall mapped west of Trappy Trawl.
