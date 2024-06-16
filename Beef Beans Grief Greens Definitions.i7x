@@ -134,6 +134,9 @@ to decide which number is oven-fix-score:
 to decide which number is shard-score:
 	decide on (boolval of sco-book-bard) + (boolval of sco-cook-card) + (boolval of sco-look-lard);
 
+to decide which number is square-food-score:
+	decide on (boolval of sco-neat-note) + (boolval of sco-meat-moat) + (boolval of sco-beet-boat);
+
 to decide which number is hall-guest-score:
 	decide on (boolval of sco-pappy-paul) + (boolval of sco-sappy-saul) + (boolval of sco-lone-laura) + (boolval of sco-known-nora);
 

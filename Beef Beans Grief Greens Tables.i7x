@@ -23,6 +23,9 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "massive"	"mitt"	--	--	false	true	true	false	Ooh Ooh	vc-massive-mitt rule	vr-massive-mitt rule	--	--
 "fight"	"fires"	--	--	false	true	true	false	squalor square	vc-fight-fires rule	vr-fight-fires rule	--	--
 "white"	"wires"	--	--	false	true	true	false	squalor square	vc-white-wires rule	vr-white-wires rule	--	--
+"neat"	"note"	--	--	false	true	true	false	squalor square	vc-neat-note rule	vr-neat-note rule	--	--
+"meat"	"moat"	--	--	false	true	true	false	squalor square	vc-meat-moat rule	vr-meat-moat rule	--	--
+"beet"	"boat"	--	--	false	true	true	false	squalor square	vc-beet-boat rule	vr-beet-boat rule	--	--
 "lovin"	"lout"	--	--	false	true	true	false	dove n doubt	vc-lovin-lout rule	vr-lovin-lout rule	--	--
 "shovin"	"shout"	--	--	false	true	true	false	dove n doubt	vc-shovin-shout rule	vr-shovin-shout rule	--	--
 "oven"	"out"	--	--	false	true	true	false	dove n doubt	vc-oven-out rule	vr-oven-out rule	--	--
@@ -329,6 +332,45 @@ this is the vr-massive-mitt rule:
 	now player has massive mitt;
 
 section squalor square scoring
+
+a goodrhyme rule (this is the vc-neat-note rule):
+	if player is not in squalor square and player does not have meat moat and player does not have beet boat, unavailable;
+	if sco-neat-note is true:
+		vcal "But you already discovered the neat note. Rediscovering it won't make it neater.";
+		already-done;
+	ready;
+
+this is the vr-neat-note rule:
+	now sco-neat-note is true;
+	say "Hooray! You figured what to do! You get a point!";
+
+a goodrhyme rule (this is the vc-beet-boat rule):
+	if sco-beet-boat is true and (player is in squalor square or player has beet boat or player has meat moat):
+		vcal "You already did this!";
+		already-done;
+	ready;
+
+to say a-o:
+	say "[one of]A burly workman named Amped Ox takes you to the Damped Docks[or]Amped Ox drops by again, leading you to a new area of the Damped Docks[stopping]"
+
+this is the vr-beet-boat rule:
+	now sco-beet-boat is true;
+	say ", where you are given a good-sized beet boat. He doesn't particularly like beets, and neither do his coworkers, but why let it go to waste?";
+	now player has beet boat;
+
+a goodrhyme rule (this is the vc-meat-moat rule):
+	abide by the bloat-transform rule;
+	if player is not in squalor square:
+		vcp "Not the right place for this.";
+		not-yet;
+	if sco-meat-moat is true:
+		vcal "You already did this!";
+		already-done;
+	ready;
+
+this is the vr-meat-moat rule:
+	now sco-meat-moat is true;
+	say "Hooray! You figured what to do! You get a point!";
 
 a goodrhyme rule (this is the vc-fight-fires rule):
 	if light lyres are not touchable, unavailable;
@@ -791,6 +833,14 @@ to trigger-bee:
 	if sco-heave-ho is true and sco-believe-below is true:
 		say "You hear an odd, insistent buzzing from outside.";
 		move bopper bee to Wandering Where;
+
+chapter Squalor Square
+
+this is the bloat-transform rule:
+	if player is not in squalor square and player does not have meat moat and player does not have beet boat, unavailable;
+	if sco-neat-note is false:
+		vcp "Perhaps ... but unfortunately, the bleat-bloat distracts you from finding fun new stuff. Perhaps a helpful guide, or guiding document, would be the thing.";
+		not-yet;
 
 chapter Trappy Trawl / Happy Hall
 

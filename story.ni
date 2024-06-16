@@ -188,11 +188,19 @@ Squalor Square is a wandroom in Roam Raw. wanddir of Squalor Square is east.
 
 chapter light lyres
 
-The light lyres are a rhymable. They are scenery. "[if sco-fight-fires is false]They are burning very slowly! They are useless to actually play, but maybe there is some use for them[else]The fire has damaged them, but you sense you can salvage something[end if]."
+The light lyres are a rhymable. "Some light lyres lie here, [if sco-fight-fires is true]unplayable, but maybe some parts will be useful[else]burning very slowly indeed. Weird! Maybe you can save something from them[end if].". description is "[if sco-fight-fires is false]They are burning very slowly! They are useless to actually play, but maybe there is some use for them[else]The fire has damaged them, but you sense you can salvage something[end if]."
 
-chapter white whires
+chapter white wires
 
-the white wires are an oventhing. description is "You assume the goon guide will show you what wires to put, where.". fdesc is "revamped oven circuitry".
+the white wires are an oventhing. description is "[if oven is not in reeve row]You assume they're useful to fix some appliance[else]You think you know of a missing appliance that could use these[end if].". fdesc is "revamped oven circuitry".
+
+chapter meat moat
+
+the meat moat is a rhymable.
+
+chapter beet boat
+
+the beet boat is a rhymable.
 
 book Ooh Ooh
 
@@ -440,7 +448,7 @@ native-clear-rule of Squalor Square is square-clear rule.
 native-clear-rule of Gap Goo is goo-clear rule.
 
 this is the oohooh-clear rule:
-	if cocoa is off-stage, the rule fails; [?? booleans will be tricky here?]
+	if cocoa is off-stage, the rule fails;
 	the rule succeeds;
 
 this is the dove-clear rule:
@@ -448,10 +456,10 @@ this is the dove-clear rule:
 	the rule succeeds;
 
 this is the square-clear rule:
-	if 1 is 0, the rule fails;
+	if square-food-score < 3, the rule fails;
 	the rule succeeds;
 
-this is the goo-clear rule: [this is not right but it works for general purposes!]
+this is the goo-clear rule: [this is not strictly right but it works for general purposes!]
 	if sco-zap-zoo is false, the rule fails;
 	the rule succeeds;
 

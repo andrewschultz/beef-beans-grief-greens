@@ -143,6 +143,10 @@ eet-ell is a number that varies. [ negative = hell, positive = swell, neutral = 
 
 chapter unsorted globals
 
+sco-neat-note is a truth state that varies.
+sco-meat-moat is a truth state that varies.
+sco-beet-boat is a truth state that varies.
+
 volume test globals
 
 allow-win is a truth state that varies. allow-win is true.
