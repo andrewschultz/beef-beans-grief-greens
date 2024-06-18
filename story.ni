@@ -196,11 +196,11 @@ the white wires are an oventhing. description is "[if oven is not in reeve row]Y
 
 chapter meat moat
 
-the meat moat is a rhymable.
+the meat moat is a rhymable. description is "Fortunately, it's a relatively small moat, without too much liquid, so it won't splash around as you carry it."
 
 chapter beet boat
 
-the beet boat is a rhymable.
+the beet boat is a rhymable. description is "It is about as jazzy as beets can get. You're not sure what sort of boat it is, but that doesn't matter."
 
 book Ooh Ooh
 

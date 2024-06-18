@@ -536,11 +536,12 @@ this is the vr-dented-dials rule:
 chapter Took Tarred scoring
 
 to get-untarred:
+	say "[line break]";
 	if shard-score < 3:
 		say "You feel the area's hold on you weaken.";
 	else:
 		say "You feel sucked out of whatever the shard held you in. As you come back to [dove], the shard shatters. You sense there's nothing more to do here, so you walk back to the center of the action.";
-		move the player to Wandering Where, without printing a room description;
+		drop-player-at Wandering Where;
 
 this is the shardy rule:
 	if shook shard is touchable:

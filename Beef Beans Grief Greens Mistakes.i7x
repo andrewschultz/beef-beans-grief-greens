@@ -53,9 +53,9 @@ mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 table of bopper bee guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 "copper"	"key"	--	false	--	"Why, a copper key would be just the thing! One that somehow magically fits the lock to the basement! No, I'm afraid it'll be a bit trickier than that. The bee has to become something a little more like it. Or a little less unlike it."
-"hopper"	"he|hee"	--	false	--	"<CLEVER REJECT TEXT>"
-"pauper|popper"	"pee"	--	false	--	"<CLEVER REJECT TEXT>"
-"shopper"	"she|shee"	--	false	--	"<CLEVER REJECT TEXT>"
+"hopper"	"he|hee"	--	false	--	"Frog legs aren't on the menu, and you don't need a hopper to store stuff."
+"pauper|popper"	"pee|pea"	--	false	--	"No, one pea couldn't make a meal or even help."
+"shopper"	"she|shee"	--	false	--	"There is neitherr need for extended shopping nor a mall to do said shopping in."
 
 volume auxiliary general
 
