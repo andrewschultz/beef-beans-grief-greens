@@ -186,6 +186,10 @@ book Squalor Square
 
 Squalor Square is a wandroom in Roam Raw. wanddir of Squalor Square is east.
 
+chapter bleat bloat
+
+the bleat bloat is a rhymable. "A bleat bloat floats through here, in tune with the general dinginess.". description is "You're no linguistic expert, but you know it's distracting and draining and disorganizing. If only it were something more motivational!"
+
 chapter light lyres
 
 The light lyres are a rhymable. "Some light lyres lie here, [if sco-white-wires is true]but you pulled what you needed from them[else if sco-fight-fires is true]unplayable, but maybe some parts will be useful[else]burning very slowly indeed. Weird! Maybe you can save something from them[end if].". description is "[if sco-fight-fires is false]They are burning very slowly! They are useless to actually play, but maybe there is some use for them[else]The fire has damaged them, but you sense you can salvage something[end if]."
@@ -221,7 +225,7 @@ for printing the locale description of a rhymeperson (called rh) in ooh ooh:
 
 chapter cocoa
 
-the cocoa is a rhymable. description is "Well, it's currently powdered, but when the time comes to dump it in boiling water, you have confidence you'll come through!"
+the cocoa is a rhymable. description is "Well, it's currently powdered, but when the time comes to dump it in boiling water, you have confidence you'll come through with aplomb!"
 
 chapter passive pit
 
@@ -501,8 +505,6 @@ this is the square-clear rule:
 this is the goo-clear rule: [this is not strictly right but it works for general purposes!]
 	if sco-zap-zoo is false, the rule fails;
 	the rule succeeds;
-
-every turn when player is in squalor square: say "[square-food-score].";
 
 volume name detection
 

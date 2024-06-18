@@ -39,8 +39,8 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "coo"	"coo/koo"	--	--	false	true	true	false	ooh ooh	vc-cuckoo rule	vr-cuckoo rule	"cuckoo"	--
 "doo"	"doo"	--	--	false	true	true	false	ooh ooh	vc-doodoo rule	vr-doodoo rule	"doodoo"	--
 "ju"	"ju"	--	--	false	true	true	false	ooh ooh	vc-juju rule	vr-juju rule	"juju"	--
-"poo"	"pooh"	--	--	false	true	true	false	ooh ooh	vc-poopoo rule	vr-poopoo rule	"poopoo/poohpooh"	--
 "muu"	"muu"	--	--	false	true	true	false	ooh ooh	vc-muumuu rule	vr-muumuu rule	"mumu/muumuu"	--
+"poo"	"pooh"	--	--	false	true	true	false	ooh ooh	vc-poopoo rule	vr-poopoo rule	"poopoo/poohpooh"	--
 "tu"	"tu"	--	--	false	true	true	false	ooh ooh	vc-tutu rule	vr-tutu rule	"tutu"	--
 "book"	"bard"	--	--	false	true	true	false	took tarred	vc-book-bard rule	vr-book-bard rule	--	--
 "cook"	"card"	--	--	false	true	true	false	took tarred	vc-cook-card rule	vr-cook-card rule	--	--
@@ -259,6 +259,7 @@ a goodrhyme rule (this is the vc-booboo rule):
 this is the vr-booboo rule:
 	now sco-booboo is true;
 	say "Sometimes, you just have to complain about small hurts, physical or mental, and exaggerate them. As long as you get back to your regular life soon after, it's not that bad, really. So you and Juju and Zuzu do.";
+	process-cocoa;
 
 a goodrhyme rule (this is the vc-cuckoo rule):
 	if player is not in ooh ooh, unavailable;
@@ -270,7 +271,7 @@ a goodrhyme rule (this is the vc-cuckoo rule):
 this is the vr-cuckoo rule:
 	now sco-cuckoo is true;
 	say "You discuss, in an entirely sane manner, Swiss clocks with birds in them, and the chorus of the Mackenzie Brothers['] [']80s novelty smash hit [i]Take Off[r].";
-
+	process-cocoa;
 
 a goodrhyme rule (this is the vc-doodoo rule):
 	if player is not in ooh ooh, unavailable;
@@ -282,6 +283,7 @@ a goodrhyme rule (this is the vc-doodoo rule):
 this is the vr-doodoo rule:
 	now sco-doodoo is true;
 	say "You patrol the area for animal waste, also remarking on other interesting swear-word replacements.";
+	process-cocoa;
 
 a goodrhyme rule (this is the vc-juju rule):
 	if player is not in ooh ooh, unavailable;
@@ -293,6 +295,7 @@ a goodrhyme rule (this is the vc-juju rule):
 this is the vr-juju rule:
 	now sco-juju is true;
 	say "You find ways to perform juju, or pretend to.";
+	process-cocoa;
 
 a goodrhyme rule (this is the vc-muumuu rule):
 	if player is not in ooh ooh, unavailable;
@@ -304,6 +307,7 @@ a goodrhyme rule (this is the vc-muumuu rule):
 this is the vr-muumuu rule:
 	now sco-muumuu is true;
 	say "Loulou and Zuzu shrug a bit. Why not? They come in so many different colors.";
+	process-cocoa;
 
 a goodrhyme rule (this is the vc-poopoo rule):
 	if player is not in ooh ooh, unavailable;
@@ -315,6 +319,7 @@ a goodrhyme rule (this is the vc-poopoo rule):
 this is the vr-poopoo rule:
 	now sco-poopoo is true;
 	say "You show Loulou and Zuzu ways to dismiss this little thought experiment.";
+	process-cocoa;
 
 a goodrhyme rule (this is the vc-tutu rule):
 	if player is not in ooh ooh, unavailable;
@@ -326,6 +331,7 @@ a goodrhyme rule (this is the vc-tutu rule):
 this is the vr-tutu rule:
 	now sco-tutu is true;
 	say "Loulou and Zuzu can't dance worth a dang, but that seems worth trying, not for the whole stale 'ha ha dude in a dress' joke but because it does seem to fit the area's general vibe.";
+	process-cocoa;
 
 section passive pit
 
@@ -877,6 +883,36 @@ this is the bloat-transform rule:
 		vcp "Perhaps ... but unfortunately, the bleat-bloat distracts you from finding fun new stuff. Perhaps a helpful guide, or guiding document, would be the thing.";
 		not-yet;
 
+chapter Ooh Ooh
+
+to say zl:
+	say "[one of]Zuzu and Loulou[or]Loulou and Zuzu[at random]"
+
+to process-cocoa:
+	say "[line break]";
+	if ooh-score is 1:
+		say "[zl] seem to warm up to you.";
+	else if ooh-score is 2:
+		say "[zl] warm up to you further.";
+	else if ooh-score is 3:
+		say "[zl] discuss among themselves, pointing at you. After some chatter, they both hold up one finger. ";
+	else if ooh-score is 4:
+		say "[zl] pound you on the back. You sure have some great ideas in line with their thinking! After some awkward hand gestures they indicate they don't mind if you stay or go. You've earned this packet of cocoa.";
+		now player has cocoa;
+		repeat through table of verb checks:
+			if there is no best-room entry, next;
+			if best-room entry is not ooh ooh, next;
+			if idid entry is false:
+				now core entry is false;
+	else if ooh-score is 5:
+		say "[zl] look even happier now. Dare they expect more solidarity?";
+	else if ooh-score is 6:
+		say "[zl] are starting to look exhausted from all this imagining.";
+	else if ooh-score is 7:
+		say "[zl] wipe their brows after this latest feat of imagination. Nothing more to do here, really.";
+	else:
+		say "BUG. This should not be reached, but [ooh-score] should between 1 and 7."
+	
 chapter Trappy Trawl / Happy Hall
 
 this is the trawl-not-hall rule:
