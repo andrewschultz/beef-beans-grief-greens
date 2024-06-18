@@ -49,6 +49,9 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "pluck"	"plate"	--	--	false	true	true	false	stuck state	vc-pluck-plate rule	vr-pluck-plate rule	--	--
 "pie"	"po"	--	--	false	true	true	false	sty sto	vc-pie-po rule	vr-pie-po rule	--	--
 "soy"	"sauce"	--	--	false	true	true	false	toy toss	vc-soy-sauce rule	vr-soy-sauce rule	--	--
+"honeyed"	"ham"	--	--	false	true	true	false	chrome craw	vc-honeyed-ham rule	vr-honeyed-ham rule	--	--
+"grey"	"gruel"	--	--	false	true	true	false	chrome craw	vc-grey-gruel rule	vr-grey-gruel rule	--	--
+"just"	"jello"	--	--	false	true	true	false	chrome craw	vc-just-jello rule	vr-just-jello rule	--	--
 "scrappy"	"scrawl"	--	--	false	true	true	false	trappy trawl	vc-scrappy-scrawl rule	vr-scrappy-scrawl rule	--	--
 "whappy"	"wall"	--	--	false	true	true	false	trappy trawl	vc-whappy-wall rule	vr-whappy-wall rule	--	--
 "lone"	"laura"	--	--	false	true	true	false	happy hall	vc-lone-laura rule	vr-lone-laura rule	--	--
@@ -650,7 +653,7 @@ this is the vr-pie-po rule:
 	now player has pie po;
 	drop-player-at Wandering Where;
 
-section toy toss scoring
+chapter toy toss scoring
 
 a goodrhyme rule (this is the vc-soy-sauce rule):
 	if player is not in toy toss, unavailable;
@@ -660,6 +663,45 @@ this is the vr-soy-sauce rule:
 	now sco-soy-sauce is true;
 	say "[ross] nods. 'Here you go. Not just packets. A whole big bottle! Don't drink it all at once. Heh.'[paragraph break]You fail to laugh at this joke, and your punishment is to be whisked back from whence you came.[paragraph break]Which, to be honest, is a big help, because you were pretty sure you couldn't find the way back.";
 	drop-player-at Wandering Where;
+
+chapter chrome craw scoring
+
+a goodrhyme rule (this is the vc-honeyed-ham rule):
+	if moneyed maam is not in location of player, unavailable;
+	if sco-honeyed-ham is true:
+		vcal "You already did this!";
+		already-done;
+	ready;
+
+this is the vr-honeyed-ham rule:
+	now sco-honeyed-ham is true;
+	say "She sniffs and hands you a honeyed ham.";
+	now player has honeyed ham;
+	moot moneyed maam;
+
+a goodrhyme rule (this is the vc-grey-gruel rule):
+	if fey fool is not in location of player, unavailable;
+	if sco-grey-gruel is true:
+		vcal "More gruel? Ugh!";
+		already-done;
+	ready;
+
+this is the vr-grey-gruel rule:
+	now sco-grey-gruel is true;
+	say "They [fool] hands you some surprisingly not-cray gray gruel. It will be useful, you guess, as a base or paste.";
+	now player has grey gruel;
+
+a goodrhyme rule (this is the vc-just-jello rule):
+	if fussed fellow is not in location of player, unavailable;
+	if sco-just-jello is true:
+		vcal "Jell-O only goes so far.";
+		already-done;
+	ready;
+
+this is the vr-just-jello rule:
+	now sco-just-jello is true;
+	say "The [fellow] seems relieved to hand you the jell-o.";
+	now player has just jello;
 
 chapter Trappy Trawl scoring
 

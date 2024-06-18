@@ -155,6 +155,10 @@ sco-soy-sauce is a truth state that varies.
 
 sco-chrome-craw is a truth state that varies.
 
+sco-honeyed-ham is a truth state that varies.
+sco-grey-gruel is a truth state that varies.
+sco-just-jello is a truth state that varies.
+
 volume test globals
 
 allow-win is a truth state that varies. allow-win is true.
