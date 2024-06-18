@@ -206,13 +206,18 @@ book Ooh Ooh
 
 Ooh Ooh is a wandroom in Roam Raw. wanddir of Ooh Ooh is north. printed name is "Ooh, Ooh...!".
 
-chapter jojo
+chapter zuzu
 
-Juju is a person in Ooh Ooh.
+Zuzu is a rhymeperson in Ooh Ooh. description is "Zuzu is short-ish for Suzanne, you're pretty sure."
 
-chapter bobo
+chapter lulu
 
-Lulu is a person in Ooh Ooh.
+Loulou is a rhymeperson in Ooh Ooh. description is "Loulou is a male name, you remember from Gustave Flaubert's [i]Un Coeur Simple[r]."
+
+for printing the locale description of a rhymeperson (called rh) in ooh ooh:
+	if rh is mentioned, continue the action;
+	say "[list of rhymepersons in ooh ooh] stand here, tired of the old repetitive actions, looking for new ones.";
+	now all rhymepersons in ooh ooh are mentioned;
 
 chapter cocoa
 

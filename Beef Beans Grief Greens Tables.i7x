@@ -35,11 +35,13 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "carrot"	"cake"	--	--	false	true	true	false	Gap Goo	vc-carrot-cake rule	vr-carrot-cake rule	--	--
 "see"	"soup"	--	--	false	true	true	false	gap goo	vc-see-soup rule	vr-see-soup rule	--	--
 "dented"	"dials"	--	--	false	true	true	false	gap goo	vc-dented-dials rule	vr-dented-dials rule	--	--
-"muu"	"muu"	--	--	false	true	true	false	ooh ooh	vc-muu-muu rule	vr-muu-muu rule	"mumu/muumuu"	--
-"tu"	"tu"	--	--	false	true	true	false	ooh ooh	vc-tu-tu rule	vr-tu-tu rule	--	--
-"doo"	"doo"	--	--	false	true	true	false	ooh ooh	vc-doo-doo rule	vr-doo-doo rule	--	--
-"poo"	"poo"	--	--	false	true	true	false	ooh ooh	vc-poo-poo rule	vr-poo-poo rule	--	--
-"boo"	"boo"	--	--	false	true	true	false	ooh ooh	vc-boo-boo rule	vr-boo-boo rule	--	--
+"boo"	"boo"	--	--	false	true	true	false	ooh ooh	vc-booboo rule	vr-booboo rule	"booboo"	--
+"coo"	"coo/koo"	--	--	false	true	true	false	ooh ooh	vc-cuckoo rule	vr-cuckoo rule	"cuckoo"	--
+"doo"	"doo"	--	--	false	true	true	false	ooh ooh	vc-doodoo rule	vr-doodoo rule	"doodoo"	--
+"ju"	"ju"	--	--	false	true	true	false	ooh ooh	vc-juju rule	vr-juju rule	"juju"	--
+"poo"	"pooh"	--	--	false	true	true	false	ooh ooh	vc-poopoo rule	vr-poopoo rule	"poopoo/poohpooh"	--
+"muu"	"muu"	--	--	false	true	true	false	ooh ooh	vc-muumuu rule	vr-muumuu rule	"mumu/muumuu"	--
+"tu"	"tu"	--	--	false	true	true	false	ooh ooh	vc-tutu rule	vr-tutu rule	"tutu"	--
 "book"	"bard"	--	--	false	true	true	false	took tarred	vc-book-bard rule	vr-book-bard rule	--	--
 "cook"	"card"	--	--	false	true	true	false	took tarred	vc-cook-card rule	vr-cook-card rule	--	--
 "look"	"lard"	--	--	false	true	true	false	took tarred	vc-look-lard rule	vr-look-lard rule	--	--
@@ -245,79 +247,85 @@ this is the vr-flopper-flea rule:
 	now player has copper key;
 	moot bopper bee;
 
-chapter Ooh Ooh scoring
+chapter ooh ooh scoring
 
-section ooh ooh scoring
-
-a goodrhyme rule (this is the vc-muu-muu rule):
+a goodrhyme rule (this is the vc-booboo rule):
 	if player is not in ooh ooh, unavailable;
-	if sco-muu-muu is false:
-		vcp "You still need to do something!";
-		not-yet;
-	if sco-muu-muu is true:
-		vcal "You already did this!";
+	if sco-booboo is true:
+		vcal "You already feigned a booboo.";
 		already-done;
 	ready;
 
-this is the vr-muu-muu rule:
-	now sco-muu-muu is true;
-	say "Hooray! You figured what to do! You get a point!";
+this is the vr-booboo rule:
+	now sco-booboo is true;
+	say "Sometimes, you just have to complain about small hurts, physical or mental, and exaggerate them. As long as you get back to your regular life soon after, it's not that bad, really. So you and Juju and Zuzu do.";
 
-a goodrhyme rule (this is the vc-tu-tu rule):
+a goodrhyme rule (this is the vc-cuckoo rule):
 	if player is not in ooh ooh, unavailable;
-	if sco-tu-tu is false:
-		vcp "You still need to do something!";
-		not-yet;
-	if sco-tu-tu is true:
-		vcal "You already did this!";
+	if sco-cuckoo is true:
+		vcal "It was almost too crazy the first time.";
 		already-done;
 	ready;
 
-this is the vr-tu-tu rule:
-	now sco-tu-tu is true;
-	say "Hooray! You figured what to do! You get a point!";
+this is the vr-cuckoo rule:
+	now sco-cuckoo is true;
+	say "You discuss, in an entirely sane manner, Swiss clocks with birds in them, and the chorus of the Mackenzie Brothers['] [']80s novelty smash hit [i]Take Off[r].";
 
-a goodrhyme rule (this is the vc-doo-doo rule):
+
+a goodrhyme rule (this is the vc-doodoo rule):
 	if player is not in ooh ooh, unavailable;
-	if sco-doo-doo is false:
-		vcp "You still need to do something!";
-		not-yet;
-	if sco-doo-doo is true:
-		vcal "You already did this!";
+	if sco-doodoo is true:
+		vcal "The value of such a word or phrase drops quickly with each use.";
 		already-done;
 	ready;
 
-this is the vr-doo-doo rule:
-	now sco-doo-doo is true;
-	say "Hooray! You figured what to do! You get a point!";
+this is the vr-doodoo rule:
+	now sco-doodoo is true;
+	say "You patrol the area for animal waste, also remarking on other interesting swear-word replacements.";
 
-a goodrhyme rule (this is the vc-poo-poo rule):
+a goodrhyme rule (this is the vc-juju rule):
 	if player is not in ooh ooh, unavailable;
-	if sco-poo-poo is false:
-		vcp "You still need to do something!";
-		not-yet;
-	if sco-poo-poo is true:
-		vcal "You already did this!";
+	if sco-juju is true:
+		vcal "You already fake-performed juju.";
 		already-done;
 	ready;
 
-this is the vr-poo-poo rule:
-	now sco-poo-poo is true;
-	say "Hooray! You figured what to do! You get a point!";
+this is the vr-juju rule:
+	now sco-juju is true;
+	say "You find ways to perform juju, or pretend to.";
 
-a goodrhyme rule (this is the vc-boo-boo rule):
+a goodrhyme rule (this is the vc-muumuu rule):
 	if player is not in ooh ooh, unavailable;
-	if sco-boo-boo is false:
-		vcp "You still need to do something!";
-		not-yet;
-	if sco-boo-boo is true:
-		vcal "You already did this!";
+	if sco-muumuu is true:
+		vcal "You already pictured Loulou and Zuzu in muumuus.";
 		already-done;
 	ready;
 
-this is the vr-boo-boo rule:
-	now sco-boo-boo is true;
-	say "Hooray! You figured what to do! You get a point!";
+this is the vr-muumuu rule:
+	now sco-muumuu is true;
+	say "Loulou and Zuzu shrug a bit. Why not? They come in so many different colors.";
+
+a goodrhyme rule (this is the vc-poopoo rule):
+	if player is not in ooh ooh, unavailable;
+	if sco-poopoo is true:
+		vcal "There's overdoing things, you reckon.";
+		already-done;
+	ready;
+
+this is the vr-poopoo rule:
+	now sco-poopoo is true;
+	say "You show Loulou and Zuzu ways to dismiss this little thought experiment.";
+
+a goodrhyme rule (this is the vc-tutu rule):
+	if player is not in ooh ooh, unavailable;
+	if sco-tutu is true:
+		vcal "Tutus get old fast as jokewear.";
+		already-done;
+	ready;
+
+this is the vr-tutu rule:
+	now sco-tutu is true;
+	say "Loulou and Zuzu can't dance worth a dang, but that seems worth trying, not for the whole stale 'ha ha dude in a dress' joke but because it does seem to fit the area's general vibe.";
 
 section passive pit
 

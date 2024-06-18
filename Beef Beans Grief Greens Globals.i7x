@@ -68,11 +68,13 @@ sco-flopper-flea is a truth state that varies.
 
 chapter Ooh Ooh globals
 
-sco-muu-muu is a truth state that varies.
-sco-tu-tu is a truth state that varies.
-sco-doo-doo is a truth state that varies.
-sco-poo-poo is a truth state that varies.
-sco-boo-boo is a truth state that varies.
+sco-booboo is a truth state that varies.
+sco-cuckoo is a truth state that varies.
+sco-doodoo is a truth state that varies.
+sco-juju is a truth state that varies.
+sco-muumuu is a truth state that varies.
+sco-poopoo is a truth state that varies.
+sco-tutu is a truth state that varies.
 
 sco-massive-mitt is a truth state that varies.
 
