@@ -113,8 +113,6 @@ this is the side puzzle rooms rule:
 		say "Oh no! Another area completed, another distraction. You failed to watch where you were going, and you wind up by a combination thrift store/bakery. Because it's so cheap, service is lacking. You won't get any help perusing the vast selection. In fact, you probably won't get any help unless you ask for something in stock.";
 		move player to Hi Ho I Owe instead;
 	say "You're worried you'll be whisked off somewhere else after your latest marginal success, but surprisingly, you know your way around well enough now that you see another passage open up. It's weird and winding and you suspect anything you find there will be unnecessary. But still, it might be fun to explore.";
-	now slow slurry is mapped outside Wandering Where;
-	now Wandering Where is mapped inside slow slurry;
 
 check going outside when player is in Reeve Row:
 	if sco-heave-ho is true:
@@ -168,6 +166,9 @@ to decide which number is ooh-score:
 
 to decide which number is well-score:
 	decide on (boolval of sco-feet-fell) + (boolval of sco-wheat-well) + (boolval of sco-sheet-shell) + (boolval of sco-beat-bell) + (boolval of sco-meet-mel);
+
+to decide which number is sides-visited:
+	decide on number of visited rooms in Dome D'aww
 
 volume big rule
 

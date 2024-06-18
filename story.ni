@@ -149,7 +149,7 @@ after printing the locale description for a wandroom:
 
 book wandering where
 
-Wandering Where is a room in Roam Raw. Printed name is "Wandering ... Where?". description is "[psg-list] go back [b]INSIDE[r] to your temporary home in Reeve Row."
+Wandering Where is a room in Roam Raw. Printed name is "Wandering ... Where?". description is "[psg-list] go back [b]INSIDE[r] to your temporary home in Reeve Row[craw-check]."
 
 to say psg-list:
 	if number of wanderable directions is 0:
@@ -170,7 +170,17 @@ after looking in Wandering Where when Wandering Where is unvisited:
 	say "[i]From now on, you can go back inside to Reeve Row, or outside back here.[r]";
 	continue the action;
 
+to say craw-check:
+	if sides-visited < 3 or sco-chrome-craw is true, continue the action;
+	say ". You've really been around, now, and perhaps you can discover one more way, even though you suspect you don't need it for the full feast. It might add more variety, though"
+
 check going in Wandering Where when bopper bee is in Wandering Where: say "You have a battle to win with the bopper bee first." instead;
+
+chapter chrome craw
+
+The Chrome Craw is a rhymable. "The chrome craw you summoned leads down [if slurry is visited]back to [slurry][else]to somewhere unknown[end if]."
+
+check entering Chrome Craw: try going down instead;
 
 chapter Bopper Bee
 
@@ -412,15 +422,15 @@ Woe Worry Slow Slurry is a room in Dome D'Aww. "You don't have to stay here, you
 
 section cray cruel fey fool
 
-the cray cruel fey fool is a rhymeperson in Slow Slurry. description is "They look very bored with plain stuff."
+the cray cruel fey fool is an improper-named rhymeperson in Slow Slurry. description is "They look very bored with plain stuff."
 
 section Moneyed Ma'am
 
-the Moneyed Ma'am is a female rhymeperson in Slow Slurry.
+the Moneyed Ma'am is an improper-named female rhymeperson in Slow Slurry.
 
 section Fussed Fellow
 
-the fussed fellow is a male rhymeperson in Slow Slurry.
+the fussed fellow is an improper-named male rhymeperson in Slow Slurry.
 
 volume unsorted
 

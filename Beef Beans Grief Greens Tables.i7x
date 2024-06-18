@@ -20,6 +20,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "maundering"	"mare"	--	--	false	true	true	false	wandering where	vc-maundering-mare rule	vr-maundering-mare rule	--	--
 "laundering"	"lair"	--	--	false	true	true	false	wandering where	vc-laundering-lair rule	vr-laundering-lair rule	--	--
 "flopper"	"flea"	--	--	false	true	true	false	wandering where	vc-flopper-flea rule	vr-flopper-flea rule	--	--
+"chrome"	"craw"	--	--	false	true	true	false	wandering where	vc-chrome-craw rule	vr-chrome-craw rule	--	--
 "massive"	"mitt"	--	--	false	true	true	false	Ooh Ooh	vc-massive-mitt rule	vr-massive-mitt rule	--	--
 "fight"	"fires"	--	--	false	true	true	false	squalor square	vc-fight-fires rule	vr-fight-fires rule	--	--
 "white"	"wires"	--	--	false	true	true	false	squalor square	vc-white-wires rule	vr-white-wires rule	--	--
@@ -232,6 +233,28 @@ this is the vr-laundering-lair rule:
 	now sco-laundering-lair is true;
 	wander Dove N Doubt;
 
+a goodrhyme rule (this is the vc-chrome-craw rule):
+	if sco-chrome-craw is true:
+		vcal "You already opened the chrome craw!";
+		already-done;
+	if trappy trawl is visited:
+		vcp "You could have opened the chrome craw in [wandering], but it's too late now. You don't want to go back. Everyone is waiting.";
+		unavailable;
+	if player is not in wandering where:
+		vcp "Ooh! A passage somewhere new? That'd be interesting. But this isn't an [if mrlp is dome d'aww]accessible[else]open[end if] enough space.";
+		not-yet;
+	if sides-visited < 3:
+		vcp "That seems like it could work nicely here, but you don't know your way around well enough yet.";
+		not-yet;
+	ready;
+
+this is the vr-chrome-craw rule:
+	now sco-chrome-craw is true;
+	say "You hear a large creaking from the ground beneath, and lo and behold, a chrome craw rumbles up from the ground! It's a bit scary-looking, but you're curious to explore it. You can go [b]DOWN[r] into it.";
+	move chrome craw to Wandering Where;
+	now slow slurry is mapped below Wandering Where;
+	now Wandering Where is mapped above slow slurry;
+
 section bopper bee scoring
 
 a goodrhyme rule (this is the vc-flopper-flea rule):
@@ -358,35 +381,42 @@ a goodrhyme rule (this is the vc-neat-note rule):
 
 this is the vr-neat-note rule:
 	now sco-neat-note is true;
-	say "Hooray! You figured what to do! You get a point!";
+	say "Ah! Much better! With a neat note to distract you, the bleat bloat seems less ubiquitous. After you read the note for a few minutes, the bleat bloat departs, feeling unloved and unnoticed.";
+	moot bleat bloat;
 
 a goodrhyme rule (this is the vc-beet-boat rule):
-	if sco-beet-boat is true and (player is in squalor square or player has beet boat or player has meat moat):
-		vcal "You already did this!";
+	abide by the bloat-transform rule;
+	if sco-beet-boat is true:
+		vcal "One beet boat is quite enough!";
 		already-done;
+	if player is not in squalor square:
+		vcp "Not the right place for this.";
+		not-yet;
 	ready;
+[	if sco-beet-boat is true and (player is in squalor square or player has beet boat or player has meat moat):]
 
 to say a-o:
 	say "[one of]A burly workman named Amped Ox takes you to the Damped Docks[or]Amped Ox drops by again, leading you to a new area of the Damped Docks[stopping]"
 
 this is the vr-beet-boat rule:
 	now sco-beet-boat is true;
-	say ", where you are given a good-sized beet boat. He doesn't particularly like beets, and neither do his coworkers, but why let it go to waste?";
+	say "[a-o], where you are given a good-sized beet boat. He doesn't particularly like beets, and neither do his coworkers, but why let it go to waste?";
 	now player has beet boat;
 
 a goodrhyme rule (this is the vc-meat-moat rule):
 	abide by the bloat-transform rule;
+	if sco-meat-moat is true:
+		vcal "Too many meat moats would be too much.";
+		already-done;
 	if player is not in squalor square:
 		vcp "Not the right place for this.";
 		not-yet;
-	if sco-meat-moat is true:
-		vcal "You already did this!";
-		already-done;
 	ready;
 
 this is the vr-meat-moat rule:
 	now sco-meat-moat is true;
-	say "Hooray! You figured what to do! You get a point!";
+	say "[a-o], where indeed a small meat moat (heavy meat, light gravy) is discovered. It looks and smells clean. Apparently, it was part of an all-you-can-eat buffet, and the workers ran out of stomach space.";
+	now player has meat moat;
 
 a goodrhyme rule (this is the vc-fight-fires rule):
 	if light lyres are not touchable, unavailable;
@@ -960,7 +990,21 @@ volume can't go
 table of noways
 noway-rm	noway-txt
 Reeve Row	"Weird. No directions here."
-Wandering Where	"You feel you should be able to go [noun]. [if number of wanderable directions is 0]You need to guess at where the roads might lead[else]You already were able to make your way [list of wanderable directions], after all[end if]."
+Wandering Where	"[if noun is planar]You feel you should be able to go [noun]. [planar-where][else]You can really only wander in the four cardinal directions[craw-foreshadow]."
+
+to say craw-foreshadow:
+	if chrome craw is off-stage and noun is down:
+		choose row with check-rule of vc-chrome-craw rule in table of verb checks;
+		if think-cue entry is true:
+			if sides-visited is 3:
+				say ", and you should probably activate the chrome craw now";
+			else:
+				say ", but you don't have the confidence to find the chrome craw, yet";
+		else:
+			say ", though actually, there is a way to see what's down later" [?? fully check if chrome craw is done yet]
+
+to say planar-where:
+	say "[if number of wanderable directions is 0]You need to guess at where the roads might lead[else]You already were able to make your way [list of wanderable directions], after all[end if]"
 
 volume homonyms
 

@@ -153,6 +153,8 @@ sco-pie-po is a truth state that varies.
 
 sco-soy-sauce is a truth state that varies.
 
+sco-chrome-craw is a truth state that varies.
+
 volume test globals
 
 allow-win is a truth state that varies. allow-win is true.
