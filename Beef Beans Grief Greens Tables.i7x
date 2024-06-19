@@ -714,12 +714,12 @@ a goodrhyme rule (this is the vc-scrappy-scrawl rule):
 
 this is the vr-scrappy-scrawl rule:
 	now sco-scrappy-scrawl is true;
-	say "Ah! You had confidence you could find scrappy scrawl, and you do. The instructions seem to make sense. You need to look to break open a passage where there is none, yet. An unexpectedly hollow place. But how?";
+	say "Ah! You had confidence you could find a scrappy scrawl, and you do. The instructions seem to make sense. You need to look to break open a passage where there is none, yet. An unexpectedly hollow place. Apparently, from the scrawl, one that makes a special sort of noise. Not quite a THWAP or a THWUP. So where is the weak spot?";
 
 a goodrhyme rule (this is the vc-whappy-wall rule):
 	abide by the trawl-not-hall rule;
 	if sco-scrappy-scrawl is false:
-		vcp "But you have no indication where a wall might sound whappy. Well, not yet.";
+		vcp "That could be helpful, but you have no indication where a wall might sound whappy. Well, not yet. You need to search for evidence.";
 		not-yet;
 	ready;
 

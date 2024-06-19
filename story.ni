@@ -18,6 +18,8 @@ section general includes
 
 include Trivial Niceties by Andrew Schultz.
 
+include Intro Restore Skip by Andrew Schultz.
+
 section PRPR includes
 
 include Prime Pro Rhyme Row Universal by Andrew Schultz.
