@@ -235,7 +235,7 @@ for printing the locale description of a rhymeperson (called rh) in ooh ooh:
 
 chapter cocoa
 
-the cocoa is a rhymable. description is "Well, it's currently powdered, but when the time comes to dump it in boiling water, you have confidence you'll come through with aplomb!"
+some cocoa is a rhymable. description is "Well, it's currently powdered, but when the time comes to dump it in boiling water, you have confidence you'll come through with aplomb!"
 
 chapter passive pit
 
@@ -306,7 +306,7 @@ volume endgame
 
 book Trappy Trawl
 
-Trappy Trawl is a room in Home Haw. "You're not sure which way to go here. You could go back up, but it seems pointless."
+Trappy Trawl is a room in Home Haw. "You're not sure which way to go here. You could go back up, but it seems pointless[if sco-scrappy-scrawl is false]. Perhaps you should look for clues, if you think you know what to look for[else]. You discovered a scrappy scrawl written here[end if]."
 
 for printing a locale paragraph about a rhymeperson (called rp) in Trappy Trawl:
 	if rp is mentioned, continue the action;
@@ -344,7 +344,7 @@ to say they-he-she-trawl:
 
 chapter Scrappy Scrawl
 
-the scrappy scrawl is scenery. "It's weird. It's a drawing of someone busting through a barrier and using grawlyxed-out words."
+the scrappy scrawl is scenery in Trappy Trawl. "It's weird. It's a drawing of someone busting through a barrier and using grawlyxed-out words."
 
 book Happy Hall
 

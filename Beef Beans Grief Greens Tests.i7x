@@ -10,9 +10,9 @@ test sofar with "test opt/test w1/test w2w".
 
 test thru with "test trtr/test hh/test final/test allend".
 
-test jthru with "test w1a/test w2w1/test w2w2/out/e/w/pluck plate/in/out/test pair/test square/test mare/test shard/in/believe below/test bee/d/test thru".
+test jthru with "test w1a/test w2w1/test w2w2/out/pluck plate/in/out/test pair/test square/test mare/test shard/in/believe below/test bee/d/test thru".
 
-test wthru with "test w1a/test w2w/out/pluck plate/test w2e".
+test wthru with "test w1a/test w2w/out/pluck plate/test w2w3/test w2e/w/soy sauce/test w2s/n/pie po/test w2n/s/test w2x/in/test w3/test w4/test w5/test w6".
 
 book verified tests that are part of the game
 
@@ -26,16 +26,32 @@ book tests for wandering where branches
 test w2w with "test w2w1/test w2w2".
 test w2w1 with "laundering lair/lovin lout/shovin shout/oven out/heave ho".
 test w2w2 with "prune pride/played plug".
+test w2w3 with "w/hook hard/book bard/cook card/look lard".
 
 test w2e with "test w2e1/test w2e2".
 test w2e1 with "squandering square/neat note/meat moat/beet boat".
 test w2e2 with "fight fires/white wires".
 
-test pair with "pondering pair/cocoa/massive mitt/s". [north]
+test w2s with "test w2s1/test w2s2".
+test w2s1 with "maundering mare/zap zoo/see soup".
+test w2s2 with "notice knife/dented dials/carrot cake"
 
-test square with "squandering square/fight fires/white wires/w". [east]
+test w2n with "test w2n1/test w2n2/test w2n3".
+test w2n1 with "pondering pair/booboo/juju/muumuu/tutu".
+test w2n2 with "massive mitt".
+test w2n3 with "cuckoo/doodoo/poohpooh". [north]
 
-test mare with "maundering mare/zap zoo/see soup/notice knife/dented dials/carrot cake/n". [west]
+test w2x with "chrome craw/d/honeyed ham/grey gruel/just jello/u".
+ 
+test w3 with "believe below/out/flopper flea/in/d".
+
+test w4 with "test w4a/test w4b".
+test w4a with "scrappy scrawl/whappy wall".
+test w4b with "sappy saul/pappy paul/known nora/lone laura/cappy caul/yappy yall/bappy ball".
+
+test w5 with "wheat well/feet fell/sheet shell/beat bell/meet mel/x leet lel".
+
+test w6 with "repeat repel".
 
 book partial tests
 
@@ -44,14 +60,6 @@ test opt with "sassed ceased". [optional point]
 test shard with "w/hook hard/book bard/cook card/look lard".
 
 test bee with "believe below/out/flopper flea/in".
-
-test trtr with "scrappy scrawl/whappy wall".
-
-test hh with "pappy paul/sappy saul/known nora/lone laura/cappy caul/yappy yall/bappy ball".
-
-test final with "wheat well/feet fell/sheet shell/beat bell/meet mel/x leet lel".
-
-test finaln with "test final/repeat repel".
 
 book endings test
 
