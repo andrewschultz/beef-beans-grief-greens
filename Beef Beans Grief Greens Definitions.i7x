@@ -84,7 +84,7 @@ a feastitem can be uncookable, cooked, okaycold or uncooked. a feastitem is usua
 
 an oventhing is a kind of thing. an oventhing has text called fdesc.
 
-a rhymeperson is a kind of rhymable. a rhymeperson is proper-named. a rhymeperson can be male or female.
+a rhymeperson is a kind of rhymable. a rhymeperson is proper-named. a rhymeperson can be male or female. a rhymeperson has a rhymeperson called other-guy.
 
 after doing something with a rhymeperson:
 	set the pronoun it to noun;
@@ -158,7 +158,7 @@ to decide which number is square-food-score:
 to decide which number is hall-guest-score:
 	decide on (boolval of sco-pappy-paul) + (boolval of sco-sappy-saul) + (boolval of sco-lone-laura) + (boolval of sco-known-nora);
 
-to decide which number is hall-male-score:
+to decide which number is hall-male-guest-score:
 	decide on (boolval of sco-pappy-paul) + (boolval of sco-sappy-saul);
 
 to decide which number is hall-female-guest-score:

@@ -741,7 +741,7 @@ a goodrhyme rule (this is the vc-pappy-paul rule):
 
 this is the vr-pappy-paul rule:
 	now sco-pappy-paul is true;
-	say "Pappy Paul appears when summoned.";
+	say "Pappy Paul appears when summoned, looking almost a bit too serious.";
 	hall-move Pappy Paul;
 
 a goodrhyme rule (this is the vc-sappy-saul rule):
@@ -993,12 +993,14 @@ this is the trawl-not-hall rule:
 		already-done;
 	if player is not in trappy trawl, unavailable;
 
-to hall-move (rh - a rhymable):
+to hall-move (rh - a rhymeperson):
 	move rh to Happy Hall;
 	if rh is female:
 		set pronoun her to rh;
 	else:
 		set pronoun him to rh;
+	if other-guy of rh is in Happy Hall:
+		say "[line break][rh] and [other-guy of rh] acknowledge each other with a nod. But they don't get too close.";
 
 chapter Compete Compel
 

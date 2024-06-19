@@ -306,9 +306,30 @@ volume endgame
 
 book Trappy Trawl
 
-Trappy Trawl is a room in Home Haw. "You're not sure which way to go here. You could go back up, but it seems pointless[if sco-scrappy-scrawl is false]. Perhaps you should look for clues, if you think you know what to look for[else]. You discovered a scrappy scrawl written here[end if]."
+Trappy Trawl is a room in Home Haw. "As so often happens underground, you're at a loss for directions. Going back up isn't really a thing. You're pretty sure, though, that there is a way through, but since it probably leads to the ancient ritual room, of course it's not going to be obvious[if sco-scrappy-scrawl is false]. Perhaps you should look for clues, if you think you know what to look for[else]. You discovered a scrappy scrawl written here, which may let you know where to poke. There's probably a secret passage, or something[end if]."
 
-for printing a locale paragraph about a rhymeperson (called rp) in Trappy Trawl:
+chapter Scrappy Scrawl
+
+the scrappy scrawl is scenery in Trappy Trawl. "It's weird. It's a drawing of someone busting through a barrier with noises like THWUP and THWAP. You smack against the scrawl and hear such noises too. Then you wonder if one such noise would indicate a hidden passage here."
+
+book Happy Hall
+
+Happy Hall is a room in Gnome Gnaw. "The happy hall really does have its own aura, one [if hall-female-guest-score is 0]that mystifies you, but you sense it holds important secrets[else if hall-female-guest-score is 1]you sense you've figured out halfway[else]you are fully comfortable in[end if]."
+
+after printing the locale description when player is in happy hall:
+	if hall-guest-score is 0:
+		say "The hall is very empty right now. It's where you're supposed to be for the ritual. But you need others along.";
+	else if hall-guest-score < 4:
+		say "So, whom else to invite?";
+	else if sco-cappy-caul is false:
+		say "You realize you must don the ritual eccentric headwear at this point.";
+	else if sco-yappy-yall is false:
+		say "It's been silent too long. How to generate discussion?";
+	else:
+		say "Now you've eaten, it is time for sport. Eccentric sport, perhaps, but physical exercise helps you process emotions in ways speaking can't.";
+	continue the action;
+
+for printing a locale paragraph about a rhymeperson (called rp) in Happy Hall:
 	if rp is mentioned, continue the action;
 	if hall-guest-score is 0:
 		say "It's very empty here. You sense you should bring people here. Maybe not the most important, but people with their own styles, maybe even people who contrast with others.";
@@ -320,9 +341,9 @@ for printing a locale paragraph about a rhymeperson (called rp) in Trappy Trawl:
 		else:
 			say "[list of rhymepersons in happy hall] seem to balance each other out nicely, but you sense another pair is needed.";
 	else if hall-guest-score is 3:
-		if hall-female-guest-score is 1:
+		if hall-female-guest-score is 2: [laura and nora]
 			say "[list of female rhymepersons in happy hall] seem to provide a pleasing contrast with each other, but [random male rhymeperson in happy hall] seems a bit out of place and needs someone to contrast with.";
-		else:
+		else: [saul and paul]
 			say "[list of male rhymepersons in happy hall] seem to provide a pleasing contrast with each other, but [random female rhymeperson in happy hall] seems a bit out of place and needs someone to contrast with.";
 	else if hall-guest-score is 4:
 		say "Everyone seems to be here now! They seem to be waiting for [if sco-yappy-yall is false]permission to speak freely[else]a more active, less talkative part of the ritual. The final bit[end if].[paragraph break]";
@@ -342,14 +363,6 @@ to say they-he-she-trawl:
 	else:
 		say "he is"
 
-chapter Scrappy Scrawl
-
-the scrappy scrawl is scenery in Trappy Trawl. "It's weird. It's a drawing of someone busting through a barrier and using grawlyxed-out words."
-
-book Happy Hall
-
-Happy Hall is a room in Gnome Gnaw. "The happy hall really does have its own aura, one [if hall-female-guest-score is 0]that mystifies you, but you sense it holds important secrets[else if hall-female-guest-score is 1]you sense you've figured out halfway[else]you are fully comfortable in[end if]."
-
 chapter Pappy Paul
 
 Pappy Paul is a male rhymeperson. description is "Pappy Paul knows he is a bit too serious at times, but it's who he is. [if sco-sappy-saul is true]Fortunately, Sappy Saul is here to balance him out[else]He needs someone to balance him out[end if]."
@@ -365,6 +378,16 @@ Known Nora is a female rhymeperson. description is "Known Nora is very social in
 chapter Lone Laura
 
 Lone Laura is a female rhymeperson. description is "Lone Laura keeps to herself, sometimes fearing her quite good advice would be unwelcome. But it's who she is. [if sco-lone-laura is true]Fortunately, Known Nora is here to balance her out[else]She needs someone to balance her out[end if]."
+
+chapter categorizations
+
+other-guy of Sappy Saul is Pappy Paul.
+
+other-guy of Pappy Paul is Sappy Saul.
+
+other-guy of Known Nora is Lone Laura.
+
+other-guy of Lone Laura is Known Nora.
 
 book Wheat Well
 
