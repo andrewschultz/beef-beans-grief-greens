@@ -1031,8 +1031,28 @@ volume can't go
 
 table of noways
 noway-rm	noway-txt
-Reeve Row	"Weird. No directions here."
+Reeve Row	"It's not a very big house. [if sco-heave-ho is false]I mean, okay, you're pretty sure there was a secret passage down which would eventually lead to the ritual room[else]You can go down, but you can't really explore this small house. You don't need to[else]. Well, you can go [b]OUT[r], too."
 Wandering Where	"[if noun is planar]You feel you should be able to go [noun]. [planar-where][else]You can really only wander in the four cardinal directions[craw-foreshadow]."
+
+table of noways (continued)
+noway-rm	noway-txt
+Dove n Doubt	"Perhaps there are secret passages for the mafia-connected, but not for you."
+Gap Goo	"You can only really go back north. You don't want to know how far the goo gap extends."
+Ooh Ooh	"[if goon guide is not examined]It's too misty to see far[else]The passive pit blocks all directions except to the south[end if]."
+Squalor Square	"Oh no. You don't want to go deeper into this mess."
+
+table of noways (continued)
+noway-rm	noway-txt
+Stuck State	"Perhaps finding what you need will get you out of here. You can't see a passage out."
+Took Tarred	"You can't leave until you've found everything the shook shard offers."
+Toy Toss	"There's a reward, and [boy boss] and the Joy Jaws won't let you leave until you pick the right one."
+Hi Ho	"No, there must be something you can buy on the cheap."
+
+table of noways (continued)
+noway-rm	noway-txt
+Trappy Trawl	"You crash around into some walls, which make noises like WHOMP and WHUMP, which don't sound right."
+Happy Hall	"You can't walk out on the ritual now!"
+Compete Compel	"This is the final lair of solitude. You've completed a quest for your peers. Now you will sit here and sort things out."
 
 to say craw-foreshadow:
 	if chrome craw is off-stage and noun is down:

@@ -66,10 +66,13 @@ to decide whether good-say-guess:
 to say optional-hint-think-item: say "";
 
 check exiting (this is the OUT redirect rule):
-	if number of viable directions is 1:
+	let NVD be number of viable directions;
+	if NVD is 1:
 		let RVD be random viable direction;
 		if RVD is not outside, try going RVD instead;
-	say "There are more than two viable ways to leave: [list of viable directions]. So you'll need to be specific." instead;
+	if NVD > 1:
+		say "There are [nvd in words] viable ways to leave: [list of viable directions]. So you'll need to be specific." instead;
+	try going outside instead;
 
 the OUT redirect rule is listed before the can't exit when not inside anything rule in the check exiting rulebook.
 
