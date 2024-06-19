@@ -220,19 +220,25 @@ the beet boat is a rhymable. description is "It is about as jazzy as beets can g
 
 book Ooh Ooh
 
-Ooh Ooh is a wandroom in Roam Raw. wanddir of Ooh Ooh is north. printed name is "Ooh, Ooh...!".
+Ooh Ooh is a wandroom in Roam Raw. wanddir of Ooh Ooh is north. printed name is "Ooh, Ooh...!". "[if passive pit is in ooh ooh]A passive pit surrounds you on all sides. It's not pulling you in, but the fall would still be lethal[else]It's a bit too misty to see much here. Perhaps when you have a clearer idea of your goals, you'll be able to see more[end if]."
 
 chapter zuzu
 
-Zuzu is a rhymeperson in Ooh Ooh. description is "Zuzu is short-ish for Suzanne, you're pretty sure."
+Zuzu is a rhymeperson in Ooh Ooh. description is "Zuzu is short-ish for Suzanne, you're pretty sure. She wears a t-shirt saying MAMA. You've no clue where the kid is."
 
 chapter lulu
 
-Loulou is a rhymeperson in Ooh Ooh. description is "Loulou is a male name, you remember from Gustave Flaubert's [i]Un Coeur Simple[r]."
+Loulou is a rhymeperson in Ooh Ooh. description is "Loulou is a male name, you remember from Gustave Flaubert's [i]Un Coeur Simple[r]. He wears a t-shirt saying PAPA. You've no clue where the kid is."
 
-for printing the locale description of a rhymeperson (called rh) in ooh ooh:
-	if rh is mentioned, continue the action;
-	say "[list of rhymepersons in ooh ooh] stand here, tired of the old repetitive actions, looking for new ones.";
+chapter ooh ooh people organization
+
+other-guy of Loulou is Zuzu.
+
+other-guy of Zuzu is Loulou.
+
+for printing a locale paragraph about a rhymeperson (called rp) in ooh ooh:
+	if rp is mentioned, continue the action;
+	say "[list of rhymepersons in ooh ooh] stand here, tired of the old repetitive actions, looking for new repetitive sounding ones.[paragraph break]";
 	now all rhymepersons in ooh ooh are mentioned;
 
 chapter cocoa
@@ -423,11 +429,15 @@ some lard is a thing.
 
 book Toy Toss
 
-Toy Toss is a room in Dome D'Aww. "Okay, so the joy jaws brought you to a place where apparently you're supposed to be happy."
+Toy Toss is a room in Dome D'Aww. "Okay, so the joy jaws brought you to a place where apparently you're supposed to be happy. And they're guarding passage out, untl you ask for the right gift that will MAKE you happy."
 
 chapter Boy Boss Roy Ross
 
 Boy Boss Roy Ross is a rhymable in Toy Toss. "Boy Boss Roy Ross stands here, waiting for you to claim whatever gift you want, as long as it's the right one."
+
+chapter Joy Jaws
+
+the Joy Jaws are scenery in Toy Toss. "They grin at you and make you feel out of place despite, well, their pronunciation not being quite right. You're not leaving until you've received a gift that will make you happy."
 
 book Hi Ho I Owe Sty Sto
 
