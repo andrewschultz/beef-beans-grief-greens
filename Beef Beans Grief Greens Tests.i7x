@@ -12,14 +12,25 @@ test thru with "test trtr/test hh/test final/test allend".
 
 test jthru with "test w1a/test w2w1/test w2w2/out/pluck plate/in/out/test pair/test square/test mare/test shard/in/believe below/test bee/d/test thru".
 
-test wthru with "test w1a/test w2w/out/pluck plate/test w2w3/test w2e/w/soy sauce/test w2s/n/pie po/test w2n/s/test w2x/in/test w3/test w4/test w5/test w6".
+test wthru with "test w1a/test w2w/out/pluck plate/test w2w3/test w2e/w/soy sauce/test w2s/n/pie po/test w2n/s/test w2x/in/test w3/test w4/test w5/test w6/test w7".
 
 book verified tests that are part of the game
 
-test w1 with "grieve grow/made mug/jade jug/leave lo". [start of game]
-test w1a with "test w1/sassed ceased." [start of game with bonus points]
+chapter piecemeal
 
-book tests for wandering where branches
+test p2 with "test w1a/test w2w/out/pluck plate/test w2w3/test w2e/w/soy sauce/test w2s/n/pie po/test w2n/s"
+
+test p3 with "test p2/test w2x/in/test w3".
+test p4 with "test p3/test w4".
+test p5 with "test p4/test w5".
+test p6 with "test p5/test w6".
+
+chapter start
+
+test w1 with "grieve grow/made mug/jade jug/leave lo". [start of game]
+test w1a with "test w1/sassed ceased". [start of game with bonus points]
+
+chapter tests for wandering where branches
 
 [the west is made first as you get the oven and learn what pieces are needed for it]
 
@@ -42,16 +53,18 @@ test w2n2 with "massive mitt".
 test w2n3 with "cuckoo/doodoo/poohpooh". [north]
 
 test w2x with "chrome craw/d/honeyed ham/grey gruel/just jello/u".
+
+chapter rest of main line test
  
 test w3 with "believe below/out/flopper flea/in/d".
 
-test w4 with "test w4a/test w4b".
-test w4a with "scrappy scrawl/whappy wall".
-test w4b with "sappy saul/pappy paul/known nora/lone laura/cappy caul/yappy yall/bappy ball".
+test w4 with "scrappy scrawl/whappy wall".
 
-test w5 with "wheat well/feet fell/sheet shell/beat bell/meet mel/x leet lel".
+test w5 with "sappy saul/pappy paul/known nora/lone laura/cappy caul/yappy yall/bappy ball".
 
-test w6 with "repeat repel".
+test w6 with "wheat well/feet fell/sheet shell/beat bell/meet mel/x leet lel".
+
+test w7 with "repeat repel".
 
 book partial tests
 

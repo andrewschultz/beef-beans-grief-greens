@@ -171,7 +171,7 @@ after looking in Wandering Where when Wandering Where is unvisited:
 	continue the action;
 
 to say craw-check:
-	if sides-visited < 3 or sco-chrome-craw is true, continue the action;
+	if sides-visited < 4 or sco-chrome-craw is true, continue the action;
 	say ". You've really been around, now, and perhaps you can discover one more way, even though you suspect you don't need it for the full feast. It might add more variety, though"
 
 check going in Wandering Where when bopper bee is in Wandering Where: say "You have a battle to win with the bopper bee first." instead;

@@ -246,7 +246,7 @@ a goodrhyme rule (this is the vc-chrome-craw rule):
 	if player is not in wandering where:
 		vcp "Ooh! A passage somewhere new? That'd be interesting. But this isn't an [if mrlp is dome d'aww]accessible[else]open[end if] enough space.";
 		not-yet;
-	if sides-visited < 3:
+	if sides-visited < 4:
 		vcp "That seems like it could work nicely here, but you don't know your way around well enough yet.";
 		not-yet;
 	ready;
