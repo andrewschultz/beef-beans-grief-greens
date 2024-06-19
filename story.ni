@@ -85,8 +85,8 @@ after printing the locale description for reeve row when oven-fixed-yet is false
 
 after printing the locale description for reeve row when oven-fixed-yet is true (this is the Reeve Row get cooking rule):
 	if number of uncooked toeat feastitems carried by the player > 1:
-		now all uncooked toeat feastitems are cooked;
 		say "You re-check the goon guide to see how to cook [the list of uncooked toeat feastitems carried by player].[paragraph break]";
+		now all uncooked toeat feastitems are cooked;
 		if number of uncooked toeat feastitems is 0:
 			say "You've cooked everything you need for the feast!";
 		else:
@@ -394,7 +394,7 @@ chapter cook card
 
 the cook card is an oventhing. description is "Ah! The card of very special recipes that fell out of the goon guide!". fdesc is "a missing insert from the goon guide (okay, you wrote that in, just in case)".
 
-the lard is a thing.
+some lard is a thing.
 
 book Toy Toss
 
@@ -414,7 +414,7 @@ Bri Bro is a rhymable in Hi Ho I Owe Sty Sto. "A fellow whose nametag reads BRI-
 
 chapter pie po
 
-the pie po is a rhymable. "I guess it is the pie equivalent of a po['] boy sandwich.".
+the pie po is a rhymable. "I guess it is the pie equivalent of a po['] boy sandwich.". printed name is "pie (po['])".
 
 chapter Woe Worry Slow Slurry
 
@@ -424,13 +424,25 @@ section cray cruel fey fool
 
 the cray cruel fey fool is an improper-named rhymeperson in Slow Slurry. description is "They look very bored with plain stuff."
 
+section grey gruel
+
+the grey gruel is a toeat okaycold feastitem. understand "gray" and "gray gruel" as gruel when player has gruel.
+
 section Moneyed Ma'am
 
-the Moneyed Ma'am is an improper-named female rhymeperson in Slow Slurry.
+the Moneyed Maam is an improper-named female rhymeperson in Slow Slurry. printed name of Moneyed Maam is "Moneyed Ma'am".
+
+section honeyed ham
+
+the honeyed ham is a toeat okaycold feastitem.
 
 section Fussed Fellow
 
 the fussed fellow is an improper-named male rhymeperson in Slow Slurry.
+
+section just jello
+
+the just jello is a toeat okaycold feastitem. "Wow! It's just Jell-O but a bunch of different colors."
 
 volume unsorted
 
@@ -454,7 +466,9 @@ the bbgg inventory rule is listed instead of the print standard inventory rule i
 
 carry out taking inventory (this is the bbgg inventory rule):
 	say "Currently carrying:[line break]";
-	if number of carried not silverware feastitems > 0, say "  [list of carried not silverware feastitems] (tableware)[line break]";
+	if number of carried cooked feastitems > 0, say "  [list of carried uncooked feastitems] (cooked)[line break]";
+	if number of carried okaycold feastitems > 0, say "  [list of carried okaycold feastitems] (okay cold)[line break]";
+	if number of carried cooked feastitems > 0, say "  [list of carried cooked feastitems] (uncooked)[line break]";
 	if number of carried silverware feastitems > 0, say "  [list of carried silverware feastitems] (utensils)[line break]";
 	if number of carried oventhings > 0, say "  [list of carried oventhings] (to fix the oven [here-in of reeve row])[line break]";
 	now all things carried by player are marked for listing;
