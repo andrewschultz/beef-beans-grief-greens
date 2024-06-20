@@ -1,0 +1,234 @@
+## reg-bbgg-lone-jjthru.txt
+##
+## no generator file, though i originally got this from the full walkthrough. However, there are negative tests very much worth checking!
+##
+## I also want to make extra sure that there is no fallthrough for if you have the wrong friends along. Hence some detours!
+
+## walkthrough with no bonus points, jumping everywhere
+** game: /home/andrew/prt/debug-beef-beans-grief-greens.z8
+** interpreter: /home/andrew/prt/dfrotz -m -w5000 -h25
+
+* main-thru
+
+>jj
+After some thought, you consider a good way forward: LEAVE LO...
+
+`Wandering ... Where?
+
+>jj
+After some thought, you consider a good way forward: LAUNDERING LAIR...
+
+`Dove 'N Doubt
+
+>jj
+After some thought, you consider a good way forward: LOVIN LOUT...
+
+>jj
+After some thought, you consider a good way forward: SHOVIN SHOUT...
+
+>jj
+After some thought, you consider a good way forward: OVEN OUT...
+
+`Reeve Row
+
+>jj
+After some thought, you consider a good way forward: HEAVE HO...
+
+>jj
+After some thought, you consider a good way forward: PRUNE PRIDE...
+
+>jj
+After some thought, you consider a good way forward: BELIEVE BELOW...
+
+>jj
+After some thought, you consider a good way forward: PLAYED PLUG...
+
+>jj
+After some thought, you consider a good way forward: GRIEVE GROW...
+
+>jj
+After some thought, you consider a good way forward: MADE MUG...
+
+>jj
+After some thought, you consider a good way forward: JADE JUG...
+
+#exhaustion testing
+>jj
+The lurking lump remains immovable. There's nothing critical to do here.
+
+>out
+!Wandering
+`Stuck State
+
+>jj
+After some thought, you consider a good way forward: PLUCK PLATE...
+
+`Wandering ... Where?
+
+>w
+
+`Dove 'N Doubt
+
+>jj
+After some thought, you consider a good way forward: HOOK HARD...
+
+>jj
+After some thought, you consider a good way forward: BOOK BARD...
+
+>jj
+After some thought, you consider a good way forward: COOK CARD...
+
+>jj
+After some thought, you consider a good way forward: LOOK LARD...
+
+`Wandering ... Where?
+
+>jj
+After some thought, you consider a good way forward: SQUANDERING SQUARE...
+
+>jj
+After some thought, you consider a good way forward: NEAT NOTE...
+
+>jj
+After some thought, you consider a good way forward: MEAT MOAT...
+
+>jj
+After some thought, you consider a good way forward: BEET BOAT...
+
+>jj
+After some thought, you consider a good way forward: FIGHT FIRES...
+
+>jj
+After some thought, you consider a good way forward: WHITE WIRES...
+
+>w
+
+`Toy Toss
+
+>jj
+After some thought, you consider a good way forward: SOY SAUCE...
+`Wandering ... Where?
+
+>jj
+After some thought, you consider a good way forward: MAUNDERING MARE...
+
+>jj
+After some thought, you consider a good way forward: ZAP ZOO...
+
+>jj
+After some thought, you consider a good way forward: NOTICE KNIFE...
+
+>jj
+After some thought, you consider a good way forward: CARROT CAKE...
+
+>jj
+After some thought, you consider a good way forward: SEE SOUP...
+
+>jj
+After some thought, you consider a good way forward: DENTED DIALS...
+
+>jj
+The lurking lump remains immovable. There's nothing critical to do here.
+
+>n
+
+>jj
+After some thought, you consider a good way forward: PENNY PILES...
+
+>jj
+After some thought, you consider a good way forward: PIE PO...
+
+`Wandering ... Where?
+
+>jj
+After some thought, you consider a good way forward: PONDERING PAIR...
+`Ooh, Ooh...!
+
+>jj
+After some thought, you consider a good way forward: MASSIVE MITT...
+
+>jj
+After some thought, you consider a good way forward: BOOBOO...
+
+>jj
+After some thought, you consider a good way forward: CUCKOO...
+
+>jj
+After some thought, you consider a good way forward: DOODOO...
+
+>jj
+After some thought, you consider a good way forward: JUJU...
+
+>jj
+The lurking lump remains immovable. There's nothing critical to do here.
+
+>s
+must be a bopper bee
+
+>jj
+After some thought, you consider a good way forward: FLOPPER FLEA...
+
+>jj
+The lurking lump remains immovable. There's nothing critical to do here.
+
+>chrome craw
+by one point
+
+>d
+>jj
+The lurking lump remains immovable. There's nothing critical to do here.
+>u
+
+>in
+>d
+`Trappy Trawl
+
+>jj
+After some thought, you consider a good way forward: SCRAPPY SCRAWL...
+
+>jj
+After some thought, you consider a good way forward: WHAPPY WALL...
+
+>jj
+After some thought, you consider a good way forward: LONE LAURA...
+
+>jj
+After some thought, you consider a good way forward: KNOWN NORA...
+
+>jj
+After some thought, you consider a good way forward: PAPPY PAUL...
+
+>jj
+After some thought, you consider a good way forward: SAPPY SAUL...
+
+>jj
+After some thought, you consider a good way forward: CAPPY CAUL...
+
+>jj
+After some thought, you consider a good way forward: YAPPY YALL...
+
+>jj
+After some thought, you consider a good way forward: BAPPY BALL...
+
+>jj
+After some thought, you consider a good way forward: WHEAT WELL...
+
+>jj
+After some thought, you consider a good way forward: FEET FELL...
+
+>jj
+After some thought, you consider a good way forward: SHEET SHELL...
+
+>jj
+After some thought, you consider a good way forward: BEAT BELL...
+
+>jj
+After some thought, you consider a good way forward: MEET MEL...
+
+>jj
+The lurking lump remains immovable. There's nothing critical to do here.
+
+>x leet lel
+
+>jj
+After some thought, you consider a good way forward: REPEAT REPEL...
