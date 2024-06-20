@@ -586,7 +586,23 @@ check taking:
 	if noun is rayed rug, say "The rayed rug is [if sco-heave-ho is true]better off in a corner[else]too tough to pull. You'd need help to remove it[end if]." instead;
 	if player does not have noun, say "You don't need to take anything in [this-game]." instead;
 
+volume meta verbs
+
+book creditsing
+
+carry out creditsing:
+	say "Thanks to Adam Sommerfield for holding the first ParserComp and the current administrators for keeping it going.";
+	say "Thanks to Onno Brouwer for testing.";
+
 volume game specific verbs
+
+rule for supplying a missing noun when lling (this is the get readings from room rule):
+	say "You scan the area[one of]. This will suffice most of the time, though you may wish to [b]LL[r] a thing that doesn't jibe with the area's rhymes[or][stopping].";
+	if 1 is 0: [just in case we find something we need]
+		now noun is location of player;
+	else:
+		abide by the general-ll-locations rule;
+		reject the player's command;
 
 check talktoing:
 	if noun is lovin lout, say "The lovin['] lout blinks and smiles and waves at you. They are probably better at physical activity than words." instead;
