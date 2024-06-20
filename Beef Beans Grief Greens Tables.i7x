@@ -7,10 +7,10 @@ volume the main thing
 table of verb checks
 w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	idid	best-room	check-rule	run-rule	wfull (topic)	think-advice (text)
 "sassed"	"ceased"	--	--	false	true	false	false	--	vc-sassed-ceased rule	vr-sassed-ceased rule	--	--
-"made"	"mug"	--	--	false	true	true	false	reeve row	vc-made-mug rule	vr-made-mug rule	--	--
+"maid|made"	"mug"	--	--	false	true	true	false	reeve row	vc-made-mug rule	vr-made-mug rule	--	--
 "jade"	"jug"	--	--	false	true	true	false	reeve row	vc-jade-jug rule	vr-jade-jug rule	--	--
 "played"	"plug"	--	--	false	true	true	false	reeve row	vc-played-plug rule	vr-played-plug rule	--	--
-"heave"	"ho"	--	--	false	true	true	false	reeve row	vc-heave-ho rule	vr-heave-ho rule	--	--
+"heave"	"ho"	--	--	false	true	true	false	reeve row	vc-heave-ho rule	vr-heave-ho rule	--	"You can [b]HEAVE HO[r] [once-now of vc-heave-ho rule] you have someone who can help you pull the rug up."
 "leave"	"lo"	--	--	false	true	true	false	reeve row	vc-leave-lo rule	vr-leave-lo rule	--	--
 "believe"	"below"	--	--	false	true	true	false	reeve row	vc-believe-below rule	vr-believe-below rule	--	"You can [b]BELIEVE BELOW[r] [once-now of vc-believe-below rule] you see a possible way down from [here-in of reeve row]."
 "grieve"	"grow"	--	--	false	true	true	false	reeve row	vc-grieve-grow rule	vr-grieve-grow rule	--	--

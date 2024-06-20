@@ -565,6 +565,7 @@ report taking inventory:
 book taking
 
 check taking:
+	if noun is rayed rug, say "The rayed rug is [if sco-heave-ho is true]better off in a corner[else]too tough to pull. You'd need help to remove it[end if]." instead;
 	if player does not have noun, say "You don't need to take anything in [this-game]." instead;
 
 volume game specific verbs
