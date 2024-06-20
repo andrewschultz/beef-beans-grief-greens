@@ -69,7 +69,9 @@ check exiting (this is the OUT redirect rule):
 	let NVD be number of viable directions;
 	if NVD is 1:
 		let RVD be random viable direction;
-		if RVD is not outside, try going RVD instead;
+		if RVD is not outside:
+			say "(going [RVD], the only viable direction)[paragraph break]";
+			try going RVD instead;
 	if NVD > 1:
 		say "There are [nvd in words] viable ways to leave: [list of viable directions]. So you'll need to be specific." instead;
 	try going outside instead;

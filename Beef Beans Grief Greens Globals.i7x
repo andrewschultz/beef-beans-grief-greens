@@ -14,13 +14,13 @@ gender-variable is a number that varies. gender-variable is 0. [ 1 = Yves, 2 = E
 
 chapter regions
 
-Home Haw is a region.
+Home Haw is a region. printed name is "Home, Haw".
 
-Roam Raw is a region.
+Roam Raw is a region. printed name is "Roam, Raw".
 
-Gnome Gnaw is a region.
+Gnome Gnaw is a region. printed name is "Gnome-Gnaw".
 
-Dome D'aww is a region.
+Dome D'aww is a region. printed name is "Dome, D'aww".
 
 volume general globals
 
