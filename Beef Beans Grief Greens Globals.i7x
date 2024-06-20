@@ -4,9 +4,9 @@ Version 1/240113 of Beef Beans Grief Greens Globals by Andrew Schultz begins her
 
 volume variables
 
-core-max is 29.
+core-max is 54.
 
-max-bonus is 1.
+max-bonus is 8.
 
 entry-in-series is 8.
 

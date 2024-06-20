@@ -637,6 +637,49 @@ rule for printing a parser error when gender-variable is 0:
 	now gender-variable is temp;
 	the rule succeeds;
 
+volume endgame
+
+table of final question options (continued)
+final question wording	only if victorious	topic	final response rule	final response activity
+"see the points you [b]MISSED[r]" 	true	"missed/misses"	show-misses rule	--
+
+this is the show-misses rule:
+	say "Note that, because there are three different endings, you'll automatically have 'missed' two of them, which I don't want to spoil. You can [b]UNDO[r] to track the others down.";
+	say "[line break]";
+	if cur-bonus is max-bonus:
+		say "You missed nothing else, though. Good job!";
+		the rule succeeds;
+	if sco-sassed-ceased is false:
+		say "You could've felt a bit more important with [b]SASSED CEASED[r] when you had the [feast].";
+	if sco-chrome-craw is false:
+		say "There was a [b]CHROME CRAW[r] that rhymed with the regions after the room name on the status line. It held some bonus dishes and food.";
+	else:
+		if sco-honeyed-ham is false:
+			say "The Moneyed Ma'am would've given you a [b]HONEYED HAM[r].";
+		if sco-grey-gruel is false:
+			say "The [fool] would've given you some [b]GREY GRUEL[r].";
+		if sco-honeyed-ham is false:
+			say "The fussed fellow had [b]JUST JELLO[r] for you.";
+	if sco-booboo is false:
+		say "You could've faked a [b]BOOBOO[r] around [zl].";
+	if sco-cuckoo is false:
+		say "You could've said [b]CUCKOO[r] around [zl].";
+	if sco-doodoo is false:
+		say "You could've shown [zl] [b]DOODOO[r].";
+	if sco-juju is false:
+		say "You could've shown [zl] [b]JUJU[r].";
+	if sco-muumuu is false:
+		say "You could've shown [zl] [b]MUUMUU[r].";
+	if sco-poohpooh is false:
+		say "You could've shown [zl] [b]POOHPOOH[r].";
+	if sco-tutu is false:
+		say "You could've suggested [zl] wear a [b]TUTU[r].";
+[	repeat through table of verb checks:
+		if core entry is false and idid entry is true:
+			say "BONUS GOTTEN: [w1 entry] [w2 entry].";
+		if idid entry is false:
+			say "[w1 entry] [w2 entry].";]
+
 volume index map nonsense
 
 index map with Wandering Where mapped northwest of Reeve Row.

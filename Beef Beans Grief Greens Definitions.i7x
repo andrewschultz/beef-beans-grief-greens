@@ -45,8 +45,6 @@ to decide whether rhyme-mechanism-known:
 definition: a room (called rm) is available-from-here:
 	no;
 
-this is the show-misses rule: do nothing;
-
 this is the situational-cuing-reject rule: do nothing;
 
 this is the stuck-right-now rule: do nothing;

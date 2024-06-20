@@ -1060,7 +1060,9 @@ to end-stub:
 	if allow-win is false:
 		say "In testing, so we try again.";
 		continue the action;
-	end the game saying "Cease seeking: Peace? PEAKING!";
+	follow the score and thinking changes rule;
+	force-status;
+	end the story finally saying "Cease seeking: Peace? PEAKING!";
 	follow the shutdown rules;
 
 to say final-judge-think of (nu - a number):

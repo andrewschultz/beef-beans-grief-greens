@@ -14,7 +14,7 @@ mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 "peeve"	"po|poe"	--	false	--	"Not wise, without a real raven-heal-haven."
 "retrieve"	"retro"	--	false	--	"Text adventures not retro enough?"
 "reprieve"	"repro"	--	false	--	"That's a really roundabout way to pass on your grief."
-"sleeve"	"slow"	--	false	--	"You don't need to be encumbered by clothes."
+"sleeve"	"slow"	--	false	--	"You don't need to be encumbered by heavy clothes."
 "weave"	"woe"	--	false	--	"You're trying to become less despondent, not more."
 "yeve"	"yo"	--	false	--	"Archaic methods or panaceas won't help you feel better."
 
