@@ -12,13 +12,15 @@ test thru with "test trtr/test hh/test final/test allend".
 
 test jthru with "test w1a/test w2w1/test w2w2/out/pluck plate/in/out/test pair/test square/test mare/test shard/in/believe below/test bee/d/test thru".
 
-test wthru with "test w1a/test w2w/out/pluck plate/test w2w3/test w2e/w/soy sauce/test w2s/n/pie po/test w2n/s/test w2x/in/test w3/test w4/test w5/test w6/test w7".
+test wthru with "test w1a/test w2w/out/pluck plate/test w2w3/test w2e/w/soy sauce/test w2s/n/penny piles/pie po/test w2n/s/flopper flea/test w2x/in/test w3/test w4/test w5/test w6/test w7".
+
+test wmin with "test w1/test w2w/out/pluck plate/test w2w3/test w2e/w/soy sauce/test w2s/n/penny piles/pie po/test w2n1/test w2n2/s/flopper flea/in/test w3/test w4/test w5/test w6/test w7".
 
 book verified tests that are part of the game
 
 chapter piecemeal
 
-test p2 with "test w1a/test w2w/out/pluck plate/test w2w3/test w2e/w/soy sauce/test w2s/n/pie po/test w2n/s"
+test p2 with "test w1a/test w2w/out/pluck plate/test w2w3/test w2e/w/soy sauce/test w2s/n/penny piles/pie po/test w2n/s"
 
 test p3 with "test p2/test w2x/in/test w3".
 test p4 with "test p3/test w4".
@@ -56,7 +58,7 @@ test w2x with "chrome craw/d/honeyed ham/grey gruel/just jello/u".
 
 chapter rest of main line test
  
-test w3 with "believe below/out/flopper flea/in/d".
+test w3 with "in/believe below/d".
 
 test w4 with "scrappy scrawl/whappy wall".
 
