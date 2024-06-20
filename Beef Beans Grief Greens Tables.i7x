@@ -159,7 +159,6 @@ this is the vr-believe-below rule:
 	else:
 		say "Aha! You wondered if something was below the rug. Now you see the outline of a trap door beneath the rug."; [?? if rug there and you believed, you'd like to remove it]
 	now sco-believe-below is true;
-	trigger-bee;
 	declue-here-by 2855;
 
 a goodrhyme rule (this is the vc-leave-lo rule):
@@ -200,7 +199,6 @@ this is the vr-heave-ho rule:
 	moot lout;
 	say "[line break]Also, you take some time to look inside the oven. You find something called a goon guide. But you can't use it, because you're not a goon. Or can you?";
 	now player has goon guide;
-	trigger-bee;
 	declue-here-by 2752;
 
 a goodrhyme rule (this is the vc-grieve-grow rule):
@@ -978,11 +976,6 @@ to oven-check:
 	if oven-fix-score is 3:
 		say "With the plug, wires and dials, you replace the faulty parts of the oven.";
 		now oven-fixed-yet is true;
-
-to trigger-bee:
-	if sco-heave-ho is true and sco-believe-below is true:
-		say "You hear an odd, insistent buzzing from outside.";
-		move bopper bee to Wandering Where;
 
 chapter Squalor Square
 

@@ -120,7 +120,11 @@ this is the side puzzle rooms rule:
 	if Hi Ho I Owe is unvisited:
 		say "Oh no! Another area completed, another distraction. You failed to watch where you were going, and you wind up by a weird bakery that sells both very expensive and very cheap items. Because you're so broke, service is lacking. You won't get any help perusing the vast selection. In fact, you probably won't get any help unless you ask for something in stock, and it's there. And even then, you'll need to pay for it. This isn't a food pantry.";
 		move player to Hi Ho I Owe instead;
-	say "You're worried you'll be whisked off somewhere else after your latest marginal success, but surprisingly, you know your way around well enough now that you see another passage open up. It's weird and winding and you suspect anything you find there will be unnecessary. But still, it might be fun to explore.";
+	if bopper bee is off-stage:
+		say "Oh no! You hear an odd, insistent buzzing in the distance. It comes nearer. A giant bee tries to bop you ... must be a bopper bee! You may have to outsmart it, here.";
+		move bopper bee to Wandering Where;
+
+[	say "You're worried you'll be whisked off somewhere else after your latest marginal success, but surprisingly, you know your way around well enough now that you see another passage open up. It's weird and winding and you suspect anything you find there will be unnecessary. But still, it might be fun to explore.";]
 
 check going outside when player is in Reeve Row:
 	if sco-heave-ho is true:
@@ -129,7 +133,7 @@ check going outside when player is in Reeve Row:
 check going when player is in a wandroom (this is the stuck-state-check rule): [?? not perfect -- GT REEVE ROW will dump us in Wandering Where for the moment. This is a very minor nuisance bug, but it's possible to fix if the major ones are down. Define dumproom and then put the player in dumproom.]
 	consider native-clear-rule of location of player;
 	if the rule failed, continue the action;
-	if player is not in Dove n Doubt:
+	if player is not in Dove n Doubt and room gone to is Wandering Where:
 		abide by the side puzzle rooms rule;
 
 check gotoing when player is in a wandroom:
