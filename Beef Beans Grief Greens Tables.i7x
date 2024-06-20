@@ -50,9 +50,9 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "pie"	"po"	--	--	false	true	true	false	sty sto	vc-pie-po rule	vr-pie-po rule	--	"You can buy a [b]PIE PO[r] [once-now of vc-pie-po rule] you have currency."
 "penny"	"piles"	--	--	false	true	true	false	sty sto	vc-penny-piles rule	vr-penny-piles rule	--	--
 "soy"	"sauce"	--	--	false	true	true	false	toy toss	vc-soy-sauce rule	vr-soy-sauce rule	--	--
-"honeyed"	"ham"	--	--	false	true	true	false	chrome craw	vc-honeyed-ham rule	vr-honeyed-ham rule	--	--
-"grey"	"gruel"	--	--	false	true	true	false	chrome craw	vc-grey-gruel rule	vr-grey-gruel rule	--	--
-"just"	"jello"	--	--	false	true	true	false	chrome craw	vc-just-jello rule	vr-just-jello rule	--	--
+"honeyed"	"ham"	--	--	false	true	false	false	chrome craw	vc-honeyed-ham rule	vr-honeyed-ham rule	--	--
+"grey"	"gruel"	--	--	false	true	false	false	chrome craw	vc-grey-gruel rule	vr-grey-gruel rule	--	--
+"just"	"jello"	--	--	false	true	false	false	chrome craw	vc-just-jello rule	vr-just-jello rule	--	--
 "scrappy"	"scrawl"	--	--	false	true	true	false	trappy trawl	vc-scrappy-scrawl rule	vr-scrappy-scrawl rule	--	--
 "whappy"	"wall"	--	--	false	true	true	false	trappy trawl	vc-whappy-wall rule	vr-whappy-wall rule	--	"You can hit the [b]WHAPPY WALL[r] [once-now of vc-whappy-wall rule] you know where to whap the wall."
 "lone"	"laura"	--	--	false	true	true	false	happy hall	vc-lone-laura rule	vr-lone-laura rule	--	--
@@ -723,19 +723,20 @@ a goodrhyme rule (this is the vc-grey-gruel rule):
 
 this is the vr-grey-gruel rule:
 	now sco-grey-gruel is true;
-	say "They [fool] hands you some surprisingly not-cray gray gruel. It will be useful, you guess, as a base or paste.";
+	say "The [fool] hands you some surprisingly not-cray gray gruel and snickers before running off. What kind of square would actually LIKE gruel?[paragraph break]But you want to be considerate about allergies, people trying to diet, people with vegan lifestyles, and so forth. It will be useful, you guess, as a base or paste.";
 	now player has grey gruel;
+	moot cray cruel fey fool;
 
 a goodrhyme rule (this is the vc-just-jello rule):
 	if fussed fellow is not in location of player, unavailable;
 	if sco-just-jello is true:
-		vcal "Jell-O only goes so far.";
+		vcal "There's such a thing as too much Jell-O.";
 		already-done;
 	ready;
 
 this is the vr-just-jello rule:
 	now sco-just-jello is true;
-	say "The [fellow] seems relieved to hand you the jell-o.";
+	say "The [fellow] seems relieved to hand you the Jell-o. It may be just Jell-O, but it's all different kinds of colors and flavors. Including pineapple! You remember when some smart-aleck in middle school said pineapple Jell-O would never be a thing. In fact, that smart-aleck snickered when you were chosen for the ceremony.";
 	now player has just jello;
 
 chapter Trappy Trawl scoring
