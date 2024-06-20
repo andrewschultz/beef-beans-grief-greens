@@ -10,26 +10,26 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "maid|made"	"mug"	--	--	false	true	true	false	reeve row	vc-made-mug rule	vr-made-mug rule	--	--
 "jade"	"jug"	--	--	false	true	true	false	reeve row	vc-jade-jug rule	vr-jade-jug rule	--	--
 "played"	"plug"	--	--	false	true	true	false	reeve row	vc-played-plug rule	vr-played-plug rule	--	--
-"heave"	"ho"	--	--	false	true	true	false	reeve row	vc-heave-ho rule	vr-heave-ho rule	--	"You can [b]HEAVE HO[r] [once-now of vc-heave-ho rule] you have someone who can help you pull the rug up."
-"leave"	"lo"	--	--	false	true	true	false	reeve row	vc-leave-lo rule	vr-leave-lo rule	--	--
-"believe"	"below"	--	--	false	true	true	false	reeve row	vc-believe-below rule	vr-believe-below rule	--	"You can [b]BELIEVE BELOW[r] [once-now of vc-believe-below rule] you see a possible way down from [here-in of reeve row]."
+"heave"	"ho"	"hoe"	vh-heave-hoe rule	false	true	true	false	reeve row	vc-heave-ho rule	vr-heave-ho rule	--	"You can [b]HEAVE HO[r] [once-now of vc-heave-ho rule] you have someone who can help you pull the rug up."
+"leave"	"lo"	"low"	vh-leave-low rule	false	true	true	false	reeve row	vc-leave-lo rule	vr-leave-lo rule	--	--
+"believe"	"below"	--	--	false	true	true	false	reeve row	vc-believe-below rule	vr-believe-below rule	--	--
 "grieve"	"grow"	--	--	false	true	true	false	reeve row	vc-grieve-grow rule	vr-grieve-grow rule	--	--
 "prune"	"pride"	--	--	false	true	true	false	reeve row	vc-prune-pride rule	vr-prune-pride rule	--	--
 "pondering"	"pair"	--	--	false	true	true	false	wandering where	vc-pondering-pair rule	vr-pondering-pair rule	--	--
 "squandering"	"square"	--	--	false	true	true	false	wandering where	vc-squandering-square rule	vr-squandering-square rule	--	--
 "maundering"	"mare"	--	--	false	true	true	false	wandering where	vc-maundering-mare rule	vr-maundering-mare rule	--	--
 "laundering"	"lair"	--	--	false	true	true	false	wandering where	vc-laundering-lair rule	vr-laundering-lair rule	--	--
-"flopper"	"flea"	--	--	false	true	true	false	wandering where	vc-flopper-flea rule	vr-flopper-flea rule	--	--
-"chrome"	"craw"	--	--	false	true	true	false	wandering where	vc-chrome-craw rule	vr-chrome-craw rule	--	--
+"flopper"	"flea"	"flee"	vh-flopper-flee rule	false	true	true	false	wandering where	vc-flopper-flea rule	vr-flopper-flea rule	--	--
+"chrome"	"craw"	--	--	false	true	true	false	wandering where	vc-chrome-craw rule	vr-chrome-craw rule	--	"You can open the [b]CHROME CRAW[r] [here-in of wandering] [once-now of vc-believe-below rule] you've explored everywhere you can aboveground."
 "massive"	"mitt"	--	--	false	true	true	false	Ooh Ooh	vc-massive-mitt rule	vr-massive-mitt rule	--	--
 "fight"	"fires"	--	--	false	true	true	false	squalor square	vc-fight-fires rule	vr-fight-fires rule	--	--
-"white"	"wires"	--	--	false	true	true	false	squalor square	vc-white-wires rule	vr-white-wires rule	--	--
+"white"	"wires"	--	--	false	true	true	false	squalor square	vc-white-wires rule	vr-white-wires rule	--	"You can handle the [b]WHITE WIRES[r] [once-now of vc-white-wires rule] the lyres are safe to touch."
 "neat"	"note"	--	--	false	true	true	false	squalor square	vc-neat-note rule	vr-neat-note rule	--	--
-"meat"	"moat"	--	--	false	true	true	false	squalor square	vc-meat-moat rule	vr-meat-moat rule	--	--
-"beet"	"boat"	--	--	false	true	true	false	squalor square	vc-beet-boat rule	vr-beet-boat rule	--	--
+"meat"	"moat"	--	--	false	true	true	false	squalor square	vc-meat-moat rule	vr-meat-moat rule	--	"You can find a [b]MEAT MOAT[r] [once-now of vc-meat-moat rule] you have found something more useful than the bleat bloat."
+"beet"	"boat"	--	--	false	true	true	false	squalor square	vc-beet-boat rule	vr-beet-boat rule	--	"You can find a [b]BEET BOAT[r] [once-now of vc-beet-boat rule] you have found something more useful than the bleat bloat."
 "lovin"	"lout"	--	--	false	true	true	false	dove n doubt	vc-lovin-lout rule	vr-lovin-lout rule	--	--
-"shovin"	"shout"	--	--	false	true	true	false	dove n doubt	vc-shovin-shout rule	vr-shovin-shout rule	--	--
-"oven"	"out"	--	--	false	true	true	false	dove n doubt	vc-oven-out rule	vr-oven-out rule	--	--
+"shovin"	"shout"	--	--	false	true	true	false	dove n doubt	vc-shovin-shout rule	vr-shovin-shout rule	--	"You can make a [b]SHOVIN SHOUT[r] [once-now of vc-shovin-shout rule] you have the help of someone stronger."
+"oven"	"out"	--	--	false	true	true	false	dove n doubt	vc-oven-out rule	vr-oven-out rule	--	"You can say [b]OVEN OUT[r] [once-now of vc-oven-out rule] you have someone strong enough to push the oven."
 "hook"	"hard"	--	--	false	true	true	false	dove n doubt	vc-hook-hard rule	vr-hook-hard rule	--	--
 "zap"	"zoo"	--	--	false	true	true	false	Gap Goo	vc-zap-zoo rule	vr-zap-zoo rule	--	--
 "notice"	"knife"	--	--	false	true	true	false	Gap Goo	vc-notice-knife rule	vr-notice-knife rule	--	--
@@ -47,26 +47,26 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "cook"	"card"	--	--	false	true	true	false	took tarred	vc-cook-card rule	vr-cook-card rule	--	--
 "look"	"lard"	--	--	false	true	true	false	took tarred	vc-look-lard rule	vr-look-lard rule	--	--
 "pluck"	"plate"	--	--	false	true	true	false	stuck state	vc-pluck-plate rule	vr-pluck-plate rule	--	--
-"pie"	"po"	--	--	false	true	true	false	sty sto	vc-pie-po rule	vr-pie-po rule	--	--
+"pie"	"po"	--	--	false	true	true	false	sty sto	vc-pie-po rule	vr-pie-po rule	--	"You can buy a [b]PIE PO[r] [once-now of vc-pie-po rule] you have currency."
 "penny"	"piles"	--	--	false	true	true	false	sty sto	vc-penny-piles rule	vr-penny-piles rule	--	--
 "soy"	"sauce"	--	--	false	true	true	false	toy toss	vc-soy-sauce rule	vr-soy-sauce rule	--	--
 "honeyed"	"ham"	--	--	false	true	true	false	chrome craw	vc-honeyed-ham rule	vr-honeyed-ham rule	--	--
 "grey"	"gruel"	--	--	false	true	true	false	chrome craw	vc-grey-gruel rule	vr-grey-gruel rule	--	--
 "just"	"jello"	--	--	false	true	true	false	chrome craw	vc-just-jello rule	vr-just-jello rule	--	--
 "scrappy"	"scrawl"	--	--	false	true	true	false	trappy trawl	vc-scrappy-scrawl rule	vr-scrappy-scrawl rule	--	--
-"whappy"	"wall"	--	--	false	true	true	false	trappy trawl	vc-whappy-wall rule	vr-whappy-wall rule	--	--
+"whappy"	"wall"	--	--	false	true	true	false	trappy trawl	vc-whappy-wall rule	vr-whappy-wall rule	--	"You can hit the [b]WHAPPY WALL[r] [once-now of vc-whappy-wall rule] you know where to whap the wall."
 "lone"	"laura"	--	--	false	true	true	false	happy hall	vc-lone-laura rule	vr-lone-laura rule	--	--
 "known"	"nora"	--	--	false	true	true	false	happy hall	vc-known-nora rule	vr-known-nora rule	--	--
 "pappy"	"paul"	--	--	false	true	true	false	happy hall	vc-pappy-paul rule	vr-pappy-paul rule	--	--
 "sappy"	"saul"	--	--	false	true	true	false	happy hall	vc-sappy-saul rule	vr-sappy-saul rule	--	--
-"cappy"	"caul"	--	--	false	true	true	false	happy hall	vc-cappy-caul rule	vr-cappy-caul rule	--	--
-"yappy"	"yall"	--	--	false	true	true	false	happy hall	vc-yappy-yall rule	vr-yappy-yall rule	--	--
-"bappy"	"ball"	--	--	false	true	true	false	happy hall	vc-bappy-ball rule	vr-bappy-ball rule	--	--
+"cappy"	"caul"	--	--	false	true	true	false	happy hall	vc-cappy-caul rule	vr-cappy-caul rule	--	"You can ask for your [b]CAPPY CAUL[r] [once-now of vc-cappy-caul rule] everyone else is here for the ceremony."
+"yappy"	"yall"	--	--	false	true	true	false	happy hall	vc-yappy-yall rule	vr-yappy-yall rule	--	"You can get everyone [b]YAPPY YALL[r] [once-now of vc-cappy-caul rule] preparations for the ceremony and feast are complete."
+"bappy"	"ball"	--	--	false	true	true	false	happy hall	vc-bappy-ball rule	vr-bappy-ball rule	--	"You can have everyone play [b]BAPPY BALL[r] [once-now of vc-cappy-caul rule] the feast is complete, to burn off calories."
 "wheat"	"well"	--	--	false	true	true	false	compete compel	vc-wheat-well rule	vr-wheat-well rule	--	--
 "sheet"	"shell"	--	--	false	true	true	false	compete compel	vc-sheet-shell rule	vr-sheet-shell rule	--	--
-"feet"	"fell"	--	--	false	true	true	false	compete compel	vc-feet-fell rule	vr-feet-fell rule	--	--
-"beat"	"bell"	--	--	false	true	true	false	compete compel	vc-beat-bell rule	vr-beat-bell rule	--	--
-"meet"	"mel"	--	--	false	true	true	false	compete compel	vc-meet-mel rule	vr-meet-mel rule	--	--
+"feet"	"fell"	--	--	false	true	true	false	compete compel	vc-feet-fell rule	vr-feet-fell rule	--	"You can claim your [b]FEET FELL[r] [once-now of vc-feet-fell rule] they have somewhere safe to fall to."
+"beat"	"bell"	--	--	false	true	true	false	compete compel	vc-beat-bell rule	vr-beat-bell rule	--	"You can [b]BEAT BELL[r] [once-now of vc-beat-bell rule] there is a (door)bell to beat, or reach before the person ringing it runs away."
+"meet"	"mel"	--	--	false	true	true	false	compete compel	vc-meet-mel rule	vr-meet-mel rule	--	"You can [b]MEET MEL[r] [once-now of vc-meet-mel rule] you know someone is near."
 "heat"	"hell"	--	--	false	true	true	false	compete compel	vc-heat-hell rule	vr-heat-hell rule	--	"[final-judge-think of -1]."
 "repeat"	"repel"	--	--	false	true	true	false	compete compel	vc-repeat-repel rule	vr-repeat-repel rule	--	"[final-judge-think of 0]."
 "sweet"	"swell"	--	--	false	true	true	false	compete compel	vc-sweet-swell rule	vr-sweet-swell rule	--	"[final-judge-think of 1]."
@@ -165,6 +165,10 @@ a goodrhyme rule (this is the vc-leave-lo rule):
 	if player is not in reeve row, unavailable;
 	ready;
 
+this is the vh-leave-low rule:
+	say "You're already feeling a bit low. You don't need to advertise it, or sink lower. Perhaps a potentially hearty interjection would work better.";
+	the rule succeeds;
+
 this is the vr-leave-lo rule:
 	if sco-leave-lo is false:
 		say "Sometimes you just need the right time to say a simple phrase to get you going. And you do, here.";
@@ -183,6 +187,10 @@ a goodrhyme rule (this is the vc-heave-ho rule):
 		vcp "You try to pull the rayed rug, but it feels glued down. You can't move it by yourself!";
 		not-yet;
 	ready;
+
+this is the vh-heave-hoe rule:
+	say "You are not in a garden. Try an interjection instead.";
+	the rule succeeds;
 
 this is the vr-heave-ho rule:
 	now sco-heave-ho is true;
@@ -243,7 +251,7 @@ a goodrhyme rule (this is the vc-chrome-craw rule):
 		already-done;
 	if trappy trawl is visited:
 		vcp "You could have opened the chrome craw in [wandering], but it's too late now. You don't want to go back. Everyone is waiting.";
-		unavailable;
+		unavailable; [not-yet isn't applicable here since you can't ever make your way back]
 	if player is not in wandering where:
 		vcp "Ooh! A passage somewhere new? That'd be interesting. But this isn't an [if mrlp is dome d'aww]accessible[else]open[end if] enough space.";
 		not-yet;
@@ -267,6 +275,10 @@ a goodrhyme rule (this is the vc-flopper-flea rule):
 		vcal "You already got rid of the bopper bee!";
 		already-done;
 	ready;
+
+this is the vh-flopper-flee rule:
+	say "You can't order the bee around, but maybe it's disguised as something else.";
+	the rule succeeds;
 
 this is the vr-flopper-flea rule:
 	now sco-flopper-flea is true;
