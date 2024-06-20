@@ -512,11 +512,12 @@ this is the vr-oven-out rule:
 	say "With the right commands and pacing, you and [the lout] move the oven from its former position. The lout, very unloutishly indeed, asks if you need the oven to move anywhere. You defer all 'Oh, it'd be too much!' but after some nonsense back-and-forthing, you both realize that's wasted energy. You both move the oven back to Reeve Row pretty quickly. The oven is -- well, you sense it isn't ready to cook anything, but it's a lot easier to repair here.[paragraph break]The [lout] waits around, as if they suspect they could help you with one more thing.";
 	move oven to Reeve Row;
 	move lovin lout to Reeve Row;
-	move player to Reeve Row, without printing a room description;
+	drop-player-at Reeve Row;
 
 section shook shard scoring
 
 a goodrhyme rule (this is the vc-hook-hard rule):
+	if shook shard is not in location of player, unavailable;
 	if took tarred is visited and player is not in took tarred and cook card is not moot:
 		vcal "You already held the shard.";
 		already-done;
