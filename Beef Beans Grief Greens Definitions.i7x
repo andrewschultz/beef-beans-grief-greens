@@ -95,6 +95,11 @@ after doing something with a rhymeperson:
 	set the pronoun them to noun;
 	continue the action;
 
+definition: a feastitem (called fe) is stillneeded:
+	if fe is carried, no;
+	if fe is okaycold, no;
+	yes;
+
 chapter wandering
 
 a wandroom is a kind of room. A wandroom has a direction called wanddir.
@@ -167,7 +172,7 @@ to decide which number is hall-female-guest-score:
 	decide on (boolval of sco-lone-laura) + (boolval of sco-known-nora);
 
 to decide which number is ooh-score:
-	decide on (boolval of sco-booboo) + (boolval of sco-cuckoo) + (boolval of sco-doodoo) + (boolval of sco-juju) + (boolval of sco-muumuu) + (boolval of sco-poopoo) + (boolval of sco-tutu)
+	decide on (boolval of sco-booboo) + (boolval of sco-cuckoo) + (boolval of sco-doodoo) + (boolval of sco-juju) + (boolval of sco-muumuu) + (boolval of sco-poohpooh) + (boolval of sco-tutu)
 
 to decide which number is well-score:
 	decide on (boolval of sco-feet-fell) + (boolval of sco-wheat-well) + (boolval of sco-sheet-shell) + (boolval of sco-beat-bell) + (boolval of sco-meet-mel);

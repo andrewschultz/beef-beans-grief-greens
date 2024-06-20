@@ -100,8 +100,19 @@ check going down in Reeve Row:
 	if sco-heave-ho is false, say "There's an outline leading down, but you can't figure the way to remove it." instead;
 	if sco-grieve-grow is false, say "You're not emotionally ready, yet. Yet.[paragraph break]There's something you need to do here, something independent of adventuring, something not at all concrete.[paragraph break]How can you deal with all the loss and steel yourself, so you know it's worth it, and you're worthy of conducting the ceremony?" instead;
 	if copper key is not moot, say "But you haven't unlocked the way down yet." instead;
-	if number of not carried feastitems > 0, say "You look at [feast]. You don't have everything, yet." instead;
+	if number of stillneeded feastitems > 0, say "You look at [feast]. You don't have everything, yet." instead;
 	if oven-fixed-yet is false, say "But you haven't found a way to cook [the list of toeat feastitems] yet." instead;
+	if sco-chrome-craw is false, max-down;
+	if sco-just-jello is false, max-down;
+	if sco-honeyed-ham is false, max-down;
+	if sco-grey-gruel is false, max-down;
+	if sco-booboo is false, max-down;
+	if sco-cuckoo is false, max-down;
+	if sco-doodoo is false, max-down;
+	if sco-juju is false, max-down;
+	if sco-muumuu is false, max-down;
+	if sco-poohpooh is false, max-down;
+	if sco-tutu is false, max-down;
 	move player to trappy trawl instead;
 
 check going outside in Reeve Row when Lovin Lout is in Reeve Row: say "You sense the lout could help with the rayed rug in some way." instead; [??GT must be inoperative]

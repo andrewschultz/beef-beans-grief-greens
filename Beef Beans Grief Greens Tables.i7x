@@ -41,7 +41,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "doo"	"doo"	--	--	false	true	true	false	ooh ooh	vc-doodoo rule	vr-doodoo rule	"doodoo"	--
 "ju"	"ju"	--	--	false	true	true	false	ooh ooh	vc-juju rule	vr-juju rule	"juju"	--
 "muu"	"muu"	--	--	false	true	true	false	ooh ooh	vc-muumuu rule	vr-muumuu rule	"mumu/muumuu"	--
-"poo"	"pooh"	--	--	false	true	true	false	ooh ooh	vc-poopoo rule	vr-poopoo rule	"poopoo/poohpooh"	--
+"poo"	"pooh"	--	--	false	true	true	false	ooh ooh	vc-poohpooh rule	vr-poohpooh rule	"poopoo/poohpooh"	--
 "tu"	"tu"	--	--	false	true	true	false	ooh ooh	vc-tutu rule	vr-tutu rule	"tutu"	--
 "book"	"bard"	--	--	false	true	true	false	took tarred	vc-book-bard rule	vr-book-bard rule	--	--
 "cook"	"card"	--	--	false	true	true	false	took tarred	vc-cook-card rule	vr-cook-card rule	--	--
@@ -356,15 +356,15 @@ this is the vr-muumuu rule:
 	say "Loulou and Zuzu shrug a bit. Why not? They come in so many different colors.";
 	process-cocoa;
 
-a goodrhyme rule (this is the vc-poopoo rule):
+a goodrhyme rule (this is the vc-poohpooh rule):
 	if player is not in ooh ooh, unavailable;
-	if sco-poopoo is true:
+	if sco-poohpooh is true:
 		vcal "There's overdoing things, you reckon.";
 		already-done;
 	ready;
 
-this is the vr-poopoo rule:
-	now sco-poopoo is true;
+this is the vr-poohpooh rule:
+	now sco-poohpooh is true;
 	say "You show Loulou and Zuzu ways to dismiss this little thought experiment.";
 	process-cocoa;
 

@@ -73,7 +73,7 @@ sco-cuckoo is a truth state that varies.
 sco-doodoo is a truth state that varies.
 sco-juju is a truth state that varies.
 sco-muumuu is a truth state that varies.
-sco-poopoo is a truth state that varies.
+sco-poohpooh is a truth state that varies.
 sco-tutu is a truth state that varies.
 
 sco-massive-mitt is a truth state that varies.
