@@ -56,18 +56,44 @@ the plates are a plural-named silverware feastitem. description is "Just a bunch
 
 the knives are a plural-named silverware feastitem. description is "Just a bunch of knives."
 
+volume beginning stuff
+
+when play begins:
+	say "Every few years your community of gnomes gets together for a feast of rememberance. Well, sort of.[paragraph break]There is a central feast with a select few gnomes, not necessarily leaders, but those who complement each other well, and there are magical mirrors all over the kingdom that allow citizens to look in.";
+	wfak;
+	say "It has a different theme every year, with different participants. This year, they are decided by the Loyal Leader (pretty high up in government, but not top banana,) who consults a large machine called the Royal Reader. But it is not that easy.";
+	wfak;
+	say "It's revealed the process this year must've taken extra time, with a soil seeder. And people throughout the kingdom have found foil for the foil feeder.";
+	wfak;
+	say "And precautions needed to be taken against a spoil-speeder, for obvious reasons.";
+	wfak;
+	say "Then the Royal Reader was ready. It would perform inordinate calculations and spit out a name. That gnome would be in charge of gathering items for the feast. The items would be there, if the gnome were observant enough. It might be someone unexpected.";
+	wfak;
+	say "That gnome turns out to be you. Most of your acquaintances can't believe it, for better or worse. Sure, you're nice and all, but you get distracted easily.";
+	wfak;
+	say "But the Royal Reader has spoken. Or, well, made its verdict, being a machine and all. You take a lot of heat. You hear the loud whispers meant to be heard: YOU were chosen not to screw things up? The feast is in trouble!";
+	wfak;
+	say "Gasps of disbelief ensue from people already disgusted you, of all gnomes, were chosen. The Royal Reader then loudly chugs and sputters to a halt, giving one last message: 'Sown, see. Lonely. Own, eee!' The disgusted gnomes (especially Bowen B. and Joan G.) moan 'ME!' in a last-ditch attempt for glory. It doesn't work. They introduce a resolution to relegate you to Zone Z, but you're surprised how quickly they're shouted down by the crowd: 'Flown! Flee!'";
+	wfak;
+	say "It's a process that will take a while. You're given resources to explore the kingdom. On the way, you discover a place called Reeve Row, owned by Steve Stowe. He's looking to sell quickly. On further consultation with the Royal Reader, it responds 'Buy base. Ply place. Aye, ace!'";
+	wfak;
+	say "Reeve Row is sparsely furnished, but you won't be staying there much. Even if you feel stuck there to begin with. You think of all the gnomes who have passed since the last feast. It takes a while. Then one day you know it is time to move on, even though you know you're forgetting someone important.";
+	wfak;
+
+
 volume rooms
 
 book reeve row
 
-Reeve Row is a room in Home Haw. "You remember buying this from the old owner, Steve Stowe. He knew you were the right person to continue living here. But it feels empty now[if sco-leave-lo is true]. You feel you could go out again, if you wanted[end if]."
+Reeve Row is a room in Home Haw. "You remember buying this from the old owner, Steve Stowe. He knew you were the right person to continue living here. But it feels empty now[if sco-leave-lo is true]. You feel you could go [b]OUT[r] again, if you wanted. No need for another [b]LEAVE LO[r][else]. You know you should go [b]OUT[r] sooner rather than later, but you don't feel confident enough. Boosting yourself with the right phrase might help[end if]."
 
 guess-table of Reeve Row is table of Reeve Row guesses.
 
 check going down in Reeve Row:
-	if rug-score < 3, say "It's possible something is under the rug, but ... well, you'd have to be prepared, for a special occasion." instead;
+	if rug-score < 3, say "It's likely something is under the rug, but ... well, you'd have to be prepared, for a special occasion." instead;
+	if sco-believe-below is false, say "You have no faith you can go down. Maybe you should, but you don't, right now." instead;
 	if sco-heave-ho is false, say "There's an outline leading down, but you can't figure the way to remove it." instead;
-	if sco-grieve-grow is false, say "You're not emotionally ready, yet. Yet. How can you steel yourself, so you know it's worth it?" instead;
+	if sco-grieve-grow is false, say "You're not emotionally ready, yet. Yet.[paragraph break]There's something you need to do here, something independent of adventuring, something not at all concrete.[paragraph break]How can you deal with all the loss and steel yourself, so you know it's worth it, and you're worthy of conducting the ceremony?" instead;
 	if copper key is not moot, say "But you haven't unlocked the way down yet." instead;
 	if number of not carried feastitems > 0, say "You look at [feast]. You don't have everything, yet." instead;
 	if oven-fixed-yet is false, say "But you haven't found a way to cook [the list of toeat feastitems] yet." instead;
