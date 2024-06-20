@@ -160,6 +160,7 @@ this is the vr-believe-below rule:
 		say "Aha! You wondered if something was below the rug. Now you see the outline of a trap door beneath the rug."; [?? if rug there and you believed, you'd like to remove it]
 	now sco-believe-below is true;
 	trigger-bee;
+	declue-here-by 2855;
 
 a goodrhyme rule (this is the vc-leave-lo rule):
 	if player is not in reeve row, unavailable;
@@ -176,6 +177,7 @@ this is the vr-leave-lo rule:
 	else:
 		say "[i][bracket]You can just go [b]OUT[r][i] or [b]N/NORTH[r][i] for fewer keystrokes.[close bracket]";
 	now sco-leave-lo is true;
+	declue-here-by 2752;
 	move player to Wandering Where;
 
 a goodrhyme rule (this is the vc-heave-ho rule):
@@ -199,6 +201,7 @@ this is the vr-heave-ho rule:
 	say "[line break]Also, you take some time to look inside the oven. You find something called a goon guide. But you can't use it, because you're not a goon. Or can you?";
 	now player has goon guide;
 	trigger-bee;
+	declue-here-by 2752;
 
 a goodrhyme rule (this is the vc-grieve-grow rule):
 	if player is not in reeve row, unavailable;
@@ -210,6 +213,7 @@ a goodrhyme rule (this is the vc-grieve-grow rule):
 this is the vr-grieve-grow rule:
 	now sco-grieve-grow is true;
 	say "You reflect on things. You recognize too much of this is bad. All the same, it puts you in a mindset to do what you must do.";
+	declue-here-by 2804;
 
 chapter wandering where scoring
 
@@ -219,6 +223,7 @@ a goodrhyme rule (this is the vc-pondering-pair rule):
 
 this is the vr-pondering-pair rule:
 	now sco-pondering-pair is true;
+	declue-here-by 2954;
 	wander Ooh Ooh;
 
 a goodrhyme rule (this is the vc-squandering-square rule):
@@ -227,6 +232,7 @@ a goodrhyme rule (this is the vc-squandering-square rule):
 
 this is the vr-squandering-square rule:
 	now sco-squandering-square is true;
+	declue-here-by 3056;
 	wander squalor square;
 
 a goodrhyme rule (this is the vc-maundering-mare rule):
@@ -235,6 +241,7 @@ a goodrhyme rule (this is the vc-maundering-mare rule):
 
 this is the vr-maundering-mare rule:
 	now sco-maundering-mare is true;
+	declue-here-by 3004;
 	wander Gap Goo;
 
 a goodrhyme rule (this is the vc-laundering-lair rule):
@@ -243,6 +250,7 @@ a goodrhyme rule (this is the vc-laundering-lair rule):
 
 this is the vr-laundering-lair rule:
 	now sco-laundering-lair is true;
+	declue-here-by 3004;
 	wander Dove N Doubt;
 
 a goodrhyme rule (this is the vc-chrome-craw rule):

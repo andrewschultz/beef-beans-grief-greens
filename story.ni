@@ -77,8 +77,11 @@ when play begins:
 	wfak;
 	say "It's a process that will take a while. You're given resources to explore the kingdom. On the way, you discover a place called Reeve Row, owned by Steve Stowe. He's looking to sell quickly. On further consultation with the Royal Reader, it responds 'Buy base. Ply place. Aye, ace!'";
 	wfak;
+	say "Before leaving, elders furnish you with an odd item called a Leet Learner. You're not sure what it does. But apparently it's got a weird logical magic that helps humans or dwarves or elves figure the right words to say, or at least the right lengths.";
+	wfak;
 	say "Reeve Row is sparsely furnished, but you won't be staying there much. Even if you feel stuck there to begin with. You think of all the gnomes who have passed since the last feast. It takes a while. Then one day you know it is time to move on, even though you know you're forgetting someone important.";
 	wfak;
+	now player has leet learner;
 
 
 volume rooms
@@ -88,6 +91,8 @@ book reeve row
 Reeve Row is a room in Home Haw. "You remember buying this from the old owner, Steve Stowe. He knew you were the right person to continue living here. But it feels empty now[if sco-leave-lo is true]. You feel you could go [b]OUT[r] again, if you wanted. No need for another [b]LEAVE LO[r][else]. You know you should go [b]OUT[r] sooner rather than later, but you don't feel confident enough. Boosting yourself with the right phrase might help[end if]."
 
 guess-table of Reeve Row is table of Reeve Row guesses.
+
+from-number of reeve row is 2753. to-number of reeve row is 11163.
 
 check going down in Reeve Row:
 	if rug-score < 3, say "It's likely something is under the rug, but ... well, you'd have to be prepared, for a special occasion." instead;
@@ -172,12 +177,14 @@ after examining goon guide when sco-prune-pride is true:
 volume "where" rooms
 
 after printing the locale description for a wandroom:
-	say "You can also go back [b][printed name of opposite of wanddir of location of player in upper case][r] to [where].";
+	say "You can really only go back [b][printed name of opposite of wanddir of location of player in upper case][r] to [where].";
 	continue the action;
 
 book wandering where
 
 Wandering Where is a room in Roam Raw. Printed name is "Wandering ... Where?". description is "[psg-list] go back [b]INSIDE[r] to your temporary home in Reeve Row[craw-check]."
+
+from-number of wandering where is 2955. to-number of wandering where is 12018.
 
 to say psg-list:
 	if number of wanderable directions is 0:
