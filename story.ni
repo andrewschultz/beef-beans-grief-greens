@@ -467,11 +467,19 @@ the Joy Jaws are scenery in Toy Toss. "They grin at you and make you feel out of
 
 book Hi Ho I Owe Sty Sto
 
-Hi Ho I Owe Sty Sto is a room in Dome D'Aww. printed name is "'Hi-Ho, I Owe' Sty-Sto"
+Hi Ho I Owe Sty Sto is a room in Dome D'Aww. printed name is "'Hi-Ho, I Owe' Sty-Sto". "A deli with very expensive and very cheap foods. Since you're not very rich, you'll probably have to go with the cheap ones."
 
 chapter bri bro
 
 Bri Bro is a rhymable in Hi Ho I Owe Sty Sto. "A fellow whose nametag reads BRI-BRO stands here, waiting for what you need to ask for."
+
+chapter any isles many miles
+
+Any Isles Many Miles is a rhymable in Hi Ho I Owe Sty Sto. printed name is "[i]Any Isles, Many Miles[r]". "A brochure called [isles] lies here. It's written by a group of authors including Jenny Giles, Kenny Kyles, Rennie Riles, Benny Biles, and Lenny Lyles.[paragraph break]That may sound excessive, but I assure you there were MANY miles between the isles, so it was not practical for one author to explore them all!"
+
+chapter penny piles
+
+some penny piles are a plural-named thing. "A lot of pennies, but not a lot of wealth. What can you trade it to Bri-Bro for?"
 
 chapter pie po
 

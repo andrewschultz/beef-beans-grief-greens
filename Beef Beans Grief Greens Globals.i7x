@@ -159,6 +159,8 @@ sco-honeyed-ham is a truth state that varies.
 sco-grey-gruel is a truth state that varies.
 sco-just-jello is a truth state that varies.
 
+sco-penny-piles is a truth state that varies.
+
 volume test globals
 
 allow-win is a truth state that varies. allow-win is true.

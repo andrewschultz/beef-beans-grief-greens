@@ -48,6 +48,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "look"	"lard"	--	--	false	true	true	false	took tarred	vc-look-lard rule	vr-look-lard rule	--	--
 "pluck"	"plate"	--	--	false	true	true	false	stuck state	vc-pluck-plate rule	vr-pluck-plate rule	--	--
 "pie"	"po"	--	--	false	true	true	false	sty sto	vc-pie-po rule	vr-pie-po rule	--	--
+"penny"	"piles"	--	--	false	true	true	false	sty sto	vc-penny-piles rule	vr-penny-piles rule	--	--
 "soy"	"sauce"	--	--	false	true	true	false	toy toss	vc-soy-sauce rule	vr-soy-sauce rule	--	--
 "honeyed"	"ham"	--	--	false	true	true	false	chrome craw	vc-honeyed-ham rule	vr-honeyed-ham rule	--	--
 "grey"	"gruel"	--	--	false	true	true	false	chrome craw	vc-grey-gruel rule	vr-grey-gruel rule	--	--
@@ -643,8 +644,24 @@ this is the vr-pluck-plate rule:
 
 chapter Sty Sto scoring
 
+a goodrhyme rule (this is the vc-penny-piles rule):
+	if player is not in sty sto, unavailable;
+	if sco-penny-piles is true:
+		vcal "You already found many penny piles!";
+		already-done;
+	ready;
+
+this is the vr-penny-piles rule:
+	now sco-penny-piles is true;
+	say "Reading [isles] carefully, you recognize that it, in fact, covers an isle not far from here (there were so many isles in the book, one was bound to be close,) rumored to hold particularly small-scale wealth. You excuse yourself to go look for it. Bri-Bro doesn't want to let you go at first, because he isn't here to provide a rest area for loiterers.[paragraph break]But you offer some of your considerable inventory as collateral. It was getting kind of heavy, so the break is nice.[paragraph break]You come back having found the penny piles. Now you just need to figure what to buy with it. Bri-Bro isn't going to keep such cheap stuff on the menu.[paragraph break]Bri-Bro gives you your inventory back but does snatch [isles] away, just because it really must be tough to carry all that. Oh, and there might be an island he can loot once he's finished the day's work.";
+	now player has penny piles;
+	moot isles;
+
 a goodrhyme rule (this is the vc-pie-po rule):
 	if player is not in sty sto, unavailable;
+	if sco-penny-piles is false:
+		vcp "Yes, that is the cheapest item not on the menu, but you don't even have the measly cash to buy it.";
+		not-yet;
 	ready;
 
 this is the vr-pie-po rule:
