@@ -4,29 +4,29 @@ Version 1/240113 of Beef Beans Grief Greens Tables by Andrew Schultz begins here
 
 volume the main thing
 
-table of verb checks
+table of verb checks [the order of things to solve is roughly alphabetical, so the lurking lump always gives you the best value, but this is subverted by if one rhyme pushes the game/story further than the others. So Leave Lo is first. Sassed can be anywhere for the bonus point, since the lump explicitly avoids bonus points.]
 w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	idid	best-room	check-rule	run-rule	wfull (topic)	think-advice (text)
 "sassed"	"ceased"	--	--	false	true	false	false	--	vc-sassed-ceased rule	vr-sassed-ceased rule	--	--
-"maid|made"	"mug"	--	--	false	true	true	false	reeve row	vc-made-mug rule	vr-made-mug rule	--	--
-"jade"	"jug"	--	--	false	true	true	false	reeve row	vc-jade-jug rule	vr-jade-jug rule	--	--
-"played"	"plug"	--	--	false	true	true	false	reeve row	vc-played-plug rule	vr-played-plug rule	--	--
-"heave"	"ho"	"hoe"	vh-heave-hoe rule	false	true	true	false	reeve row	vc-heave-ho rule	vr-heave-ho rule	--	"You can [b]HEAVE HO[r] [once-now of vc-heave-ho rule] you have someone who can help you pull the rug up."
 "leave"	"lo"	"low"	vh-leave-low rule	false	true	true	false	reeve row	vc-leave-lo rule	vr-leave-lo rule	--	--
-"believe"	"below"	--	--	false	true	true	false	reeve row	vc-believe-below rule	vr-believe-below rule	--	--
-"grieve"	"grow"	--	--	false	true	true	false	reeve row	vc-grieve-grow rule	vr-grieve-grow rule	--	--
+"heave"	"ho"	"hoe"	vh-heave-hoe rule	false	true	true	false	reeve row	vc-heave-ho rule	vr-heave-ho rule	--	"You can [b]HEAVE HO[r] [once-now of vc-heave-ho rule] you have someone who can help you pull the rug up."
 "prune"	"pride"	--	--	false	true	true	false	reeve row	vc-prune-pride rule	vr-prune-pride rule	--	--
-"pondering"	"pair"	--	--	false	true	true	false	wandering where	vc-pondering-pair rule	vr-pondering-pair rule	--	--
+"believe"	"below"	--	--	false	true	true	false	reeve row	vc-believe-below rule	vr-believe-below rule	--	--
+"played"	"plug"	--	--	false	true	true	false	reeve row	vc-played-plug rule	vr-played-plug rule	--	--
+"grieve"	"grow"	--	--	false	true	true	false	reeve row	vc-grieve-grow rule	vr-grieve-grow rule	--	--
+"made|maid"	"mug"	--	--	false	true	true	false	reeve row	vc-made-mug rule	vr-made-mug rule	--	--
+"jade"	"jug"	--	--	false	true	true	false	reeve row	vc-jade-jug rule	vr-jade-jug rule	--	--
+"laundering"	"lair"	--	--	false	true	true	false	wandering where	vc-laundering-lair rule	vr-laundering-lair rule	--	--
 "squandering"	"square"	--	--	false	true	true	false	wandering where	vc-squandering-square rule	vr-squandering-square rule	--	--
 "maundering"	"mare"	--	--	false	true	true	false	wandering where	vc-maundering-mare rule	vr-maundering-mare rule	--	--
-"laundering"	"lair"	--	--	false	true	true	false	wandering where	vc-laundering-lair rule	vr-laundering-lair rule	--	--
+"pondering"	"pair"	--	--	false	true	true	false	wandering where	vc-pondering-pair rule	vr-pondering-pair rule	--	--
 "flopper"	"flea"	"flee"	vh-flopper-flee rule	false	true	true	false	wandering where	vc-flopper-flea rule	vr-flopper-flea rule	--	--
-"chrome"	"craw"	--	--	false	true	true	false	wandering where	vc-chrome-craw rule	vr-chrome-craw rule	--	"You can open the [b]CHROME CRAW[r] [here-in of wandering] [once-now of vc-believe-below rule] you've explored everywhere you can aboveground."
+"chrome"	"craw"	--	--	false	true	false	false	wandering where	vc-chrome-craw rule	vr-chrome-craw rule	--	"You can open the [b]CHROME CRAW[r] [here-in of wandering] [once-now of vc-believe-below rule] you've explored everywhere you can aboveground."
 "massive"	"mitt"	--	--	false	true	true	false	Ooh Ooh	vc-massive-mitt rule	vr-massive-mitt rule	--	--
-"fight"	"fires"	--	--	false	true	true	false	squalor square	vc-fight-fires rule	vr-fight-fires rule	--	--
-"white"	"wires"	--	--	false	true	true	false	squalor square	vc-white-wires rule	vr-white-wires rule	--	"You can handle the [b]WHITE WIRES[r] [once-now of vc-white-wires rule] the lyres are safe to touch."
 "neat"	"note"	--	--	false	true	true	false	squalor square	vc-neat-note rule	vr-neat-note rule	--	--
 "meat"	"moat"	--	--	false	true	true	false	squalor square	vc-meat-moat rule	vr-meat-moat rule	--	"You can find a [b]MEAT MOAT[r] [once-now of vc-meat-moat rule] you have found something more useful than the bleat bloat."
 "beet"	"boat"	--	--	false	true	true	false	squalor square	vc-beet-boat rule	vr-beet-boat rule	--	"You can find a [b]BEET BOAT[r] [once-now of vc-beet-boat rule] you have found something more useful than the bleat bloat."
+"fight"	"fires"	--	--	false	true	true	false	squalor square	vc-fight-fires rule	vr-fight-fires rule	--	--
+"white"	"wires"	--	--	false	true	true	false	squalor square	vc-white-wires rule	vr-white-wires rule	--	"You can handle the [b]WHITE WIRES[r] [once-now of vc-white-wires rule] the lyres are safe to touch."
 "lovin"	"lout"	--	--	false	true	true	false	dove n doubt	vc-lovin-lout rule	vr-lovin-lout rule	--	--
 "shovin"	"shout"	--	--	false	true	true	false	dove n doubt	vc-shovin-shout rule	vr-shovin-shout rule	--	"You can make a [b]SHOVIN SHOUT[r] [once-now of vc-shovin-shout rule] you have the help of someone stronger."
 "oven"	"out"	--	--	false	true	true	false	dove n doubt	vc-oven-out rule	vr-oven-out rule	--	"You can say [b]OVEN OUT[r] [once-now of vc-oven-out rule] you have someone strong enough to push the oven."
@@ -63,12 +63,12 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "yappy"	"yall"	--	--	false	true	true	false	happy hall	vc-yappy-yall rule	vr-yappy-yall rule	--	"You can get everyone [b]YAPPY YALL[r] [once-now of vc-cappy-caul rule] preparations for the ceremony and feast are complete."
 "bappy"	"ball"	--	--	false	true	true	false	happy hall	vc-bappy-ball rule	vr-bappy-ball rule	--	"You can have everyone play [b]BAPPY BALL[r] [once-now of vc-cappy-caul rule] the feast is complete, to burn off calories."
 "wheat"	"well"	--	--	false	true	true	false	compete compel	vc-wheat-well rule	vr-wheat-well rule	--	--
-"sheet"	"shell"	--	--	false	true	true	false	compete compel	vc-sheet-shell rule	vr-sheet-shell rule	--	--
 "feet"	"fell"	--	--	false	true	true	false	compete compel	vc-feet-fell rule	vr-feet-fell rule	--	"You can claim your [b]FEET FELL[r] [once-now of vc-feet-fell rule] they have somewhere safe to fall to."
+"sheet"	"shell"	--	--	false	true	true	false	compete compel	vc-sheet-shell rule	vr-sheet-shell rule	--	--
 "beat"	"bell"	--	--	false	true	true	false	compete compel	vc-beat-bell rule	vr-beat-bell rule	--	"You can [b]BEAT BELL[r] [once-now of vc-beat-bell rule] there is a (door)bell to beat, or reach before the person ringing it runs away."
 "meet"	"mel"	--	--	false	true	true	false	compete compel	vc-meet-mel rule	vr-meet-mel rule	--	"You can [b]MEET MEL[r] [once-now of vc-meet-mel rule] you know someone is near."
-"heat"	"hell"	--	--	false	true	true	false	compete compel	vc-heat-hell rule	vr-heat-hell rule	--	"[final-judge-think of -1]."
 "repeat"	"repel"	--	--	false	true	true	false	compete compel	vc-repeat-repel rule	vr-repeat-repel rule	--	"[final-judge-think of 0]."
+"heat"	"hell"	--	--	false	true	true	false	compete compel	vc-heat-hell rule	vr-heat-hell rule	--	"[final-judge-think of -1]."
 "sweet"	"swell"	--	--	false	true	true	false	compete compel	vc-sweet-swell rule	vr-sweet-swell rule	--	"[final-judge-think of 1]."
 
 section goon guide
@@ -105,6 +105,19 @@ chapter reeve row scoring
 
 section rayed rug flips
 
+a goodrhyme rule (this is the vc-played-plug rule):
+	if rayed rug is not touchable, unavailable;
+	if sco-played-plug is true:
+		vcal "You already got a played plug!";
+		already-done;
+	ready;
+
+this is the vr-played-plug rule:
+	now sco-played-plug is true;
+	say "Ah, that's what the bump in the rayed rug is.";
+	now player has played plug;
+	oven-check;
+
 a goodrhyme rule (this is the vc-made-mug rule):
 	if rayed rug is not touchable, unavailable;
 	if sco-made-mug is true:
@@ -130,19 +143,6 @@ this is the vr-jade-jug rule:
 	say "A jade jug appears. It will be useful for the meal.";
 	now player has jade jug;
 	rug-check;
-
-a goodrhyme rule (this is the vc-played-plug rule):
-	if rayed rug is not touchable, unavailable;
-	if sco-played-plug is true:
-		vcal "You already got a played plug!";
-		already-done;
-	ready;
-
-this is the vr-played-plug rule:
-	now sco-played-plug is true;
-	say "Ah, that's what the bump in the rayed rug is.";
-	now player has played plug;
-	oven-check;
 
 section reeve row general flips
 
@@ -1004,6 +1004,7 @@ to process-cocoa:
 		repeat through table of verb checks:
 			if there is no best-room entry, next;
 			if best-room entry is not ooh ooh, next;
+			if check-rule entry is vc-massive-mitt rule, next;
 			if idid entry is false:
 				now core entry is false;
 	else if ooh-score is 5:
