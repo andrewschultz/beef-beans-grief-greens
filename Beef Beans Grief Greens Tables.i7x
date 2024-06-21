@@ -55,11 +55,11 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "just"	"jello"	--	--	false	true	false	false	chrome craw	vc-just-jello rule	vr-just-jello rule	--	--
 "scrappy"	"scrawl"	--	--	false	true	true	false	trappy trawl	vc-scrappy-scrawl rule	vr-scrappy-scrawl rule	--	--
 "whappy"	"wall"	--	--	false	true	true	false	trappy trawl	vc-whappy-wall rule	vr-whappy-wall rule	--	"You can hit the [b]WHAPPY WALL[r] [once-now of vc-whappy-wall rule] you know where to whap the wall."
-"lone"	"laura"	"loan"	vh-loan-laura rule	false	true	true	false	happy hall	vc-lone-laura rule	vr-lone-laura rule	--	--
-"known"	"nora"	--	--	false	true	true	false	happy hall	vc-known-nora rule	vr-known-nora rule	--	--
-"pappy"	"paul"	"pall"	vh-pappy-pall rule	false	true	true	false	happy hall	vc-pappy-paul rule	vr-pappy-paul rule	--	--
-"sappy"	"saul"	--	--	false	true	true	false	happy hall	vc-sappy-saul rule	vr-sappy-saul rule	--	--
-"cappy"	"caul"	"call"	vh-cappy-call rule	false	true	true	false	happy hall	vc-cappy-caul rule	vr-cappy-caul rule	--	"You can ask for your [b]CAPPY CAUL[r] [once-now of vc-cappy-caul rule] everyone else is here for the ceremony."
+"lone"	"laura"	"loan"	vh-loan-laura rule	false	true	true	false	happy hall	vc-lone-laura rule	vr-lone-laura rule	--	"You can summon [b]LONE LAURA[r] [once-now of vc-lone-laura rule] you are in the main ritual room."
+"known"	"nora"	--	--	false	true	true	false	happy hall	vc-known-nora rule	vr-known-nora rule	--	"You can summon [b]KNOWN NORA[r] [once-now of vc-known-nora rule] you are in the main ritual room."
+"pappy"	"paul"	"pall"	vh-pappy-pall rule	false	true	true	false	happy hall	vc-pappy-paul rule	vr-pappy-paul rule	--	"You can summon [b]PAPPY PAUL[r] [once-now of vc-pappy-paul rule] you are in the main ritual room."
+"sappy"	"saul"	"sol"	vh-sappy-sol rule	false	true	true	false	happy hall	vc-sappy-saul rule	vr-sappy-saul rule	--	"You can summon [b]SAPPY SAUL[r] [once-now of vc-sappy-saul rule] you are in the main ritual room."
+"cappy"	"caul"	"call"	vh-cappy-call rule	false	true	true	false	happy hall	vc-cappy-caul rule	vr-cappy-caul rule	--	"You can ask for your [b]CAPPY CAUL[r] [once-now of vc-cappy-caul rule] everyone else is present for the ceremony."
 "yappy"	"yall"	--	--	false	true	true	false	happy hall	vc-yappy-yall rule	vr-yappy-yall rule	--	"You can get everyone [b]YAPPY YALL[r] [once-now of vc-cappy-caul rule] preparations for the ceremony and feast are complete."
 "bappy"	"ball"	--	--	false	true	true	false	happy hall	vc-bappy-ball rule	vr-bappy-ball rule	--	"You can have everyone play [b]BAPPY BALL[r] [once-now of vc-cappy-caul rule] the feast is complete, to burn off calories."
 "wheat"	"well"	--	--	false	true	true	false	compete compel	vc-wheat-well rule	vr-wheat-well rule	--	--
@@ -802,7 +802,7 @@ chapter happy hall scoring
 section room proper
 
 a goodrhyme rule (this is the vc-pappy-paul rule):
-	if player is not in happy hall, unavailable;
+	abide by the call-a-pal rule;
 	if sco-pappy-paul is true:
 		vcal "You already summoned Pappy Paul!";
 		already-done;
@@ -818,11 +818,15 @@ this is the vr-pappy-paul rule:
 	hall-move Pappy Paul;
 
 a goodrhyme rule (this is the vc-sappy-saul rule):
-	if player is not in happy hall, unavailable;
+	abide by the call-a-pal rule;
 	if sco-sappy-saul is true:
 		vcal "You already summoned Sappy Saul!";
 		already-done;
 	ready;
+
+this is the vh-sappy-sol rule:
+	say "Hmm. The right track, but a too widely smiling sun might not bring the right vibe. Oh, it might scorch everyone to death, too.";
+	the rule succeeds;
 
 this is the vr-sappy-saul rule:
 	now sco-sappy-saul is true;
@@ -1070,7 +1074,21 @@ to process-cocoa:
 	else:
 		say "BUG. This should not be reached, but [ooh-score] should between 1 and 7."
 	
-chapter Trappy Trawl / Happy Hall
+chapter Trappy Trawl
+
+this is the call-a-pal rule:
+	if player is in trappy trawl:
+		vcp "That might be someone to call once you are in the main ritual room.";
+		not-yet;
+	if player is not in happy hall, unavailable;
+
+this is the ritual-stuff rule:
+	if player is in trappy trawl:
+		vcp "That might be an interesting part of the ritual once you make it to the main ritual room.";
+		not-yet;
+	if player is not in happy hall, unavailable;
+
+chapter Happy Hall
 
 this is the trawl-not-hall rule:
 	if player is in happy hall:
