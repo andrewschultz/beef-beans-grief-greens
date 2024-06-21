@@ -32,6 +32,14 @@ mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 "uck"	"ate"	--	false	--	"No, the feast is ahead, and it's going to taste good."
 "yuck"	"yate"	--	false	--	"No eucalyptus tree appears, yucky or otherwise."
 
+table of trappy trawl guesses
+mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
+"happy"	"hall"	in-trappy-trawl rule	false	--	"Yes, that seems like where you need to go. But you'll need to discover a different mechanism to get there."
+
+this is the in-trappy-trawl rule:
+	if player is in trappy trawl, the rule succeeds;
+	the rule fails;
+
 book thing tables
 
 table of rayed rug guesses

@@ -360,6 +360,8 @@ book Trappy Trawl
 
 Trappy Trawl is a room in Home Haw. "As so often happens underground, you're at a loss for directions. Going back up isn't really a thing. You're pretty sure, though, that there is a way through, but since it probably leads to the ancient ritual room, of course it's not going to be obvious[if sco-scrappy-scrawl is false]. Perhaps you should look for clues, if you think you know what to look for[else]. You discovered a scrappy scrawl written here, which may let you know where to poke. There's probably a secret passage, or something[end if]."
 
+guess-table of Trappy Trawl is table of Trappy Trawl guesses.
+
 chapter Scrappy Scrawl
 
 the scrappy scrawl is scenery in Trappy Trawl. "It's weird. It's a drawing of someone busting through a barrier with noises like THWUP and THWAP. You smack against the scrawl and hear such noises too. Then you wonder if one such noise would indicate a hidden passage here."
