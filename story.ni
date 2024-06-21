@@ -161,7 +161,7 @@ report examining Last Least Fast Feast:
 
 chapter rayed rug
 
-the rayed rug is a rhymable in Reeve Row. "A rayed rug covers part of the floor here.". description is "[if rug-score is 3]All the rays are dim now[else if rug-score is 2]About one-third of the rays are still bright[else if rug-score is 1]About two-thirds of the rays are still bright[else]There are a lot of bright rays on the rug[end if]."
+the rayed rug is a rhymable in Reeve Row. "A rayed rug covers part of the floor here.". description is "[if rug-score is 3]All the rays are dim now. You've probably gotten all you can out of the rug, which is a lot more than you expected. So, good job[else if rug-score is 2]About one-third of the rays are still bright[else if rug-score is 1]About two-thirds of the rays are still bright[else]You aren't big on decor, but Steve Stowe insisted you keep this rug. It would be useful, he said.[paragraph break]There are a lot of bright rays on the rug[end if]."
 
 guess-table of rayed rug is the table of rayed rug guesses.
 
@@ -240,11 +240,11 @@ the copper key is a thing. "You hope it opens passage below [here-in of reeve ro
 
 book Squalor Square
 
-Squalor Square is a wandroom in Roam Raw. wanddir of Squalor Square is east.
+Squalor Square is a wandroom in Roam Raw. wanddir of Squalor Square is east. "Definitely one of the seedier places you've been in."
 
 chapter bleat bloat
 
-the bleat bloat is a rhymable. "A bleat bloat floats through here, in tune with the general dinginess.". description is "You're no linguistic expert, but you know it's distracting and draining and disorganizing. If only it were something more motivational!"
+the bleat bloat is a rhymable in squalor square. "A bleat bloat floats through here, in tune with the general dinginess.". description is "You're no linguistic expert, but you know it's distracting and draining and disorganizing. If only it were something more motivational!"
 
 chapter light lyres
 
@@ -451,7 +451,7 @@ Sheet Shell is a thing. description of sheet shell is "It's a place for reading.
 
 chapter Leet Lel by Pete Pell
 
-Leet Lel by Pete Pell is a thing. printed name is "[i]Leet Lel[r], by Pete Pell". description is "[one of]It's a biography of someone who passed this year, someone who you had various strong opinions about. Someone you couldn't put out of your mind for stretches. Someone who taught you so much but could be pretty annoying at times. They had ... baggage. They could've been a heck of a lot nicer.[paragraph break]Pete Pell has laid out the facts, though, and it's up to you to decide whether Lel's good outweighs the bad, or vice versa, or they balance out.[paragraph break]It's up to you, what your final opinion of Lel is. But now is the time to decide and move on.[paragraph break]Do you wish to hold on to positive or negative feelings? Or do you wish to cast them out all together? You sense [leet lel] has given you enough motivation for any of the three, without judgement[or]You don't have the time or emotional energy to read through it again. You need to make a decision on what kind of fate Leet Lel deserves, what kind of person Leet Lel was, based on your interpretations of the readings, and move on.[paragraph break]Positive? Neutral? Or just beat back any feelings at all about Leet Lel?[stopping]".
+Leet Lel by Pete Pell is a thing. printed name is "[i]Leet Lel[r], by Pete Pell". description is "[one of]It's a biography of someone who passed this year, someone who you had various strong opinions about. Someone you couldn't put out of your mind for stretches. Someone who taught you so much but could be pretty annoying at times. They had ... baggage. They could've been a heck of a lot nicer.[paragraph break]Pete Pell has laid out the facts, though, and it's up to you to decide whether Lel's good outweighs the bad, or vice versa, or they balance out.[paragraph break]It's up to you, what your final opinion of Lel is. But now is the time to decide and move on.[paragraph break]Do you wish to hold on to positive or negative feelings? Or do you wish to cast them out all together? You sense [leet lel] has given you enough motivation for any of the three, without judgement.[or]You don't have the time or emotional energy to read through it again. You need to make a decision on what kind of fate Leet Lel deserves, what kind of person Leet Lel was, based on your interpretations of the readings, and move on.[paragraph break]Positive? Neutral? Or just beat back any feelings at all about Leet Lel?[stopping]".
 
 volume Dome D'Aww
 
@@ -473,7 +473,7 @@ some lard is a thing.
 
 book Toy Toss
 
-Toy Toss is a room in Dome D'Aww. "Okay, so the joy jaws brought you to a place where apparently you're supposed to be happy. And they're guarding passage out, untl you ask for the right gift that will MAKE you happy."
+Toy Toss is a room in Dome D'Aww. "Okay, so the joy jaws brought you to a place where apparently you're supposed to be happy. And they're guarding passage out, until you ask for the right gift that will MAKE you happy."
 
 chapter Boy Boss Roy Ross
 
@@ -542,7 +542,7 @@ book examining
 rule for supplying a missing noun when examining:
 	if player has fast feast:
 		if inventory-warn-yet is false:
-			say "NOTE: X on its own defaults to [the feast] for a long as you carry it.";
+			say "[i][bracket][b]NOTE: X[r][i] on its own defaults to [the feast] for a long as you carry it.[close bracket][r]";
 			now inventory-warn-yet is true;
 		now noun is fast feast;
 	continue the action;
@@ -557,7 +557,7 @@ carry out taking inventory (this is the bbgg inventory rule):
 	if number of carried okaycold feastitems > 0, say "  [list of carried okaycold feastitems] (okay cold)[line break]";
 	if number of carried cooked feastitems > 0, say "  [list of carried cooked feastitems] (uncooked)[line break]";
 	if number of carried silverware feastitems > 0, say "  [list of carried silverware feastitems] (utensils)[line break]";
-	if number of carried oventhings > 0, say "  [list of carried oventhings] (to fix the oven [here-in of reeve row])[line break]";
+	if number of carried oventhings > 0, say "  [list of carried oventhings] ([if oven is not in reeve row]to repair something, maybe[else]to fix the oven [here-in of reeve row][end if])[line break]";
 	now all things carried by player are marked for listing;
 	now all feastitems are not marked for listing;
 	now all oventhings are not marked for listing;
@@ -572,7 +572,7 @@ after grouping together oventhings: say " (to repair and use the oven)";]
 
 check taking inventory:
 	if player has fast feast and inventory-warn-yet is false:
-		say "NOTE: X on its own may be more useful for the items you have, since it views the list you need for [this-game].";
+		say "[b][i][bracket]NOTE: X[r][i] on its own may be more useful for the items you have, since it views the list you need for [this-game].[close bracket][r]";
 		now inventory-warn-yet is true;
 
 report taking inventory:
@@ -604,12 +604,18 @@ rule for supplying a missing noun when lling (this is the get readings from room
 		abide by the general-ll-locations rule;
 		reject the player's command;
 
-check talktoing:
-	if noun is lovin lout, say "The lovin['] lout blinks and smiles and waves at you. They are probably better at physical activity than words." instead;
-	if noun is a rhymeperson:
+chapter talktoing
+
+check talktoing a rhymeperson:
+	if player is in happy hall:
 		if sco-yappy-yall is true, say "But the talking has already occurred. It is time for vigorous action and exercise." instead;
 		say "The ceremony is not the time for small talk with any individual. [noun] is an important part of the ceremony. You sense anything you have to say should be shared collectively, encouraging others to speak up, too." instead;
-	say "You don't need to talk to [the noun]." instead;
+	if player is in Ooh Ooh:
+		say "Conversation with [zl] will be one word at a time." instead;
+
+check talktoing:
+	if noun is lovin lout, say "The lovin['] lout blinks and smiles and waves at you. They are probably better at physical activity than words." instead;
+	say "You don't need to talk to [the noun][one of]. In fact, you don't need to talk to anyone or anything to win, though some NPCs may provide more chat than others[or][stopping]." instead;
 
 volume rules
 
