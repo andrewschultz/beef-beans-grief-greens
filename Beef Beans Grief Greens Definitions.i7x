@@ -185,6 +185,9 @@ to decide which number is well-score:
 to decide which number is sides-visited:
 	decide on number of visited rooms in Dome D'aww
 
+to decide which number is slurry-score:
+	decide on (boolval of sco-just-jello) + (boolval of sco-honeyed-ham) + (boolval of sco-grey-gruel);
+
 volume big rule
 
 this is the verb-checker rule:

@@ -12,9 +12,9 @@ test thru with "test trtr/test hh/test final/test allend".
 
 test jthru with "test w1a/test w2w1/test w2w2/out/pluck plate/in/out/test pair/test square/test mare/test shard/in/believe below/test bee/d/test thru".
 
-test wthru with "test w1a/test w2w/out/pluck plate/test w2w3/test w2e/w/soy sauce/test w2s/n/penny piles/pie po/test w2n/s/flopper flea/test w2x/test w3/test w4/test w5/test w6/test w7".
+test wthru with "test w1a/test w2w/out/pluck plate/test w2w3/test w2et/w/soy sauce/test w2s/n/penny piles/pie po/test w2n/s/flopper flea/test w2x/test w3/test w4/test w5/test w6/test w7".
 
-test wmin with "test w1/test w2w/out/pluck plate/test w2w3/test w2e/w/soy sauce/test w2s/n/penny piles/pie po/test w2n1/test w2n2/s/flopper flea/test w3/test w4/test w5/test w6/test w7".
+test wmin with "test w1/test w2w/out/pluck plate/test w2w3/test w2em/w/soy sauce/test w2s/n/penny piles/pie po/test w2n1/test w2n2/s/flopper flea/test w3/test w4/test w5/test w6/test w7".
 
 book verified tests that are part of the game
 
@@ -38,12 +38,14 @@ chapter tests for wandering where branches
 
 test w2w with "test w2w1/test w2w2".
 test w2w1 with "laundering lair/lovin lout/shovin shout/oven out/heave ho".
-test w2w2 with "prune pride/played plug".
+test w2w2 with "prune pride/x guide/played plug".
 test w2w3 with "w/hook hard/book bard/cook card/look lard".
 
-test w2e with "test w2e1/test w2e2".
-test w2e1 with "squandering square/neat note/meat moat/beet boat".
-test w2e2 with "fight fires/white wires".
+test w2et with "test w2e1/dollar dare/test w2e2/test w2e3".
+test w2em with "test w2e1/test w2e2/test w2e3".
+test w2e1 with "squandering square/baller bear/caller care".
+test w2e2 with "neat note/meat moat/beet boat".
+test w2e3 with "fight fires/white wires".
 
 test w2s with "test w2s1/test w2s2".
 test w2s1 with "maundering mare/zap zoo/see soup".

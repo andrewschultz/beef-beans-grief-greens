@@ -4,7 +4,7 @@ Version 1/240121 of Beef Beans Grief Greens Beta Testing by Andrew Schultz begin
 
 volume transcripts
 
-the transcripting first rule is listed first in the when play begins rulebook.
+the transcripting first rule is listed after the the TN debug true rule in the when play begins rulebook.
 
 when play begins (this is the transcripting first rule):
 	say "This is a nag to switch the transcript on right away. Feel free to ignore it. I just want to make sure you take one if you want to. I feel bad when I mean to and realize I haven't.";
