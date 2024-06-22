@@ -1203,8 +1203,37 @@ volume can't go
 
 table of noways
 noway-rm	noway-txt
-Reeve Row	"It's not a very big house. [if sco-heave-ho is false]I mean, okay, you're pretty sure there was a secret passage down which would eventually lead to the ritual room[else]You can go down, but you can't really explore this small house. You don't need to. You can really only go [b]OUT[r][else]. Well, you can go [b]OUT[r], too[end if]."
-Wandering Where	"[if noun is planar]You feel you should be able to go [noun]. [planar-where][else]You can really only wander in the four cardinal directions[craw-foreshadow]."
+Reeve Row	"[if sco-leave-lo is false]You need to find a way out. Yet you can't just go out ... you need to pump yourself up to get out, somehow[else][reeve-row-nogo][end if]."
+Wandering Where	"[if noun is planar]You feel you should be able to go [noun]. [planar-where][else]You can really only wander in the four cardinal directions[craw-foreshadow][end if]."
+
+to say reeve-row-nogo:
+	say "It's not a very big house. ";
+	if sco-heave-ho is false:
+		say "You've suspected there was a passage down, but you see nothing at the moment";
+	else if sco-believe-below is false:
+		say "You suspected the old passage-under-the-rug trick, but you just don't have faith it's REALLY there";
+	else:
+		say "You can go down, but you can't really explore this small house. You don't need to";
+	say ". There's always back [b]OUT[r]";
+	if copper key is moot, say ", and you unlocked a passasge [b]DOWN[r], too"
+
+to say craw-foreshadow:
+	if noun is not down:
+		if chrome craw is in wandering where:
+			say " or down into the chrome craw[if slurry-score is 3], though you're done there[end if]";
+		continue the action;
+	if sco-chrome-craw is false:
+		choose row with check-rule of vc-chrome-craw rule in table of verb checks;
+		if think-cue entry is true:
+			if sides-visited is 3:
+				say ", and you should probably activate the chrome craw now";
+			else:
+				say ", but you don't have the confidence to find the chrome craw, yet";
+		else:
+			say ", though actually, there is a way to see what's down later";
+
+to say planar-where:
+	say "[if number of wanderable directions is 0]You need to guess at where the roads might lead[else]You already were able to make your way [list of wanderable directions], after all[end if]"
 
 table of noways (continued)
 noway-rm	noway-txt
@@ -1219,26 +1248,13 @@ Stuck State	"Perhaps finding what you need will get you out of here. You can't s
 Took Tarred	"You can't leave until you've found everything the shook shard offers."
 Toy Toss	"There's a reward, and [boy boss] and the Joy Jaws won't let you leave until you pick the right one."
 Hi Ho	"No, there must be something you can buy on the cheap."
+Woe Worry Slow Slurry	"Only more worries are beyond, you suspect. [if slurry-score is 3]You've got enough side dishes[else if slurry-score is 0]Surely, you can finagle something from the denizens here[else]There's enough more food to pick off here, anyway[end if]."
 
 table of noways (continued)
 noway-rm	noway-txt
-Trappy Trawl	"You crash around into some walls, which make noises like WHOMP and WHUMP, which don't sound right."
+Trappy Trawl	"You crash around into some walls, which make noises like WHOMP and WHUMP, which don't sound quite right."
 Happy Hall	"You can't walk out on the ritual now!"
 Compete Compel	"This is the final lair of solitude. You've completed a quest for your peers. Now you will sit here and sort things out."
-
-to say craw-foreshadow:
-	if chrome craw is off-stage and noun is down:
-		choose row with check-rule of vc-chrome-craw rule in table of verb checks;
-		if think-cue entry is true:
-			if sides-visited is 3:
-				say ", and you should probably activate the chrome craw now";
-			else:
-				say ", but you don't have the confidence to find the chrome craw, yet";
-		else:
-			say ", though actually, there is a way to see what's down later" [?? fully check if chrome craw is done yet]
-
-to say planar-where:
-	say "[if number of wanderable directions is 0]You need to guess at where the roads might lead[else]You already were able to make your way [list of wanderable directions], after all[end if]"
 
 volume homonyms
 
