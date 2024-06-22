@@ -66,7 +66,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "yappy"	"yall"	--	--	false	true	true	false	happy hall	vc-yappy-yall rule	vr-yappy-yall rule	--	"You can get everyone [b]YAPPY YALL[r] [once-now of vc-cappy-caul rule] preparations for the ceremony and feast are complete."
 "bappy"	"ball"	--	--	false	true	true	false	happy hall	vc-bappy-ball rule	vr-bappy-ball rule	--	"You can have everyone play [b]BAPPY BALL[r] [once-now of vc-cappy-caul rule] the feast is complete, to burn off calories."
 "wheat"	"well"	--	--	false	true	true	false	compete compel	vc-wheat-well rule	vr-wheat-well rule	--	--
-"feet"	"fell"	--	--	false	true	true	false	compete compel	vc-feet-fell rule	vr-feet-fell rule	--	"You can claim your [b]FEET FELL[r] [once-now of vc-feet-fell rule] they have somewhere safe to fall to."
+"feet"	"fell"	--	--	false	true	true	false	compete compel	vc-feet-fell rule	vr-feet-fell rule	--	"You can claim your [b]FEET FELL[r] [once-now of vc-feet-fell rule] you've envisioned somewhere safe to fall to."
 "sheet"	"shell"	--	--	false	true	true	false	compete compel	vc-sheet-shell rule	vr-sheet-shell rule	--	--
 "beat"	"bell"	"beet"	vh-beet-meat-end rule	false	true	true	false	compete compel	vc-beat-bell rule	vr-beat-bell rule	--	"You can [b]BEAT BELL[r] [once-now of vc-beat-bell rule] there is a (door)bell to beat, or reach before the person ringing it runs away."
 "meet"	"mel"	"meat"	vh-beet-meat-end rule	false	true	true	false	compete compel	vc-meet-mel rule	vr-meet-mel rule	--	"You can [b]MEET MEL[r] [once-now of vc-meet-mel rule] you know someone is near."
@@ -867,7 +867,7 @@ chapter happy hall scoring
 section room proper
 
 a goodrhyme rule (this is the vc-pappy-paul rule):
-	abide by the call-a-pal rule;
+	abide by the call-a-pal rule; [not-yet is here]
 	if sco-pappy-paul is true:
 		vcal "You already summoned Pappy Paul!";
 		already-done;
@@ -883,7 +883,7 @@ this is the vr-pappy-paul rule:
 	hall-move Pappy Paul;
 
 a goodrhyme rule (this is the vc-sappy-saul rule):
-	abide by the call-a-pal rule;
+	abide by the call-a-pal rule; [not-yet is here]
 	if sco-sappy-saul is true:
 		vcal "You already summoned Sappy Saul!";
 		already-done;
@@ -899,7 +899,7 @@ this is the vr-sappy-saul rule:
 	hall-move Sappy Saul;
 
 a goodrhyme rule (this is the vc-cappy-caul rule):
-	if player is not in happy hall, unavailable;
+	abide by the ritual-stuff rule;
 	if sco-cappy-caul is true:
 		vcal "You already retrieved your ceremonial garb!";
 		already-done;
@@ -919,7 +919,7 @@ this is the vh-cappy-call rule:
 	the rule succeeds;
 
 a goodrhyme rule (this is the vc-yappy-yall rule):
-	if player is not in happy hall, unavailable;
+	abide by the ritual-stuff rule;
 	if sco-cappy-caul is false:
 		vcp "You need to retrieve your ceremonial garb!";
 		not-yet;
@@ -933,7 +933,7 @@ this is the vr-yappy-yall rule:
 	say "Everyone has a say about the deceased.";
 
 a goodrhyme rule (this is the vc-bappy-ball rule):
-	if player is not in happy hall, unavailable;
+	abide by the ritual-stuff rule;
 	if sco-yappy-yall is false:
 		vcp "Sport, eventually, to burn the calories off. But before that, discussion.";
 		not-yet;
@@ -947,7 +947,7 @@ this is the vr-bappy-ball rule:
 section own aura
 
 a goodrhyme rule (this is the vc-lone-laura rule):
-	if player is not in happy hall, unavailable;
+	if player is not in happy hall, unavailable; [not-yet is here]
 	if sco-lone-laura is true:
 		vcal "You already summoned Lone Laura!";
 		already-done;
@@ -963,7 +963,7 @@ this is the vr-lone-laura rule:
 	hall-move Lone Laura;
 
 a goodrhyme rule (this is the vc-known-nora rule):
-	if player is not in happy hall, unavailable;
+	if player is not in happy hall, unavailable; [not-yet is here]
 	if sco-known-nora is true:
 		vcal "You already summoned Known Nora!";
 		already-done;
@@ -1002,10 +1002,10 @@ this is the vr-sheet-shell rule:
 a goodrhyme rule (this is the vc-feet-fell rule):
 	if player is not in compete compel, unavailable;
 	if sco-wheat-well is false:
-		vcp "But you don't have any place to fall to!";
+		vcp "But you haven't envisioned have any place to fall to!";
 		not-yet;
 	if sco-feet-fell is true:
-		vcal "You already slide to a more peaceful space!";
+		vcal "You already slid to a more peaceful space!";
 		already-done;
 	ready;
 

@@ -495,7 +495,7 @@ the Joy Jaws are scenery in Toy Toss. "They grin at you and make you feel out of
 
 book Hi Ho I Owe Sty Sto
 
-Hi Ho I Owe Sty Sto is a room in Dome D'Aww. printed name is "'Hi-Ho, I Owe' Sty-Sto". "A deli with very expensive and very cheap foods. Since you're not very rich, you'll probably have to go with the cheap ones."
+Hi Ho I Owe Sty Sto is a room in Dome D'Aww. printed name is "'Hi-Ho, I Owe' Sty-Sto[']". "A deli with very expensive and very cheap foods. Since you're not very rich, you'll probably have to go with the cheap ones."
 
 chapter bri bro
 
