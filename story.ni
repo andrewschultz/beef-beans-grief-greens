@@ -40,6 +40,10 @@ include Beef Beans Grief Greens Tables by Andrew Schultz.
 
 include Beef Beans Grief Greens Tests by Andrew Schultz.
 
+section Beta Testing - not for release
+
+include Beef Beans Grief Greens Beta Testing by Andrew Schultz.
+
 volume feast items
 
 the made mug is an auxiliary feastitem. fdesc of made mug is "small drinking container(s)".
