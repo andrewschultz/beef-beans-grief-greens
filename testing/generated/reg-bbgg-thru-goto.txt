@@ -1,0 +1,333 @@
+## reg-bbgg-thru-goto.txt
+## GENERATOR FILE: rbr-bbgg-thru.txt
+
+## walkthrough testing GOTO
+
+** game: /home/andrew/prt/debug-beef-beans-grief-greens.z8
+** interpreter: /home/andrew/prt/dfrotz -m -w5000 -h25
+
+* main-thru
+
+#testcase-goto-table-of-noways-reeve-row
+>w
+You need to find a way out. Yet you can't just go out ... you need to pump yourself up to get out, somehow.
+
+>au 2
+
+>x
+
+>made mug
+by one point
+
+>jade jug
+by one point
+
+>sassed ceased
+by one point
+
+>leave lo
+by one point
+
+#testcase-goto-table-of-noways-wandering-where
+>w
+You feel you should be able to go west. You need to guess at where the roads might lead.
+
+#+testcase-goto-table-of-noways-wandering-where
+>u
+You can really only wander in the four cardinal directions.
+
+#+testcase-goto-table-of-noways-wandering-where
+>d
+You can really only wander in the four cardinal directions, though actually, there is a way to see what's down later.
+
+#testcase-goto-table-of-noways-ooh-ooh
+>pondering pair
+by one point
+
+>n
+>n
+It's too misty to see far.
+
+>undo
+>undo
+>undo
+
+>laundering lair
+by one point
+
+#testcase-goto-table-of-noways-dove-n-doubt
+>w
+Perhaps there are secret passages for the mafia-connected, but not for you.
+
+>lovin lout
+by one point
+
+>shovin shout
+by one point
+
+>oven out
+by one point
+
+>heave ho
+by one point
+
+#testcase-goto-table-of-noways-reeve-row
+>w
+It's not a very big house. You suspected the old passage-under-the-rug trick, but you just don't have faith it's REALLY there. There's always back OUT.
+
+>prune pride
+by one point
+
+>x guide
+
+>played plug
+by one point
+
+>out
+
+#testcase-goto-table-of-noways-stuck-state
+>w
+Perhaps finding what you need will get you out of here. You can't see a passage out.
+
+>pluck plate
+by one point
+
+>w
+
+>hook hard
+by one point
+
+#testcase-goto-table-of-noways-took-tarred
+>w
+You can't leave until you've found everything the shook shard offers.
+
+>book bard
+by one point
+
+>cook card
+by one point
+
+>look lard
+by one point
+
+>squandering square
+by one point
+
+#testcase-goto-table-of-noways-squalor-square
+>e
+Oh no. You don't want to go deeper into this mess.
+
+>dollar dare
+by one point
+
+>caller care
+by one point
+
+>baller bear
+by one point
+
+>neat note
+by one point
+
+>meat moat
+by one point
+
+>beet boat
+by one point
+
+>fight fires
+by one point
+
+>white wires
+by one point
+
+>w
+
+#testcase-goto-table-of-noways-toy-toss
+>w
+There's a reward, and Boy Boss Roy Ross and the Joy Jaws won't let you leave until you pick the right one.
+
+>soy sauce
+by one point
+
+>maundering mare
+by one point
+
+#testcase-goto-table-of-noways-gap-goo
+>s
+You can only really go back north. You don't want to know how far the goo gap extends.
+
+>zap zoo
+by one point
+
+>see soup
+by one point
+
+>notice knife
+by one point
+
+>dented dials
+by one point
+
+>carrot cake
+by one point
+
+>n
+
+#testcase-goto-table-of-noways-hi-ho
+>w
+No, there must be something you can buy on the cheap.
+
+>penny piles
+by one point
+
+>pie po
+by one point
+
+>pondering pair
+by one point
+
+#+testcase-goto-table-of-noways-ooh-ooh
+>n
+The passive pit blocks all directions except to the south.
+
+>booboo
+by one point
+
+>juju
+by one point
+
+>muumuu
+by one point
+
+>tutu
+by one point
+
+>massive mitt
+by one point
+
+>cuckoo
+by one point
+
+>doodoo
+by one point
+
+>poohpooh
+by one point
+
+>s
+
+>flopper flea
+by one point
+
+>chrome craw
+by one point
+
+#+testcase-goto-table-of-noways-wandering-where
+>u
+You can really only wander in the four cardinal directions or down into the chrome craw.
+
+>nw
+Diagonal directions aren't used in Beef, Beans, Grief, Greens.
+
+>d
+
+#testcase-goto-table-of-noways-woe-worry-slow-slurry
+>w
+Only more worries are beyond, you suspect. Surely, you can finagle something from the denizens here
+
+>honeyed ham
+by one point
+
+#+testcase-goto-table-of-noways-woe-worry-slow-slurry
+>w
+Only more worries are beyond, you suspect. There's enough more food to pick off here, anyway.
+
+>grey gruel
+by one point
+
+>just jello
+by one point
+
+#+testcase-goto-table-of-noways-woe-worry-slow-slurry
+>w
+Only more worries are beyond, you suspect. You've got enough side dishes.
+
+>u
+>in
+
+>grieve grow
+by one point
+
+#testcase-goto-table-of-noways-reeve-row
+>w
+It's not a very big house. You suspected the old passage-under-the-rug trick, but you just don't have faith it's REALLY there. There's always back OUT, and you unlocked a passasge DOWN, too.
+
+>believe below
+by one point
+
+#+testcase-goto-table-of-noways-reeve-row
+>w
+It's not a very big house. You can go down, but you can't really explore this small house. You don't need to. There's always back OUT, and you unlocked a passasge DOWN, too.
+
+>d
+
+#testcase-goto-table-of-noways-trappy-trawl
+>w
+You crash around into some walls, which make noises like WHOMP and WHUMP, which don't sound quite right.
+
+>scrappy scrawl
+by one point
+
+>whappy wall
+by one point
+
+#testcase-goto-table-of-noways-happy-hall
+>w
+You can't walk out on the ritual now!
+
+>pappy paul
+by one point
+
+>sappy saul
+by one point
+
+>lone laura
+by one point
+
+>known nora
+by one point
+
+>cappy caul
+by one point
+
+>yappy yall
+by one point
+
+>bappy ball
+by one point
+
+#testcase-goto-table-of-noways-compete-compel
+>w
+This is the final lair of solitude. You've completed a quest for your peers. Now you will sit here and sort things out.
+
+>wheat well
+by one point
+
+>feet fell
+by one point
+
+>sheet shell
+by one point
+
+>beat bell
+by one point
+
+>meet mel
+by one point
+
+>x leet lel
+
+>repeat repel
+by one point
+

@@ -1,0 +1,942 @@
+#-- rbr-bbgg-thru.txt
+#-- main branch file for Beef Beans Grief Greens walkthroughs
+#
+#-- TTC.PY generates test cases not found here
+#--
+
+#NOTE: PRC.PY has a bug where it double-prints the text at the end if the final command fails
+
+file=reg-bbgg-thru-min.txt,min,minimum walkthrough
+file=reg-bbgg-thru-skip.txt,skip,skip room walkthrough
+file=reg-bbgg-thru-all.txt,all,walkthrough with all points and potential neutral retries
+file=reg-bbgg-thru-reject.txt,rej,walkthrough with all rejections and THINK
+file=reg-bbgg-thru-alt-verbs.txt,alt,walkthrough with altverb tests
+file=reg-bbgg-thru-guide-gong.txt,gong,walkthrough testing guide gong
+file=reg-bbgg-thru-pride-prong.txt,prong,walkthrough testing pride prong
+file=reg-bbgg-thru-mistakes.txt,mis,walkthrough testing all mistakes
+file=reg-bbgg-thru-ha-half.txt,ha,walkthrough testing half-right cases
+file=reg-bbgg-thru-homonyms.txt,hom,walkthrough testing homonyms
+file=reg-bbgg-thru-verbs.txt,ver,walkthrough testing special verbs
+file=reg-bbgg-thru-goto.txt,goto/gt/go,walkthrough testing GOTO
+file=reg-bbgg-thru-hints.txt,hin/hint/hints,walkthrough testing HINTS basic
+file=reg-bbgg-thru-hintfull.txt,hf/hfull,walkthrough testing HINTS full
+
+##--stable-file: this eventually says that the project is stable, and I shouldn't change the main/minimal file unless I really need to.
+#--strict-file: this says that the project requires strict section marking e.g. @all instead of ==t1.
+
+}$REJECT=I couldn't parse that command. You don't need any more than two words long.
+}$REJECT1=Most special commands are more than one word. VERBS will give a list of useful, non-puzzle-solving verbs.
+}$REJECT1A=Most special commands are more than one word, because of the rhyme-pairs involved. VERBS will give a list of useful, non-puzzle-solving verbs.
+}$REJECT2=Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Bright Brave Knight Knave has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+}$GREENBONUS=The HA HALF button on your Leet Learner lights up green. Very dim, though. Perhaps this is a rhyme you don't strictly need to figure to win.
+}$GREENCOREFIRST=The HA HALF button on your Leet Learner lights up green--one of the words you thought must be right.
+}$GREENCORE=The HA HALF button on your Leet Learner lights up green.
+}$YELLOWBONUS=The HA HALF button on your Leet Learner lights up yellow. Very dim, though. Perhaps this is a rhyme you don't strictly need to figure to win.
+}$YELLOWCOREFIRST=The HA HALF button on your Leet Learner lights up yellow--one of the words must work for a future solution.
+}$YELLOWCORE=The HA HALF button on your Leet Learner lights up yellow.
+}$GONG1=A guide gong rings to notify you that you don't need to go back through
+}$GONG=That guide gong, again, rings to notify you that you don't need to go back through
+
+}}MAX=65
+}}CURMAX=65
+}}SCORE=0
+}}CURMIN=56
+}}CURMINBONUS=0
+}}CURMAXBONUS=9
+}}MAXBONUS=9
+
+}$SCOS=You have scored a total of {SCORE} out of {MAX} points and need {CURMIN} to win. You have found {CURMINBONUS} of {MAXBONUS} bonus points so far.
+}$MISSINGONE=1 optional point is no longer available.
+}$MISSING={} optional points are no longer available.
+
+## *FILE
+## *FORK
+
+## *DESCRIPTION
+
+** game: /home/andrew/prt/debug-beef-beans-grief-greens.z8
+** interpreter: /home/andrew/prt/dfrotz -m -w5000 -h25
+
+* main-thru
+
+@all
+#testcase-room-names-reeve-row
+`Reeve Row
+
+@gt
+#testcase-goto-table-of-noways-reeve-row
+>w
+You need to find a way out. Yet you can't just go out ... you need to pump yourself up to get out, somehow.
+
+>au 2
+
+>x
+
+>made mug
+by one point
+}}SCORE++
+
+@all
+>score
+{$SCOS}
+
+>jade jug
+by one point
+}}SCORE++
+
+@all
+>score
+{$SCOS}
+
+@!min
+>sassed ceased
+by one point
+}}CURMINBONUS++
+}}CURMIN++
+}}SCORE++
+
+@all
+>score
+{$SCOS}
+
+>leave lo
+by one point
+}}SCORE++
+
+@all
+#testcase-room-names-wandering-where
+`Wandering ... Where?
+
+@all+
+>score
+{$SCOS}
+
+@gt
+#testcase-goto-table-of-noways-wandering-where
+>w
+You feel you should be able to go west. You need to guess at where the roads might lead.
+\\
+#+testcase-goto-table-of-noways-wandering-where
+>u
+You can really only wander in the four cardinal directions.
+\\
+#+testcase-goto-table-of-noways-wandering-where
+>d
+You can really only wander in the four cardinal directions, though actually, there is a way to see what's down later.
+
+@gt+
+##balance undo
+#testcase-goto-table-of-noways-ooh-ooh
+>pondering pair
+by one point
+\\
+>n
+>n
+It's too misty to see far.
+\\
+>undo
+>undo
+>undo
+
+>laundering lair
+by one point
+}}SCORE++
+
+@all
+#testcase-room-names-dove-n-doubt
+`Dove 'N Doubt
+
+@all+
+>score
+{$SCOS}
+
+@gt
+#testcase-goto-table-of-noways-dove-n-doubt
+>w
+Perhaps there are secret passages for the mafia-connected, but not for you.
+
+>lovin lout
+by one point
+}}SCORE++
+
+@all
+>score
+{$SCOS}
+
+>shovin shout
+by one point
+}}SCORE++
+
+@all
+>score
+{$SCOS}
+
+>oven out
+by one point
+}}SCORE++
+
+@all
+#+testcase-room-names-reeve-row
+`Reeve Row
+
+@all+
+>score
+{$SCOS}
+
+>heave ho
+by one point
+}}SCORE++
+
+@gt
+#testcase-goto-table-of-noways-reeve-row
+>w
+It's not a very big house. You suspected the old passage-under-the-rug trick, but you just don't have faith it's REALLY there. There's always back OUT.
+
+@all
+>score
+{$SCOS}
+
+>prune pride
+by one point
+}}SCORE++
+
+@all
+>score
+{$SCOS}
+
+>x guide
+
+>played plug
+by one point
+}}SCORE++
+
+@all
+>score
+{$SCOS}
+
+>out
+
+@all
+#testcase-room-names-stuck-state
+`Stuck State
+
+@gt
+#testcase-goto-table-of-noways-stuck-state
+>w
+Perhaps finding what you need will get you out of here. You can't see a passage out.
+
+>pluck plate
+by one point
+}}SCORE++
+
+@all
+#+testcase-room-names-wandering-where
+`Wandering ... Where?
+
+@all+
+>score
+{$SCOS}
+
+>w
+
+>hook hard
+by one point
+
+@all
+#testcase-room-names-took-tarred
+`Took, Tarred
+
+}}SCORE++
+
+@all
+>score
+{$SCOS}
+
+@gt
+#testcase-goto-table-of-noways-took-tarred
+>w
+You can't leave until you've found everything the shook shard offers.
+
+>book bard
+by one point
+}}SCORE++
+
+@all
+>score
+{$SCOS}
+
+>cook card
+by one point
+}}SCORE++
+
+@all
+>score
+{$SCOS}
+
+>look lard
+by one point
+}}SCORE++
+
+@all
+>score
+{$SCOS}
+
+>squandering square
+by one point
+}}SCORE++
+
+@all
+#testcase-room-names-squalor-square
+`Squalor Square
+
+@all+
+>score
+{$SCOS}
+
+@gt
+#testcase-goto-table-of-noways-squalor-square
+>e
+Oh no. You don't want to go deeper into this mess.
+
+>dollar dare
+by one point
+}}SCORE++
+
+@all
+>score
+{$SCOS}
+
+>caller care
+by one point
+}}SCORE++
+
+@all
+>score
+{$SCOS}
+
+@!min
+>baller bear
+by one point
+}}SCORE++
+}}CURMIN++
+}}CURMINBONUS++
+
+@all
+>score
+{$SCOS}
+
+>neat note
+by one point
+}}SCORE++
+
+@all
+>score
+{$SCOS}
+
+>meat moat
+by one point
+}}SCORE++
+
+@all
+>score
+{$SCOS}
+
+>beet boat
+by one point
+}}SCORE++
+
+@all
+>score
+{$SCOS}
+
+@rej
+>white wires
+You can't see anything that might have white wires! Well, anything safe to handle!
+\\
+>think
+You can handle the WHITE WIRES once the lyres are safe to touch.
+\\
+>fight fires
+\\
+>think
+(CAN DO NOW) You can handle the WHITE WIRES now the lyres are safe to touch.
+\\
+>undo
+>undo
+>undo
+>undo
+
+>fight fires
+by one point
+}}SCORE++
+
+@all
+>score
+{$SCOS}
+
+>white wires
+by one point
+}}SCORE++
+
+@all
+>score
+{$SCOS}
+
+>w
+
+@all
+#testcase-room-names-toy-toss
+`Toy Toss
+
+@gt
+#testcase-goto-table-of-noways-toy-toss
+>w
+There's a reward, and Boy Boss Roy Ross and the Joy Jaws won't let you leave until you pick the right one.
+
+>soy sauce
+by one point
+}}SCORE++
+
+@all
+#+testcase-room-names-wandering-where
+`Wandering ... Where?
+
+@all+
+>score
+{$SCOS}
+
+>maundering mare
+by one point
+}}SCORE++
+
+@all
+#testcase-room-names-gap-goo
+`Gap, Goo
+
+@all+
+>score
+{$SCOS}
+
+@gt
+#testcase-goto-table-of-noways-gap-goo
+>s
+You can only really go back north. You don't want to know how far the goo gap extends.
+
+>zap zoo
+by one point
+}}SCORE++
+
+@all
+>score
+{$SCOS}
+
+>see soup
+by one point
+}}SCORE++
+
+@all
+>score
+{$SCOS}
+
+>notice knife
+by one point
+}}SCORE++
+
+@all
+>score
+{$SCOS}
+
+>dented dials
+by one point
+}}SCORE++
+
+@all
+>score
+{$SCOS}
+
+>carrot cake
+by one point
+}}SCORE++
+
+@all
+>score
+{$SCOS}
+
+>n
+
+@all
+#testcase-room-names-hi-ho-i-owe
+`"Hi-Ho, I Owe" Sty-Sto'
+
+@gt
+#testcase-goto-table-of-noways-hi-ho
+>w
+No, there must be something you can buy on the cheap.
+
+>penny piles
+by one point
+}}SCORE++
+
+@all
+>score
+{$SCOS}
+
+>pie po
+by one point
+}}SCORE++
+
+@all
+#+testcase-room-names-wandering-where
+`Wandering ... Where?
+
+@all+
+>score
+{$SCOS}
+
+>pondering pair
+by one point
+}}SCORE++
+
+@all
+#testcase-room-names-ooh-ooh
+`Ooh, Ooh...!
+
+@all+
+>score
+{$SCOS}
+
+@gt
+#+testcase-goto-table-of-noways-ooh-ooh
+>n
+The passive pit blocks all directions except to the south.
+
+>booboo
+by one point
+}}SCORE++
+
+@all
+>score
+{$SCOS}
+
+>juju
+by one point
+}}SCORE++
+
+@all
+>score
+{$SCOS}
+
+>muumuu
+by one point
+}}SCORE++
+
+@all
+>score
+{$SCOS}
+
+>tutu
+by one point
+}}SCORE++
+
+@all
+>score
+{$SCOS}
+
+>massive mitt
+by one point
+}}SCORE++
+
+@all
+>score
+{$SCOS}
+
+>cuckoo
+by one point
+}}SCORE++
+}}CURMIN++
+}}CURMINBONUS++
+
+@all
+>score
+{$SCOS}
+
+>doodoo
+by one point
+}}SCORE++
+}}CURMIN++
+}}CURMINBONUS++
+
+@all
+>score
+{$SCOS}
+
+>poohpooh
+by one point
+}}SCORE++
+}}CURMIN++
+}}CURMINBONUS++
+
+@all
+>score
+{$SCOS}
+
+>s
+
+>flopper flea
+by one point
+}}SCORE++
+
+@all
+>score
+{$SCOS}
+
+>chrome craw
+by one point
+}}SCORE++
+}}CURMIN++
+}}CURMINBONUS++
+
+@all
+>score
+{$SCOS}
+
+@gt
+#+testcase-goto-table-of-noways-wandering-where
+>u
+You can really only wander in the four cardinal directions or down into the chrome craw.
+\\
+>nw
+Diagonal directions aren't used in Beef, Beans, Grief, Greens.
+
+>d
+
+@all
+#testcase-room-names-woe-worry-slow-slurry
+`Woe Worry Slow Slurry
+
+@gt
+#testcase-goto-table-of-noways-woe-worry-slow-slurry
+>w
+Only more worries are beyond, you suspect. Surely, you can finagle something from the denizens here
+
+>honeyed ham
+by one point
+}}SCORE++
+}}CURMIN++
+}}CURMINBONUS++
+
+@gt
+#+testcase-goto-table-of-noways-woe-worry-slow-slurry
+>w
+Only more worries are beyond, you suspect. There's enough more food to pick off here, anyway.
+
+@all
+>score
+{$SCOS}
+
+>grey gruel
+by one point
+}}SCORE++
+}}CURMIN++
+}}CURMINBONUS++
+
+@all
+>score
+{$SCOS}
+
+>just jello
+by one point
+}}SCORE++
+}}CURMIN++
+}}CURMINBONUS++
+
+@gt
+#+testcase-goto-table-of-noways-woe-worry-slow-slurry
+>w
+Only more worries are beyond, you suspect. You've got enough side dishes.
+
+@all
+>score
+{$SCOS}
+
+>u
+>in
+
+>grieve grow
+by one point
+}}SCORE++
+
+@all
+>score
+{$SCOS}
+
+@gt
+#testcase-goto-table-of-noways-reeve-row
+>w
+It's not a very big house. You suspected the old passage-under-the-rug trick, but you just don't have faith it's REALLY there. There's always back OUT, and you unlocked a passasge DOWN, too.
+
+>believe below
+by one point
+}}SCORE++
+
+@all
+>score
+{$SCOS}
+
+@gt
+#+testcase-goto-table-of-noways-reeve-row
+>w
+It's not a very big house. You can go down, but you can't really explore this small house. You don't need to. There's always back OUT, and you unlocked a passasge DOWN, too.
+
+>d
+
+@all
+#testcase-room-names-trappy-trawl
+`Trappy Trawl
+
+@gt
+#testcase-goto-table-of-noways-trappy-trawl
+>w
+You crash around into some walls, which make noises like WHOMP and WHUMP, which don't sound quite right.
+
+>scrappy scrawl
+by one point
+}}SCORE++
+
+@all
+>score
+{$SCOS}
+
+@rej
+##balance undo
+>sappy saul
+That might be someone to call once you are in the main ritual room.
+\\
+>pappy paul
+That might be someone to call once you are in the main ritual room.
+\\
+>cappy caul
+That might be an interesting part of the ritual once you make it to the main ritual room.
+\\
+>yappy yall
+That might be an interesting part of the ritual once you make it to the main ritual room.
+\\
+>bappy ball
+That might be an interesting part of the ritual once you make it to the main ritual room.
+\\
+#testcase-think-table-of-verb-checks-vc-sappy-saul-rule
+>think
+You can summon PAPPY PAUL once you are in the main ritual room.
+You can summon SAPPY SAUL once you are in the main ritual room.
+You can ask for your CAPPY CAUL once everyone else is present for the ceremony.
+You can get everyone YAPPY YALL once preparations for the ceremony and feast are complete.
+You can have everyone play BAPPY BALL once the feast is complete, to burn off calories.
+>undo
+\\
+>whappy wall
+\\
+#testcase-think-table-of-verb-checks-vc-sappy-saul-rule
+>think
+(CAN DO NOW) You can summon PAPPY PAUL now you are in the main ritual room.
+(CAN DO NOW) You can summon SAPPY SAUL now you are in the main ritual room.
+You can ask for your CAPPY CAUL once everyone else is present for the ceremony.
+You can get everyone YAPPY YALL once preparations for the ceremony and feast are complete.
+You can have everyone play BAPPY BALL once the feast is complete, to burn off calories.
+\\
+>undo
+>undo
+>undo
+>undo
+>undo
+>undo
+>undo
+
+>whappy wall
+by one point
+}}SCORE++
+
+@all
+#testcase-room-names-happy-hall
+`Happy Hall
+
+@rej
+>cappy caul
+You can't wear the ceremonial gear until everyone's here!
+\\
+>yappy yall
+You need to retrieve your ceremonial garb first! WRONG
+\\
+>bappy ball
+Sport, eventually, to burn the calories off. But before that, discussion. WRONG
+
+@all
+>score
+{$SCOS}
+
+@gt
+#testcase-goto-table-of-noways-happy-hall
+>w
+You can't walk out on the ritual now!
+
+>pappy paul
+by one point
+}}SCORE++
+
+@all
+>score
+{$SCOS}
+
+>sappy saul
+by one point
+}}SCORE++
+
+@all
+>score
+{$SCOS}
+
+>lone laura
+by one point
+}}SCORE++
+
+@all
+>score
+{$SCOS}
+
+>known nora
+by one point
+}}SCORE++
+
+@all
+>score
+{$SCOS}
+
+@rej
+>think
+(CAN DO NOW) You can ask for your CAPPY CAUL now everyone else is present for the ceremony.
+You can get everyone YAPPY YALL now preparations for the ceremony and feast are complete.
+You can have everyone play BAPPY BALL now the feast is complete, to burn off calories.
+
+>cappy caul
+by one point
+}}SCORE++
+
+@all
+>score
+{$SCOS}
+
+@rej
+>think
+(CAN DO NOW) You can get everyone YAPPY YALL now preparations for the ceremony and feast are complete.
+You can have everyone play BAPPY BALL now the feast is complete, to burn off calories.
+
+>yappy yall
+by one point
+}}SCORE++
+
+@all
+>score
+{$SCOS}
+
+@rej
+>think
+(CAN DO NOW) You can have everyone play BAPPY BALL now the feast is complete, to burn off calories.
+
+>bappy ball
+by one point
+}}SCORE++
+
+@all
+#testcase-room-names-compete-compel
+`Compete! Compel!
+
+@all+
+>score
+{$SCOS}
+
+@gt
+#testcase-goto-table-of-noways-compete-compel
+>w
+This is the final lair of solitude. You've completed a quest for your peers. Now you will sit here and sort things out.
+
+@rej
+>feet fell
+But you haven't envisioned any place to fall to!
+\\
+>think
+You can claim your FEET FELL once you've envisioned somewhere safe to fall to.
+
+>wheat well
+by one point
+}}SCORE++
+
+@all
+>score
+{$SCOS}
+
+@rej
+>think
+(CAN DO NOW) You can claim your FEET FELL now you've envisioned somewhere safe to fall to.
+
+>feet fell
+by one point
+}}SCORE++
+
+@all
+>score
+{$SCOS}
+
+>sheet shell
+by one point
+}}SCORE++
+
+@all
+>score
+{$SCOS}
+
+>beat bell
+by one point
+}}SCORE++
+
+@all
+>score
+{$SCOS}
+
+>meet mel
+by one point
+}}SCORE++
+
+@all
+>score
+{$SCOS}
+
+>x leet lel
+
+>repeat repel
+by one point
+}}SCORE++
+
+@all
+>missed
+Note that, because there are three different endings, you'll automatically have "missed" two of them, which I don't want to spoil. You can UNDO to track the others down.
+You missed nothing else, though. Good job!
+
+@all+
+>undo
+\\
+>sweet swell
+by one point
+}}SCORE++
+\\
+>missed
+Note that, because there are three different endings, you'll automatically have "missed" two of them, which I don't want to spoil. You can UNDO to track the others down.
+You missed nothing else, though. Good job!
+\\
+>undo
+\\
+>heat hell
+by one point
+}}SCORE++
+\\
+>missed
+Note that, because there are three different endings, you'll automatically have "missed" two of them, which I don't want to spoil. You can UNDO to track the others down.
+You missed nothing else, though. Good job!

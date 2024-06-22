@@ -1,0 +1,497 @@
+## reg-bbgg-thru-all.txt
+## GENERATOR FILE: rbr-bbgg-thru.txt
+
+## walkthrough with all points and potential neutral retries
+
+** game: /home/andrew/prt/debug-beef-beans-grief-greens.z8
+** interpreter: /home/andrew/prt/dfrotz -m -w5000 -h25
+
+* main-thru
+
+#testcase-room-names-reeve-row
+`Reeve Row
+
+>au 2
+
+>x
+
+>made mug
+by one point
+
+>score
+You have scored a total of 1 out of 65 points and need 56 to win. You have found 0 of 9 bonus points so far.
+
+>jade jug
+by one point
+
+>score
+You have scored a total of 2 out of 65 points and need 56 to win. You have found 0 of 9 bonus points so far.
+
+>sassed ceased
+by one point
+
+>score
+You have scored a total of 3 out of 65 points and need 57 to win. You have found 1 of 9 bonus points so far.
+
+>leave lo
+by one point
+
+#testcase-room-names-wandering-where
+`Wandering ... Where?
+
+>score
+You have scored a total of 4 out of 65 points and need 57 to win. You have found 1 of 9 bonus points so far.
+
+>laundering lair
+by one point
+
+#testcase-room-names-dove-n-doubt
+`Dove 'N Doubt
+
+>score
+You have scored a total of 5 out of 65 points and need 57 to win. You have found 1 of 9 bonus points so far.
+
+>lovin lout
+by one point
+
+>score
+You have scored a total of 6 out of 65 points and need 57 to win. You have found 1 of 9 bonus points so far.
+
+>shovin shout
+by one point
+
+>score
+You have scored a total of 7 out of 65 points and need 57 to win. You have found 1 of 9 bonus points so far.
+
+>oven out
+by one point
+
+#+testcase-room-names-reeve-row
+`Reeve Row
+
+>score
+You have scored a total of 8 out of 65 points and need 57 to win. You have found 1 of 9 bonus points so far.
+
+>heave ho
+by one point
+
+>score
+You have scored a total of 9 out of 65 points and need 57 to win. You have found 1 of 9 bonus points so far.
+
+>prune pride
+by one point
+
+>score
+You have scored a total of 10 out of 65 points and need 57 to win. You have found 1 of 9 bonus points so far.
+
+>x guide
+
+>played plug
+by one point
+
+>score
+You have scored a total of 11 out of 65 points and need 57 to win. You have found 1 of 9 bonus points so far.
+
+>out
+
+#testcase-room-names-stuck-state
+`Stuck State
+
+>pluck plate
+by one point
+
+#+testcase-room-names-wandering-where
+`Wandering ... Where?
+
+>score
+You have scored a total of 12 out of 65 points and need 57 to win. You have found 1 of 9 bonus points so far.
+
+>w
+
+>hook hard
+by one point
+
+#testcase-room-names-took-tarred
+`Took, Tarred
+
+>score
+You have scored a total of 13 out of 65 points and need 57 to win. You have found 1 of 9 bonus points so far.
+
+>book bard
+by one point
+
+>score
+You have scored a total of 14 out of 65 points and need 57 to win. You have found 1 of 9 bonus points so far.
+
+>cook card
+by one point
+
+>score
+You have scored a total of 15 out of 65 points and need 57 to win. You have found 1 of 9 bonus points so far.
+
+>look lard
+by one point
+
+>score
+You have scored a total of 16 out of 65 points and need 57 to win. You have found 1 of 9 bonus points so far.
+
+>squandering square
+by one point
+
+#testcase-room-names-squalor-square
+`Squalor Square
+
+>score
+You have scored a total of 17 out of 65 points and need 57 to win. You have found 1 of 9 bonus points so far.
+
+>dollar dare
+by one point
+
+>score
+You have scored a total of 18 out of 65 points and need 57 to win. You have found 1 of 9 bonus points so far.
+
+>caller care
+by one point
+
+>score
+You have scored a total of 19 out of 65 points and need 57 to win. You have found 1 of 9 bonus points so far.
+
+>baller bear
+by one point
+
+>score
+You have scored a total of 20 out of 65 points and need 58 to win. You have found 2 of 9 bonus points so far.
+
+>neat note
+by one point
+
+>score
+You have scored a total of 21 out of 65 points and need 58 to win. You have found 2 of 9 bonus points so far.
+
+>meat moat
+by one point
+
+>score
+You have scored a total of 22 out of 65 points and need 58 to win. You have found 2 of 9 bonus points so far.
+
+>beet boat
+by one point
+
+>score
+You have scored a total of 23 out of 65 points and need 58 to win. You have found 2 of 9 bonus points so far.
+
+>fight fires
+by one point
+
+>score
+You have scored a total of 24 out of 65 points and need 58 to win. You have found 2 of 9 bonus points so far.
+
+>white wires
+by one point
+
+>score
+You have scored a total of 25 out of 65 points and need 58 to win. You have found 2 of 9 bonus points so far.
+
+>w
+
+#testcase-room-names-toy-toss
+`Toy Toss
+
+>soy sauce
+by one point
+
+#+testcase-room-names-wandering-where
+`Wandering ... Where?
+
+>score
+You have scored a total of 26 out of 65 points and need 58 to win. You have found 2 of 9 bonus points so far.
+
+>maundering mare
+by one point
+
+#testcase-room-names-gap-goo
+`Gap, Goo
+
+>score
+You have scored a total of 27 out of 65 points and need 58 to win. You have found 2 of 9 bonus points so far.
+
+>zap zoo
+by one point
+
+>score
+You have scored a total of 28 out of 65 points and need 58 to win. You have found 2 of 9 bonus points so far.
+
+>see soup
+by one point
+
+>score
+You have scored a total of 29 out of 65 points and need 58 to win. You have found 2 of 9 bonus points so far.
+
+>notice knife
+by one point
+
+>score
+You have scored a total of 30 out of 65 points and need 58 to win. You have found 2 of 9 bonus points so far.
+
+>dented dials
+by one point
+
+>score
+You have scored a total of 31 out of 65 points and need 58 to win. You have found 2 of 9 bonus points so far.
+
+>carrot cake
+by one point
+
+>score
+You have scored a total of 32 out of 65 points and need 58 to win. You have found 2 of 9 bonus points so far.
+
+>n
+
+#testcase-room-names-hi-ho-i-owe
+`"Hi-Ho, I Owe" Sty-Sto'
+
+>penny piles
+by one point
+
+>score
+You have scored a total of 33 out of 65 points and need 58 to win. You have found 2 of 9 bonus points so far.
+
+>pie po
+by one point
+
+#+testcase-room-names-wandering-where
+`Wandering ... Where?
+
+>score
+You have scored a total of 34 out of 65 points and need 58 to win. You have found 2 of 9 bonus points so far.
+
+>pondering pair
+by one point
+
+#testcase-room-names-ooh-ooh
+`Ooh, Ooh...!
+
+>score
+You have scored a total of 35 out of 65 points and need 58 to win. You have found 2 of 9 bonus points so far.
+
+>booboo
+by one point
+
+>score
+You have scored a total of 36 out of 65 points and need 58 to win. You have found 2 of 9 bonus points so far.
+
+>juju
+by one point
+
+>score
+You have scored a total of 37 out of 65 points and need 58 to win. You have found 2 of 9 bonus points so far.
+
+>muumuu
+by one point
+
+>score
+You have scored a total of 38 out of 65 points and need 58 to win. You have found 2 of 9 bonus points so far.
+
+>tutu
+by one point
+
+>score
+You have scored a total of 39 out of 65 points and need 58 to win. You have found 2 of 9 bonus points so far.
+
+>massive mitt
+by one point
+
+>score
+You have scored a total of 40 out of 65 points and need 58 to win. You have found 2 of 9 bonus points so far.
+
+>cuckoo
+by one point
+
+>score
+You have scored a total of 41 out of 65 points and need 59 to win. You have found 3 of 9 bonus points so far.
+
+>doodoo
+by one point
+
+>score
+You have scored a total of 42 out of 65 points and need 60 to win. You have found 4 of 9 bonus points so far.
+
+>poohpooh
+by one point
+
+>score
+You have scored a total of 43 out of 65 points and need 61 to win. You have found 5 of 9 bonus points so far.
+
+>s
+
+>flopper flea
+by one point
+
+>score
+You have scored a total of 44 out of 65 points and need 61 to win. You have found 5 of 9 bonus points so far.
+
+>chrome craw
+by one point
+
+>score
+You have scored a total of 45 out of 65 points and need 62 to win. You have found 6 of 9 bonus points so far.
+
+>d
+
+#testcase-room-names-woe-worry-slow-slurry
+`Woe Worry Slow Slurry
+
+>honeyed ham
+by one point
+
+>score
+You have scored a total of 46 out of 65 points and need 63 to win. You have found 7 of 9 bonus points so far.
+
+>grey gruel
+by one point
+
+>score
+You have scored a total of 47 out of 65 points and need 64 to win. You have found 8 of 9 bonus points so far.
+
+>just jello
+by one point
+
+>score
+You have scored a total of 48 out of 65 points and need 65 to win. You have found 9 of 9 bonus points so far.
+
+>u
+>in
+
+>grieve grow
+by one point
+
+>score
+You have scored a total of 49 out of 65 points and need 65 to win. You have found 9 of 9 bonus points so far.
+
+>believe below
+by one point
+
+>score
+You have scored a total of 50 out of 65 points and need 65 to win. You have found 9 of 9 bonus points so far.
+
+>d
+
+#testcase-room-names-trappy-trawl
+`Trappy Trawl
+
+>scrappy scrawl
+by one point
+
+>score
+You have scored a total of 51 out of 65 points and need 65 to win. You have found 9 of 9 bonus points so far.
+
+>whappy wall
+by one point
+
+#testcase-room-names-happy-hall
+`Happy Hall
+
+>score
+You have scored a total of 52 out of 65 points and need 65 to win. You have found 9 of 9 bonus points so far.
+
+>pappy paul
+by one point
+
+>score
+You have scored a total of 53 out of 65 points and need 65 to win. You have found 9 of 9 bonus points so far.
+
+>sappy saul
+by one point
+
+>score
+You have scored a total of 54 out of 65 points and need 65 to win. You have found 9 of 9 bonus points so far.
+
+>lone laura
+by one point
+
+>score
+You have scored a total of 55 out of 65 points and need 65 to win. You have found 9 of 9 bonus points so far.
+
+>known nora
+by one point
+
+>score
+You have scored a total of 56 out of 65 points and need 65 to win. You have found 9 of 9 bonus points so far.
+
+>cappy caul
+by one point
+
+>score
+You have scored a total of 57 out of 65 points and need 65 to win. You have found 9 of 9 bonus points so far.
+
+>yappy yall
+by one point
+
+>score
+You have scored a total of 58 out of 65 points and need 65 to win. You have found 9 of 9 bonus points so far.
+
+>bappy ball
+by one point
+
+#testcase-room-names-compete-compel
+`Compete! Compel!
+
+>score
+You have scored a total of 59 out of 65 points and need 65 to win. You have found 9 of 9 bonus points so far.
+
+>wheat well
+by one point
+
+>score
+You have scored a total of 60 out of 65 points and need 65 to win. You have found 9 of 9 bonus points so far.
+
+>feet fell
+by one point
+
+>score
+You have scored a total of 61 out of 65 points and need 65 to win. You have found 9 of 9 bonus points so far.
+
+>sheet shell
+by one point
+
+>score
+You have scored a total of 62 out of 65 points and need 65 to win. You have found 9 of 9 bonus points so far.
+
+>beat bell
+by one point
+
+>score
+You have scored a total of 63 out of 65 points and need 65 to win. You have found 9 of 9 bonus points so far.
+
+>meet mel
+by one point
+
+>score
+You have scored a total of 64 out of 65 points and need 65 to win. You have found 9 of 9 bonus points so far.
+
+>x leet lel
+
+>repeat repel
+by one point
+
+>missed
+Note that, because there are three different endings, you'll automatically have "missed" two of them, which I don't want to spoil. You can UNDO to track the others down.
+You missed nothing else, though. Good job!
+
+>undo
+
+>sweet swell
+by one point
+
+>missed
+Note that, because there are three different endings, you'll automatically have "missed" two of them, which I don't want to spoil. You can UNDO to track the others down.
+You missed nothing else, though. Good job!
+
+>undo
+
+>heat hell
+by one point
+
+>missed
+Note that, because there are three different endings, you'll automatically have "missed" two of them, which I don't want to spoil. You can UNDO to track the others down.
+You missed nothing else, though. Good job!

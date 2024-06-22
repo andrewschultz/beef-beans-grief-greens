@@ -1,0 +1,318 @@
+## reg-bbgg-thru-reject.txt
+## GENERATOR FILE: rbr-bbgg-thru.txt
+
+## walkthrough with all rejections and THINK
+
+** game: /home/andrew/prt/debug-beef-beans-grief-greens.z8
+** interpreter: /home/andrew/prt/dfrotz -m -w5000 -h25
+
+* main-thru
+
+>au 2
+
+>x
+
+>made mug
+by one point
+
+>jade jug
+by one point
+
+>sassed ceased
+by one point
+
+>leave lo
+by one point
+
+>laundering lair
+by one point
+
+>lovin lout
+by one point
+
+>shovin shout
+by one point
+
+>oven out
+by one point
+
+>heave ho
+by one point
+
+>prune pride
+by one point
+
+>x guide
+
+>played plug
+by one point
+
+>out
+
+>pluck plate
+by one point
+
+>w
+
+>hook hard
+by one point
+
+>book bard
+by one point
+
+>cook card
+by one point
+
+>look lard
+by one point
+
+>squandering square
+by one point
+
+>dollar dare
+by one point
+
+>caller care
+by one point
+
+>baller bear
+by one point
+
+>neat note
+by one point
+
+>meat moat
+by one point
+
+>beet boat
+by one point
+
+>white wires
+You can't see anything that might have white wires! Well, anything safe to handle!
+
+>think
+You can handle the WHITE WIRES once the lyres are safe to touch.
+
+>fight fires
+
+>think
+(CAN DO NOW) You can handle the WHITE WIRES now the lyres are safe to touch.
+
+>undo
+>undo
+>undo
+>undo
+
+>fight fires
+by one point
+
+>white wires
+by one point
+
+>w
+
+>soy sauce
+by one point
+
+>maundering mare
+by one point
+
+>zap zoo
+by one point
+
+>see soup
+by one point
+
+>notice knife
+by one point
+
+>dented dials
+by one point
+
+>carrot cake
+by one point
+
+>n
+
+>penny piles
+by one point
+
+>pie po
+by one point
+
+>pondering pair
+by one point
+
+>booboo
+by one point
+
+>juju
+by one point
+
+>muumuu
+by one point
+
+>tutu
+by one point
+
+>massive mitt
+by one point
+
+>cuckoo
+by one point
+
+>doodoo
+by one point
+
+>poohpooh
+by one point
+
+>s
+
+>flopper flea
+by one point
+
+>chrome craw
+by one point
+
+>d
+
+>honeyed ham
+by one point
+
+>grey gruel
+by one point
+
+>just jello
+by one point
+
+>u
+>in
+
+>grieve grow
+by one point
+
+>believe below
+by one point
+
+>d
+
+>scrappy scrawl
+by one point
+
+>sappy saul
+That might be someone to call once you are in the main ritual room.
+
+>pappy paul
+That might be someone to call once you are in the main ritual room.
+
+>cappy caul
+That might be an interesting part of the ritual once you make it to the main ritual room.
+
+>yappy yall
+That might be an interesting part of the ritual once you make it to the main ritual room.
+
+>bappy ball
+That might be an interesting part of the ritual once you make it to the main ritual room.
+
+#testcase-think-table-of-verb-checks-vc-sappy-saul-rule
+>think
+You can summon PAPPY PAUL once you are in the main ritual room.
+You can summon SAPPY SAUL once you are in the main ritual room.
+You can ask for your CAPPY CAUL once everyone else is present for the ceremony.
+You can get everyone YAPPY YALL once preparations for the ceremony and feast are complete.
+You can have everyone play BAPPY BALL once the feast is complete, to burn off calories.
+>undo
+
+>whappy wall
+
+#testcase-think-table-of-verb-checks-vc-sappy-saul-rule
+>think
+(CAN DO NOW) You can summon PAPPY PAUL now you are in the main ritual room.
+(CAN DO NOW) You can summon SAPPY SAUL now you are in the main ritual room.
+You can ask for your CAPPY CAUL once everyone else is present for the ceremony.
+You can get everyone YAPPY YALL once preparations for the ceremony and feast are complete.
+You can have everyone play BAPPY BALL once the feast is complete, to burn off calories.
+
+>undo
+>undo
+>undo
+>undo
+>undo
+>undo
+>undo
+
+>whappy wall
+by one point
+
+>cappy caul
+You can't wear the ceremonial gear until everyone's here!
+
+>yappy yall
+You need to retrieve your ceremonial garb first! WRONG
+
+>bappy ball
+Sport, eventually, to burn the calories off. But before that, discussion. WRONG
+
+>pappy paul
+by one point
+
+>sappy saul
+by one point
+
+>lone laura
+by one point
+
+>known nora
+by one point
+
+>think
+(CAN DO NOW) You can ask for your CAPPY CAUL now everyone else is present for the ceremony.
+You can get everyone YAPPY YALL now preparations for the ceremony and feast are complete.
+You can have everyone play BAPPY BALL now the feast is complete, to burn off calories.
+
+>cappy caul
+by one point
+
+>think
+(CAN DO NOW) You can get everyone YAPPY YALL now preparations for the ceremony and feast are complete.
+You can have everyone play BAPPY BALL now the feast is complete, to burn off calories.
+
+>yappy yall
+by one point
+
+>think
+(CAN DO NOW) You can have everyone play BAPPY BALL now the feast is complete, to burn off calories.
+
+>bappy ball
+by one point
+
+>feet fell
+But you haven't envisioned any place to fall to!
+
+>think
+You can claim your FEET FELL once you've envisioned somewhere safe to fall to.
+
+>wheat well
+by one point
+
+>think
+(CAN DO NOW) You can claim your FEET FELL now you've envisioned somewhere safe to fall to.
+
+>feet fell
+by one point
+
+>sheet shell
+by one point
+
+>beat bell
+by one point
+
+>meet mel
+by one point
+
+>x leet lel
+
+>repeat repel
+by one point
+

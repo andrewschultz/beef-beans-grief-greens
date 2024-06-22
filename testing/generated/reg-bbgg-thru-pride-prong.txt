@@ -1,0 +1,230 @@
+## reg-bbgg-thru-pride-prong.txt
+## GENERATOR FILE: rbr-bbgg-thru.txt
+
+## walkthrough testing pride prong
+
+** game: /home/andrew/prt/debug-beef-beans-grief-greens.z8
+** interpreter: /home/andrew/prt/dfrotz -m -w5000 -h25
+
+* main-thru
+
+>au 2
+
+>x
+
+>made mug
+by one point
+
+>jade jug
+by one point
+
+>sassed ceased
+by one point
+
+>leave lo
+by one point
+
+>laundering lair
+by one point
+
+>lovin lout
+by one point
+
+>shovin shout
+by one point
+
+>oven out
+by one point
+
+>heave ho
+by one point
+
+>prune pride
+by one point
+
+>x guide
+
+>played plug
+by one point
+
+>out
+
+>pluck plate
+by one point
+
+>w
+
+>hook hard
+by one point
+
+>book bard
+by one point
+
+>cook card
+by one point
+
+>look lard
+by one point
+
+>squandering square
+by one point
+
+>dollar dare
+by one point
+
+>caller care
+by one point
+
+>baller bear
+by one point
+
+>neat note
+by one point
+
+>meat moat
+by one point
+
+>beet boat
+by one point
+
+>fight fires
+by one point
+
+>white wires
+by one point
+
+>w
+
+>soy sauce
+by one point
+
+>maundering mare
+by one point
+
+>zap zoo
+by one point
+
+>see soup
+by one point
+
+>notice knife
+by one point
+
+>dented dials
+by one point
+
+>carrot cake
+by one point
+
+>n
+
+>penny piles
+by one point
+
+>pie po
+by one point
+
+>pondering pair
+by one point
+
+>booboo
+by one point
+
+>juju
+by one point
+
+>muumuu
+by one point
+
+>tutu
+by one point
+
+>massive mitt
+by one point
+
+>cuckoo
+by one point
+
+>doodoo
+by one point
+
+>poohpooh
+by one point
+
+>s
+
+>flopper flea
+by one point
+
+>chrome craw
+by one point
+
+>d
+
+>honeyed ham
+by one point
+
+>grey gruel
+by one point
+
+>just jello
+by one point
+
+>u
+>in
+
+>grieve grow
+by one point
+
+>believe below
+by one point
+
+>d
+
+>scrappy scrawl
+by one point
+
+>whappy wall
+by one point
+
+>pappy paul
+by one point
+
+>sappy saul
+by one point
+
+>lone laura
+by one point
+
+>known nora
+by one point
+
+>cappy caul
+by one point
+
+>yappy yall
+by one point
+
+>bappy ball
+by one point
+
+>wheat well
+by one point
+
+>feet fell
+by one point
+
+>sheet shell
+by one point
+
+>beat bell
+by one point
+
+>meet mel
+by one point
+
+>x leet lel
+
+>repeat repel
+by one point
+
