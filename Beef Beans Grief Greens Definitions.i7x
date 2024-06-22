@@ -161,6 +161,9 @@ to decide which number is oven-fix-score:
 to decide which number is shard-score:
 	decide on (boolval of sco-book-bard) + (boolval of sco-cook-card) + (boolval of sco-look-lard);
 
+to decide which number is stare-score:
+	decide on (boolval of sco-dollar-dare) + (boolval of sco-caller-care) + (boolval of sco-baller-bear);
+
 to decide which number is square-food-score:
 	decide on (boolval of sco-neat-note) + (boolval of sco-meat-moat) + (boolval of sco-beet-boat);
 

@@ -4,9 +4,9 @@ Version 1/240113 of Beef Beans Grief Greens Globals by Andrew Schultz begins her
 
 volume variables
 
-core-max is 54.
+core-max is 56.
 
-max-bonus is 8.
+max-bonus is 9.
 
 entry-in-series is 8.
 
@@ -160,6 +160,10 @@ sco-grey-gruel is a truth state that varies.
 sco-just-jello is a truth state that varies.
 
 sco-penny-piles is a truth state that varies.
+
+sco-baller-bear is a truth state that varies.
+sco-caller-care is a truth state that varies.
+sco-dollar-dare is a truth state that varies.
 
 volume test globals
 

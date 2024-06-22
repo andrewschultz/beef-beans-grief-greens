@@ -22,6 +22,9 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "flopper"	"flea"	"flee"	vh-flopper-flee rule	false	true	true	false	wandering where	vc-flopper-flea rule	vr-flopper-flea rule	--	--
 "chrome"	"craw"	--	--	false	true	false	false	wandering where	vc-chrome-craw rule	vr-chrome-craw rule	--	"You can open the [b]CHROME CRAW[r] [here-in of wandering] [once-now of vc-believe-below rule] you've explored everywhere you can aboveground."
 "massive"	"mitt"	--	--	false	true	true	false	Ooh Ooh	vc-massive-mitt rule	vr-massive-mitt rule	--	--
+"baller"	"bear"	--	--	false	true	true	false	squalor square	vc-baller-bear rule	vr-baller-bear rule	--	--
+"caller"	"care"	--	--	false	true	true	false	squalor square	vc-caller-care rule	vr-caller-care rule	--	--
+"dollar"	"dare"	--	--	false	true	true	false	squalor square	vc-dollar-dare rule	vr-dollar-dare rule	--	--
 "neat"	"note"	--	--	false	true	true	false	squalor square	vc-neat-note rule	vr-neat-note rule	--	--
 "meat"	"moat"	"meet/mote"	--	false	true	true	false	squalor square	vc-meat-moat rule	vr-meat-moat rule	--	"You can find a [b]MEAT MOAT[r] [once-now of vc-meat-moat rule] you have found something more useful than the bleat bloat."
 "beet"	"boat"	"beat"	--	false	true	true	false	squalor square	vc-beet-boat rule	vr-beet-boat rule	--	"You can find a [b]BEET BOAT[r] [once-now of vc-beet-boat rule] you have found something more useful than the bleat bloat."
@@ -401,6 +404,68 @@ this is the vr-massive-mitt rule:
 	now player has massive mitt;
 
 section squalor square scoring
+
+to evaluate-stare:
+	if stare-score is 2:
+		say "[line break]The staller stare blinks repeatedly. The weirdness you introduced was too much for it. It was ready to judge squalor, but not THIS. It closes its eyes and fades into the wall it was on. Perhaps it will find another place to oversee.[paragraph break]Sadly, it is replaced by an almost-as-distracting bleat-bloat.";
+		move bleat bloat to squalor square;
+		moot staller stare;
+		repeat through table of verb checks:
+			if there is no best-room entry, next;
+			if best-room entry is not squalor square, next;
+			if idid entry is true, next;
+			if check-rule entry is vc-baller-bear rule or check-rule entry is vc-caller-care rule or check-rule entry is vc-dollar-dare rule:
+				now core entry is false;
+				break;
+	else if stare-score is 1:
+		say "[line break]The staller stare blinks. It seems to shake where its head would be. It's a bit baffled by what it saw. It rolls its eyes as if to say, any more of this, and I give up.";
+
+a goodrhyme rule (this is the vc-baller-bear rule):
+	if player is not in squalor square, unavailable;
+	if sco-baller-bear is true:
+		vcal "You already summoned a baller bear!";
+		already-done;
+	ready;
+
+this is the vr-baller-bear rule:
+	now sco-baller-bear is true;
+	if stare-score < 3:
+		say "The staller stare is visibly affected by the audacity of someone caring about them. Its eyes bug out. Is this a joke! Then the eyes blink. No, it's not crying, of course it's not, it's the squalor.";
+		evaluate-stare;
+	else:
+		say "With the staller stare gone, you leave a bit of hope and genuine solicitousness for the next lost soul who stumbles here.";
+
+a goodrhyme rule (this is the vc-caller-care rule):
+	if player is not in squalor square, unavailable;
+	if sco-caller-care is true:
+		vcal "You already provided caller care!";
+		already-done;
+	ready;
+
+this is the vr-caller-care rule:
+	now sco-caller-care is true;
+	if stare-score < 3:
+		say "The staller stare is visibly affected by the audacity of someone caring about them. Its eyes bug out. Is this a joke! Then the eyes blink. No, it's not crying, of course it's not, it's the squalor.";
+		evaluate-stare;
+	else:
+		say "With the staller stare gone, you leave a bit of hope and genuine solicitousness for the next lost soul who stumbles here.";
+
+a goodrhyme rule (this is the vc-dollar-dare rule):
+	if player is not in squalor square, unavailable;
+	if sco-dollar-dare is true:
+		vcal "You already did this!";
+		already-done;
+	ready;
+
+this is the vr-dollar-dare rule:
+	now sco-dollar-dare is true;
+	if stare-score < 3:
+		say "The staller stare is visibly affected by the audacity of someone caring about them. Its eyes bug out. Is this a joke! Then the eyes blink. No, it's not crying, of course it's not, it's the squalor.";
+		evaluate-stare;
+	else:
+		say "With the staller stare gone, you leave a bit of hope and genuine solicitousness for the next lost soul who stumbles here.";
+
+section bleat bloat scoring
 
 a goodrhyme rule (this is the vc-neat-note rule):
 	if player is not in squalor square and player does not have meat moat and player does not have beet boat, unavailable;

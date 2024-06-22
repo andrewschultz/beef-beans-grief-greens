@@ -246,9 +246,13 @@ book Squalor Square
 
 Squalor Square is a wandroom in Roam Raw. wanddir of Squalor Square is east. "Definitely one of the seedier places you've been in."
 
+chapter staller stare
+
+the staller stare is a rhymable in Squalor Square. "It gazes at you intently, freezing you from doing anything sensible or extreme. Perhaps you can distract it by noticing or proposing something weird.".
+
 chapter bleat bloat
 
-the bleat bloat is a rhymable in squalor square. "A bleat bloat floats through here, in tune with the general dinginess.". description is "You're no linguistic expert, but you know it's distracting and draining and disorganizing. If only it were something more motivational!"
+the bleat bloat is a rhymable. "A bleat bloat floats through here, in tune with the general dinginess.". description is "You're no linguistic expert, but you know it's distracting and draining and disorganizing. If only it were something more motivational!"
 
 chapter light lyres
 
@@ -679,6 +683,24 @@ this is the show-misses rule:
 		the rule succeeds;
 	if sco-sassed-ceased is false:
 		say "You could've felt a bit more important with [b]SASSED CEASED[r] when you had the [feast].";
+	if stare-score is 2:
+		say "You could've distracted the staller stare in Squalor Square a bit more with [b][if sco-baller-bear is false]BALLER BEAR[else if sco-caller-care is false]CALLER CARE[else]DOLLAR DARE[r].";
+	if ooh-score < 7:
+		say "You could've done or thought more with [zl].";
+		if sco-booboo is false:
+			say "-- You could've faked a [b]BOOBOO[r] around [zl].";
+		if sco-cuckoo is false:
+			say "-- You could've said [b]CUCKOO[r] around [zl].";
+		if sco-doodoo is false:
+			say "-- You could've shown [zl] [b]DOODOO[r].";
+		if sco-juju is false:
+			say "-- You could've shown [zl] [b]JUJU[r].";
+		if sco-muumuu is false:
+			say "-- You could've shown [zl] [b]MUUMUU[r].";
+		if sco-poohpooh is false:
+			say "-- You could've shown [zl] [b]POOHPOOH[r].";
+		if sco-tutu is false:
+			say "-- You could've suggested [zl] wear a [b]TUTU[r].";
 	if sco-chrome-craw is false:
 		say "There was a [b]CHROME CRAW[r] that rhymed with the regions after the room name on the status line. It held some bonus dishes and food.";
 	else:
@@ -688,20 +710,6 @@ this is the show-misses rule:
 			say "The [fool] would've given you some [b]GREY GRUEL[r].";
 		if sco-honeyed-ham is false:
 			say "The fussed fellow had [b]JUST JELLO[r] for you.";
-	if sco-booboo is false:
-		say "You could've faked a [b]BOOBOO[r] around [zl].";
-	if sco-cuckoo is false:
-		say "You could've said [b]CUCKOO[r] around [zl].";
-	if sco-doodoo is false:
-		say "You could've shown [zl] [b]DOODOO[r].";
-	if sco-juju is false:
-		say "You could've shown [zl] [b]JUJU[r].";
-	if sco-muumuu is false:
-		say "You could've shown [zl] [b]MUUMUU[r].";
-	if sco-poohpooh is false:
-		say "You could've shown [zl] [b]POOHPOOH[r].";
-	if sco-tutu is false:
-		say "You could've suggested [zl] wear a [b]TUTU[r].";
 [	repeat through table of verb checks:
 		if core entry is false and idid entry is true:
 			say "BONUS GOTTEN: [w1 entry] [w2 entry].";
