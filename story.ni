@@ -634,6 +634,89 @@ check talktoing:
 
 volume rules
 
+book gong rules
+
+this-gong-rule of dove n doubt is the gong-dove-n-doubt rule.
+this-gong-rule of gap goo is the gong-gap-goo rule.
+this-gong-rule of happy hall is the gong-happy-hall rule.
+this-gong-rule of hi ho i owe is the gong-hi-ho-i-owe rule.
+this-gong-rule of ooh ooh is the gong-ooh-ooh rule.
+this-gong-rule of reeve row is the gong-reeve-row rule.
+this-gong-rule of squalor square is the gong-squalor-square rule.
+this-gong-rule of stuck state is the gong-stuck-state rule.
+this-gong-rule of took tarred is the gong-took-tarred rule.
+this-gong-rule of toy toss is the gong-toy-toss rule.
+this-gong-rule of trappy trawl is the gong-trappy-trawl rule.
+this-gong-rule of wandering where is the gong-wandering-where rule.
+this-gong-rule of compete compel is the gong-compete-compel rule.
+this-gong-rule of woe worry slow slurry is the gong-woe-worry-slow-slurry rule.
+
+this is the gong-gap-goo rule: [maybe have gap-score instead?]
+	if sco-dented-dials is false, uncompleted;
+	if sco-carrot-cake is false, uncompleted;
+	if sco-see-soup is false, uncompleted;
+	if sco-notice-knife is false, uncompleted;
+	completed;
+
+this is the gong-compete-compel rule:
+	uncompleted;
+
+this is the gong-dove-n-doubt rule:
+	if sco-oven-out is true and sco-hook-hard is true, completed;
+	uncompleted;
+
+this is the gong-happy-hall rule:
+	if sco-bappy-ball is true, completed;
+	uncompleted;
+
+this is the gong-hi-ho-i-owe rule:
+	if sco-pie-po is true, completed;
+	uncompleted;
+
+this is the gong-ooh-ooh rule:
+	if sco-massive-mitt is false, uncompleted;
+	if ooh-score is 7, completed;
+	if ooh-score >= 4, llp-remaining;
+	uncompleted;
+
+this is the gong-reeve-row rule:
+	uncompleted;
+
+this is the gong-squalor-square rule:
+	if square-food-score < 3, uncompleted;
+	if stare-score is 2, llp-remaining;
+	if stare-score is 3, completed;
+	uncompleted;
+
+this is the gong-stuck-state rule:
+	if sco-pluck-plate is true, completed;
+	uncompleted;
+
+this is the gong-took-tarred rule:
+	if shard-score is 3, completed;
+	uncompleted;
+
+this is the gong-toy-toss rule:
+	if sco-soy-sauce is true, completed;
+	uncompleted;
+
+this is the gong-trappy-trawl rule:
+	if sco-whappy-wall is true, completed;
+	uncompleted;
+
+this is the gong-wandering-where rule:
+	if wander-score < 4, uncompleted;
+	if sco-chrome-craw is false, llp-remaining;
+	completed;
+
+this is the gong-woe-worry-slow-slurry rule:
+	if slurry-score is 4, completed;
+	llp-remaining;
+
+book native rules
+
+[native rules say, okay, have we cleared everything but the oven stuff]
+
 native-clear-rule of Ooh Ooh is oohooh-clear rule.
 native-clear-rule of Dove N Doubt is dove-clear rule.
 native-clear-rule of Squalor Square is square-clear rule.
