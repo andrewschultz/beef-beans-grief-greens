@@ -28,7 +28,7 @@ to decide whether (r1 - a room) and (r2 - a room) are gong-adjacent:
 	no;
 
 this is the disable-learner-options rule:
-	say "Options won't work in the Petite Mort version." instead;
+	do nothing;
 
 definition: a direction (called di) is viable:
 	if room di of location of player is nowhere, no;

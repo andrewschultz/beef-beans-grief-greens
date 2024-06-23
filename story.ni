@@ -264,11 +264,11 @@ the white wires are an oventhing. description is "[if oven is not in reeve row]Y
 
 chapter meat moat
 
-the meat moat is a rhymable. description is "Fortunately, it's a relatively small moat, without too much liquid, so it won't splash around as you carry it."
+the meat moat is a toeat feastitem. description is "Fortunately, it's a relatively small moat, without too much liquid, so it won't splash around as you carry it."
 
 chapter beet boat
 
-the beet boat is a rhymable. description is "It is about as jazzy as beets can get. You're not sure what sort of boat it is, but that doesn't matter."
+the beet boat is a toeat feastitem. description is "It is about as jazzy as beets can get. You're not sure what sort of boat it is, but that doesn't matter."
 
 book Ooh Ooh
 
@@ -295,7 +295,7 @@ for printing a locale paragraph about a rhymeperson (called rp) in ooh ooh:
 
 chapter cocoa
 
-some cocoa is a rhymable. description is "Well, it's currently powdered, but when the time comes to dump it in boiling water, you have confidence you'll come through with aplomb!"
+some cocoa is a toeat feastitem. description is "Well, it's currently powdered, but when the time comes to dump it in boiling water, you have confidence you'll come through with aplomb!"
 
 chapter passive pit
 
@@ -340,7 +340,7 @@ the shook shard is a rhymable. description is "It seems to have a weird hold on 
 
 book Gap Goo
 
-Gap Goo is a wandroom in Roam Raw. wanddir of Gap Goo is south. printed name is "Gap, Goo". "[if sco-zap-zoo is false]Ugh, not very lively here.[else]The zoo is now bursting with lotus life![end if]"
+Gap Goo is a wandroom in Roam Raw. wanddir of Gap Goo is south. printed name is "Gap, Goo". "[if sco-zap-zoo is false]Ugh, not very lively here.[else if sco-notice-knife is false]The lotus life still adds color, even though you noticed that knife.[else]The zoo is now bursting with lotus life![end if]"
 
 chapter lotus life
 
@@ -356,11 +356,11 @@ the dented dials are an oventhing. description is "They look very old and dingy 
 
 chapter tree troop
 
-the tree troop is a plural-named rhymable. "They sit around, waiting for you to ask for just the right thing. But you get the sense you could even gesture somehow."
+the tree troop is a plural-named rhymable. description is "A tree troop sits around, waiting for you to ask for just the right thing. But you get the sense you could even gesture somehow.". "They're just sitting around."wds
 
 chapter Ferret Fake
 
-the ferret fake is a thing. printed name is "ferret, fake".
+the ferret fake is a thing. printed name is "ferret, fake". "A ferret (fake) scurries about here.". description is "You keep thinking of food when you look at it. You don't want to, like, cook and eat it, but it reminds you of something..."
 
 volume endgame
 
@@ -479,7 +479,7 @@ chapter cook card
 
 the cook card is an oventhing. description is "Ah! The card of very special recipes that fell out of the goon guide!". fdesc is "a missing insert from the goon guide (okay, you wrote that in, just in case)".
 
-some lard is a thing.
+some lard is a toeat feastitem. description is "Not much to say about it. It's lard. I'm not an expert in these things. I just know you shouldn't use too much of it, and you can burn your dish if you forget. But you probably knew that, too."
 
 book Toy Toss
 
@@ -511,7 +511,7 @@ some penny piles are a plural-named thing. "A lot of pennies, but not a lot of w
 
 chapter pie po
 
-the pie po is a rhymable. "I guess it is the pie equivalent of a po['] boy sandwich.". printed name is "pie (po['])".
+the pie po is a toeat feastitem. "I guess it is the pie equivalent of a po['] boy sandwich.". printed name is "pie (po['])".
 
 chapter Woe Worry Slow Slurry
 
@@ -585,9 +585,14 @@ check taking inventory:
 		say "[b][i][bracket]NOTE: X[r][i] on its own may be more useful for the items you have, since it views the list you need for [this-game].[close bracket][r]";
 		now inventory-warn-yet is true;
 
-report taking inventory:
-	if oven is in reeve row and number of carried oventhings is 0:
-		say "You moved an oven [here-in of Reeve Row], too, with the help of [the lout].";
+to say here-to of (rm - a room):
+	say "[if player is in rm]here[else][rm][end if]"
+
+report taking inventory when Happy Hall is not visited:
+	if oven-fixed-yet is true:
+		say "You and [the lout] managed to move an oven back [here-to of Reeve Row], which will assist in cooking the final meal.";
+	else if oven is in reeve row and number of carried oventhings is 0:
+		say "You moved an oven [here-to of Reeve Row], too, with the help of [the lout].";
 	continue the action;
 
 book taking

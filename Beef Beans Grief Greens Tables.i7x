@@ -200,7 +200,7 @@ this is the vr-heave-ho rule:
 	now sco-heave-ho is true;
 	say "You and [the lout] pull on one, two, THREE! It takes a couple of times, but the rug bursts free from the floor. You see [if sco-believe-below is true]nothing under the rug. You were sort of hoping for a new passage. Maybe you can do more than just hope.[paragraph break]Maybe there's a way to visualize a way down[else]an outline of the passage you believed was there[end if].[paragraph break]You shake hands with [the lout], who exits and nods to wish you the best.";
 	moot lout;
-	say "[line break]Also, you take some time to look inside the oven. You find something called a goon guide. But you can't use it, because you're not a goon. Or can you?";
+	say "[line break]Your kneeling on the floor to pull the rug up gave you a good view inside the oven. There you find something called a goon guide. But you can't use it, because you're too good to be a goon. That's how it works, right? Or maybe not...";
 	now player has goon guide;
 	declue-here-by 2752;
 
@@ -613,7 +613,7 @@ a goodrhyme rule (this is the vc-zap-zoo rule):
 
 this is the vr-zap-zoo rule:
 	now sco-zap-zoo is true;
-	say "Yes, yes. Much better now. The terrain changes!";
+	say "Yes, yes. Much better now. The terrain changes! So much appears: a ferret (fake,) a tree troop, and lotus life. They're all very nice and add local flavor, but perhaps you need to appreciate them right to achieve your own goals.";
 	move ferret fake to gap goo;
 	move tree troop to gap goo;
 	move lotus life to gap goo;
@@ -780,6 +780,7 @@ this is the vr-pie-po rule:
 	now sco-pie-po is true;
 	say "You realize you're kind of broke, and you figure out what the cheapest item on the menu might be. It looks surprisingly good, and it's large, too.[paragraph break]Bri-Bro whispers to you , 'So many people demand the house special. I give them something frou-frou, but it's not really what I enjoy cooking. Now I'll have to pretend to kick you out pushes you out of the establishment, but you complain you don't know the way back. Fortunately, he helps you...";
 	now player has pie po;
+	moot penny piles;
 	drop-player-at Wandering Where;
 
 chapter toy toss scoring
@@ -861,6 +862,9 @@ this is the vr-whappy-wall rule:
 	now sco-whappy-wall is true;
 	say "Whunk. Whunk. The wall makes the same noise, until ... WHAP! There it is! You tap at it a bit, and a passage opens up to ...";
 	move player to Happy Hall;
+	say "Servants await. You notify them of the food you have back in Reeve Row. You all cook everything up. It's laid out for the banquet, but you no longer know which is which. (In other words, you might as well pretend the individual items vanished, and youcan focus on invitations and the ceremony.)";
+	repeat with X running through carried feastitems:
+		moot X;
 
 chapter happy hall scoring
 
@@ -1097,8 +1101,11 @@ to rug-check:
 
 to oven-check:
 	if oven-fix-score is 3:
-		say "With the plug, wires and dials, you replace the faulty parts of the oven.";
+		say "With the plug, wires and dials, and with help from the goon guide's technical section, you replace the faulty parts of the oven. You place the goon guide somewhere out-of-the-way, yet accessible, for further reference when you need to cook something.";
 		now oven-fixed-yet is true;
+		moot goon guide;
+		repeat with OT running through oventhings:
+			moot OT;
 
 chapter Squalor Square
 
