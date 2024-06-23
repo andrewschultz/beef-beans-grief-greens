@@ -120,6 +120,7 @@ this is the vr-played-plug rule:
 	say "Ah, that's what the bump in the rayed rug is.";
 	now player has played plug;
 	oven-check;
+	rug-check 2804;
 
 a goodrhyme rule (this is the vc-made-mug rule):
 	if rayed rug is not touchable, unavailable;
@@ -132,7 +133,7 @@ this is the vr-made-mug rule:
 	now sco-made-mug is true;
 	say "A made mug apppears. It will be useful for the meal.";
 	now player has made mug;
-	rug-check;
+	rug-check 2703;
 
 a goodrhyme rule (this is the vc-jade-jug rule):
 	if rayed rug is not touchable, unavailable;
@@ -145,7 +146,7 @@ this is the vr-jade-jug rule:
 	now sco-jade-jug is true;
 	say "A jade jug appears. It will be useful for the meal.";
 	now player has jade jug;
-	rug-check;
+	rug-check 2703;
 
 section reeve row general flips
 
@@ -406,7 +407,11 @@ this is the vr-massive-mitt rule:
 section squalor square scoring
 
 to evaluate-stare:
+	if stare-score is 3:
+		declue-here;
 	if stare-score is 2:
+		now to-number of squalor square is -2804;
+		now from-number of squalor square is -2856;
 		say "[line break]The staller stare blinks repeatedly. The weirdness you introduced was too much for it. It was ready to judge squalor, but not THIS. It closes its eyes and fades into the wall it was on. Perhaps it will find another place to oversee.[paragraph break]Sadly, it is replaced by an almost-as-distracting bleat-bloat.";
 		move bleat bloat to squalor square;
 		moot staller stare;
@@ -419,6 +424,7 @@ to evaluate-stare:
 				break;
 	else if stare-score is 1:
 		say "[line break]The staller stare blinks. It seems to shake where its head would be. It's a bit baffled by what it saw. It rolls its eyes as if to say, any more of this, and I give up.";
+		now to-number of squalor square is 5608;
 
 a goodrhyme rule (this is the vc-baller-bear rule):
 	if player is not in squalor square, unavailable;
@@ -677,6 +683,7 @@ this is the vr-dented-dials rule:
 chapter Took Tarred scoring
 
 to get-untarred:
+	declue-here-by 2704;
 	say "[line break]";
 	if shard-score < 3:
 		say "You feel the area's hold on you weaken.";
@@ -850,6 +857,7 @@ a goodrhyme rule (this is the vc-scrappy-scrawl rule):
 this is the vr-scrappy-scrawl rule:
 	now sco-scrappy-scrawl is true;
 	say "Ah! You had confidence you could find a scrappy scrawl, and you do. The instructions seem to make sense. You need to look to break open a passage where there is none, yet. An unexpectedly hollow place. Apparently, from the scrawl, one that makes a special sort of noise. Not quite a THWIP or a THWUP. So where is the weak spot?";
+	now to-number of trappy trawl is 2804;
 
 a goodrhyme rule (this is the vc-whappy-wall rule):
 	abide by the trawl-not-hall rule;
@@ -884,6 +892,7 @@ this is the vh-pappy-pall rule:
 this is the vr-pappy-paul rule:
 	now sco-pappy-paul is true;
 	say "Pappy Paul appears when summoned, looking almost a bit too serious.";
+	reduce-hall-if;
 	hall-move Pappy Paul;
 
 a goodrhyme rule (this is the vc-sappy-saul rule):
@@ -900,6 +909,7 @@ this is the vh-sappy-sol rule:
 this is the vr-sappy-saul rule:
 	now sco-sappy-saul is true;
 	say "Sappy Saul seems almost too happy to be summoned, then apologetic when he is.";
+	reduce-hall-if;
 	hall-move Sappy Saul;
 
 a goodrhyme rule (this is the vc-cappy-caul rule):
@@ -990,6 +1000,8 @@ a goodrhyme rule (this is the vc-wheat-well rule):
 this is the vr-wheat-well rule:
 	now sco-wheat-well is true;
 	say "Yes, the wheat well must be your destination. Now how to stumble across to it?";
+	[now from-number of compete compel is 2856;]
+	now to-number of compete compel is 2704;
 
 a goodrhyme rule (this is the vc-sheet-shell rule):
 	if player is not in compete compel, unavailable;
@@ -1002,6 +1014,7 @@ this is the vr-sheet-shell rule:
 	now sco-sheet-shell is true;
 	say "Yes, [if sco-feet-fell is true]the Wheat Well could use a Sheet Shell[else]wherever you go, a Sheet Shell would be useful[end if].";
 	kick-off-bell;
+	now to-number of compete compel is 2704;
 
 a goodrhyme rule (this is the vc-feet-fell rule):
 	if player is not in compete compel, unavailable;
@@ -1016,15 +1029,17 @@ a goodrhyme rule (this is the vc-feet-fell rule):
 this is the vr-feet-fell rule:
 	now sco-feet-fell is true;
 	say "Oops! With a bit of dream logic, you slip out of where you feel you need to show you are better than someone and to where you can reflect more.";
+	now from-number of compete compel is 2755;
+	now to-number of compete compel is 2755;
 	kick-off-bell;
 
 a goodrhyme rule (this is the vc-beat-bell rule):
 	if player is not in compete compel, unavailable;
-	if sco-feet-fell is false:
-		vcp "You don't have any bell to beat, yet. You need to be somewhere more homey.";
+	if sco-sheet-shell is false:
+		vcp "You don't have any (door)bell to beat, yet. [if sco-sheet-shell is false]You need to be somewhere more homey[else]Perhaps one will ring soon enough[end if].";
 		not-yet;
 	if sco-beat-bell is true:
-		vcal "You already committed to beat the bell when you needed to!";
+		vcal "You already managed to beat the bell when you needed to!";
 		already-done;
 	ready;
 
@@ -1035,6 +1050,7 @@ this is the vh-beet-meat-end rule:
 this is the vr-beat-bell rule:
 	now sco-beat-bell is true;
 	say "Aaand ... pursuant to general dream/fantasy logic rules, you just make it! But now, what with the Internet taking over with emails, you often forget what your lovable mail carrier's name is! There must be a clue to who they are. As for how they got there, and how they know you're there, you'll just chalk it up to increased efficiency in the postal service due to progress in the ordinary sort of magic that everyone looks down on but would be terribly sorry if it vanished.";
+	now to-number of compete compel is 2703;
 
 a goodrhyme rule (this is the vc-meet-mel rule):
 	if player is not in compete compel, unavailable;
@@ -1050,6 +1066,7 @@ this is the vr-meet-mel rule:
 	now sco-meet-mel is true;
 	say "Yes! You go out to meet Mel! Mel gives you something.[paragraph break][pete pell]. Memories come back to you, of Leet Lel, a larger-than-life figure that showed you so much, but who also seemed to have scorn for you.";
 	now player has pete pell;
+	now to-number of compete compel is 8264;
 
 this is the vr-heat-hell rule:
 	now sco-heat-hell is true;
@@ -1089,10 +1106,12 @@ book general flip stubs
 
 chapter Reeve Row
 
-to rug-check:
+to rug-check (nu - a number):
+	decrease from-number of rayed rug by nu;
 	say "[line break]A ray vanishes from the rug. ";
 	if rug-score is 3:
 		say "The final rays on the rug grow dull. The rug flops uselessly off to the side";
+		declue rayed rug;
 	else if rug-score is 2:
 		say "The rug's rays go from one-third dull to one-third bright";
 	else:
@@ -1167,6 +1186,9 @@ this is the trawl-not-hall rule:
 		vcal "You already navigated the trappy trawl.";
 		already-done;
 	if player is not in trappy trawl, unavailable;
+
+to reduce-hall-if:
+	if to-number of happy hall is 5408, now to-number of happy hall is 2704; [paul/saul goes to caul then yall then ball, which are the same number, which saves coding]
 
 to hall-move (rh - a rhymeperson):
 	move rh to Happy Hall;

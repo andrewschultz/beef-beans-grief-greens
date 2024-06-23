@@ -149,6 +149,8 @@ section Last Least Fast Feast
 
 Last Least Fast Feast is a rhymable. the player carries Last Least Fast Feast. description of Last Least Fast Feast is "[one of][fast feast] is a vague description of the stuff you need for the end-of-year memorial feast. Perhaps they wanted to allow you artistic license, or perhaps they (or I) realized it'd not be a really fulfilling quest if they were specific. Or perhaps there's some weird obscure reason the feast tastes better or is more spiritually nourishing if it's prepared ad-hoc[or]You check [fast feast] again for what you need[stopping]."
 
+from-number of last least fast feast is -5410. to-number of last least fast feast is -2806.
+
 guess-table of fast feast is the table of fast feast guesses.
 
 report examining Last Least Fast Feast:
@@ -167,6 +169,8 @@ chapter rayed rug
 
 the rayed rug is a rhymable in Reeve Row. "A rayed rug covers part of the floor here.". description is "[if rug-score is 3]All the rays are dim now. You've probably gotten all you can out of the rug, which is a lot more than you expected. So, good job[else if rug-score is 2]About one-third of the rays are still bright[else if rug-score is 1]About two-thirds of the rays are still bright[else]You aren't big on decor, but Steve Stowe insisted you keep this rug. It would be useful, he said.[paragraph break]There are a lot of bright rays on the rug[end if]."
 
+from-number of rayed rug is 2753. to-number of rayed rug is 8210.
+
 guess-table of rayed rug is the table of rayed rug guesses.
 
 chapter played plug
@@ -176,6 +180,8 @@ the played plug is an oventhing. description is "It's not just a plug, but a plu
 chapter goon guide
 
 the goon guide is a rhymable. description is "[one of]Now you've pruned your pride, you focus on the content of the goon guide. It tells you what to do to fix an oven and make very very tasty foods indeed[or]You revisit the goon guide to determine what you need[stopping].[paragraph break]There's even a handy checklist on the first page!"
+
+from-number of goon guide is 2705. to-number of goon guide is 2755.
 
 check examining goon guide when sco-prune-pride is false:
 	say "You think about it, but you're no goon. You hope you've lived a clean enough life, you could never be considered one. In your current state of mind, alas, you feel reading a goon guide might raise such suspicions." instead;
@@ -236,6 +242,8 @@ chapter Bopper Bee
 
 the Bopper Bee is a rhymable. "A bopper bee floats about here, agile and bigger and more aggressive than you.". description is "Something looks off about it. Perhaps it can be transformed into a flying animal less harmful."
 
+from-number of bopper bee is 2803. to-number of bopper bee is 2854.
+
 guess-table of bopper bee is the table of bopper bee guesses.
 
 chapter Copper Key
@@ -246,41 +254,63 @@ book Squalor Square
 
 Squalor Square is a wandroom in Roam Raw. wanddir of Squalor Square is east. "Definitely one of the seedier places you've been in."
 
+from-number of squalor square is 2856. to-number of squalor square is 8412. [squalor square,staller stare:baller bear,caller care,dollar dare]
+
 chapter staller stare
 
 the staller stare is a rhymable in Squalor Square. "It gazes at you intently, freezing you from doing anything sensible or extreme. Perhaps you can distract it by noticing or proposing something weird.".
 
-chapter bleat bloat
+from-number of staller stare is 2855. to-number of staller stare is 8412. [squalor square,staller stare:baller bear,caller care,dollar dare]
+
+chapter eet ote
+
+section bleat bloat
 
 the bleat bloat is a rhymable. "A bleat bloat floats through here, in tune with the general dinginess.". description is "You're no linguistic expert, but you know it's distracting and draining and disorganizing. If only it were something more motivational!"
 
-chapter light lyres
+from-number of bleat bloat is 2755. to-number of bleat bloat is 2704. [bleat bloat:neat note]
 
-The light lyres are a rhymable. "Some light lyres lie here, [if sco-white-wires is true]but you pulled what you needed from them[else if sco-fight-fires is true]unplayable, but maybe some parts will be useful[else]burning very slowly indeed. Weird! Maybe you can save something from them[end if].". description is "[if sco-fight-fires is false]They are burning very slowly! They are useless to actually play, but maybe there is some use for them[else]The fire has damaged them, but you sense you can salvage something[end if]."
+section neat note
 
-chapter white wires
+from-number of neat note is 2704. to-number of neat note is 5408. [neat note:meat moat,beet boat]
 
-the white wires are an oventhing. description is "[if oven is not in reeve row]You assume they're useful to fix some appliance[else]You think you know of a missing appliance that could use these[end if].". fdesc is "revamped oven circuitry".
-
-chapter meat moat
+section meat moat
 
 the meat moat is a toeat feastitem. description is "Fortunately, it's a relatively small moat, without too much liquid, so it won't splash around as you carry it."
 
-chapter beet boat
+section beet boat
 
 the beet boat is a toeat feastitem. description is "It is about as jazzy as beets can get. You're not sure what sort of boat it is, but that doesn't matter."
+
+chapter ite ires
+
+section light lyres
+
+The light lyres are a rhymable. "Some light lyres lie here, [if sco-white-wires is true]but you pulled what you needed from them[else if sco-fight-fires is true]unplayable, but maybe some parts will be useful[else]burning very slowly indeed. Weird! Maybe you can save something from them[end if].". description is "[if sco-fight-fires is false]They are burning very slowly! They are useless to actually play, but maybe there is some use for them[else]The fire has damaged them, but you sense you can salvage something[end if]."
+
+from-number of light lyres is 2755. to-number of light lyres is 2755.
+
+section white wires
+
+the white wires are an oventhing. description is "[if oven is not in reeve row]You assume they're useful to fix some appliance[else]You think you know of a missing appliance that could use these[end if].". fdesc is "revamped oven circuitry".
 
 book Ooh Ooh
 
 Ooh Ooh is a wandroom in Roam Raw. wanddir of Ooh Ooh is north. printed name is "Ooh, Ooh...!". "[if passive pit is in ooh ooh]A passive pit surrounds you on all sides. It's not pulling you in, but the fall would still be lethal[else]It's a bit too misty to see much here. Perhaps when you have a clearer idea of your goals, you'll be able to see more[end if]."
 
+from-number of ooh ooh is 2653. to-number of ooh ooh is 18520.
+
 chapter zuzu
 
 Zuzu is a rhymeperson in Ooh Ooh. description is "Zuzu is short-ish for Suzanne, you're pretty sure. She wears a t-shirt saying MAMA. You've no clue where the kid is."
 
+from-number of zuzu is 2602. to-number of zuzu is 18520.
+
 chapter lulu
 
 Loulou is a rhymeperson in Ooh Ooh. description is "Loulou is a male name, you remember from Gustave Flaubert's [i]Un Coeur Simple[r]. He wears a t-shirt saying PAPA. You've no clue where the kid is."
+
+from-number of loulou is 2653. to-number of loulou is 18520.
 
 chapter ooh ooh people organization
 
@@ -299,7 +329,9 @@ some cocoa is a toeat feastitem. description is "Well, it's currently powdered, 
 
 chapter passive pit
 
-the passive pit is scenery. "It's full of weird rubbish. [if sco-massive-mitt is true]There might be other stuff here. But not now.[else]If only you knew what to look for! You could find it.[end if]"
+the passive pit is a rhymable. it is scenery. "It's full of weird rubbish. [if sco-massive-mitt is true]There might be other stuff here. But not now.[else]If only you knew what to look for! You could find it.[end if]"
+
+from-number of passive pit is 2853. to-number of passive pit is 2854.
 
 chapter massive mitt
 
@@ -308,6 +340,8 @@ the massive mitt is an oventhing. description is "It's not just big, it's well-p
 book Dove 'N Doubt
 
 Dove N Doubt is a wandroom in Roam Raw. wanddir of Dove N Doubt is west. printed name of Dove N Doubt is "Dove [']N Doubt". "This is obviously a front for illegal activity."
+
+from-number of dove n doubt is 2755. to-number of dove n doubt is 8262.
 
 chapter lovin' lout
 
@@ -338,17 +372,25 @@ chapter shook shard
 
 the shook shard is a rhymable. description is "It seems to have a weird hold on you, or have a bigger hold on you than it does.".
 
+from-number of shook shard is 2755. to-number of shook shard is 2704. [shook shard:hook hard]
+
 book Gap Goo
 
-Gap Goo is a wandroom in Roam Raw. wanddir of Gap Goo is south. printed name is "Gap, Goo". "[if sco-zap-zoo is false]Ugh, not very lively here.[else if sco-notice-knife is false]The lotus life still adds color, even though you noticed that knife.[else]The zoo is now bursting with lotus life![end if]"
+Gap Goo is a wandroom in Roam Raw. wanddir of Gap Goo is south. printed name is "Gap, Goo". "[if sco-zap-zoo is false]Ugh, not very lively here.[else if sco-notice-knife is false]The lotus life still adds color, even though you noticed that knife.wa[else]The zoo is now bursting with lotus life![end if]"
+
+from-number of gap goo is 2653. to-number of gap goo is 2653.
 
 chapter lotus life
 
-the lotus life is scenery. "The lotus blossoms look wonderful. [if sco-notice-knife is false]Maybe they hide something.[else]They even netted you some knives![end if]"
+the lotus life is a rhymable. it is scenery. "The lotus blossoms look wonderful. [if sco-notice-knife is false]Maybe they hide something.[else]They even netted you some knives![end if]"
+
+from-number of lotus life is 2754. to-number of lotus life is 2805.
 
 chapter vented vials
 
-the vented vials are a thing. "Vented vials lie cluttered here.". description is "They don't seem to be much use in their present form.".
+the vented vials are a rhymable. "Vented vials lie cluttered here.". description is "They don't seem to be much use in their present form.".
+
+from-number of dented dials is 2805. to-number of dented dials is 2805.
 
 chapter dented dials
 
@@ -356,11 +398,15 @@ the dented dials are an oventhing. description is "They look very old and dingy 
 
 chapter tree troop
 
-the tree troop is a plural-named rhymable. description is "A tree troop sits around, waiting for you to ask for just the right thing. But you get the sense you could even gesture somehow.". "They're just sitting around."wds
+the tree troop is a plural-named rhymable. description is "A tree troop sits around, waiting for you to ask for just the right thing. But you get the sense you could even gesture somehow.". "They're just sitting around.".
+
+from-number of tree troop is 2705. to-number of tree troop is 2654.
 
 chapter Ferret Fake
 
-the ferret fake is a thing. printed name is "ferret, fake". "A ferret (fake) scurries about here.". description is "You keep thinking of food when you look at it. You don't want to, like, cook and eat it, but it reminds you of something..."
+the ferret fake is a rhymable. printed name is "ferret, fake". "A ferret (fake) scurries about here.". description is "You keep thinking of food when you look at it. You don't want to, like, cook and eat it, but it reminds you of something..."
+
+from-number of ferret fake is 2804. to-number of ferret fake is 2804.
 
 volume endgame
 
@@ -370,6 +416,8 @@ Trappy Trawl is a room in Home Haw. "As so often happens underground, you're at 
 
 guess-table of Trappy Trawl is table of Trappy Trawl guesses.
 
+from-number of trappy trawl is 2805. to-number of trappy trawl is 2856.
+
 chapter Scrappy Scrawl
 
 the scrappy scrawl is scenery in Trappy Trawl. "It's weird. It's a drawing of someone busting through a barrier with noises like THWUP and THWAP. You smack against the scrawl and hear such noises too. Then you wonder if one such noise would indicate a hidden passage here."
@@ -377,6 +425,8 @@ the scrappy scrawl is scenery in Trappy Trawl. "It's weird. It's a drawing of so
 book Happy Hall
 
 Happy Hall is a room in Gnome Gnaw. "The happy hall really does have its own aura, one [if hall-female-guest-score is 0]that mystifies you, but you sense it holds important secrets[else if hall-female-guest-score is 1]you sense you've figured out halfway[else]you are fully comfortable in[end if]."
+
+from-number of happy hall is 2754. to-number of happy hall is 5508.
 
 after printing the locale description when player is in happy hall:
 	if hall-guest-score is 0:
@@ -455,6 +505,8 @@ book Wheat Well
 
 Compete Compel is a room in Gnome Gnaw. printed name is "[if sco-feet-fell is false]Compete! Compel![else]Wheat Well[end if]"
 
+from-number of compete compel is 2856. to-number of compete compel is 2754.
+
 chapter Sheet Shell
 
 Sheet Shell is a thing. description of sheet shell is "It's a place for reading. While you're probably not going to be bugged in the Wheat Well, the sheet shell gives double secret plus solitude, for reading something truly important. Sometimes, you need that.". "A sheet shell sits off to the side[if leet lel is examined], but you already used it to read. Now you must draw your own conclusions[else], for when you need to feel extra privacy reading books and thinking tricky thoughts[end if]."
@@ -471,9 +523,13 @@ Stuck State is a room in Dome D'Aww. "Oh man! You're stuck here and don't know w
 
 guess-table of stuck state is the table of stuck state guesses.
 
+from-number of stuck state is 2755. to-number of stuck state is 2755.
+
 book Took Tarred
 
 Took Tarred is a room in Dome D'Aww. printed name is "Took, Tarred".
+
+from-number of took tarred is 2706. to-number of took tarred is 8112. [took tarred:cook card,book bard,look lard]
 
 chapter cook card
 
@@ -485,25 +541,37 @@ book Toy Toss
 
 Toy Toss is a room in Dome D'Aww. "Okay, so the joy jaws brought you to a place where apparently you're supposed to be happy. And they're guarding passage out, until you ask for the right gift that will MAKE you happy."
 
+from-number of toy toss is 2654. to-number of toy toss is 2655. [soy sauce]
+
 chapter Boy Boss Roy Ross
 
 Boy Boss Roy Ross is a rhymable in Toy Toss. "Boy Boss Roy Ross stands here, waiting for you to claim whatever gift you want, as long as it's the right one."
 
+from-number of boy boss roy ross is 5308. to-number of boy boss roy ross is 2655. [soy sauce]
+
 chapter Joy Jaws
 
-the Joy Jaws are scenery in Toy Toss. "They grin at you and make you feel out of place despite, well, their pronunciation not being quite right. You're not leaving until you've received a gift that will make you happy."
+the Joy Jaws are a rhymable in Toy Toss. the Joy Jaws are scenery. "They grin at you and make you feel out of place despite, well, their pronunciation not being quite right. You're not leaving until you've received a gift that will make you happy."
+
+from-number of joy jaws is 2654. to-number of joy jaws is 2655. [soy sauce]
 
 book Hi Ho I Owe Sty Sto
 
 Hi Ho I Owe Sty Sto is a room in Dome D'Aww. printed name is "'Hi-Ho, I Owe' Sty-Sto[']". "A deli with very expensive and very cheap foods. Since you're not very rich, you'll probably have to go with the cheap ones."
 
+from-number of hi ho i owe sty sto is 7808. to-number of hi ho i owe sty sto is 2652.
+
 chapter bri bro
 
 Bri Bro is a rhymable in Hi Ho I Owe Sty Sto. "A fellow whose nametag reads BRI-BRO stands here, waiting for what you need to ask for."
 
+from-number of bri bro is 2653. to-number of bri bro is 2652.
+
 chapter any isles many miles
 
 Any Isles Many Miles is a rhymable in Hi Ho I Owe Sty Sto. printed name is "[i]Any Isles, Many Miles[r]". "A brochure called [isles] lies here. It's written by a group of authors including Jenny Giles, Kenny Kyles, Rennie Riles, Benny Biles, and Lenny Lyles.[paragraph break]That may sound excessive, but I assure you there were MANY miles between the isles, so it was not practical for one author to explore them all!"
+
+from-number of any isles many miles is 5360. to-number of any isles many miles is 2755.
 
 chapter penny piles
 
@@ -517,9 +585,13 @@ chapter Woe Worry Slow Slurry
 
 Woe Worry Slow Slurry is a room in Dome D'Aww. "You don't have to stay here, you know. You still worry about missing anything and if you look rude leaving."
 
+from-number of woe worry slow slurry is 5361. to-number of woe worry slow slurry is -4053.
+
 section cray cruel fey fool
 
 the cray cruel fey fool is an improper-named rhymeperson in Slow Slurry. description is "They look very bored with plain stuff."
+
+from-number of cray cruel fey fool is 5359. to-number of cray cruel fey fool is -2705.
 
 section grey gruel
 
@@ -529,6 +601,8 @@ section Moneyed Ma'am
 
 the Moneyed Maam is an improper-named female rhymeperson in Slow Slurry. printed name of Moneyed Maam is "Moneyed Ma'am".
 
+from-number of moneyed maam is 2854. to-number of moneyed maam is -2853.
+
 section honeyed ham
 
 the honeyed ham is a toeat okaycold feastitem.
@@ -536,6 +610,8 @@ the honeyed ham is a toeat okaycold feastitem.
 section Fussed Fellow
 
 the fussed fellow is an improper-named male rhymeperson in Slow Slurry.
+
+from-number of fussed fellow is 2806. to-number of fussed fellow is -2705.
 
 section just jello
 

@@ -152,6 +152,9 @@ chapter conglomerations
 to decide which number is rug-score:
 	decide on (boolval of sco-made-mug) + (boolval of sco-jade-jug) + (boolval of sco-played-plug);
 
+to decide which number is wander-score:
+	decide on (boolval of sco-squandering-square) + (boolval of sco-laundering-lair) + (boolval of sco-pondering-pair) + (boolval of sco-maundering-mare);
+
 to decide which number is oven-score:
 	decide on (boolval of sco-lovin-lout) + (boolval of sco-shovin-shout) + (boolval of sco-oven-out);
 
