@@ -19,9 +19,9 @@ beta0ing is an action out of world.
 
 understand the command "beta" as something new.
 
-understand "beta" as betaing.
+understand "beta" as beta0ing.
 
-carry out betaing:
+carry out beta0ing:
 	say "-1 = to the final room.";
 	say "-2 = to the 2nd-final room.";
 	say "-3 = to the 3rd-final room, just below Reeve Row.";
