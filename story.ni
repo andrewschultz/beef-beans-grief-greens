@@ -900,6 +900,10 @@ this is the show-misses rule:
 		if idid entry is false:
 			say "[w1 entry] [w2 entry].";]
 
+volume hint mapping
+
+include Beef Beans Grief Greens Hints by Andrew Schultz.
+
 volume index map nonsense
 
 index map with Wandering Where mapped northwest of Reeve Row.
