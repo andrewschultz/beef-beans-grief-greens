@@ -28,6 +28,7 @@ file=reg-bbgg-thru-hintfull.txt,hf/hfull,walkthrough testing HINTS full
 }$REJECT1=Most special commands are more than one word. VERBS will give a list of useful, non-puzzle-solving verbs.
 }$REJECT1A=Most special commands are more than one word, because of the rhyme-pairs involved. VERBS will give a list of useful, non-puzzle-solving verbs.
 }$REJECT2=Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Bright Brave Knight Knave has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+}$GREENBONUSFIRST=The HA HALF button on your Leet Learner lights up green--one of the words you thought must be right. Very dim, though. Perhaps this is a rhyme you don't strictly need to figure to win.
 }$GREENBONUS=The HA HALF button on your Leet Learner lights up green. Very dim, though. Perhaps this is a rhyme you don't strictly need to figure to win.
 }$GREENCOREFIRST=The HA HALF button on your Leet Learner lights up green--one of the words you thought must be right.
 }$GREENCORE=The HA HALF button on your Leet Learner lights up green.
@@ -37,13 +38,13 @@ file=reg-bbgg-thru-hintfull.txt,hf/hfull,walkthrough testing HINTS full
 }$GONG1=A guide gong rings to notify you that you don't need to go back through
 }$GONG=That guide gong, again, rings to notify you that you don't need to go back through
 
-}}MAX=65
-}}CURMAX=65
+}}MAX=66
+}}CURMAX=66
 }}SCORE=0
 }}CURMIN=56
 }}CURMINBONUS=0
-}}CURMAXBONUS=9
-}}MAXBONUS=9
+}}CURMAXBONUS=10
+}}MAXBONUS=10
 
 }$SCOS=You have scored a total of {SCORE} out of {MAX} points and need {CURMIN} to win. You have found {CURMINBONUS} of {MAXBONUS} bonus points so far.
 }$MISSINGONE=1 optional point is no longer available.
@@ -72,6 +73,90 @@ You need to find a way out. Yet you can't just go out ... you need to pump yours
 
 >x
 
+@ha
+#testcase-ha-half-table-of-verb-checks-2-leave
+>leave zlo
+{$GREENCOREFIRST}
+\\
+>undo
+\\
+#testcase-ha-half-table-of-verb-checks-1-ceased
+>zsassed ceased
+{$GREENBONUSFIRST}
+#brackets OK
+[ONE-TIME NOTE: typing NAH NAFF will cause the Leet Learner not to show when you have gotten one word right. It will make Beef, Beans, Grief, Greens more difficult. I wanted to make this feature opt-out so the player did not miss it.]
+\\
+#testcase-ha-half-table-of-verb-checks-1-sassed
+>sassed zceased
+{$GREENCORE}
+\\
+#+testcase-ha-half-table-of-verb-checks-2-leave
+>leave zlo
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-2-lo
+>zleave lo
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-3-heave
+>heave zho
+{$YELLOWCOREFIRST}
+\\
+#testcase-ha-half-table-of-verb-checks-3-ho
+>zheave ho
+{$YELLOWCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-5-believe
+>believe zbelow
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-5-below
+>zbelieve below
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-6-played
+>played zplug
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-6-plug
+>zplayed plug
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-7-grieve
+>grieve zgrow
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-7-grow
+>zgrieve grow
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-8-made-maid
+>made zmug
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-8-made-maid
+>maid zmug
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-8-mug
+>zmade mug
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-9-jade
+>jade zjug
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-9-jug
+>zjade jug
+{$GREENCORE}
+
+@!min
+>sassed ceased
+by one point
+}}CURMINBONUS++
+}}CURMIN++
+}}SCORE++
+
 >made mug
 by one point
 }}SCORE++
@@ -82,17 +167,6 @@ by one point
 
 >jade jug
 by one point
-}}SCORE++
-
-@all
->score
-{$SCOS}
-
-@!min
->sassed ceased
-by one point
-}}CURMINBONUS++
-}}CURMIN++
 }}SCORE++
 
 @all
@@ -110,6 +184,15 @@ by one point
 @all+
 >score
 {$SCOS}
+
+@ha
+#testcase-ha-half-table-of-verb-checks-15-chrome
+>chrome zcraw
+{$YELLOWBONUS}
+\\
+#testcase-ha-half-table-of-verb-checks-15-craw
+>zchrome craw
+{$YELLOWBONUS}
 
 @gt
 #testcase-goto-table-of-noways-wandering-where
@@ -138,6 +221,39 @@ It's too misty to see far.
 >undo
 >undo
 
+@ha
+#testcase-ha-half-table-of-verb-checks-10-lair
+>zlaundering lair
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-10-laundering
+>laundering zlair
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-11-squandering
+>squandering zsquare
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-11-square
+>zsquandering square
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-12-mare
+>zmaundering mare
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-12-maundering
+>maundering zmare
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-13-pair
+>zpondering pair
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-13-pondering
+>pondering zpair
+{$GREENCORE}
+
 >laundering lair
 by one point
 }}SCORE++
@@ -155,6 +271,31 @@ by one point
 >w
 Perhaps there are secret passages for the mafia-connected, but not for you.
 
+@ha
+#testcase-ha-half-table-of-verb-checks-25-lout
+>zlovin lout
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-25-lovin
+>lovin zlout
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-26-shout
+>zshovin shout
+{$YELLOWCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-26-shovin
+>shovin zshout
+{$YELLOWCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-27-out
+>zoven out
+{$YELLOWCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-27-oven
+>oven zout
+{$YELLOWCORE}
+
 >lovin lout
 by one point
 }}SCORE++
@@ -163,6 +304,23 @@ by one point
 >score
 {$SCOS}
 
+@ha
+#testcase-ha-half-table-of-verb-checks-26-shout
+>zshovin shout
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-26-shovin
+>shovin zshout
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-27-out
+>zoven out
+{$YELLOWCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-27-oven
+>oven zout
+{$YELLOWCORE}
+
 >shovin shout
 by one point
 }}SCORE++
@@ -170,6 +328,15 @@ by one point
 @all
 >score
 {$SCOS}
+
+@ha
+#testcase-ha-half-table-of-verb-checks-27-out
+>zoven out
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-27-oven
+>oven zout
+{$GREENCORE}
 
 >oven out
 by one point
@@ -195,6 +362,15 @@ It's not a very big house. You suspected the old passage-under-the-rug trick, bu
 @all
 >score
 {$SCOS}
+
+@ha
+#testcase-ha-half-table-of-verb-checks-4-pride
+>zprune pride
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-4-prune
+>prune zpride
+{$GREENCORE}
 
 >prune pride
 by one point
@@ -225,6 +401,15 @@ by one point
 >w
 Perhaps finding what you need will get you out of here. You can't see a passage out.
 
+@ha
+#testcase-ha-half-table-of-verb-checks-44-plate
+>zpluck plate
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-44-pluck
+>pluck zplate
+{$GREENCORE}
+
 >pluck plate
 by one point
 }}SCORE++
@@ -238,6 +423,15 @@ by one point
 {$SCOS}
 
 >w
+
+@ha
+#testcase-ha-half-table-of-verb-checks-28-hard
+>zhook hard
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-28-hook
+>hook zhard
+{$GREENCORE}
 
 >hook hard
 by one point
@@ -256,6 +450,31 @@ by one point
 #testcase-goto-table-of-noways-took-tarred
 >w
 You can't leave until you've found everything the shook shard offers.
+
+@ha
+#testcase-ha-half-table-of-verb-checks-41-bard
+>zbook bard
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-41-book
+>book zbard
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-42-card
+>zcook card
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-42-cook
+>cook zcard
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-43-lard
+>zlook lard
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-43-look
+>look zlard
+{$GREENCORE}
 
 >book bard
 by one point
@@ -293,6 +512,31 @@ by one point
 >score
 {$SCOS}
 
+@ha
+#testcase-ha-half-table-of-verb-checks-17-baller
+>baller zbear
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-17-bear
+>zballer bear
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-18-caller
+>caller zcare
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-18-care
+>zcaller care
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-19-dare
+>dollar zdare
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-19-dollar
+>zdollar dare
+{$GREENCORE}
+
 @gt
 #testcase-goto-table-of-noways-squalor-square
 >e
@@ -314,6 +558,15 @@ by one point
 >score
 {$SCOS}
 
+@ha
+#+testcase-ha-half-table-of-verb-checks-17-baller
+>baller zbear
+{$GREENBONUS}
+\\
+#+testcase-ha-half-table-of-verb-checks-17-bear
+>zballer bear
+{$GREENBONUS}
+
 @!min
 >baller bear
 by one point
@@ -325,6 +578,31 @@ by one point
 >score
 {$SCOS}
 
+@ha
+#testcase-ha-half-table-of-verb-checks-20-neat
+>neat znote
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-20-note
+>zneat note
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-21-meat
+>meat zmoat
+{$YELLOWCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-21-moat
+>zmeat moat
+{$YELLOWCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-22-beet
+>beet zboat
+{$YELLOWCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-22-boat
+>zbeet boat
+{$YELLOWCORE}
+
 >neat note
 by one point
 }}SCORE++
@@ -332,6 +610,23 @@ by one point
 @all
 >score
 {$SCOS}
+
+@ha
+#+testcase-ha-half-table-of-verb-checks-21-meat
+>meat zmoat
+{$GREENCORE}
+\\
+#+testcase-ha-half-table-of-verb-checks-21-moat
+>zmeat moat
+{$GREENCORE}
+\\
+#+testcase-ha-half-table-of-verb-checks-22-beet
+>beet zboat
+{$GREENCORE}
+\\
+#+testcase-ha-half-table-of-verb-checks-22-boat
+>zbeet boat
+{$GREENCORE}
 
 >meat moat
 by one point
@@ -366,6 +661,23 @@ You can handle the WHITE WIRES once the lyres are safe to touch.
 >undo
 >undo
 
+@ha
+#testcase-ha-half-table-of-verb-checks-23-fight
+>fight zfires
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-23-fires
+>zfight fires
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-24-white
+>white zwires
+{$YELLOWCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-24-wires
+>zwhite wires
+{$YELLOWCORE}
+
 >fight fires
 by one point
 }}SCORE++
@@ -373,6 +685,15 @@ by one point
 @all
 >score
 {$SCOS}
+
+@ha
+#testcase-ha-half-table-of-verb-checks-24-white
+>white zwires
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-24-wires
+>zwhite wires
+{$GREENCORE}
 
 >white wires
 by one point
@@ -392,6 +713,15 @@ by one point
 #testcase-goto-table-of-noways-toy-toss
 >w
 There's a reward, and Boy Boss Roy Ross and the Joy Jaws won't let you leave until you pick the right one.
+
+@ha
+#testcase-ha-half-table-of-verb-checks-47-sauce
+>zsoy sauce
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-47-soy
+>soy zsauce
+{$GREENCORE}
 
 >soy sauce
 by one point
@@ -422,6 +752,15 @@ by one point
 >s
 You can only really go back north. You don't want to know how far the goo gap extends.
 
+@ha
+#testcase-ha-half-table-of-verb-checks-29-zap
+>zap zzoo
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-29-zoo
+>zzap zoo
+{$GREENCORE}
+
 >zap zoo
 by one point
 }}SCORE++
@@ -429,6 +768,31 @@ by one point
 @all
 >score
 {$SCOS}
+
+@ha
+#testcase-ha-half-table-of-verb-checks-30-knife
+>znotice knife
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-30-notice
+>notice zknife
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-31-cake
+>zcarrot cake
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-31-carrot
+>carrot zcake
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-32-see
+>see zsoup
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-32-soup
+>zsee soup
+{$GREENCORE}
 
 >see soup
 by one point
@@ -445,6 +809,15 @@ by one point
 @all
 >score
 {$SCOS}
+
+@ha
+#testcase-ha-half-table-of-verb-checks-33-dented
+>dented zdials
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-33-dials
+>zdented dials
+{$GREENCORE}
 
 >dented dials
 by one point
@@ -473,6 +846,23 @@ by one point
 >w
 No, there must be something you can buy on the cheap.
 
+@ha
+#testcase-ha-half-table-of-verb-checks-45-penny
+>penny zpiles
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-45-piles
+>zpenny piles
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-46-pie
+>pie zpo
+{$YELLOWCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-46-po
+>zpie po
+{$YELLOWCORE}
+
 >penny piles
 by one point
 }}SCORE++
@@ -480,6 +870,15 @@ by one point
 @all
 >score
 {$SCOS}
+
+@ha
+#+testcase-ha-half-table-of-verb-checks-46-pie
+>pie zpo
+{$GREENCORE}
+\\
+#+testcase-ha-half-table-of-verb-checks-46-po
+>zpie po
+{$GREENCORE}
 
 >pie po
 by one point
@@ -542,6 +941,15 @@ by one point
 >score
 {$SCOS}
 
+@ha
+#testcase-ha-half-table-of-verb-checks-16-massive
+>massive zmitt
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-16-mitt
+>zmassive mitt
+{$GREENCORE}
+
 >massive mitt
 by one point
 }}SCORE++
@@ -582,6 +990,15 @@ by one point
 
 >s
 
+@ha
+#testcase-ha-half-table-of-verb-checks-14-flea
+>zflopper flea
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-14-flopper
+>flopper zflea
+{$GREENCORE}
+
 >flopper flea
 by one point
 }}SCORE++
@@ -589,6 +1006,15 @@ by one point
 @all
 >score
 {$SCOS}
+
+@ha
+#testcase-ha-half-table-of-verb-checks-15-chrome
+>chrome zcraw
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-15-craw
+>zchrome craw
+{$GREENCORE}
 
 >chrome craw
 by one point
@@ -619,6 +1045,35 @@ Diagonal directions aren't used in Beef, Beans, Grief, Greens.
 >w
 Only more worries are beyond, you suspect. Surely, you can finagle something from the denizens here
 
+@ha
+#testcase-ha-half-table-of-verb-checks-48-ham
+>zhoneyed ham
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-48-honeyed
+>honeyed zham
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-49-grey-gray
+>grey zgruel
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-49-grey-gray
+>gray zgruel
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-49-gruel
+>zgrey gruel
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-50-jello
+>zjust jello
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-50-just
+>just zjello
+{$GREENCORE}
+
 >honeyed ham
 by one point
 }}SCORE++
@@ -634,6 +1089,7 @@ Only more worries are beyond, you suspect. There's enough more food to pick off 
 >score
 {$SCOS}
 
+@!min
 >grey gruel
 by one point
 }}SCORE++
@@ -644,6 +1100,7 @@ by one point
 >score
 {$SCOS}
 
+@!min
 >just jello
 by one point
 }}SCORE++
@@ -654,6 +1111,17 @@ by one point
 #+testcase-goto-table-of-noways-woe-worry-slow-slurry
 >w
 Only more worries are beyond, you suspect. You've got enough side dishes.
+
+@all
+>score
+{$SCOS}
+
+@!min
+>potpourri
+by one point
+}}SCORE++
+}}CURMIN++
+}}CURMINBONUS++
 
 @all
 >score
@@ -673,7 +1141,7 @@ by one point
 @gt
 #testcase-goto-table-of-noways-reeve-row
 >w
-It's not a very big house. You suspected the old passage-under-the-rug trick, but you just don't have faith it's REALLY there. There's always back OUT, and you unlocked a passasge DOWN, too.
+It's not a very big house. You suspected the old passage-under-the-rug trick, but you just don't have faith it's REALLY there. There's always back OUT, and you unlocked a passage DOWN, too.
 
 >believe below
 by one point
@@ -699,6 +1167,39 @@ It's not a very big house. You can go down, but you can't really explore this sm
 >w
 You crash around into some walls, which make noises like WHOMP and WHUMP, which don't sound quite right.
 
+@ha
+#testcase-ha-half-table-of-verb-checks-52-scrappy
+>scrappy zscrawl
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-52-scrawl
+>zscrappy scrawl
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-53-wall
+>zwhappy wall
+{$YELLOWCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-53-whappy
+>whappy zwall
+{$YELLOWCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-56-pappy
+>pappy zpaul
+{$YELLOWCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-56-paul
+>zpappy paul
+{$YELLOWCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-57-sappy
+>sappy zsaul
+{$YELLOWCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-57-saul
+>zsappy saul
+{$YELLOWCORE}
+
 >scrappy scrawl
 by one point
 }}SCORE++
@@ -706,6 +1207,15 @@ by one point
 @all
 >score
 {$SCOS}
+
+@ha
+#+testcase-ha-half-table-of-verb-checks-53-wall
+>whappy zwall
+{$GREENCORE}
+\\
+#+testcase-ha-half-table-of-verb-checks-53-whappy
+>zwhappy wall
+{$GREENCORE}
 
 @rej
 ##balance undo
@@ -759,6 +1269,47 @@ by one point
 #testcase-room-names-happy-hall
 `Happy Hall
 
+@ha
+#testcase-ha-half-table-of-verb-checks-56-pappy
+>pappy zpaul
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-56-paul
+>zpappy paul
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-57-sappy
+>sappy zsaul
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-57-saul
+>zsappy saul
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-58-cappy
+>cappy zcaul
+{$YELLOWCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-58-caul
+>zcappy caul
+{$YELLOWCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-59-yall
+>zyappy yall
+{$YELLOWCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-59-yappy
+>yappy zyall
+{$YELLOWCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-59-ball
+>zbappy ball
+{$YELLOWCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-59-bappy
+>bappy zball
+{$YELLOWCORE}
+
 @rej
 >cappy caul
 You can't wear the ceremonial gear until everyone's here!
@@ -794,6 +1345,23 @@ by one point
 >score
 {$SCOS}
 
+@ha
+#testcase-ha-half-table-of-verb-checks-54-laura
+>zlone laura
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-54-lone
+>lone zlaura
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-55-known
+>known znora
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-55-nora
+>zknown nora
+{$GREENCORE}
+
 >lone laura
 by one point
 }}SCORE++
@@ -816,6 +1384,15 @@ by one point
 You can get everyone YAPPY YALL now preparations for the ceremony and feast are complete.
 You can have everyone play BAPPY BALL now the feast is complete, to burn off calories.
 
+@ha
+#+testcase-ha-half-table-of-verb-checks-58-cappy
+>cappy zcaul
+{$GREENCORE}
+\\
+#+testcase-ha-half-table-of-verb-checks-58-caul
+>zcappy caul
+{$GREENCORE}
+
 >cappy caul
 by one point
 }}SCORE++
@@ -829,6 +1406,15 @@ by one point
 (CAN DO NOW) You can get everyone YAPPY YALL now preparations for the ceremony and feast are complete.
 You can have everyone play BAPPY BALL now the feast is complete, to burn off calories.
 
+@ha
+#+testcase-ha-half-table-of-verb-checks-59-yall
+>zyappy yall
+{$GREENCORE}
+\\
+#+testcase-ha-half-table-of-verb-checks-59-yappy
+>yappy zyall
+{$GREENCORE}
+
 >yappy yall
 by one point
 }}SCORE++
@@ -841,6 +1427,15 @@ by one point
 >think
 (CAN DO NOW) You can have everyone play BAPPY BALL now the feast is complete, to burn off calories.
 
+@ha
+#+testcase-ha-half-table-of-verb-checks-60-ball
+>zbappy ball
+{$GREENCORE}
+\\
+#+testcase-ha-half-table-of-verb-checks-60-bappy
+>bappy zball
+{$GREENCORE}
+
 >bappy ball
 by one point
 }}SCORE++
@@ -852,6 +1447,47 @@ by one point
 @all+
 >score
 {$SCOS}
+
+@ha
+#testcase-ha-half-table-of-verb-checks-61-well
+>zwheat well
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-61-wheat
+>wheat zwell
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-62-feet
+>feet zfell
+{$YELLOWCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-62-fell
+>zfeet fell
+{$YELLOWCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-63-sheet
+>sheet zshell
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-63-shell
+>zsheet shell
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-64-beat
+>beat zbell
+{$YELLOWCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-64-bell
+>zbeat bell
+{$YELLOWCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-65-meet
+>meet zmel
+{$YELLOWCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-65-mel
+>zmeet mel
+{$YELLOWCORE}
 
 @gt
 #testcase-goto-table-of-noways-compete-compel
@@ -909,7 +1545,57 @@ by one point
 >score
 {$SCOS}
 
+@ha
+#testcase-ha-half-table-of-verb-checks-66-repeat
+>repeat zrepel
+{$YELLOWCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-66-repel
+>zrepeat repel
+{$YELLOWCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-67-heat
+>heat zhell
+{$YELLOWCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-67-hell
+>zheat hell
+{$YELLOWCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-68-sweet
+>sweet zswell
+{$YELLOWCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-68-swell
+>zsweet swell
+{$YELLOWCORE}
+
 >x leet lel
+
+@ha
+#testcase-ha-half-table-of-verb-checks-66-repeat
+>repeat zrepel
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-66-repel
+>zrepeat repel
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-67-heat
+>heat zhell
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-67-hell
+>zheat hell
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-68-sweet
+>sweet zswell
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-68-swell
+>zsweet swell
+{$GREENCORE}
 
 >repeat repel
 by one point

@@ -16,13 +16,13 @@ You need to find a way out. Yet you can't just go out ... you need to pump yours
 
 >x
 
+>sassed ceased
+by one point
+
 >made mug
 by one point
 
 >jade jug
-by one point
-
->sassed ceased
 by one point
 
 >leave lo
@@ -253,6 +253,9 @@ by one point
 >w
 Only more worries are beyond, you suspect. You've got enough side dishes.
 
+>potpourri
+by one point
+
 >u
 >in
 
@@ -261,7 +264,7 @@ by one point
 
 #testcase-goto-table-of-noways-reeve-row
 >w
-It's not a very big house. You suspected the old passage-under-the-rug trick, but you just don't have faith it's REALLY there. There's always back OUT, and you unlocked a passasge DOWN, too.
+It's not a very big house. You suspected the old passage-under-the-rug trick, but you just don't have faith it's REALLY there. There's always back OUT, and you unlocked a passage DOWN, too.
 
 >believe below
 by one point
