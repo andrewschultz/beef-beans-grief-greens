@@ -298,6 +298,10 @@ book Ooh Ooh
 
 Ooh Ooh is a wandroom in Roam Raw. wanddir of Ooh Ooh is north. printed name is "Ooh, Ooh...!". "[if passive pit is in ooh ooh]A passive pit surrounds you on all sides. It's not pulling you in, but the fall would still be lethal[else]It's a bit too misty to see much here. Perhaps when you have a clearer idea of your goals, you'll be able to see more[end if]."
 
+after printing the locale description when player is in ooh ooh and ooh-score < 7:
+	say "You feel a bit tongue-tied, as if you need to keep your thoughts extra short and to the point.";
+	continue the action;
+
 from-number of ooh ooh is 2653. to-number of ooh ooh is 18520.
 
 chapter zuzu
@@ -816,6 +820,16 @@ this is the square-clear rule:
 
 this is the goo-clear rule: [this is not strictly right but it works for general purposes!]
 	if sco-zap-zoo is false, the rule fails;
+	the rule succeeds;
+
+volume weird weird parser rules
+
+rule for printing a parser error when player is in ooh ooh:
+	if number of words in the player's command is 1, continue the action;
+	if ooh-score is 7:
+		say "[zl] shrug. Whatever you were trying to do, it doesn't matter.";
+		the rule succeeds;
+	say "[zl] make the talky-talky gesture with their hands. Apparently, you are using too many words, even if it doesn't seem like you're using too many. You feel rebuked[if sco-doodoo is false and sco-poohpooh is false]. You wonder, however, if you could sneak a hyphenated or hyphen-able word in[end if][if ooh-score is 0].[paragraph break]Well, if you wanted a change from the usual rhymes so far, you got it, sort of[end if].";
 	the rule succeeds;
 
 volume name detection
