@@ -1311,6 +1311,19 @@ dove n doubt	vh-love-shove rule		"loving/shoving"	--
 this is the vh-love-shove rule:
 	say "No, here [if oven-score is 0]will be[else if oven-score is 1]should still be[else]was[end if] the place for slight colloquialisms."
 
+volume irregular lump solutions
+
+table of irregular rhymes [ugh! Not the solution I wanted, but CUCKOO necessitates something odd and not just zapping the space.]
+check-rule	solution
+vc-muumuu rule	"muumuu"
+vc-doodoo rule	"doodoo"
+vc-poohpooh rule	"poohpooh"
+vc-tutu rule	"tutu"
+vc-juju rule	"juju"
+vc-cuckoo rule	"cuckoo"
+vc-booboo rule	"booboo"
+vc-potpourri rule	"potpourri"
+
 Beef Beans Grief Greens Tables ends here.
 
 ---- DOCUMENTATION ----

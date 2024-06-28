@@ -12,6 +12,17 @@ after examining:
 
 volume game specific
 
+to say adjtext of (ru - a rule):
+	repeat through table of irregular rhymes:
+		if ru is check-rule entry:
+			say "[solution entry in upper case]";
+			continue the action;
+	say "UNKNOWN"
+
+definition: a rule (called ru) is irregular:
+	if ru is a check-rule listed in table of irregular rhymes, yes;
+	no;
+
 to decide whether (ru - a rule) is spaceable: yes;
 
 to decide whether (di - a direction) is blocked: no;
