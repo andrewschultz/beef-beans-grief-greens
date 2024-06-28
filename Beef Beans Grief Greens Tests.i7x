@@ -128,6 +128,37 @@ carry out winxing:
 	follow the shutdown rules;
 	the rule succeeds;
 
+chapter diaging
+
+diaging is an action out of world.
+
+understand the command "diag" as something new.
+
+understand "diag" as diaging.
+
+carry out diaging:
+	let count be 0;
+	repeat with X running through things:
+		if thing-hint-rule of x is not trivially false rule, next;
+		increment count;
+		say "[count] [x] [thing-hint-rule of X].";
+	let print-border be whether or not count > 0;
+	now count is 0;
+	repeat with X running through rooms:
+		if room-hint-rule of x is not trivially false rule, next;
+		if map region of x is get a guess, next;
+		if count is 0 and print-border is true:
+			say "==================================[line break]";
+		increment count;
+		say "[count] [x] [room-hint-rule of X].";
+	continue the action;
+	repeat with X running through rooms:
+		if from-number of x is 0:
+			say "[x] [from-number of x] [to-number of x].";
+	repeat with X running through rhymables:
+		if from-number of x is 0:
+			say "[x] [from-number of x] [to-number of x].";
+	the rule succeeds;
 
 Beef Beans Grief Greens Tests ends here.
 
