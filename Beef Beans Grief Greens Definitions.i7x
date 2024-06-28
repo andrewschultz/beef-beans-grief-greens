@@ -80,7 +80,7 @@ chapter types
 
 a feastitem is a kind of thing. a feastitem has text called fdesc. a feastitem can be toeat, auxiliary or silverware. a feastitem is usually silverware.
 
-a feastitem can be uncookable, cooked, okaycold or uncooked. a feastitem is usually uncookable.
+a feastitem can be uncookable, cooked, okaycold, optional or uncooked. a feastitem is usually uncookable.
 
 an oventhing is a kind of thing. an oventhing has text called fdesc.
 
@@ -96,6 +96,7 @@ after doing something with a rhymeperson:
 definition: a feastitem (called fe) is stillneeded:
 	if fe is carried, no;
 	if fe is okaycold, no;
+	if fe is optional, no;
 	yes;
 
 chapter wandering

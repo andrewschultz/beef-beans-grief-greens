@@ -6,7 +6,7 @@ volume variables
 
 core-max is 56.
 
-max-bonus is 9.
+max-bonus is 10.
 
 entry-in-series is 8.
 
@@ -66,6 +66,8 @@ sco-laundering-lair is a truth state that varies.
 
 sco-flopper-flea is a truth state that varies.
 
+sco-chrome-craw is a truth state that varies.
+
 chapter Ooh Ooh globals
 
 sco-booboo is a truth state that varies.
@@ -93,6 +95,16 @@ sco-look-lard is a truth state that varies.
 
 chapter Squalor Square globals
 
+[stare, then bleat, then lyres]
+
+sco-baller-bear is a truth state that varies.
+sco-caller-care is a truth state that varies.
+sco-dollar-dare is a truth state that varies.
+
+sco-neat-note is a truth state that varies.
+sco-meat-moat is a truth state that varies.
+sco-beet-boat is a truth state that varies.
+
 sco-fight-fires is a truth state that varies.
 sco-white-wires is a truth state that varies.
 
@@ -101,16 +113,31 @@ chapter Gap Goo globals
 sco-zap-zoo is a truth state that varies.
 
 sco-notice-knife is a truth state that varies.
-
 sco-carrot-cake is a truth state that varies.
-
 sco-see-soup is a truth state that varies.
-
 sco-dented-dials is a truth state that varies.
 
 chapter Stuck State globals
 
 sco-pluck-plate is a truth state that varies.
+
+chapter Toy Toss globals
+
+sco-soy-sauce is a truth state that varies.
+
+chapter Sty Sto' globals
+
+sco-penny-piles is a truth state that varies.
+
+sco-pie-po is a truth state that varies.
+
+chapter Slow Slurry globals
+
+sco-potpourri is a truth state that varies.
+
+sco-honeyed-ham is a truth state that varies.
+sco-grey-gruel is a truth state that varies.
+sco-just-jello is a truth state that varies.
 
 chapter Trappy Trawl globals
 
@@ -144,26 +171,6 @@ sco-repeat-repel is a truth state that varies.
 eet-ell is a number that varies. [ negative = hell, positive = swell, neutral = repel ]
 
 chapter unsorted globals
-
-sco-neat-note is a truth state that varies.
-sco-meat-moat is a truth state that varies.
-sco-beet-boat is a truth state that varies.
-
-sco-pie-po is a truth state that varies.
-
-sco-soy-sauce is a truth state that varies.
-
-sco-chrome-craw is a truth state that varies.
-
-sco-honeyed-ham is a truth state that varies.
-sco-grey-gruel is a truth state that varies.
-sco-just-jello is a truth state that varies.
-
-sco-penny-piles is a truth state that varies.
-
-sco-baller-bear is a truth state that varies.
-sco-caller-care is a truth state that varies.
-sco-dollar-dare is a truth state that varies.
 
 volume test globals
 

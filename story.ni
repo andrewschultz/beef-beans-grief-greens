@@ -605,7 +605,11 @@ from-number of moneyed maam is 2854. to-number of moneyed maam is -2853.
 
 section honeyed ham
 
-the honeyed ham is a toeat okaycold feastitem.
+the honeyed ham is a toeat okaycold feastitem. description is "It may be glazed a bit too much, but concerned feast-goers can just scrape the extra bits off. Maybe take them home in a doggie bag for their kids.".
+
+section potpourri
+
+the potpourri is a feastitem. description is "It is eclectic. Just what you need for a little ambience. Well, a lot, but you don't have to use it all at once."
 
 section Fussed Fellow
 
@@ -874,6 +878,8 @@ this is the show-misses rule:
 			say "The [fool] would've given you some [b]GREY GRUEL[r].";
 		if sco-honeyed-ham is false:
 			say "The fussed fellow had [b]JUST JELLO[r] for you.";
+		if sco-potpourri is false:
+			say "The smell all around [slurry] was [b]POTPOURRI[r].";
 [	repeat through table of verb checks:
 		if core entry is false and idid entry is true:
 			say "BONUS GOTTEN: [w1 entry] [w2 entry].";

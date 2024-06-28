@@ -53,9 +53,10 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "pie"	"po"	"pi/poe"	vh-pi-poe rule	false	true	true	false	sty sto	vc-pie-po rule	vr-pie-po rule	--	"You can buy a [b]PIE PO[r] [once-now of vc-pie-po rule] you have currency."
 "penny"	"piles"	--	--	false	true	true	false	sty sto	vc-penny-piles rule	vr-penny-piles rule	--	--
 "soy"	"sauce"	"saws"	vh-soy-saws rule	false	true	true	false	toy toss	vc-soy-sauce rule	vr-soy-sauce rule	--	--
-"honeyed"	"ham"	--	--	false	true	false	false	chrome craw	vc-honeyed-ham rule	vr-honeyed-ham rule	--	--
-"grey|gray"	"gruel"	--	--	false	true	false	false	chrome craw	vc-grey-gruel rule	vr-grey-gruel rule	--	--
-"just"	"jello"	--	--	false	true	false	false	chrome craw	vc-just-jello rule	vr-just-jello rule	--	--
+"pot"	"pourri"	--	--	false	true	true	false	slow slurry	vc-potpourri rule	vr-potpourri rule	--	--
+"honeyed"	"ham"	--	--	false	true	false	false	slow slurry	vc-honeyed-ham rule	vr-honeyed-ham rule	--	--
+"grey|gray"	"gruel"	--	--	false	true	false	false	slow slurry	vc-grey-gruel rule	vr-grey-gruel rule	--	--
+"just"	"jello"	--	--	false	true	false	false	slow slurry	vc-just-jello rule	vr-just-jello rule	--	--
 "scrappy"	"scrawl"	--	--	false	true	true	false	trappy trawl	vc-scrappy-scrawl rule	vr-scrappy-scrawl rule	--	--
 "whappy"	"wall"	--	--	false	true	true	false	trappy trawl	vc-whappy-wall rule	vr-whappy-wall rule	--	"You can hit the [b]WHAPPY WALL[r] [once-now of vc-whappy-wall rule] you know where to whap the wall."
 "lone"	"laura"	"loan"	vh-loan-laura rule	false	true	true	false	happy hall	vc-lone-laura rule	vr-lone-laura rule	--	"You can summon [b]LONE LAURA[r] [once-now of vc-lone-laura rule] you are in the main ritual room."
@@ -805,7 +806,19 @@ this is the vr-soy-sauce rule:
 	say "[ross] nods. 'Here you go. Not just packets. A whole big bottle! Don't drink it all at once. Heh.'[paragraph break]You fail to laugh at this joke, and your punishment is to be whisked back from whence you came.[paragraph break]Which, to be honest, is a big help, because you were pretty sure you couldn't find the way back.";
 	drop-player-at Wandering Where;
 
-chapter chrome craw scoring
+chapter slow slurry scoring
+
+a goodrhyme rule (this is the vc-potpourri rule):
+	if player is not in slow slurry, unavailable;
+	if sco-potpourri is true:
+		vcal "You have quite enough potpourri!";
+		already-done;
+	ready;
+
+this is the vr-potpourri rule:
+	now sco-potpourri is true;
+	say "You realize what the smell is. Well, not the specific ingredients. But it has to be potpourri. Where is it leaking from? Following your nose leads you to a large canister. It might be too much for the feast, but it can be used elsewhere -- and maybe even last until the next feast.";
+	now player has potpourri;
 
 a goodrhyme rule (this is the vc-honeyed-ham rule):
 	if moneyed maam is not in location of player, unavailable;

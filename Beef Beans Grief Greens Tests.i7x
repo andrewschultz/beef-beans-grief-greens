@@ -56,7 +56,7 @@ test w2n1 with "pondering pair/booboo/juju/muumuu/tutu".
 test w2n2 with "massive mitt".
 test w2n3 with "cuckoo/doodoo/poohpooh". [north]
 
-test w2x with "chrome craw/d/honeyed ham/grey gruel/just jello/u".
+test w2x with "chrome craw/d/honeyed ham/grey gruel/just jello/potpourri/u".
 
 chapter rest of main line test
  
