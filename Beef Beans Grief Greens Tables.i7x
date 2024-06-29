@@ -10,6 +10,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "leave"	"lo"	"low"	vh-leave-low rule	false	true	true	false	reeve row	vc-leave-lo rule	vr-leave-lo rule	--	--
 "heave"	"ho"	"hoe"	vh-heave-hoe rule	false	true	true	false	reeve row	vc-heave-ho rule	vr-heave-ho rule	--	"You can [b]HEAVE HO[r] [once-now of vc-heave-ho rule] you have someone who can help you pull the rug up."
 "prune"	"pride"	--	--	false	true	true	false	reeve row	vc-prune-pride rule	vr-prune-pride rule	--	--
+"spoon"	"spied"	--	--	false	true	true	false	reeve row	vc-spoon-spied rule	vr-spoon-spied rule	--	"You can get a [b]SPOON SPIED[r] [once-now of vc-spoon-spied rule] you have managed to consult the goon guide with a clear mind."
 "believe"	"below"	--	--	false	true	true	false	reeve row	vc-believe-below rule	vr-believe-below rule	--	--
 "played"	"plug"	--	--	false	true	true	false	reeve row	vc-played-plug rule	vr-played-plug rule	--	--
 "grieve"	"grow"	--	--	false	true	true	false	reeve row	vc-grieve-grow rule	vr-grieve-grow rule	--	--
@@ -91,6 +92,27 @@ this is the vr-prune-pride rule:
 	move vented vials to Gap Goo;
 	move Light Lyres to Squalor Square;
 	move shook shard to Dove n Doubt;
+
+a goodrhyme rule (this is the vc-spoon-spied rule):
+	if player does not have goon guide, unavailable;
+	if sco-prune-pride is false:
+		vcp "You'd love to find a bit more silverware, and maybe the goon guide would be just the thing. Except you can't lower yourself to read it. Yet.";
+		not-yet;
+	if goon guide is not examined:
+		vcp "You try to spy spoons based on your general impressions of the goon guide, but ... well, I'm going to make you read it more closely now you've pruned your pride.";
+		not-yet;
+	if sco-spoon-spied is true:
+		vcal "You already found enough spoons! What is this, a showing for [i]The Room[r]?";
+		already-done;
+	ready;
+
+this is the vr-spoon-spied rule:
+	now sco-spoon-spied is true;
+	say "Well, it is worth a try. Amazingly, on rereading the goon guide, you find tips on locating lost silverware. You missed it with the first read-through, probably because you weren't focused on finding it[if oven-fixed-yet is false].[paragraph break]And here you thought it would just help you fix [ap-ov][else]. Technical and subjective advice--the methods employed will help you figure how to find stuff you misplaced in general[end if]!";
+	now player has spoons;
+
+to say ap-ov:
+	say "[if oven is in reeve row]the oven[else]an appliance[end if]"
 
 chapter all the time
 

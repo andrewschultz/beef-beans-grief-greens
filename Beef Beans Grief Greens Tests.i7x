@@ -38,7 +38,7 @@ chapter tests for wandering where branches
 
 test w2w with "test w2w1/test w2w2".
 test w2w1 with "laundering lair/lovin lout/shovin shout/oven out/heave ho".
-test w2w2 with "prune pride/x guide/played plug".
+test w2w2 with "prune pride/x guide/spoon spied/played plug".
 test w2w3 with "w/hook hard/book bard/cook card/look lard".
 
 test w2et with "test w2e1/dollar dare/test w2e2/test w2e3".
