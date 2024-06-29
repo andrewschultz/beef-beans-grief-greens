@@ -207,6 +207,9 @@ to decide which number is stare-score:
 to decide which number is square-food-score:
 	decide on (boolval of sco-neat-note) + (boolval of sco-meat-moat) + (boolval of sco-beet-boat);
 
+to decide which number is dork-score:
+	decide on (boolval of sco-found-fork) + (boolval of sco-meat-moat) + (boolval of sco-beet-boat);
+
 to decide which number is hall-guest-score:
 	decide on (boolval of sco-pappy-paul) + (boolval of sco-sappy-saul) + (boolval of sco-lone-laura) + (boolval of sco-known-nora);
 

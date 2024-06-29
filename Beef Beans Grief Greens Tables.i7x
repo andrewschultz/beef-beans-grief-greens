@@ -29,6 +29,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "neat"	"note"	--	--	false	true	true	false	squalor square	vc-neat-note rule	vr-neat-note rule	--	--
 "meat"	"moat"	"meet/mote"	--	false	true	true	false	squalor square	vc-meat-moat rule	vr-meat-moat rule	--	"You can find a [b]MEAT MOAT[r] [once-now of vc-meat-moat rule] you have found something more useful than the bleat bloat."
 "beet"	"boat"	"beat"	--	false	true	true	false	squalor square	vc-beet-boat rule	vr-beet-boat rule	--	"You can find a [b]BEET BOAT[r] [once-now of vc-beet-boat rule] you have found something more useful than the bleat bloat."
+"found"	"fork"	--	--	false	true	true	false	squalor square	vc-found-fork rule	vr-found-fork rule	--	--
 "fight"	"fires"	--	--	false	true	true	false	squalor square	vc-fight-fires rule	vr-fight-fires rule	--	--
 "white"	"wires"	--	--	false	true	true	false	squalor square	vc-white-wires rule	vr-white-wires rule	--	"You can handle the [b]WHITE WIRES[r] [once-now of vc-white-wires rule] the lyres are safe to touch."
 "lovin"	"lout"	--	--	false	true	true	false	dove n doubt	vc-lovin-lout rule	vr-lovin-lout rule	--	--
@@ -495,6 +496,22 @@ this is the vr-dollar-dare rule:
 	else:
 		say "With the staller stare gone, you leave a bit of hope and genuine solicitousness for the next lost soul who stumbles here.";
 
+section downed dork scoring
+
+a goodrhyme rule (this is the vc-found-fork rule):
+	if player is not in squalor square, unavailable;
+	if sco-found-fork is true:
+		vcal "You and the dork already found the fork!";
+		already-done;
+	ready;
+
+this is the vr-found-fork rule:
+	now sco-found-fork is true;
+	say "You tell the downed dork your plans and what you might be able to find together. They seem amenable. You both spend a lot of time looking for a fork, any old fork, but once you find one, you start uncovering others. Squalor Square is just full of litter. The forks are in good shape.";
+	now player has forks;
+	declue downed dork;
+	check-dork-done;
+
 section bleat bloat scoring
 
 a goodrhyme rule (this is the vc-neat-note rule):
@@ -506,6 +523,11 @@ a goodrhyme rule (this is the vc-neat-note rule):
 
 this is the vr-neat-note rule:
 	now sco-neat-note is true;
+	say "It seems silly to expect someone to just up and drop by with a neat note. But surprisingly, the bleat bloat dies out, and someone singularly unimpressive-looking walks in, slowly and without confidence.";
+	say "'Uh, hi. People call me the downed dork. I guess I deserve it, for not getting back up off the ground after being called a silly name. Anyway, I find weird stuff, nothing important--just, stuff more with-it people have no use for. Thanks for getting rid of the staller stare. Let me know if I can do anything for you.'";
+	say "[line break]You find this part touching, because, well, you've been called a dork too. Even after being given this mission. You assure the downed dork that they might just be the person you need tosee.";
+	now player has neat note;
+	move downed dork to squalor square;
 	say "Ah! Much better! With a neat note to distract you, the bleat bloat seems less ubiquitous. After you read the note for a few minutes, the bleat bloat departs, feeling unloved and unnoticed.";
 	moot bleat bloat;
 
@@ -514,34 +536,32 @@ a goodrhyme rule (this is the vc-beet-boat rule):
 	if sco-beet-boat is true:
 		vcal "One beet boat is quite enough!";
 		already-done;
-	if player is not in squalor square:
-		vcp "Not the right place for this.";
-		not-yet;
+	abide by the be-square rule;
 	ready;
 [	if sco-beet-boat is true and (player is in squalor square or player has beet boat or player has meat moat):]
 
 to say a-o:
-	say "[one of]A burly workman named Amped Ox takes you to the Damped Docks[or]Amped Ox drops by again, leading you to a new area of the Damped Docks[stopping]"
+	say "[one of]A burly workman named Amped Ox takes you  and the downed dork to the Damped Docks[or]Amped Ox drops by again, leading you and the downed dork to a new area of the Damped Docks[stopping]"
 
 this is the vr-beet-boat rule:
 	now sco-beet-boat is true;
 	say "[a-o], where you are given a good-sized beet boat. He doesn't particularly like beets, and neither do his coworkers, but why let it go to waste?";
 	now player has beet boat;
+	check-dork-done;
 
 a goodrhyme rule (this is the vc-meat-moat rule):
 	abide by the bloat-transform rule;
 	if sco-meat-moat is true:
-		vcal "Too many meat moats would be too much.";
+		vcal "More than one meat moat would be overkill. And not just for the animals killed to make the meat.";
 		already-done;
-	if player is not in squalor square:
-		vcp "Not the right place for this.";
-		not-yet;
+	abide by the be-square rule;
 	ready;
 
 this is the vr-meat-moat rule:
 	now sco-meat-moat is true;
 	say "[a-o], where indeed a small meat moat (heavy meat, light gravy) is discovered. It looks and smells clean. Apparently, it was part of an all-you-can-eat buffet, and the workers ran out of stomach space.";
 	now player has meat moat;
+	check-dork-done;
 
 a goodrhyme rule (this is the vc-fight-fires rule):
 	if light lyres are not touchable, unavailable;
@@ -1166,10 +1186,25 @@ to oven-check:
 chapter Squalor Square
 
 this is the bloat-transform rule:
-	if player is not in squalor square and player does not have meat moat and player does not have beet boat, unavailable;
+	if player does not have meat moat and player does not have beet boat and player does not have neat note, unavailable;
 	if sco-neat-note is false:
 		vcp "Perhaps ... but unfortunately, the bleat-bloat distracts you from finding fun new stuff. Perhaps a helpful guide, or guiding document, would be the thing.";
 		not-yet;
+
+this is the be-square rule:
+	if player is not in squalor square:
+		say "The neat note is a map of Squalor Square. You should probably go there and try again.";
+		not-yet;
+
+to check-dork-done:
+	say "[line break]";
+	if dork-score is 1:
+		say "The downed dork mumbles something about not wanting to leave you this quick, but also not hanging around if they're not wanted. You're in no rush, and you wonder what other secrets Squalor Square holds.";
+	else if dork-score is 2:
+		say "The downed dork asks if they should stay or go. Your instincts are to stay. Maybe there's one more thing here.";
+	if dork-score is 3:
+		say "The downed dork looks around. 'Anything else?'[paragraph break]Squalor Square seems pretty empty. You thank them heartily. They say, well, it was nothing, really, and they are sure more with-it people could've found things quicker.[paragraph break]It's tough. You've never done this before, but you sit the downed dork down and explain that, well, if they are good at something, they are good at something, and perhaps there is a reason they are good at something. Perhaps caring about things others find dorky is worthwhile. You've been there. You don't want to be all 'don't let it bother you' or 'cool is a state of mind' but you can't deny the dork's profound help in, well, finding weird stuff you could not have on your own. You apologize if you were too didactic before suggesting they resolve to show a bit of confidence beyond 'turn that frown upside down.' The dork agrees and thanks you. Then you part ways.";
+		moot downed dork;
 
 chapter Ooh Ooh
 

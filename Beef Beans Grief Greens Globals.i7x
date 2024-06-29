@@ -4,7 +4,7 @@ Version 1/240113 of Beef Beans Grief Greens Globals by Andrew Schultz begins her
 
 volume variables
 
-core-max is 57.
+core-max is 58.
 
 max-bonus is 10.
 
@@ -55,9 +55,10 @@ sco-made-mug is a truth state that varies.
 sco-jade-jug is a truth state that varies.
 sco-played-plug is a truth state that varies.
 
-section oven-specific globals
+section oven/guide-specific globals
 
 sco-prune-pride is a truth state that varies.
+sco-spoon-spied is a truth state that varies.
 
 chapter Wandering Where globals
 
@@ -97,7 +98,7 @@ sco-look-lard is a truth state that varies.
 
 chapter Squalor Square globals
 
-[stare, then bleat, then lyres]
+[stare, then bleat, then dork, then lyres]
 
 sco-baller-bear is a truth state that varies.
 sco-caller-care is a truth state that varies.
@@ -106,6 +107,8 @@ sco-dollar-dare is a truth state that varies.
 sco-neat-note is a truth state that varies.
 sco-meat-moat is a truth state that varies.
 sco-beet-boat is a truth state that varies.
+
+sco-found-fork is a truth state that varies.
 
 sco-fight-fires is a truth state that varies.
 sco-white-wires is a truth state that varies.
@@ -173,8 +176,6 @@ sco-repeat-repel is a truth state that varies.
 eet-ell is a number that varies. [ negative = hell, positive = swell, neutral = repel ]
 
 chapter unsorted globals
-
-sco-spoon-spied is a truth state that varies.
 
 volume test globals
 

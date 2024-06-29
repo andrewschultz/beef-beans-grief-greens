@@ -44,7 +44,7 @@ test w2w3 with "w/hook hard/book bard/cook card/look lard".
 test w2et with "test w2e1/dollar dare/test w2e2/test w2e3".
 test w2em with "test w2e1/test w2e2/test w2e3".
 test w2e1 with "squandering square/baller bear/caller care".
-test w2e2 with "neat note/meat moat/beet boat".
+test w2e2 with "neat note/meat moat/beet boat/found fork".
 test w2e3 with "fight fires/white wires".
 
 test w2s with "test w2s1/test w2s2".

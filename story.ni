@@ -277,6 +277,12 @@ the staller stare is a rhymable in Squalor Square. "A staller stare [if stare-sc
 
 from-number of staller stare is 2855. to-number of staller stare is 8412. [squalor square,staller stare:baller bear,caller care,dollar dare]
 
+chapter downed dork
+
+the downed dork is a rhymable. "The downed dork sits here, looking helpless, lookikng like they wish they could help, even with a trivial-seeming task.". description is "Well, you've been called a dork before. You seem to have a radar for others, and sympathy, of course, whether they be gnome, human, elf, orc or troll. You feel like you could work together with the dork."
+
+from-number of downed dork is 2804. to-number of downed dork is 2754.
+
 chapter eet ote
 
 section bleat bloat
