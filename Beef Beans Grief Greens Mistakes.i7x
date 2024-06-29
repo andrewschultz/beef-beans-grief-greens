@@ -116,6 +116,25 @@ mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 
 book thing tables
 
+table of bopper bee guesses
+mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
+"copper"	"key"	--	false	--	"Why, a copper key would be just the thing! One that somehow magically fits the lock to the basement! No, I'm afraid it'll be a bit trickier than that. The bee has to become something a little more like it. Or a little less unlike it."
+"hopper"	"he|hee"	--	false	--	"Frog legs aren't on the menu, and you don't need a hopper to store stuff."
+"pauper|popper"	"pee|pea"	--	false	--	"No, one pea couldn't make a meal or even help."
+"shopper"	"she|shee"	--	false	--	"There is neither need for extended shopping nor a mall to do said shopping in."
+
+table of fast feast guesses
+mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
+"past"	"pieced"	--	false	--	"The past will be pieced at the feast."
+
+table of goon guide guesses
+mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
+"boon"	"bide"	--	false	--	"<CLEVER REJECT TEXT>"
+"dune"	"died"	--	false	--	"<CLEVER REJECT TEXT>"
+"loon"	"lied"	--	false	--	"<CLEVER REJECT TEXT>"
+"rune"	"ride"	--	false	--	"<CLEVER REJECT TEXT>"
+"tune"	"tide|tied"	--	false	--	"<CLEVER REJECT TEXT>"
+
 table of rayed rug guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 "aid"	"ugh"	--	false	--	"You let out a sigh of frustration. You need help."
@@ -127,17 +146,6 @@ mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 "paid"	"pug"	--	false	--	"You wonder if having a pet will help you overcome grief."
 "slayed"	"slug"	--	false	--	"You look for insects to kill, to get your mind off the unexpected death of an actual person."
 "theyd"	"thug"	--	false	--	"You don't have time or emotional energy to focus on that right now."
-
-table of fast feast guesses
-mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
-"past"	"pieced"	--	false	--	"The past will be pieced at the feast."
-
-table of bopper bee guesses
-mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
-"copper"	"key"	--	false	--	"Why, a copper key would be just the thing! One that somehow magically fits the lock to the basement! No, I'm afraid it'll be a bit trickier than that. The bee has to become something a little more like it. Or a little less unlike it."
-"hopper"	"he|hee"	--	false	--	"Frog legs aren't on the menu, and you don't need a hopper to store stuff."
-"pauper|popper"	"pee|pea"	--	false	--	"No, one pea couldn't make a meal or even help."
-"shopper"	"she|shee"	--	false	--	"There is neitherr need for extended shopping nor a mall to do said shopping in."
 
 volume auxiliary general
 

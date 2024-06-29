@@ -182,7 +182,9 @@ chapter goon guide
 
 the goon guide is a rhymable. description is "[one of]Now you've pruned your pride, you focus on the content of the goon guide. It tells you what to do to fix an oven and make very very tasty foods indeed[or]You revisit the goon guide to determine what you need[stopping].[paragraph break]There's even a handy checklist on the first page!"
 
-from-number of goon guide is 2705. to-number of goon guide is 2755.
+from-number of goon guide is 2705. to-number of goon guide is 5510.
+
+guess-table of goon guide is table of goon guide guesses.
 
 check examining goon guide when sco-prune-pride is false:
 	say "You think about it, but you're no goon. You hope you've lived a clean enough life, you could never be considered one. In your current state of mind, alas, you feel reading a goon guide might raise such suspicions." instead;
