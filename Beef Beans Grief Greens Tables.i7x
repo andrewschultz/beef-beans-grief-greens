@@ -205,6 +205,7 @@ this is the vr-heave-ho rule:
 	say "[line break]Your kneeling on the floor to pull the rug up gave you a good view inside the oven. There you find something called a goon guide. But you can't use it, because you're too good to be a goon. That's how it works, right? Or maybe not...";
 	now player has goon guide;
 	declue-here-by 2752;
+	process the Reeve Row check passage down rule;
 
 a goodrhyme rule (this is the vc-grieve-grow rule):
 	if player is not in reeve row, unavailable;
@@ -475,7 +476,7 @@ this is the vr-dollar-dare rule:
 section bleat bloat scoring
 
 a goodrhyme rule (this is the vc-neat-note rule):
-	if player is not in squalor square and player does not have meat moat and player does not have beet boat, unavailable;
+	unless meat moat is touchable or beet boat is touchable or bleat bloat is touchable, unavailable;
 	if sco-neat-note is true:
 		vcal "But you already discovered the neat note. Rediscovering it won't make it neater.";
 		already-done;

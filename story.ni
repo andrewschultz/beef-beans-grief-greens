@@ -122,7 +122,7 @@ check going down in Reeve Row:
 check going outside in Reeve Row when Lovin Lout is in Reeve Row: say "You sense the lout could help with the rayed rug in some way." instead; [??GT must be inoperative]
 
 after printing the locale description for Reeve Row (this is the Reeve Row check passage down rule):
-	if player has copper key:
+	if player has copper key and sco-heave-ho is true:
 		say "You use the copper key on the trap door down. And it works!";
 		moot copper key;
 	continue the action;
@@ -678,10 +678,10 @@ the bbgg inventory rule is listed instead of the print standard inventory rule i
 
 carry out taking inventory (this is the bbgg inventory rule):
 	say "Currently carrying:[line break]";
-	if number of carried cooked feastitems > 0, say "  [list of carried uncooked feastitems] (cooked)[line break]";
+	if number of carried uncooked feastitems > 0, say "  [list of carried uncooked feastitems] (uncooked)[line break]";
 	if number of carried okaycold feastitems > 0, say "  [list of carried okaycold feastitems] (okay cold)[line break]";
 	if number of carried optional feastitems > 0, say "  [list of carried optional feastitems] (optional, for ambience)[line break]";
-	if number of carried cooked feastitems > 0, say "  [list of carried cooked feastitems] (uncooked)[line break]";
+	if number of carried cooked feastitems > 0, say "  [list of carried cooked feastitems] (cooked)[line break]";
 	if number of carried silverware feastitems > 0, say "  [list of carried silverware feastitems] (utensils)[line break]";
 	if number of carried oventhings > 0, say "  [list of carried oventhings] ([if oven is not in reeve row]to repair something, maybe[else]to fix the oven [here-in of reeve row][end if])[line break]";
 	now all things carried by player are marked for listing;
