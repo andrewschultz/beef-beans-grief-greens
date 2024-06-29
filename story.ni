@@ -170,6 +170,8 @@ chapter rayed rug
 
 the rayed rug is a rhymable in Reeve Row. "A rayed rug covers part of the floor here.". description is "[if rug-score is 3]All the rays are dim now. You've probably gotten all you can out of the rug, which is a lot more than you expected. So, good job[else if rug-score is 2]About one-third of the rays are still bright[else if rug-score is 1]About two-thirds of the rays are still bright[else]You aren't big on decor, but Steve Stowe insisted you keep this rug. It would be useful, he said.[paragraph break]There are a lot of bright rays on the rug[end if]."
 
+understand "rays" as rayed rug when rayed rug is touchable.
+
 from-number of rayed rug is 2753. to-number of rayed rug is 8210.
 
 guess-table of rayed rug is the table of rayed rug guesses.
@@ -265,7 +267,7 @@ guess-table of squalor square is the table of squalor square guesses.
 
 chapter staller stare
 
-the staller stare is a rhymable in Squalor Square. "It gazes at you intently, freezing you from doing anything sensible or extreme. Perhaps you can distract it by noticing or proposing something weird.".
+the staller stare is a rhymable in Squalor Square. "A staller stare [if stare-score is 3]no longer has a spell over you[else]inhibits you from doing much of what you want[end if].". description is "It gazes at you intently, freezing you from doing anything sensible or extreme. Perhaps you can distract it by noticing or proposing something weird.".
 
 from-number of staller stare is 2855. to-number of staller stare is 8412. [squalor square,staller stare:baller bear,caller care,dollar dare]
 
@@ -362,7 +364,7 @@ the lovin lout is a person. "A lovin['] lout stands around awkwardly, flexing th
 
 chapter oven
 
-The oven is a thing in Dove N Doubt. "[if player is in reeve row]The oven you moved from [dove] is here, [oven-status][else]An oven is parked here, but it's [oven-move]. Useful for cooking a big meal, you suspect[end if]."
+The oven is a thing in Dove N Doubt. "[if player is in reeve row]The oven you moved from [dove] is here, [oven-status][else]An oven is parked here, but it's [oven-move]. Useful for cooking a big meal, you suspect[end if].". description is "[if oven is in dove]Old and heavy, but it's not attached to anything. You could move it[else if oven-fixed-yet is false]Broken. Perhaps you could find replacement parts[else]Serviceable, now you prepared it[end if]."
 
 to say oven-status:
 	if oven-fix-score is 3:
@@ -566,7 +568,7 @@ from-number of toy toss is 2654. to-number of toy toss is 2655. [soy sauce]
 
 chapter Boy Boss Roy Ross
 
-Boy Boss Roy Ross is a rhymable in Toy Toss. "Boy Boss Roy Ross stands here, waiting for you to claim whatever gift you want, as long as it's the right one."
+Boy Boss Roy Ross is a rhymable in Toy Toss. "Boy Boss Roy Ross stands here, waiting for you to claim whatever gift you want, as long as it's the right one.". description is "He looks pretty in charge of this here Toy Toss, which may not seem like much, but it's better than not being in charge.[paragraph break]He seems to be trying to stare you down. Now that you've won the toy toss, you really must ask for your gift. But the thing is, if he tells you what it is, it might not be what you really want. So you need to figure it out."
 
 from-number of boy boss roy ross is 5308. to-number of boy boss roy ross is 2655. [soy sauce]
 
@@ -575,6 +577,10 @@ chapter Joy Jaws
 the Joy Jaws are a rhymable in Toy Toss. the Joy Jaws are scenery. "They grin at you and make you feel out of place despite, well, their pronunciation not being quite right. You're not leaving until you've received a gift that will make you happy."
 
 from-number of joy jaws is 2654. to-number of joy jaws is 2655. [soy sauce]
+
+chapter soy sauce
+
+the soy sauce is a toeat feastitem. description is "It's a rather large bottle of soy sauce, so people at a feast won't run out. But of course it has that slow-drip neck so people don't mistakenly dump it over their food.". fdesc is "liquid seasoning".
 
 book Hi Ho I Owe Sty Sto
 
@@ -586,13 +592,17 @@ guess-table of hi ho is the table of hi ho guesses.
 
 chapter bri bro
 
-Bri Bro is a rhymable in Hi Ho I Owe Sty Sto. "A fellow whose nametag reads BRI-BRO stands here, waiting for what you need to ask for."
+Bri Bro is a rhymable in Hi Ho I Owe Sty Sto. "A fellow whose nametag reads BRI-BRO stands here, waiting for what you need to ask for.". description is "Bri-Bro looks a bit bored with his job, but alas, not bored enough to just give you whatever food is in sale here and risk getting fired."
+
+understand "fellow" as Bri Bro when player is in Sty Sto.
 
 from-number of bri bro is 2653. to-number of bri bro is 2652.
 
 chapter any isles many miles
 
 Any Isles Many Miles is a rhymable in Hi Ho I Owe Sty Sto. printed name is "[i]Any Isles, Many Miles[r]". "A brochure called [isles] lies here. It's written by a group of authors including Jenny Giles, Kenny Kyles, Rennie Riles, Benny Biles, and Lenny Lyles.[paragraph break]That may sound excessive, but I assure you there were MANY miles between the isles, so it was not practical for one author to explore them all!"
+
+understand "brochure" as Many Miles when player is in Sty Sto.
 
 from-number of any isles many miles is 5360. to-number of any isles many miles is 2755.
 
