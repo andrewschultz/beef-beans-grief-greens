@@ -87,6 +87,11 @@ check exiting (this is the OUT redirect rule):
 
 the OUT redirect rule is listed before the can't exit when not inside anything rule in the check exiting rulebook.
 
+check jerkingjumping (this is the BBGG last point jerkjump check rule):
+	if sco-meet-mel is true, say "The lump glistens and pulses as if it is about to do something.[paragraph break]You sort of hope it will tell you what to do, but after some thought, you realize you should [if leet lel is not examined]read what Mel gave you and [end if]decide for yourself about Leet Lel, and nobody--or no small lump--can make that decision for you." instead;
+
+the BBGG last point jerkjump check rule is listed last in the check jerkingjumping rules.
+
 chapter types
 
 a feastitem is a kind of thing. a feastitem has text called fdesc. a feastitem can be toeat, auxiliary, ambiance or silverware. a feastitem is usually silverware.

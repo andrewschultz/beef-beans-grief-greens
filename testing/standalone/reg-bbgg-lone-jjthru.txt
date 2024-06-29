@@ -87,6 +87,12 @@ After some thought, you consider a good way forward: LOOK LARD...
 After some thought, you consider a good way forward: SQUANDERING SQUARE...
 
 >jj
+After some thought, you consider a good way forward: BALLER BEAR...
+
+>jj
+After some thought, you consider a good way forward: CALLER CARE...
+
+>jj
 After some thought, you consider a good way forward: NEAT NOTE...
 
 >jj
@@ -226,9 +232,13 @@ After some thought, you consider a good way forward: BEAT BELL...
 After some thought, you consider a good way forward: MEET MEL...
 
 >jj
-The lurking lump remains immovable. There's nothing critical to do here.
+!After some thought, you consider a good way forward:
+The lump glistens and pulses as if it is about to do something.
+You sort of hope it will tell you what to do, but after some thought, you realize you should read what Mel gave you and decide for yourself about Leet Lel, and nobody--or no small lump--can make that decision for you.
 
 >x leet lel
 
 >jj
-After some thought, you consider a good way forward: REPEAT REPEL...
+!After some thought, you consider a good way forward:
+The lump glistens and pulses as if it is about to do something.
+You sort of hope it will tell you what to do, but after some thought, you realize you should decide for yourself about Leet Lel, and nobody--or no small lump--can make that decision for you.
