@@ -56,11 +56,15 @@ the soup is a toeat feastitem. fdesc of soup is "an appetizer, sort of". descrip
 
 chapter silverware
 
-the knives are a plural-named silverware feastitem. description is "Just a bunch of knives."
+check examining a silverware feastitem: say "Just a bunch of [printed name of noun]." instead;
 
-the plates are a plural-named silverware feastitem. description is "Just a bunch of plates."
+the knives are a plural-named silverware feastitem.
 
-the spoons are a plural-named silverware feastitem. description is "Just a bunch of spoons."
+the plates are a plural-named silverware feastitem.
+
+the spoons are a plural-named silverware feastitem.
+
+the forks are a plural-named silverware feastitem.
 
 volume beginning stuff
 
