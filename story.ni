@@ -46,9 +46,9 @@ include Beef Beans Grief Greens Beta Testing by Andrew Schultz.
 
 volume feast items
 
-the made mug is an auxiliary feastitem. fdesc of made mug is "small drinking container(s)".
+the made mug is an silverware feastitem. fdesc of made mug is "small drinking container(s)".
 
-the jade jug is an auxiliary feastitem. fdesc of jade jug is "large drink holder".
+the jade jug is a silverware feastitem. fdesc of jade jug is "large drink holder".
 
 the carrot cake is a toeat feastitem. fdesc of carrot cake is "cake, of course". description is "It looks delicious."
 
@@ -104,7 +104,7 @@ check going down in Reeve Row:
 	if sco-heave-ho is false, say "There's an outline leading down, but you can't figure the way to remove it." instead;
 	if sco-grieve-grow is false, say "You're not emotionally ready, yet. Yet.[paragraph break]There's something you need to do here, something independent of adventuring, something not at all concrete.[paragraph break]How can you deal with all the loss and steel yourself, so you know it's worth it, and you're worthy of conducting the ceremony?" instead;
 	if copper key is not moot, say "But you haven't unlocked the way down yet." instead;
-	if number of stillneeded feastitems > 0, say "You look at [feast]. You don't have everything, yet." instead;
+	if number of stillneeded feastitems > 0, say "You look at [feast]. You don't have everything, yet[if debug-state is true]([list of stillneeded feastitems])[end if]." instead;
 	if oven-fixed-yet is false, say "But you haven't found a way to cook [the list of toeat feastitems] yet." instead;
 	if sco-chrome-craw is false, max-down;
 	if sco-just-jello is false, max-down;
@@ -154,9 +154,10 @@ from-number of last least fast feast is -5410. to-number of last least fast feas
 guess-table of fast feast is the table of fast feast guesses.
 
 report examining Last Least Fast Feast:
-	repeat with F running through not silverware feastitems:
+	repeat with F running through feastlistable feastitems:
 		say "[fixed letter spacing]( [if player has F]X[else]-[end if] ) [fdesc of F][variable letter spacing][line break]";
-	say "[fixed letter spacing]([number of carried silverware feastitems]/[number of silverware feastitems]) silverware and such[variable letter spacing][if number of silverware feastitems > 0]([list of silverware feastitems])[line break]";
+		if debug-state is true and fdesc of F is empty, say "NOTE TO SELF: fill in [F].";
+	say "[fixed letter spacing]([number of carried silverware feastitems]/[number of silverware feastitems]) silverware and such[variable letter spacing][if number of carried silverware feastitems > 0] (got [list of silverware feastitems])[end if][line break]";
 	if Trappy Trawl is unvisited:
 		say "[line break]";
 		if oven is in reeve row:
@@ -276,11 +277,11 @@ from-number of neat note is 2704. to-number of neat note is 5408. [neat note:mea
 
 section meat moat
 
-the meat moat is a toeat feastitem. description is "Fortunately, it's a relatively small moat, without too much liquid, so it won't splash around as you carry it."
+the meat moat is a toeat feastitem. description is "Fortunately, it's a relatively small moat, without too much liquid, so it won't splash around as you carry it.". fdesc is "protein panorama".
 
 section beet boat
 
-the beet boat is a toeat feastitem. description is "It is about as jazzy as beets can get. You're not sure what sort of boat it is, but that doesn't matter."
+the beet boat is a toeat feastitem. description is "It is about as jazzy as beets can get. You're not sure what sort of boat it is, but that doesn't matter.". fdesc is "vast veggies"
 
 chapter ite ires
 
@@ -329,7 +330,7 @@ for printing a locale paragraph about a rhymeperson (called rp) in ooh ooh:
 
 chapter cocoa
 
-some cocoa is a toeat feastitem. description is "Well, it's currently powdered, but when the time comes to dump it in boiling water, you have confidence you'll come through with aplomb!"
+some cocoa is a toeat feastitem. description is "Well, it's currently powdered, but when the time comes to dump it in boiling water, you have confidence you'll come through with aplomb!". fdesc is "powdered drink mix"
 
 chapter passive pit
 
@@ -539,7 +540,7 @@ chapter cook card
 
 the cook card is an oventhing. description is "Ah! The card of very special recipes that fell out of the goon guide!". fdesc is "a missing insert from the goon guide (okay, you wrote that in, just in case)".
 
-some lard is a toeat feastitem. description is "Not much to say about it. It's lard. I'm not an expert in these things. I just know you shouldn't use too much of it, and you can burn your dish if you forget. But you probably knew that, too."
+some lard is a toeat feastitem. description is "Not much to say about it. It's lard. I'm not an expert in these things. I just know you shouldn't use too much of it, and you can burn your dish if you forget. But you probably knew that, too.". fdesc is "prevents sticking"
 
 book Toy Toss
 
@@ -583,7 +584,7 @@ some penny piles are a plural-named thing. "A lot of pennies, but not a lot of w
 
 chapter pie po
 
-the pie po is a toeat feastitem. "I guess it is the pie equivalent of a po['] boy sandwich.". printed name is "pie (po['])".
+the pie po is a toeat feastitem. "I guess it is the pie equivalent of a po['] boy sandwich.". printed name is "pie (po['])". fdesc is "tasty pastry"
 
 chapter Woe Worry Slow Slurry
 
@@ -613,7 +614,7 @@ the honeyed ham is a toeat okaycold feastitem. description is "It may be glazed 
 
 section potpourri
 
-the potpourri is a feastitem. description is "It is eclectic. Just what you need for a little ambience. Well, a lot, but you don't have to use it all at once."
+the potpourri is an optional ambiance feastitem. description is "It is eclectic. Just what you need for a little ambience. Well, a lot, but you don't have to use it all at once."
 
 section Fussed Fellow
 
@@ -623,7 +624,7 @@ from-number of fussed fellow is 2806. to-number of fussed fellow is -2705.
 
 section just jello
 
-the just jello is a toeat okaycold feastitem. "Wow! It's just Jell-O but a bunch of different colors."
+the just jello is a toeat okaycold feastitem. "Well, it's just Jell-O but a bunch of different colors. What colors, though!"
 
 volume unsorted
 
@@ -649,6 +650,7 @@ carry out taking inventory (this is the bbgg inventory rule):
 	say "Currently carrying:[line break]";
 	if number of carried cooked feastitems > 0, say "  [list of carried uncooked feastitems] (cooked)[line break]";
 	if number of carried okaycold feastitems > 0, say "  [list of carried okaycold feastitems] (okay cold)[line break]";
+	if number of carried optional feastitems > 0, say "  [list of carried optional feastitems] (optional, for ambience)[line break]";
 	if number of carried cooked feastitems > 0, say "  [list of carried cooked feastitems] (uncooked)[line break]";
 	if number of carried silverware feastitems > 0, say "  [list of carried silverware feastitems] (utensils)[line break]";
 	if number of carried oventhings > 0, say "  [list of carried oventhings] ([if oven is not in reeve row]to repair something, maybe[else]to fix the oven [here-in of reeve row][end if])[line break]";

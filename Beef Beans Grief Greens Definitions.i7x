@@ -89,7 +89,7 @@ the OUT redirect rule is listed before the can't exit when not inside anything r
 
 chapter types
 
-a feastitem is a kind of thing. a feastitem has text called fdesc. a feastitem can be toeat, auxiliary or silverware. a feastitem is usually silverware.
+a feastitem is a kind of thing. a feastitem has text called fdesc. a feastitem can be toeat, auxiliary, ambiance or silverware. a feastitem is usually silverware.
 
 a feastitem can be uncookable, cooked, okaycold, optional or uncooked. a feastitem is usually uncookable.
 
@@ -109,6 +109,13 @@ definition: a feastitem (called fe) is stillneeded:
 	if fe is okaycold, no;
 	if fe is optional, no;
 	yes;
+
+definition: a feastitem (called F) is feastlistable:
+	if F is silverware, no;
+	if F is okaycold, no;
+	if F is ambiance, no;
+	yes;
+
 
 chapter wandering
 
