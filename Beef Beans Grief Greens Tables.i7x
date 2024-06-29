@@ -55,7 +55,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "pie"	"po"	"pi/poe"	vh-pi-poe rule	false	true	true	false	sty sto	vc-pie-po rule	vr-pie-po rule	--	"You can buy a [b]PIE PO[r] [once-now of vc-pie-po rule] you have currency."
 "penny"	"piles"	--	--	false	true	true	false	sty sto	vc-penny-piles rule	vr-penny-piles rule	--	--
 "soy"	"sauce"	"saws"	vh-soy-saws rule	false	true	true	false	toy toss	vc-soy-sauce rule	vr-soy-sauce rule	--	--
-"pot"	"pourri"	--	--	false	true	false	false	slow slurry	vc-potpourri rule	vr-potpourri rule	--	--
+"pot"	"pourri"	--	--	false	true	false	false	slow slurry	vc-potpourri rule	vr-potpourri rule	"potpourri"	--
 "honeyed"	"ham"	--	--	false	true	false	false	slow slurry	vc-honeyed-ham rule	vr-honeyed-ham rule	--	--
 "grey|gray"	"gruel"	--	--	false	true	false	false	slow slurry	vc-grey-gruel rule	vr-grey-gruel rule	--	--
 "just"	"jello"	--	--	false	true	false	false	slow slurry	vc-just-jello rule	vr-just-jello rule	--	--
@@ -93,6 +93,7 @@ this is the vr-prune-pride rule:
 	move vented vials to Gap Goo;
 	move Light Lyres to Squalor Square;
 	move shook shard to Dove n Doubt;
+	guide-tweak;
 
 a goodrhyme rule (this is the vc-spoon-spied rule):
 	if player does not have goon guide, unavailable;
@@ -111,6 +112,10 @@ this is the vr-spoon-spied rule:
 	now sco-spoon-spied is true;
 	say "Well, it is worth a try. Amazingly, on rereading the goon guide, you find tips on locating lost silverware. You missed it with the first read-through, probably because you weren't focused on finding it[if oven-fixed-yet is false].[paragraph break]And here you thought it would just help you fix [ap-ov][else]. Technical and subjective advice--the methods employed will help you figure how to find stuff you misplaced in general[end if]!";
 	now player has spoons;
+	guide-tweak;
+
+to guide-tweak:
+	decrease to-number of goon guide by 2755;
 
 to say ap-ov:
 	say "[if oven is in reeve row]the oven[else]an appliance[end if]"
@@ -848,6 +853,7 @@ this is the vh-soy-saws rule:
 this is the vr-soy-sauce rule:
 	now sco-soy-sauce is true;
 	say "[ross] nods. 'Here you go. Not just packets. A whole big bottle! Don't drink it all at once. Heh.'[paragraph break]You fail to laugh at this joke, and your punishment is to be whisked back from whence you came.[paragraph break]Which, to be honest, is a big help, because you were pretty sure you couldn't find the way back.";
+	now player has soy sauce;
 	drop-player-at Wandering Where;
 
 chapter slow slurry scoring
@@ -1177,9 +1183,8 @@ to rug-check (nu - a number):
 
 to oven-check:
 	if oven-fix-score is 3:
-		say "With the plug, wires and dials, and with help from the goon guide's technical section, you replace the faulty parts of the oven. You place the goon guide somewhere out-of-the-way, yet accessible, for further reference when you need to cook something.";
+		say "With the plug, wires and dials, and with help from the goon guide's technical section, you replace the faulty parts of the oven[if sco-prune-pride is false]. The technical advice is great. Maybe there is some non-technical stuff, too[end if].";
 		now oven-fixed-yet is true;
-		moot goon guide;
 		repeat with OT running through oventhings:
 			moot OT;
 
