@@ -703,11 +703,43 @@ check taking:
 
 volume meta verbs
 
+book abouing
+
+carry out abouting:
+	say "[this-game] is entry [entry-in-series] of [pprr]. It was written for ParserComp 2024.";
+	say "[line break]In such a long series, there's the possibility the concept may get stale. Puzzles overlap. I recognize a word I rhymed before, and I fail to recognize another. But then I also see, oh, this rhyme chain works well. It might be worth writing.";
+	say "[line break]There is a ceiling to all this, though, and a temptation to think, why bother? I said I wouldn't write another game without a specific theme, and, well, when I heard 'beef and beans' I said, no, no way, I couldn't extend it to a whole feast, could I?";
+	say "[line break]I worry I'm stopping too late instead of too soon. But I am pleased with what I have, and I hope you are, too. There was an opportunity for a weird little story. So I hope it flies for you.";
+	say "[line break]The other [pprr] entries are [series-names]. I hope you make time to play them if you haven't, though if you're playing this during ParserComp, do look at all the other entries there first.";
+
 book creditsing
 
 carry out creditsing:
-	say "Thanks to Adam Sommerfield for holding the first ParserComp and the current administrators for keeping it going.";
-	say "Thanks to Onno Brouwer for testing.";
+	say "Thanks to Adam Sommerfield for holding the first ParserComp and fos1 for keeping it going this year, and Christopher Merriner for helping previously.";
+	say "[line break]Thanks to Onno Brouwer for testing.";
+	say "[line break]Thanks to people who tested previous entries in the series. They helped iron out some core bugs that made code reusable. Often they alerted me to stuff that couldn't be wrong";
+	say "[line break]Thanks to you for playing this.";
+
+book optsing
+
+carry out optsing:
+	if guide-gong-warn is true, say "[2da][b]GUIDE GONG[r] will restrict you from solved rooms, [b]PRIDE PRONG[r] will notify you of rooms with just bonus points left, and [b]STRIDE STRONG[r] will remove these bumpers. Currently this is set to [b][if player-room-allow-threshold is bonus-left]PRIDE PRONG[else if player-room-allow-threshold is bonus-left]GUIDE GONG[else]player-room-allow-threshold is bonus-left[end if][r].";
+	if player has leet learner, say "You can [b]READ[r] the leet learner for options there.";
+	the rule succeeds;
+
+book verbsing
+
+carry out verbsing:
+	say "[this-game] doesn't have many custom verbs that are used regularly. In fact, many standard verbs such as [b]PUSH[r] and [b]PULL[r] are disabled, and [b]CLIMB[r] or [b]ATTACK[r], for instance, have minimal implementation. You shouldn't even need [b]TAKE[r]. This is to help you focus on certain phrases you need to guess to advance.";
+	say "[line break]The four cardinal directions and [b]UP[r] are used, as well as [b]X[r] or [b]EXAMINE[r]. [b]READ[r] may provide different output. Use [b]I[r] to take inventory as well.";
+	say "[line break][b]T[r] lets you talk to people or entities.";
+	say "[line break]Useful meta-verbs: [b]OPTS[r] gives game options, and [b]META[r] gives general information commands.";
+	the rule succeeds;
+
+book xyzzying
+
+carry out xyzzying:
+	say "A voice inside your head reminds you of your mission with a slightly ungrammatical 'Eat an['] meet, man!'";
 
 volume game specific verbs
 
