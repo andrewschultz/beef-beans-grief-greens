@@ -94,7 +94,7 @@ the BBGG last point jerkjump check rule is listed last in the check jerkingjumpi
 
 chapter types
 
-a feastitem is a kind of thing. a feastitem has text called fdesc. a feastitem can be toeat, auxiliary, ambiance or silverware. a feastitem is usually silverware.
+a feastitem is a kind of thing. a feastitem has text called fdesc. a feastitem can be toeat, auxiliary, ambiance, drinkware or silverware. a feastitem is usually toeat.
 
 a feastitem can be uncookable, cooked, okaycold, optional or uncooked. a feastitem is usually uncookable.
 

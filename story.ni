@@ -46,9 +46,9 @@ include Beef Beans Grief Greens Beta Testing by Andrew Schultz.
 
 volume feast items
 
-the made mug is an silverware feastitem. fdesc of made mug is "small drinking container(s)".
+the made mug is a drinkware feastitem. fdesc of made mug is "small drinking container(s)".
 
-the jade jug is a silverware feastitem. fdesc of jade jug is "large drink holder".
+the jade jug is a drinkware feastitem. fdesc of jade jug is "large drink holder".
 
 the carrot cake is a toeat feastitem. fdesc of carrot cake is "cake, of course". description is "It looks delicious."
 
@@ -684,6 +684,7 @@ carry out taking inventory (this is the bbgg inventory rule):
 	if number of carried okaycold feastitems > 0, say "  [list of carried okaycold feastitems] (okay cold)[line break]";
 	if number of carried optional feastitems > 0, say "  [list of carried optional feastitems] (optional, for ambience)[line break]";
 	if number of carried cooked feastitems > 0, say "  [list of carried cooked feastitems] (cooked)[line break]";
+	if number of carried drinkware feastitems > 0, say "  [list of carried drinkware feastitems] (for drinking stuff)[line break]";
 	if number of carried silverware feastitems > 0, say "  [list of carried silverware feastitems] (utensils)[line break]";
 	if number of carried oventhings > 0, say "  [list of carried oventhings] ([if oven is not in reeve row]to repair something, maybe[else]to fix the oven [here-in of reeve row][end if])[line break]";
 	now all things carried by player are marked for listing;
