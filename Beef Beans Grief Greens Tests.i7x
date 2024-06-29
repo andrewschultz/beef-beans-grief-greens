@@ -138,6 +138,8 @@ understand "diag" as diaging.
 
 carry out diaging:
 	let count be 0;
+	let got-room be false;
+	let got-thing be false;
 	repeat with X running through things:
 		if thing-hint-rule of x is not trivially false rule, next;
 		increment count;
@@ -151,13 +153,18 @@ carry out diaging:
 			say "==================================[line break]";
 		increment count;
 		say "[count] [x] [room-hint-rule of X].";
-	continue the action;
 	repeat with X running through rooms:
 		if from-number of x is 0:
-			say "[x] [from-number of x] [to-number of x].";
+			now got-room is true;
+			say "Room [x] may need from-number and to-number.";
+	if got-room is false, say "All rooms have from/to.";
 	repeat with X running through rhymables:
+		now got-thing is true;
 		if from-number of x is 0:
-			say "[x] [from-number of x] [to-number of x].";
+			say "Thing [x] may need from-number and to-number.";
+	if got-thing is false, say "All things have from/to.";
+	repeat with F running through feastitems:
+		if fdesc of F is empty, say "[F] needs fdesc.";
 	the rule succeeds;
 
 Beef Beans Grief Greens Tests ends here.

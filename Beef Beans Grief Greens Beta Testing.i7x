@@ -4,7 +4,7 @@ Version 1/240121 of Beef Beans Grief Greens Beta Testing by Andrew Schultz begin
 
 volume transcripts
 
-the transcripting first rule is listed after the the TN debug true rule in the when play begins rulebook.
+the transcripting first rule is listed last in the when play begins rulebook.
 
 when play begins (this is the transcripting first rule):
 	say "This is a nag to switch the transcript on right away. Feel free to ignore it. I just want to make sure you take one if you want to. I feel bad when I mean to and realize I haven't.";
@@ -22,22 +22,30 @@ understand the command "beta" as something new.
 understand "beta" as beta0ing.
 
 carry out beta0ing:
-	say "-1 = to the final room.";
-	say "-2 = to the 2nd-final room.";
-	say "-3 = to the 3rd-final room, just below Reeve Row.";
+	say "1/-1 = to the final room.";
+	say "2/-2 = to the 2nd-final room.";
+	say "3/-3 = to the 3rd-final room, just below Reeve Row.";
+	say "Negatives give you the lurking lump.";
 	the rule succeeds;
 
 chapter betaing
 
-betaing is an action applying to one number.
+betaing is an action out of world applying to one number.
 
 understand "beta [number]" as betaing.
 
 carry out betaing:
 	if player is not in reeve row or current-score > 0, say "You need to be in Reeve Row with no points to do a beta jump. I'm probably being over-cautious here, but I just wanbt to make sure." instead;
-	if the number understood is -1, move player to Compete Compel instead;
-	if the number understood is -2, move player to Happy Hall instead;
-	if the number understood is -3, move player to Trappy Trawl instead;	
+	let x be the number understood;
+	if x < -3 or x > 3:
+		say "You need a number between -3 and 3. Type BETA alone for details." instead;
+	if x < 0:
+		now player has lurking lump;
+		now lump-charges is 25;
+		now x is 0 - x;
+	if x is 1, move player to Compete Compel instead;
+	if x is 2, move player to Happy Hall instead;
+	if x is 3, move player to Trappy Trawl instead;	
 	the rule succeeds;
 
 Beef Beans Grief Greens Beta Testing ends here.
