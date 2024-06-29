@@ -1,0 +1,313 @@
+#--wbase.txt
+#--
+#--main branch file for Beef, Beans, Grief, Greens walkthroughs
+#--  (there are only two, really. Full points, or minimum points.)
+#--
+#--command usage to regenerate walkthroughs after modifying this: rbr.py wbase.txt
+#--command usage to compare walkthrough to what's in the IDE: wch.py
+
+#  SO DON'T USE WDROP.PY. rbr.py incorporates wdrop because of the line below.
+file=walkthrough-pre.txt,min,minimum walkthrough
+file=walkthrough-full-pre.txt,max,maximum walkthrough
+postproc=wdrop.py
+cmdflags=58
+
+@max
+This is a walkthrough for Beef, Beans, Grief, Greens. It details all bonus points.
+
+@min
+This is a quick walkthrough for Beef, Beans, Grief, Greens. It neglects bonus points.
+
+To get an idea of what you need to do here,
+
+> X
+
+There are two things that can help you forward. Riffing on the room or the rug. Let's go with rug first.
+
+Now, you can deal with the rug, if you want. There are two things which make immediate sense and help with the Last Least Fast Feast. There's another one that comes much later.
+
+> MADE MUG (1)
+
+Made or maid.
+
+> JADE JUG (1)
+
+There's one more thing you can get from the rug, but it won't have any immediate applications. So we'll skip it. There's something you can do with the Last Least Fast Feast.
+
+@max
+> SASSED CEASED (1)
+
+There'll be more to do later, but your home in Reeve Row is not well-furnished. Still, you can't just up and exit. You can, however, ...
+
+> LEAVE LO (1)
+
+Okay, Wandering ... where? has four branches, or should. You need to discover them.
+
+We'll go west, because that is slightly more convenient to take care of first, and it helps with some other stuff.
+
+> LAUNDERING LAIR (1)
+
+> LOVIN LOUT (1)
+
+> SHOVIN SHOUT (1)
+
+> OVEN OUT (1)
+
+This sends you back to Reeve Row. That oven's broken, though, and you'll need instructions. You feel a bit too good to read them, but they're useful. First, though, the lovin' lout has 0ne more feat of strength.
+
+> HEAVE HO (1)
+
+> PRUNE PRIDE (1)
+
+Now you need to examine the goon guide.
+
+> X GUIDE
+
+You can find one piece of the oven in the rug.
+
+> PLAYED PLUG (1)
+
+Now let's see what else there is.
+
+> OUT
+
+You are distracted to a side venture, the Stuck State.
+
+> PLUCK PLATE (1)
+
+The Laundering Lair may look a bit different now.
+
+> W
+
+What is this shook shard?
+
+> HOOK HARD (1)
+
+Ah, it leads to Took, Tarred.
+
+> BOOK BARD (1)
+
+> COOK CARD (1)
+
+> LOOK LARD (1)
+
+With everything found, you can retreat to the center.
+
+> SQUANDERING SQUARE (1)
+
+A staller stare! It prevents you from doing as much as you'd like. Now there are three things you can get the stare to notice. But you only need two for it to be distracted.
+
+> BALLER BEAR (1)
+
+> CALLER CARE (1)
+
+There's one more thing you can do here.
+
+@max
+> DOLLAR DARE (1)
+
+But now the bleat-bloat is too distracting.
+
+> NEAT NOTE (1)
+
+> MEAT MOAT (1)
+
+> BEET BOAT (1)
+
+That's all the food you need, but you may also notice the light lyres. They only appear if you've read the goon guide. Perhaps you can salvage something from them.
+
+> FIGHT FIRES (1)
+
+> WHITE WIRES (1)
+
+You're done here now in Squalor Square.
+
+> W
+
+And another side area!
+
+The Toy Toss with Boy Boss Roy Ross.
+
+> SOY SAUCE (1)
+
+Now you are back at Wandering Where.
+
+> MAUNDERING MARE (1)
+
+The Gap, Goo needs to be filled in...
+
+> ZAP ZOO (1)
+
+The tree troop ...
+
+> SEE SOUP (1)
+
+Now some miscellaneous stuff, including silverware...
+
+> NOTICE KNIFE (1)
+
+> DENTED DIALS (1)
+
+> CARROT CAKE (1)
+
+You're clear here, so...
+
+> N
+
+One more diversion!
+
+You must buy food but have no money.
+
+> PENNY PILES (1)
+
+Now what can you buy?
+ 
+> PIE PO (1)
+
+Now there is one more branch to discover.
+
+> PONDERING PAIR (1)
+
+Loulou and Zuzu are looking for one-word things to do. There are seven possibilities, but you need four to advance.
+
+> BOOBOO (1)
+
+> JUJU (1)
+
+> MUUMUU (1)
+
+> TUTU (1)
+
+That's all you need from Loulou and Zuzu specifically, but there's something in the passive pit.
+
+> MASSIVE MITT (1)
+
+@max
+Here are the other three ways to interest Zuzu and Loulou.
+\\
+> CUCKOO (1)
+\\
+> DOODOO (1)
+\\
+> POOHPOOH (1)
+
+> S
+
+
+And now you are not sent to a side area. There is an optional one, though. First, though, let's deal with the bopper bee.
+
+You'd think the bopper bee would hold a copper key, and you'd be right. But it won't give up so quickly!
+
+> FLOPPER FLEA (1)
+
+@max
+Here is the side area.
+\\
+> CHROME CRAW (1)
+\\
+> D
+\\
+Three people have very optional foods they don't want.
+\\
+Moneyed Ma'am:
+\\
+> HONEYED HAM (1)
+\\
+Cray Cruel Fey Fool:
+\\
+> GREY GRUEL (1)
+\\
+Fussed Fellow:
+\\
+> JUST JELLO (1)
+\\
+Now you can do something with the location, too, with the stipulation it doesn't quite smell/rhyme right, but it does...
+\\
+> POTPOURRI (1)
+\\
+> U
+
+> IN
+
+You should be able to go down .... but ... you're not emotionally prepared.
+
+> GRIEVE GROW (1)
+
+And you still don't really have faith.
+
+> BELIEVE BELOW (1)
+
+Now you can go down!
+
+> D
+
+You wind up in the trappy trawl, with no clues. What clues can you look for?
+
+> SCRAPPY SCRAWL (1)
+
+This gives you a clue where to smack the boundaries of the trappy trawl.
+
+> WHAPPY WALL (1)
+
+And voila! You have made it to the Happy Hall! It has its own aura. You have people to summon.
+
+> PAPPY PAUL (1)
+
+> SAPPY SAUL (1)
+
+> LONE LAURA (1)
+
+> KNOWN NORA (1)
+
+Be dressed properly.
+
+> CAPPY CAUL (1)
+
+Time for discussion.
+
+> YAPPY YALL (1)
+
+Time for physical exercise.
+
+> BAPPY BALL (1)
+
+The ceremony is now over! It is time to find yourself.
+
+First you must get somewhere more substantial.
+
+> WHEAT WELL (1)
+
+Now how to jump down without feeling klutzy?
+
+> FEET FELL (1)
+
+Construct a private area.
+
+> SHEET SHELL (1)
+
+Oops! You need to get to the door in time.
+
+> BEAT BELL (1)
+
+You forgot your postman's name.
+
+> MEET MEL (1)
+
+You remember the acquaintance who passed on.
+
+> X LEET LEL
+
+Now there are three ways to end. With a positive, negative or neutral view of Leet Lel. You can undo at the ending.
+
+The neutral is the trickiest, so we'll list it here:
+
+> REPEAT REPEL (1)
+
+@max
+Positive:
+\\
+> SWEET SWELL
+\\
+Negative:
+\\
+> HEAT HELL
