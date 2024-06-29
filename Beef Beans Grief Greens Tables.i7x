@@ -132,7 +132,7 @@ a goodrhyme rule (this is the vc-made-mug rule):
 
 this is the vr-made-mug rule:
 	now sco-made-mug is true;
-	say "A made mug apppears. It will be useful for the meal.";
+	say "A made mug appears. It will be useful for the meal.";
 	now player has made mug;
 	rug-check 2703;
 
@@ -402,7 +402,7 @@ a goodrhyme rule (this is the vc-massive-mitt rule):
 
 this is the vr-massive-mitt rule:
 	now sco-massive-mitt is true;
-	say "Now that you know what to look for, you are patient enough to look through the passive pit. You sift through a remote control, some matches, a paddleball, a thermos, and oil cans with gun holes in them before you uncover a massive mitt.";
+	say "Now that you know what to look for, you are patient enough to look through the passive pit. You sift through a phone book, a remote control, some matches, a paddleball, a thermos, and oil cans with gun holes in them before you uncover a massive mitt.";
 	now player has massive mitt;
 
 section squalor square scoring
@@ -695,7 +695,7 @@ to get-untarred:
 
 this is the shardy rule:
 	if shook shard is touchable:
-		vcp "The shard is calling to you. You must grasp it and find where it leads.";
+		vcp "The shard is calling to you. You must grasp it and find where it leads before searching for anything that concrete. But you feel you're on the right path.";
 		not-yet;
 	if took tarred is visited and player is not in took tarred and cook card is not moot:
 		vcal "You got what you needed from the shard.";
@@ -787,7 +787,7 @@ this is the vh-pi-poe rule:
 
 this is the vr-pie-po rule:
 	now sco-pie-po is true;
-	say "You realize you're kind of broke, and you figure out what the cheapest item on the menu might be. It looks surprisingly good, and it's large, too.[paragraph break]Bri-Bro whispers to you , 'So many people demand the house special. I give them something frou-frou, but it's not really what I enjoy cooking. Now I'll have to pretend to kick you out pushes you out of the establishment, but you complain you don't know the way back. Fortunately, he helps you...";
+	say "You realize you're kind of broke, and you figure out what the cheapest item on the menu might be. It looks surprisingly good, and it's large, too.[paragraph break]Bri-Bro whispers to you , 'So many people demand the house special. I give them something frou-frou, but it's not really what I enjoy cooking. Now I'll have to pretend to kick you out.' He pushes you out of the establishment, but you complain you don't know the way back. Fortunately, he helps you...";
 	now player has pie po;
 	moot penny piles;
 	drop-player-at Wandering Where;
@@ -1084,7 +1084,7 @@ this is the vr-meet-mel rule:
 
 this is the vr-heat-hell rule:
 	now sco-heat-hell is true;
-	say "True, Leet Lel showed you a lot of things that maybe nobody else would show you. But it was always tied up with Lel pointing out your inadequacies, or your shortcomings, or how you should really have noted in the 1st place, without really showing you how to figure these things out for yourself.[paragraph break]And maybe the reason others wouldn't show you is, you were a bit too captivated by Lel. But things leaked out. Others had stories you didn't believe at first. Sometimes, you were just glad that you didn't have Leet Lel's wrath to put up with, or sarcasm. Other times you felt guilt that you wanted more. You also felt as though you were subsisting at times. You felt guilty saying you liked people less exciting, and you even felt reaching out to them left them with the Mark of the Bore.[paragraph break]Leet Lel did a lot for you. But it came with strings attached. Striings beyond just being grateful, or reciprocity. You recall now other people warning you about Leet Lel, but Leet Lel showed you so much at first. Then, less, with time.[paragraph break]Maybe you will remember other awful things, or clues you should have seen, with time. You hope you do not dwell on it, but when it comes up, you won't block it out. Perhaps there are ways you still need to find to let go, and the only way to start is to admit you have frustration still to let go of. A lot of it.[paragraph break]You also think of other people less abrasive than Leet Lel you were genuinely sad to see depart, or those who were less abrasive, and you said 'If I can put up with Leet Lel, I better put up with them.' But you did not really need to.[paragraph break]You will think about Leet Lel when you need to, and it will help you put aside things in the present.";
+	say "True, Leet Lel showed you a lot of things that maybe nobody else would show you. But it was always tied up with Lel pointing out your inadequacies, or your shortcomings, or how you should really have noted in the 1st place, without really showing you how to figure these things out for yourself.[paragraph break]And maybe the reason others wouldn't show you is, you were a bit too captivated by Lel. But things leaked out. Others had stories you didn't believe at first. Sometimes, you were just glad that you didn't have Leet Lel's wrath to put up with, or sarcasm. Other times you felt guilt that you wanted more. You also felt as though you were subsisting at times. You felt guilty saying you liked people less exciting, and you even felt reaching out to them left them with the Mark of the Bore.[paragraph break]Leet Lel did a lot for you. But it came with strings attached. Stirrings beyond just being grateful, or reciprocity. You recall now other people warning you about Leet Lel, but Leet Lel showed you so much at first. Then, less, with time.[paragraph break]Maybe you will remember other awful things, or clues you should have seen, with time. You hope you do not dwell on it, but when it comes up, you won't block it out. Perhaps there are ways you still need to find to let go, and the only way to start is to admit you have frustration still to let go of. A lot of it.[paragraph break]You also think of other people less abrasive than Leet Lel you were genuinely sad to see depart, or those who were less abrasive, and you said 'If I can put up with Leet Lel, I better put up with them.' But you did not really need to.[paragraph break]You will think about Leet Lel when you need to, and it will help you put aside things in the present.";
 	end-stub;
 
 a goodrhyme rule (this is the vc-repeat-repel rule):
@@ -1237,7 +1237,7 @@ this is the try-final-point rule:
 		vcp "You haven't reflected enough for [if eet-ell is 0]a balanced[else if eet-ell < 0]an angry[else if eet-ell > 0]a favorable[end if] judgement, yet.";
 		not-yet;
 	if pete pell is not examined:
-		vcp "You get a sense such a judgement would be more appropriate once you've examined [pete pell].";
+		vcp "You get a sense such a judgment would be more appropriate once you've examined [pete pell].";
 		not-yet;
 	ready;
 
@@ -1274,7 +1274,7 @@ to say reeve-row-nogo:
 	else:
 		say "You can go down, but you can't really explore this small house. You don't need to";
 	say ". There's always back [b]OUT[r]";
-	if copper key is moot, say ", and you unlocked a passasge [b]DOWN[r], too"
+	if copper key is moot, say ", and you unlocked a passage [b]DOWN[r], too"
 
 to say craw-foreshadow:
 	if noun is not down:

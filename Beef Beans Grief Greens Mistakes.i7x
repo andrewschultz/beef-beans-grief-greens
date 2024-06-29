@@ -89,7 +89,7 @@ mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 "huck"	"hate"	--	false	--	"An unhealthy reaction to frustration, to spread it to others."
 "luck"	"late"	--	false	--	"You wait a while hoping for something to happen. Well, you feel a bit more rested."
 "puck"	"pate"	--	false	--	"Alas, there is nobody around to call a hockey puck head."
-"ruck"	"rate"	--	false	--	"You don't have the energy to start a fight, and you wouldn't want one, but you drea of starting one and winning."
+"ruck"	"rate"	--	false	--	"You don't have the energy to start a fight, and you wouldn't want one, but you dread starting one, even one you could win."
 "struck"	"straight"	--	false	--	"You try to jolt yourself into finding a way out."
 "suck"	"sate"	--	false	--	"You have no thirst that needs quenching that way."
 "truck"	"trait"	--	false	--	"<CLEVER REJECT TEXT>"

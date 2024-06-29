@@ -102,7 +102,7 @@ chapter laundering lair
 the thing-hint-rule of shook shard is the hint-shook-shard rule.
 
 this is the hint-shook-shard rule:
-	say "[one of]You need to grfab the shook shard to unleash its power[pplus][or][b]HOOK HARD[r][pminus][cycling]" instead;
+	say "[one of]You need to grab the shook shard to unleash its power[pplus][or][b]HOOK HARD[r][pminus][cycling]" instead;
 
 chapter ooh ooh
 
@@ -281,7 +281,7 @@ this is the hint-player rule:
 	say "There's nothing you have to do about yourself, specifically. You [if gender-variable is 0]can decide[else]already decided[end if] your name." instead;
 
 this is the hint-last-least-fast-feast rule:
-	say "[one of]You just need to [b]EXAMINE[r] or [b]X[r] [fast feast] for reference. However, there is one semi-hidden thing..[pplus][or]There's a bonus point for using it to gain confidence. It's not a nqatural English phrase, but it fits the list[pplus][or]You may get nagged for being the one who was given it. And you can get those voices out of your head[pplus][or][b]SASSED CEASED[r].[cycling]" instead;
+	say "[one of]You just need to [b]EXAMINE[r] or [b]X[r] [fast feast] for reference. However, there is one semi-hidden thing..[pplus][or]There's a bonus point for using it to gain confidence. It's not a natural English phrase, but it fits the list[pplus][or]You may get nagged for being the one who was given it. And you can get those voices out of your head[pplus][or][b]SASSED CEASED[r].[cycling]" instead;
 
 this is the hint-lurking-lump rule:
 	say "You can say [b]LL[r] for the lurking lump to push you through a puzzle at the right time. It can solve any rhyme you wish but has limited charges." instead;
@@ -361,7 +361,7 @@ this is the hint-gap-goo rule:
 
 this is the hint-happy-hall rule:
 	if sco-pappy-paul is false, say "[one of]You need to summon a solemn elder who'd feel at home in the hall[pplus][or]The elder has a proper name and a descriptor[pplus][or][b]PAPPY PAUL[r][pminus][cycling]" instead;
-	if sco-sappy-saul is false, say "[one of]You need to summon omeone cheery, a bit too cheery, who'd feel at home in the hall[pplus][or]This enthusiastic chap has a proper name and a descriptor[pplus][or][b]SAPPY SAUL[r][pminus][cycling]" instead;
+	if sco-sappy-saul is false, say "[one of]You need to summon someone cheery, a bit too cheery, who'd feel at home in the hall[pplus][or]This enthusiastic chap has a proper name and a descriptor[pplus][or][b]SAPPY SAUL[r][pminus][cycling]" instead;
 	if sco-cappy-caul is false, say "[one of]You need to call for your ceremonial outfit[pplus][or]Or rather, your headdress[pplus][or]The words get a bit odd here, but you can maybe see one, and then you'll see the other[pplus][or][b]CAPPY CALL[r][pminus][cycling]" instead;
 	if sco-yappy-yall is false, say "[one of]It is time for chat[pplus][or]But a direct order won't work. You must get everyone chatty[pplus][or][b]YAPPY YALL[r][pminus][cycling]" instead;
 	if sco-bappy-ball is false, say "[one of]It is time for sport. This is an odd first word..[pplus][or]...but then, 'sport' suggests a pretty common second word[pplus][or][b]BAPPY BALL[r][pminus][cycling]" instead;
@@ -394,7 +394,7 @@ this is the hint-ooh-7 rule:
 
 this is the hint-reeve-row rule:
 	if sco-leave-lo is false:
-		say "[one of]You need to find a way out[pplus][or]The way out is related to Reeve Row's name[pplus][or][if core-score > 0]It's a rhyme[else]Another hint will spoil the game mechanic[end if]. How to riff on Reeve Row to get out?[pplus][b]LEAVE LO[r].[stopping]" instead;
+		say "[one of]You need to find a way out[pplus][or]The way out is related to Reeve Row's name[pplus][or][if core-score > 0]It's a rhyme[else]Another hint will spoil the game mechanic[end if]. How to riff on Reeve Row to get out[qplus][b]LEAVE LO[r].[stopping]" instead;
 	say "[done-here]." instead;
 
 this is the hint-slow-slurry rule:

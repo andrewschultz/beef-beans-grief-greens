@@ -253,7 +253,7 @@ this is the verb-checker rule:
 			if there is a wfull entry and my-count is 2:
 				increment my-count;
 		if my-count >= 2:
-[			if debug-state is true, say "DEBUG: processing [check-rule entry], outcome [if rb-out is unavailable outcome]UA[else if rb-out is not-yet outcome]NOT YET[else if rb-out is already-done outcome]already done[else]rady[end if].";]
+[			if debug-state is true, say "DEBUG: processing [check-rule entry], outcome [if rb-out is unavailable outcome]UA[else if rb-out is not-yet outcome]NOT YET[else if rb-out is already-done outcome]already done[else]ready[end if].";]
 			process the check-rule entry;
 			let rb-out be the outcome of the rulebook;
 			if rb-out is the already-done outcome, the rule succeeds;
