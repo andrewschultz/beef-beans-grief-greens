@@ -401,7 +401,7 @@ chapter vented vials
 
 the vented vials are a rhymable. "Vented vials lie cluttered here.". description is "They don't seem to be much use in their present form.".
 
-from-number of dented dials is 2805. to-number of dented dials is 2805.
+from-number of vented vials is 2805. to-number of vented vials is 2805.
 
 chapter dented dials
 

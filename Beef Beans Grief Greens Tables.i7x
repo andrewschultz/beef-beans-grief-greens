@@ -53,7 +53,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "pie"	"po"	"pi/poe"	vh-pi-poe rule	false	true	true	false	sty sto	vc-pie-po rule	vr-pie-po rule	--	"You can buy a [b]PIE PO[r] [once-now of vc-pie-po rule] you have currency."
 "penny"	"piles"	--	--	false	true	true	false	sty sto	vc-penny-piles rule	vr-penny-piles rule	--	--
 "soy"	"sauce"	"saws"	vh-soy-saws rule	false	true	true	false	toy toss	vc-soy-sauce rule	vr-soy-sauce rule	--	--
-"pot"	"pourri"	--	--	false	true	true	false	slow slurry	vc-potpourri rule	vr-potpourri rule	--	--
+"pot"	"pourri"	--	--	false	true	false	false	slow slurry	vc-potpourri rule	vr-potpourri rule	--	--
 "honeyed"	"ham"	--	--	false	true	false	false	slow slurry	vc-honeyed-ham rule	vr-honeyed-ham rule	--	--
 "grey|gray"	"gruel"	--	--	false	true	false	false	slow slurry	vc-grey-gruel rule	vr-grey-gruel rule	--	--
 "just"	"jello"	--	--	false	true	false	false	slow slurry	vc-just-jello rule	vr-just-jello rule	--	--
@@ -460,7 +460,7 @@ this is the vr-caller-care rule:
 a goodrhyme rule (this is the vc-dollar-dare rule):
 	if player is not in squalor square, unavailable;
 	if sco-dollar-dare is true:
-		vcal "You already did this!";
+		vcal "You already alerted the staller stare to the dollar dare.";
 		already-done;
 	ready;
 
@@ -624,6 +624,7 @@ this is the vr-zap-zoo rule:
 	move ferret fake to gap goo;
 	move tree troop to gap goo;
 	move lotus life to gap goo;
+	declue-here;
 
 section items in Gap Goo
 
