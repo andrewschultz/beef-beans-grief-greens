@@ -9,6 +9,59 @@ to current-table-note-x (tn - a table name):
 
 book room tables
 
+table of compete compel guesses
+mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
+"neat"	"nell"	--	false	--	"<CLEVER REJECT TEXT>"
+"seat"	"sell"	--	false	--	"<CLEVER REJECT TEXT>"
+"teet"	"tell"	--	false	--	"<CLEVER REJECT TEXT>"
+"yeet"	"yell"	--	false	--	"<CLEVER REJECT TEXT>"
+
+table of dove n doubt guesses
+mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
+"nuvvin"	"nowt"	--	false	--	"<CLEVER REJECT TEXT>"
+
+table of gap goo guesses
+mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
+"bap"	"boo"	--	false	--	"<CLEVER REJECT TEXT>"
+"cap"	"coo"	--	false	--	"<CLEVER REJECT TEXT>"
+"chap"	"chew"	--	false	--	"<CLEVER REJECT TEXT>"
+"clap"	"clue"	--	false	--	"<CLEVER REJECT TEXT>"
+"crap"	"crew"	--	false	--	"<CLEVER REJECT TEXT>"
+"dap"	"do"	--	false	--	"<CLEVER REJECT TEXT>"
+"fap"	"foo"	--	false	--	"<CLEVER REJECT TEXT>"
+"flap"	"flew|flue"	--	false	--	"<CLEVER REJECT TEXT>"
+"map"	"moo"	--	false	--	"<CLEVER REJECT TEXT>"
+"nap"	"new"	--	false	--	"<CLEVER REJECT TEXT>"
+"pap"	"poo"	--	false	--	"<CLEVER REJECT TEXT>"
+"rap"	"rue"	--	false	--	"<CLEVER REJECT TEXT>"
+"sap"	"sue"	--	false	--	"<CLEVER REJECT TEXT>"
+"slap"	"slew"	--	false	--	"<CLEVER REJECT TEXT>"
+"strap"	"strew"	--	false	--	"<CLEVER REJECT TEXT>"
+"tap"	"two"	--	false	--	"<CLEVER REJECT TEXT>"
+"trap"	"true"	--	false	--	"<CLEVER REJECT TEXT>"
+"whap"	"woo"	--	false	--	"<CLEVER REJECT TEXT>"
+"yap"	"you"	--	false	--	"<CLEVER REJECT TEXT>"
+
+table of happy hall guesses
+mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
+"crappy"	"crawl"	--	false	--	"<CLEVER REJECT TEXT>"
+"mappy"	"mall"	--	false	--	"<CLEVER REJECT TEXT>"
+
+table of hi ho guesses
+mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
+"cry"	"crow"	--	false	--	"<CLEVER REJECT TEXT>"
+"die"	"dough"	--	false	--	"<CLEVER REJECT TEXT>"
+"fie"	"foe"	--	false	--	"<CLEVER REJECT TEXT>"
+"guy"	"go"	--	false	--	"<CLEVER REJECT TEXT>"
+"lie"	"low"	--	false	--	"<CLEVER REJECT TEXT>"
+"my"	"mow"	--	false	--	"<CLEVER REJECT TEXT>"
+"nigh"	"no"	--	false	--	"<CLEVER REJECT TEXT>"
+"rye"	"row"	--	false	--	"<CLEVER REJECT TEXT>"
+"shy"	"show"	--	false	--	"<CLEVER REJECT TEXT>"
+"sigh"	"so"	--	false	--	"<CLEVER REJECT TEXT>"
+"tie"	"toe"	--	false	--	"<CLEVER REJECT TEXT>"
+"why"	"woe|whoah|whoa"	--	false	--	"<CLEVER REJECT TEXT>"
+
 table of reeve row guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 "peeve"	"po|poe"	--	false	--	"Not wise, without a real raven-heal-haven."
@@ -17,6 +70,16 @@ mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 "sleeve"	"slow"	--	false	--	"You don't need to be encumbered by heavy clothes."
 "weave"	"woe"	--	false	--	"You're trying to become less despondent, not more."
 "yeve"	"yo"	--	false	--	"Archaic methods or panaceas won't help you feel better."
+
+table of squalor square guesses
+mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
+"brawler"	"brer"	--	false	--	"<CLEVER REJECT TEXT>"
+"faller"	"fare"	--	false	--	"<CLEVER REJECT TEXT>"
+"hauler"	"hair|hare"	--	false	--	"<CLEVER REJECT TEXT>"
+"loller"	"lair"	--	false	--	"<CLEVER REJECT TEXT>"
+"mauler"	"mare"	--	false	--	"<CLEVER REJECT TEXT>"
+"pallor"	"pair"	--	false	--	"<CLEVER REJECT TEXT>"
+"waller"	"wear|ware"	--	false	--	"<CLEVER REJECT TEXT>"
 
 table of stuck state guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
@@ -29,16 +92,27 @@ mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 "ruck"	"rate"	--	false	--	"You don't have the energy to start a fight, and you wouldn't want one, but you drea of starting one and winning."
 "struck"	"straight"	--	false	--	"You try to jolt yourself into finding a way out."
 "suck"	"sate"	--	false	--	"You have no thirst that needs quenching that way."
+"truck"	"trait"	--	false	--	"<CLEVER REJECT TEXT>"
 "uck"	"ate"	--	false	--	"No, the feast is ahead, and it's going to taste good."
 "yuck"	"yate"	--	false	--	"No eucalyptus tree appears, yucky or otherwise."
 
 table of trappy trawl guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 "happy"	"hall"	in-trappy-trawl rule	false	--	"Yes, that seems like where you need to go. But you'll need to discover a different mechanism to get there."
+"crappy"	"crawl"	--	false	--	"<CLEVER REJECT TEXT>"
+"mappy"	"mall"	--	false	--	"<CLEVER REJECT TEXT>"
 
 this is the in-trappy-trawl rule:
 	if player is in trappy trawl, the rule succeeds;
 	the rule fails;
+
+table of woe worry slow slurry guesses
+mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
+"blow"	"blurry"	--	false	--	"<CLEVER REJECT TEXT>"
+"co"	"curry"	--	false	--	"<CLEVER REJECT TEXT>"
+"flow"	"flurry"	--	false	--	"<CLEVER REJECT TEXT>"
+"foe"	"furry"	--	false	--	"<CLEVER REJECT TEXT>"
+"ho"	"hurry"	--	false	--	"<CLEVER REJECT TEXT>"
 
 book thing tables
 

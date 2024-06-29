@@ -257,6 +257,8 @@ Squalor Square is a wandroom in Roam Raw. wanddir of Squalor Square is east. "De
 
 from-number of squalor square is 2856. to-number of squalor square is 8412. [squalor square,staller stare:baller bear,caller care,dollar dare]
 
+guess-table of squalor square is the table of squalor square guesses.
+
 chapter staller stare
 
 the staller stare is a rhymable in Squalor Square. "It gazes at you intently, freezing you from doing anything sensible or extreme. Perhaps you can distract it by noticing or proposing something weird.".
@@ -344,9 +346,11 @@ the massive mitt is an oventhing. description is "It's not just big, it's well-p
 
 book Dove 'N Doubt
 
-Dove N Doubt is a wandroom in Roam Raw. wanddir of Dove N Doubt is west. printed name of Dove N Doubt is "Dove [']N Doubt". "This is obviously a front for illegal activity."
+Dove N Doubt is a wandroom in Roam Raw. wanddir of Dove N Doubt is west. printed name of Dove N Doubt is "Dove [']N Doubt". "This is obviously a front for illegal activity. Nobody would actually pay money to visit this establishment. I mean, the only worse name could be the Guv [']n Gout."
 
 from-number of dove n doubt is 2755. to-number of dove n doubt is 8262.
+
+guess-table of dove n doubt is the table of dove n doubt guesses.
 
 chapter lovin' lout
 
@@ -384,6 +388,8 @@ book Gap Goo
 Gap Goo is a wandroom in Roam Raw. wanddir of Gap Goo is south. printed name is "Gap, Goo". "[if sco-zap-zoo is false]Ugh, not very lively here.[else if sco-notice-knife is false]The lotus life still adds color, even though you noticed that knife.wa[else]The zoo is now bursting with lotus life![end if]"
 
 from-number of gap goo is 2653. to-number of gap goo is 2653.
+
+guess-table of gap goo is the table of gap goo guesses.
 
 chapter lotus life
 
@@ -432,6 +438,8 @@ book Happy Hall
 Happy Hall is a room in Gnome Gnaw. "The happy hall really does have its own aura, one [if hall-female-guest-score is 0]that mystifies you, but you sense it holds important secrets[else if hall-female-guest-score is 1]you sense you've figured out halfway[else]you are fully comfortable in[end if]."
 
 from-number of happy hall is 2754. to-number of happy hall is 5508.
+
+guess-table of happy hall is the table of happy hall guesses.
 
 after printing the locale description when player is in happy hall:
 	if hall-guest-score is 0:
@@ -512,6 +520,8 @@ Compete Compel is a room in Gnome Gnaw. printed name is "[if sco-feet-fell is fa
 
 from-number of compete compel is 2856. to-number of compete compel is 2754.
 
+guess-table of compete compel is the table of compete compel guesses.
+
 chapter Sheet Shell
 
 Sheet Shell is a thing. description of sheet shell is "It's a place for reading. While you're probably not going to be bugged in the Wheat Well, the sheet shell gives double secret plus solitude, for reading something truly important. Sometimes, you need that.". "A sheet shell sits off to the side[if leet lel is examined], but you already used it to read. Now you must draw your own conclusions[else], for when you need to feel extra privacy reading books and thinking tricky thoughts[end if]."
@@ -566,6 +576,8 @@ Hi Ho I Owe Sty Sto is a room in Dome D'Aww. printed name is "'Hi-Ho, I Owe' Sty
 
 from-number of hi ho i owe sty sto is 7808. to-number of hi ho i owe sty sto is 2652.
 
+guess-table of hi ho is the table of hi ho guesses.
+
 chapter bri bro
 
 Bri Bro is a rhymable in Hi Ho I Owe Sty Sto. "A fellow whose nametag reads BRI-BRO stands here, waiting for what you need to ask for."
@@ -591,6 +603,8 @@ chapter Woe Worry Slow Slurry
 Woe Worry Slow Slurry is a room in Dome D'Aww. "You don't have to stay here, you know. You still worry about missing anything and if you look rude leaving."
 
 from-number of woe worry slow slurry is 5361. to-number of woe worry slow slurry is -4053.
+
+guess-table of woe worry slow slurry is the table of woe worry slow slurry guesses.
 
 section cray cruel fey fool
 
@@ -637,7 +651,7 @@ book examining
 rule for supplying a missing noun when examining:
 	if player has fast feast:
 		if inventory-warn-yet is false:
-			say "[i][bracket][b]NOTE: X[r][i] on its own defaults to [the feast] for a long as you carry it.[close bracket][r]";
+			say "[i][bracket][b]NOTE: X[r][i] on its own defaults to [the feast] for as long as you carry it.[close bracket][r]";
 			now inventory-warn-yet is true;
 		now noun is fast feast;
 	continue the action;
