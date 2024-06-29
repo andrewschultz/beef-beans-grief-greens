@@ -30,6 +30,8 @@ inventory-warn-yet is a truth state that varies.
 
 oven-fixed-yet is a truth state that varies.
 
+cook-card-note is a truth state that varies.
+
 section printing details
 
 name-loc is a truth state that varies.

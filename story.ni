@@ -190,10 +190,12 @@ check examining goon guide when sco-prune-pride is false:
 after examining goon guide when sco-prune-pride is true:
 	say "[fixed letter spacing]";
 	repeat with x running through oventhings:
+		if x is cook card and cook-card-note is false:
+			next;
 		say "([if player has x]X[else] [end if]) [fdesc of x][line break]";
 	say "[variable letter spacing]";
-	if cook card is off-stage:
-		say "[line break]Oh. It appears that there was also a list of extra-special recipes that was in one of the flaps, but it fell out. Maybe by some crazy coincidence, you can find it.";
+	if cook-card-note is false:
+		say "[line break]Oh. It appears that there was also a list of extra-special recipes that was in one of the flaps, but it fell out. [if sco-cook-card is true]Must be that cook card you found[else]Maybe by some crazy coincidence, you can find it[end if].";
 	continue the action;
 
 volume "where" rooms
@@ -383,6 +385,8 @@ the shook shard is a rhymable. description is "It seems to have a weird hold on 
 
 from-number of shook shard is 2755. to-number of shook shard is 2704. [shook shard:hook hard]
 
+check taking shook shard: say "Well, there's a special WAY to take the shook shard." instead;
+
 book Gap Goo
 
 Gap Goo is a wandroom in Roam Raw. wanddir of Gap Goo is south. printed name is "Gap, Goo". "[if sco-zap-zoo is false]Ugh, not very lively here.[else if sco-notice-knife is false]The lotus life still adds color, even though you noticed that knife.wa[else]The zoo is now bursting with lotus life![end if]"
@@ -542,7 +546,7 @@ from-number of stuck state is 2755. to-number of stuck state is 2755.
 
 book Took Tarred
 
-Took Tarred is a room in Dome D'Aww. printed name is "Took, Tarred".
+Took Tarred is a room in Dome D'Aww. printed name is "Took, Tarred". "Wherever the shard took you, it's pretty desolate. But maybe you can find things here."
 
 from-number of took tarred is 2706. to-number of took tarred is 8112. [took tarred:cook card,book bard,look lard]
 
