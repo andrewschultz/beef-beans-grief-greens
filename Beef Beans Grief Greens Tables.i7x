@@ -313,7 +313,7 @@ a goodrhyme rule (this is the vc-booboo rule):
 this is the vr-booboo rule:
 	now sco-booboo is true;
 	say "Sometimes, you just have to complain about small hurts, physical or mental, and exaggerate them. As long as you get back to your regular life soon after, it's not that bad, really. So you and Juju and Zuzu do.";
-	process-cocoa;
+	process-cocoa 2653;
 
 a goodrhyme rule (this is the vc-cuckoo rule):
 	if player is not in ooh ooh, unavailable;
@@ -325,7 +325,7 @@ a goodrhyme rule (this is the vc-cuckoo rule):
 this is the vr-cuckoo rule:
 	now sco-cuckoo is true;
 	say "You discuss, in an entirely sane manner, Swiss clocks with birds in them, and the chorus of the Mackenzie Brothers['] [']80s novelty smash hit [i]Take Off[r].";
-	process-cocoa;
+	process-cocoa 2653;
 
 a goodrhyme rule (this is the vc-doodoo rule):
 	if player is not in ooh ooh, unavailable;
@@ -337,7 +337,7 @@ a goodrhyme rule (this is the vc-doodoo rule):
 this is the vr-doodoo rule:
 	now sco-doodoo is true;
 	say "You patrol the area for animal waste, also remarking on other interesting swear-word replacements.";
-	process-cocoa;
+	process-cocoa 2653;
 
 a goodrhyme rule (this is the vc-juju rule):
 	if player is not in ooh ooh, unavailable;
@@ -349,7 +349,7 @@ a goodrhyme rule (this is the vc-juju rule):
 this is the vr-juju rule:
 	now sco-juju is true;
 	say "You find ways to perform juju, or pretend to.";
-	process-cocoa;
+	process-cocoa 2602;
 
 a goodrhyme rule (this is the vc-muumuu rule):
 	if player is not in ooh ooh, unavailable;
@@ -365,7 +365,7 @@ this is the vh-moomoo rule:
 this is the vr-muumuu rule:
 	now sco-muumuu is true;
 	say "Loulou and Zuzu shrug a bit. Why not? They come in so many different colors.";
-	process-cocoa;
+	process-cocoa 2653;
 
 a goodrhyme rule (this is the vc-poohpooh rule):
 	if player is not in ooh ooh, unavailable;
@@ -377,7 +377,7 @@ a goodrhyme rule (this is the vc-poohpooh rule):
 this is the vr-poohpooh rule:
 	now sco-poohpooh is true;
 	say "You show Loulou and Zuzu ways to dismiss this little thought experiment.";
-	process-cocoa;
+	process-cocoa 2704;
 
 a goodrhyme rule (this is the vc-tutu rule):
 	if player is not in ooh ooh, unavailable;
@@ -389,7 +389,7 @@ a goodrhyme rule (this is the vc-tutu rule):
 this is the vr-tutu rule:
 	now sco-tutu is true;
 	say "Loulou and Zuzu can't dance worth a dang, but that seems worth trying, not for the whole stale 'ha ha dude in a dress' joke but because it does seem to fit the area's general vibe.";
-	process-cocoa;
+	process-cocoa 2602;
 
 section passive pit
 
@@ -1152,8 +1152,24 @@ chapter Ooh Ooh
 to say zl:
 	say "[one of]Zuzu and Loulou[or]Loulou and Zuzu[at random]"
 
-to process-cocoa:
+to process-cocoa (nu - a number):
 	say "[line break]";
+	if ooh-score is 7:
+		now to-number of ooh ooh is -3;
+		now to-number of loulou is -4;
+		now to-number of zuzu is -4;
+	else if ooh-score <= 4:
+		decrease to-number of ooh ooh by nu;
+		decrease to-number of zuzu by nu;
+		decrease to-number of loulou by nu;
+	else:
+		increase to-number of ooh ooh by nu;
+		increase to-number of zuzu by nu;
+		increase to-number of loulou by nu;
+	if ooh-score is 4:
+		now to-number of ooh ooh is 0 - to-number of ooh ooh;
+		now to-number of zuzu is 0 - to-number of zuzu;
+		now to-number of loulou is 0 - to-number of loulou;
 	if ooh-score is 1:
 		say "[zl] seem to warm up to you.";
 	else if ooh-score is 2:
@@ -1176,8 +1192,8 @@ to process-cocoa:
 	else if ooh-score is 7:
 		say "[zl] wipe their brows after this latest feat of imagination. Nothing more to do here, really.";
 	else:
-		say "BUG. This should not be reached, but [ooh-score] should between 1 and 7."
-	
+		say "BUG. This should not be reached, but [ooh-score] should between 1 and 7.";
+
 chapter Trappy Trawl
 
 this is the call-a-pal rule:

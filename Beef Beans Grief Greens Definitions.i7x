@@ -266,6 +266,10 @@ this is the verb-checker rule:
 					say "You've got it backwards! Just flip things around, and it'll be okay.";
 					the rule succeeds;
 			if my-count is 3:
+				if player is in ooh ooh:
+					if number of words in the player's command > 1:
+						say "[zl] shake their heads, each holding up two fingers. Then they nod their heads, holding up one.";
+						the rule succeeds;
 				say "Ooh! You're close. You've probably juggled two valid solutions.";
 				the rule succeeds;
 			abide-nlb the situational-cuing-reject rule;
