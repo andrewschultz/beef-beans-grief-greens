@@ -54,6 +54,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "pluck"	"plate"	--	--	false	true	true	false	stuck state	vc-pluck-plate rule	vr-pluck-plate rule	--	--
 "pie"	"po"	"pi/poe"	vh-pi-poe rule	false	true	true	false	sty sto	vc-pie-po rule	vr-pie-po rule	--	"You can buy a [b]PIE PO[r] [once-now of vc-pie-po rule] you have currency."
 "penny"	"piles"	--	--	false	true	true	false	sty sto	vc-penny-piles rule	vr-penny-piles rule	--	--
+"veggie"	"ville"	--	--	false	true	true	false	edgy ill	vc-veggie-ville rule	vr-veggie-ville rule	--	--
 "soy"	"sauce"	"saws"	vh-soy-saws rule	false	true	true	false	toy toss	vc-soy-sauce rule	vr-soy-sauce rule	--	--
 "pot"	"pourri"	--	--	false	true	false	false	slow slurry	vc-potpourri rule	vr-potpourri rule	"potpourri"	--
 "honeyed"	"ham"	--	--	false	true	false	false	slow slurry	vc-honeyed-ham rule	vr-honeyed-ham rule	--	--
@@ -854,6 +855,23 @@ this is the vr-soy-sauce rule:
 	now sco-soy-sauce is true;
 	say "[ross] nods. 'Here you go. Not just packets. A whole big bottle! Don't drink it all at once. Heh.'[paragraph break]You fail to laugh at this joke, and your punishment is to be whisked back from whence you came.[paragraph break]Which, to be honest, is a big help, because you were pretty sure you couldn't find the way back.";
 	now player has soy sauce;
+	drop-player-at Wandering Where;
+
+chapter edgy ill scoring
+
+a goodrhyme rule (this is the vc-veggie-ville rule):
+	if player is not in edgy ill, unavailable;
+	if sco-flopper-flea is false:
+		vcp "That'd be somewhere to go, once you disposed of the flopper flea.";
+		not-yet;
+	ready;
+
+this is the vr-veggie-ville rule:
+	now sco-veggie-ville is true;
+	say "You realize that the fruit and vegetable groups are sorely underrepresented--well, the greens, at least. It's time to fix that!";
+	say "[line break]You know there will be many stores in the distance. So you begin your trek. On the way you ask the way to Veggie Ville. People are helpful.[paragraph break]Once you get there, you worry you have no money to pay. But when they see the [feast], they recognize what you are here for. Why, they have just the thing: veggies and fruits of irregular shapes, which get thrown out anyway!";
+	say "[line break]They're impressed with what you've gotten so far. They deem you a worthy leader of the ceremony. They wish you luck and provide directions back...";
+	now player has veggies;
 	drop-player-at Wandering Where;
 
 chapter slow slurry scoring

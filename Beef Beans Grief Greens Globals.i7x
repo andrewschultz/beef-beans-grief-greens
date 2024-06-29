@@ -4,7 +4,7 @@ Version 1/240113 of Beef Beans Grief Greens Globals by Andrew Schultz begins her
 
 volume variables
 
-core-max is 58.
+core-max is 59.
 
 max-bonus is 10.
 
@@ -176,6 +176,8 @@ sco-repeat-repel is a truth state that varies.
 eet-ell is a number that varies. [ negative = hell, positive = swell, neutral = repel ]
 
 chapter unsorted globals
+
+sco-veggie-ville is a truth state that varies.
 
 volume test globals
 

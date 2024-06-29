@@ -146,6 +146,7 @@ to decide which room is relevant-wandroom of (rm - a room):
 
 this is the side puzzle rooms rule:
 	consider native-clear-rule of relevant-wandroom of location of player;
+	if the rule failed, continue the action;
 	if Stuck State is unvisited:
 		say "Ugh. Somehow, it's not so easy to wander back. You wonder if you really deserved to find even some of the things you needed for the big feast. It wasn't a real quest, was it? Preoccupied with this, you go off the beaten path...";
 		tangentify Stuck State instead;
@@ -155,15 +156,11 @@ this is the side puzzle rooms rule:
 	if Hi Ho I Owe is unvisited:
 		say "Oh no! Another area completed, another distraction. You failed to watch where you were going, and you wind up by a weird bakery that sells both very expensive and very cheap items. Because you're so broke, service is lacking. You won't get any help perusing the vast selection. In fact, you probably won't get any help unless you ask for something in stock, and it's there. And even then, you'll need to pay for it. This isn't a food pantry.";
 		tangentify Hi Ho I Owe instead;
-	follow the summon-bee rule;
-
-this is the summon-bee rule:
-	if bopper bee is off-stage and number of tangentified rooms is 3:
+	if Edgy Ill is unvisited:
 		say "Oh no! You hear an odd, insistent buzzing in the distance. It comes nearer. A giant bee tries to bop you ... must be a bopper bee! You may have to outsmart it, here.";
-		move bopper bee to Wandering Where;
 		now all wandrooms are tangentified;
-
-[	say "You're worried you'll be whisked off somewhere else after your latest marginal success, but surprisingly, you know your way around well enough now that you see another passage open up. It's weird and winding and you suspect anything you find there will be unnecessary. But still, it might be fun to explore.";]
+		move player to Edgy Ill instead;
+	say "This is a BUG, and a bad one. It leaves the game unwinnable. It should never happen. Please let me know what room this error message occurred in."
 
 check going outside when player is in Reeve Row:
 	if sco-heave-ho is true:

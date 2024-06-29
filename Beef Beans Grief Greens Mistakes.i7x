@@ -11,56 +11,56 @@ book room tables
 
 table of compete compel guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
-"neat"	"nell"	--	false	--	"<CLEVER REJECT TEXT>"
-"seat"	"sell"	--	false	--	"<CLEVER REJECT TEXT>"
-"teet"	"tell"	--	false	--	"<CLEVER REJECT TEXT>"
-"yeet"	"yell"	--	false	--	"<CLEVER REJECT TEXT>"
+"neat"	"nell"	--	false	--	"While you could use a friend named Nell in general, you need to take care of things by yourself, here."
+"seat"	"sell"	--	false	--	"You don't need an audience here, or to profit from them."
+"teet"	"tell"	--	false	--	"When some folks die, there's always that mourner who moans they would've lived longer without drinking. You don't want to be them."
+"yeet"	"yell"	--	false	--	"No, you need much quieter reflection."
 
 table of dove n doubt guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
-"nuvvin"	"nowt"	--	false	--	"<CLEVER REJECT TEXT>"
+"nuvvin"	"nowt"	--	false	--	"You try your hand at street urchin dialect and general defeatism."
 
 table of gap goo guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
-"bap"	"boo"	--	false	--	"<CLEVER REJECT TEXT>"
-"cap"	"coo"	--	false	--	"<CLEVER REJECT TEXT>"
-"chap"	"chew"	--	false	--	"<CLEVER REJECT TEXT>"
-"clap"	"clue"	--	false	--	"<CLEVER REJECT TEXT>"
-"crap"	"crew"	--	false	--	"<CLEVER REJECT TEXT>"
-"dap"	"do"	--	false	--	"<CLEVER REJECT TEXT>"
+"bap"	"boo"	--	false	--	"You don't need violence or taunting here."
+"cap"	"coo"	--	false	--	"You hear no birds cooing, and even if you did, you wouldn't want to stop them."
+"chap"	"chew"	--	false	--	"There is no food court here."
+"clap"	"clue"	--	false	--	"It is worth a try, but no rhyme hits you like a thunderbolt."
+"crap"	"crew"	--	false	--	"The maintenance workers here, who clean up after the animals daily, are strictly behind the scenes."
+"dap"	"do|DUE"	--	false	--	"Alas, there is nobody who would appreciate being dapped up here."
 "fap"	"foo"	--	false	--	"<CLEVER REJECT TEXT>"
 "flap"	"flew|flue"	--	false	--	"<CLEVER REJECT TEXT>"
-"map"	"moo"	--	false	--	"<CLEVER REJECT TEXT>"
-"nap"	"new"	--	false	--	"<CLEVER REJECT TEXT>"
+"map"	"moo"	--	false	--	"You wonder if there are cows around. You figure a way to get there, if there were."
+"nap"	"new"	--	false	--	"Not the time or place to sleep. Not even Reeve Row is, with your tasks."
 "pap"	"poo"	--	false	--	"<CLEVER REJECT TEXT>"
-"rap"	"rue"	--	false	--	"<CLEVER REJECT TEXT>"
+"rap|wrap"	"rue"	--	false	--	"You moan to yourself how rap lost the social conscience it once had."
 "sap"	"sue"	--	false	--	"<CLEVER REJECT TEXT>"
 "slap"	"slew"	--	false	--	"<CLEVER REJECT TEXT>"
 "strap"	"strew"	--	false	--	"<CLEVER REJECT TEXT>"
-"tap"	"two"	--	false	--	"<CLEVER REJECT TEXT>"
+"tap"	"two|too"	--	false	--	"You don't have anyone to tap for anything."
 "trap"	"true"	--	false	--	"<CLEVER REJECT TEXT>"
 "whap"	"woo"	--	false	--	"<CLEVER REJECT TEXT>"
-"yap"	"you"	--	false	--	"<CLEVER REJECT TEXT>"
+"yap"	"you"	--	false	--	"You aren't the conversationally aggresive type."
 
 table of happy hall guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
-"crappy"	"crawl"	--	false	--	"<CLEVER REJECT TEXT>"
-"mappy"	"mall"	--	false	--	"<CLEVER REJECT TEXT>"
+"crappy"	"crawl"	--	false	--	"Minor profanities often help you see what you really need to do. So why not?"
+"mappy"	"mall"	--	false	--	"You have heard rumors of a grand indoor venue where people need a map to get through. And of an eight-bit policeman mouse who chases cats through an odd house."
 
 table of hi ho guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 "cry"	"crow"	--	false	--	"<CLEVER REJECT TEXT>"
 "die"	"dough"	--	false	--	"<CLEVER REJECT TEXT>"
-"fie"	"foe"	--	false	--	"<CLEVER REJECT TEXT>"
-"guy"	"go"	--	false	--	"<CLEVER REJECT TEXT>"
-"lie"	"low"	--	false	--	"<CLEVER REJECT TEXT>"
+"fie"	"foe|pho"	--	false	--	"<CLEVER REJECT TEXT>"
+"guy"	"go"	--	false	--	"Bri-Bro is staying."
+"lie"	"low"	--	false	--	"No, waiting around won't make Bri-Bro give you a handout so you can leave."
 "my"	"mow"	--	false	--	"<CLEVER REJECT TEXT>"
-"nigh"	"no"	--	false	--	"<CLEVER REJECT TEXT>"
+"nigh"	"no"	--	false	--	"You complain to yourself you're never going to buy anything. Sometimes this helps, emotionally, or to kick you into 'but what if I...' mode."
 "rye"	"row"	--	false	--	"<CLEVER REJECT TEXT>"
-"shy"	"show"	--	false	--	"<CLEVER REJECT TEXT>"
-"sigh"	"so"	--	false	--	"<CLEVER REJECT TEXT>"
-"tie"	"toe"	--	false	--	"<CLEVER REJECT TEXT>"
-"why"	"woe|whoah|whoa"	--	false	--	"<CLEVER REJECT TEXT>"
+"shy"	"show"	--	false	--	"Bri-Bro, alas, does not give an oversolicitous 'May I help you?'"
+"sigh"	"so"	--	false	--	"Bri-Bro is not moved to generosity by your poor-little-me act."
+"tie"	"toe"	--	false	--	"You check to see if Bri-Bro's footwear has laces. It does not. Foiled!"
+"why"	"woe|whoah|whoa"	--	false	--	"You question why Bri-Bro won't give you something for free or just tell you what you want. But you don't do anything super-crazy like wonder why you bothered to get so far through this game. (I'm glad you did, though, so thanks!)"
 
 table of reeve row guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
@@ -123,17 +123,24 @@ mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 "pauper|popper"	"pee|pea"	--	false	--	"No, one pea couldn't make a meal or even help."
 "shopper"	"she|shee"	--	false	--	"There is neither need for extended shopping nor a mall to do said shopping in."
 
+guess-table of downed dork is the table of downed dork guesses.
+
+table of downed dork guesses
+mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
+"bound"	"bork"	--	false	--	"Swedish chefs could really make a great meal, but not if they're bound or forced to."
+"pound"	"pork"	--	false	--	"You meant pound OF pork, right? That must be it. No. [if sco-meat-moat is true]You already got some meat here, and it is at least in a sanitary container[else]There is meat here[end if]. But pork, especially in a place like Squalor Square, could contain all sorts of nasty microbes."
+
 table of fast feast guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 "past"	"pieced"	--	false	--	"The past will be pieced at the feast."
 
 table of goon guide guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
-"boon"	"bide"	--	false	--	"<CLEVER REJECT TEXT>"
+"boon"	"bide"	--	false	--	"The guide may provide a boon if you look for it right."
 "dune"	"died"	--	false	--	"<CLEVER REJECT TEXT>"
-"loon"	"lied"	--	false	--	"<CLEVER REJECT TEXT>"
-"rune"	"ride"	--	false	--	"<CLEVER REJECT TEXT>"
-"tune"	"tide|tied"	--	false	--	"<CLEVER REJECT TEXT>"
+"loon"	"lied"	--	false	--	"You recall someone 'exciting' and 'aggressive' who HAD to be telling the truth, as someone would have caught them in their lies before. Actually, nobody had."
+"rune"	"ride"	--	false	--	"The goon guide offers no key to magical transport."
+"tune"	"tide|tied"	--	false	--	"If the goon guide does offer music, it might be a bit rough."
 
 table of rayed rug guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt

@@ -50,9 +50,11 @@ the made mug is a drinkware feastitem. fdesc of made mug is "small drinking cont
 
 the jade jug is a drinkware feastitem. fdesc of jade jug is "large drink holder".
 
-the carrot cake is a toeat feastitem. fdesc of carrot cake is "cake, of course". description is "It looks delicious."
+the carrot cake is a toeat feastitem. fdesc of carrot cake is "cake, of course". description is "Colorful and delicious.".
 
-the soup is a toeat feastitem. fdesc of soup is "an appetizer, sort of". description is "It looks delicious."
+the soup is a toeat feastitem. fdesc of soup is "an appetizer, sort of". description is "It looks delicious. Not too watery and not too chunky.".
+
+the veggies are a toeat feastitem. fdesc of veggies is "greens". description is "All variety of shapes and colors, though green is prominent.".
 
 chapter silverware
 
@@ -243,25 +245,11 @@ to say craw-check:
 	if sides-visited < 4 or sco-chrome-craw is true, continue the action;
 	say ". You've really been around, now, and perhaps you can discover one more way, even though you suspect you don't need it for the full feast. It might add more variety, though"
 
-check going in Wandering Where when bopper bee is in Wandering Where: say "You have a battle to win with the bopper bee first." instead;
-
 chapter chrome craw
 
 The Chrome Craw is a rhymable. "The chrome craw you summoned leads down [if slurry is visited]back to [slurry][else]to somewhere unknown[end if]."
 
 check entering Chrome Craw: try going down instead;
-
-chapter Bopper Bee
-
-the Bopper Bee is a rhymable. "A bopper bee floats about here, agile and bigger and more aggressive than you.". description is "Something looks off about it. Perhaps it can be transformed into a flying animal less harmful."
-
-from-number of bopper bee is 2803. to-number of bopper bee is 2854.
-
-guess-table of bopper bee is the table of bopper bee guesses.
-
-chapter Copper Key
-
-the copper key is a thing. "You hope it opens passage below [here-in of reeve row].".
 
 book Squalor Square
 
@@ -626,7 +614,25 @@ chapter pie po
 
 the pie po is a toeat feastitem. "I guess it is the pie equivalent of a po['] boy sandwich.". printed name is "pie (po['])". fdesc is "tasty pastry"
 
-chapter Woe Worry Slow Slurry
+book Edgy Ill Hedge-y Hill
+
+Edgy Ill Hedge-y Hill is a room in Dome D'Aww. "You sense there is shopping to be done behind the hills. But you can't quite remember the name of the store.".
+
+from-number of edgy ill hedge-y hill is 5507. to-number of edgy ill hedge-y hill is 2805.
+
+chapter Bopper Bee
+
+the Bopper Bee is a rhymable in Edgy Ill. "A bopper bee floats about here, agile and bigger and more aggressive than you. You're not going anywhere until you've disposed of it.". description is "Something looks off about it. Perhaps it can be transformed into a flying animal less harmful."
+
+from-number of bopper bee is 2803. to-number of bopper bee is 2854.
+
+guess-table of bopper bee is the table of bopper bee guesses.
+
+chapter Copper Key
+
+the copper key is a thing. "You hope it opens passage below [here-in of reeve row].".
+
+book Woe Worry Slow Slurry
 
 Woe Worry Slow Slurry is a room in Dome D'Aww. "You don't have to stay here, you know. You still worry about missing anything and if you look rude leaving."
 
