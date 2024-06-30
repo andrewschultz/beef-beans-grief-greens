@@ -11,6 +11,7 @@ book room tables
 
 table of compete compel guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
+"eat"	"l/ell"	--	false	--	"But you're so close to winning. You don't need to take an L now. You don't deserve it."
 "neat"	"nell"	--	false	--	"While you could use a friend named Nell in general, you need to take care of things by yourself, here."
 "seat"	"sell"	--	false	--	"You don't need an audience here, or to profit from them."
 "teet"	"tell"	--	false	--	"When some folks die, there's always that mourner who moans they would've lived longer without drinking. You don't want to be them."
@@ -20,6 +21,10 @@ table of dove n doubt guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 "nuvvin"	"nowt"	--	false	--	"You try your hand at street urchin dialect and general defeatism."
 
+table of edgy ill guesses
+mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
+"wedgie"	"will"	--	false	--	"You pause in fear a moment. That'd hurt. Fortunately, there are no such predators around."
+
 table of gap goo guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 "bap"	"boo"	--	false	--	"You don't need violence or taunting here."
@@ -28,24 +33,29 @@ mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 "clap"	"clue"	--	false	--	"It is worth a try, but no rhyme hits you like a thunderbolt."
 "crap"	"crew"	--	false	--	"The maintenance workers here, who clean up after the animals daily, are strictly behind the scenes."
 "dap"	"do|DUE"	--	false	--	"Alas, there is nobody who would appreciate being dapped up here."
-"fap"	"foo"	--	false	--	"<CLEVER REJECT TEXT>"
-"flap"	"flew|flue"	--	false	--	"<CLEVER REJECT TEXT>"
+"fap"	"foo"	--	false	--	"You look down your nose at solitary activites outside of text adventures."
+"flap"	"flew|flue"	--	false	--	"You espy no flightless waterfowl."
 "map"	"moo"	--	false	--	"You wonder if there are cows around. You figure a way to get there, if there were."
 "nap"	"new"	--	false	--	"Not the time or place to sleep. Not even Reeve Row is, with your tasks."
-"pap"	"poo"	--	false	--	"<CLEVER REJECT TEXT>"
+"pap"	"poo|pooh"	--	false	--	"You mutter to yourself that someone random was full of nonsense."
 "rap|wrap"	"rue"	--	false	--	"You moan to yourself how rap lost the social conscience it once had."
-"sap"	"sue"	--	false	--	"<CLEVER REJECT TEXT>"
-"slap"	"slew"	--	false	--	"<CLEVER REJECT TEXT>"
-"strap"	"strew"	--	false	--	"<CLEVER REJECT TEXT>"
+"sap"	"sue"	--	false	--	"You get mad at lawyers, or maybe you get mad and really need one."
+"slap"	"slew"	--	false	--	"Violence is not the answer, especially not in bunches."
+"strap"	"strew"	--	false	--	"This is a relatively litter-free place. No strap turns up."
 "tap"	"two|too"	--	false	--	"You don't have anyone to tap for anything."
-"trap"	"true"	--	false	--	"<CLEVER REJECT TEXT>"
-"whap"	"woo"	--	false	--	"<CLEVER REJECT TEXT>"
+"trap"	"true"	--	false	--	"You search diligently for a trap that clearly advertises its trappiness. Nothing comes up."
+"whap"	"woo"	--	false	--	"You don't take pleasure in violence."
 "yap"	"you"	--	false	--	"You aren't the conversationally aggresive type."
 
 table of happy hall guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 "crappy"	"crawl"	--	false	--	"Minor profanities often help you see what you really need to do. So why not?"
+"happy"	"hall"	in-trappy-trawl rule	false	--	"Yes, that seems like where you need to go. But you'll need to discover a different mechanism to get there."
 "mappy"	"mall"	--	false	--	"You have heard rumors of a grand indoor venue where people need a map to get through. And of an eight-bit policeman mouse who chases cats through an odd house."
+
+this is the in-trappy-trawl rule:
+	if player is in trappy trawl, the rule succeeds;
+	the rule fails;
 
 table of hi ho guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
@@ -96,25 +106,21 @@ mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 "uck"	"ate"	--	false	--	"No, the feast is ahead, and it's going to taste good."
 "yuck"	"yate"	--	false	--	"No eucalyptus tree appears, yucky or otherwise."
 
-table of trappy trawl guesses
-mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
-"happy"	"hall"	in-trappy-trawl rule	false	--	"Yes, that seems like where you need to go. But you'll need to discover a different mechanism to get there."
-"crappy"	"crawl"	--	false	--	"<CLEVER REJECT TEXT>"
-"mappy"	"mall"	--	false	--	"<CLEVER REJECT TEXT>"
-
-this is the in-trappy-trawl rule:
-	if player is in trappy trawl, the rule succeeds;
-	the rule fails;
-
 table of woe worry slow slurry guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
-"blow"	"blurry"	--	false	--	"<CLEVER REJECT TEXT>"
-"co"	"curry"	--	false	--	"<CLEVER REJECT TEXT>"
-"flow"	"flurry"	--	false	--	"<CLEVER REJECT TEXT>"
-"foe"	"furry"	--	false	--	"<CLEVER REJECT TEXT>"
-"ho"	"hurry"	--	false	--	"<CLEVER REJECT TEXT>"
+"blow"	"blurry"	--	false	--	"Things are hazy enough."
+"co"	"curry"	--	false	--	"Alas, there is no takeout place serving curry for two."
+"flow"	"flurry"	--	false	--	"The slurry stays slow."
+"foe"	"furry"	--	false	--	"You don't need to face a predator."
+"ho"	"hurry"	--	false	--	"Haste makes waste."
 
 book thing tables
+
+table of bleat bloat guesses
+mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
+"deet"	"dote"	--	false	--	"You congratulate the author of this game for the details they added and appreciate the ones they didn't needlessly overwhelm you with."
+"eat"	"oat"	--	false	--	"You have no oats, let alone one. And it wouldn't be very nourishing anyway."
+"fleet"	"float"	--	false	--	"There are docks by Squalor Square, but you don't need a water voyage."
 
 table of bopper bee guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt

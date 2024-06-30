@@ -280,17 +280,27 @@ the bleat bloat is a rhymable. "A bleat bloat floats through here, in tune with 
 
 from-number of bleat bloat is 2755. to-number of bleat bloat is 2704. [bleat bloat:neat note]
 
+guess-table of bleat bloat is table of bleat bloat guesses.
+
 section neat note
+
+the neat note is a rhymable. description of neat note is "It provides an overview of how to get around Squalor Square without getting into trouble."
 
 from-number of neat note is 2704. to-number of neat note is 5408. [neat note:meat moat,beet boat]
 
+guess-table of bleat bloat is table of bleat bloat guesses.
+
 section meat moat
 
-the meat moat is a toeat feastitem. description is "Fortunately, it's a relatively small moat, without too much liquid, so it won't splash around as you carry it.". fdesc is "protein panorama".
+the meat moat is a toeat uncooked feastitem. description is "Fortunately, it's a relatively small moat, without too much liquid, so it won't splash around as you carry it.". fdesc is "protein panorama".
+
+guess-table of meat moat is table of bleat bloat guesses.
 
 section beet boat
 
-the beet boat is a toeat feastitem. description is "It is about as jazzy as beets can get. You're not sure what sort of boat it is, but that doesn't matter.". fdesc is "vast veggies"
+the beet boat is a toeat uncookable feastitem. description is "It is about as jazzy as beets can get. You're not sure what sort of boat it is, but that doesn't matter.". fdesc is "vast veggies"
+
+guess-table of beet boat is table of bleat bloat guesses.
 
 chapter ite ires
 
@@ -434,7 +444,7 @@ book Trappy Trawl
 
 Trappy Trawl is a room in Home Haw. "As so often happens underground, you're at a loss for directions. Going back up isn't really a thing. You're pretty sure, though, that there is a way through, but since it probably leads to the ancient ritual room, of course it's not going to be obvious[if sco-scrappy-scrawl is false]. Perhaps you should look for clues, if you think you know what to look for[else]. You discovered a scrappy scrawl written here, which may let you know where to poke. There's probably a secret passage, or something[end if]."
 
-guess-table of Trappy Trawl is table of Trappy Trawl guesses.
+guess-table of Trappy Trawl is table of Happy Hall guesses.
 
 from-number of trappy trawl is 2805. to-number of trappy trawl is 2856.
 
@@ -620,6 +630,8 @@ book Edgy Ill Hedge-y Hill
 Edgy Ill Hedge-y Hill is a room in Dome D'Aww. "You sense there is shopping to be done behind the hills. But you can't quite remember the name of the store.".
 
 from-number of edgy ill hedge-y hill is 5507. to-number of edgy ill hedge-y hill is 2805.
+
+guess-table of edgy ill is the table of edgy ill guesses.
 
 chapter Bopper Bee
 
