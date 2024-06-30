@@ -165,6 +165,10 @@ thing-hint-rule of bleat bloat is hint-bleat-bloat rule.
 the thing-hint-rule of light lyres is the hint-light-lyres rule.
 thing-hint-rule of neat note is hint-neat-note rule.
 thing-hint-rule of staller stare is hint-staller-stare rule.
+thing-hint-rule of downed dork is hint-downed-dork rule.
+
+this is the hint-downed-dork rule:
+	say "[one of]The downed dork can help you find something[pplus][or]The something you two can find is not very valuable, but it's important for a meal[pplus][or][b]FOUND FORK[r][pminus][cycling]" instead;
 
 this is the hint-bleat-bloat rule:
 	say "[one of]The bleat bloat isn't helping you concentrate or find anything[pplus][or]You need to change the bleat bloat into something more helpful[pplus][or][b]NEAT NOTE[r][pminus][cycling]" instead;
@@ -242,11 +246,14 @@ thing-hint-rule of just jello is hint-just-food rule.
 thing-hint-rule of meat moat is hint-just-food rule.
 thing-hint-rule of pie po is hint-just-food rule.
 thing-hint-rule of soup is hint-just-food rule.
+thing-hint-rule of veggies is hint-just-food rule.
 
 thing-hint-rule of lard is hint-just-ingredients rule.
 thing-hint-rule of soy sauce is hint-just-ingredients rule.
 
 thing-hint-rule of cook card is hint-just-auxiliary rule.
+thing-hint-rule of spoons is hint-just-auxiliary rule.
+thing-hint-rule of forks is hint-just-auxiliary rule.
 thing-hint-rule of knives is hint-just-auxiliary rule.
 thing-hint-rule of plates is hint-just-auxiliary rule.
 thing-hint-rule of made mug is hint-just-auxiliary rule.
@@ -315,6 +322,8 @@ the room-hint-rule of Dove N Doubt is the hint-dove-n-doubt rule.
 
 the room-hint-rule of Gap Goo is the hint-gap-goo rule.
 
+the room-hint-rule of Edgy Ill Hedge-y Hill is hint-edgy-ill rule.
+
 the room-hint-rule of Happy Hall is hint-happy-hall rule.
 
 the room-hint-rule of Ooh Ooh is the hint-ooh-ooh rule.
@@ -353,6 +362,9 @@ this is the hint-dove-n-doubt rule:
 	if sco-lovin-lout is false, say "[one of]It's lonely here. Perhaps you can find a friend[pplus][or]Of course, you won't find anyone upper-crust here[pplus][or]Summon a [b]LOVIN LOUT[r][pminus][cycling]" instead;
 	abide by the hint-oven rule;
 	say "[done-here]" instead;
+
+this is the hint-edgy-ill rule:
+	say "[one of]There's a grocery store [if bopper is in edgy]once[else]now[end if] you've gotten rid of the bee[pplus][or]It sells produce[pplus][or]It's potentially tricky as a proper name, but this game is food-themed[pplus][b]VEGGIE VILLE[r][pminus][cycling]" instead;
 
 this is the hint-gap-goo rule:
 	if sco-zap-zoo is false:
@@ -394,7 +406,7 @@ this is the hint-ooh-7 rule:
 
 this is the hint-reeve-row rule:
 	if sco-leave-lo is false:
-		say "[one of]You need to find a way out[pplus][or]The way out is related to Reeve Row's name[pplus][or][if core-score > 0]It's a rhyme[else]Another hint will spoil the game mechanic[end if]. How to riff on Reeve Row to get out[qplus][b]LEAVE LO[r].[stopping]" instead;
+		say "[one of]You need to find a way out[pplus][or]The way out is related to Reeve Row's name[pplus][or][if core-score > 0]It's a rhyme[else]Another hint will spoil the game mechanic[end if]. How to riff on Reeve Row to get out[qplus][or][b]LEAVE LO[r][pminus][stopping]" instead;
 	say "[done-here]." instead;
 
 this is the hint-slow-slurry rule:
@@ -421,8 +433,8 @@ this is the hint-trappy-trawl rule:
 	abide by the hint-scrappy-scrawl rule instead;
 
 this is the hint-wandering-where rule:
-	if sco-laundering-lair is false, say "[one of]The way west opens up the most, first. But the directions are arbitrary[pplus][or]There are four good rhyme-pairs for Wandering Where[pplus][or][b]LAUNDERING LAIR[r].[stopping]" instead;
-	if wander-score is 4, say "You've found all the passages out." instead;
+	if sco-laundering-lair is false, say "[one of]The way west opens up the most, first. But the directions are arbitrary[pplus][or]There are four good rhyme-pairs for Wandering Where[pplus][or][b]LAUNDERING LAIR[r] to the west[pplus][or][b]PONDERING PAIR to the north[r][pplus][or][b]MAUNDERING MARE to the south[r][pplus][or][b]SQUANDERING SQUARE to the east[r][pminus][cycling]" instead;
+	if wander-score is 4, say "You've found all the passages out[if sco-chrome-craw is false], but there's a secret passage I didn't have time to put in the hints. It's based on observing the status line. I'll be more explicit post-comp[end if]." instead;
 
 Beef Beans Grief Greens Hints ends here.
 
