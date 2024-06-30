@@ -799,6 +799,12 @@ rule for supplying a missing noun when lling (this is the get readings from room
 		abide by the general-ll-locations rule;
 		reject the player's command;
 
+report lling when ooh-clarify is false:
+	if noun is zuzu or noun is loulou:
+		say "Hmm. [noun]'s name is only one word, but it sort of functions as two.";
+		now ooh-clarify is true;
+	continue the action;
+
 chapter talktoing
 
 check talktoing a rhymeperson:
