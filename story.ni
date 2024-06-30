@@ -123,17 +123,10 @@ check going down in Reeve Row:
 	if number of stillneeded feastitems > 0, say "You look at [feast]. You don't have everything, yet[if debug-state is true]([list of stillneeded feastitems])[end if]." instead;
 	if oven-fixed-yet is false, say "But you haven't found a way to cook [the list of toeat feastitems] yet." instead;
 	if sco-chrome-craw is false, max-down;
-	if sco-just-jello is false, max-down;
-	if sco-honeyed-ham is false, max-down;
-	if sco-grey-gruel is false, max-down;
-	if sco-booboo is false, max-down;
-	if sco-cuckoo is false, max-down;
-	if sco-doodoo is false, max-down;
-	if sco-juju is false, max-down;
-	if sco-muumuu is false, max-down;
-	if sco-poohpooh is false, max-down;
-	if sco-tutu is false, max-down;
-	move player to trappy trawl instead;
+	decrease cur-max-bonus by (4 - slurry-score); [ max 4 ]
+	decrease cur-max-bonus by (7 - ooh-score); [ max 3 ]
+	decrease cur-max-bonus by (3 - stare-score); [ max 1 ]
+	move player to trappy trawl instead; [note sassed-ceased is tracked elsewhere. You can still get it until CAPPY CAUL.]
 
 check going outside in Reeve Row when Lovin Lout is in Reeve Row: say "You sense the lout could help with the rayed rug in some way." instead; [??GT must be inoperative]
 
