@@ -225,7 +225,6 @@ a goodrhyme rule (this is the vc-heave-ho rule):
 
 this is the vh-heave-hoe rule:
 	say "You are not in a garden. Try an interjection instead.";
-	the rule succeeds;
 
 this is the vr-heave-ho rule:
 	now sco-heave-ho is true;
@@ -256,7 +255,6 @@ a goodrhyme rule (this is the vc-pondering-pair rule):
 
 this is the vh-pondering-pare rule:
 	say "Yes to thinking, no to disrupting thinking.";
-	the rule succeeds;
 
 this is the vr-pondering-pair rule:
 	now sco-pondering-pair is true;
@@ -323,7 +321,6 @@ a goodrhyme rule (this is the vc-flopper-flea rule):
 
 this is the vh-flopper-flee rule:
 	say "You can't order the bee around, but maybe it's disguised as something else.";
-	the rule succeeds;
 
 this is the vr-flopper-flea rule:
 	now sco-flopper-flea is true;
@@ -389,8 +386,7 @@ a goodrhyme rule (this is the vc-muumuu rule):
 	ready;
 
 this is the vh-moomoo rule:
-	say "Cows aren't quite it, here. You need something singular.";
-	the rule succeeds;
+	say "Cows aren't quite it, here. But you have the right sound(s).";
 
 this is the vr-muumuu rule:
 	now sco-muumuu is true;
@@ -703,7 +699,6 @@ this is the vh-sea-soup rule:
 	else:
 		say "liquid-ish food";
 	say ".";
-	the rule succeeds;
 
 this is the vr-see-soup rule:
 	now sco-see-soup is true;
@@ -760,7 +755,6 @@ a goodrhyme rule (this is the vc-book-bard rule):
 
 this is the vh-book-barred rule:
 	say "It's worth fighting censorship, but here you need to encourage a different art form than reading.";
-	the rule succeeds;
 
 this is the vr-book-bard rule:
 	now sco-book-bard is true;
@@ -832,7 +826,6 @@ this is the vh-pi-poe rule:
 		say "Pi times the radius squared, and you've got something.";
 	else:
 		say "No, not the author, a descriptor.";
-	the rule succeeds;
 
 this is the vr-pie-po rule:
 	now sco-pie-po is true;
@@ -849,7 +842,6 @@ a goodrhyme rule (this is the vc-soy-sauce rule):
 
 this is the vh-soy-saws rule:
 	say "Well, maybe, but you can't eat saws.";
-	the rule succeeds;
 
 this is the vr-soy-sauce rule:
 	now sco-soy-sauce is true;
@@ -968,7 +960,6 @@ a goodrhyme rule (this is the vc-pappy-paul rule):
 
 this is the vh-pappy-pall rule:
 	say "You need a person, not a dark cloud over everything.";
-	the rule succeeds;
 
 this is the vr-pappy-paul rule:
 	now sco-pappy-paul is true;
@@ -985,7 +976,6 @@ a goodrhyme rule (this is the vc-sappy-saul rule):
 
 this is the vh-sappy-sol rule:
 	say "Hmm. The right track, but a too widely smiling sun might not bring the right vibe. Oh, it might scorch everyone to death, too.";
-	the rule succeeds;
 
 this is the vr-sappy-saul rule:
 	now sco-sappy-saul is true;
@@ -1011,7 +1001,6 @@ this is the vr-cappy-caul rule:
 
 this is the vh-cappy-call rule:
 	say "You've called everyone you need. You need something physical.";
-	the rule succeeds;
 
 a goodrhyme rule (this is the vc-yappy-yall rule):
 	abide by the ritual-stuff rule;
@@ -1126,7 +1115,6 @@ a goodrhyme rule (this is the vc-beat-bell rule):
 
 this is the vh-beet-meat-end rule:
 	say "You already got food like that for the feast. You need a verb here.";
-	the rule succeeds;
 
 this is the vr-beat-bell rule:
 	now sco-beat-bell is true;
@@ -1171,7 +1159,6 @@ a goodrhyme rule (this is the vc-sweet-swell rule):
 
 this is the vh-suite-swell rule:
 	say "You don't need to gush about your current living conditions. You need to reflect on the past, though perhaps you will find wonderful things there.";
-	the rule succeeds;
 
 this is the vr-sweet-swell rule:
 	now sco-sweet-swell is true;
