@@ -1,4 +1,4 @@
-This is a quick walkthrough for Beef, Beans, Grief, Greens. It neglects bonus points.
+This is a quick walkthrough for Beef, Beans, Grief, Greens, a submission to ParserComp 2024. It neglects bonus points.
 
 To get an idea of what you need to do here,
 
@@ -42,9 +42,13 @@ Now you need to examine the goon guide.
 
 > X GUIDE
 
+And you can also use the goon guide to find something hidden!
+
+> SPOON SPIED (10)
+
 You can find one piece of the oven in the rug.
 
-> PLAYED PLUG (10)
+> PLAYED PLUG (11)
 
 Now let's see what else there is.
 
@@ -52,7 +56,7 @@ Now let's see what else there is.
 
 You are distracted to a side venture, the Stuck State.
 
-> PLUCK PLATE (11)
+> PLUCK PLATE (12)
 
 The Laundering Lair may look a bit different now.
 
@@ -60,41 +64,45 @@ The Laundering Lair may look a bit different now.
 
 What is this shook shard?
 
-> HOOK HARD (12)
+> HOOK HARD (13)
 
 Ah, it leads to Took, Tarred.
 
-> BOOK BARD (13)
+> BOOK BARD (14)
 
-> COOK CARD (14)
+> COOK CARD (15)
 
-> LOOK LARD (15)
+> LOOK LARD (16)
 
 With everything found, you can retreat to the center.
 
-> SQUANDERING SQUARE (16)
+> SQUANDERING SQUARE (17)
 
 A staller stare! It prevents you from doing as much as you'd like. Now there are three things you can get the stare to notice. But you only need two for it to be distracted.
 
-> DOLLAR DARE (17)
+> BALLER BEAR (18)
 
-> CALLER CARE (18)
+> CALLER CARE (19)
 
 There's one more thing you can do here.
 
 But now the bleat-bloat is too distracting.
 
-> NEAT NOTE (19)
+> NEAT NOTE (20)
 
-> MEAT MOAT (20)
+The downed dork will feel less down once they help you.
 
-> BEET BOAT (21)
+> FOUND FORK (21)
+
+> MEAT MOAT (22)
+
+> BEET BOAT (23)
 
 That's all the food you need, but you may also notice the light lyres. They only appear if you've read the goon guide. Perhaps you can salvage something from them.
 
-> FIGHT FIRES (22)
+> FIGHT FIRES (24)
 
-> WHITE WIRES (23)
+> WHITE WIRES (25)
 
 You're done here now in Squalor Square.
 
@@ -104,27 +112,27 @@ And another side area!
 
 The Toy Toss with Boy Boss Roy Ross.
 
-> SOY SAUCE (24)
+> SOY SAUCE (26)
 
 Now you are back at Wandering Where.
 
-> MAUNDERING MARE (25)
+> MAUNDERING MARE (27)
 
 The Gap, Goo needs to be filled in...
 
-> ZAP ZOO (26)
+> ZAP ZOO (28)
 
 The tree troop ...
 
-> SEE SOUP (27)
+> SEE SOUP (29)
 
 Now some miscellaneous stuff, including silverware...
 
-> NOTICE KNIFE (28)
+> NOTICE KNIFE (30)
 
-> DENTED DIALS (29)
+> DENTED DIALS (31)
 
-> CARROT CAKE (30)
+> CARROT CAKE (32)
 
 You're clear here, so...
 
@@ -134,29 +142,29 @@ One more diversion!
 
 You must buy food but have no money.
 
-> PENNY PILES (31)
+> PENNY PILES (33)
 
 Now what can you buy?
  
-> PIE PO (32)
+> PIE PO (34)
 
 Now there is one more branch to discover.
 
-> PONDERING PAIR (33)
+> PONDERING PAIR (35)
 
 Loulou and Zuzu are looking for one-word things to do. There are seven possibilities, but you need four to advance.
 
-> BOOBOO (34)
+> BOOBOO (36)
 
-> JUJU (35)
+> JUJU (37)
 
-> MUUMUU (36)
+> MUUMUU (38)
 
-> TUTU (37)
+> TUTU (39)
 
 That's all you need from Loulou and Zuzu specifically, but there's something in the passive pit.
 
-> MASSIVE MITT (38)
+> MASSIVE MITT (40)
 
 > S
 
@@ -164,17 +172,21 @@ And now you are not sent to a side area. There is an optional one, though. First
 
 You'd think the bopper bee would hold a copper key, and you'd be right. But it won't give up so quickly!
 
-> FLOPPER FLEA (39)
+> FLOPPER FLEA (41)
+
+And now you need to find a place to shop.
+
+> VEGGIE VILLE (42)
 
 > IN
 
 You should be able to go down .... but ... you're not emotionally prepared.
 
-> GRIEVE GROW (40)
+> GRIEVE GROW (43)
 
 And you still don't really have faith.
 
-> BELIEVE BELOW (41)
+> BELIEVE BELOW (44)
 
 Now you can go down!
 
@@ -182,55 +194,55 @@ Now you can go down!
 
 You wind up in the trappy trawl, with no clues. What clues can you look for?
 
-> SCRAPPY SCRAWL (42)
+> SCRAPPY SCRAWL (45)
 
 This gives you a clue where to smack the boundaries of the trappy trawl.
 
-> WHAPPY WALL (43)
+> WHAPPY WALL (46)
 
 And voila! You have made it to the Happy Hall! It has its own aura. You have people to summon.
 
-> PAPPY PAUL (44)
+> PAPPY PAUL (47)
 
-> SAPPY SAUL (45)
+> SAPPY SAUL (48)
 
-> LONE LAURA (46)
+> LONE LAURA (49)
 
-> KNOWN NORA (47)
+> KNOWN NORA (50)
 
 Be dressed properly.
 
-> CAPPY CAUL (48)
+> CAPPY CAUL (51)
 
 Time for discussion.
 
-> YAPPY YALL (49)
+> YAPPY YALL (52)
 
 Time for physical exercise.
 
-> BAPPY BALL (50)
+> BAPPY BALL (53)
 
 The ceremony is now over! It is time to find yourself.
 
 First you must get somewhere more substantial.
 
-> WHEAT WELL (51)
+> WHEAT WELL (54)
 
 Now how to jump down without feeling klutzy?
 
-> FEET FELL (52)
+> FEET FELL (55)
 
 Construct a private area.
 
-> SHEET SHELL (53)
+> SHEET SHELL (56)
 
 Oops! You need to get to the door in time.
 
-> BEAT BELL (54)
+> BEAT BELL (57)
 
 You forgot your postman's name.
 
-> MEET MEL (55)
+> MEET MEL (58)
 
 You remember the acquaintance who passed on.
 
@@ -240,5 +252,5 @@ Now there are three ways to end. With a positive, negative or neutral view of Le
 
 The neutral is the trickiest, so we'll list it here:
 
-> REPEAT REPEL (56)
+> REPEAT REPEL (59)
 

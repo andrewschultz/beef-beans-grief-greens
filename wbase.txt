@@ -13,10 +13,10 @@ postproc=wdrop.py
 cmdflags=58
 
 @max
-This is a walkthrough for Beef, Beans, Grief, Greens. It details all bonus points.
+This is a walkthrough for Beef, Beans, Grief, Greens, a submission to ParserComp 2024. It details all bonus points.
 
 @min
-This is a quick walkthrough for Beef, Beans, Grief, Greens. It neglects bonus points.
+This is a quick walkthrough for Beef, Beans, Grief, Greens, a submission to ParserComp 2024. It neglects bonus points.
 
 To get an idea of what you need to do here,
 
@@ -36,6 +36,7 @@ There's one more thing you can get from the rug, but it won't have any immediate
 
 @max
 > SASSED CEASED (1)
+###skip test checking (optional explanation)
 
 There'll be more to do later, but your home in Reeve Row is not well-furnished. Still, you can't just up and exit. You can, however, ...
 
@@ -62,6 +63,10 @@ This sends you back to Reeve Row. That oven's broken, though, and you'll need in
 Now you need to examine the goon guide.
 
 > X GUIDE
+
+And you can also use the goon guide to find something hidden!
+
+> SPOON SPIED (1)
 
 You can find one piece of the oven in the rug.
 
@@ -105,10 +110,15 @@ There's one more thing you can do here.
 
 @max
 > DOLLAR DARE (1)
+###skip test checking (optional explanation)
 
 But now the bleat-bloat is too distracting.
 
 > NEAT NOTE (1)
+
+The downed dork will feel less down once they help you.
+
+> FOUND FORK (1)
 
 > MEAT MOAT (1)
 
@@ -190,15 +200,19 @@ Here are the other three ways to interest Zuzu and Loulou.
 > DOODOO (1)
 \\
 > POOHPOOH (1)
+###skip test checking (optional explanation)
 
 > S
-
 
 And now you are not sent to a side area. There is an optional one, though. First, though, let's deal with the bopper bee.
 
 You'd think the bopper bee would hold a copper key, and you'd be right. But it won't give up so quickly!
 
 > FLOPPER FLEA (1)
+
+And now you need to find a place to shop.
+
+> VEGGIE VILLE (1)
 
 @max
 Here is the side area.
