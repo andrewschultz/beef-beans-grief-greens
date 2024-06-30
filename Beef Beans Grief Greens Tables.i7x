@@ -194,14 +194,14 @@ this is the vr-believe-below rule:
 		say "Aha! You wondered if something was below the rug. Now you see the outline of a trap door beneath the rug."; [?? if rug there and you believed, you'd like to remove it]
 	now sco-believe-below is true;
 	declue-here-by 2855;
+	process the Reeve Row check passage down rule;
 
 a goodrhyme rule (this is the vc-leave-lo rule):
 	if player is not in reeve row, unavailable;
 	ready;
 
 this is the vh-leave-low rule:
-	say "You're already feeling a bit low. You don't need to advertise it, or sink lower. Perhaps a potentially hearty interjection would work better.";
-	the rule succeeds;
+	say "You're already feeling a bit low. You don't need to advertise it, or sink lower.[paragraph break]That has to be really, really close, though! Perhaps a potentially hearty interjection would work better.[paragraph break]How to leave with your head held high, with a forceful word showing you're willing to take on the world?";
 
 this is the vr-leave-lo rule:
 	if sco-leave-lo is false:
@@ -436,7 +436,7 @@ section squalor square scoring
 to evaluate-stare:
 	if stare-score is 3:
 		declue-here;
-	if stare-score is 2:
+	else if stare-score is 2:
 		now to-number of squalor square is -2804;
 		now from-number of squalor square is -2856;
 		say "[line break]The staller stare blinks repeatedly. The weirdness you introduced was too much for it. It was ready to judge squalor, but not THIS. It closes its eyes and fades into the wall it was on. Perhaps it will find another place to oversee.[paragraph break]Sadly, it is replaced by an almost-as-distracting bleat-bloat.";
@@ -465,9 +465,9 @@ this is the vr-baller-bear rule:
 	now sco-baller-bear is true;
 	if stare-score < 3:
 		say "The staller stare is visibly affected by the audacity of someone caring about them. Its eyes bug out. Is this a joke! Then the eyes blink. No, it's not crying, of course it's not, it's the squalor.";
-		evaluate-stare;
 	else:
 		say "With the staller stare gone, you leave a bit of hope and genuine solicitousness for the next lost soul who stumbles here.";
+	evaluate-stare;
 
 a goodrhyme rule (this is the vc-caller-care rule):
 	if player is not in squalor square, unavailable;
@@ -480,9 +480,9 @@ this is the vr-caller-care rule:
 	now sco-caller-care is true;
 	if stare-score < 3:
 		say "The staller stare is visibly affected by the audacity of someone caring about them. Its eyes bug out. Is this a joke! Then the eyes blink. No, it's not crying, of course it's not, it's the squalor.";
-		evaluate-stare;
 	else:
 		say "With the staller stare gone, you leave a bit of hope and genuine solicitousness for the next lost soul who stumbles here.";
+	evaluate-stare;
 
 a goodrhyme rule (this is the vc-dollar-dare rule):
 	if player is not in squalor square, unavailable;
@@ -495,9 +495,9 @@ this is the vr-dollar-dare rule:
 	now sco-dollar-dare is true;
 	if stare-score < 3:
 		say "The staller stare is visibly affected by the audacity of someone caring about them. Its eyes bug out. Is this a joke! Then the eyes blink. No, it's not crying, of course it's not, it's the squalor.";
-		evaluate-stare;
 	else:
 		say "With the staller stare gone, you leave a bit of hope and genuine solicitousness for the next lost soul who stumbles here.";
+	evaluate-stare;
 
 section downed dork scoring
 
@@ -718,8 +718,9 @@ a goodrhyme rule (this is the vc-carrot-cake rule):
 
 this is the vr-carrot-cake rule:
 	now sco-carrot-cake is true;
-	say "Splat! The Ferret, Fake runs off to reveal an untouched carrot cake!";
+	say "Splat! The ferret (fake) runs off to reveal an untouched carrot cake! Its generosity sure isn't fake.";
 	now player has carrot cake;
+	moot ferret;
 
 a goodrhyme rule (this is the vc-dented-dials rule):
 	if player is not in gap goo, unavailable;
@@ -924,6 +925,7 @@ this is the vr-just-jello rule:
 	now sco-just-jello is true;
 	say "The [fellow] seems relieved to hand you the Jell-o. It may be just Jell-O, but it's all different kinds of colors and flavors. Including pineapple! You remember when some smart-aleck in middle school said pineapple Jell-O would never be a thing. In fact, that smart-aleck snickered when you were chosen for the ceremony.";
 	now player has just jello;
+	moot fellow;
 
 chapter Trappy Trawl scoring
 
@@ -1221,8 +1223,9 @@ to check-dork-done:
 	else if dork-score is 2:
 		say "The downed dork asks if they should stay or go. Your instincts are to stay. Maybe there's one more thing here.";
 	if dork-score is 3:
-		say "The downed dork looks around. 'Anything else?'[paragraph break]Squalor Square seems pretty empty. You thank them heartily. They say, well, it was nothing, really, and they are sure more with-it people could've found things quicker.[paragraph break]It's tough. You've never done this before, but you sit the downed dork down and explain that, well, if they are good at something, they are good at something, and perhaps there is a reason they are good at something. Perhaps caring about things others find dorky is worthwhile. You've been there. You don't want to be all 'don't let it bother you' or 'cool is a state of mind' but you can't deny the dork's profound help in, well, finding weird stuff you could not have on your own. You apologize if you were too didactic before suggesting they resolve to show a bit of confidence beyond 'turn that frown upside down.' The dork agrees and thanks you. Then you part ways.";
+		say "The downed dork looks around. 'Anything else?'[paragraph break]Squalor Square seems pretty empty. You thank them heartily. They say, well, it was nothing, really, and they are sure more with-it people could've found things quicker.[paragraph break]It's tough. You've never done this before, but you sit the downed dork down and explain that, well, if they are good at something, they are good at something, and perhaps there is a reason they are good at something. Perhaps caring about things others find dorky is worthwhile. You've been there. You don't want to be all 'don't let it bother you' or 'cool is a state of mind' but you can't deny the dork's profound help in, well, finding weird stuff you could not have on your own. You apologize if you were too didactic before suggesting they resolve to show a bit of confidence beyond 'turn that frown upside down.' The dork agrees and thanks you.[paragraph break]There is one last thing. You need to put the neat note where the next person who needs to navigate the area can find it. The downed dork has a surprisingly good suggestion[paragraph break]Your work together done, you part ways.";
 		moot downed dork;
+		moot neat note;
 
 chapter Ooh Ooh
 
