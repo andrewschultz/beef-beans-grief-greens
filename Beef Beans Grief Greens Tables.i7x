@@ -8,7 +8,7 @@ table of verb checks [the order of things to solve is roughly alphabetical, so t
 w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	idid	best-room	check-rule	run-rule	wfull (topic)	think-advice (text)
 "sassed"	"ceased"	--	--	false	true	false	false	--	vc-sassed-ceased rule	vr-sassed-ceased rule	--	--
 "leave"	"lo"	"low"	vh-leave-low rule	false	true	true	false	reeve row	vc-leave-lo rule	vr-leave-lo rule	--	--
-"heave"	"ho"	"hoe"	vh-heave-hoe rule	false	true	true	false	reeve row	vc-heave-ho rule	vr-heave-ho rule	--	"You can [b]HEAVE HO[r] [once-now of vc-heave-ho rule] you have someone who can help you pull the rug up."
+"heave"	"ho"	"hoe"	vh-heave-hoe rule	false	true	true	false	reeve row	vc-heave-ho rule	vr-heave-ho rule	--	"You can [b]HEAVE HO[r] [once-now of vc-heave-ho rule] you have a strong assistant [here-in of reeve row] who can help you pull the rug up."
 "prune"	"pride"	--	--	false	true	true	false	reeve row	vc-prune-pride rule	vr-prune-pride rule	--	--
 "spoon"	"spied"	--	--	false	true	true	false	reeve row	vc-spoon-spied rule	vr-spoon-spied rule	--	"You can get a [b]SPOON SPIED[r] [once-now of vc-spoon-spied rule] you have managed to consult the goon guide with a clear mind."
 "believe"	"below"	--	--	false	true	true	false	reeve row	vc-believe-below rule	vr-believe-below rule	--	--
@@ -23,15 +23,15 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "flopper"	"flea"	"flee"	vh-flopper-flee rule	false	true	true	false	wandering where	vc-flopper-flea rule	vr-flopper-flea rule	--	--
 "chrome"	"craw"	--	--	false	true	false	false	wandering where	vc-chrome-craw rule	vr-chrome-craw rule	--	"You can open the [b]CHROME CRAW[r] [here-in of wandering] [once-now of vc-believe-below rule] you've explored everywhere you can aboveground."
 "massive"	"mitt"	--	--	false	true	true	false	Ooh Ooh	vc-massive-mitt rule	vr-massive-mitt rule	--	--
-"baller"	"bear"	--	--	false	true	true	false	squalor square	vc-baller-bear rule	vr-baller-bear rule	--	--
-"caller"	"care"	--	--	false	true	true	false	squalor square	vc-caller-care rule	vr-caller-care rule	--	--
+"baller"	"bear"	"bawler/bare"	--	false	true	true	false	squalor square	vc-baller-bear rule	vr-baller-bear rule	--	--
+"caller"	"care"	"collar"	--	false	true	true	false	squalor square	vc-caller-care rule	vr-caller-care rule	--	--
 "dollar"	"dare"	--	--	false	true	true	false	squalor square	vc-dollar-dare rule	vr-dollar-dare rule	--	--
 "neat"	"note"	--	--	false	true	true	false	squalor square	vc-neat-note rule	vr-neat-note rule	--	--
 "meat"	"moat"	"meet/mote"	--	false	true	true	false	squalor square	vc-meat-moat rule	vr-meat-moat rule	--	"You can find a [b]MEAT MOAT[r] [once-now of vc-meat-moat rule] you have found something more useful than the bleat bloat."
 "beet"	"boat"	"beat"	--	false	true	true	false	squalor square	vc-beet-boat rule	vr-beet-boat rule	--	"You can find a [b]BEET BOAT[r] [once-now of vc-beet-boat rule] you have found something more useful than the bleat bloat."
 "found"	"fork"	--	--	false	true	true	false	squalor square	vc-found-fork rule	vr-found-fork rule	--	--
 "fight"	"fires"	--	--	false	true	true	false	squalor square	vc-fight-fires rule	vr-fight-fires rule	--	--
-"white"	"wires"	--	--	false	true	true	false	squalor square	vc-white-wires rule	vr-white-wires rule	--	"You can handle the [b]WHITE WIRES[r] [once-now of vc-white-wires rule] the lyres are safe to touch."
+"white"	"wires"	"wight"	--	false	true	true	false	squalor square	vc-white-wires rule	vr-white-wires rule	--	"You can handle the [b]WHITE WIRES[r] [once-now of vc-white-wires rule] the lyres are safe to touch."
 "lovin"	"lout"	--	--	false	true	true	false	dove n doubt	vc-lovin-lout rule	vr-lovin-lout rule	--	--
 "shovin"	"shout"	--	--	false	true	true	false	dove n doubt	vc-shovin-shout rule	vr-shovin-shout rule	--	"You can make a [b]SHOVIN SHOUT[r] [once-now of vc-shovin-shout rule] you have the help of someone stronger."
 "oven"	"out"	--	--	false	true	true	false	dove n doubt	vc-oven-out rule	vr-oven-out rule	--	"You can say [b]OVEN OUT[r] [once-now of vc-oven-out rule] you have someone strong enough to push the oven."
@@ -48,9 +48,9 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "muu"	"muu"	"moo/moomoo"	vh-moomoo rule	false	true	true	false	ooh ooh	vc-muumuu rule	vr-muumuu rule	"mumu/muumuu"	--
 "poo"	"pooh"	--	--	false	true	true	false	ooh ooh	vc-poohpooh rule	vr-poohpooh rule	"poopoo/poohpooh"	--
 "tu"	"tu"	--	--	false	true	true	false	ooh ooh	vc-tutu rule	vr-tutu rule	"tutu"	--
-"book"	"bard"	"barred"	vh-book-barred rule	false	true	true	false	took tarred	vc-book-bard rule	vr-book-bard rule	--	--
-"cook"	"card"	--	--	false	true	true	false	took tarred	vc-cook-card rule	vr-cook-card rule	--	--
-"look"	"lard"	--	--	false	true	true	false	took tarred	vc-look-lard rule	vr-look-lard rule	--	--
+"book"	"bard"	"barred"	vh-book-barred rule	false	true	true	false	took tarred	vc-book-bard rule	vr-book-bard rule	--	"You can [b]BOOK BARD[r] [once-now of vc-book-bard rule] you've seen where the shook shard can take you."
+"cook"	"card"	--	--	false	true	true	false	took tarred	vc-cook-card rule	vr-cook-card rule	--	"You can find a [b]COOK BARD[r] [once-now of vc-cook-card rule] you've seen where the shook shard can take you."
+"look"	"lard"	--	--	false	true	true	false	took tarred	vc-look-lard rule	vr-look-lard rule	--	"You can exclaim [b]LOOK LARD[r] [once-now of vc-look-lard rule] you've seen where the shook shard can take you."
 "pluck"	"plate"	--	--	false	true	true	false	stuck state	vc-pluck-plate rule	vr-pluck-plate rule	--	--
 "pie"	"po"	"pi/poe"	vh-pi-poe rule	false	true	true	false	sty sto	vc-pie-po rule	vr-pie-po rule	--	"You can buy a [b]PIE PO[r] [once-now of vc-pie-po rule] you have currency."
 "penny"	"piles"	--	--	false	true	true	false	sty sto	vc-penny-piles rule	vr-penny-piles rule	--	--
@@ -68,7 +68,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "sappy"	"saul"	"sol"	vh-sappy-sol rule	false	true	true	false	happy hall	vc-sappy-saul rule	vr-sappy-saul rule	--	"You can summon [b]SAPPY SAUL[r] [once-now of vc-sappy-saul rule] you are in the main ritual room."
 "cappy"	"caul"	"call"	vh-cappy-call rule	false	true	true	false	happy hall	vc-cappy-caul rule	vr-cappy-caul rule	--	"You can ask for your [b]CAPPY CAUL[r] [once-now of vc-cappy-caul rule] everyone else is present for the ceremony."
 "yappy"	"yall"	--	--	false	true	true	false	happy hall	vc-yappy-yall rule	vr-yappy-yall rule	--	"You can get everyone [b]YAPPY YALL[r] [once-now of vc-cappy-caul rule] preparations for the ceremony and feast are complete."
-"bappy"	"ball"	--	--	false	true	true	false	happy hall	vc-bappy-ball rule	vr-bappy-ball rule	--	"You can have everyone play [b]BAPPY BALL[r] [once-now of vc-cappy-caul rule] the feast is complete, to burn off calories."
+"bappy"	"ball"	--	--	false	true	true	false	happy hall	vc-bappy-ball rule	vr-bappy-ball rule	--	"You can have everyone play [b]BAPPY BALL[r] [once-now of vc-bappy-ball rule] the feast is complete, to burn off calories."
 "wheat"	"well"	--	--	false	true	true	false	compete compel	vc-wheat-well rule	vr-wheat-well rule	--	--
 "feet"	"fell"	--	--	false	true	true	false	compete compel	vc-feet-fell rule	vr-feet-fell rule	--	"You can claim your [b]FEET FELL[r] [once-now of vc-feet-fell rule] you've envisioned somewhere safe to fall to."
 "sheet"	"shell"	--	--	false	true	true	false	compete compel	vc-sheet-shell rule	vr-sheet-shell rule	--	--
