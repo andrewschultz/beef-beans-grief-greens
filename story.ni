@@ -20,6 +20,8 @@ include Trivial Niceties by Andrew Schultz.
 
 include Intro Restore Skip by Andrew Schultz.
 
+include Old School Verb Total Carnage by Andrew Schultz.
+
 section PRPR includes
 
 include Prime Pro Rhyme Row Universal by Andrew Schultz.
@@ -44,11 +46,17 @@ section Beta Testing - not for release
 
 include Beef Beans Grief Greens Beta Testing by Andrew Schultz.
 
+volume extra stuff
+
+understand the command "pull" as something new.
+understand the command "push" as something new.
+understand the command "move" as something new.
+
 volume feast items
 
-the made mug is a drinkware feastitem. fdesc of made mug is "small drinking container(s)".
+the made mug is a drinkware feastitem. fdesc of made mug is "small drinking container(s)". description is "It's your own special mug, as the leader of the ceremony."
 
-the jade jug is a drinkware feastitem. fdesc of jade jug is "large drink holder".
+the jade jug is a drinkware feastitem. fdesc of jade jug is "large drink holder". description is "While it won't make the liquid in it taste any better, it's a really, really nikce color."
 
 the carrot cake is a toeat feastitem. fdesc of carrot cake is "cake, of course". description is "Colorful and delicious.".
 
