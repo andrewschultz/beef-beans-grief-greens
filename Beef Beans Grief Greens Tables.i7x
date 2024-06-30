@@ -219,7 +219,7 @@ a goodrhyme rule (this is the vc-heave-ho rule):
 		vcal "You already pulled the rug away!";
 		already-done;
 	if sco-oven-out is false:
-		vcp "You try to pull the rayed rug, but it feels glued down. You can't move it by yourself!";
+		vcp "You try to pull the rayed rug, but it feels nailed down in enough places you can only look under a bit. You can't move it by yourself. You need a stronger assistant!";
 		not-yet;
 	ready;
 
@@ -339,7 +339,7 @@ a goodrhyme rule (this is the vc-booboo rule):
 
 this is the vr-booboo rule:
 	now sco-booboo is true;
-	say "Sometimes, you just have to complain about small hurts, physical or mental, and exaggerate them. As long as you get back to your regular life soon after, it's not that bad, really. So you and Juju and Zuzu do.";
+	say "Sometimes, you just have to complain about small hurts, physical or mental, and exaggerate them. As long as you get back to your regular life soon after, it's not that bad, really. So you and [zl] do.";
 	process-cocoa 2653;
 
 a goodrhyme rule (this is the vc-cuckoo rule):
@@ -611,7 +611,7 @@ this is the vr-lovin-lout rule:
 a goodrhyme rule (this is the vc-shovin-shout rule):
 	if player is not in dove n doubt, unavailable;
 	if sco-lovin-lout is false:
-		vcp "A shout won't be enough to move the oven on your own.";
+		vcp "That'd give a boost of energy, but a shout won't be enough to move the oven on your own.";
 		not-yet;
 	if sco-shovin-shout is true:
 		vcal "You already shouted with the lout! It's time to [if sco-oven-out is true]look elsewhere[else]finish removing the oven[end if].";
@@ -803,7 +803,7 @@ a goodrhyme rule (this is the vc-pluck-plate rule):
 
 this is the vr-pluck-plate rule:
 	now sco-pluck-plate is true;
-	say "You find one plate, and it helps you out of your slump, and you find a bunch! You walk out of the fog to ...";
+	say "You find one plate, and it give you a greater morale boost than expected. All of a sudden, you start noticing things around you. Like more plates! And even more plates! Plain plates! Gaudy plates! You're so involved, you don't realize you've walked out of the fog back to ...";
 	now player has plates;
 	drop-player-at wandering where;
 
@@ -812,13 +812,13 @@ chapter Sty Sto scoring
 a goodrhyme rule (this is the vc-penny-piles rule):
 	if player is not in sty sto, unavailable;
 	if sco-penny-piles is true:
-		vcal "You already found many penny piles!";
+		vcal "You already found enough penny piles to buy something!";
 		already-done;
 	ready;
 
 this is the vr-penny-piles rule:
 	now sco-penny-piles is true;
-	say "Reading [isles] carefully, you recognize that it, in fact, covers an isle not far from here (there were so many isles in the book, one was bound to be close,) rumored to hold particularly small-scale wealth. You excuse yourself to go look for it. Bri-Bro doesn't want to let you go at first, because he isn't here to provide a rest area for loiterers.[paragraph break]But you offer some of your considerable inventory as collateral. It was getting kind of heavy, so the break is nice.[paragraph break]You come back having found the penny piles. Now you just need to figure what to buy with it. Bri-Bro isn't going to keep such cheap stuff on the menu.[paragraph break]Bri-Bro gives you your inventory back but does snatch [isles] away, just because it really must be tough to carry all that. Oh, and there might be an island he can loot once he's finished the day's work.";
+	say "Reading [isles] carefully, you recognize that it, in fact, covers an isle not far from here (there were so many isles in the book, one was bound to be close,) rumored to hold particularly small-scale wealth. You excuse yourself to go look for it. Bri-Bro doesn't want to let you go at first, because he isn't here to provide a rest area for loiterers.[paragraph break]But you offer some of your considerable inventory as collateral. It was getting kind of heavy, so the break is nice.[paragraph break]You come back having found the penny piles. Now you just need to figure what to buy with it. Bri-Bro isn't going to keep such cheap stuff on the menu.[paragraph break]Bri-Bro gives you your inventory back but does snatch [isles] away, just because he notices you ARE carrying a lot, and it'd be a shame to drop any of that lovely food. Oh, and there might be an island he can loot once he's finished the day's work. You wouldn't deny him his fun, would you?";
 	now player has penny piles;
 	moot isles;
 
@@ -837,7 +837,7 @@ this is the vh-pi-poe rule:
 
 this is the vr-pie-po rule:
 	now sco-pie-po is true;
-	say "You realize you're kind of broke, and you figure out what the cheapest item on the menu might be. It looks surprisingly good, and it's large, too.[paragraph break]Bri-Bro whispers to you , 'So many people demand the house special. I give them something frou-frou, but it's not really what I enjoy cooking. Now I'll have to pretend to kick you out.' He pushes you out of the establishment, but you complain you don't know the way back. Fortunately, he helps you...";
+	say "You realize you're kind of broke, and you figure out what the cheapest item on the menu might be. It looks surprisingly good, and it's large, too.[paragraph break]Bri-Bro whispers to you, 'So many people demand the house special. I give them something frou-frou, but it's not really what I enjoy cooking. Now I'll have to pretend to kick you out.' He pushes you out of the establishment, but you complain you don't know the way back. Fortunately, he helps you...";
 	now player has pie po;
 	moot penny piles;
 	drop-player-at Wandering Where;
@@ -897,7 +897,7 @@ a goodrhyme rule (this is the vc-honeyed-ham rule):
 
 this is the vr-honeyed-ham rule:
 	now sco-honeyed-ham is true;
-	say "She sniffs and hands you a honeyed ham.";
+	say "She sniffs and hands you a honeyed ham. Her charity done for the day, she brushes you aside with a hand gesture and then walks off impatiently, herself.";
 	now player has honeyed ham;
 	moot moneyed maam;
 
@@ -1149,7 +1149,7 @@ this is the vr-meet-mel rule:
 
 this is the vr-heat-hell rule:
 	now sco-heat-hell is true;
-	say "True, Leet Lel showed you a lot of things that maybe nobody else would show you. But it was always tied up with Lel pointing out your inadequacies, or your shortcomings, or how you should really have noted in the 1st place, without really showing you how to figure these things out for yourself.[paragraph break]And maybe the reason others wouldn't show you is, you were a bit too captivated by Lel. But things leaked out. Others had stories you didn't believe at first. Sometimes, you were just glad that you didn't have Leet Lel's wrath to put up with, or sarcasm. Other times you felt guilt that you wanted more. You also felt as though you were subsisting at times. You felt guilty saying you liked people less exciting, and you even felt reaching out to them left them with the Mark of the Bore.[paragraph break]Leet Lel did a lot for you. But it came with strings attached. Stirrings beyond just being grateful, or reciprocity. You recall now other people warning you about Leet Lel, but Leet Lel showed you so much at first. Then, less, with time.[paragraph break]Maybe you will remember other awful things, or clues you should have seen, with time. You hope you do not dwell on it, but when it comes up, you won't block it out. Perhaps there are ways you still need to find to let go, and the only way to start is to admit you have frustration still to let go of. A lot of it.[paragraph break]You also think of other people less abrasive than Leet Lel you were genuinely sad to see depart, or those who were less abrasive, and you said 'If I can put up with Leet Lel, I better put up with them.' But you did not really need to.[paragraph break]You will think about Leet Lel when you need to, and it will help you put aside things in the present.";
+	say "True, Leet Lel showed you a lot of things that maybe nobody else would show you. But it was always tied up with Lel pointing out your inadequacies, or your shortcomings, or how you should really have noted in the 1st place, without really showing you how to figure these things out for yourself.[paragraph break]And maybe the reason others wouldn't show you is, you were a bit too captivated by Lel. Lel isolated you a bit.[paragraph break]But things leaked out. Others had stories you didn't believe at first. Sometimes, you were just glad that you didn't have Leet Lel's wrath to put up with, or sarcasm. Other times you felt guilt that you wanted more. You also felt as though you were subsisting at times. You felt guilty saying you liked the company of less exciting people, and you even felt reaching out to them left them with the Mark of the Bore.[paragraph break]Leet Lel did a lot for you. But it came with strings attached. Stirrings beyond just being grateful, or reciprocity. You recall now other people warning you about Leet Lel, but Leet Lel showed you so much at first. Then, less, with time.[paragraph break]Maybe you will remember other awful things, or clues you should have seen, noticing a detail here or there. You hope you do not dwell on it, but when it comes up, you won't block it out. Perhaps there are ways you still need to find to let go, and the only way to start is to admit you still have frustration to let go of. A lot of it.[paragraph break]You also think of other people less abrasive than Leet Lel you were genuinely sad to see depart, or those who were less abrasive, and you said 'If I can put up with Leet Lel, I better put up with them.' But you did not really need to.[paragraph break]You will think about Leet Lel when you need to, and it will help you put aside things in the present.";
 	end-stub;
 
 a goodrhyme rule (this is the vc-repeat-repel rule):
@@ -1159,7 +1159,7 @@ a goodrhyme rule (this is the vc-repeat-repel rule):
 
 this is the vr-repeat-repel rule:
 	now sco-repeat-repel is true;
-	say "Leet Lel left a complex legacy. You can't deny the practical help they gave, or the cool songs or movies or books they showed you, but it came with a price. However, things just about balanced out. For all Leet Lel's thoughtlessness and condescension, there was a lot. And yet. There were times Leet Lel would be upset you knew something they didn't.[paragraph break]Taking the good with the bad is a cliche, but you feel you don't need to trumpet how Leet Lel could be a total jerk, and you don't need to feel too indebted for the neat things they showed you.[paragraph break]You do know there were times Leet Lel could be thoughtless and cruel when it seemed easier not to, and there were times Leet Lel would surprise you with something neat, just because. The two were not necessarily bound. You hope to do more of the second with your acquaintances remaining in this world.";
+	say "Leet Lel left a complex legacy. You can't deny the practical help they gave, or the cool songs or movies or books they showed you, but it came with a price. However, things just about balanced out. For all Leet Lel's thoughtlessness and condescension, there was a lot. And yet. There were times Leet Lel would be upset you knew something they didn't.[paragraph break]Behind every good thing they showed you was an insistence you give them all the credit you could, mentally or publicly. They'd often switch between askikng you to blow off their quirks and wanting you to pay more attention. For all they showed you, sometimes you just wished they'd not shove their oar in. But sometimes that motivated you well.[paragraph break]Taking the good with the bad is a cliche, but you feel you don't need to trumpet how Leet Lel could be a total jerk, and you don't need to feel too indebted for the neat things they showed you.[paragraph break]You do know there were times Leet Lel could be thoughtless and cruel when it seemed easier not to, and there were times Leet Lel would surprise you with something neat, just because. The two were not necessarily bound together, and you don't need to ruminate any more about someone who always said to live in the moment. You hope to do more of the second with your acquaintances remaining in this world.";
 	end-stub;
 
 a goodrhyme rule (this is the vc-sweet-swell rule):
@@ -1172,7 +1172,7 @@ this is the vh-suite-swell rule:
 
 this is the vr-sweet-swell rule:
 	now sco-sweet-swell is true;
-	say "You decide that, although little well could be pretty crude at times, they showed you so much, and you really can't put that aside. After all, you didn't focus on the bad stuff, and they work exactly bigoted. You realize you were able to take the good stuff from them and leave the bad parts of their personality, yet, at the same time, you realize they were a bit braver than you, and you could have used even more of that bravery. Your overall evaluation is favorable. After all, how many inventors and such were jerks who left great work for non-jerks to enjoy? You were lucky to have had Leet Lel as part of your life.";
+	say "You decide that, although Leet Lel could be pretty crude at times, they showed you so much, and you really can't put that aside. After all, you didn't focus on the bad stuff, and they weren't exactly bigoted. You realize you were able to take the good stuff from them and leave the bad parts of their personality, yet, at the same time, you realize they were a bit braver than you, and you could have used even more of that bravery. Your overall evaluation is favorable. After all, how many inventors and such were jerks who left great work for non-jerks to enjoy? You were lucky to have had Leet Lel as part of your life.";
 	end-stub;
 
 a goodrhyme rule (this is the vc-heat-hell rule):
@@ -1387,6 +1387,7 @@ Stuck State	"Perhaps finding what you need will get you out of here. You can't s
 Took Tarred	"You can't leave until you've found everything the shook shard offers."
 Toy Toss	"There's a reward, and [boy boss] and the Joy Jaws won't let you leave until you pick the right one."
 Hi Ho	"No, there must be something you can buy on the cheap."
+Edgy Ill Hedge-y Hill	"[if noun is north]You discover the 'Leet Lark, It' Meat Market. But you have enough meat[else if noun is south]The Greeter Grill Sweeter Swill serves all sorts of non-nutritious, but delicious stuff. Not quite, though[else if noun is east]The 'Vim? VERY Dim' Dairy is mis-titled on purpose, but you don't need dairy products[else if noun is west]Linky Lakes Stinky Steaks goes the 'ironic title' route, but it also goes the 'if you have to ask, you can't afford' route[end if]. You sense you're missing a food group, with the directions you tried."
 Woe Worry Slow Slurry	"Only more worries are beyond, you suspect. [if slurry-score is 3]You've got enough side dishes[else if slurry-score is 0]Surely, you can finagle something from the denizens here[else]There's enough more food to pick off here, anyway[end if]."
 
 table of noways (continued)

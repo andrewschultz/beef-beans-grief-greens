@@ -127,7 +127,7 @@ chapter wandering
 a wandroom is a kind of room. A wandroom has a direction called wanddir.
 
 to wander (rm - a room):
-	say "You [if rm is unvisited]think and reminisce, and yes, there is a way[else]You find your way back[end if] to [if rm is unvisited]such a place, though maybe it's easier to go [wanddir of rm] in the future. The name is a bit more specific than what you'd imagined[else][rm][end if].";
+	say "You [if rm is unvisited]think up a storm and realize, there is a way[else]You find your way back[end if] to [if rm is unvisited]such a place, though maybe it's easier to go [wanddir of rm] in the future. The name is a bit more specific than what you'd imagined[else][rm][end if].";
 	if rm is unvisited:
 		open-psg (wanddir of rm) and rm;
 	move player to rm;
@@ -335,9 +335,10 @@ this is the verb-checker rule:
 			choose row hom-row in table of verb checks;
 			if there is a hom-txt-rule entry:
 				abide by the hom-txt-rule entry;
+				say "[line break]The Leet Learner vibrates back and forth rather violently. You must have been very close.";
 			else:
 				say "The Leet Learner shakes back and forth. Something you said sounded right, but it didn't feel right.";
-		abide by the two-too-help rule;
+		abide-nlb the two-too-help rule;
 	if local-ha-half-level > 0:
 		say "The [b]HA HALF[r] button on your Leet Learner lights up [if local-ha-half-level is 1]yellow[one of]--one of the words must work for a future solution[or][stopping][else]green[one of]--one of the words you thought must be right[or][stopping][end if][if new-point-to-get is false]. Oh, wait, you're just switching back to a rhyme you knew before. You must've mis-thought a word[else if brightness is false]. Very dim, though. Perhaps this is a rhyme you don't strictly need to figure to win[else if local-post-hom is true]. Its brightness suggests your rhyme must be very close, indeed[end if].";
 		abide-nlb the ha-half-help rule;
