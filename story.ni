@@ -118,7 +118,7 @@ check going down in Reeve Row:
 	if rug-score < 3, say "It's likely something is under the rug, but ... well, you'd have to be prepared, for a special occasion." instead;
 	if sco-believe-below is false, say "You have no faith you can go down. Maybe you should, but you don't, right now." instead;
 	if sco-heave-ho is false, say "There's an outline leading down, but you can't figure the way to remove it." instead;
-	if sco-grieve-grow is false, say "You're not emotionally ready, yet. Yet.[paragraph break]There's something you need to do here, something independent of adventuring, something not at all concrete.[paragraph break]How can you deal with all the loss and steel yourself, so you know it's worth it, and you're worthy of conducting the ceremony?" instead;
+	if sco-grieve-grow is false, say "You're not emotionally ready, yet. Yet.[paragraph break]There's something you need to do here in Reeve Row, something independent of adventuring, something not at all concrete.[paragraph break]How can you deal with all the loss and steel yourself, so you know it's worth it, and you're worthy of conducting the ceremony?" instead;
 	if copper key is not moot, say "But you haven't unlocked the way down yet." instead;
 	if number of stillneeded feastitems > 0, say "You look at [feast]. You don't have everything, yet[if debug-state is true]([list of stillneeded feastitems])[end if]." instead;
 	if oven-fixed-yet is false, say "But you haven't found a way to cook [the list of toeat feastitems] yet." instead;
@@ -130,11 +130,13 @@ check going down in Reeve Row:
 
 check going outside in Reeve Row when Lovin Lout is in Reeve Row: say "You sense the lout could help with the rayed rug in some way." instead; [??GT must be inoperative]
 
-after printing the locale description for Reeve Row (this is the Reeve Row check passage down rule):
-	if player has copper key and sco-heave-ho is true:
+after printing the locale description for Reeve Row:
+	process the Reeve Row check passage down rule;
+
+this is the Reeve Row check passage down rule:
+	if player has copper key and sco-heave-ho is true and sco-believe-below is true:
 		say "You use the copper key on the trap door down. And it works!";
 		moot copper key;
-	continue the action;
 
 after printing the locale description for reeve row when oven-fixed-yet is false (this is the Reeve Row fix oven rule):
 	oven-check;
@@ -166,7 +168,7 @@ report examining Last Least Fast Feast:
 	repeat with F running through feastlistable feastitems:
 		say "[fixed letter spacing]( [if player has F]X[else]-[end if] ) [fdesc of F][variable letter spacing][line break]";
 		if debug-state is true and fdesc of F is empty, say "NOTE TO SELF: fill in [F].";
-	say "[fixed letter spacing]([number of carried silverware feastitems]/[number of silverware feastitems]) silverware and such[variable letter spacing][if number of carried silverware feastitems > 0] (got [list of silverware feastitems])[end if][line break]";
+	say "[fixed letter spacing]([number of carried silverware feastitems]/[number of silverware feastitems]) silverware and such[variable letter spacing][if number of carried silverware feastitems > 0] (got [list of carried silverware feastitems])[end if][line break]";
 	if Trappy Trawl is unvisited:
 		say "[line break]";
 		if oven is in reeve row:
@@ -175,9 +177,11 @@ report examining Last Least Fast Feast:
 			say "You'll probably need to cook up some ingredients, but you don't have the right appliance(s), yet.";
 	continue the action;
 
+check examining Fast Feast when trappy trawl is visited: say "You've checked all the boxes. All that's left to do is to replace it once the ceremony starts." instead;
+
 chapter rayed rug
 
-the rayed rug is a rhymable in Reeve Row. "A rayed rug covers part of the floor here.". description is "[if rug-score is 3]All the rays are dim now. You've probably gotten all you can out of the rug, which is a lot more than you expected. So, good job[else if rug-score is 2]About one-third of the rays are still bright[else if rug-score is 1]About two-thirds of the rays are still bright[else]You aren't big on decor, but Steve Stowe insisted you keep this rug. It would be useful, he said.[paragraph break]There are a lot of bright rays on the rug[end if]."
+the rayed rug is a rhymable in Reeve Row. "A rayed rug covers part of the floor here[if sco-played-plug is false]. It's oddly bumpy[end if].". description is "[if rug-score is 3]All the rays are dim now. You've probably gotten all you can out of the rug, which is a lot more than you expected. So, good job[else if rug-score is 2]About one-third of the rays are still bright[else if rug-score is 1]About two-thirds of the rays are still bright[else]You aren't big on decor, but Steve Stowe insisted you keep this rug. It would be useful, he said.[paragraph break]There are a lot of bright rays on the rug[end if][if sco-played-plug is false]. It's bumpy, but you're scared to look under it without knowing or figuring what the bump might be[end if]."
 
 understand "rays" as rayed rug when rayed rug is touchable.
 
@@ -198,7 +202,10 @@ from-number of goon guide is 2705. to-number of goon guide is 5510.
 guess-table of goon guide is table of goon guide guesses.
 
 check examining goon guide when sco-prune-pride is false:
-	say "You think about it, but you're no goon. You hope you've lived a clean enough life, you could never be considered one. In your current state of mind, alas, you feel reading a goon guide might raise such suspicions." instead;
+	say "You think about it, but you're no goon. You hope you've lived a clean enough life, you could never be considered one. Your immediate reflexive thought is, reading a goon guide might raise such suspicions, even though there's nobody around to catch you out.[paragraph break]Perhaps fixing your state of mind would help you read the goon guide." instead;
+
+check examining goon guide when sco-spoon-spied is false and oven-fixed-yet is true:
+	say "You did the tough technical stuff. Now there's mostly advice on finding odd dining implements in weird places. But what, specifically, do you ask for? And how?" instead;
 
 after examining goon guide when sco-prune-pride is true:
 	say "[fixed letter spacing]";
@@ -371,11 +378,11 @@ guess-table of dove n doubt is the table of dove n doubt guesses.
 
 chapter lovin' lout
 
-the lovin lout is a person. "A lovin['] lout stands around awkwardly, flexing their muscles, waiting for a command.". description is "They look like a kind sort. Perhaps they were suckered into being a part of  the whole operation. They needed the money, status, friends, etc. They seem to want to make up for it, any way they can.". printed name is "lovin['] lout".
+the lovin lout is a person. "A lovin['] lout stands around awkwardly, flexing their muscles, waiting for a command.". description is "They look like a kind sort. You're not sure if they're a troll or an orc or a mix. They were likely contracted into being a clueless part of the whole sleazy [dove] operation. Maybe they needed the money, status, friends, etc. They don't seem malicious at all.". printed name is "lovin['] lout".
 
 chapter oven
 
-The oven is a thing in Dove N Doubt. "[if player is in reeve row]The oven you moved from [dove] is here, [oven-status][else]An oven is parked here, but it's [oven-move]. Useful for cooking a big meal, you suspect[end if].". description is "[if oven is in dove]Old and heavy, but it's not attached to anything. You could move it[else if oven-fixed-yet is false]Broken. Perhaps you could find replacement parts[else]Serviceable, now you prepared it[end if]."
+The oven is a thing in Dove N Doubt. "[if player is in reeve row]The oven you moved from [dove] is here, [oven-status][else]An oven is parked here, but it's [oven-move]. Useful for cooking a big meal, you suspect[end if].". description is "[if oven is in dove]Old and heavy, but it's not attached to anything. With enough strength, it could be moved[else if oven-fixed-yet is false]Broken. Perhaps you could find replacement parts[else]Serviceable, now you prepared it[end if]."
 
 to say oven-status:
 	if oven-fix-score is 3:
@@ -404,7 +411,7 @@ check taking shook shard: say "Well, there's a special WAY to take the shook sha
 
 book Gap Goo
 
-Gap Goo is a wandroom in Roam Raw. wanddir of Gap Goo is south. printed name is "Gap, Goo". "[if sco-zap-zoo is false]Ugh, not very lively here.[else if sco-notice-knife is false]The lotus life still adds color, even though you noticed that knife.wa[else]The zoo is now bursting with lotus life![end if]"
+Gap Goo is a wandroom in Roam Raw. wanddir of Gap Goo is south. printed name is "[if sco-zap-zoo is true](Zap!) Zoo[else]Gap, Goo[end if]". "[if sco-zap-zoo is false]Ugh, not very lively here.[else if sco-notice-knife is true]The lotus life still adds color, even though you noticed that knife.[else]The zoo is now bursting with lotus life![end if]"
 
 from-number of gap goo is 2653. to-number of gap goo is 2653.
 
@@ -428,7 +435,7 @@ the dented dials are an oventhing. description is "They look very old and dingy 
 
 chapter tree troop
 
-the tree troop is a plural-named rhymable. description is "A tree troop sits around, waiting for you to ask for just the right thing. But you get the sense you could even gesture somehow.". "They're just sitting around.".
+the tree troop is a plural-named rhymable. "A tree troop sits around, waiting for you to ask for just the right thing. But you get the sense you could even gesture somehow.". description is "They're just miscellaneous entities you can't put your finger on, all sitting around.".
 
 from-number of tree troop is 2705. to-number of tree troop is 2654.
 
@@ -464,13 +471,13 @@ after printing the locale description when player is in happy hall:
 	if hall-guest-score is 0:
 		say "The hall is very empty right now. It's where you're supposed to be for the ritual. But you need others along.";
 	else if hall-guest-score < 4:
-		say "So, whom else to invite?";
+		say "[line break]So, whom else to invite?";
 	else if sco-cappy-caul is false:
-		say "You realize you must don the ritual eccentric headwear at this point.";
+		say "[line break]You realize you must don the ritual eccentric headwear at this point.";
 	else if sco-yappy-yall is false:
-		say "It's been silent too long. How to generate discussion?";
+		say "[line break]It's been silent too long. How to generate discussion?";
 	else:
-		say "Now you've eaten, it is time for sport. Eccentric sport, perhaps, but physical exercise helps you process emotions in ways speaking can't.";
+		say "[line break]Now you've eaten, it is time for sport. Eccentric sport, perhaps, but physical exercise helps you process emotions in ways speaking can't.";
 	continue the action;
 
 for printing a locale paragraph about a rhymeperson (called rp) in Happy Hall:
@@ -507,6 +514,12 @@ to say they-he-she-trawl:
 	else:
 		say "he is"
 
+chapter own aura
+
+the own aura is scenery in Happy Hall. "You can't really see it, but you can feel it.".
+
+from-number of own aura is 5357. to-number of own aura is 5459.
+
 chapter Pappy Paul
 
 Pappy Paul is a male rhymeperson. description is "Pappy Paul knows he is a bit too serious at times, but it's who he is. [if sco-sappy-saul is true]Fortunately, Sappy Saul is here to balance him out[else]He needs someone to balance him out[end if]."
@@ -535,11 +548,15 @@ other-guy of Lone Laura is Known Nora.
 
 book Wheat Well
 
-Compete Compel is a room in Gnome Gnaw. printed name is "[if sco-feet-fell is false]Compete! Compel![else]Wheat Well[end if]"
+Compete Compel is a room in Gnome Gnaw. printed name is "[if sco-feet-fell is false]Compete! Compel![else]Wheat Well[end if]". "You feel an urge to show you're the greatest. And yet you also recognize how unhealthy this is. You need a way out, and you need a place to go, but there's no easy way to walk. How could you slip away, and where?"
 
 from-number of compete compel is 2856. to-number of compete compel is 2754.
 
 guess-table of compete compel is the table of compete compel guesses.
+
+report lling Compete Compel when sco-meet-mel is true:
+	say "Hm. That's weird. A fractional number. But you only have one thing left to do, you feel. The leet learner must be offering up a choice.";
+	continue the action;
 
 chapter Sheet Shell
 
@@ -567,7 +584,7 @@ from-number of took tarred is 2706. to-number of took tarred is 8112. [took tarr
 
 chapter cook card
 
-the cook card is an oventhing. description is "Ah! The card of very special recipes that fell out of the goon guide!". fdesc is "a missing insert from the goon guide (okay, you wrote that in, just in case)".
+the cook card is an oventhing. description is "It's the card of very special recipes that fell out of the goon guide! You'd love to study it more, but you should really stick to your quest.". fdesc is "a missing insert from the goon guide (okay, you wrote that in, just in case)".
 
 some lard is a toeat feastitem. description is "Not much to say about it. It's lard. I'm not an expert in these things. I just know you shouldn't use too much of it, and you can burn your dish if you forget. But you probably knew that, too.". fdesc is "prevents sticking"
 
@@ -627,7 +644,7 @@ the pie po is a toeat feastitem. "I guess it is the pie equivalent of a po['] bo
 
 book Edgy Ill Hedge-y Hill
 
-Edgy Ill Hedge-y Hill is a room in Dome D'Aww. "You sense there is shopping to be done behind the hills. But you can't quite remember the name of the store.".
+Edgy Ill Hedge-y Hill is a room in Dome D'Aww. "You sense there is shopping to be done behind the hills. But you can't quite remember the name of the store. You also sense behind each hill to each direction is a store like the one you want, but it isn't what you want.".
 
 from-number of edgy ill hedge-y hill is 5507. to-number of edgy ill hedge-y hill is 2805.
 
@@ -649,7 +666,7 @@ book Woe Worry Slow Slurry
 
 Woe Worry Slow Slurry is a room in Dome D'Aww. "You don't have to stay here, you know. You still worry about missing anything and if you look rude leaving."
 
-from-number of woe worry slow slurry is 5361. to-number of woe worry slow slurry is -4053.
+from-number of woe worry slow slurry is 5361. to-number of woe worry slow slurry is -2653.
 
 guess-table of woe worry slow slurry is the table of woe worry slow slurry guesses.
 
@@ -675,7 +692,7 @@ the honeyed ham is a toeat okaycold feastitem. description is "It may be glazed 
 
 section potpourri
 
-the potpourri is an optional ambiance feastitem. description is "It is eclectic. Just what you need for a little ambience. Well, a lot, but you don't have to use it all at once."
+the potpourri is an optional ambiance feastitem. description is "It is eclectic. Just what you need for a little ambiance. Well, a lot, but you don't have to use it all at once."
 
 section Fussed Fellow
 
@@ -710,8 +727,9 @@ the bbgg inventory rule is listed instead of the print standard inventory rule i
 carry out taking inventory (this is the bbgg inventory rule):
 	say "Currently carrying:[line break]";
 	if number of carried uncooked feastitems > 0, say "  [list of carried uncooked feastitems] (uncooked)[line break]";
+	if number of carried uncookable feastitems > 0, say "  [list of carried uncookable feastitems] (uncookable)[line break]";
 	if number of carried okaycold feastitems > 0, say "  [list of carried okaycold feastitems] (okay cold)[line break]";
-	if number of carried optional feastitems > 0, say "  [list of carried optional feastitems] (optional, for ambience)[line break]";
+	if number of carried optional feastitems > 0, say "  [list of carried optional feastitems] (optional, for ambiance)[line break]";
 	if number of carried cooked feastitems > 0, say "  [list of carried cooked feastitems] (cooked)[line break]";
 	if number of carried drinkware feastitems > 0, say "  [list of carried drinkware feastitems] (for drinking stuff)[line break]";
 	if number of carried silverware feastitems > 0, say "  [list of carried silverware feastitems] (utensils)[line break]";
@@ -746,7 +764,7 @@ report taking inventory when Happy Hall is not visited:
 book taking
 
 check taking:
-	if noun is rayed rug, say "The rayed rug is [if sco-heave-ho is true]better off in a corner[else]too tough to pull. You'd need help to remove it[end if]." instead;
+	if noun is rayed rug, say "The rayed rug is [if sco-heave-ho is true]better off in a corner[else]too tough to pull. It isn't totally nailed down, as you can reach under for stuff you need, but you'd need help to remove it[end if]." instead;
 	if player does not have noun, say "You don't need to take anything in [this-game]." instead;
 
 volume meta verbs
@@ -963,7 +981,7 @@ this is the show-misses rule:
 	say "Note that, because there are three different endings, you'll automatically have 'missed' two of them, which I don't want to spoil. You can [b]UNDO[r] to track the others down.";
 	say "[line break]";
 	if cur-bonus is max-bonus:
-		say "You missed nothing else, though. Good job!";
+		say "You found everything before the finale, though. Good job!";
 		the rule succeeds;
 	if sco-sassed-ceased is false:
 		say "You could've felt a bit more important with [b]SASSED CEASED[r] when you had the [feast].";
@@ -986,7 +1004,7 @@ this is the show-misses rule:
 		if sco-tutu is false:
 			say "-- You could've suggested [zl] wear a [b]TUTU[r].";
 	if sco-chrome-craw is false:
-		say "There was a [b]CHROME CRAW[r] that rhymed with the regions after the room name on the status line. It held some bonus dishes and food.";
+		say "There was a [b]CHROME CRAW[r] that rhymed with the regions after the room name on the status line. It held some bonus dishes and, well, not quite garnish.";
 	else:
 		if sco-honeyed-ham is false:
 			say "The Moneyed Ma'am would've given you a [b]HONEYED HAM[r].";
