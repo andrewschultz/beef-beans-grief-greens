@@ -43,47 +43,47 @@ The HA HALF button on your Leet Learner lights up yellow--one of the words must 
 >zheave ho
 The HA HALF button on your Leet Learner lights up yellow.
 
-#testcase-ha-half-table-of-verb-checks-5-believe
+#testcase-ha-half-table-of-verb-checks-6-believe
 >believe zbelow
 The HA HALF button on your Leet Learner lights up green.
 
-#testcase-ha-half-table-of-verb-checks-5-below
+#testcase-ha-half-table-of-verb-checks-6-below
 >zbelieve below
 The HA HALF button on your Leet Learner lights up green.
 
-#testcase-ha-half-table-of-verb-checks-6-played
+#testcase-ha-half-table-of-verb-checks-7-played
 >played zplug
 The HA HALF button on your Leet Learner lights up green.
 
-#testcase-ha-half-table-of-verb-checks-6-plug
+#testcase-ha-half-table-of-verb-checks-7-plug
 >zplayed plug
 The HA HALF button on your Leet Learner lights up green.
 
-#testcase-ha-half-table-of-verb-checks-7-grieve
+#testcase-ha-half-table-of-verb-checks-8-grieve
 >grieve zgrow
 The HA HALF button on your Leet Learner lights up green.
 
-#testcase-ha-half-table-of-verb-checks-7-grow
+#testcase-ha-half-table-of-verb-checks-8-grow
 >zgrieve grow
 The HA HALF button on your Leet Learner lights up green.
 
-#testcase-ha-half-table-of-verb-checks-8-made-maid
+#testcase-ha-half-table-of-verb-checks-9-made-maid
 >made zmug
 The HA HALF button on your Leet Learner lights up green.
 
-#testcase-ha-half-table-of-verb-checks-8-made-maid
+#+testcase-ha-half-table-of-verb-checks-9-made-maid
 >maid zmug
 The HA HALF button on your Leet Learner lights up green.
 
-#testcase-ha-half-table-of-verb-checks-8-mug
+#testcase-ha-half-table-of-verb-checks-9-mug
 >zmade mug
 The HA HALF button on your Leet Learner lights up green.
 
-#testcase-ha-half-table-of-verb-checks-9-jade
+#testcase-ha-half-table-of-verb-checks-10-jade
 >jade zjug
 The HA HALF button on your Leet Learner lights up green.
 
-#testcase-ha-half-table-of-verb-checks-9-jug
+#testcase-ha-half-table-of-verb-checks-10-jug
 >zjade jug
 The HA HALF button on your Leet Learner lights up green.
 
@@ -99,100 +99,100 @@ by one point
 >leave lo
 by one point
 
-#testcase-ha-half-table-of-verb-checks-15-chrome
+#testcase-ha-half-table-of-verb-checks-16-chrome
 >chrome zcraw
 The HA HALF button on your Leet Learner lights up yellow. Very dim, though. Perhaps this is a rhyme you don't strictly need to figure to win.
 
-#testcase-ha-half-table-of-verb-checks-15-craw
+#testcase-ha-half-table-of-verb-checks-16-craw
 >zchrome craw
 The HA HALF button on your Leet Learner lights up yellow. Very dim, though. Perhaps this is a rhyme you don't strictly need to figure to win.
 
-#testcase-ha-half-table-of-verb-checks-10-lair
+#testcase-ha-half-table-of-verb-checks-11-lair
 >zlaundering lair
 The HA HALF button on your Leet Learner lights up green.
 
-#testcase-ha-half-table-of-verb-checks-10-laundering
+#testcase-ha-half-table-of-verb-checks-11-laundering
 >laundering zlair
 The HA HALF button on your Leet Learner lights up green.
 
-#testcase-ha-half-table-of-verb-checks-11-squandering
+#testcase-ha-half-table-of-verb-checks-12-squandering
 >squandering zsquare
 The HA HALF button on your Leet Learner lights up green.
 
-#testcase-ha-half-table-of-verb-checks-11-square
+#testcase-ha-half-table-of-verb-checks-12-square
 >zsquandering square
 The HA HALF button on your Leet Learner lights up green.
 
-#testcase-ha-half-table-of-verb-checks-12-mare
+#testcase-ha-half-table-of-verb-checks-13-mare
 >zmaundering mare
 The HA HALF button on your Leet Learner lights up green.
 
-#testcase-ha-half-table-of-verb-checks-12-maundering
+#testcase-ha-half-table-of-verb-checks-13-maundering
 >maundering zmare
 The HA HALF button on your Leet Learner lights up green.
 
-#testcase-ha-half-table-of-verb-checks-13-pair
+#testcase-ha-half-table-of-verb-checks-14-pair
 >zpondering pair
 The HA HALF button on your Leet Learner lights up green.
 
-#testcase-ha-half-table-of-verb-checks-13-pondering
+#testcase-ha-half-table-of-verb-checks-14-pondering
 >pondering zpair
 The HA HALF button on your Leet Learner lights up green.
 
 >laundering lair
 by one point
 
-#testcase-ha-half-table-of-verb-checks-25-lout
+#testcase-ha-half-table-of-verb-checks-27-lout
 >zlovin lout
 The HA HALF button on your Leet Learner lights up green.
 
-#testcase-ha-half-table-of-verb-checks-25-lovin
+#testcase-ha-half-table-of-verb-checks-27-lovin
 >lovin zlout
 The HA HALF button on your Leet Learner lights up green.
 
-#testcase-ha-half-table-of-verb-checks-26-shout
+#testcase-ha-half-table-of-verb-checks-28-shout
 >zshovin shout
 The HA HALF button on your Leet Learner lights up yellow.
 
-#testcase-ha-half-table-of-verb-checks-26-shovin
+#testcase-ha-half-table-of-verb-checks-28-shovin
 >shovin zshout
 The HA HALF button on your Leet Learner lights up yellow.
 
-#testcase-ha-half-table-of-verb-checks-27-out
+#testcase-ha-half-table-of-verb-checks-29-out
 >zoven out
 The HA HALF button on your Leet Learner lights up yellow.
 
-#testcase-ha-half-table-of-verb-checks-27-oven
+#testcase-ha-half-table-of-verb-checks-29-oven
 >oven zout
 The HA HALF button on your Leet Learner lights up yellow.
 
 >lovin lout
 by one point
 
-#testcase-ha-half-table-of-verb-checks-26-shout
+#+testcase-ha-half-table-of-verb-checks-28-shout
 >zshovin shout
 The HA HALF button on your Leet Learner lights up green.
 
-#testcase-ha-half-table-of-verb-checks-26-shovin
+#+testcase-ha-half-table-of-verb-checks-28-shovin
 >shovin zshout
 The HA HALF button on your Leet Learner lights up green.
 
-#testcase-ha-half-table-of-verb-checks-27-out
+#+testcase-ha-half-table-of-verb-checks-29-out
 >zoven out
 The HA HALF button on your Leet Learner lights up yellow.
 
-#testcase-ha-half-table-of-verb-checks-27-oven
+#+testcase-ha-half-table-of-verb-checks-29-oven
 >oven zout
 The HA HALF button on your Leet Learner lights up yellow.
 
 >shovin shout
 by one point
 
-#testcase-ha-half-table-of-verb-checks-27-out
+#+testcase-ha-half-table-of-verb-checks-29-out
 >zoven out
 The HA HALF button on your Leet Learner lights up green.
 
-#testcase-ha-half-table-of-verb-checks-27-oven
+#+testcase-ha-half-table-of-verb-checks-29-oven
 >oven zout
 The HA HALF button on your Leet Learner lights up green.
 
@@ -215,16 +215,27 @@ by one point
 
 >x guide
 
+#testcase-ha-half-table-of-verb-checks-5-spied
+>zspoon spied
+The HA HALF button on your Leet Learner lights up green.
+
+#testcase-ha-half-table-of-verb-checks-5-spoon
+>spoon zspied
+The HA HALF button on your Leet Learner lights up green.
+
+>spoon spied
+by one point
+
 >played plug
 by one point
 
 >out
 
-#testcase-ha-half-table-of-verb-checks-44-plate
+#testcase-ha-half-table-of-verb-checks-46-plate
 >zpluck plate
 The HA HALF button on your Leet Learner lights up green.
 
-#testcase-ha-half-table-of-verb-checks-44-pluck
+#testcase-ha-half-table-of-verb-checks-46-pluck
 >pluck zplate
 The HA HALF button on your Leet Learner lights up green.
 
@@ -233,38 +244,38 @@ by one point
 
 >w
 
-#testcase-ha-half-table-of-verb-checks-28-hard
+#testcase-ha-half-table-of-verb-checks-30-hard
 >zhook hard
 The HA HALF button on your Leet Learner lights up green.
 
-#testcase-ha-half-table-of-verb-checks-28-hook
+#testcase-ha-half-table-of-verb-checks-30-hook
 >hook zhard
 The HA HALF button on your Leet Learner lights up green.
 
 >hook hard
 by one point
 
-#testcase-ha-half-table-of-verb-checks-41-bard
+#testcase-ha-half-table-of-verb-checks-43-bard
 >zbook bard
 The HA HALF button on your Leet Learner lights up green.
 
-#testcase-ha-half-table-of-verb-checks-41-book
+#testcase-ha-half-table-of-verb-checks-43-book
 >book zbard
 The HA HALF button on your Leet Learner lights up green.
 
-#testcase-ha-half-table-of-verb-checks-42-card
+#testcase-ha-half-table-of-verb-checks-44-card
 >zcook card
 The HA HALF button on your Leet Learner lights up green.
 
-#testcase-ha-half-table-of-verb-checks-42-cook
+#testcase-ha-half-table-of-verb-checks-44-cook
 >cook zcard
 The HA HALF button on your Leet Learner lights up green.
 
-#testcase-ha-half-table-of-verb-checks-43-lard
+#testcase-ha-half-table-of-verb-checks-45-lard
 >zlook lard
 The HA HALF button on your Leet Learner lights up green.
 
-#testcase-ha-half-table-of-verb-checks-43-look
+#testcase-ha-half-table-of-verb-checks-45-look
 >look zlard
 The HA HALF button on your Leet Learner lights up green.
 
@@ -280,27 +291,27 @@ by one point
 >squandering square
 by one point
 
-#testcase-ha-half-table-of-verb-checks-17-baller
+#testcase-ha-half-table-of-verb-checks-18-baller
 >baller zbear
 The HA HALF button on your Leet Learner lights up green.
 
-#testcase-ha-half-table-of-verb-checks-17-bear
+#testcase-ha-half-table-of-verb-checks-18-bear
 >zballer bear
 The HA HALF button on your Leet Learner lights up green.
 
-#testcase-ha-half-table-of-verb-checks-18-caller
+#testcase-ha-half-table-of-verb-checks-19-caller
 >caller zcare
 The HA HALF button on your Leet Learner lights up green.
 
-#testcase-ha-half-table-of-verb-checks-18-care
+#testcase-ha-half-table-of-verb-checks-19-care
 >zcaller care
 The HA HALF button on your Leet Learner lights up green.
 
-#testcase-ha-half-table-of-verb-checks-19-dare
+#testcase-ha-half-table-of-verb-checks-20-dare
 >dollar zdare
 The HA HALF button on your Leet Learner lights up green.
 
-#testcase-ha-half-table-of-verb-checks-19-dollar
+#testcase-ha-half-table-of-verb-checks-20-dollar
 >zdollar dare
 The HA HALF button on your Leet Learner lights up green.
 
@@ -310,57 +321,68 @@ by one point
 >caller care
 by one point
 
-#+testcase-ha-half-table-of-verb-checks-17-baller
+#+testcase-ha-half-table-of-verb-checks-18-baller
 >baller zbear
 The HA HALF button on your Leet Learner lights up green. Very dim, though. Perhaps this is a rhyme you don't strictly need to figure to win.
 
-#+testcase-ha-half-table-of-verb-checks-17-bear
+#+testcase-ha-half-table-of-verb-checks-18-bear
 >zballer bear
 The HA HALF button on your Leet Learner lights up green. Very dim, though. Perhaps this is a rhyme you don't strictly need to figure to win.
 
 >baller bear
 by one point
 
-#testcase-ha-half-table-of-verb-checks-20-neat
+#testcase-ha-half-table-of-verb-checks-21-neat
 >neat znote
 The HA HALF button on your Leet Learner lights up green.
 
-#testcase-ha-half-table-of-verb-checks-20-note
+#testcase-ha-half-table-of-verb-checks-21-note
 >zneat note
 The HA HALF button on your Leet Learner lights up green.
 
-#testcase-ha-half-table-of-verb-checks-21-meat
+#testcase-ha-half-table-of-verb-checks-22-meat
 >meat zmoat
 The HA HALF button on your Leet Learner lights up yellow.
 
-#testcase-ha-half-table-of-verb-checks-21-moat
+#testcase-ha-half-table-of-verb-checks-22-moat
 >zmeat moat
 The HA HALF button on your Leet Learner lights up yellow.
 
-#testcase-ha-half-table-of-verb-checks-22-beet
+#testcase-ha-half-table-of-verb-checks-23-beet
 >beet zboat
 The HA HALF button on your Leet Learner lights up yellow.
 
-#testcase-ha-half-table-of-verb-checks-22-boat
+#testcase-ha-half-table-of-verb-checks-23-boat
 >zbeet boat
 The HA HALF button on your Leet Learner lights up yellow.
 
 >neat note
 by one point
 
-#+testcase-ha-half-table-of-verb-checks-21-meat
+#testcase-ha-half-table-of-verb-checks-24-fork
+>zfound fork
+The HA HALF button on your Leet Learner lights up green.
+
+#testcase-ha-half-table-of-verb-checks-24-found
+>found zfork
+The HA HALF button on your Leet Learner lights up green.
+
+>found fork
+by one point
+
+#+testcase-ha-half-table-of-verb-checks-22-meat
 >meat zmoat
 The HA HALF button on your Leet Learner lights up green.
 
-#+testcase-ha-half-table-of-verb-checks-21-moat
+#+testcase-ha-half-table-of-verb-checks-22-moat
 >zmeat moat
 The HA HALF button on your Leet Learner lights up green.
 
-#+testcase-ha-half-table-of-verb-checks-22-beet
+#+testcase-ha-half-table-of-verb-checks-23-beet
 >beet zboat
 The HA HALF button on your Leet Learner lights up green.
 
-#+testcase-ha-half-table-of-verb-checks-22-boat
+#+testcase-ha-half-table-of-verb-checks-23-boat
 >zbeet boat
 The HA HALF button on your Leet Learner lights up green.
 
@@ -370,30 +392,30 @@ by one point
 >beet boat
 by one point
 
-#testcase-ha-half-table-of-verb-checks-23-fight
+#testcase-ha-half-table-of-verb-checks-25-fight
 >fight zfires
 The HA HALF button on your Leet Learner lights up green.
 
-#testcase-ha-half-table-of-verb-checks-23-fires
+#testcase-ha-half-table-of-verb-checks-25-fires
 >zfight fires
 The HA HALF button on your Leet Learner lights up green.
 
-#testcase-ha-half-table-of-verb-checks-24-white
+#testcase-ha-half-table-of-verb-checks-26-white
 >white zwires
 The HA HALF button on your Leet Learner lights up yellow.
 
-#testcase-ha-half-table-of-verb-checks-24-wires
+#testcase-ha-half-table-of-verb-checks-26-wires
 >zwhite wires
 The HA HALF button on your Leet Learner lights up yellow.
 
 >fight fires
 by one point
 
-#testcase-ha-half-table-of-verb-checks-24-white
+#+testcase-ha-half-table-of-verb-checks-26-white
 >white zwires
 The HA HALF button on your Leet Learner lights up green.
 
-#testcase-ha-half-table-of-verb-checks-24-wires
+#+testcase-ha-half-table-of-verb-checks-26-wires
 >zwhite wires
 The HA HALF button on your Leet Learner lights up green.
 
@@ -402,11 +424,11 @@ by one point
 
 >w
 
-#testcase-ha-half-table-of-verb-checks-47-sauce
+#testcase-ha-half-table-of-verb-checks-50-sauce
 >zsoy sauce
 The HA HALF button on your Leet Learner lights up green.
 
-#testcase-ha-half-table-of-verb-checks-47-soy
+#testcase-ha-half-table-of-verb-checks-50-soy
 >soy zsauce
 The HA HALF button on your Leet Learner lights up green.
 
@@ -416,38 +438,38 @@ by one point
 >maundering mare
 by one point
 
-#testcase-ha-half-table-of-verb-checks-29-zap
+#testcase-ha-half-table-of-verb-checks-31-zap
 >zap zzoo
 The HA HALF button on your Leet Learner lights up green.
 
-#testcase-ha-half-table-of-verb-checks-29-zoo
+#testcase-ha-half-table-of-verb-checks-31-zoo
 >zzap zoo
 The HA HALF button on your Leet Learner lights up green.
 
 >zap zoo
 by one point
 
-#testcase-ha-half-table-of-verb-checks-30-knife
+#testcase-ha-half-table-of-verb-checks-32-knife
 >znotice knife
 The HA HALF button on your Leet Learner lights up green.
 
-#testcase-ha-half-table-of-verb-checks-30-notice
+#testcase-ha-half-table-of-verb-checks-32-notice
 >notice zknife
 The HA HALF button on your Leet Learner lights up green.
 
-#testcase-ha-half-table-of-verb-checks-31-cake
+#testcase-ha-half-table-of-verb-checks-33-cake
 >zcarrot cake
 The HA HALF button on your Leet Learner lights up green.
 
-#testcase-ha-half-table-of-verb-checks-31-carrot
+#testcase-ha-half-table-of-verb-checks-33-carrot
 >carrot zcake
 The HA HALF button on your Leet Learner lights up green.
 
-#testcase-ha-half-table-of-verb-checks-32-see
+#testcase-ha-half-table-of-verb-checks-34-see
 >see zsoup
 The HA HALF button on your Leet Learner lights up green.
 
-#testcase-ha-half-table-of-verb-checks-32-soup
+#testcase-ha-half-table-of-verb-checks-34-soup
 >zsee soup
 The HA HALF button on your Leet Learner lights up green.
 
@@ -457,11 +479,11 @@ by one point
 >notice knife
 by one point
 
-#testcase-ha-half-table-of-verb-checks-33-dented
+#testcase-ha-half-table-of-verb-checks-35-dented
 >dented zdials
 The HA HALF button on your Leet Learner lights up green.
 
-#testcase-ha-half-table-of-verb-checks-33-dials
+#testcase-ha-half-table-of-verb-checks-35-dials
 >zdented dials
 The HA HALF button on your Leet Learner lights up green.
 
@@ -473,30 +495,30 @@ by one point
 
 >n
 
-#testcase-ha-half-table-of-verb-checks-45-penny
+#testcase-ha-half-table-of-verb-checks-47-penny
 >penny zpiles
 The HA HALF button on your Leet Learner lights up green.
 
-#testcase-ha-half-table-of-verb-checks-45-piles
+#testcase-ha-half-table-of-verb-checks-47-piles
 >zpenny piles
 The HA HALF button on your Leet Learner lights up green.
 
-#testcase-ha-half-table-of-verb-checks-46-pie
+#testcase-ha-half-table-of-verb-checks-48-pie
 >pie zpo
 The HA HALF button on your Leet Learner lights up yellow.
 
-#testcase-ha-half-table-of-verb-checks-46-po
+#testcase-ha-half-table-of-verb-checks-48-po
 >zpie po
 The HA HALF button on your Leet Learner lights up yellow.
 
 >penny piles
 by one point
 
-#+testcase-ha-half-table-of-verb-checks-46-pie
+#+testcase-ha-half-table-of-verb-checks-48-pie
 >pie zpo
 The HA HALF button on your Leet Learner lights up green.
 
-#+testcase-ha-half-table-of-verb-checks-46-po
+#+testcase-ha-half-table-of-verb-checks-48-po
 >zpie po
 The HA HALF button on your Leet Learner lights up green.
 
@@ -518,11 +540,11 @@ by one point
 >tutu
 by one point
 
-#testcase-ha-half-table-of-verb-checks-16-massive
+#testcase-ha-half-table-of-verb-checks-17-massive
 >massive zmitt
 The HA HALF button on your Leet Learner lights up green.
 
-#testcase-ha-half-table-of-verb-checks-16-mitt
+#testcase-ha-half-table-of-verb-checks-17-mitt
 >zmassive mitt
 The HA HALF button on your Leet Learner lights up green.
 
@@ -540,22 +562,25 @@ by one point
 
 >s
 
-#testcase-ha-half-table-of-verb-checks-14-flea
+#testcase-ha-half-table-of-verb-checks-15-flea
 >zflopper flea
 The HA HALF button on your Leet Learner lights up green.
 
-#testcase-ha-half-table-of-verb-checks-14-flopper
+#testcase-ha-half-table-of-verb-checks-15-flopper
 >flopper zflea
 The HA HALF button on your Leet Learner lights up green.
 
 >flopper flea
 by one point
 
-#testcase-ha-half-table-of-verb-checks-15-chrome
+>veggie ville
+by one point
+
+#+testcase-ha-half-table-of-verb-checks-16-chrome
 >chrome zcraw
 The HA HALF button on your Leet Learner lights up green.
 
-#testcase-ha-half-table-of-verb-checks-15-craw
+#+testcase-ha-half-table-of-verb-checks-16-craw
 >zchrome craw
 The HA HALF button on your Leet Learner lights up green.
 
@@ -564,31 +589,31 @@ by one point
 
 >d
 
-#testcase-ha-half-table-of-verb-checks-48-ham
+#testcase-ha-half-table-of-verb-checks-52-ham
 >zhoneyed ham
 The HA HALF button on your Leet Learner lights up green.
 
-#testcase-ha-half-table-of-verb-checks-48-honeyed
+#testcase-ha-half-table-of-verb-checks-52-honeyed
 >honeyed zham
 The HA HALF button on your Leet Learner lights up green.
 
-#testcase-ha-half-table-of-verb-checks-49-grey-gray
+#testcase-ha-half-table-of-verb-checks-53-grey-gray
 >grey zgruel
 The HA HALF button on your Leet Learner lights up green.
 
-#testcase-ha-half-table-of-verb-checks-49-grey-gray
+#+testcase-ha-half-table-of-verb-checks-53-grey-gray
 >gray zgruel
 The HA HALF button on your Leet Learner lights up green.
 
-#testcase-ha-half-table-of-verb-checks-49-gruel
+#testcase-ha-half-table-of-verb-checks-53-gruel
 >zgrey gruel
 The HA HALF button on your Leet Learner lights up green.
 
-#testcase-ha-half-table-of-verb-checks-50-jello
+#testcase-ha-half-table-of-verb-checks-54-jello
 >zjust jello
 The HA HALF button on your Leet Learner lights up green.
 
-#testcase-ha-half-table-of-verb-checks-50-just
+#testcase-ha-half-table-of-verb-checks-54-just
 >just zjello
 The HA HALF button on your Leet Learner lights up green.
 
@@ -615,89 +640,89 @@ by one point
 
 >d
 
-#testcase-ha-half-table-of-verb-checks-52-scrappy
+#testcase-ha-half-table-of-verb-checks-55-scrappy
 >scrappy zscrawl
 The HA HALF button on your Leet Learner lights up green.
 
-#testcase-ha-half-table-of-verb-checks-52-scrawl
+#testcase-ha-half-table-of-verb-checks-55-scrawl
 >zscrappy scrawl
 The HA HALF button on your Leet Learner lights up green.
 
-#testcase-ha-half-table-of-verb-checks-53-wall
+#testcase-ha-half-table-of-verb-checks-56-wall
 >zwhappy wall
 The HA HALF button on your Leet Learner lights up yellow.
 
-#testcase-ha-half-table-of-verb-checks-53-whappy
+#testcase-ha-half-table-of-verb-checks-56-whappy
 >whappy zwall
 The HA HALF button on your Leet Learner lights up yellow.
 
-#testcase-ha-half-table-of-verb-checks-56-pappy
+#testcase-ha-half-table-of-verb-checks-59-pappy
 >pappy zpaul
 The HA HALF button on your Leet Learner lights up yellow.
 
-#testcase-ha-half-table-of-verb-checks-56-paul
+#testcase-ha-half-table-of-verb-checks-59-paul
 >zpappy paul
 The HA HALF button on your Leet Learner lights up yellow.
 
-#testcase-ha-half-table-of-verb-checks-57-sappy
+#testcase-ha-half-table-of-verb-checks-60-sappy
 >sappy zsaul
 The HA HALF button on your Leet Learner lights up yellow.
 
-#testcase-ha-half-table-of-verb-checks-57-saul
+#testcase-ha-half-table-of-verb-checks-60-saul
 >zsappy saul
 The HA HALF button on your Leet Learner lights up yellow.
 
 >scrappy scrawl
 by one point
 
-#+testcase-ha-half-table-of-verb-checks-53-wall
+#+testcase-ha-half-table-of-verb-checks-56-wall
 >whappy zwall
 The HA HALF button on your Leet Learner lights up green.
 
-#+testcase-ha-half-table-of-verb-checks-53-whappy
+#+testcase-ha-half-table-of-verb-checks-56-whappy
 >zwhappy wall
 The HA HALF button on your Leet Learner lights up green.
 
 >whappy wall
 by one point
 
-#testcase-ha-half-table-of-verb-checks-56-pappy
+#+testcase-ha-half-table-of-verb-checks-59-pappy
 >pappy zpaul
 The HA HALF button on your Leet Learner lights up green.
 
-#testcase-ha-half-table-of-verb-checks-56-paul
+#+testcase-ha-half-table-of-verb-checks-59-paul
 >zpappy paul
 The HA HALF button on your Leet Learner lights up green.
 
-#testcase-ha-half-table-of-verb-checks-57-sappy
+#+testcase-ha-half-table-of-verb-checks-60-sappy
 >sappy zsaul
 The HA HALF button on your Leet Learner lights up green.
 
-#testcase-ha-half-table-of-verb-checks-57-saul
+#+testcase-ha-half-table-of-verb-checks-60-saul
 >zsappy saul
 The HA HALF button on your Leet Learner lights up green.
 
-#testcase-ha-half-table-of-verb-checks-58-cappy
+#testcase-ha-half-table-of-verb-checks-61-cappy
 >cappy zcaul
 The HA HALF button on your Leet Learner lights up yellow.
 
-#testcase-ha-half-table-of-verb-checks-58-caul
+#testcase-ha-half-table-of-verb-checks-61-caul
 >zcappy caul
 The HA HALF button on your Leet Learner lights up yellow.
 
-#testcase-ha-half-table-of-verb-checks-59-yall
+#testcase-ha-half-table-of-verb-checks-62-yall
 >zyappy yall
 The HA HALF button on your Leet Learner lights up yellow.
 
-#testcase-ha-half-table-of-verb-checks-59-yappy
+#testcase-ha-half-table-of-verb-checks-62-yappy
 >yappy zyall
 The HA HALF button on your Leet Learner lights up yellow.
 
-#testcase-ha-half-table-of-verb-checks-59-ball
+#testcase-ha-half-table-of-verb-checks-63-ball
 >zbappy ball
 The HA HALF button on your Leet Learner lights up yellow.
 
-#testcase-ha-half-table-of-verb-checks-59-bappy
+#testcase-ha-half-table-of-verb-checks-63-bappy
 >bappy zball
 The HA HALF button on your Leet Learner lights up yellow.
 
@@ -707,19 +732,19 @@ by one point
 >sappy saul
 by one point
 
-#testcase-ha-half-table-of-verb-checks-54-laura
+#testcase-ha-half-table-of-verb-checks-57-laura
 >zlone laura
 The HA HALF button on your Leet Learner lights up green.
 
-#testcase-ha-half-table-of-verb-checks-54-lone
+#testcase-ha-half-table-of-verb-checks-57-lone
 >lone zlaura
 The HA HALF button on your Leet Learner lights up green.
 
-#testcase-ha-half-table-of-verb-checks-55-known
+#testcase-ha-half-table-of-verb-checks-58-known
 >known znora
 The HA HALF button on your Leet Learner lights up green.
 
-#testcase-ha-half-table-of-verb-checks-55-nora
+#testcase-ha-half-table-of-verb-checks-58-nora
 >zknown nora
 The HA HALF button on your Leet Learner lights up green.
 
@@ -729,76 +754,76 @@ by one point
 >known nora
 by one point
 
-#+testcase-ha-half-table-of-verb-checks-58-cappy
+#+testcase-ha-half-table-of-verb-checks-61-cappy
 >cappy zcaul
 The HA HALF button on your Leet Learner lights up green.
 
-#+testcase-ha-half-table-of-verb-checks-58-caul
+#+testcase-ha-half-table-of-verb-checks-61-caul
 >zcappy caul
 The HA HALF button on your Leet Learner lights up green.
 
 >cappy caul
 by one point
 
-#+testcase-ha-half-table-of-verb-checks-59-yall
+#+testcase-ha-half-table-of-verb-checks-62-yall
 >zyappy yall
 The HA HALF button on your Leet Learner lights up green.
 
-#+testcase-ha-half-table-of-verb-checks-59-yappy
+#+testcase-ha-half-table-of-verb-checks-62-yappy
 >yappy zyall
 The HA HALF button on your Leet Learner lights up green.
 
 >yappy yall
 by one point
 
-#+testcase-ha-half-table-of-verb-checks-60-ball
+#+testcase-ha-half-table-of-verb-checks-63-ball
 >zbappy ball
 The HA HALF button on your Leet Learner lights up green.
 
-#+testcase-ha-half-table-of-verb-checks-60-bappy
+#+testcase-ha-half-table-of-verb-checks-63-bappy
 >bappy zball
 The HA HALF button on your Leet Learner lights up green.
 
 >bappy ball
 by one point
 
-#testcase-ha-half-table-of-verb-checks-61-well
+#testcase-ha-half-table-of-verb-checks-64-well
 >zwheat well
 The HA HALF button on your Leet Learner lights up green.
 
-#testcase-ha-half-table-of-verb-checks-61-wheat
+#testcase-ha-half-table-of-verb-checks-64-wheat
 >wheat zwell
 The HA HALF button on your Leet Learner lights up green.
 
-#testcase-ha-half-table-of-verb-checks-62-feet
+#testcase-ha-half-table-of-verb-checks-65-feet
 >feet zfell
 The HA HALF button on your Leet Learner lights up yellow.
 
-#testcase-ha-half-table-of-verb-checks-62-fell
+#testcase-ha-half-table-of-verb-checks-65-fell
 >zfeet fell
 The HA HALF button on your Leet Learner lights up yellow.
 
-#testcase-ha-half-table-of-verb-checks-63-sheet
+#testcase-ha-half-table-of-verb-checks-66-sheet
 >sheet zshell
 The HA HALF button on your Leet Learner lights up green.
 
-#testcase-ha-half-table-of-verb-checks-63-shell
+#testcase-ha-half-table-of-verb-checks-66-shell
 >zsheet shell
 The HA HALF button on your Leet Learner lights up green.
 
-#testcase-ha-half-table-of-verb-checks-64-beat
+#testcase-ha-half-table-of-verb-checks-67-beat
 >beat zbell
 The HA HALF button on your Leet Learner lights up yellow.
 
-#testcase-ha-half-table-of-verb-checks-64-bell
+#testcase-ha-half-table-of-verb-checks-67-bell
 >zbeat bell
 The HA HALF button on your Leet Learner lights up yellow.
 
-#testcase-ha-half-table-of-verb-checks-65-meet
+#testcase-ha-half-table-of-verb-checks-68-meet
 >meet zmel
 The HA HALF button on your Leet Learner lights up yellow.
 
-#testcase-ha-half-table-of-verb-checks-65-mel
+#testcase-ha-half-table-of-verb-checks-68-mel
 >zmeet mel
 The HA HALF button on your Leet Learner lights up yellow.
 
@@ -817,53 +842,53 @@ by one point
 >meet mel
 by one point
 
-#testcase-ha-half-table-of-verb-checks-66-repeat
+#testcase-ha-half-table-of-verb-checks-69-repeat
 >repeat zrepel
 The HA HALF button on your Leet Learner lights up yellow.
 
-#testcase-ha-half-table-of-verb-checks-66-repel
+#testcase-ha-half-table-of-verb-checks-69-repel
 >zrepeat repel
 The HA HALF button on your Leet Learner lights up yellow.
 
-#testcase-ha-half-table-of-verb-checks-67-heat
+#testcase-ha-half-table-of-verb-checks-70-heat
 >heat zhell
 The HA HALF button on your Leet Learner lights up yellow.
 
-#testcase-ha-half-table-of-verb-checks-67-hell
+#testcase-ha-half-table-of-verb-checks-70-hell
 >zheat hell
 The HA HALF button on your Leet Learner lights up yellow.
 
-#testcase-ha-half-table-of-verb-checks-68-sweet
+#testcase-ha-half-table-of-verb-checks-71-sweet
 >sweet zswell
 The HA HALF button on your Leet Learner lights up yellow.
 
-#testcase-ha-half-table-of-verb-checks-68-swell
+#testcase-ha-half-table-of-verb-checks-71-swell
 >zsweet swell
 The HA HALF button on your Leet Learner lights up yellow.
 
 >x leet lel
 
-#testcase-ha-half-table-of-verb-checks-66-repeat
+#+testcase-ha-half-table-of-verb-checks-69-repeat
 >repeat zrepel
 The HA HALF button on your Leet Learner lights up green.
 
-#testcase-ha-half-table-of-verb-checks-66-repel
+#+testcase-ha-half-table-of-verb-checks-69-repel
 >zrepeat repel
 The HA HALF button on your Leet Learner lights up green.
 
-#testcase-ha-half-table-of-verb-checks-67-heat
+#+testcase-ha-half-table-of-verb-checks-70-heat
 >heat zhell
 The HA HALF button on your Leet Learner lights up green.
 
-#testcase-ha-half-table-of-verb-checks-67-hell
+#+testcase-ha-half-table-of-verb-checks-70-hell
 >zheat hell
 The HA HALF button on your Leet Learner lights up green.
 
-#testcase-ha-half-table-of-verb-checks-68-sweet
+#+testcase-ha-half-table-of-verb-checks-71-sweet
 >sweet zswell
 The HA HALF button on your Leet Learner lights up green.
 
-#testcase-ha-half-table-of-verb-checks-68-swell
+#+testcase-ha-half-table-of-verb-checks-71-swell
 >zsweet swell
 The HA HALF button on your Leet Learner lights up green.
 

@@ -71,7 +71,7 @@ by one point
 >heave ho
 by one point
 
-#testcase-goto-table-of-noways-reeve-row
+#+testcase-goto-table-of-noways-reeve-row
 >w
 It's not a very big house. You suspected the old passage-under-the-rug trick, but you just don't have faith it's REALLY there. There's always back OUT.
 
@@ -79,6 +79,9 @@ It's not a very big house. You suspected the old passage-under-the-rug trick, bu
 by one point
 
 >x guide
+
+>spoon spied
+by one point
 
 >played plug
 by one point
@@ -127,6 +130,9 @@ by one point
 by one point
 
 >neat note
+by one point
+
+>found fork
 by one point
 
 >meat moat
@@ -220,6 +226,9 @@ by one point
 >flopper flea
 by one point
 
+>veggie ville
+by one point
+
 >chrome craw
 by one point
 
@@ -262,7 +271,7 @@ by one point
 >grieve grow
 by one point
 
-#testcase-goto-table-of-noways-reeve-row
+#+testcase-goto-table-of-noways-reeve-row
 >w
 It's not a very big house. You suspected the old passage-under-the-rug trick, but you just don't have faith it's REALLY there. There's always back OUT, and you unlocked a passage DOWN, too.
 

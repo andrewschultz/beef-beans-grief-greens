@@ -10,6 +10,8 @@
 
 * main-thru
 
+>z
+
 >jj
 After some thought, you consider a good way forward: LEAVE LO...
 
@@ -36,6 +38,16 @@ After some thought, you consider a good way forward: HEAVE HO...
 
 >jj
 After some thought, you consider a good way forward: PRUNE PRIDE...
+
+>jj
+After some thought, you consider a good way forward: BELIEVE BELOW...
+
+>undo
+
+>x goon guide
+
+>jj
+After some thought, you consider a good way forward: SPOON SPIED...
 
 >jj
 After some thought, you consider a good way forward: BELIEVE BELOW...
@@ -100,6 +112,9 @@ After some thought, you consider a good way forward: MEAT MOAT...
 
 >jj
 After some thought, you consider a good way forward: BEET BOAT...
+
+>jj
+After some thought, you consider a good way forward: FOUND FORK...
 
 >jj
 After some thought, you consider a good way forward: FIGHT FIRES...
@@ -175,7 +190,7 @@ must be a bopper bee
 After some thought, you consider a good way forward: FLOPPER FLEA...
 
 >jj
-The lurking lump remains immovable. There's nothing critical to do here.
+After some thought, you consider a good way forward: VEGGIE VILLE...
 
 >chrome craw
 by one point

@@ -52,8 +52,8 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "cook"	"card"	--	--	false	true	true	false	took tarred	vc-cook-card rule	vr-cook-card rule	--	"You can find a [b]COOK BARD[r] [once-now of vc-cook-card rule] you've seen where the shook shard can take you."
 "look"	"lard"	--	--	false	true	true	false	took tarred	vc-look-lard rule	vr-look-lard rule	--	"You can exclaim [b]LOOK LARD[r] [once-now of vc-look-lard rule] you've seen where the shook shard can take you."
 "pluck"	"plate"	--	--	false	true	true	false	stuck state	vc-pluck-plate rule	vr-pluck-plate rule	--	--
-"pie"	"po"	"pi/poe"	vh-pi-poe rule	false	true	true	false	sty sto	vc-pie-po rule	vr-pie-po rule	--	"You can buy a [b]PIE PO[r] [once-now of vc-pie-po rule] you have currency."
 "penny"	"piles"	--	--	false	true	true	false	sty sto	vc-penny-piles rule	vr-penny-piles rule	--	--
+"pie"	"po"	"pi/poe"	vh-pi-poe rule	false	true	true	false	sty sto	vc-pie-po rule	vr-pie-po rule	--	"You can buy a [b]PIE PO[r] [once-now of vc-pie-po rule] you have currency."
 "veggie"	"ville"	--	--	false	true	true	false	edgy ill	vc-veggie-ville rule	vr-veggie-ville rule	--	--
 "soy"	"sauce"	"saws"	vh-soy-saws rule	false	true	true	false	toy toss	vc-soy-sauce rule	vr-soy-sauce rule	--	--
 "pot"	"pourri"	--	--	false	true	false	false	slow slurry	vc-potpourri rule	vr-potpourri rule	"potpourri"	--
