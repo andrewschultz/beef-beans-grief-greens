@@ -94,7 +94,7 @@ the BBGG last point jerkjump check rule is listed last in the check jerkingjumpi
 
 chapter types
 
-a feastitem is a kind of thing. a feastitem has text called fdesc. a feastitem can be toeat, auxiliary, ambiance, drinkware or silverware. a feastitem is usually toeat.
+a feastitem is a kind of rhymable. a feastitem has text called fdesc. a feastitem can be toeat, auxiliary, ambiance, drinkware or silverware. a feastitem is usually toeat.
 
 a feastitem can be uncookable, cooked, okaycold, optional or uncooked. a feastitem is usually uncookable.
 
@@ -145,6 +145,8 @@ to decide which room is relevant-wandroom of (rm - a room):
 	decide on dove n doubt;
 
 this is the side puzzle rooms rule:
+	let rw be relevant-wandroom of location of player;
+	if rw is tangentified, continue the action;
 	consider native-clear-rule of relevant-wandroom of location of player;
 	if the rule failed, continue the action;
 	if Stuck State is unvisited:
@@ -160,7 +162,7 @@ this is the side puzzle rooms rule:
 		say "Oh no! You hear an odd, insistent buzzing in the distance. It comes nearer. A giant bee tries to bop you ... must be a bopper bee! You may have to outsmart it, here.";
 		now all wandrooms are tangentified;
 		move player to Edgy Ill instead;
-	say "This is a BUG, and a bad one. It leaves the game unwinnable. It should never happen. Please let me know what room this error message occurred in."
+	say "This is a BUG, but not a critical one. It seems I tried to send you to a side room, but you'd been to them all. Please let me know what room this error message occurred in."
 
 check going outside when player is in Reeve Row:
 	if sco-heave-ho is true:
@@ -223,10 +225,10 @@ to decide which number is well-score:
 	decide on (boolval of sco-feet-fell) + (boolval of sco-wheat-well) + (boolval of sco-sheet-shell) + (boolval of sco-beat-bell) + (boolval of sco-meet-mel);
 
 to decide which number is sides-visited:
-	decide on number of visited rooms in Dome D'aww
+	decide on number of visited rooms in Dome D'aww;
 
 to decide which number is slurry-score:
-	decide on (boolval of sco-just-jello) + (boolval of sco-honeyed-ham) + (boolval of sco-grey-gruel);
+	decide on (boolval of sco-just-jello) + (boolval of sco-honeyed-ham) + (boolval of sco-grey-gruel) + (boolval of sco-potpourri);
 
 volume big rule
 
