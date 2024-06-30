@@ -452,6 +452,7 @@ to evaluate-stare:
 	else if stare-score is 1:
 		say "[line break]The staller stare blinks. It seems to shake where its head would be. It's a bit baffled by what it saw. It rolls its eyes as if to say, any more of this, and I give up.";
 		now to-number of squalor square is 5608;
+		now to-number of staller stare is 5608;
 
 a goodrhyme rule (this is the vc-baller-bear rule):
 	if player is not in squalor square, unavailable;
@@ -604,6 +605,8 @@ this is the vr-lovin-lout rule:
 	now sco-lovin-lout is true;
 	say "A lovin['] lout strolls sheepishly into view, not sure to explain whether they've been terribly loyal, or they didn't mean to do the stuff the bad people suggested they do, or else. You assure them that's over now, and you want someone who can help a bit. For what, you're not sure yet.[paragraph break]You take a closer look at the oven. It's missing a lot! You probably need to find bits and pieces to make it serviceable again.";
 	move lout to Dove N Doubt;
+	declue-here-by 2754;
+	decrease to-number of oven by 2754;
 
 a goodrhyme rule (this is the vc-shovin-shout rule):
 	if player is not in dove n doubt, unavailable;
@@ -618,6 +621,8 @@ a goodrhyme rule (this is the vc-shovin-shout rule):
 this is the vr-shovin-shout rule:
 	now sco-shovin-shout is true;
 	say "You and the lovin['] lout get together and push the oven forward. Something seems to crumble loose. There must be just one more thing to do.";
+	declue-here-by 2805;
+	decrease to-number of oven by 2805;
 
 a goodrhyme rule (this is the vc-oven-out rule):
 	if player is not in dove n doubt and oven is not touchable, unavailable;
@@ -634,7 +639,9 @@ a goodrhyme rule (this is the vc-oven-out rule):
 
 this is the vr-oven-out rule:
 	now sco-oven-out is true;
-	say "With the right commands and pacing, you and [the lout] move the oven from its former position. The lout, very unloutishly indeed, asks if you need the oven to move anywhere. You defer all 'Oh, it'd be too much!' but after some nonsense back-and-forthing, you both realize that's wasted energy. You both move the oven back to Reeve Row pretty quickly. The oven is -- well, you sense it isn't ready to cook anything, but it's a lot easier to repair here.[paragraph break]The [lout] waits around, as if they suspect they could help you with one more thing.";
+	say "With the right commands and pacing, you and [the lout] move the oven from its former position. The lout, very unloutishly indeed, asks if you need the oven to move anywhere. You defer all 'Oh, it'd be too much!' but after some nonsense back-and-forthing, you both realize that's wasted energy. You both move the oven back to Reeve Row pretty quickly. The oven is -- well, you sense it isn't ready to cook anything, but it's a lot easier to repair here.[paragraph break]The [lout] waits around, as if they suspect they could help you with one more thing. Very considerate indeed, for a lout!";
+	declue-here;
+	declue oven;
 	move oven to Reeve Row;
 	move lovin lout to Reeve Row;
 	drop-player-at Reeve Row;
@@ -1039,11 +1046,11 @@ a goodrhyme rule (this is the vc-lone-laura rule):
 
 this is the vh-loan-laura rule:
 	say "Sort of, though at such a ceremony, people do not worry about past grievances or debts.";
-	the rule succeeds;
 
 this is the vr-lone-laura rule:
 	now sco-lone-laura is true;
 	say "Lone Laura appears!";
+	decrease to-number of own aura by 2705;
 	hall-move Lone Laura;
 
 a goodrhyme rule (this is the vc-known-nora rule):
@@ -1056,6 +1063,7 @@ a goodrhyme rule (this is the vc-known-nora rule):
 this is the vr-known-nora rule:
 	now sco-known-nora is true;
 	say "Known Nora appears!";
+	decrease to-number of own aura by 2754;
 	hall-move Known Nora;
 
 chapter Compete Compel scoring
@@ -1175,11 +1183,11 @@ book general flip stubs
 chapter Reeve Row
 
 to rug-check (nu - a number):
-	decrease from-number of rayed rug by nu;
+	decrease to-number of rayed rug by nu;
 	say "[line break]A ray vanishes from the rug. ";
 	if rug-score is 3:
-		say "The final rays on the rug grow dull. The rug flops uselessly off to the side";
-		declue rayed rug;
+		say "The final rays on the rug grow dull. You figure you're done with it, so you put it in a corner where you can just ignore it";
+		moot rayed rug;
 	else if rug-score is 2:
 		say "The rug's rays go from one-third dull to one-third bright";
 	else:
@@ -1292,6 +1300,7 @@ to hall-move (rh - a rhymeperson):
 	move rh to Happy Hall;
 	if rh is female:
 		set pronoun her to rh;
+		if to-number of own aura is 0, now to-number of own aura is -4;
 	else:
 		set pronoun him to rh;
 	if other-guy of rh is in Happy Hall:
