@@ -83,7 +83,7 @@ when play begins:
 	wfak;
 	say "It has a different theme every year, with different participants. This year, they are decided by the Loyal Leader (pretty high up in government, but not top banana,) who consults a large machine called the Royal Reader. But it is not that easy.";
 	wfak;
-	say "It's revealed the process this year must've taken extra time, with a soil seeder. And people throughout the kingdom have found foil for the foil feeder.";
+	say "It's revealed the process this year must've taken extra time, with a soil seeder fighting back a spoil-speeder. And people throughout the kingdom have found foil for the foil feeder.";
 	wfak;
 	say "And precautions needed to be taken against a spoil-speeder, for obvious reasons.";
 	wfak;
@@ -132,11 +132,17 @@ check going outside in Reeve Row when Lovin Lout is in Reeve Row: say "You sense
 
 after printing the locale description for Reeve Row:
 	process the Reeve Row check passage down rule;
+	continue the action;
 
 this is the Reeve Row check passage down rule:
-	if player has copper key and sco-heave-ho is true and sco-believe-below is true:
-		say "You use the copper key on the trap door down. And it works!";
-		moot copper key;
+	if sco-heave-ho is true and sco-believe-below is true:
+		if player has copper key:
+			say "You use the copper key on the trap door down. And it works!";
+			moot copper key;
+		else if copper key is off-stage:
+			say "There's that trap door here. But it's useless to interact with until you find a key for it.";
+		else:
+			say "There's a passage down, through the trap door you opened.";
 
 after printing the locale description for reeve row when oven-fixed-yet is false (this is the Reeve Row fix oven rule):
 	oven-check;
@@ -566,11 +572,15 @@ chapter Leet Lel by Pete Pell
 
 Leet Lel by Pete Pell is a thing. printed name is "[i]Leet Lel[r], by Pete Pell". description is "[one of]It's a biography of someone who passed this year, someone who you had various strong opinions about. Someone you couldn't put out of your mind for stretches. Someone who taught you so much but could be pretty annoying at times. They had ... baggage. They could've been a heck of a lot nicer.[paragraph break]Pete Pell has laid out the facts, though, and it's up to you to decide whether Lel's good outweighs the bad, or vice versa, or they balance out.[paragraph break]It's up to you, what your final opinion of Lel is. But now is the time to decide and move on.[paragraph break]Do you wish to hold on to positive or negative feelings? Or do you wish to cast them out all together? You sense [leet lel] has given you enough motivation for any of the three, without judgement.[or]You don't have the time or emotional energy to read through it again. You need to make a decision on what kind of fate Leet Lel deserves, what kind of person Leet Lel was, based on your interpretations of the readings, and move on.[paragraph break]Positive? Neutral? Or just beat back any feelings at all about Leet Lel?[stopping]".
 
+understand "book" as Leet Lel when player has leet lel.
+
+does the player mean doing something with leet lel when player has leet lel: it is likely.
+
 volume Dome D'Aww
 
 book Stuck State
 
-Stuck State is a room in Dome D'Aww. "Oh man! You're stuck here and don't know what to do! What sort of action can you take?"
+Stuck State is a room in Dome D'Aww. "Oh man! You're stuck here and don't know what to do! What sort of action can you take? What sort of hidden thing might you be able to find?"
 
 guess-table of stuck state is the table of stuck state guesses.
 
@@ -782,7 +792,8 @@ book creditsing
 
 carry out creditsing:
 	say "Thanks to Adam Sommerfield for holding the first ParserComp and fos1 for keeping it going this year, and Christopher Merriner for helping previously.";
-	say "[line break]Thanks to Onno Brouwer for testing.";
+	say "[line break]Thanks to Onno Brouwer, Wade Clarke and Josh Grams for testing. I gave them a ton to deal with, and they found a lot.";
+	say "[line break]Thanks to Brian Rushton for an in-comp bug report.";
 	say "[line break]Thanks to people who tested previous entries in the series. They helped iron out some core bugs that made code reusable. Often they alerted me to stuff that couldn't be wrong";
 	say "[line break]Thanks to you for playing this.";
 
@@ -796,9 +807,9 @@ carry out optsing:
 book verbsing
 
 carry out verbsing:
-	say "[this-game] doesn't have many custom verbs that are used regularly. In fact, many standard verbs such as [b]PUSH[r] and [b]PULL[r] are disabled, and [b]CLIMB[r] or [b]ATTACK[r], for instance, have minimal implementation. You shouldn't even need [b]TAKE[r]. This is to help you focus on certain phrases you need to guess to advance.";
-	say "[line break]The four cardinal directions and [b]UP[r] are used, as well as [b]X[r] or [b]EXAMINE[r]. [b]READ[r] may provide different output. Use [b]I[r] to take inventory as well.";
-	say "[line break][b]T[r] lets you talk to people or entities.";
+	say "[this-game] doesn't have many custom verbs that are used regularly. In fact, many standard verbs such as [b]PUSH[r] and [b]PULL[r] are disabled, and [b]CLIMB[r] or [b]ATTACK[r], for instance, have minimal implementation. Even [b]TAKE[r] should be useless--you implicitly take what useful stuff you can.[paragraph break]This is to help you focus on certain phrases you need to guess to advance.";
+	say "[line break]The four cardinal directions and [b]UP[r]/[b]DOWN[r] are used, as well as [b]X[r] or [b]EXAMINE[r]. [b]READ[r] may provide different output. [b]I[r] takes inventory.";
+	say "[line break][b]T[r] lets you talk to people or entities, but it's just for fun.";
 	say "[line break]Useful meta-verbs: [b]OPTS[r] gives game options, and [b]META[r] gives general information commands.";
 	the rule succeeds;
 
