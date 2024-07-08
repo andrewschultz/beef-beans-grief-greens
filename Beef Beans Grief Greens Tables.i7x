@@ -89,7 +89,7 @@ a goodrhyme rule (this is the vc-prune-pride rule):
 
 this is the vr-prune-pride rule:
 	now sco-prune-pride is true;
-	say "You get over your rage at the goon guide allowing bad people to make food as tasty as good people could make. You realize you are not the judge.[paragraph break]The goon guide will be there with further technical help when you need it, to help repair the oven. You have an idea of the exact parts that are missing now. You will be more observant in the future when you look around.";
+	say "You get over your rage at the goon guide allowing bad people to make food as tasty as good people could make. You realize you are not the judge of such things, and you should not be.[paragraph break]The goon guide will be there with further technical help when you need it, to help repair the oven. You have an idea of the exact parts that are missing now. You will be more observant in the future when you look around.";
 	move passive pit to Ooh Ooh;
 	move vented vials to Gap Goo;
 	move Light Lyres to Squalor Square;
@@ -191,7 +191,7 @@ this is the vr-believe-below rule:
 	if sco-heave-ho is false:
 		say "You believe something must be below. Below that rug, you'd guess. You might not be able to remove it by yourself. But you have faith now!";
 	else:
-		say "Aha! You wondered if something was below the rug. Now you see the outline of a trap door beneath the rug."; [?? if rug there and you believed, you'd like to remove it]
+		say "Aha! You wondered if something was below the rug. Now you see the outline of a trap door beneath the rug[if player does not have copper key], but it's locked[end if]."; [?? if rug there and you believed, you'd like to remove it]
 	now sco-believe-below is true;
 	declue-here-by 2855;
 	process the Reeve Row check passage down rule;
@@ -324,7 +324,7 @@ this is the vh-flopper-flee rule:
 
 this is the vr-flopper-flea rule:
 	now sco-flopper-flea is true;
-	say "Wait! Something about the bee looks funny! Yes, it is not really a bee, but a less aggressive animal in disguise. Just knowing it is a flopper flea makes you less scared. Without fear, your running around gets more strategic, until it gets exhausted chasing you.[paragraph break]It buzzes and mumbles off. You're not surprised that, as it does, it drops a copper key.";
+	say "Wait! Something about the bee looks funny! Yes, it is not really a bee, but a less aggressive animal in disguise. Just knowing it is a flopper flea makes you less scared. Without fear, your running around gets more strategic, until it gets exhausted chasing you.[paragraph break]It buzzes and mumbles off. You're not surprised that, as it does, it drops a copper key, which you pick up.";
 	now player has copper key;
 	moot bopper bee;
 
@@ -528,7 +528,7 @@ this is the vr-neat-note rule:
 	now sco-neat-note is true;
 	say "It seems silly to expect someone to just up and drop by with a neat note. But surprisingly, the bleat bloat dies out, and someone singularly unimpressive-looking walks in, slowly and without confidence.";
 	say "'Uh, hi. People call me the downed dork. I guess I deserve it, for not getting back up off the ground after being called a silly name. Anyway, I find weird stuff, nothing important--just, stuff more with-it people have no use for. Thanks for getting rid of the staller stare. Let me know if I can do anything for you.'";
-	say "[line break]You find this part touching, because, well, you've been called a dork too. Even after being given this mission. You assure the downed dork that they might just be the person you need tosee.";
+	say "[line break]You find this part touching, because, well, you've been called a dork too. Even after being given this mission. You assure the downed dork that they might just be the person you need to see.";
 	now player has neat note;
 	move downed dork to squalor square;
 	say "Ah! Much better! With a neat note to distract you, the bleat bloat seems less ubiquitous. After you read the note for a few minutes, the bleat bloat departs, feeling unloved and unnoticed.";
@@ -620,7 +620,7 @@ a goodrhyme rule (this is the vc-shovin-shout rule):
 
 this is the vr-shovin-shout rule:
 	now sco-shovin-shout is true;
-	say "You and the lovin['] lout get together and push the oven forward. Something seems to crumble loose. There must be just one more thing to do.";
+	say "You and the lovin['] lout get together and push the oven forward.[paragraph break]Something seems to crumble loose. Success! You can probably move the oven more ambitiously now.";
 	declue-here-by 2805;
 	decrease to-number of oven by 2805;
 
@@ -630,7 +630,7 @@ a goodrhyme rule (this is the vc-oven-out rule):
 		vcp "You can't move the oven out by yourself!";
 		not-yet;
 	if sco-shovin-shout is false:
-		vcp "You may need to dislodge the oven a bit before really moving it.";
+		vcp "Before moving the oven out, you'll have to be sure you and the lout can push it a bit.";
 		not-yet;
 	if sco-oven-out is true:
 		vcal "But you've already moved the oven back to Reeve Row!";
@@ -1014,7 +1014,7 @@ this is the vh-cappy-call rule:
 a goodrhyme rule (this is the vc-yappy-yall rule):
 	abide by the ritual-stuff rule;
 	if sco-cappy-caul is false:
-		vcp "You need to retrieve your ceremonial garb!";
+		vcp "You need to retrieve your ceremonial garb first!";
 		not-yet;
 	if sco-yappy-yall is true:
 		vcal "You already held a discussion. Now it is time for games.";
@@ -1099,7 +1099,7 @@ this is the vr-sheet-shell rule:
 a goodrhyme rule (this is the vc-feet-fell rule):
 	if player is not in compete compel, unavailable;
 	if sco-wheat-well is false:
-		vcp "But you haven't envisioned have any place to fall to!";
+		vcp "But you haven't envisioned any place to fall to!";
 		not-yet;
 	if sco-feet-fell is true:
 		vcal "You already slid to a more peaceful space!";
@@ -1143,7 +1143,7 @@ a goodrhyme rule (this is the vc-meet-mel rule):
 
 this is the vr-meet-mel rule:
 	now sco-meet-mel is true;
-	say "Yes! Mel the Mail Maven! It has a certain ring to it. You take Mel's delivery.[paragraph break][pete pell]. Memories come back to you, of Leet Lel, a larger-than-life figure that showed you so much, but who also seemed to have scorn for you. It was hard to tell";
+	say "Yes! Mel the Mail Maven! It has a certain ring to it. You take Mel's delivery.[paragraph break][pete pell]. Memories come back to you, of Leet Lel, a larger-than-life figure that showed you so much, but who also seemed to have scorn for you. It was hard to tell.";
 	now player has pete pell;
 	now to-number of compete compel is 8264;
 
@@ -1317,7 +1317,7 @@ this is the try-final-point rule:
 		vcp "You haven't reflected enough for [if eet-ell is 0]a balanced[else if eet-ell < 0]an angry[else if eet-ell > 0]a favorable[end if] judgement, yet.";
 		not-yet;
 	if pete pell is not examined:
-		vcp "You get a sense such a judgment would be more appropriate once you've examined [pete pell].";
+		vcp "You get a sense such a judgment would be more appropriate once you've examined the book you just got.";
 		not-yet;
 	ready;
 

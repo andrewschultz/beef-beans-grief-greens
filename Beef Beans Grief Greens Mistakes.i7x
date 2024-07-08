@@ -45,7 +45,7 @@ mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 "tap"	"two|too"	--	false	--	"You don't have anyone to tap for anything."
 "trap"	"true"	--	false	--	"You search diligently for a trap that clearly advertises its trappiness. Nothing comes up."
 "whap"	"woo"	--	false	--	"You don't take pleasure in violence."
-"yap"	"you"	--	false	--	"You aren't the conversationally aggresive type."
+"yap"	"you"	--	false	--	"You aren't the conversationally aggressive type."
 
 table of happy hall guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
@@ -94,10 +94,11 @@ mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 table of stuck state guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 "buck"	"bait"	--	false	--	"You hope someone comes by, trying to make you feel worse. Or better. You'll show them!"
-"duck"	"date"	--	false	--	"Yes. You are definitely not in the mood for romance. Even more than when you were in Reeve Row."
+"duck"	"date"	--	false	--	"Yes. You are definitely not in the mood for romance. Even more not in the mood than when you were in Reeve Row."
 "fuck"	"fate"	--	false	--	"Maybe you're doing the whole Kubler-Ross thing out of order, here, but so what? She's dead. She can't tell YOU how to grieve!"
 "huck"	"hate"	--	false	--	"An unhealthy reaction to frustration, to spread it to others."
 "luck"	"late"	--	false	--	"You wait a while hoping for something to happen. Well, you feel a bit more rested."
+"muck"	"mate"	--	false	--	"You wonder if someone would come to help you. But you also worry you'd pull them down into your psychological muck."
 "puck"	"pate"	--	false	--	"Alas, there is nobody around to call a hockey puck head."
 "ruck"	"rate"	--	false	--	"You don't have the energy to start a fight, and you wouldn't want one, but you dread starting one, even one you could win."
 "struck"	"straight"	--	false	--	"You try to jolt yourself into finding a way out."
@@ -143,9 +144,11 @@ mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 table of goon guide guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 "boon"	"bide"	--	false	--	"The guide may provide a boon if you look for it right."
-"dune"	"died"	--	false	--	"<CLEVER REJECT TEXT>"
+"croon"	"cried"	--	false	--	"You feel no soulful song move within you. Well, none others might want to hear."
+"dune"	"died"	--	false	--	"You reflect how Frank Herbert's series lost steam as it rolled on. Assuming you've read it, of course. I'm just speaking from hearsay, here."
 "loon"	"lied"	--	false	--	"You recall someone 'exciting' and 'aggressive' who HAD to be telling the truth, as someone would have caught them in their lies before. Actually, nobody had."
 "rune"	"ride"	--	false	--	"The goon guide offers no key to magical transport."
+"soon"	"side|sighed"	--	false	--	"You believe in yourself! Somehow, some way, the goon guide will help you figure something out."
 "tune"	"tide|tied"	--	false	--	"If the goon guide does offer music, it might be a bit rough."
 
 table of rayed rug guesses

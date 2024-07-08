@@ -204,7 +204,7 @@ this is the hint-penny-piles rule:
 	say "You don't need to do anything explicitly with the penny piles. They will be used to pay for the proper food. To get that, hint the area." instead;
 
 this is the hint-pie-po rule:
-	say "[if sco-penny-piles is false]You don't have anything to buy food with. Look at [miles] for that.[else][one of]You need a food that rhymes with I, Oh[pplus][or]There's a simple food, but you also need it to be cheap[pplus][or][b]PIE PO[r][pminus][cycling]" instead;
+	say "[if sco-penny-piles is false]You don't have anything to buy food with. Look at [miles] for that.[else][one of]You need a food that rhymes with I, Oh[pplus][or]There's a simple food, but you also need it to be cheap[pplus][or]You'll have to use an aposttrophe here, to shorten a word.[pplus][or]Pie, poor becomes pie, po['] ... or [b]PIE PO[r][pminus][cycling]" instead;
 
 chapter toy toss
 

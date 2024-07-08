@@ -35,7 +35,7 @@ betaing is an action out of world applying to one number.
 understand "beta [number]" as betaing.
 
 carry out betaing:
-	if player is not in reeve row or current-score > 0, say "You need to be in Reeve Row with no points to do a beta jump. I'm probably being over-cautious here, but I just wanbt to make sure." instead;
+	if player is not in reeve row or current-score > 0, say "You need to be in Reeve Row with no points to do a beta jump. I'm probably being over-cautious here, but I just want to make sure." instead;
 	let x be the number understood;
 	if x < -3 or x > 3:
 		say "You need a number between -3 and 3. Type BETA alone for details." instead;
