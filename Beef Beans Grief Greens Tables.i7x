@@ -13,7 +13,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "spoon"	"spied"	--	--	false	true	true	false	reeve row	vc-spoon-spied rule	vr-spoon-spied rule	--	"You can get a [b]SPOON SPIED[r] [once-now of vc-spoon-spied rule] you have managed to consult the goon guide with a clear mind."
 "believe"	"below"	--	--	false	true	true	false	reeve row	vc-believe-below rule	vr-believe-below rule	--	--
 "played"	"plug"	--	--	false	true	true	false	reeve row	vc-played-plug rule	vr-played-plug rule	--	--
-"grieve"	"grow"	--	--	false	true	true	false	reeve row	vc-grieve-grow rule	vr-grieve-grow rule	--	--
+"grieve"	"grow"	"greave"	vh-greave-grow rule	false	true	true	false	reeve row	vc-grieve-grow rule	vr-grieve-grow rule	--	--
 "made|maid"	"mug"	--	--	false	true	true	false	reeve row	vc-made-mug rule	vr-made-mug rule	--	--
 "jade"	"jug"	--	--	false	true	true	false	reeve row	vc-jade-jug rule	vr-jade-jug rule	--	--
 "laundering"	"lair"	--	--	false	true	true	false	wandering where	vc-laundering-lair rule	vr-laundering-lair rule	--	--
@@ -27,11 +27,11 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "caller"	"care"	"collar"	--	false	true	true	false	squalor square	vc-caller-care rule	vr-caller-care rule	--	--
 "dollar"	"dare"	--	--	false	true	true	false	squalor square	vc-dollar-dare rule	vr-dollar-dare rule	--	--
 "neat"	"note"	--	--	false	true	true	false	squalor square	vc-neat-note rule	vr-neat-note rule	--	--
-"meat"	"moat"	"meet/mote"	--	false	true	true	false	squalor square	vc-meat-moat rule	vr-meat-moat rule	--	"You can find a [b]MEAT MOAT[r] [once-now of vc-meat-moat rule] you have found something more useful than the bleat bloat."
-"beet"	"boat"	"beat"	--	false	true	true	false	squalor square	vc-beet-boat rule	vr-beet-boat rule	--	"You can find a [b]BEET BOAT[r] [once-now of vc-beet-boat rule] you have found something more useful than the bleat bloat."
+"meat"	"moat"	"meet/mote"	vh-meet-mote rule	false	true	true	false	squalor square	vc-meat-moat rule	vr-meat-moat rule	--	"You can find a [b]MEAT MOAT[r] [once-now of vc-meat-moat rule] you have found something more useful than the bleat bloat."
+"beet"	"boat"	"beat"	vh-beat-boat rule	false	true	true	false	squalor square	vc-beet-boat rule	vr-beet-boat rule	--	"You can find a [b]BEET BOAT[r] [once-now of vc-beet-boat rule] you have found something more useful than the bleat bloat."
 "found"	"fork"	--	--	false	true	true	false	squalor square	vc-found-fork rule	vr-found-fork rule	--	--
 "fight"	"fires"	--	--	false	true	true	false	squalor square	vc-fight-fires rule	vr-fight-fires rule	--	--
-"white"	"wires"	"wight"	--	false	true	true	false	squalor square	vc-white-wires rule	vr-white-wires rule	--	"You can handle the [b]WHITE WIRES[r] [once-now of vc-white-wires rule] the lyres are safe to touch."
+"white"	"wires"	"wight"	vh-wight-wires rule	false	true	true	false	squalor square	vc-white-wires rule	vr-white-wires rule	--	"You can handle the [b]WHITE WIRES[r] [once-now of vc-white-wires rule] the lyres are safe to touch."
 "lovin"	"lout"	--	--	false	true	true	false	dove n doubt	vc-lovin-lout rule	vr-lovin-lout rule	--	--
 "shovin"	"shout"	--	--	false	true	true	false	dove n doubt	vc-shovin-shout rule	vr-shovin-shout rule	--	"You can make a [b]SHOVIN SHOUT[r] [once-now of vc-shovin-shout rule] you have the help of someone stronger."
 "oven"	"out"	--	--	false	true	true	false	dove n doubt	vc-oven-out rule	vr-oven-out rule	--	"You can say [b]OVEN OUT[r] [once-now of vc-oven-out rule] you have someone strong enough to push the oven."
@@ -241,6 +241,9 @@ a goodrhyme rule (this is the vc-grieve-grow rule):
 		vcal "Too much grief will undo the growing you did.";
 		already-done;
 	ready;
+
+this is the vh-greave-grow rule:
+	say "This isn't a warrior quest, here. No need for armor.";
 
 this is the vr-grieve-grow rule:
 	now sco-grieve-grow is true;
@@ -543,8 +546,8 @@ a goodrhyme rule (this is the vc-beet-boat rule):
 	ready;
 [	if sco-beet-boat is true and (player is in squalor square or player has beet boat or player has meat moat):]
 
-to say a-o:
-	say "[one of]A burly workman named Amped Ox takes you  and the downed dork to the Damped Docks[or]Amped Ox drops by again, leading you and the downed dork to a new area of the Damped Docks[stopping]"
+this is the vh-beat-boat rule:
+	say "There's no competition here, violent, friendly, racing or otherwise."
 
 this is the vr-beet-boat rule:
 	now sco-beet-boat is true;
@@ -559,6 +562,9 @@ a goodrhyme rule (this is the vc-meat-moat rule):
 		already-done;
 	abide by the be-square rule;
 	ready;
+
+this is the vh-meet-mote rule:
+	say "You needn't make the acquaintance of anything minuscule. You need more sizable food portions."
 
 this is the vr-meat-moat rule:
 	now sco-meat-moat is true;
@@ -586,6 +592,9 @@ a goodrhyme rule (this is the vc-white-wires rule):
 		vcal "You already got the white wires!";
 		already-done;
 	ready;
+
+this is the vh-wight-wires rule:
+	say "Summoning the undead is one way to remember those who passed on, but it's a high-risk one."
 
 this is the vr-white-wires rule:
 	now sco-white-wires is true;
@@ -830,7 +839,11 @@ a goodrhyme rule (this is the vc-pie-po rule):
 	ready;
 
 this is the vh-pi-poe rule:
-	if the player's command includes "pi":
+	let h1 be whether or not the player's command includes "pi";
+	let h2 be whether or not the player's command includes "poe";
+	if h1 is true and h2 is true:
+		say "Double narrow misses with the words. But you must be close!";
+	else if h1 is true:
 		say "Pi times the radius squared, and you've got something.";
 	else:
 		say "No, not the author, a descriptor.";
@@ -1204,6 +1217,9 @@ to oven-check:
 			moot OT;
 
 chapter Squalor Square
+
+to say a-o:
+	say "[one of]A burly workman named Amped Ox takes you  and the downed dork to the Damped Docks[or]Amped Ox drops by again, leading you and the downed dork to a new area of the Damped Docks[stopping]"
 
 this is the bloat-transform rule:
 	if player does not have meat moat and player does not have beet boat and player does not have neat note, unavailable;
