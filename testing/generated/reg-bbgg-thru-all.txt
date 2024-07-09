@@ -355,7 +355,7 @@ You have scored a total of 48 out of 69 points and need 65 to win. You have foun
 >d
 
 #testcase-room-names-woe-worry-slow-slurry
-`Woe Worry Slow Slurry
+`Woe/Worry Slow Slurry
 
 >honeyed ham
 by one point
@@ -382,6 +382,7 @@ by one point
 You have scored a total of 52 out of 69 points and need 69 to win. You have found 10 of 10 bonus points so far.
 
 >u
+
 >in
 
 >grieve grow
@@ -498,7 +499,7 @@ by one point
 
 >missed
 Note that, because there are three different endings, you'll automatically have "missed" two of them, which I don't want to spoil. You can UNDO to track the others down.
-You missed nothing else, though. Good job!
+You found everything before the finale, though. Good job!
 
 >undo
 
@@ -507,13 +508,21 @@ by one point
 
 >missed
 Note that, because there are three different endings, you'll automatically have "missed" two of them, which I don't want to spoil. You can UNDO to track the others down.
-You missed nothing else, though. Good job!
+You found everything before the finale, though. Good job!
 
 >undo
 
 >heat hell
+!by one point
+
+#the Z and missed look weird, but it has to do with a lot of text being sent in, and it crowds the text buffer.
+#the other solution is to raise -h, but in that case, tests run slower.
+#so this is a kludge.
+>z
 by one point
 
 >missed
+
+>missed
 Note that, because there are three different endings, you'll automatically have "missed" two of them, which I don't want to spoil. You can UNDO to track the others down.
-You missed nothing else, though. Good job!
+You found everything before the finale, though. Good job!

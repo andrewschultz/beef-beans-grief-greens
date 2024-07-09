@@ -59,6 +59,96 @@ by one point
 >w
 Perhaps there are secret passages for the mafia-connected, but not for you.
 
+#testcase-goto-tries-dove-n-doubt-reeve-row
+>gt reeve row
+`Reeve Row
+
+>undo
+
+#testcase-goto-tries-dove-n-doubt-wandering-where
+>gt wandering where
+`Wandering ... Where?
+
+>undo
+
+#testcase-goto-tries-dove-n-doubt-squalor-square
+>gt squalor square
+That location or thing doesn't exist or isn't known to you yet.
+
+>undo
+
+#testcase-goto-tries-dove-n-doubt-dove-n-doubt
+>gt dove n doubt
+You're already there! Well, here.
+
+>undo
+
+#testcase-goto-tries-dove-n-doubt-ooh-ooh
+>gt ooh ooh
+That location or thing doesn't exist or isn't known to you yet.
+
+>undo
+
+#testcase-goto-tries-dove-n-doubt-gap-goo
+>gt gap goo
+That location or thing doesn't exist or isn't known to you yet.
+
+>undo
+
+#testcase-goto-tries-dove-n-doubt-took-tarred
+>gt took tarred
+That location or thing doesn't exist or isn't known to you yet.
+
+>undo
+
+#testcase-goto-tries-dove-n-doubt-stuck-state
+>gt stuck state
+That location or thing doesn't exist or isn't known to you yet.
+
+>undo
+
+#testcase-goto-tries-dove-n-doubt-hi-ho-i-owe
+>gt hi ho
+That location or thing doesn't exist or isn't known to you yet.
+
+>undo
+
+#testcase-goto-tries-dove-n-doubt-toy-toss
+>gt toy toss
+That location or thing doesn't exist or isn't known to you yet.
+
+>undo
+
+#testcase-goto-tries-dove-n-doubt-woe-worry-slow-slurry
+>gt slow slurry
+That location or thing doesn't exist or isn't known to you yet.
+
+>undo
+
+#testcase-goto-tries-dove-n-doubt-edgy-ill-hedge-y-hill
+>gt ill hill
+That location or thing doesn't exist or isn't known to you yet.
+
+>undo
+
+#testcase-goto-tries-dove-n-doubt-trappy-trawl
+>gt trappy trawl
+That location or thing doesn't exist or isn't known to you yet.
+
+>undo
+
+#testcase-goto-tries-dove-n-doubt-happy-hall
+>gt happy hall
+That location or thing doesn't exist or isn't known to you yet.
+
+>undo
+
+#testcase-goto-tries-dove-n-doubt-compete-compel
+>gt compete compel
+That location or thing doesn't exist or isn't known to you yet.
+
+>undo
+
 >lovin lout
 by one point
 
@@ -92,6 +182,100 @@ by one point
 >w
 Perhaps finding what you need will get you out of here. You can't see a passage out.
 
+>w
+
+#testcase-goto-tries-stuck-state-reeve-row
+>gt reeve row
+You can't go back anywhere you've been until you find a way out of here.
+
+>undo
+
+#testcase-goto-tries-stuck-state-wandering-where
+>gt wandering where
+You can't go back anywhere you've been until you find a way out of here.
+
+>undo
+
+#testcase-goto-tries-stuck-state-squalor-square
+>gt squalor square
+That location or thing doesn't exist or isn't known to you yet.
+
+>undo
+
+#testcase-goto-tries-stuck-state-dove-n-doubt
+>gt dove n doubt
+You can't go back anywhere you've been until you find a way out of here.
+
+>undo
+
+#testcase-goto-tries-stuck-state-ooh-ooh
+>gt ooh ooh
+That location or thing doesn't exist or isn't known to you yet.
+
+>undo
+
+#testcase-goto-tries-stuck-state-gap-goo
+>gt gap goo
+That location or thing doesn't exist or isn't known to you yet.
+
+>undo
+
+#testcase-goto-tries-stuck-state-took-tarred
+>gt took tarred
+That location or thing doesn't exist or isn't known to you yet.
+
+>undo
+
+#testcase-goto-tries-stuck-state-stuck-state
+>gt stuck state
+You're already there! Well, here.
+
+>undo
+
+#testcase-goto-tries-stuck-state-hi-ho-i-owe
+>gt hi ho
+That location or thing doesn't exist or isn't known to you yet.
+
+>undo
+
+#testcase-goto-tries-stuck-state-toy-toss
+>gt toy toss
+That location or thing doesn't exist or isn't known to you yet.
+
+>undo
+
+#testcase-goto-tries-stuck-state-woe-worry-slow-slurry
+>gt slow slurry
+That location or thing doesn't exist or isn't known to you yet.
+
+>undo
+
+#testcase-goto-tries-stuck-state-edgy-ill-hedge-y-hill
+>gt ill hill
+That location or thing doesn't exist or isn't known to you yet.
+
+>undo
+
+#testcase-goto-tries-stuck-state-trappy-trawl
+>gt trappy trawl
+That location or thing doesn't exist or isn't known to you yet.
+
+>undo
+
+#testcase-goto-tries-stuck-state-happy-hall
+>gt happy hall
+That location or thing doesn't exist or isn't known to you yet.
+
+>undo
+
+#testcase-goto-tries-stuck-state-compete-compel
+>gt compete compel
+That location or thing doesn't exist or isn't known to you yet.
+
+>undo
+
+>undo
+
 >pluck plate
 by one point
 
@@ -103,6 +287,100 @@ by one point
 #testcase-goto-table-of-noways-took-tarred
 >w
 You can't leave until you've found everything the shook shard offers.
+
+>w
+
+#testcase-goto-tries-took-tarred-reeve-row
+>gt reeve row
+You can't go back anywhere you've been until you find a way out of here.
+
+>undo
+
+#testcase-goto-tries-took-tarred-wandering-where
+>gt wandering where
+You can't go back anywhere you've been until you find a way out of here.
+
+>undo
+
+#testcase-goto-tries-took-tarred-squalor-square
+>gt squalor square
+That location or thing doesn't exist or isn't known to you yet.
+
+>undo
+
+#testcase-goto-tries-took-tarred-dove-n-doubt
+>gt dove n doubt
+You can't go back anywhere you've been until you find a way out of here.
+
+>undo
+
+#testcase-goto-tries-took-tarred-ooh-ooh
+>gt ooh ooh
+That location or thing doesn't exist or isn't known to you yet.
+
+>undo
+
+#testcase-goto-tries-took-tarred-gap-goo
+>gt gap goo
+That location or thing doesn't exist or isn't known to you yet.
+
+>undo
+
+#testcase-goto-tries-took-tarred-took-tarred
+>gt took tarred
+You're already there! Well, here.
+
+>undo
+
+#testcase-goto-tries-took-tarred-stuck-state
+>gt stuck state
+You can't go back anywhere you've been until you find a way out of here.
+
+>undo
+
+#testcase-goto-tries-took-tarred-hi-ho-i-owe
+>gt hi ho
+That location or thing doesn't exist or isn't known to you yet.
+
+>undo
+
+#testcase-goto-tries-took-tarred-toy-toss
+>gt toy toss
+That location or thing doesn't exist or isn't known to you yet.
+
+>undo
+
+#testcase-goto-tries-took-tarred-woe-worry-slow-slurry
+>gt slow slurry
+That location or thing doesn't exist or isn't known to you yet.
+
+>undo
+
+#testcase-goto-tries-took-tarred-edgy-ill-hedge-y-hill
+>gt ill hill
+That location or thing doesn't exist or isn't known to you yet.
+
+>undo
+
+#testcase-goto-tries-took-tarred-trappy-trawl
+>gt trappy trawl
+That location or thing doesn't exist or isn't known to you yet.
+
+>undo
+
+#testcase-goto-tries-took-tarred-happy-hall
+>gt happy hall
+That location or thing doesn't exist or isn't known to you yet.
+
+>undo
+
+#testcase-goto-tries-took-tarred-compete-compel
+>gt compete compel
+That location or thing doesn't exist or isn't known to you yet.
+
+>undo
+
+>undo
 
 >book bard
 by one point
@@ -119,6 +397,96 @@ by one point
 #testcase-goto-table-of-noways-squalor-square
 >e
 Oh no. You don't want to go deeper into this mess.
+
+#testcase-goto-tries-squalor-square-reeve-row
+>gt reeve row
+`Reeve Row
+
+>undo
+
+#testcase-goto-tries-squalor-square-wandering-where
+>gt wandering where
+`Wandering ... Where?
+
+>undo
+
+#testcase-goto-tries-squalor-square-squalor-square
+>gt squalor square
+You're already there! Well, here.
+
+>undo
+
+#testcase-goto-tries-squalor-square-dove-n-doubt
+>gt dove n doubt
+`Dove 'N Doubt
+
+>undo
+
+#testcase-goto-tries-squalor-square-ooh-ooh
+>gt ooh ooh
+That location or thing doesn't exist or isn't known to you yet.
+
+>undo
+
+#testcase-goto-tries-squalor-square-gap-goo
+>gt gap goo
+That location or thing doesn't exist or isn't known to you yet.
+
+>undo
+
+#testcase-goto-tries-squalor-square-took-tarred
+>gt took tarred
+Took, Tarred was an isolated area. You can't go back, and you don't need to.
+
+>undo
+
+#testcase-goto-tries-squalor-square-stuck-state
+>gt stuck state
+Stuck State was an isolated area. You can't go back, and you don't need to.
+
+>undo
+
+#testcase-goto-tries-squalor-square-hi-ho-i-owe
+>gt hi ho
+That location or thing doesn't exist or isn't known to you yet.
+
+>undo
+
+#testcase-goto-tries-squalor-square-toy-toss
+>gt toy toss
+That location or thing doesn't exist or isn't known to you yet.
+
+>undo
+
+#testcase-goto-tries-squalor-square-woe-worry-slow-slurry
+>gt slow slurry
+That location or thing doesn't exist or isn't known to you yet.
+
+>undo
+
+#testcase-goto-tries-squalor-square-edgy-ill-hedge-y-hill
+>gt ill hill
+That location or thing doesn't exist or isn't known to you yet.
+
+>undo
+
+#testcase-goto-tries-squalor-square-trappy-trawl
+>gt trappy trawl
+That location or thing doesn't exist or isn't known to you yet.
+
+>undo
+
+#testcase-goto-tries-squalor-square-happy-hall
+>gt happy hall
+That location or thing doesn't exist or isn't known to you yet.
+
+>undo
+
+#testcase-goto-tries-squalor-square-compete-compel
+>gt compete compel
+That location or thing doesn't exist or isn't known to you yet.
+
+>undo
 
 >dollar dare
 by one point
@@ -153,6 +521,96 @@ by one point
 >w
 There's a reward, and Boy Boss Roy Ross and the Joy Jaws won't let you leave until you pick the right one.
 
+#testcase-goto-tries-toy-toss-reeve-row
+>gt reeve row
+You can't go back anywhere you've been until you find a way out of here.
+
+>undo
+
+#testcase-goto-tries-toy-toss-wandering-where
+>gt wandering where
+You can't go back anywhere you've been until you find a way out of here.
+
+>undo
+
+#testcase-goto-tries-toy-toss-squalor-square
+>gt squalor square
+You can't go back anywhere you've been until you find a way out of here.
+
+>undo
+
+#testcase-goto-tries-toy-toss-dove-n-doubt
+>gt dove n doubt
+You can't go back anywhere you've been until you find a way out of here.
+
+>undo
+
+#testcase-goto-tries-toy-toss-ooh-ooh
+>gt ooh ooh
+That location or thing doesn't exist or isn't known to you yet.
+
+>undo
+
+#testcase-goto-tries-toy-toss-gap-goo
+>gt gap goo
+That location or thing doesn't exist or isn't known to you yet.
+
+>undo
+
+#testcase-goto-tries-toy-toss-took-tarred
+>gt took tarred
+You can't go back anywhere you've been until you find a way out of here.
+
+>undo
+
+#testcase-goto-tries-toy-toss-stuck-state
+>gt stuck state
+You can't go back anywhere you've been until you find a way out of here.
+
+>undo
+
+#testcase-goto-tries-toy-toss-hi-ho-i-owe
+>gt hi ho
+That location or thing doesn't exist or isn't known to you yet.
+
+>undo
+
+#testcase-goto-tries-toy-toss-toy-toss
+>gt toy toss
+You're already there! Well, here.
+
+>undo
+
+#testcase-goto-tries-toy-toss-woe-worry-slow-slurry
+>gt slow slurry
+That location or thing doesn't exist or isn't known to you yet.
+
+>undo
+
+#testcase-goto-tries-toy-toss-edgy-ill-hedge-y-hill
+>gt ill hill
+That location or thing doesn't exist or isn't known to you yet.
+
+>undo
+
+#testcase-goto-tries-toy-toss-trappy-trawl
+>gt trappy trawl
+That location or thing doesn't exist or isn't known to you yet.
+
+>undo
+
+#testcase-goto-tries-toy-toss-happy-hall
+>gt happy hall
+That location or thing doesn't exist or isn't known to you yet.
+
+>undo
+
+#testcase-goto-tries-toy-toss-compete-compel
+>gt compete compel
+That location or thing doesn't exist or isn't known to you yet.
+
+>undo
+
 >soy sauce
 by one point
 
@@ -162,6 +620,96 @@ by one point
 #testcase-goto-table-of-noways-gap-goo
 >s
 You can only really go back north. You don't want to know how far the goo gap extends.
+
+#testcase-goto-tries-gap-goo-reeve-row
+>gt reeve row
+`Reeve Row
+
+>undo
+
+#testcase-goto-tries-gap-goo-wandering-where
+>gt wandering where
+`Wandering ... Where?
+
+>undo
+
+#testcase-goto-tries-gap-goo-squalor-square
+>gt squalor square
+`Squalor Square
+
+>undo
+
+#testcase-goto-tries-gap-goo-dove-n-doubt
+>gt dove n doubt
+`Dove 'N Doubt
+
+>undo
+
+#testcase-goto-tries-gap-goo-ooh-ooh
+>gt ooh ooh
+That location or thing doesn't exist or isn't known to you yet.
+
+>undo
+
+#testcase-goto-tries-gap-goo-gap-goo
+>gt gap goo
+You're already there! Well, here.
+
+>undo
+
+#testcase-goto-tries-gap-goo-took-tarred
+>gt took tarred
+Took, Tarred was an isolated area. You can't go back, and you don't need to.
+
+>undo
+
+#testcase-goto-tries-gap-goo-stuck-state
+>gt stuck state
+Stuck State was an isolated area. You can't go back, and you don't need to.
+
+>undo
+
+#testcase-goto-tries-gap-goo-hi-ho-i-owe
+>gt hi ho
+That location or thing doesn't exist or isn't known to you yet.
+
+>undo
+
+#testcase-goto-tries-gap-goo-toy-toss
+>gt toy toss
+Toy Toss was an isolated area. You can't go back, and you don't need to.
+
+>undo
+
+#testcase-goto-tries-gap-goo-woe-worry-slow-slurry
+>gt slow slurry
+That location or thing doesn't exist or isn't known to you yet.
+
+>undo
+
+#testcase-goto-tries-gap-goo-edgy-ill-hedge-y-hill
+>gt ill hill
+That location or thing doesn't exist or isn't known to you yet.
+
+>undo
+
+#testcase-goto-tries-gap-goo-trappy-trawl
+>gt trappy trawl
+That location or thing doesn't exist or isn't known to you yet.
+
+>undo
+
+#testcase-goto-tries-gap-goo-happy-hall
+>gt happy hall
+That location or thing doesn't exist or isn't known to you yet.
+
+>undo
+
+#testcase-goto-tries-gap-goo-compete-compel
+>gt compete compel
+That location or thing doesn't exist or isn't known to you yet.
+
+>undo
 
 >zap zoo
 by one point
@@ -184,6 +732,96 @@ by one point
 >w
 No, there must be something you can buy on the cheap.
 
+#testcase-goto-tries-hi-ho-i-owe-reeve-row
+>gt reeve row
+You can't go back anywhere you've been until you find a way out of here.
+
+>undo
+
+#testcase-goto-tries-hi-ho-i-owe-wandering-where
+>gt wandering where
+You can't go back anywhere you've been until you find a way out of here.
+
+>undo
+
+#testcase-goto-tries-hi-ho-i-owe-squalor-square
+>gt squalor square
+You can't go back anywhere you've been until you find a way out of here.
+
+>undo
+
+#testcase-goto-tries-hi-ho-i-owe-dove-n-doubt
+>gt dove n doubt
+You can't go back anywhere you've been until you find a way out of here.
+
+>undo
+
+#testcase-goto-tries-hi-ho-i-owe-ooh-ooh
+>gt ooh ooh
+That location or thing doesn't exist or isn't known to you yet.
+
+>undo
+
+#testcase-goto-tries-hi-ho-i-owe-gap-goo
+>gt gap goo
+You can't go back anywhere you've been until you find a way out of here.
+
+>undo
+
+#testcase-goto-tries-hi-ho-i-owe-took-tarred
+>gt took tarred
+You can't go back anywhere you've been until you find a way out of here.
+
+>undo
+
+#testcase-goto-tries-hi-ho-i-owe-stuck-state
+>gt stuck state
+You can't go back anywhere you've been until you find a way out of here.
+
+>undo
+
+#testcase-goto-tries-hi-ho-i-owe-hi-ho-i-owe
+>gt hi ho
+You're already there! Well, here.
+
+>undo
+
+#testcase-goto-tries-hi-ho-i-owe-toy-toss
+>gt toy toss
+You can't go back anywhere you've been until you find a way out of here.
+
+>undo
+
+#testcase-goto-tries-hi-ho-i-owe-woe-worry-slow-slurry
+>gt slow slurry
+That location or thing doesn't exist or isn't known to you yet.
+
+>undo
+
+#testcase-goto-tries-hi-ho-i-owe-edgy-ill-hedge-y-hill
+>gt ill hill
+That location or thing doesn't exist or isn't known to you yet.
+
+>undo
+
+#testcase-goto-tries-hi-ho-i-owe-trappy-trawl
+>gt trappy trawl
+That location or thing doesn't exist or isn't known to you yet.
+
+>undo
+
+#testcase-goto-tries-hi-ho-i-owe-happy-hall
+>gt happy hall
+That location or thing doesn't exist or isn't known to you yet.
+
+>undo
+
+#testcase-goto-tries-hi-ho-i-owe-compete-compel
+>gt compete compel
+That location or thing doesn't exist or isn't known to you yet.
+
+>undo
+
 >penny piles
 by one point
 
@@ -196,6 +834,96 @@ by one point
 #+testcase-goto-table-of-noways-ooh-ooh
 >n
 The passive pit blocks all directions except to the south.
+
+#testcase-goto-tries-ooh-ooh-reeve-row
+>gt reeve row
+`Reeve Row
+
+>undo
+
+#testcase-goto-tries-ooh-ooh-wandering-where
+>gt wandering where
+`Wandering ... Where?
+
+>undo
+
+#testcase-goto-tries-ooh-ooh-squalor-square
+>gt squalor square
+`Squalor Square
+
+>undo
+
+#testcase-goto-tries-ooh-ooh-dove-n-doubt
+>gt dove n doubt
+`Dove 'N Doubt
+
+>undo
+
+#testcase-goto-tries-ooh-ooh-ooh-ooh
+>gt ooh ooh
+You're already there! Well, here.
+
+>undo
+
+#testcase-goto-tries-ooh-ooh-gap-goo
+>gt gap goo
+(Zap!) Zoo
+
+>undo
+
+#testcase-goto-tries-ooh-ooh-took-tarred
+>gt took tarred
+Took, Tarred was an isolated area. You can't go back, and you don't need to.
+
+>undo
+
+#testcase-goto-tries-ooh-ooh-stuck-state
+>gt stuck state
+Stuck State was an isolated area. You can't go back, and you don't need to.
+
+>undo
+
+#testcase-goto-tries-ooh-ooh-hi-ho-i-owe
+>gt hi ho
+"Hi-Ho, I Owe" Sty-Sto' was an isolated area. You can't go back, and you don't need to.
+
+>undo
+
+#testcase-goto-tries-ooh-ooh-toy-toss
+>gt toy toss
+Toy Toss was an isolated area. You can't go back, and you don't need to.
+
+>undo
+
+#testcase-goto-tries-ooh-ooh-woe-worry-slow-slurry
+>gt slow slurry
+That location or thing doesn't exist or isn't known to you yet.
+
+>undo
+
+#testcase-goto-tries-ooh-ooh-edgy-ill-hedge-y-hill
+>gt ill hill
+That location or thing doesn't exist or isn't known to you yet.
+
+>undo
+
+#testcase-goto-tries-ooh-ooh-trappy-trawl
+>gt trappy trawl
+That location or thing doesn't exist or isn't known to you yet.
+
+>undo
+
+#testcase-goto-tries-ooh-ooh-happy-hall
+>gt happy hall
+That location or thing doesn't exist or isn't known to you yet.
+
+>undo
+
+#testcase-goto-tries-ooh-ooh-compete-compel
+>gt compete compel
+That location or thing doesn't exist or isn't known to you yet.
+
+>undo
 
 >booboo
 by one point
@@ -223,6 +951,108 @@ by one point
 
 >s
 
+>w
+Linky Lakes Stinky Steaks goes the "ironic title" route, but it also goes the "if you have to ask, you can't afford" route. You sense you're missing a food group, with the directions you tried.
+
+>e
+The "Vim? VERY Dim" Dairy is mis-titled on purpose, but you don't need dairy products. You sense you're missing a food group, with the directions you tried.
+
+>s
+The Greeter Grill Sweeter Swill serves all sorts of non-nutritious, but delicious stuff. Not quite, though. You sense you're missing a food group, with the directions you tried.
+
+>n
+You discover the "Leet Lark, It" Meat Market. But you have enough meat. You sense you're missing a food group, with the directions you tried.
+
+#testcase-goto-tries-edgy-ill-hedge-y-hill-reeve-row
+>gt reeve row
+You can't go back anywhere you've been until you find a way out of here.
+
+>undo
+
+#testcase-goto-tries-edgy-ill-hedge-y-hill-wandering-where
+>gt wandering where
+You can't go back anywhere you've been until you find a way out of here.
+
+>undo
+
+#testcase-goto-tries-edgy-ill-hedge-y-hill-squalor-square
+>gt squalor square
+You can't go back anywhere you've been until you find a way out of here.
+
+>undo
+
+#testcase-goto-tries-edgy-ill-hedge-y-hill-dove-n-doubt
+>gt dove n doubt
+You can't go back anywhere you've been until you find a way out of here.
+
+>undo
+
+#testcase-goto-tries-edgy-ill-hedge-y-hill-ooh-ooh
+>gt ooh ooh
+You can't go back anywhere you've been until you find a way out of here.
+
+>undo
+
+#testcase-goto-tries-edgy-ill-hedge-y-hill-gap-goo
+>gt gap goo
+You can't go back anywhere you've been until you find a way out of here.
+
+>undo
+
+#testcase-goto-tries-edgy-ill-hedge-y-hill-took-tarred
+>gt took tarred
+You can't go back anywhere you've been until you find a way out of here.
+
+>undo
+
+#testcase-goto-tries-edgy-ill-hedge-y-hill-stuck-state
+>gt stuck state
+You can't go back anywhere you've been until you find a way out of here.
+
+>undo
+
+#testcase-goto-tries-edgy-ill-hedge-y-hill-hi-ho-i-owe
+>gt hi ho
+You can't go back anywhere you've been until you find a way out of here.
+
+>undo
+
+#testcase-goto-tries-edgy-ill-hedge-y-hill-toy-toss
+>gt toy toss
+You can't go back anywhere you've been until you find a way out of here.
+
+>undo
+
+#testcase-goto-tries-edgy-ill-hedge-y-hill-woe-worry-slow-slurry
+>gt slow slurry
+That location or thing doesn't exist or isn't known to you yet.
+
+>undo
+
+#testcase-goto-tries-edgy-ill-hedge-y-hill-edgy-ill-hedge-y-hill
+>gt ill hill
+You're already there! Well, here.
+
+>undo
+
+#testcase-goto-tries-edgy-ill-hedge-y-hill-trappy-trawl
+>gt trappy trawl
+That location or thing doesn't exist or isn't known to you yet.
+
+>undo
+
+#testcase-goto-tries-edgy-ill-hedge-y-hill-happy-hall
+>gt happy hall
+That location or thing doesn't exist or isn't known to you yet.
+
+>undo
+
+#testcase-goto-tries-edgy-ill-hedge-y-hill-compete-compel
+>gt compete compel
+That location or thing doesn't exist or isn't known to you yet.
+
+>undo
+
 >flopper flea
 by one point
 
@@ -245,6 +1075,96 @@ Diagonal directions aren't used in Beef, Beans, Grief, Greens.
 >w
 Only more worries are beyond, you suspect. Surely, you can finagle something from the denizens here
 
+#testcase-goto-tries-woe-worry-slow-slurry-reeve-row
+>gt reeve row
+`Reeve Row
+
+>undo
+
+#testcase-goto-tries-woe-worry-slow-slurry-wandering-where
+>gt wandering where
+`Wandering ... Where?
+
+>undo
+
+#testcase-goto-tries-woe-worry-slow-slurry-squalor-square
+>gt squalor square
+Squalor Square
+
+>undo
+
+#testcase-goto-tries-woe-worry-slow-slurry-dove-n-doubt
+>gt dove n doubt
+`Dove 'N Doubt
+
+>undo
+
+#testcase-goto-tries-woe-worry-slow-slurry-ooh-ooh
+>gt ooh ooh
+`Ooh, Ooh...!
+
+>undo
+
+#testcase-goto-tries-woe-worry-slow-slurry-gap-goo
+>gt gap goo
+`(Zap!) Zoo
+
+>undo
+
+#testcase-goto-tries-woe-worry-slow-slurry-took-tarred
+>gt took tarred
+Took, Tarred was an isolated area. You can't go back, and you don't need to.
+
+>undo
+
+#testcase-goto-tries-woe-worry-slow-slurry-stuck-state
+>gt stuck state
+Stuck State was an isolated area. You can't go back, and you don't need to.
+
+>undo
+
+#testcase-goto-tries-woe-worry-slow-slurry-hi-ho-i-owe
+>gt hi ho
+"Hi-Ho, I Owe" Sty-Sto' was an isolated area. You can't go back, and you don't need to.
+
+>undo
+
+#testcase-goto-tries-woe-worry-slow-slurry-toy-toss
+>gt toy toss
+Toy Toss was an isolated area. You can't go back, and you don't need to.
+
+>undo
+
+#testcase-goto-tries-woe-worry-slow-slurry-woe-worry-slow-slurry
+>gt slow slurry
+You're already there! Well, here.
+
+>undo
+
+#testcase-goto-tries-woe-worry-slow-slurry-edgy-ill-hedge-y-hill
+>gt ill hill
+Edgy Ill Hedge-y Hill was an isolated area. You can't go back, and you don't need to.
+
+>undo
+
+#testcase-goto-tries-woe-worry-slow-slurry-trappy-trawl
+>gt trappy trawl
+That location or thing doesn't exist or isn't known to you yet.
+
+>undo
+
+#testcase-goto-tries-woe-worry-slow-slurry-happy-hall
+>gt happy hall
+That location or thing doesn't exist or isn't known to you yet.
+
+>undo
+
+#testcase-goto-tries-woe-worry-slow-slurry-compete-compel
+>gt compete compel
+That location or thing doesn't exist or isn't known to you yet.
+
+>undo
+
 >honeyed ham
 by one point
 
@@ -266,6 +1186,97 @@ Only more worries are beyond, you suspect. You've got enough side dishes.
 by one point
 
 >u
+
+#testcase-goto-tries-wandering-where-reeve-row
+>gt reeve row
+`Reeve Row
+
+>undo
+
+#testcase-goto-tries-wandering-where-wandering-where
+>gt wandering where
+You're already there! Well, here.
+
+>undo
+
+#testcase-goto-tries-wandering-where-squalor-square
+>gt squalor square
+`Squalor Square
+
+>undo
+
+#testcase-goto-tries-wandering-where-dove-n-doubt
+>gt dove n doubt
+`Dove 'N Doubt
+
+>undo
+
+#testcase-goto-tries-wandering-where-ooh-ooh
+>gt ooh ooh
+`Ooh, Ooh...!
+
+>undo
+
+#testcase-goto-tries-wandering-where-gap-goo
+>gt gap goo
+`(Zap!) Zoo
+
+>undo
+
+#testcase-goto-tries-wandering-where-took-tarred
+>gt took tarred
+Took, Tarred was an isolated area. You can't go back, and you don't need to.
+
+>undo
+
+#testcase-goto-tries-wandering-where-stuck-state
+>gt stuck state
+Stuck State was an isolated area. You can't go back, and you don't need to.
+
+>undo
+
+#testcase-goto-tries-wandering-where-hi-ho-i-owe
+>gt hi ho
+"Hi-Ho, I Owe" Sty-Sto' was an isolated area. You can't go back, and you don't need to.
+
+>undo
+
+#testcase-goto-tries-wandering-where-toy-toss
+>gt toy toss
+Toy Toss was an isolated area. You can't go back, and you don't need to.
+
+>undo
+
+#testcase-goto-tries-wandering-where-woe-worry-slow-slurry
+>gt slow slurry
+`Woe/Worry Slow Slurry
+
+>undo
+
+#testcase-goto-tries-wandering-where-edgy-ill-hedge-y-hill
+>gt ill hill
+Edgy Ill Hedge-y Hill was an isolated area. You can't go back, and you don't need to.
+
+>undo
+
+#testcase-goto-tries-wandering-where-trappy-trawl
+>gt trappy trawl
+That location or thing doesn't exist or isn't known to you yet.
+
+>undo
+
+#testcase-goto-tries-wandering-where-happy-hall
+>gt happy hall
+That location or thing doesn't exist or isn't known to you yet.
+
+>undo
+
+#testcase-goto-tries-wandering-where-compete-compel
+>gt compete compel
+That location or thing doesn't exist or isn't known to you yet.
+
+>undo
+
 >in
 
 >grieve grow
@@ -273,14 +1284,104 @@ by one point
 
 #+testcase-goto-table-of-noways-reeve-row
 >w
-It's not a very big house. You suspected the old passage-under-the-rug trick, but you just don't have faith it's REALLY there. There's always back OUT, and you unlocked a passage DOWN, too.
+It's not a very big house. You suspected the old passage-under-the-rug trick, but you just don't have faith it's REALLY there. There's always back OUT.
 
 >believe below
 by one point
 
 #+testcase-goto-table-of-noways-reeve-row
 >w
-It's not a very big house. You can go down, but you can't really explore this small house. You don't need to. There's always back OUT, and you unlocked a passasge DOWN, too.
+It's not a very big house. You can go down, but you can't really explore this small house. You don't need to. There's always back OUT, and you unlocked a passage DOWN, too.
+
+#testcase-goto-tries-reeve-row-reeve-row
+>gt reeve row
+You're already there! Well, here.
+
+>undo
+
+#testcase-goto-tries-reeve-row-wandering-where
+>gt wandering where
+`Wandering ... Where?
+
+>undo
+
+#testcase-goto-tries-reeve-row-squalor-square
+>gt squalor square
+`Squalor Square
+
+>undo
+
+#testcase-goto-tries-reeve-row-dove-n-doubt
+>gt dove n doubt
+`Dove 'N Doubt
+
+>undo
+
+#testcase-goto-tries-reeve-row-ooh-ooh
+>gt ooh ooh
+`Ooh, Ooh...!
+
+>undo
+
+#testcase-goto-tries-reeve-row-gap-goo
+>gt gap goo
+(Zap!) Zoo
+
+>undo
+
+#testcase-goto-tries-reeve-row-took-tarred
+>gt took tarred
+Took, Tarred was an isolated area. You can't go back, and you don't need to.
+
+>undo
+
+#testcase-goto-tries-reeve-row-stuck-state
+>gt stuck state
+Stuck State was an isolated area. You can't go back, and you don't need to.
+
+>undo
+
+#testcase-goto-tries-reeve-row-hi-ho-i-owe
+>gt hi ho
+"Hi-Ho, I Owe" Sty-Sto' was an isolated area. You can't go back, and you don't need to.
+
+>undo
+
+#testcase-goto-tries-reeve-row-toy-toss
+>gt toy toss
+Toy Toss was an isolated area. You can't go back, and you don't need to.
+
+>undo
+
+#testcase-goto-tries-reeve-row-woe-worry-slow-slurry
+>gt slow slurry
+`Woe/Worry Slow Slurry
+
+>undo
+
+#testcase-goto-tries-reeve-row-edgy-ill-hedge-y-hill
+>gt ill hill
+Edgy Ill Hedge-y Hill was an isolated area. You can't go back, and you don't need to.
+
+>undo
+
+#testcase-goto-tries-reeve-row-trappy-trawl
+>gt trappy trawl
+That location or thing doesn't exist or isn't known to you yet.
+
+>undo
+
+#testcase-goto-tries-reeve-row-happy-hall
+>gt happy hall
+That location or thing doesn't exist or isn't known to you yet.
+
+>undo
+
+#testcase-goto-tries-reeve-row-compete-compel
+>gt compete compel
+That location or thing doesn't exist or isn't known to you yet.
+
+>undo
 
 >d
 
@@ -288,11 +1389,131 @@ It's not a very big house. You can go down, but you can't really explore this sm
 >w
 You crash around into some walls, which make noises like WHOMP and WHUMP, which don't sound quite right.
 
+#testcase-goto-tries-trappy-trawl-reeve-row
+>gt reeve row
+There's no going back. You must find a way through to the ceremonial lair.
+
+#testcase-goto-tries-trappy-trawl-wandering-where
+>gt wandering where
+There's no going back. You must find a way through to the ceremonial lair.
+
+#testcase-goto-tries-trappy-trawl-squalor-square
+>gt squalor square
+There's no going back. You must find a way through to the ceremonial lair.
+
+#testcase-goto-tries-trappy-trawl-dove-n-doubt
+>gt dove n doubt
+There's no going back. You must find a way through to the ceremonial lair.
+
+#testcase-goto-tries-trappy-trawl-ooh-ooh
+>gt ooh ooh
+There's no going back. You must find a way through to the ceremonial lair.
+
+#testcase-goto-tries-trappy-trawl-gap-goo
+>gt gap goo
+There's no going back. You must find a way through to the ceremonial lair.
+
+#testcase-goto-tries-trappy-trawl-took-tarred
+>gt took tarred
+There's no going back. You must find a way through to the ceremonial lair.
+
+#testcase-goto-tries-trappy-trawl-stuck-state
+>gt stuck state
+There's no going back. You must find a way through to the ceremonial lair.
+
+#testcase-goto-tries-trappy-trawl-hi-ho-i-owe
+>gt hi ho
+There's no going back. You must find a way through to the ceremonial lair.
+
+#testcase-goto-tries-trappy-trawl-toy-toss
+>gt toy toss
+There's no going back. You must find a way through to the ceremonial lair.
+
+#testcase-goto-tries-trappy-trawl-woe-worry-slow-slurry
+>gt slow slurry
+There's no going back. You must find a way through to the ceremonial lair.
+
+#testcase-goto-tries-trappy-trawl-edgy-ill-hedge-y-hill
+>gt ill hill
+There's no going back. You must find a way through to the ceremonial lair.
+
+#testcase-goto-tries-trappy-trawl-trappy-trawl
+>gt trappy trawl
+You're already there! Well, here.
+
+#testcase-goto-tries-trappy-trawl-happy-hall
+>gt happy hall
+That location or thing doesn't exist or isn't known to you yet.
+
+#testcase-goto-tries-trappy-trawl-compete-compel
+>gt compete compel
+That location or thing doesn't exist or isn't known to you yet.
+
 >scrappy scrawl
 by one point
 
 >whappy wall
 by one point
+
+#testcase-goto-tries-happy-hall-reeve-row
+>gt reeve row
+There's no going back. The ceremony awaits.
+
+#testcase-goto-tries-happy-hall-wandering-where
+>gt wandering where
+There's no going back. The ceremony awaits.
+
+#testcase-goto-tries-happy-hall-squalor-square
+>gt squalor square
+There's no going back. The ceremony awaits.
+
+#testcase-goto-tries-happy-hall-dove-n-doubt
+>gt dove n doubt
+There's no going back. The ceremony awaits.
+
+#testcase-goto-tries-happy-hall-ooh-ooh
+>gt ooh ooh
+There's no going back. The ceremony awaits.
+
+#testcase-goto-tries-happy-hall-gap-goo
+>gt gap goo
+There's no going back. The ceremony awaits.
+
+#testcase-goto-tries-happy-hall-took-tarred
+>gt took tarred
+There's no going back. The ceremony awaits.
+
+#testcase-goto-tries-happy-hall-stuck-state
+>gt stuck state
+There's no going back. The ceremony awaits.
+
+#testcase-goto-tries-happy-hall-hi-ho-i-owe
+>gt hi ho
+There's no going back. The ceremony awaits.
+
+#testcase-goto-tries-happy-hall-toy-toss
+>gt toy toss
+There's no going back. The ceremony awaits.
+
+#testcase-goto-tries-happy-hall-woe-worry-slow-slurry
+>gt slow slurry
+There's no going back. The ceremony awaits.
+
+#testcase-goto-tries-happy-hall-edgy-ill-hedge-y-hill
+>gt ill hill
+There's no going back. The ceremony awaits.
+
+#testcase-goto-tries-happy-hall-trappy-trawl
+>gt trappy trawl
+There's no going back. The ceremony awaits.
+
+#testcase-goto-tries-happy-hall-happy-hall
+>gt happy hall
+You're already there! Well, here.
+
+#testcase-goto-tries-happy-hall-compete-compel
+>gt compete compel
+That location or thing doesn't exist or isn't known to you yet.
 
 #testcase-goto-table-of-noways-happy-hall
 >w
@@ -313,11 +1534,74 @@ by one point
 >cappy caul
 by one point
 
+>gt reeve row
+There's no going back. The ceremony must be finished.
+
 >yappy yall
 by one point
 
 >bappy ball
 by one point
+
+#testcase-goto-tries-compete-compel-reeve-row
+>gt reeve row
+This is the end of your journey. No going back.
+
+#testcase-goto-tries-compete-compel-wandering-where
+>gt wandering where
+This is the end of your journey. No going back.
+
+#testcase-goto-tries-compete-compel-squalor-square
+>gt squalor square
+This is the end of your journey. No going back.
+
+#testcase-goto-tries-compete-compel-dove-n-doubt
+>gt dove n doubt
+This is the end of your journey. No going back.
+
+#testcase-goto-tries-compete-compel-ooh-ooh
+>gt ooh ooh
+This is the end of your journey. No going back.
+
+#testcase-goto-tries-compete-compel-gap-goo
+>gt gap goo
+This is the end of your journey. No going back.
+
+#testcase-goto-tries-compete-compel-took-tarred
+>gt took tarred
+This is the end of your journey. No going back.
+
+#testcase-goto-tries-compete-compel-stuck-state
+>gt stuck state
+This is the end of your journey. No going back.
+
+#testcase-goto-tries-compete-compel-hi-ho-i-owe
+>gt hi ho
+This is the end of your journey. No going back.
+
+#testcase-goto-tries-compete-compel-toy-toss
+>gt toy toss
+This is the end of your journey. No going back.
+
+#testcase-goto-tries-compete-compel-woe-worry-slow-slurry
+>gt slow slurry
+This is the end of your journey. No going back.
+
+#testcase-goto-tries-compete-compel-edgy-ill-hedge-y-hill
+>gt ill hill
+This is the end of your journey. No going back.
+
+#testcase-goto-tries-compete-compel-trappy-trawl
+>gt trappy trawl
+This is the end of your journey. No going back.
+
+#testcase-goto-tries-compete-compel-happy-hall
+>gt happy hall
+This is the end of your journey. No going back.
+
+#testcase-goto-tries-compete-compel-compete-compel
+>gt compete compel
+You're already there! Well, here.
 
 #testcase-goto-table-of-noways-compete-compel
 >w

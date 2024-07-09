@@ -21,20 +21,39 @@ by one point
 >jade jug
 by one point
 
+#testcase-homonym-reject-table-of-verb-checks-vh-leave-low-rule-low
+>leave low
+You're already feeling a bit low. You don't need to advertise it, or sink lower.
+That has to be really, really close, though! Perhaps a potentially hearty interjection would work better.
+How to leave with your head held high, with a forceful word showing you're willing to take on the world?
+
 >leave lo
 by one point
 
 >laundering lair
 by one point
 
+#testcase-homonym-detail-vh-love-shove-rule-default
+>loving zzz
+No, here will be the place for slight colloquialisms.
+
 >lovin lout
 by one point
+
+#+testcase-homonym-detail-vh-love-shove-rule-default
+>shoving zzz
+No, here should still be the place for slight colloquialisms.
 
 >shovin shout
 by one point
 
 >oven out
 by one point
+
+#testcase-homonym-detail-vh-heave-hoe-rule-default
+#testcase-homonym-reject-table-of-verb-checks-vh-heave-hoe-rule-hoe
+>heave hoe
+You are not in a garden. Try an interjection instead.
 
 >heave ho
 by one point
@@ -60,6 +79,11 @@ by one point
 >hook hard
 by one point
 
+#testcase-homonym-reject-table-of-verb-checks-vh-book-barred-rule-barred
+#testcase-homonym-detail-vh-book-barred-rule-default
+>book barred
+It's worth fighting censorship, but here you need to encourage a different art form than reading.
+
 >book bard
 by one point
 
@@ -75,8 +99,20 @@ by one point
 >dollar dare
 by one point
 
+#testcase-homonym-reject-table-of-verb-checks-collar
+>collar care
+The Leet Learner shakes back and forth. Something you said sounded right, but it didn't feel right.
+
 >caller care
 by one point
+
+#testcase-homonym-reject-table-of-verb-checks-bawler-bare
+>bawler bear
+The Leet Learner shakes back and forth. Something you said sounded right, but it didn't feel right.
+
+#+testcase-homonym-reject-table-of-verb-checks-bawler-bare
+>baller bare
+The Leet Learner shakes back and forth. Something you said sounded right, but it didn't feel right.
 
 >baller bear
 by one point
@@ -87,8 +123,16 @@ by one point
 >found fork
 by one point
 
+#testcase-homonym-reject-table-of-verb-checks-meet-mote
+>meet mote
+You needn't make the acquaintance of anything minuscule. You need more sizable food portions.
+
 >meat moat
 by one point
+
+#testcase-homonym-reject-table-of-verb-checks-beat
+>beat boat
+There's no competition here, violent, friendly, racing or otherwise.
 
 >beet boat
 by one point
@@ -96,10 +140,19 @@ by one point
 >fight fires
 by one point
 
+#testcase-homonym-reject-table-of-verb-checks-wight
+>wight wires
+Summoning the undead is one way to remember those who passed on, but it's a high-risk one.
+
 >white wires
 by one point
 
 >w
+
+#testcase-homonym-detail-vh-soy-saws-rule-default
+#testcase-homonym-reject-table-of-verb-checks-vh-soy-saws-rule-saws
+>soy saws
+Well, maybe, but you can't eat saws.
 
 >soy sauce
 by one point
@@ -109,6 +162,17 @@ by one point
 
 >zap zoo
 by one point
+
+#testcase-homonym-detail-vh-sea-soup-rule-fallthrough
+#testcase-homonym-reject-table-of-verb-checks-vh-sea-soup-rule-sea
+>sea soop
+Well, you need a lot, but not a whole sea of liquid-ish food.
+
+#testcase-homonym-detail-vh-sea-soup-rule-if-the-player's-command-includes-soup
+#+testcase-homonym-reject-table-of-verb-checks-vh-sea-soup-rule-sea
+#testcase-homonym-detail-vh-sea-soup-rule-default
+>sea soup
+Well, you need a lot, but not a whole sea of soup.
 
 >see soup
 by one point
@@ -127,8 +191,26 @@ by one point
 >penny piles
 by one point
 
+#testcase-homonym-reject-table-of-verb-checks-vh-pi-poe-rule-pi-poe
+#testcase-homonym-detail-vh-pi-poe-rule-if-the-player's-command-includes-pi
+>pi po
+Pi times the radius squared, and you've got something.
+
+#testcase-homonym-reject-table-of-verb-checks-vh-pi-poe-rule-pi-poe
+>pie poe
+No, not the author, a descriptor.
+
+#testcase-homonym-reject-table-of-verb-checks-vh-pi-poe-rule-pi-poe
+>pi poe
+Double narrow misses with the words. But you must be close!
+
 >pie po
 by one point
+
+#testcase-homonym-reject-table-of-verb-checks-vh-pondering-pare-rule-pare
+#testcase-homonym-detail-vh-pondering-pare-rule-default
+>pondering pare
+Yes to thinking, no to disrupting thinking.
 
 >pondering pair
 by one point
@@ -138,6 +220,12 @@ by one point
 
 >juju
 by one point
+
+#testcase-homonym-reject-table-of-verb-checks-vh-moomoo-rule-moo-moomoo
+#testcase-homonym-detail-vh-moomoo-rule-default
+>moo
+Cows aren't quite it, here. But you have the right sound(s).
+The Leet Learner vibrates back and forth rather violently. You must have been very close.
 
 >muumuu
 by one point
@@ -158,6 +246,11 @@ by one point
 by one point
 
 >s
+
+#testcase-homonym-detail-vh-flopper-flee-rule-default
+#testcase-homonym-reject-table-of-verb-checks-vh-flopper-flee-rule-flee
+>flopper flee
+You can't order the bee around, but maybe it's disguised as something else.
 
 >flopper flea
 by one point
@@ -183,6 +276,7 @@ by one point
 by one point
 
 >u
+
 >in
 
 >grieve grow
@@ -199,17 +293,38 @@ by one point
 >whappy wall
 by one point
 
+#testcase-homonym-reject-table-of-verb-checks-vh-pappy-pall-rule-pall
+#testcase-homonym-detail-vh-pappy-pall-rule-default
+>pappy pall
+You need a person, not a dark cloud over everything.
+The Leet Learner vibrates back and forth rather violently. You must have been very close.
+
 >pappy paul
 by one point
 
+#testcase-homonym-detail-vh-sappy-sol-rule-default
+#testcase-homonym-reject-table-of-verb-checks-vh-sappy-sol-rule-sol
+>sappy sol
+Hmm. The right track, but a too widely smiling sun might not bring the right vibe. Oh, it might scorch everyone to death, too.
+
 >sappy saul
 by one point
+
+#testcase-homonym-detail-vh-loan-laura-rule-default
+#testcase-homonym-reject-table-of-verb-checks-vh-loan-laura-rule-loan
+>loan laura
+Sort of, though at such a ceremony, people do not worry about past grievances or debts.
 
 >lone laura
 by one point
 
 >known nora
 by one point
+
+#testcase-homonym-reject-table-of-verb-checks-vh-cappy-call-rule-call
+#testcase-homonym-detail-vh-cappy-call-rule-default
+>cappy call
+You've called everyone you need. You need something physical.
 
 >cappy caul
 by one point
@@ -229,13 +344,29 @@ by one point
 >sheet shell
 by one point
 
+#testcase-homonym-detail-vh-beet-meat-end-rule-default
+#testcase-homonym-reject-table-of-verb-checks-vh-beet-meat-end-rule-meat
+>beet bell
+You already got food like that for the feast. You need a verb here.
+
 >beat bell
 by one point
+
+#+testcase-homonym-detail-vh-beet-meat-end-rule-default
+#+testcase-homonym-reject-table-of-verb-checks-vh-beet-meat-end-rule-meat
+>meat mel
+You already got food like that for the feast. You need a verb here.
 
 >meet mel
 by one point
 
 >x leet lel
+
+#testcase-homonym-reject-table-of-verb-checks-vh-suite-swell-rule-suite
+#testcase-homonym-detail-vh-suite-swell-rule-default
+>suite swell
+You don't need to gush about your current living conditions. You need to reflect on the past, though perhaps you will find wonderful things there.
+The Leet Learner vibrates back and forth rather violently. You must have been very close.
 
 >repeat repel
 by one point

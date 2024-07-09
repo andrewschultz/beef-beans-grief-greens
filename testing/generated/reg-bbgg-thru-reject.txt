@@ -40,10 +40,10 @@ by one point
 by one point
 
 >spoon spied
-WRONG
+You'd love to find a bit more silverware, and maybe the goon guide would be just the thing. Except you can't lower yourself to read it. Yet.
 
 >think
-WRONG
+You can get a SPOON SPIED once you have managed to consult the goon guide with a clear mind.
 
 >prune pride
 by one point
@@ -205,6 +205,7 @@ by one point
 by one point
 
 >u
+
 >in
 
 >grieve grow
@@ -267,10 +268,10 @@ by one point
 You can't wear the ceremonial gear until everyone's here!
 
 >yappy yall
-You need to retrieve your ceremonial garb first! WRONG
+You need to retrieve your ceremonial garb first!
 
 >bappy ball
-Sport, eventually, to burn the calories off. But before that, discussion. WRONG
+Sport, eventually, to burn the calories off. But before that, discussion.
 
 >pappy paul
 by one point
@@ -286,15 +287,15 @@ by one point
 
 >think
 (CAN DO NOW) You can ask for your CAPPY CAUL now everyone else is present for the ceremony.
-You can get everyone YAPPY YALL now preparations for the ceremony and feast are complete.
-You can have everyone play BAPPY BALL now the feast is complete, to burn off calories.
+You can get everyone YAPPY YALL once preparations for the ceremony and feast are complete.
+You can have everyone play BAPPY BALL once the feast is complete, to burn off calories.
 
 >cappy caul
 by one point
 
 >think
 (CAN DO NOW) You can get everyone YAPPY YALL now preparations for the ceremony and feast are complete.
-You can have everyone play BAPPY BALL now the feast is complete, to burn off calories.
+You can have everyone play BAPPY BALL once the feast is complete, to burn off calories.
 
 >yappy yall
 by one point
@@ -328,6 +329,15 @@ by one point
 
 >meet mel
 by one point
+
+>heat hell
+You get a sense such a judgment would be more appropriate once you've examined the book you just got.
+
+>sweet swell
+You get a sense such a judgment would be more appropriate once you've examined the book you just got.
+
+>repeat repel
+You get a sense such a judgment would be more appropriate once you've examined the book you just got.
 
 >x leet lel
 

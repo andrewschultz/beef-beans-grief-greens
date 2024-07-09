@@ -573,6 +573,14 @@ The HA HALF button on your Leet Learner lights up green.
 >flopper flea
 by one point
 
+#testcase-ha-half-table-of-verb-checks-49-veggie
+>veggie zville
+The HA HALF button on your Leet Learner lights up green.
+
+#testcase-ha-half-table-of-verb-checks-49-ville
+>zveggie ville
+The HA HALF button on your Leet Learner lights up green.
+
 >veggie ville
 by one point
 
@@ -626,10 +634,19 @@ by one point
 >just jello
 by one point
 
+#testcase-ha-half-table-of-verb-checks-51-pot
+>pot zpourri
+The HA HALF button on your Leet Learner lights up green.
+
+#testcase-ha-half-table-of-verb-checks-51-pourri
+>zpot pourri
+The HA HALF button on your Leet Learner lights up green.
+
 >potpourri
 by one point
 
 >u
+
 >in
 
 >grieve grow
