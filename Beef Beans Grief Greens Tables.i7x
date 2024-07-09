@@ -67,7 +67,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "pappy"	"paul"	"pall"	vh-pappy-pall rule	false	true	true	false	happy hall	vc-pappy-paul rule	vr-pappy-paul rule	--	"You can summon [b]PAPPY PAUL[r] [once-now of vc-pappy-paul rule] you are in the main ritual room."
 "sappy"	"saul"	"sol"	vh-sappy-sol rule	false	true	true	false	happy hall	vc-sappy-saul rule	vr-sappy-saul rule	--	"You can summon [b]SAPPY SAUL[r] [once-now of vc-sappy-saul rule] you are in the main ritual room."
 "cappy"	"caul"	"call"	vh-cappy-call rule	false	true	true	false	happy hall	vc-cappy-caul rule	vr-cappy-caul rule	--	"You can ask for your [b]CAPPY CAUL[r] [once-now of vc-cappy-caul rule] everyone else is present for the ceremony."
-"yappy"	"yall"	--	--	false	true	true	false	happy hall	vc-yappy-yall rule	vr-yappy-yall rule	--	"You can get everyone [b]YAPPY YALL[r] [once-now of vc-cappy-caul rule] preparations for the ceremony and feast are complete."
+"yappy"	"yall"	--	--	false	true	true	false	happy hall	vc-yappy-yall rule	vr-yappy-yall rule	--	"You can get everyone [b]YAPPY YALL[r] [once-now of vc-yappy-yall rule] preparations for the ceremony and feast are complete."
 "bappy"	"ball"	--	--	false	true	true	false	happy hall	vc-bappy-ball rule	vr-bappy-ball rule	--	"You can have everyone play [b]BAPPY BALL[r] [once-now of vc-bappy-ball rule] the feast is complete, to burn off calories."
 "wheat"	"well"	--	--	false	true	true	false	compete compel	vc-wheat-well rule	vr-wheat-well rule	--	--
 "feet"	"fell"	--	--	false	true	true	false	compete compel	vc-feet-fell rule	vr-feet-fell rule	--	"You can claim your [b]FEET FELL[r] [once-now of vc-feet-fell rule] you've envisioned somewhere safe to fall to."
@@ -1160,6 +1160,11 @@ this is the vr-meet-mel rule:
 	now player has pete pell;
 	now to-number of compete compel is 8264;
 
+a goodrhyme rule (this is the vc-heat-hell rule):
+	now eet-ell is -1;
+	abide by the try-final-point rule;
+	ready;
+
 this is the vr-heat-hell rule:
 	now sco-heat-hell is true;
 	say "True, Leet Lel showed you a lot of things that maybe nobody else would show you. But it was always tied up with Lel pointing out your inadequacies, or your shortcomings, or how you should really have noted in the 1st place, without really showing you how to figure these things out for yourself.[paragraph break]And maybe the reason others wouldn't show you is, you were a bit too captivated by Lel. Lel isolated you a bit.[paragraph break]But things leaked out. Others had stories you didn't believe at first. Sometimes, you were just glad that you didn't have Leet Lel's wrath to put up with, or sarcasm. Other times you felt guilt that you wanted more. You also felt as though you were subsisting at times. You felt guilty saying you liked the company of less exciting people, and you even felt reaching out to them left them with the Mark of the Bore.[paragraph break]Leet Lel did a lot for you. But it came with strings attached. Stirrings beyond just being grateful, or reciprocity. You recall now other people warning you about Leet Lel, but Leet Lel showed you so much at first. Then, less, with time.[paragraph break]Maybe you will remember other awful things, or clues you should have seen, noticing a detail here or there. You hope you do not dwell on it, but when it comes up, you won't block it out. Perhaps there are ways you still need to find to let go, and the only way to start is to admit you still have frustration to let go of. A lot of it.[paragraph break]You also think of other people less abrasive than Leet Lel you were genuinely sad to see depart, or those who were less abrasive, and you said 'If I can put up with Leet Lel, I better put up with them.' But you did not really need to.[paragraph break]You will think about Leet Lel when you need to, and it will help you put aside things in the present.";
@@ -1187,11 +1192,6 @@ this is the vr-sweet-swell rule:
 	now sco-sweet-swell is true;
 	say "You decide that, although Leet Lel could be pretty crude at times, they showed you so much, and you really can't put that aside. After all, you didn't focus on the bad stuff, and they weren't exactly bigoted. You realize you were able to take the good stuff from them and leave the bad parts of their personality, yet, at the same time, you realize they were a bit braver than you, and you could have used even more of that bravery. Your overall evaluation is favorable. After all, how many inventors and such were jerks who left great work for non-jerks to enjoy? You were lucky to have had Leet Lel as part of your life.";
 	end-stub;
-
-a goodrhyme rule (this is the vc-heat-hell rule):
-	now eet-ell is -1;
-	abide by the try-final-point rule;
-	ready;
 
 book general flip stubs
 
@@ -1222,14 +1222,14 @@ to say a-o:
 	say "[one of]A burly workman named Amped Ox takes you  and the downed dork to the Damped Docks[or]Amped Ox drops by again, leading you and the downed dork to a new area of the Damped Docks[stopping]"
 
 this is the bloat-transform rule:
-	if player does not have meat moat and player does not have beet boat and player does not have neat note, unavailable;
+	if player does not have meat moat and player does not have beet boat and player does not have neat note and bleat bloat is not touchable, unavailable;
 	if sco-neat-note is false:
 		vcp "Perhaps ... but unfortunately, the bleat-bloat distracts you from finding fun new stuff. Perhaps a helpful guide, or guiding document, would be the thing.";
 		not-yet;
 
 this is the be-square rule:
 	if player is not in squalor square:
-		say "The neat note is a map of Squalor Square. You should probably go there and try again.";
+		vcp "The neat note is a map of Squalor Square. You should probably go there and try again.";
 		not-yet;
 
 to check-dork-done:
