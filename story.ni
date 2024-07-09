@@ -419,6 +419,8 @@ book Gap Goo
 
 Gap Goo is a wandroom in Roam Raw. wanddir of Gap Goo is south. printed name is "[if sco-zap-zoo is true](Zap!) Zoo[else]Gap, Goo[end if]". "[if sco-zap-zoo is false]Ugh, not very lively here.[else if sco-notice-knife is true]The lotus life still adds color, even though you noticed that knife.[else]The zoo is now bursting with lotus life![end if]"
 
+understand "zap zoo" and "zap/zoo" as gap goo when sco-zap-zoo is true.
+
 from-number of gap goo is 2653. to-number of gap goo is 2653.
 
 guess-table of gap goo is the table of gap goo guesses.
@@ -674,7 +676,7 @@ the copper key is a thing. "You hope it opens passage below [here-in of reeve ro
 
 book Woe Worry Slow Slurry
 
-Woe Worry Slow Slurry is a room in Dome D'Aww. "You don't have to stay here, you know. You still worry about missing anything and if you look rude leaving."
+Woe Worry Slow Slurry is a room in Roam Raw. printed name is "Woe/Worry Slow Slurry". "You don't have to stay here, you know. You still worry about missing anything and if you look rude leaving."
 
 from-number of woe worry slow slurry is 5361. to-number of woe worry slow slurry is -2653.
 
@@ -955,7 +957,9 @@ this is the goo-clear rule: [this is not strictly right but it works for general
 
 volume weird weird parser rules
 
-rule for printing a parser error when player is in ooh ooh:
+the ooh ooh one word rule is listed after the goto reject rule in the for printing a parser error rules.
+
+rule for printing a parser error when player is in ooh ooh (this is the ooh ooh one word rule):
 	if number of words in the player's command is 1, continue the action;
 	if ooh-score is 7:
 		say "[zl] shrug. Whatever you were trying to do, it doesn't matter.";
@@ -1037,7 +1041,7 @@ include Beef Beans Grief Greens Hints by Andrew Schultz.
 
 volume index map nonsense
 
-index map with Wandering Where mapped northwest of Reeve Row.
+index map with Wandering Where mapped southwest of Reeve Row.
 
 index map with Ooh Ooh mapped north of Wandering Where.
 index map with Squalor Square mapped east of Wandering Where.
@@ -1045,14 +1049,15 @@ index map with Dove N Doubt mapped west of Wandering Where.
 index map with Gap Goo mapped south of Wandering Where.
 
 index map with Stuck State mapped northwest of Wandering Where.
-index map with Hi Ho I Owe mapped northeast of Wandering Where.
+index map with Hi Ho I Owe mapped southeast of Wandering Where.
 index map with Took Tarred mapped west of Dove N Doubt.
 index map with Toy Toss mapped southwest of Wandering Where.
 index map with Slow Slurry mapped west of Toy Toss.
+index map with Ill Hill mapped west of Stuck State.
 
-index map with Trappy Trawl mapped south of Reeve Row.
-index map with Happy Hall mapped west of Trappy Trawl.
-index map with Compete Compel mapped west of Happy Hall.
+index map with Trappy Trawl mapped east of Reeve Row.
+index map with Happy Hall mapped south of Trappy Trawl.
+index map with Compete Compel mapped south of Happy Hall.
 
-index map with Gazy Gap mapped east of Trappy Trawl.
-index map with Hidey House mapped east of Reeve Row.
+index map with Gazy Gap mapped north of Stuck State.
+index map with Hidey House mapped north of Reeve Row.
