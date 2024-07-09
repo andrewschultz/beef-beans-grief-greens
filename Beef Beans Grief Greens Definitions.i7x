@@ -54,15 +54,30 @@ to decide whether rhyme-mechanism-known:
 	yes;
 
 definition: a room (called rm) is available-from-here:
+	if rm is main-area and location of player is main-area, yes;
+	no;
+
+to decide whether (rm - a room) is main-area:
+	if map region of rm is roam raw, yes;
+	if rm is reeve row, yes; [we could shift trappy trawl to gnome gnaw, or not]
 	no;
 
 this is the situational-cuing-reject rule: do nothing;
 
 this is the stuck-right-now rule: do nothing;
 
-this is the flag bad goto to rule: do nothing;
+this is the flag bad goto to rule:
+	if debug-state is true, say "TO RULE CHECK: to [noun] ([mrlp]).";
+	if map region of noun is dome d'aww, say "[noun] was an isolated area. You can't go back, and you don't need to." instead;
+	do nothing;
 
-this is the flag bad goto from rule: do nothing;
+this is the flag bad goto from rule:
+	if debug-state is true, say "FROM RULE CHECK: [location of player] ([mrlp]).";
+	if mrlp is dome d'aww, say "You can't go back anywhere you've been until you find a way out of here." instead;
+	if location of player is happy hall, say "There's no going back. The ceremony [if sco-cappy-caul is false]awaits[else]must be finished[end if]." instead;
+	if location of player is trappy trawl, say "There's no going back. You must find a way through to the ceremonial lair." instead;
+	if location of player is compete compel, say "This is the end of your journey. No going back." instead;
+	do nothing;
 
 this is the narrative-checking rule: make no decision;
 
@@ -172,8 +187,9 @@ check going when player is in a wandroom (this is the stuck-state-check rule): [
 	if player is not in Dove n Doubt and room gone to is Wandering Where:
 		abide by the side puzzle rooms rule;
 
-check gotoing when player is in a wandroom:
-	abide by the stuck-state-check rule;
+check gotoing when player is in a wandroom: [room gone to / noun can't quite mesh, sadly]
+	if player is not in Dove n Doubt and noun is Wandering Where:
+		abide by the side puzzle rooms rule;
 
 check going to a wandroom when sco-prune-pride is false and sco-oven-out is true:
 	consider native-clear-rule of room gone to;
