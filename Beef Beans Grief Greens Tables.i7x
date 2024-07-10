@@ -9,7 +9,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "sassed"	"ceased"	--	--	false	true	false	false	--	vc-sassed-ceased rule	vr-sassed-ceased rule	--	--
 "leave"	"lo"	"low"	vh-leave-low rule	false	true	true	false	reeve row	vc-leave-lo rule	vr-leave-lo rule	--	--
 "heave"	"ho"	"hoe"	vh-heave-hoe rule	false	true	true	false	reeve row	vc-heave-ho rule	vr-heave-ho rule	--	"You can [b]HEAVE HO[r] [once-now of vc-heave-ho rule] you have a strong assistant [here-in of reeve row] who can help you pull the rug up."
-"prune"	"pride"	--	--	false	true	true	false	reeve row	vc-prune-pride rule	vr-prune-pride rule	--	--
+"prune"	"pride"	"pried"	vh-prune-pried rule	false	true	true	false	reeve row	vc-prune-pride rule	vr-prune-pride rule	--	--
 "spoon"	"spied"	--	--	false	true	true	false	reeve row	vc-spoon-spied rule	vr-spoon-spied rule	--	"You can get a [b]SPOON SPIED[r] [once-now of vc-spoon-spied rule] you have managed to consult the goon guide with a clear mind."
 "believe"	"below"	--	--	false	true	true	false	reeve row	vc-believe-below rule	vr-believe-below rule	--	--
 "played"	"plug"	--	--	false	true	true	false	reeve row	vc-played-plug rule	vr-played-plug rule	--	--
@@ -18,7 +18,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "jade"	"jug"	--	--	false	true	true	false	reeve row	vc-jade-jug rule	vr-jade-jug rule	--	--
 "laundering"	"lair"	--	--	false	true	true	false	wandering where	vc-laundering-lair rule	vr-laundering-lair rule	--	--
 "squandering"	"square"	--	--	false	true	true	false	wandering where	vc-squandering-square rule	vr-squandering-square rule	--	--
-"maundering"	"mare"	--	--	false	true	true	false	wandering where	vc-maundering-mare rule	vr-maundering-mare rule	--	--
+"maundering"	"mare"	"mayor"	vh-maundering-mayor rule	false	true	true	false	wandering where	vc-maundering-mare rule	vr-maundering-mare rule	--	--
 "pondering"	"pair"	"pare"	vh-pondering-pare rule	false	true	true	false	wandering where	vc-pondering-pair rule	vr-pondering-pair rule	--	--
 "flopper"	"flea"	"flee"	vh-flopper-flee rule	false	true	true	false	wandering where	vc-flopper-flea rule	vr-flopper-flea rule	--	--
 "chrome"	"craw"	--	--	false	true	false	false	wandering where	vc-chrome-craw rule	vr-chrome-craw rule	--	"You can open the [b]CHROME CRAW[r] [here-in of wandering] [once-now of vc-believe-below rule] you've explored everywhere you can aboveground."
@@ -68,7 +68,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "sappy"	"saul"	"sol"	vh-sappy-sol rule	false	true	true	false	happy hall	vc-sappy-saul rule	vr-sappy-saul rule	--	"You can summon [b]SAPPY SAUL[r] [once-now of vc-sappy-saul rule] you are in the main ritual room."
 "cappy"	"caul"	"call"	vh-cappy-call rule	false	true	true	false	happy hall	vc-cappy-caul rule	vr-cappy-caul rule	--	"You can ask for your [b]CAPPY CAUL[r] [once-now of vc-cappy-caul rule] everyone else is present for the ceremony."
 "yappy"	"yall"	--	--	false	true	true	false	happy hall	vc-yappy-yall rule	vr-yappy-yall rule	--	"You can get everyone [b]YAPPY YALL[r] [once-now of vc-yappy-yall rule] preparations for the ceremony and feast are complete."
-"bappy"	"ball"	--	--	false	true	true	false	happy hall	vc-bappy-ball rule	vr-bappy-ball rule	--	"You can have everyone play [b]BAPPY BALL[r] [once-now of vc-bappy-ball rule] the feast is complete, to burn off calories."
+"bappy"	"ball"	"bawl"	vh-bappy-bawl rule	false	true	true	false	happy hall	vc-bappy-ball rule	vr-bappy-ball rule	--	"You can have everyone play [b]BAPPY BALL[r] [once-now of vc-bappy-ball rule] the feast is complete, to burn off calories."
 "wheat"	"well"	--	--	false	true	true	false	compete compel	vc-wheat-well rule	vr-wheat-well rule	--	--
 "feet"	"fell"	--	--	false	true	true	false	compete compel	vc-feet-fell rule	vr-feet-fell rule	--	"You can claim your [b]FEET FELL[r] [once-now of vc-feet-fell rule] you've envisioned somewhere safe to fall to."
 "sheet"	"shell"	--	--	false	true	true	false	compete compel	vc-sheet-shell rule	vr-sheet-shell rule	--	--
@@ -86,6 +86,9 @@ a goodrhyme rule (this is the vc-prune-pride rule):
 		vcal "You're already humble enough.";
 		already-done;
 	ready;
+
+this is the vh-prune-pried rule:
+	say "No, no food is stuck in the goon guide.";
 
 this is the vr-prune-pride rule:
 	now sco-prune-pride is true;
@@ -279,6 +282,9 @@ this is the vr-squandering-square rule:
 a goodrhyme rule (this is the vc-maundering-mare rule):
 	if player is not in wandering where, unavailable;
 	ready;
+
+this is the vh-maundering-mayor rule:
+	say "No, something sentient, not someone."
 
 this is the vr-maundering-mare rule:
 	now sco-maundering-mare is true;
@@ -1047,6 +1053,9 @@ a goodrhyme rule (this is the vc-bappy-ball rule):
 		vcp "Sport, eventually, to burn the calories off. But before that, discussion.";
 		not-yet;
 	ready;
+
+this is the vh-bappy-bawl rule:
+	say "Too noisy. And whatever gets bapped should be inanimate."
 
 this is the vr-bappy-ball rule:
 	now sco-bappy-ball is true;
