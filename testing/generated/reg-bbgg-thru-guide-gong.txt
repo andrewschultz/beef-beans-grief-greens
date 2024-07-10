@@ -229,7 +229,7 @@ by one point
 >guide gong
 You are now repelled by a guide gong if you try to go down a path where you have nothing game-critical to do in any branches.
 
-#testcase-gong-checks-woe-worry-slow-slurry
+#+testcase-gong-checks-woe-worry-slow-slurry
 >d
 That guide gong, again, rings to notify you that you don't need to go back through Woe/Worry Slow Slurry.
 
@@ -245,7 +245,7 @@ That guide gong, again, rings to notify you that you don't need to go back throu
 >e
 That guide gong, again, rings to notify you that you don't need to go back through Squalor Square.
 
-#testcase-gong-checks-ooh-ooh
+#+testcase-gong-checks-ooh-ooh
 >n
 That guide gong, again, rings to notify you that you don't need to go back through Ooh, Ooh...!.
 
@@ -257,6 +257,7 @@ by one point
 >believe below
 by one point
 
+#testcase-gong-checks-wandering-where
 >out
 That guide gong, again, rings to notify you that you don't need to go back through Wandering ... Where?.
 

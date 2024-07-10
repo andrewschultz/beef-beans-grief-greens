@@ -27,7 +27,7 @@ file=reg-bbgg-thru-hintfull.txt,hf/hfull,walkthrough testing HINTS full
 }$REJECT=I couldn't parse that command. You don't need any more than two words long.
 }$REJECT1=Most special commands are more than one word. VERBS will give a list of useful, non-puzzle-solving verbs.
 }$REJECT1A=Most special commands are more than one word, because of the rhyme-pairs involved. VERBS will give a list of useful, non-puzzle-solving verbs.
-}$REJECT2=Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Bright Brave Knight Knave has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+}$REJECT2=Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Beef, Beans, Grief, Greens has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 }$GREENBONUSFIRST=The HA HALF button on your Leet Learner lights up green--one of the words you thought must be right. Very dim, though. Perhaps this is a rhyme you don't strictly need to figure to win.
 }$GREENBONUS=The HA HALF button on your Leet Learner lights up green. Very dim, though. Perhaps this is a rhyme you don't strictly need to figure to win.
 }$GREENCOREFIRST=The HA HALF button on your Leet Learner lights up green--one of the words you thought must be right.
@@ -70,6 +70,259 @@ file=reg-bbgg-thru-hintfull.txt,hf/hfull,walkthrough testing HINTS full
 You need to find a way out. Yet you can't just go out ... you need to pump yourself up to get out, somehow.
 
 >au 2
+
+@rej
+#testcase-reject-start-table-of-verb-checks-vc-baller-bear-rule
+>baller bear
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-bappy-ball-rule
+>bappy ball
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-beat-bell-rule
+>beat bell
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-beet-boat-rule
+>beet boat
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-booboo-rule
+>boo boo
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-book-bard-rule
+>book bard
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-caller-care-rule
+>caller care
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-cappy-caul-rule
+>cappy caul
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-carrot-cake-rule
+>carrot cake
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-chrome-craw-rule
+>chrome craw
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-cook-card-rule
+>cook card
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-cuckoo-rule
+>coo koo
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-dented-dials-rule
+>dented dials
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-dollar-dare-rule
+>dollar dare
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-doodoo-rule
+>doo doo
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-feet-fell-rule
+>feet fell
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-fight-fires-rule
+>fight fires
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-flopper-flea-rule
+>flopper flea
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-found-fork-rule
+>found fork
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-grey-gruel-rule
+>grey gruel
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-heat-hell-rule
+>heat hell
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-honeyed-ham-rule
+>honeyed ham
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-hook-hard-rule
+>hook hard
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-juju-rule
+>ju ju
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-just-jello-rule
+>just jello
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-known-nora-rule
+>known nora
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-laundering-lair-rule
+>laundering lair
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-lone-laura-rule
+>lone laura
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-look-lard-rule
+>look lard
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-lovin-lout-rule
+>lovin lout
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-massive-mitt-rule
+>massive mitt
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-maundering-mare-rule
+>maundering mare
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-meat-moat-rule
+>meat moat
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-meet-mel-rule
+>meet mel
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-muumuu-rule
+>muu muu
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-neat-note-rule
+>neat note
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-notice-knife-rule
+>notice knife
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-oven-out-rule
+>oven out
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-pappy-paul-rule
+>pappy paul
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-penny-piles-rule
+>penny piles
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-pie-po-rule
+>pie po
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-pluck-plate-rule
+>pluck plate
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-pondering-pair-rule
+>pondering pair
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-poohpooh-rule
+>poo pooh
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-potpourri-rule
+>pot pourri
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-prune-pride-rule
+>prune pride
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-repeat-repel-rule
+>repeat repel
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-sappy-saul-rule
+>sappy saul
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-scrappy-scrawl-rule
+>scrappy scrawl
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-see-soup-rule
+>see soup
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-sheet-shell-rule
+>sheet shell
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-shovin-shout-rule
+>shovin shout
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-soy-sauce-rule
+>soy sauce
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-spoon-spied-rule
+>spoon spied
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-squandering-square-rule
+>squandering square
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-sweet-swell-rule
+>sweet swell
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-tutu-rule
+>tu tu
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-veggie-ville-rule
+>veggie ville
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-whappy-wall-rule
+>whappy wall
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-wheat-well-rule
+>wheat well
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-white-wires-rule
+>white wires
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-yappy-yall-rule
+>yappy yall
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-zap-zoo-rule
+>zap zoo
+{$REJECT2}
 
 @gong
 >guide gong
@@ -165,9 +418,19 @@ by one point
 }}CURMIN++
 }}SCORE++
 
+@rej,all
+{--rej}#testcase-check-vc-sassed-ceased-rule-fallthrough
+{--all}#testcase-run-vr-sassed-ceased-rule-default
+Yes, you're glad you were given this responsibility, and people snickered about how flaky you were.
+
 @all
 >score
 {$SCOS}
+
+@rej
+#testcase-check-vc-sassed-ceased-rule-if-sco-sassed-ceased-is-true
+>sassed ceased
+You already felt relief things settled down!
 
 @alt
 #testcase-alt-words-table-of-verb-checks-9-made-maid-mug
@@ -210,6 +473,19 @@ by one point
 @all+
 >score
 {$SCOS}
+
+@rej
+#testcase-reject-start-table-of-verb-checks-vc-jade-jug-rule
+>jade jug
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-made-mug-rule
+>made mug
+{$REJECT2}
+\\
+#testcase-reject-start-table-of-verb-checks-vc-played-plug-rule
+>played plug
+{$REJECT2}
 
 @ha
 #testcase-ha-half-table-of-verb-checks-16-chrome
@@ -1954,6 +2230,7 @@ by one point
 >s
 
 @all
+#testcase-room-names-edgy-ill-hedge-y-hill
 `Edgy Ill Hedge-y Hill
 
 @gt
@@ -2602,6 +2879,8 @@ That location or thing doesn't exist or isn't known to you yet.
 >undo
 
 @gong,prong
+{--prong}#testcase-prong-checks-wandering-where
+{--gong}#testcase-gong-checks-wandering-where
 >out
 That guide gong, again, rings to notify you that you don't need to go back through Wandering ... Where?.
 
@@ -2712,11 +2991,11 @@ That location or thing doesn't exist or isn't known to you yet.
 
 @rej
 >whappy wall
-WRONG
+That could be helpful, but you have no indication where a wall might sound whappy. Well, not yet. You need to search for evidence.
 \\
 #testcase-think-table-of-verb-checks-vc-whappy-wall-rule
 >think
-WRONG
+You can hit the WHAPPY WALL once you know where to whap the wall.
 
 >scrappy scrawl
 by one point
@@ -2729,7 +3008,7 @@ by one point
 @rej
 #+testcase-think-table-of-verb-checks-vc-whappy-wall-rule
 >think
-WRONG
+You can hit the WHAPPY WALL now you know where to whap the wall.
 
 @ha
 #+testcase-ha-half-table-of-verb-checks-56-wall
@@ -3065,6 +3344,13 @@ You already held a discussion. Now it is time for games.
 >bappy zball
 {$GREENCORE}
 
+@rej
+#this is a bit of a stretch but it is available before the end
+#testcase-reject-start-table-of-verb-checks-vc-sassed-ceased-rule
+#testcase-check-vc-sassed-ceased-rule-if-player-does-not-have-fast-feast
+>sassed ceased
+{$REJECT2}
+
 >bappy ball
 by one point
 }}SCORE++
@@ -3076,6 +3362,10 @@ by one point
 @all+
 >score
 {$SCOS}
+
+@rej
+>chrome craw
+The chrome craw cannot open a secret path here.
 
 @gt
 #testcase-goto-tries-compete-compel-reeve-row
@@ -3283,6 +3573,247 @@ You get a sense such a judgment would be more appropriate once you've examined t
 You get a sense such a judgment would be more appropriate once you've examined the book you just got.
 
 >x leet lel
+
+@rej
+#testcase-reject-end-table-of-verb-checks-vc-baller-bear-rule
+>baller bear
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-bappy-ball-rule
+>bappy ball
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-believe-below-rule
+>believe below
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-booboo-rule
+>boo boo
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-book-bard-rule
+>book bard
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-caller-care-rule
+>caller care
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-cappy-caul-rule
+>cappy caul
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-carrot-cake-rule
+>carrot cake
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-cook-card-rule
+>cook card
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-cuckoo-rule
+>coo koo
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-dented-dials-rule
+>dented dials
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-dollar-dare-rule
+>dollar dare
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-doodoo-rule
+>doo doo
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-fight-fires-rule
+>fight fires
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-flopper-flea-rule
+>flopper flea
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-found-fork-rule
+>found fork
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-grey-gruel-rule
+>grey gruel
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-grieve-grow-rule
+>grieve grow
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-heave-ho-rule
+>heave ho
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-honeyed-ham-rule
+>honeyed ham
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-hook-hard-rule
+>hook hard
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-jade-jug-rule
+>jade jug
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-juju-rule
+>ju ju
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-just-jello-rule
+>just jello
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-known-nora-rule
+>known nora
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-laundering-lair-rule
+>laundering lair
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-leave-lo-rule
+>leave lo
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-lone-laura-rule
+>lone laura
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-look-lard-rule
+>look lard
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-lovin-lout-rule
+>lovin lout
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-made-mug-rule
+>made mug
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-massive-mitt-rule
+>massive mitt
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-maundering-mare-rule
+>maundering mare
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-muumuu-rule
+>muu muu
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-neat-note-rule
+>neat note
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-notice-knife-rule
+>notice knife
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-oven-out-rule
+>oven out
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-pappy-paul-rule
+>pappy paul
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-penny-piles-rule
+>penny piles
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-pie-po-rule
+>pie po
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-played-plug-rule
+>played plug
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-pluck-plate-rule
+>pluck plate
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-pondering-pair-rule
+>pondering pair
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-poohpooh-rule
+>poo pooh
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-potpourri-rule
+>pot pourri
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-prune-pride-rule
+>prune pride
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-sappy-saul-rule
+>sappy saul
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-sassed-ceased-rule
+>sassed ceased
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-scrappy-scrawl-rule
+>scrappy scrawl
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-see-soup-rule
+>see soup
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-shovin-shout-rule
+>shovin shout
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-soy-sauce-rule
+>soy sauce
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-spoon-spied-rule
+>spoon spied
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-squandering-square-rule
+>squandering square
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-tutu-rule
+>tu tu
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-veggie-ville-rule
+>veggie ville
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-whappy-wall-rule
+>whappy wall
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-white-wires-rule
+>white wires
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-yappy-yall-rule
+>yappy yall
+{$REJECT2}
+\\
+#testcase-reject-end-table-of-verb-checks-vc-zap-zoo-rule
+>zap zoo
+{$REJECT2}
 
 @ha
 #+testcase-ha-half-table-of-verb-checks-69-repeat

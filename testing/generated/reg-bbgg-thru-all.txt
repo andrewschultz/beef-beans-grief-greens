@@ -18,6 +18,9 @@
 >sassed ceased
 by one point
 
+#testcase-run-vr-sassed-ceased-rule-default
+Yes, you're glad you were given this responsibility, and people snickered about how flaky you were.
+
 >score
 You have scored a total of 1 out of 69 points and need 60 to win. You have found 1 of 10 bonus points so far.
 
@@ -330,6 +333,7 @@ You have scored a total of 45 out of 69 points and need 64 to win. You have foun
 
 >s
 
+#testcase-room-names-edgy-ill-hedge-y-hill
 `Edgy Ill Hedge-y Hill
 
 >flopper flea

@@ -230,7 +230,7 @@ That guide gong, again, rings to notify you that you don't need to go back throu
 >e
 That guide gong, again, rings to notify you that you don't need to go back through Squalor Square.
 
-#testcase-prong-checks-ooh-ooh
+#+testcase-prong-checks-ooh-ooh
 >n
 That guide gong, again, rings to notify you that you don't need to go back through Ooh, Ooh...!.
 
@@ -242,6 +242,7 @@ by one point
 >believe below
 by one point
 
+#testcase-prong-checks-wandering-where
 >out
 That guide gong, again, rings to notify you that you don't need to go back through Wandering ... Where?.
 
