@@ -117,6 +117,9 @@ this is the vr-spoon-spied rule:
 
 to guide-tweak:
 	decrease to-number of goon guide by 2755;
+	if guide-score is 2:
+		say "[line break]You flip through the goon guide once again. You seem to have gotten the big stuff from it. You tuck it in a safe place behind the oven for reference. You have enough to carry around.";
+		moot goon guide;
 
 to say ap-ov:
 	say "[if oven is in reeve row]the oven[else]an appliance[end if]"
