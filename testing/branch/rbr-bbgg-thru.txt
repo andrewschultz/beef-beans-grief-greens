@@ -71,6 +71,14 @@ You need to find a way out. Yet you can't just go out ... you need to pump yours
 
 >au 2
 
+@gong
+>guide gong
+You are now repelled by a guide gong if you try to go down a path where you have nothing game-critical to do in any branches.
+
+@prong
+>pride prong
+You are now blocked from paths with no points, critical or bonus, available in any branches.
+
 >x
 
 @ha
@@ -160,6 +168,13 @@ by one point
 @all
 >score
 {$SCOS}
+
+@alt
+#testcase-alt-words-table-of-verb-checks-9-made-maid-mug
+>maid mug
+by one point
+\\
+>undo
 
 >made mug
 by one point
@@ -1010,7 +1025,7 @@ The Leet Learner shakes back and forth. Something you said sounded right, but it
 >baller bare
 The Leet Learner shakes back and forth. Something you said sounded right, but it didn't feel right.
 
-@!min
+@!min,gong,prong
 >baller bear
 by one point
 }}SCORE++
@@ -1085,7 +1100,7 @@ by one point
 {$GREENCORE}
 
 @hom
-#testcase-homonym-reject-table-of-verb-checks-meet-mote
+#testcase-homonym-reject-table-of-verb-checks-vh-meet-mote-rule-meet-mote
 >meet mote
 You needn't make the acquaintance of anything minuscule. You need more sizable food portions.
 
@@ -1098,7 +1113,7 @@ by one point
 {$SCOS}
 
 @hom
-#testcase-homonym-reject-table-of-verb-checks-beat
+#testcase-homonym-reject-table-of-verb-checks-vh-beat-boat-rule-beat
 >beat boat
 There's no competition here, violent, friendly, racing or otherwise.
 
@@ -1162,7 +1177,7 @@ by one point
 {$GREENCORE}
 
 @hom
-#testcase-homonym-reject-table-of-verb-checks-wight
+#testcase-homonym-reject-table-of-verb-checks-vh-wight-wires-rule-wight
 >wight wires
 Summoning the undead is one way to remember those who passed on, but it's a high-risk one.
 
@@ -1173,6 +1188,28 @@ by one point
 @all
 >score
 {$SCOS}
+
+@gong,prong
+##balance undos
+>w
+\\
+>soy sauce
+by one point
+\\
+>e
+{--gong}A guide gong rings to notify you that you don't need to go back through Squalor Square.
+{--prong}The pride-prong you summoned earlier pokes you to go and see what's ahead, even if it might not be critical to your quest.
+\\
+>undo
+>undo
+>undo
+
+@gong,prong+
+>baller bear
+by one point
+}}SCORE++
+}}CURMIN++
+}}CURMINBONUS++
 
 >w
 
@@ -1303,6 +1340,10 @@ by one point
 @all+
 >score
 {$SCOS}
+
+@gong
+>e
+A guide gong rings to notify you that you don't need to go back through Squalor Square.
 
 >maundering mare
 by one point
@@ -1651,11 +1692,11 @@ by one point
 >pi po
 Pi times the radius squared, and you've got something.
 \\
-#testcase-homonym-reject-table-of-verb-checks-vh-pi-poe-rule-pi-poe
+#+testcase-homonym-reject-table-of-verb-checks-vh-pi-poe-rule-pi-poe
 >pie poe
 No, not the author, a descriptor.
 \\
-#testcase-homonym-reject-table-of-verb-checks-vh-pi-poe-rule-pi-poe
+#+testcase-homonym-reject-table-of-verb-checks-vh-pi-poe-rule-pi-poe
 >pi poe
 Double narrow misses with the words. But you must be close!
 
@@ -1842,6 +1883,44 @@ by one point
 >score
 {$SCOS}
 
+@gong
+##balance undos
+>s
+\\
+>flopper flea
+by one point
+\\
+>veggie ville
+by one point
+\\
+#testcase-gong-checks-ooh-ooh
+>n
+That guide gong, again, rings to notify you that you don't need to go back through Ooh, Ooh...!.
+\\
+>undo
+>undo
+>undo
+>undo
+
+@prong
+##balance undos
+>s
+\\
+>flopper flea
+by one point
+\\
+>veggie ville
+by one point
+\\
+#testcase-prong-checks-ooh-ooh
+>n
+The pride-prong you summoned earlier pokes you to go and see what's ahead, even if it might not be critical to your quest.
+\\
+>undo
+>undo
+>undo
+>undo
+
 >cuckoo
 by one point
 }}SCORE++
@@ -1878,15 +1957,19 @@ by one point
 `Edgy Ill Hedge-y Hill
 
 @gt
+#testcase-goto-table-of-noways-edgy-ill-hedge-y-hill
 >w
 Linky Lakes Stinky Steaks goes the "ironic title" route, but it also goes the "if you have to ask, you can't afford" route. You sense you're missing a food group, with the directions you tried.
 \\
+#+testcase-goto-table-of-noways-edgy-ill-hedge-y-hill
 >e
 The "Vim? VERY Dim" Dairy is mis-titled on purpose, but you don't need dairy products. You sense you're missing a food group, with the directions you tried.
 \\
+#+testcase-goto-table-of-noways-edgy-ill-hedge-y-hill
 >s
 The Greeter Grill Sweeter Swill serves all sorts of non-nutritious, but delicious stuff. Not quite, though. You sense you're missing a food group, with the directions you tried.
 \\
+#+testcase-goto-table-of-noways-edgy-ill-hedge-y-hill
 >n
 You discover the "Leet Lark, It" Meat Market. But you have enough meat. You sense you're missing a food group, with the directions you tried.
 
@@ -2052,6 +2135,22 @@ You can really only wander in the four cardinal directions or down into the chro
 >nw
 Diagonal directions aren't used in Beef, Beans, Grief, Greens.
 
+@gong
+#testcase-gong-checks-woe-worry-slow-slurry
+>d
+That guide gong, again, rings to notify you that you don't need to go back through Woe/Worry Slow Slurry.
+\\
+>stride strong
+\\
+>d
+Slurry
+
+@prong
+#testcase-prong-checks-woe-worry-slow-slurry
+>d
+The pride-prong you summoned earlier pokes you to go and see what's ahead, even if it might not be critical to your quest.
+
+@!gong,prong,min
 >d
 
 @all
@@ -2184,6 +2283,7 @@ That location or thing doesn't exist or isn't known to you yet.
 >just zjello
 {$GREENCORE}
 
+@!min
 >honeyed ham
 by one point
 }}SCORE++
@@ -2198,6 +2298,13 @@ Only more worries are beyond, you suspect. There's enough more food to pick off 
 @all
 >score
 {$SCOS}
+
+@alt
+#testcase-alt-words-table-of-verb-checks-53-grey-gray-gruel
+>gray gruel
+by one point
+\\
+>undo
 
 @!min
 >grey gruel
@@ -2246,7 +2353,16 @@ by one point
 >score
 {$SCOS}
 
+@!min
 >u
+
+@gong
+>guide gong
+You are now repelled by a guide gong if you try to go down a path where you have nothing game-critical to do in any branches.
+\\
+#+testcase-gong-checks-woe-worry-slow-slurry
+>d
+That guide gong, again, rings to notify you that you don't need to go back through Woe/Worry Slow Slurry.
 
 @gt
 ##balance undos
@@ -2339,6 +2455,32 @@ That location or thing doesn't exist or isn't known to you yet.
 That location or thing doesn't exist or isn't known to you yet.
 \\
 >undo
+
+@gong
+#testcase-gong-checks-dove-n-doubt
+>w
+That guide gong, again, rings to notify you that you don't need to go back through Dove 'N Doubt.
+
+@prong
+#testcase-prong-checks-dove-n-doubt
+>w
+A guide gong rings to notify you that you don't need to go back through Dove 'N Doubt.
+
+@gong,prong
+{--gong}#testcase-gong-checks-gap-goo
+{--prong}#testcase-prong-checks-gap-goo
+>s
+That guide gong, again, rings to notify you that you don't need to go back through (Zap!) Zoo.
+\\
+{--gong}#testcase-gong-checks-squalor-square
+{--prong}#testcase-prong-checks-squalor-square
+>e
+That guide gong, again, rings to notify you that you don't need to go back through Squalor Square.
+\\
+{--gong}#+testcase-gong-checks-ooh-ooh
+{--prong}#+testcase-prong-checks-ooh-ooh
+>n
+That guide gong, again, rings to notify you that you don't need to go back through Ooh, Ooh...!.
 
 >in
 
@@ -2459,6 +2601,10 @@ That location or thing doesn't exist or isn't known to you yet.
 \\
 >undo
 
+@gong,prong
+>out
+That guide gong, again, rings to notify you that you don't need to go back through Wandering ... Where?.
+
 >d
 
 @all
@@ -2564,6 +2710,14 @@ That location or thing doesn't exist or isn't known to you yet.
 >zsappy saul
 {$YELLOWCORE}
 
+@rej
+>whappy wall
+WRONG
+\\
+#testcase-think-table-of-verb-checks-vc-whappy-wall-rule
+>think
+WRONG
+
 >scrappy scrawl
 by one point
 }}SCORE++
@@ -2571,6 +2725,11 @@ by one point
 @all
 >score
 {$SCOS}
+
+@rej
+#+testcase-think-table-of-verb-checks-vc-whappy-wall-rule
+>think
+WRONG
 
 @ha
 #+testcase-ha-half-table-of-verb-checks-56-wall
@@ -2599,6 +2758,10 @@ That might be an interesting part of the ritual once you make it to the main rit
 That might be an interesting part of the ritual once you make it to the main ritual room.
 \\
 #testcase-think-table-of-verb-checks-vc-sappy-saul-rule
+#testcase-think-table-of-verb-checks-vc-yappy-yall-rule
+#testcase-think-table-of-verb-checks-vc-cappy-caul-rule
+#testcase-think-table-of-verb-checks-vc-bappy-ball-rule
+#testcase-think-table-of-verb-checks-vc-pappy-paul-rule
 >think
 You can summon PAPPY PAUL once you are in the main ritual room.
 You can summon SAPPY SAUL once you are in the main ritual room.
@@ -2610,6 +2773,10 @@ You can have everyone play BAPPY BALL once the feast is complete, to burn off ca
 >whappy wall
 \\
 #+testcase-think-table-of-verb-checks-vc-sappy-saul-rule
+#+testcase-think-table-of-verb-checks-vc-yappy-yall-rule
+#+testcase-think-table-of-verb-checks-vc-cappy-caul-rule
+#+testcase-think-table-of-verb-checks-vc-bappy-ball-rule
+#+testcase-think-table-of-verb-checks-vc-pappy-paul-rule
 >think
 (CAN DO NOW) You can summon PAPPY PAUL now you are in the main ritual room.
 (CAN DO NOW) You can summon SAPPY SAUL now you are in the main ritual room.
@@ -2823,6 +2990,7 @@ by one point
 {$SCOS}
 
 @rej
+#+testcase-think-table-of-verb-checks-vc-cappy-caul-rule
 >think
 (CAN DO NOW) You can ask for your CAPPY CAUL now everyone else is present for the ceremony.
 You can get everyone YAPPY YALL once preparations for the ceremony and feast are complete.
@@ -2856,6 +3024,7 @@ by one point
 There's no going back. The ceremony must be finished.
 
 @rej
+#+testcase-think-table-of-verb-checks-vc-yappy-yall-rule
 >think
 (CAN DO NOW) You can get everyone YAPPY YALL now preparations for the ceremony and feast are complete.
 You can have everyone play BAPPY BALL once the feast is complete, to burn off calories.
@@ -2878,8 +3047,14 @@ by one point
 {$SCOS}
 
 @rej
+#+testcase-think-table-of-verb-checks-vc-bappy-ball-rule
 >think
 (CAN DO NOW) You can have everyone play BAPPY BALL now the feast is complete, to burn off calories.
+
+@rej+
+#testcase-check-vc-yappy-yall-rule-if-sco-yappy-yall-is-true
+>yappy yall
+You already held a discussion. Now it is time for games.
 
 @ha
 #+testcase-ha-half-table-of-verb-checks-63-ball

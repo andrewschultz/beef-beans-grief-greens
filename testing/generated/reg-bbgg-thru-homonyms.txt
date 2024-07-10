@@ -123,14 +123,14 @@ by one point
 >found fork
 by one point
 
-#testcase-homonym-reject-table-of-verb-checks-meet-mote
+#testcase-homonym-reject-table-of-verb-checks-vh-meet-mote-rule-meet-mote
 >meet mote
 You needn't make the acquaintance of anything minuscule. You need more sizable food portions.
 
 >meat moat
 by one point
 
-#testcase-homonym-reject-table-of-verb-checks-beat
+#testcase-homonym-reject-table-of-verb-checks-vh-beat-boat-rule-beat
 >beat boat
 There's no competition here, violent, friendly, racing or otherwise.
 
@@ -140,7 +140,7 @@ by one point
 >fight fires
 by one point
 
-#testcase-homonym-reject-table-of-verb-checks-wight
+#testcase-homonym-reject-table-of-verb-checks-vh-wight-wires-rule-wight
 >wight wires
 Summoning the undead is one way to remember those who passed on, but it's a high-risk one.
 
@@ -196,11 +196,11 @@ by one point
 >pi po
 Pi times the radius squared, and you've got something.
 
-#testcase-homonym-reject-table-of-verb-checks-vh-pi-poe-rule-pi-poe
+#+testcase-homonym-reject-table-of-verb-checks-vh-pi-poe-rule-pi-poe
 >pie poe
 No, not the author, a descriptor.
 
-#testcase-homonym-reject-table-of-verb-checks-vh-pi-poe-rule-pi-poe
+#+testcase-homonym-reject-table-of-verb-checks-vh-pi-poe-rule-pi-poe
 >pi poe
 Double narrow misses with the words. But you must be close!
 

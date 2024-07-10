@@ -10,6 +10,9 @@
 
 >au 2
 
+>guide gong
+You are now repelled by a guide gong if you try to go down a path where you have nothing game-critical to do in any branches.
+
 >x
 
 >sassed ceased
@@ -78,9 +81,6 @@ by one point
 >caller care
 by one point
 
->baller bear
-by one point
-
 >neat note
 by one point
 
@@ -103,6 +103,24 @@ by one point
 
 >soy sauce
 by one point
+
+>e
+A guide gong rings to notify you that you don't need to go back through Squalor Square.
+
+>undo
+>undo
+>undo
+
+>baller bear
+by one point
+
+>w
+
+>soy sauce
+by one point
+
+>e
+A guide gong rings to notify you that you don't need to go back through Squalor Square.
 
 >maundering mare
 by one point
@@ -148,6 +166,23 @@ by one point
 >massive mitt
 by one point
 
+>s
+
+>flopper flea
+by one point
+
+>veggie ville
+by one point
+
+#testcase-gong-checks-ooh-ooh
+>n
+That guide gong, again, rings to notify you that you don't need to go back through Ooh, Ooh...!.
+
+>undo
+>undo
+>undo
+>undo
+
 >cuckoo
 by one point
 
@@ -168,7 +203,14 @@ by one point
 >chrome craw
 by one point
 
+#testcase-gong-checks-woe-worry-slow-slurry
 >d
+That guide gong, again, rings to notify you that you don't need to go back through Woe/Worry Slow Slurry.
+
+>stride strong
+
+>d
+Slurry
 
 >honeyed ham
 by one point
@@ -184,6 +226,29 @@ by one point
 
 >u
 
+>guide gong
+You are now repelled by a guide gong if you try to go down a path where you have nothing game-critical to do in any branches.
+
+#testcase-gong-checks-woe-worry-slow-slurry
+>d
+That guide gong, again, rings to notify you that you don't need to go back through Woe/Worry Slow Slurry.
+
+#testcase-gong-checks-dove-n-doubt
+>w
+That guide gong, again, rings to notify you that you don't need to go back through Dove 'N Doubt.
+
+#testcase-gong-checks-gap-goo
+>s
+That guide gong, again, rings to notify you that you don't need to go back through (Zap!) Zoo.
+
+#testcase-gong-checks-squalor-square
+>e
+That guide gong, again, rings to notify you that you don't need to go back through Squalor Square.
+
+#testcase-gong-checks-ooh-ooh
+>n
+That guide gong, again, rings to notify you that you don't need to go back through Ooh, Ooh...!.
+
 >in
 
 >grieve grow
@@ -191,6 +256,9 @@ by one point
 
 >believe below
 by one point
+
+>out
+That guide gong, again, rings to notify you that you don't need to go back through Wandering ... Where?.
 
 >d
 

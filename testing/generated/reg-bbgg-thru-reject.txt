@@ -216,8 +216,19 @@ by one point
 
 >d
 
+>whappy wall
+WRONG
+
+#testcase-think-table-of-verb-checks-vc-whappy-wall-rule
+>think
+WRONG
+
 >scrappy scrawl
 by one point
+
+#+testcase-think-table-of-verb-checks-vc-whappy-wall-rule
+>think
+WRONG
 
 >sappy saul
 That might be someone to call once you are in the main ritual room.
@@ -235,6 +246,10 @@ That might be an interesting part of the ritual once you make it to the main rit
 That might be an interesting part of the ritual once you make it to the main ritual room.
 
 #testcase-think-table-of-verb-checks-vc-sappy-saul-rule
+#testcase-think-table-of-verb-checks-vc-yappy-yall-rule
+#testcase-think-table-of-verb-checks-vc-cappy-caul-rule
+#testcase-think-table-of-verb-checks-vc-bappy-ball-rule
+#testcase-think-table-of-verb-checks-vc-pappy-paul-rule
 >think
 You can summon PAPPY PAUL once you are in the main ritual room.
 You can summon SAPPY SAUL once you are in the main ritual room.
@@ -246,6 +261,10 @@ You can have everyone play BAPPY BALL once the feast is complete, to burn off ca
 >whappy wall
 
 #+testcase-think-table-of-verb-checks-vc-sappy-saul-rule
+#+testcase-think-table-of-verb-checks-vc-yappy-yall-rule
+#+testcase-think-table-of-verb-checks-vc-cappy-caul-rule
+#+testcase-think-table-of-verb-checks-vc-bappy-ball-rule
+#+testcase-think-table-of-verb-checks-vc-pappy-paul-rule
 >think
 (CAN DO NOW) You can summon PAPPY PAUL now you are in the main ritual room.
 (CAN DO NOW) You can summon SAPPY SAUL now you are in the main ritual room.
@@ -285,6 +304,7 @@ by one point
 >known nora
 by one point
 
+#+testcase-think-table-of-verb-checks-vc-cappy-caul-rule
 >think
 (CAN DO NOW) You can ask for your CAPPY CAUL now everyone else is present for the ceremony.
 You can get everyone YAPPY YALL once preparations for the ceremony and feast are complete.
@@ -293,6 +313,7 @@ You can have everyone play BAPPY BALL once the feast is complete, to burn off ca
 >cappy caul
 by one point
 
+#+testcase-think-table-of-verb-checks-vc-yappy-yall-rule
 >think
 (CAN DO NOW) You can get everyone YAPPY YALL now preparations for the ceremony and feast are complete.
 You can have everyone play BAPPY BALL once the feast is complete, to burn off calories.
@@ -300,8 +321,13 @@ You can have everyone play BAPPY BALL once the feast is complete, to burn off ca
 >yappy yall
 by one point
 
+#+testcase-think-table-of-verb-checks-vc-bappy-ball-rule
 >think
 (CAN DO NOW) You can have everyone play BAPPY BALL now the feast is complete, to burn off calories.
+
+#testcase-check-vc-yappy-yall-rule-if-sco-yappy-yall-is-true
+>yappy yall
+You already held a discussion. Now it is time for games.
 
 >bappy ball
 by one point

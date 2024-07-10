@@ -15,6 +15,12 @@
 >sassed ceased
 by one point
 
+#testcase-alt-words-table-of-verb-checks-9-made-maid-mug
+>maid mug
+by one point
+
+>undo
+
 >made mug
 by one point
 
@@ -172,6 +178,12 @@ by one point
 
 >honeyed ham
 by one point
+
+#testcase-alt-words-table-of-verb-checks-53-grey-gray-gruel
+>gray gruel
+by one point
+
+>undo
 
 >grey gruel
 by one point

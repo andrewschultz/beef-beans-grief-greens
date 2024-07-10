@@ -951,15 +951,19 @@ by one point
 
 >s
 
+#testcase-goto-table-of-noways-edgy-ill-hedge-y-hill
 >w
 Linky Lakes Stinky Steaks goes the "ironic title" route, but it also goes the "if you have to ask, you can't afford" route. You sense you're missing a food group, with the directions you tried.
 
+#+testcase-goto-table-of-noways-edgy-ill-hedge-y-hill
 >e
 The "Vim? VERY Dim" Dairy is mis-titled on purpose, but you don't need dairy products. You sense you're missing a food group, with the directions you tried.
 
+#+testcase-goto-table-of-noways-edgy-ill-hedge-y-hill
 >s
 The Greeter Grill Sweeter Swill serves all sorts of non-nutritious, but delicious stuff. Not quite, though. You sense you're missing a food group, with the directions you tried.
 
+#+testcase-goto-table-of-noways-edgy-ill-hedge-y-hill
 >n
 You discover the "Leet Lark, It" Meat Market. But you have enough meat. You sense you're missing a food group, with the directions you tried.
 
