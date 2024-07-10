@@ -301,8 +301,12 @@ this is the vr-laundering-lair rule:
 	wander Dove N Doubt;
 
 a goodrhyme rule (this is the vc-chrome-craw rule):
+	if wandering where is unvisited, unavailable;
 	if sco-chrome-craw is true:
-		vcal "You already opened the chrome craw!";
+		if trappy trawl is visited:
+			vcal "The chrome craw cannot open a secret path here.";
+		else:
+			vcal "You already opened the chrome craw!";
 		already-done;
 	if trappy trawl is visited:
 		vcp "You could have opened the chrome craw in [wandering], but it's too late now. You don't want to go back. Everyone is waiting.";
@@ -884,7 +888,7 @@ chapter edgy ill scoring
 a goodrhyme rule (this is the vc-veggie-ville rule):
 	if player is not in edgy ill, unavailable;
 	if sco-flopper-flea is false:
-		vcp "That'd be somewhere to go, once you disposed of the flopper flea.";
+		vcp "That'd be somewhere to go, once you disposed of the bopper bee.";
 		not-yet;
 	ready;
 
