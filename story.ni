@@ -378,7 +378,7 @@ book Dove 'N Doubt
 
 Dove N Doubt is a wandroom in Roam Raw. wanddir of Dove N Doubt is west. printed name of Dove N Doubt is "Dove [']N Doubt". "This is obviously a front for illegal activity. Nobody would actually pay money to visit this establishment. I mean, the only worse name could be the Guv [']n Gout."
 
-from-number of dove n doubt is 2755. to-number of dove n doubt is 8262.
+from-number of dove n doubt is 2755. to-number of dove n doubt is 2754.
 
 guess-table of dove n doubt is the table of dove n doubt guesses.
 
@@ -386,9 +386,14 @@ chapter lovin' lout
 
 the lovin lout is a person. "A lovin['] lout stands around awkwardly, flexing their muscles, waiting for a command.". description is "They look like a kind sort. You're not sure if they're a troll or an orc or a mix. They were likely contracted into being a clueless part of the whole sleazy [dove] operation. Maybe they needed the money, status, friends, etc. They don't seem malicious at all.". printed name is "lovin['] lout".
 
+from-number of lovin lout is 2754. to-number of lovin lout is 2805.
+
 chapter oven
 
 The oven is a thing in Dove N Doubt. "[if player is in reeve row]The oven you moved from [dove] is here, [oven-status][else]An oven is parked here, but it's [oven-move]. Useful for cooking a big meal, you suspect[end if].". description is "[if oven is in dove]Old and heavy, but it's not attached to anything. With enough strength, it could be moved[else if oven-fixed-yet is false]Broken. Perhaps you could find replacement parts[else]Serviceable, now you prepared it[end if]."
+
+check lling the oven:
+	say "[if oven is in Dove N Doubt]You feel like you should get a reading on the oven, but maybe it's more what's around that you need to work with[else]The Leet Learner shows nothing, which makes sense. The oven's been taken care of. You'll use it when you need to[end if]." instead;
 
 to say oven-status:
 	if oven-fix-score is 3:
@@ -466,6 +471,8 @@ from-number of trappy trawl is 2805. to-number of trappy trawl is 2856.
 chapter Scrappy Scrawl
 
 the scrappy scrawl is scenery in Trappy Trawl. "It's weird. It's a drawing of someone busting through a barrier with noises like THWUP and THWAP. You smack against the scrawl and hear such noises too. Then you wonder if one such noise would indicate a hidden passage here."
+
+from-number of scrappy scrawl is 2856. to-number of trappy trawl is 2856.
 
 book Happy Hall
 
@@ -568,7 +575,9 @@ report lling Compete Compel when sco-meet-mel is true:
 
 chapter Sheet Shell
 
-Sheet Shell is a thing. description of sheet shell is "It's a place for reading. While you're probably not going to be bugged in the Wheat Well, the sheet shell gives double secret plus solitude, for reading something truly important. Sometimes, you need that.". "A sheet shell sits off to the side[if leet lel is examined], but you already used it to read. Now you must draw your own conclusions[else], for when you need to feel extra privacy reading books and thinking tricky thoughts[end if]."
+Sheet Shell is a rhymable. description of sheet shell is "It's a place for reading. While you're probably not going to be bugged in the Wheat Well, the sheet shell gives double secret plus solitude, for reading something truly important. Sometimes, you need that.". "A sheet shell sits off to the side[if leet lel is examined], but you already used it to read. Now you must draw your own conclusions[else], for when you need to feel extra privacy reading books and thinking tricky thoughts[end if]."
+
+from-number of sheet shell is 2755. to-number of sheet shell is 2704.
 
 chapter Leet Lel by Pete Pell
 
@@ -678,7 +687,7 @@ book Woe Worry Slow Slurry
 
 Woe Worry Slow Slurry is a room in Roam Raw. printed name is "Woe/Worry Slow Slurry". "You don't have to stay here, you know. You still worry about missing anything and if you look rude leaving."
 
-from-number of woe worry slow slurry is 5361. to-number of woe worry slow slurry is -2653.
+from-number of woe worry slow slurry is 5361. to-number of woe worry slow slurry is -2656.
 
 guess-table of woe worry slow slurry is the table of woe worry slow slurry guesses.
 
@@ -828,7 +837,12 @@ rule for supplying a missing noun when lling (this is the get readings from room
 		now noun is location of player;
 	else:
 		abide by the general-ll-locations rule;
+		if leet lel is examined, abide by the endscan rule;
 		reject the player's command;
+
+report lling when leet lel is examined (this is the endscan rule):
+	say "Hmm. There must be only one thing to do: evaluate Leet Lel's position in your life. There must be three paths you can take.";
+	continue the action;
 
 report lling when ooh-clarify is false:
 	if noun is zuzu or noun is loulou:
