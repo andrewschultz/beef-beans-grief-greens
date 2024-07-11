@@ -632,8 +632,7 @@ this is the vr-lovin-lout rule:
 	now sco-lovin-lout is true;
 	say "A lovin['] lout strolls sheepishly into view, not sure to explain whether they've been terribly loyal, or they didn't mean to do the stuff the bad people suggested they do, or else. You assure them that's over now, and you want someone who can help a bit. For what, you're not sure yet.[paragraph break]You take a closer look at the oven. It's missing a lot! You probably need to find bits and pieces to make it serviceable again.";
 	move lout to Dove N Doubt;
-	declue-here-by 2754;
-	decrease to-number of oven by 2754;
+	now to-number of Dove N Doubt is 2805;
 
 a goodrhyme rule (this is the vc-shovin-shout rule):
 	if player is not in dove n doubt, unavailable;
@@ -648,8 +647,8 @@ a goodrhyme rule (this is the vc-shovin-shout rule):
 this is the vr-shovin-shout rule:
 	now sco-shovin-shout is true;
 	say "You and the lovin['] lout get together and push the oven forward.[paragraph break]Something seems to crumble loose. Success! You can probably move the oven more ambitiously now.";
-	declue-here-by 2805;
-	decrease to-number of oven by 2805;
+	now to-number of lovin lout is 2703;
+	now to-number of Dove N Doubt is 2703;
 
 a goodrhyme rule (this is the vc-oven-out rule):
 	if player is not in dove n doubt and oven is not touchable, unavailable;
@@ -668,7 +667,6 @@ this is the vr-oven-out rule:
 	now sco-oven-out is true;
 	say "With the right commands and pacing, you and [the lout] move the oven from its former position. The lout, very unloutishly indeed, asks if you need the oven to move anywhere. You defer all 'Oh, it'd be too much!' but after some nonsense back-and-forthing, you both realize that's wasted energy. You both move the oven back to Reeve Row pretty quickly. The oven is -- well, you sense it isn't ready to cook anything, but it's a lot easier to repair here.[paragraph break]The [lout] waits around, as if they suspect they could help you with one more thing. Very considerate indeed, for a lout!";
 	declue-here;
-	declue oven;
 	move oven to Reeve Row;
 	move lovin lout to Reeve Row;
 	drop-player-at Reeve Row;
@@ -1143,7 +1141,7 @@ a goodrhyme rule (this is the vc-feet-fell rule):
 this is the vr-feet-fell rule:
 	now sco-feet-fell is true;
 	say "Oops! With a bit of dream logic, you slip out of where you feel you need to show you are better than someone and to where you can reflect more.";
-	now from-number of compete compel is 2755;
+	now from-number of compete compel is 2754;
 	now to-number of compete compel is 2755;
 	kick-off-bell;
 
@@ -1164,6 +1162,7 @@ this is the vr-beat-bell rule:
 	now sco-beat-bell is true;
 	say "Aaand ... pursuant to general dream/fantasy logic rules, you just make it! But now, what with the Internet taking over with emails, you often forget what your lovable mail carrier's name is! There must be a clue to who they are. As for how they got there, and how they know you're there, you'll just chalk it up to increased efficiency in the postal service due to progress in the ordinary sort of magic that everyone looks down on but would be terribly sorry if it vanished.";
 	now to-number of compete compel is 2703;
+	now to-number of sheet shell is 2703;
 
 a goodrhyme rule (this is the vc-meet-mel rule):
 	if player is not in compete compel, unavailable;
@@ -1180,6 +1179,7 @@ this is the vr-meet-mel rule:
 	say "Yes! Mel the Mail Maven! It has a certain ring to it. You take Mel's delivery.[paragraph break][pete pell]. Memories come back to you, of Leet Lel, a larger-than-life figure that showed you so much, but who also seemed to have scorn for you. It was hard to tell.";
 	now player has pete pell;
 	now to-number of compete compel is 8264;
+	now to-number of sheet shell is 8264;
 
 a goodrhyme rule (this is the vc-heat-hell rule):
 	now eet-ell is -1;
@@ -1260,6 +1260,8 @@ this is the be-square rule:
 
 to check-dork-done:
 	say "[line break]";
+	if square-food-score is 2:
+		now to-number of neat note is 2704;
 	if dork-score is 1:
 		say "The downed dork mumbles something about not wanting to leave you this quick, but also not hanging around if they're not wanted. You're in no rush, and you wonder what other secrets Squalor Square holds.";
 	else if dork-score is 2:
@@ -1339,7 +1341,7 @@ this is the trawl-not-hall rule:
 	if player is not in trappy trawl, unavailable;
 
 to reduce-hall-if:
-	if to-number of happy hall is 5408, now to-number of happy hall is 2704; [paul/saul goes to caul then yall then ball, which are the same number, which saves coding]
+	if to-number of happy hall is 5508, now to-number of happy hall is 2754; [paul/saul goes to caul then yall then ball, which are the same number, which saves coding]
 
 to hall-move (rh - a rhymeperson):
 	move rh to Happy Hall;
