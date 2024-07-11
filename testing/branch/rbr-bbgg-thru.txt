@@ -69,6 +69,12 @@ file=reg-bbgg-thru-hintfull.txt,hf/hfull,walkthrough testing HINTS full
 >w
 You need to find a way out. Yet you can't just go out ... you need to pump yourself up to get out, somehow.
 
+@hfull
+#testcase-values-from-number-of-reeve-row-is-2753
+>ll
+You notice four dots in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.75, 0.25.)
+
 >au 2
 
 @rej
@@ -321,6 +327,7 @@ You need to find a way out. Yet you can't just go out ... you need to pump yours
 {$REJECT2}
 \\
 #testcase-reject-start-table-of-verb-checks-vc-zap-zoo-rule
+#testcase-check-vc-zap-zoo-rule-if-player-is-not-in-gap-goo
 >zap zoo
 {$REJECT2}
 
@@ -411,6 +418,13 @@ You are now blocked from paths with no points, critical or bonus, available in a
 >zjade jug
 {$GREENCORE}
 
+@hfull
+#testcase-values-from-number-of-last-least-fast-feast-is--5410
+>ll feast
+You notice one dot in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (2.00, 1.00.)
+However, it's really dim, as if you don't need to do or think whatever there is to do or think.
+
 @!min
 >sassed ceased
 by one point
@@ -439,6 +453,25 @@ by one point
 \\
 >undo
 
+@hfull
+#testcase-values-from-number-of-rayed-rug-is-2753 #nothing solved
+>ll rayed rug
+You notice three dots in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-0.33, 0.33.)
+
+@hfull+
+##balance undos
+>jade jug
+by one point
+\\
+#testcase-values-from-number-of-rayed-rug-is-2753 #jug solved
+>ll rayed rug
+You notice two dots in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.50.)
+\\
+>undo
+>undo
+
 >made mug
 by one point
 }}SCORE++
@@ -446,6 +479,12 @@ by one point
 @all
 >score
 {$SCOS}
+
+@hfull
+#testcase-values-from-number-of-rayed-rug-is-2753 #mug solved
+>ll rayed rug
+You notice two dots in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.50.)
 
 >jade jug
 by one point
@@ -462,6 +501,12 @@ You're already feeling a bit low. You don't need to advertise it, or sink lower.
 That has to be really, really close, though! Perhaps a potentially hearty interjection would work better.
 How to leave with your head held high, with a forceful word showing you're willing to take on the world?
 
+@hfull
+#testcase-values-from-number-of-rayed-rug-is-2753 #mug and jug solved
+>ll rayed rug
+You notice one dot in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
+
 >leave lo
 by one point
 }}SCORE++
@@ -473,6 +518,12 @@ by one point
 @all+
 >score
 {$SCOS}
+
+@hfull
+#testcase-values-from-number-of-wandering-where-is-2955
+>ll
+You notice four dots in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, -0.50.)
 
 @rej
 #testcase-reject-start-table-of-verb-checks-vc-jade-jug-rule
@@ -695,6 +746,12 @@ That location or thing doesn't exist or isn't known to you yet.
 >loving zzz
 No, here will be the place for slight colloquialisms.
 
+@hfull
+#testcase-values-from-number-of-dove-n-doubt-is-2755
+>ll
+You notice one dot in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, -1.00.)
+
 >lovin lout
 by one point
 }}SCORE++
@@ -725,6 +782,17 @@ by one point
 >shoving zzz
 No, here should still be the place for slight colloquialisms.
 
+@hfull
+#+testcase-values-from-number-of-dove-n-doubt-is-2755
+>ll
+You notice one dot in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 0.00.)
+\\
+#+testcase-values-from-number-of-lovin-lout-is-2705
+>ll lout
+You notice one dot in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
+
 >shovin shout
 by one point
 }}SCORE++
@@ -742,6 +810,20 @@ by one point
 >oven zout
 {$GREENCORE}
 
+@hfull
+#+testcase-values-from-number-of-dove-n-doubt-is-2755
+>ll
+You notice one dot in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, -2.00.)
+\\
+#+testcase-values-from-number-of-lovin-lout-is-2705
+>ll lout
+You notice one dot in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, -1.00.)
+\\
+>ll oven
+You feel like you should get a reading on the oven, but maybe it's more what's around that you need to work with.
+
 >oven out
 by one point
 }}SCORE++
@@ -754,15 +836,31 @@ by one point
 >score
 {$SCOS}
 
+@hfull
+>ll oven
+The Leet Learner shows nothing, which makes sense. The oven's been taken care of. You'll use it when you need to.
+
 @hom
 #testcase-homonym-detail-vh-heave-hoe-rule-default
 #testcase-homonym-reject-table-of-verb-checks-vh-heave-hoe-rule-hoe
 >heave hoe
 You are not in a garden. Try an interjection instead.
 
+@hfull
+#testcase-values-from-number-of-reeve-row-is-2753
+>ll
+You notice three dots in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 0.67.)
+
 >heave ho
 by one point
 }}SCORE++
+
+@hfull
+#testcase-values-from-number-of-reeve-row-is-2753
+>ll
+You notice two dots in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.50, 1.50.)
 
 @gt
 #+testcase-goto-table-of-noways-reeve-row
@@ -789,6 +887,12 @@ You'd love to find a bit more silverware, and maybe the goon guide would be just
 >think
 You can get a SPOON SPIED once you have managed to consult the goon guide with a clear mind.
 
+@hfull
+#testcase-values-from-number-of-goon-guide-is-2705
+>ll guide
+You notice two dots in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 0.00.)
+
 >prune pride
 by one point
 }}SCORE++
@@ -807,6 +911,12 @@ by one point
 #testcase-ha-half-table-of-verb-checks-5-spoon
 >spoon zspied
 {$GREENCORE}
+
+@hfull
+#+testcase-values-from-number-of-goon-guide-is-2705
+>ll guide
+You notice one dot in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 0.00.)
 
 >spoon spied
 by one point
@@ -936,6 +1046,12 @@ That location or thing doesn't exist or isn't known to you yet.
 >pluck zplate
 {$GREENCORE}
 
+@hfull
+#testcase-values-from-number-of-stuck-state-is-2755
+>ll
+You notice one dot in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
+
 >pluck plate
 by one point
 }}SCORE++
@@ -958,6 +1074,12 @@ by one point
 #testcase-ha-half-table-of-verb-checks-30-hook
 >hook zhard
 {$GREENCORE}
+
+@hfull
+#testcase-values-from-number-of-shook-shard-is-2755
+>ll shard
+You notice one dot in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, -1.00.)
 
 >hook hard
 by one point
@@ -1104,6 +1226,12 @@ That location or thing doesn't exist or isn't known to you yet.
 >book barred
 It's worth fighting censorship, but here you need to encourage a different art form than reading.
 
+@hfull
+#testcase-values-from-number-of-took-tarred-is-2706 # could test all combos but it's a pretty simple code path
+>ll
+You notice three dots in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, -2.00.)
+
 >book bard
 by one point
 }}SCORE++
@@ -1111,6 +1239,12 @@ by one point
 @all
 >score
 {$SCOS}
+
+@hfull
+#+testcase-values-from-number-of-took-tarred-is-2706
+>ll
+You notice two dots in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, -2.00.)
 
 >cook card
 by one point
@@ -1120,6 +1254,12 @@ by one point
 >score
 {$SCOS}
 
+@hfull
+#+testcase-values-from-number-of-took-tarred-is-2706
+>ll
+You notice one dot in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, -2.00.)
+
 >look lard
 by one point
 }}SCORE++
@@ -1127,6 +1267,12 @@ by one point
 @all
 >score
 {$SCOS}
+
+@hfull
+#testcase-values-from-number-of-wandering-where-is-2955
+>ll
+You notice three dots in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, -0.33.)
 
 >squandering square
 by one point
@@ -1262,6 +1408,17 @@ That location or thing doesn't exist or isn't known to you yet.
 \\
 >undo
 
+@hfull
+#testcase-values-from-number-of-squalor-square-is-2856
+>ll
+You notice three dots in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, -2.00.)
+\\
+#testcase-values-from-number-of-staller-stare-is-2855
+>ll staller stare
+You notice three dots in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, -1.00.)
+
 >dollar dare
 by one point
 }}SCORE++
@@ -1274,6 +1431,17 @@ by one point
 #testcase-homonym-reject-table-of-verb-checks-collar
 >collar care
 The Leet Learner shakes back and forth. Something you said sounded right, but it didn't feel right.
+
+@hfull
+#testcase-values-from-number-of-squalor-square-is-2856
+>ll
+You notice two dots in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, -2.00.)
+\\
+#testcase-values-from-number-of-staller-stare-is-2855
+>ll staller stare
+You notice two dots in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, -1.00.)
 
 >caller care
 by one point
@@ -1300,6 +1468,13 @@ The Leet Learner shakes back and forth. Something you said sounded right, but it
 #+testcase-homonym-reject-table-of-verb-checks-bawler-bare
 >baller bare
 The Leet Learner shakes back and forth. Something you said sounded right, but it didn't feel right.
+
+@hfull
+#testcase-values-from-number-of-squalor-square-is-2856
+>ll
+You notice one dot in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, -2.00.)
+However, it's really dim, as if you don't need to do or think whatever there is to do or think.
 
 @!min,gong,prong
 >baller bear
@@ -1337,6 +1512,21 @@ by one point
 >zbeet boat
 {$YELLOWCORE}
 
+@hfull
+#testcase-values-from-number-of-squalor-square-is-2856
+>ll
+Nothing comes up. The general area here has been changed enough.
+\\
+#testcase-values-from-number-of-staller-stare-is-2855
+>ll staller stare
+DEBUG: can't see any such thing error.
+
+@hfull+
+#testcase-values-from-number-of-bleat-bloat-is-2755
+>ll bleat bloat
+You notice one dot in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, -1.00.)
+
 >neat note
 by one point
 }}SCORE++
@@ -1344,6 +1534,25 @@ by one point
 @all
 >score
 {$SCOS}
+
+@hfull
+#testcase-values-from-number-of-neat-note-is-2704 #nothing solved
+>ll neat note
+You notice two dots in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
+
+@hfull+
+##balance undos
+>beet boat
+by one point
+\\
+#testcase-values-from-number-of-neat-note-is-2704 #beet boat solved
+>ll neat note
+You notice one dot in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
+\\
+>undo
+>undo
 
 @ha
 #testcase-ha-half-table-of-verb-checks-24-fork
@@ -1353,6 +1562,12 @@ by one point
 #testcase-ha-half-table-of-verb-checks-24-found
 >found zfork
 {$GREENCORE}
+
+@hfull
+#testcase-values-from-number-of-downed-dork-is-2804
+>ll dork
+You notice one dot in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 0.00.)
 
 >found fork
 by one point
@@ -1380,6 +1595,12 @@ by one point
 >meet mote
 You needn't make the acquaintance of anything minuscule. You need more sizable food portions.
 
+@hfull
+#testcase-values-from-number-of-neat-note-is-2704 #nothing solved
+>ll note
+You notice two dots in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
+
 >meat moat
 by one point
 }}SCORE++
@@ -1392,6 +1613,12 @@ by one point
 #testcase-homonym-reject-table-of-verb-checks-vh-beat-boat-rule-beat
 >beat boat
 There's no competition here, violent, friendly, racing or otherwise.
+
+@hfull
+#+testcase-values-from-number-of-neat-note-is-2704 #meat moat solved
+>ll neat note
+You notice one dot in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 
 >beet boat
 by one point
@@ -1435,6 +1662,12 @@ You can handle the WHITE WIRES once the lyres are safe to touch.
 >zwhite wires
 {$YELLOWCORE}
 
+@hfull
+#testcase-values-from-number-of-light-lyres-is-2755
+>ll lyres
+You notice one dot in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
+
 >fight fires
 by one point
 }}SCORE++
@@ -1456,6 +1689,12 @@ by one point
 #testcase-homonym-reject-table-of-verb-checks-vh-wight-wires-rule-wight
 >wight wires
 Summoning the undead is one way to remember those who passed on, but it's a high-risk one.
+
+@hfull
+#testcase-values-from-number-of-light-lyres-is-2755
+>ll lyres
+You notice one dot in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 
 >white wires
 by one point
@@ -1492,6 +1731,21 @@ by one point
 @all
 #testcase-room-names-toy-toss
 `Toy Toss
+
+@hfull
+#testcase-values-from-number-of-boy-boss-roy-ross-is-5308
+>ll boy boss
+You notice one dot in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 1.00.)
+\\
+#testcase-values-from-number-of-joy-jaws-is-2654
+>ll joy jaws
+You notice one dot in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 1.00.)
+\\
+#testcase-values-from-number-of-toy-toss-is-2654
+>ll
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 1.00.)
 
 @gt
 #testcase-goto-table-of-noways-toy-toss
@@ -1605,6 +1859,22 @@ That location or thing doesn't exist or isn't known to you yet.
 >soy saws
 Well, maybe, but you can't eat saws.
 
+@hfull
+#testcase-values-from-number-of-toy-toss-is-2654
+>ll
+You notice one dot in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 1.00.)
+\\
+#testcase-values-from-number-of-boy-boss-roy-ross-is-5308
+>ll
+You notice one dot in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 1.00.)
+\\
+#testcase-values-from-number-of-joy-jaws-is-2654
+>ll
+You notice one dot in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 1.00.)
+
 >soy sauce
 by one point
 }}SCORE++
@@ -1621,6 +1891,12 @@ by one point
 >e
 A guide gong rings to notify you that you don't need to go back through Squalor Square.
 
+@hfull
+#+testcase-values-from-number-of-wandering-where-is-2955
+>ll
+You notice two dots in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, -1.00.)
+
 >maundering mare
 by one point
 }}SCORE++
@@ -1632,6 +1908,12 @@ by one point
 @all+
 >score
 {$SCOS}
+
+@hfull
+#testcase-values-from-number-of-gap-goo-is-2653
+>ll
+You notice one dot in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 
 @gt
 #testcase-goto-table-of-noways-gap-goo
@@ -1744,8 +2026,22 @@ by one point
 }}SCORE++
 
 @all
+#+testcase-room-names-gap-goo
+`(Zap!) Zoo
+
+@all,rej
+{--rej}#testcase-check-vc-zap-zoo-rule-fallthrough
+{--all}#testcase-run-vr-zap-zoo-rule-default
+Yes, yes. Much better now. The terrain changes! So much appears: a ferret (fake,) a tree troop, and lotus life. They're all very nice and add local flavor, but perhaps you need to appreciate them right to achieve your own goals.
+
+@all
 >score
 {$SCOS}
+
+@rej
+#testcase-check-vc-zap-zoo-rule-if-sco-zap-zoo-is-true
+>zap zoo
+But you already converted the goo to a zoo!
 
 @ha
 #testcase-ha-half-table-of-verb-checks-32-knife
@@ -1784,6 +2080,12 @@ Well, you need a lot, but not a whole sea of liquid-ish food.
 >sea soup
 Well, you need a lot, but not a whole sea of soup.
 
+@hfull
+#testcase-values-from-number-of-tree-troop-is-2705
+>ll troop
+You notice one dot in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, -1.00.)
+
 >see soup
 by one point
 }}SCORE++
@@ -1791,6 +2093,12 @@ by one point
 @all
 >score
 {$SCOS}
+
+@hfull
+#testcase-values-from-number-of-lotus-life-is-2754
+>ll lotus
+You notice one dot in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
 
 >notice knife
 by one point
@@ -1809,6 +2117,12 @@ by one point
 >zdented dials
 {$GREENCORE}
 
+@hfull
+#testcase-values-from-number-of-vented-vials-is-2805
+>ll vials
+You notice one dot in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
+
 >dented dials
 by one point
 }}SCORE++
@@ -1816,6 +2130,12 @@ by one point
 @all
 >score
 {$SCOS}
+
+@hfull
+#testcase-values-from-number-of-ferret-fake-is-2804
+>ll ferret
+You notice one dot in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 
 >carrot cake
 by one point
@@ -1945,6 +2265,12 @@ That location or thing doesn't exist or isn't known to you yet.
 >zpie po
 {$YELLOWCORE}
 
+@hfull
+#testcase-values-from-number-of-any-isles-many-miles-is-5360
+>ll many miles
+You notice one dot in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.50, 0.00.)
+
 >penny piles
 by one point
 }}SCORE++
@@ -1976,6 +2302,17 @@ No, not the author, a descriptor.
 >pi poe
 Double narrow misses with the words. But you must be close!
 
+@hfull
+#testcase-values-from-number-of-hi-ho-i-owe-sty-sto-is-7808
+>ll
+You notice one dot in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, -0.67.)
+\\
+#testcase-values-from-number-of-bri-bro-is-2653
+>ll bri bro
+You notice one dot in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, -1.00.)
+
 >pie po
 by one point
 }}SCORE++
@@ -1994,6 +2331,12 @@ by one point
 >pondering pare
 Yes to thinking, no to disrupting thinking.
 
+@hfull
+#testcase-values-from-number-of-wandering-where-is-2955
+>ll
+You notice one dot in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, -1.00.)
+
 >pondering pair
 by one point
 }}SCORE++
@@ -2005,6 +2348,23 @@ by one point
 @all+
 >score
 {$SCOS}
+
+@hfull
+#testcase-values-from-number-of-ooh-ooh-is-2653
+>ll
+You notice seven dots in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-0.14, -0.14.)
+\\
+#testcase-values-from-number-of-zuzu-is-2602
+>ll zuzu
+You notice seven dots in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.86, 0.86.)
+Hmm. Zuzu's name is only one word, but it sort of functions as two.
+\\
+#testcase-values-from-number-of-loulou-is-2653
+>ll loulou
+You notice seven dots in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-0.14, -0.14.)
 
 @gt
 #+testcase-goto-table-of-noways-ooh-ooh
@@ -2111,6 +2471,22 @@ by one point
 >score
 {$SCOS}
 
+@hfull
+#testcase-values-from-number-of-ooh-ooh-is-2653
+>ll
+You notice six dots in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-0.17, -0.17.)
+\\
+#testcase-values-from-number-of-zuzu-is-2602
+>ll zuzu
+You notice six dots in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.83, 0.83.)
+\\
+#testcase-values-from-number-of-loulou-is-2653
+>ll loulou
+You notice six dots in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-0.17, -0.17.)
+
 >juju
 by one point
 }}SCORE++
@@ -2126,6 +2502,22 @@ by one point
 Cows aren't quite it, here. But you have the right sound(s).
 The Leet Learner vibrates back and forth rather violently. You must have been very close.
 
+@hfull
+#testcase-values-from-number-of-ooh-ooh-is-2653
+>ll
+You notice five dots in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
+\\
+#testcase-values-from-number-of-zuzu-is-2602
+>ll zuzu
+You notice five dots in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
+\\
+#testcase-values-from-number-of-loulou-is-2653
+>ll loulou
+You notice five dots in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
+
 >muumuu
 by one point
 }}SCORE++
@@ -2133,6 +2525,22 @@ by one point
 @all
 >score
 {$SCOS}
+
+@hfull
+#testcase-values-from-number-of-ooh-ooh-is-2653
+>ll
+You notice four dots in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
+\\
+#testcase-values-from-number-of-zuzu-is-2602
+>ll zuzu
+You notice four dots in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
+\\
+#testcase-values-from-number-of-loulou-is-2653
+>ll loulou
+You notice four dots in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 
 >tutu
 by one point
@@ -2150,6 +2558,12 @@ by one point
 #testcase-ha-half-table-of-verb-checks-17-mitt
 >zmassive mitt
 {$GREENCORE}
+
+@hfull
+#testcase-values-from-number-of-passive-pit-is-2853
+>ll passive pit
+You notice one dot in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 1.00.)
 
 >massive mitt
 by one point
@@ -2197,6 +2611,25 @@ The pride-prong you summoned earlier pokes you to go and see what's ahead, even 
 >undo
 >undo
 
+@hfull
+#testcase-values-from-number-of-ooh-ooh-is-2653
+>ll
+You notice three dots in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.33, 0.33.)
+However, it's really dim, as if you don't need to do or think whatever there is to do or think.
+\\
+#testcase-values-from-number-of-zuzu-is-2602
+>ll zuzu
+You notice three dots in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.33, 1.33.)
+However, it's really dim, as if you don't need to do or think whatever there is to do or think.
+\\
+#testcase-values-from-number-of-loulou-is-2653
+>ll loulou
+You notice three dots in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.33, 0.33.)
+However, it's really dim, as if you don't need to do or think whatever there is to do or think.
+
 >cuckoo
 by one point
 }}SCORE++
@@ -2206,6 +2639,22 @@ by one point
 @all
 >score
 {$SCOS}
+
+@hfull
+#testcase-values-from-number-of-ooh-ooh-is-2653
+>ll
+You notice two dots in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, 0.50.)
+\\
+#testcase-values-from-number-of-zuzu-is-2602
+>ll zuzu
+You notice two dots in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.50, 1.50.)
+\\
+#testcase-values-from-number-of-loulou-is-2653
+>ll loulou
+You notice two dots in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, 0.50.)
 
 >doodoo
 by one point
@@ -2217,6 +2666,22 @@ by one point
 >score
 {$SCOS}
 
+@hfull
+#testcase-values-from-number-of-ooh-ooh-is-2653
+>ll
+You notice one dot in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
+\\
+#testcase-values-from-number-of-zuzu-is-2602
+>ll zuzu
+You notice one dot in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (2.00, 2.00.)
+\\
+#testcase-values-from-number-of-loulou-is-2653
+>ll loulou
+You notice one dot in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
+
 >poohpooh
 by one point
 }}SCORE++
@@ -2226,6 +2691,19 @@ by one point
 @all
 >score
 {$SCOS}
+
+@hfull
+#testcase-values-from-number-of-ooh-ooh-is-2653
+>ll
+Nothing comes up. The general area here has been changed enough.
+\\
+#testcase-values-from-number-of-zuzu-is-2602
+>ll zuzu
+Nothing comes up. You've rhymed Zuzu as much as you needed to.
+\\
+#testcase-values-from-number-of-loulou-is-2653
+>ll loulou
+Nothing comes up. You've rhymed Loulou as much as you needed to.
 
 >s
 
@@ -2357,6 +2835,12 @@ That location or thing doesn't exist or isn't known to you yet.
 >flopper flee
 You can't order the bee around, but maybe it's disguised as something else.
 
+@hfull
+#testcase-values-from-number-of-bopper-bee-is-2803
+>ll bopper bee
+You notice one dot in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
+
 >flopper flea
 by one point
 }}SCORE++
@@ -2373,6 +2857,12 @@ by one point
 #testcase-ha-half-table-of-verb-checks-49-ville
 >zveggie ville
 {$GREENCORE}
+
+@hfull
+#testcase-values-from-number-of-edgy-ill-hedge-y-hill-is-5507
+>ll
+You notice one dot in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.50.)
 
 >veggie ville
 by one point
@@ -2560,6 +3050,13 @@ That location or thing doesn't exist or isn't known to you yet.
 >just zjello
 {$GREENCORE}
 
+@hfull
+#testcase-values-from-number-of-moneyed-maam-is-2854
+>ll maam
+You notice one dot in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, -1.00.)
+However, it's really dim, as if you don't need to do or think whatever there is to do or think.
+
 @!min
 >honeyed ham
 by one point
@@ -2575,6 +3072,13 @@ Only more worries are beyond, you suspect. There's enough more food to pick off 
 @all
 >score
 {$SCOS}
+
+@hfull
+#testcase-values-from-number-of-cray-cruel-fey-fool-is-5359
+>ll fey fool
+You notice one dot in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, 0.50.)
+However, it's really dim, as if you don't need to do or think whatever there is to do or think.
 
 @alt
 #testcase-alt-words-table-of-verb-checks-53-grey-gray-gruel
@@ -2593,6 +3097,13 @@ by one point
 @all
 >score
 {$SCOS}
+
+@hfull
+#testcase-values-from-number-of-fussed-fellow-is-2806
+>ll fellow
+You notice one dot in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-2.00, -1.00.)
+However, it's really dim, as if you don't need to do or think whatever there is to do or think.
 
 @!min
 >just jello
@@ -2618,6 +3129,13 @@ Only more worries are beyond, you suspect. You've got enough side dishes.
 #testcase-ha-half-table-of-verb-checks-51-pourri
 >zpot pourri
 {$GREENCORE}
+
+@hfull
+#testcase-values-from-number-of-woe-worry-slow-slurry-is-5361
+>ll
+You notice one dot in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-0.50, 0.50.)
+However, it's really dim, as if you don't need to do or think whatever there is to do or think.
 
 @!min
 >potpourri
@@ -2884,6 +3402,11 @@ That location or thing doesn't exist or isn't known to you yet.
 >out
 That guide gong, again, rings to notify you that you don't need to go back through Wandering ... Where?.
 
+@hfull
+#testcase-values-from-number-of-reeve-row-is-2753
+>ll
+Nothing comes up. The general area here has been changed enough.
+
 >d
 
 @all
@@ -2989,6 +3512,12 @@ That location or thing doesn't exist or isn't known to you yet.
 >zsappy saul
 {$YELLOWCORE}
 
+@hfull
+#testcase-values-from-number-of-trappy-trawl-is-2805
+>ll
+You notice one dot in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
+
 @rej
 >whappy wall
 That could be helpful, but you have no indication where a wall might sound whappy. Well, not yet. You need to search for evidence.
@@ -3000,6 +3529,17 @@ You can hit the WHAPPY WALL once you know where to whap the wall.
 >scrappy scrawl
 by one point
 }}SCORE++
+
+@hfull
+#testcase-values-from-number-of-trappy-trawl-is-2805
+>ll
+You notice one dot in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, -1.00.)
+\\
+#testcase-values-from-number-of-scrappy-scrawl-is-2856
+>ll scrawl
+You notice one dot in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, -2.00.)
 
 @all
 >score
@@ -3207,6 +3747,25 @@ You can't walk out on the ritual now!
 You need a person, not a dark cloud over everything.
 The Leet Learner vibrates back and forth rather violently. You must have been very close.
 
+@hfull
+#testcase-values-from-number-of-happy-hall-is-2754
+>ll
+You notice two dots in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
+
+@hfull+
+##balance undo
+>sappy saul
+by one point
+\\
+#testcase-values-from-number-of-happy-hall-is-2754
+>ll
+You notice one dot in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
+\\
+>undo
+>undo
+
 >pappy paul
 by one point
 }}SCORE++
@@ -3220,6 +3779,12 @@ Hmm. The right track, but a too widely smiling sun might not bring the right vib
 @all
 >score
 {$SCOS}
+
+@hfull
+#+testcase-values-from-number-of-happy-hall-is-2754
+>ll
+You notice one dot in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 
 >sappy saul
 by one point
@@ -3252,6 +3817,25 @@ by one point
 >loan laura
 Sort of, though at such a ceremony, people do not worry about past grievances or debts.
 
+@hfull
+#testcase-values-from-number-of-own-aura-is-5357
+>ll aura
+You notice two dots in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
+
+@hfull+
+##balance undos
+>known nora
+by one point
+\\
+#testcase-values-from-number-of-own-aura-is-5357
+>ll aura
+You notice one dot in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, 1.50.)
+\\
+>undo
+>undo
+
 >lone laura
 by one point
 }}SCORE++
@@ -3260,6 +3844,12 @@ by one point
 >score
 {$SCOS}
 
+@hfull
+#+testcase-values-from-number-of-own-aura-is-5357
+>ll aura
+You notice one dot in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.50, 0.50.)
+
 >known nora
 by one point
 }}SCORE++
@@ -3267,6 +3857,11 @@ by one point
 @all
 >score
 {$SCOS}
+
+@hfull
+#testcase-values-from-number-of-own-aura-is-5357
+>ll aura
+Nothing comes up. You've rhymed the own aura as much as you needed to.
 
 @rej
 #+testcase-think-table-of-verb-checks-vc-cappy-caul-rule
@@ -3289,6 +3884,12 @@ You can have everyone play BAPPY BALL once the feast is complete, to burn off ca
 #testcase-homonym-detail-vh-cappy-call-rule-default
 >cappy call
 You've called everyone you need. You need something physical.
+
+@hfull
+#testcase-values-from-number-of-happy-hall-is-2754
+>ll
+You notice one dot in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 
 >cappy caul
 by one point
@@ -3316,6 +3917,12 @@ You can have everyone play BAPPY BALL once the feast is complete, to burn off ca
 #+testcase-ha-half-table-of-verb-checks-62-yappy
 >yappy zyall
 {$GREENCORE}
+
+@hfull
+#testcase-values-from-number-of-happy-hall-is-2754
+>ll
+You notice one dot in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 
 >yappy yall
 by one point
@@ -3351,6 +3958,12 @@ You already held a discussion. Now it is time for games.
 >sassed ceased
 {$REJECT2}
 
+@hfull
+#testcase-values-from-number-of-happy-hall-is-2754
+>ll
+You notice one dot in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
+
 >bappy ball
 by one point
 }}SCORE++
@@ -3362,6 +3975,12 @@ by one point
 @all+
 >score
 {$SCOS}
+
+@hfull
+#testcase-values-from-number-of-compete-compel-is-2856
+>ll
+You notice one dot in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-2.00, -2.00.)
 
 @rej
 >chrome craw
@@ -3493,6 +4112,12 @@ by one point
 >think
 (CAN DO NOW) You can claim your FEET FELL now you've envisioned somewhere safe to fall to.
 
+@hfull
+#+testcase-values-from-number-of-compete-compel-is-2856
+>ll
+You notice one dot in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-3.00, -2.00.)
+
 >feet fell
 by one point
 }}SCORE++
@@ -3500,6 +4125,12 @@ by one point
 @all
 >score
 {$SCOS}
+
+@hfull
+#+testcase-values-from-number-of-compete-compel-is-2856
+>ll
+You notice one dot in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 1.00.)
 
 >sheet shell
 by one point
@@ -3515,6 +4146,15 @@ by one point
 >beet bell
 You already got food like that for the feast. You need a verb here.
 
+@hfull
+#testcase-values-from-number-of-compete-compel-is-2856
+>ll
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 0.00.)
+\\
+#testcase-values-from-number-of-sheet-shell-is-2755
+>ll sheet shell
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, -1.00.)
+
 >beat bell
 by one point
 }}SCORE++
@@ -3528,6 +4168,15 @@ by one point
 #+testcase-homonym-reject-table-of-verb-checks-vh-beet-meat-end-rule-meat
 >meat mel
 You already got food like that for the feast. You need a verb here.
+
+@hfull
+#testcase-values-from-number-of-compete-compel-is-2856
+>ll
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, -1.00.)
+\\
+#testcase-values-from-number-of-sheet-shell-is-2755
+>ll sheet shell
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, -2.00.)
 
 >meet mel
 by one point
@@ -3571,6 +4220,19 @@ You get a sense such a judgment would be more appropriate once you've examined t
 \\
 >repeat repel
 You get a sense such a judgment would be more appropriate once you've examined the book you just got.
+
+@hfull
+#testcase-values-from-number-of-compete-compel-is-2856
+>ll
+You notice three dots in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.67.)
+!only one thing to do
+\\
+#testcase-values-from-number-of-sheet-shell-is-2755
+>ll sheet shell
+You notice three dots in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, -0.33.)
+!only one thing to do
 
 >x leet lel
 
@@ -3846,6 +4508,15 @@ You get a sense such a judgment would be more appropriate once you've examined t
 >suite swell
 You don't need to gush about your current living conditions. You need to reflect on the past, though perhaps you will find wonderful things there.
 The Leet Learner vibrates back and forth rather violently. You must have been very close.
+
+@hfull
+#testcase-values-from-number-of-compete-compel-is-2856
+>ll
+Hmm. There must be only one thing to do: evaluate Leet Lel's position in your life. There must be three paths you can take.
+\\
+#testcase-values-from-number-of-sheet-shell-is-2755
+>ll sheet shell
+Hmm. There must be only one thing to do: evaluate Leet Lel's position in your life. There must be three paths you can take.
 
 >repeat repel
 by one point

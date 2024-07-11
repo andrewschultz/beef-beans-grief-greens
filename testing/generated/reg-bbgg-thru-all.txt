@@ -227,6 +227,12 @@ You have scored a total of 29 out of 69 points and need 61 to win. You have foun
 >zap zoo
 by one point
 
+#+testcase-room-names-gap-goo
+`(Zap!) Zoo
+
+#testcase-run-vr-zap-zoo-rule-default
+Yes, yes. Much better now. The terrain changes! So much appears: a ferret (fake,) a tree troop, and lotus life. They're all very nice and add local flavor, but perhaps you need to appreciate them right to achieve your own goals.
+
 >score
 You have scored a total of 30 out of 69 points and need 61 to win. You have found 2 of 10 bonus points so far.
 

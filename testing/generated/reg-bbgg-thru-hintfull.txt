@@ -8,41 +8,134 @@
 
 * main-thru
 
+#testcase-values-from-number-of-reeve-row-is-2753
+>ll
+You notice four dots in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.75, 0.25.)
+
 >au 2
 
 >x
 
+#testcase-values-from-number-of-last-least-fast-feast-is--5410
+>ll feast
+You notice one dot in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (2.00, 1.00.)
+However, it's really dim, as if you don't need to do or think whatever there is to do or think.
+
 >sassed ceased
 by one point
 
->made mug
-by one point
+#testcase-values-from-number-of-rayed-rug-is-2753 #nothing solved
+>ll rayed rug
+You notice three dots in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-0.33, 0.33.)
 
 >jade jug
 by one point
 
+#testcase-values-from-number-of-rayed-rug-is-2753 #jug solved
+>ll rayed rug
+You notice two dots in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.50.)
+
+>undo
+>undo
+
+>made mug
+by one point
+
+#testcase-values-from-number-of-rayed-rug-is-2753 #mug solved
+>ll rayed rug
+You notice two dots in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.50.)
+
+>jade jug
+by one point
+
+#testcase-values-from-number-of-rayed-rug-is-2753 #mug and jug solved
+>ll rayed rug
+You notice one dot in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
+
 >leave lo
 by one point
+
+#testcase-values-from-number-of-wandering-where-is-2955
+>ll
+You notice four dots in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, -0.50.)
 
 >laundering lair
 by one point
 
+#testcase-values-from-number-of-dove-n-doubt-is-2755
+>ll
+You notice one dot in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, -1.00.)
+
 >lovin lout
 by one point
+
+#+testcase-values-from-number-of-dove-n-doubt-is-2755
+>ll
+You notice one dot in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 0.00.)
+
+#+testcase-values-from-number-of-lovin-lout-is-2705
+>ll lout
+You notice one dot in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
 
 >shovin shout
 by one point
 
+#+testcase-values-from-number-of-dove-n-doubt-is-2755
+>ll
+You notice one dot in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, -2.00.)
+
+#+testcase-values-from-number-of-lovin-lout-is-2705
+>ll lout
+You notice one dot in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, -1.00.)
+
+>ll oven
+You feel like you should get a reading on the oven, but maybe it's more what's around that you need to work with.
+
 >oven out
 by one point
 
+>ll oven
+The Leet Learner shows nothing, which makes sense. The oven's been taken care of. You'll use it when you need to.
+
+#testcase-values-from-number-of-reeve-row-is-2753
+>ll
+You notice three dots in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 0.67.)
+
 >heave ho
 by one point
+
+#testcase-values-from-number-of-reeve-row-is-2753
+>ll
+You notice two dots in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.50, 1.50.)
+
+#testcase-values-from-number-of-goon-guide-is-2705
+>ll guide
+You notice two dots in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 0.00.)
 
 >prune pride
 by one point
 
 >x guide
+
+#+testcase-values-from-number-of-goon-guide-is-2705
+>ll guide
+You notice one dot in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 0.00.)
 
 >spoon spied
 by one point
@@ -52,115 +145,440 @@ by one point
 
 >out
 
+#testcase-values-from-number-of-stuck-state-is-2755
+>ll
+You notice one dot in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
+
 >pluck plate
 by one point
 
 >w
 
+#testcase-values-from-number-of-shook-shard-is-2755
+>ll shard
+You notice one dot in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, -1.00.)
+
 >hook hard
 by one point
+
+#testcase-values-from-number-of-took-tarred-is-2706 # could test all combos but it's a pretty simple code path
+>ll
+You notice three dots in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, -2.00.)
 
 >book bard
 by one point
 
+#+testcase-values-from-number-of-took-tarred-is-2706
+>ll
+You notice two dots in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, -2.00.)
+
 >cook card
 by one point
+
+#+testcase-values-from-number-of-took-tarred-is-2706
+>ll
+You notice one dot in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, -2.00.)
 
 >look lard
 by one point
 
+#testcase-values-from-number-of-wandering-where-is-2955
+>ll
+You notice three dots in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, -0.33.)
+
 >squandering square
 by one point
+
+#testcase-values-from-number-of-squalor-square-is-2856
+>ll
+You notice three dots in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, -2.00.)
+
+#testcase-values-from-number-of-staller-stare-is-2855
+>ll staller stare
+You notice three dots in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, -1.00.)
 
 >dollar dare
 by one point
 
+#testcase-values-from-number-of-squalor-square-is-2856
+>ll
+You notice two dots in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, -2.00.)
+
+#testcase-values-from-number-of-staller-stare-is-2855
+>ll staller stare
+You notice two dots in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, -1.00.)
+
 >caller care
 by one point
+
+#testcase-values-from-number-of-squalor-square-is-2856
+>ll
+You notice one dot in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, -2.00.)
+However, it's really dim, as if you don't need to do or think whatever there is to do or think.
 
 >baller bear
 by one point
 
+#testcase-values-from-number-of-squalor-square-is-2856
+>ll
+Nothing comes up. The general area here has been changed enough.
+
+#testcase-values-from-number-of-staller-stare-is-2855
+>ll staller stare
+DEBUG: can't see any such thing error.
+
+#testcase-values-from-number-of-bleat-bloat-is-2755
+>ll bleat bloat
+You notice one dot in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, -1.00.)
+
 >neat note
 by one point
 
->found fork
-by one point
-
->meat moat
-by one point
+#testcase-values-from-number-of-neat-note-is-2704 #nothing solved
+>ll neat note
+You notice two dots in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 
 >beet boat
 by one point
 
+#testcase-values-from-number-of-neat-note-is-2704 #beet boat solved
+>ll neat note
+You notice one dot in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
+
+>undo
+>undo
+
+#testcase-values-from-number-of-downed-dork-is-2804
+>ll dork
+You notice one dot in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 0.00.)
+
+>found fork
+by one point
+
+#testcase-values-from-number-of-neat-note-is-2704 #nothing solved
+>ll note
+You notice two dots in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
+
+>meat moat
+by one point
+
+#+testcase-values-from-number-of-neat-note-is-2704 #meat moat solved
+>ll neat note
+You notice one dot in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
+
+>beet boat
+by one point
+
+#testcase-values-from-number-of-light-lyres-is-2755
+>ll lyres
+You notice one dot in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
+
 >fight fires
 by one point
+
+#testcase-values-from-number-of-light-lyres-is-2755
+>ll lyres
+You notice one dot in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 
 >white wires
 by one point
 
 >w
 
+#testcase-values-from-number-of-boy-boss-roy-ross-is-5308
+>ll boy boss
+You notice one dot in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 1.00.)
+
+#testcase-values-from-number-of-joy-jaws-is-2654
+>ll joy jaws
+You notice one dot in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 1.00.)
+
+#testcase-values-from-number-of-toy-toss-is-2654
+>ll
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 1.00.)
+
+#testcase-values-from-number-of-toy-toss-is-2654
+>ll
+You notice one dot in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 1.00.)
+
+#testcase-values-from-number-of-boy-boss-roy-ross-is-5308
+>ll
+You notice one dot in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 1.00.)
+
+#testcase-values-from-number-of-joy-jaws-is-2654
+>ll
+You notice one dot in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 1.00.)
+
 >soy sauce
 by one point
+
+#+testcase-values-from-number-of-wandering-where-is-2955
+>ll
+You notice two dots in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, -1.00.)
 
 >maundering mare
 by one point
 
+#testcase-values-from-number-of-gap-goo-is-2653
+>ll
+You notice one dot in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
+
 >zap zoo
 by one point
+
+#testcase-values-from-number-of-tree-troop-is-2705
+>ll troop
+You notice one dot in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, -1.00.)
 
 >see soup
 by one point
 
+#testcase-values-from-number-of-lotus-life-is-2754
+>ll lotus
+You notice one dot in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
+
 >notice knife
 by one point
 
+#testcase-values-from-number-of-vented-vials-is-2805
+>ll vials
+You notice one dot in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
+
 >dented dials
 by one point
+
+#testcase-values-from-number-of-ferret-fake-is-2804
+>ll ferret
+You notice one dot in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 
 >carrot cake
 by one point
 
 >n
 
+#testcase-values-from-number-of-any-isles-many-miles-is-5360
+>ll many miles
+You notice one dot in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.50, 0.00.)
+
 >penny piles
 by one point
+
+#testcase-values-from-number-of-hi-ho-i-owe-sty-sto-is-7808
+>ll
+You notice one dot in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, -0.67.)
+
+#testcase-values-from-number-of-bri-bro-is-2653
+>ll bri bro
+You notice one dot in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, -1.00.)
 
 >pie po
 by one point
 
+#testcase-values-from-number-of-wandering-where-is-2955
+>ll
+You notice one dot in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, -1.00.)
+
 >pondering pair
 by one point
+
+#testcase-values-from-number-of-ooh-ooh-is-2653
+>ll
+You notice seven dots in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-0.14, -0.14.)
+
+#testcase-values-from-number-of-zuzu-is-2602
+>ll zuzu
+You notice seven dots in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.86, 0.86.)
+Hmm. Zuzu's name is only one word, but it sort of functions as two.
+
+#testcase-values-from-number-of-loulou-is-2653
+>ll loulou
+You notice seven dots in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-0.14, -0.14.)
 
 >booboo
 by one point
 
+#testcase-values-from-number-of-ooh-ooh-is-2653
+>ll
+You notice six dots in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-0.17, -0.17.)
+
+#testcase-values-from-number-of-zuzu-is-2602
+>ll zuzu
+You notice six dots in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.83, 0.83.)
+
+#testcase-values-from-number-of-loulou-is-2653
+>ll loulou
+You notice six dots in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-0.17, -0.17.)
+
 >juju
 by one point
+
+#testcase-values-from-number-of-ooh-ooh-is-2653
+>ll
+You notice five dots in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
+
+#testcase-values-from-number-of-zuzu-is-2602
+>ll zuzu
+You notice five dots in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
+
+#testcase-values-from-number-of-loulou-is-2653
+>ll loulou
+You notice five dots in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 
 >muumuu
 by one point
 
+#testcase-values-from-number-of-ooh-ooh-is-2653
+>ll
+You notice four dots in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
+
+#testcase-values-from-number-of-zuzu-is-2602
+>ll zuzu
+You notice four dots in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
+
+#testcase-values-from-number-of-loulou-is-2653
+>ll loulou
+You notice four dots in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
+
 >tutu
 by one point
+
+#testcase-values-from-number-of-passive-pit-is-2853
+>ll passive pit
+You notice one dot in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 1.00.)
 
 >massive mitt
 by one point
 
+#testcase-values-from-number-of-ooh-ooh-is-2653
+>ll
+You notice three dots in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.33, 0.33.)
+However, it's really dim, as if you don't need to do or think whatever there is to do or think.
+
+#testcase-values-from-number-of-zuzu-is-2602
+>ll zuzu
+You notice three dots in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.33, 1.33.)
+However, it's really dim, as if you don't need to do or think whatever there is to do or think.
+
+#testcase-values-from-number-of-loulou-is-2653
+>ll loulou
+You notice three dots in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.33, 0.33.)
+However, it's really dim, as if you don't need to do or think whatever there is to do or think.
+
 >cuckoo
 by one point
+
+#testcase-values-from-number-of-ooh-ooh-is-2653
+>ll
+You notice two dots in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, 0.50.)
+
+#testcase-values-from-number-of-zuzu-is-2602
+>ll zuzu
+You notice two dots in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.50, 1.50.)
+
+#testcase-values-from-number-of-loulou-is-2653
+>ll loulou
+You notice two dots in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, 0.50.)
 
 >doodoo
 by one point
 
+#testcase-values-from-number-of-ooh-ooh-is-2653
+>ll
+You notice one dot in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
+
+#testcase-values-from-number-of-zuzu-is-2602
+>ll zuzu
+You notice one dot in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (2.00, 2.00.)
+
+#testcase-values-from-number-of-loulou-is-2653
+>ll loulou
+You notice one dot in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
+
 >poohpooh
 by one point
 
+#testcase-values-from-number-of-ooh-ooh-is-2653
+>ll
+Nothing comes up. The general area here has been changed enough.
+
+#testcase-values-from-number-of-zuzu-is-2602
+>ll zuzu
+Nothing comes up. You've rhymed Zuzu as much as you needed to.
+
+#testcase-values-from-number-of-loulou-is-2653
+>ll loulou
+Nothing comes up. You've rhymed Loulou as much as you needed to.
+
 >s
+
+#testcase-values-from-number-of-bopper-bee-is-2803
+>ll bopper bee
+You notice one dot in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
 
 >flopper flea
 by one point
+
+#testcase-values-from-number-of-edgy-ill-hedge-y-hill-is-5507
+>ll
+You notice one dot in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.50.)
 
 >veggie ville
 by one point
@@ -170,14 +588,38 @@ by one point
 
 >d
 
+#testcase-values-from-number-of-moneyed-maam-is-2854
+>ll maam
+You notice one dot in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, -1.00.)
+However, it's really dim, as if you don't need to do or think whatever there is to do or think.
+
 >honeyed ham
 by one point
+
+#testcase-values-from-number-of-cray-cruel-fey-fool-is-5359
+>ll fey fool
+You notice one dot in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, 0.50.)
+However, it's really dim, as if you don't need to do or think whatever there is to do or think.
 
 >grey gruel
 by one point
 
+#testcase-values-from-number-of-fussed-fellow-is-2806
+>ll fellow
+You notice one dot in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-2.00, -1.00.)
+However, it's really dim, as if you don't need to do or think whatever there is to do or think.
+
 >just jello
 by one point
+
+#testcase-values-from-number-of-woe-worry-slow-slurry-is-5361
+>ll
+You notice one dot in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-0.50, 0.50.)
+However, it's really dim, as if you don't need to do or think whatever there is to do or think.
 
 >potpourri
 by one point
@@ -192,51 +634,182 @@ by one point
 >believe below
 by one point
 
+#testcase-values-from-number-of-reeve-row-is-2753
+>ll
+Nothing comes up. The general area here has been changed enough.
+
 >d
+
+#testcase-values-from-number-of-trappy-trawl-is-2805
+>ll
+You notice one dot in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
 
 >scrappy scrawl
 by one point
 
+#testcase-values-from-number-of-trappy-trawl-is-2805
+>ll
+You notice one dot in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, -1.00.)
+
+#testcase-values-from-number-of-scrappy-scrawl-is-2856
+>ll scrawl
+You notice one dot in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, -2.00.)
+
 >whappy wall
 by one point
 
->pappy paul
-by one point
+#testcase-values-from-number-of-happy-hall-is-2754
+>ll
+You notice two dots in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 
 >sappy saul
 by one point
 
->lone laura
+#testcase-values-from-number-of-happy-hall-is-2754
+>ll
+You notice one dot in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
+
+>undo
+>undo
+
+>pappy paul
 by one point
+
+#+testcase-values-from-number-of-happy-hall-is-2754
+>ll
+You notice one dot in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
+
+>sappy saul
+by one point
+
+#testcase-values-from-number-of-own-aura-is-5357
+>ll aura
+You notice two dots in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
 
 >known nora
 by one point
 
+#testcase-values-from-number-of-own-aura-is-5357
+>ll aura
+You notice one dot in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, 1.50.)
+
+>undo
+>undo
+
+>lone laura
+by one point
+
+#+testcase-values-from-number-of-own-aura-is-5357
+>ll aura
+You notice one dot in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.50, 0.50.)
+
+>known nora
+by one point
+
+#testcase-values-from-number-of-own-aura-is-5357
+>ll aura
+Nothing comes up. You've rhymed the own aura as much as you needed to.
+
+#testcase-values-from-number-of-happy-hall-is-2754
+>ll
+You notice one dot in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
+
 >cappy caul
 by one point
+
+#testcase-values-from-number-of-happy-hall-is-2754
+>ll
+You notice one dot in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 
 >yappy yall
 by one point
 
+#testcase-values-from-number-of-happy-hall-is-2754
+>ll
+You notice one dot in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
+
 >bappy ball
 by one point
+
+#testcase-values-from-number-of-compete-compel-is-2856
+>ll
+You notice one dot in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-2.00, -2.00.)
 
 >wheat well
 by one point
 
+#+testcase-values-from-number-of-compete-compel-is-2856
+>ll
+You notice one dot in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-3.00, -2.00.)
+
 >feet fell
 by one point
+
+#+testcase-values-from-number-of-compete-compel-is-2856
+>ll
+You notice one dot in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 1.00.)
 
 >sheet shell
 by one point
 
+#testcase-values-from-number-of-compete-compel-is-2856
+>ll
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 0.00.)
+
+#testcase-values-from-number-of-sheet-shell-is-2755
+>ll sheet shell
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, -1.00.)
+
 >beat bell
 by one point
+
+#testcase-values-from-number-of-compete-compel-is-2856
+>ll
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, -1.00.)
+
+#testcase-values-from-number-of-sheet-shell-is-2755
+>ll sheet shell
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, -2.00.)
 
 >meet mel
 by one point
 
+#testcase-values-from-number-of-compete-compel-is-2856
+>ll
+You notice three dots in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.67.)
+!only one thing to do
+
+#testcase-values-from-number-of-sheet-shell-is-2755
+>ll sheet shell
+You notice three dots in the corner of the leet learner.
+The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, -0.33.)
+!only one thing to do
+
 >x leet lel
+
+#testcase-values-from-number-of-compete-compel-is-2856
+>ll
+Hmm. There must be only one thing to do: evaluate Leet Lel's position in your life. There must be three paths you can take.
+
+#testcase-values-from-number-of-sheet-shell-is-2755
+>ll sheet shell
+Hmm. There must be only one thing to do: evaluate Leet Lel's position in your life. There must be three paths you can take.
 
 >repeat repel
 by one point

@@ -259,6 +259,7 @@ Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, 
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Beef, Beans, Grief, Greens has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
 #testcase-reject-start-table-of-verb-checks-vc-zap-zoo-rule
+#testcase-check-vc-zap-zoo-rule-if-player-is-not-in-gap-goo
 >zap zoo
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Beef, Beans, Grief, Greens has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
@@ -402,6 +403,13 @@ by one point
 
 >zap zoo
 by one point
+
+#testcase-check-vc-zap-zoo-rule-fallthrough
+Yes, yes. Much better now. The terrain changes! So much appears: a ferret (fake,) a tree troop, and lotus life. They're all very nice and add local flavor, but perhaps you need to appreciate them right to achieve your own goals.
+
+#testcase-check-vc-zap-zoo-rule-if-sco-zap-zoo-is-true
+>zap zoo
+But you already converted the goo to a zoo!
 
 >see soup
 by one point
