@@ -187,10 +187,10 @@ this is the vr-jade-jug rule:
 section reeve row general flips
 
 a goodrhyme rule (this is the vc-believe-below rule):
-	if player is not in reeve row, unavailable;
 	if sco-believe-below is true:
 		vcal "You already believed in[if sco-heave-ho is true], and found,[end if] a passage down.";
 		already-done;
+	abide by the self rhymes check rule;
 	ready;
 
 this is the vr-believe-below rule:
@@ -203,13 +203,18 @@ this is the vr-believe-below rule:
 	process the Reeve Row check passage down rule;
 
 a goodrhyme rule (this is the vc-leave-lo rule):
-	if player is not in reeve row, unavailable;
+	if player is not in reeve row:
+		vcal "But you already left Reeve Row!";
+		already-done;
 	ready;
 
 this is the vh-leave-low rule:
 	say "You're already feeling a bit low. You don't need to advertise it, or sink lower.[paragraph break]That has to be really, really close, though! Perhaps a potentially hearty interjection would work better.[paragraph break]How to leave with your head held high, with a forceful word showing you're willing to take on the world?";
 
 this is the vr-leave-lo rule:
+	if copper key is moot:
+		say "This is ambiguous now you've opened a passage [b]DOWN[r] as well as [b]OUT[r].";
+		the rule succeeds;
 	if sco-leave-lo is false:
 		say "Sometimes you just need the right time to say a simple phrase to get you going. And you do, here.";
 		open-psg outside and wandering where;
@@ -220,10 +225,10 @@ this is the vr-leave-lo rule:
 	move player to Wandering Where;
 
 a goodrhyme rule (this is the vc-heave-ho rule):
-	if player is not in reeve row, unavailable;
 	if sco-heave-ho is true:
 		vcal "You already pulled the rug away!";
 		already-done;
+	abide by the self rhymes check rule;
 	if sco-oven-out is false:
 		vcp "You try to pull the rayed rug, but it feels nailed down in enough places you can only look under a bit. You can't move it by yourself. You need a stronger assistant!";
 		not-yet;
@@ -242,10 +247,10 @@ this is the vr-heave-ho rule:
 	process the Reeve Row check passage down rule;
 
 a goodrhyme rule (this is the vc-grieve-grow rule):
-	if player is not in reeve row, unavailable;
 	if sco-grieve-grow is true:
 		vcal "Too much grief will undo the growing you did.";
 		already-done;
+	abide by the self rhymes check rule;
 	ready;
 
 this is the vh-greave-grow rule:
@@ -1231,6 +1236,11 @@ to oven-check:
 		now oven-fixed-yet is true;
 		repeat with OT running through oventhings:
 			moot OT;
+
+this is the self rhymes check rule:
+	if player is not in reeve row:
+		vcp "That seems worth doing, but this isn't the right place.";
+		not-yet;
 
 chapter Squalor Square
 
