@@ -196,8 +196,8 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 \\
 #testcase-check-vc-juju-rule-if-player-is-not-in-ooh-ooh
 #testcase-reject-start-table-of-verb-checks-vc-juju-rule
->ju ju
-{$REJECT2}
+>juju
+{$REJECT1}
 \\
 #testcase-check-vc-just-jello-rule-if-fussed-fellow-is-not-in-location-of-player
 #testcase-reject-start-table-of-verb-checks-vc-just-jello-rule
@@ -251,8 +251,8 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 \\
 #testcase-check-vc-meet-mel-rule-if-player-is-not-in-compete-compel
 #testcase-reject-start-table-of-verb-checks-vc-muumuu-rule
->muu muu
-{$REJECT2}
+>muumuu
+{$REJECT1}
 \\
 #testcase-check-vc-neat-note-rule-unless-meat-moat-is-touchable-or-beet-boat-is-touchable-or-bleat-bloat-is-touchable
 #testcase-reject-start-table-of-verb-checks-vc-neat-note-rule
@@ -297,8 +297,8 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 \\
 #testcase-check-vc-poohpooh-rule-if-player-is-not-in-ooh-ooh
 #testcase-reject-start-table-of-verb-checks-vc-poohpooh-rule
->poo pooh
-{$REJECT2}
+>poohpooh
+{$REJECT1}
 \\
 #testcase-check-vc-potpourri-rule-if-player-is-not-in-slow-slurry
 #testcase-reject-start-table-of-verb-checks-vc-potpourri-rule
@@ -364,8 +364,8 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 \\
 #testcase-reject-start-table-of-verb-checks-vc-tutu-rule
 #testcase-check-vc-tutu-rule-if-player-is-not-in-ooh-ooh
->tu tu
-{$REJECT2}
+>tutu
+{$REJECT1}
 \\
 #testcase-check-vc-veggie-ville-rule-if-player-is-not-in-edgy-ill
 #testcase-reject-start-table-of-verb-checks-vc-veggie-ville-rule
@@ -554,6 +554,12 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 by one point
 }}SCORE++
 
+@rej,all
+{--rej}#testcase-check-vc-made-mug-rule-fallthrough
+{--all}#testcase-run-vr-made-mug-rule-default
+A made mug appears. It will be useful for the meal.
+A ray vanishes from the rug. Several rays on the rug (you'd say one-third) grow duller.
+
 @all
 >score
 {$SCOS}
@@ -567,6 +573,12 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 >jade jug
 by one point
 }}SCORE++
+
+@rej,all
+{--rej}#testcase-check-vc-jade-jug-rule-fallthrough
+{--all}#testcase-run-vr-jade-jug-rule-default
+A jade jug appears. It will be useful for the meal.
+A ray vanishes from the rug. The rug's rays go from one-third dull to one-third bright.
 
 @all
 >score
@@ -595,6 +607,11 @@ How to leave with your head held high, with a forceful word showing you're willi
 >leave lo
 by one point
 }}SCORE++
+
+@rej,all
+{--rej}#testcase-check-vc-leave-lo-rule-fallthrough
+{--all}#testcase-run-vr-leave-lo-rule-default
+Sometimes you just need the right time to say a simple phrase to get you going. And you do, here.
 
 @all
 #testcase-room-names-wandering-where
@@ -720,6 +737,11 @@ It's too misty to see far.
 >laundering lair
 by one point
 }}SCORE++
+
+@rej,all
+{--rej}#testcase-check-vc-laundering-lair-rule-fallthrough
+{--all}#testcase-run-vr-laundering-lair-rule-default
+You think up a storm and realize, there is a way to such a place, though maybe it's easier to go west in the future. The name is a bit more specific than what you'd imagined.
 
 @all
 #testcase-room-names-dove-n-doubt
@@ -866,6 +888,12 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 by one point
 }}SCORE++
 
+@rej,all
+{--rej}#testcase-check-vc-lovin-lout-rule-fallthrough
+{--all}#testcase-run-vr-lovin-lout-rule-default
+A lovin' lout strolls sheepishly into view, not sure to explain whether they've been terribly loyal, or they didn't mean to do the stuff the bad people suggested they do, or else. You assure them that's over now, and you want someone who can help a bit. For what, you're not sure yet.
+You take a closer look at the oven. It's missing a lot! You probably need to find bits and pieces to make it serviceable again.
+
 @all
 >score
 {$SCOS}
@@ -912,6 +940,12 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 by one point
 }}SCORE++
 
+@rej,all
+{--rej}#testcase-check-vc-shovin-shout-rule-fallthrough
+{--all}#testcase-run-vr-shovin-shout-rule-default
+You and the lovin' lout get together and push the oven forward.
+Something seems to crumble loose. Success! You can probably move the oven more ambitiously now.
+
 @all
 >score
 {$SCOS}
@@ -943,6 +977,12 @@ You feel like you should get a reading on the oven, but maybe it's more what's a
 by one point
 }}SCORE++
 
+@rej,all
+{--rej}#testcase-check-vc-oven-out-rule-fallthrough
+{--all}#testcase-run-vr-oven-out-rule-default
+With the right commands and pacing, you and the lovin' lout move the oven from its former position. The lout, very unloutishly indeed, asks if you need the oven to move anywhere. You defer all "Oh, it'd be too much!" but after some nonsense back-and-forthing, you both realize that's wasted energy. You both move the oven back to Reeve Row pretty quickly. The oven is -- well, you sense it isn't ready to cook anything, but it's a lot easier to repair here.
+The lovin' lout waits around, as if they suspect they could help you with one more thing. Very considerate indeed, for a lout!
+
 @all
 #+testcase-room-names-reeve-row
 `Reeve Row
@@ -970,6 +1010,13 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 >heave ho
 by one point
 }}SCORE++
+
+@rej,all
+{--rej}#testcase-check-vc-heave-ho-rule-fallthrough
+{--all}#testcase-run-vr-heave-ho-rule-default
+You and the lovin' lout pull on one, two, THREE! It takes a couple of times, but the rug bursts free from the floor. You see an outline of the passage you believed was there.
+You shake hands with the lovin' lout, who exits and nods to wish you the best.
+Your kneeling on the floor to pull the rug up gave you a good view inside the oven. There you find something called a goon guide. But you can't use it, because you're too good to be a goon. That's how it works, right? Or maybe not...
 
 @hfull
 #+testcase-values-from-number-of-reeve-row-is-2753
@@ -1018,6 +1065,12 @@ No, no food is stuck in the goon guide.
 by one point
 }}SCORE++
 
+@rej,all
+{--rej}#testcase-check-vc-prune-pride-rule-fallthrough
+{--all}#testcase-run-vr-prune-pride-rule-default
+You get over your rage at the goon guide allowing bad people to make food as tasty as good people could make. You realize you are not the judge of such things, and you should not be.
+The goon guide will be there with further technical help when you need it, to help repair the oven. You have an idea of the exact parts that are missing now. You will be more observant in the future when you look around.
+
 @all
 >score
 {$SCOS}
@@ -1043,9 +1096,26 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 by one point
 }}SCORE++
 
+@rej,all
+{--rej}#testcase-check-vc-spoon-spied-rule-fallthrough
+{--all}#testcase-run-vr-spoon-spied-rule-default
+Well, it is worth a try. Amazingly, on rereading the goon guide, you find tips on locating lost silverware. You missed it with the first read-through, probably because you weren't focused on finding it.
+And here you thought it would just help you fix the oven!
+You flip through the goon guide once again. You seem to have gotten the big stuff from it. You tuck it in a safe place behind the oven for reference. You have enough to carry around.
+
+@all
+>score
+{$SCOS}
+
 >played plug
 by one point
 }}SCORE++
+
+@rej,all
+{--rej}#testcase-check-vc-played-plug-rule-fallthrough
+{--all}#testcase-run-vr-played-plug-rule-default
+Ah, that's what the bump in the rayed rug is.
+A ray vanishes from the rug. The final rays on the rug grow dull. You figure you're done with it, so you put it in a corner where you can just ignore it.
 
 @all
 >score
@@ -1177,6 +1247,11 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 by one point
 }}SCORE++
 
+@rej,all
+{--rej}#testcase-check-vc-pluck-plate-rule-fallthrough
+{--all}#testcase-run-vr-pluck-plate-rule-default
+You find one plate, and it give you a greater morale boost than expected. All of a sudden, you start noticing things around you. Like more plates! And even more plates! Plain plates! Gaudy plates! You're so involved, you don't realize you've walked out of the fog back to ...
+
 @all
 #+testcase-room-names-wandering-where
 `Wandering ... Where?
@@ -1221,6 +1296,11 @@ You can exclaim LOOK LARD once you've seen where the shook shard can take you.
 
 >hook hard
 by one point
+
+@rej,all
+{--rej}#testcase-check-vc-hook-hard-rule-fallthrough
+{--all}#testcase-run-vr-hook-hard-rule-default
+You grab the shard and feel pulled to somewhere new...
 
 @all
 #testcase-room-names-took-tarred
@@ -1374,6 +1454,17 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 by one point
 }}SCORE++
 
+@rej,all
+{--rej}#testcase-check-vc-book-bard-rule-fallthrough
+{--all}#testcase-run-vr-book-bard-rule-default
+You wait. People drift by. One is a bard. You book them for the ritual ahead. They can use the business. You refer them to the gnome high council, who are a ways away. But they're willing to pay well.
+You feel the area's hold on you weaken.
+
+@rej
+#testcase-check-vc-book-bard-rule-if-sco-book-bard-is-true
+>book bard
+You already booked a bard!
+
 @all
 >score
 {$SCOS}
@@ -1388,9 +1479,25 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 by one point
 }}SCORE++
 
+@rej,all
+{--rej}#testcase-check-vc-cook-card-rule-fallthrough
+{--all}#testcase-run-vr-cook-card-rule-default
+Oh my goodness. Could it be ... is it ... the missing insert from the goon guide? What luck!
+You feel the area's hold on you weaken.
+
+@rej
+#testcase-check-vc-book-bard-rule-if-sco-cook-card-is-true
+>cook card
+You already found a card with cooking tips!
+
 @all
 >score
 {$SCOS}
+
+@rej
+#testcase-check-vc-cook-card-rule-if-sco-cook-card-is-true
+>cook card
+You already found a card with cooking tips!
 
 @hfull
 #+testcase-values-from-number-of-took-tarred-is-2706
@@ -1401,6 +1508,12 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 >look lard
 by one point
 }}SCORE++
+
+@rej,all
+{--rej}#testcase-check-vc-look-lard-rule-fallthrough
+{--all}#testcase-run-vr-look-lard-rule-default
+Lard, man. You're still not sure if you really need it, even if the cookbooks say you should. You've never had the guts to rebel and just prepare that dish without lard. Now's not the time to start. So you're glad you looked so diligently, and you're glad it turned up.
+You feel sucked out of whatever the shard held you in. As you come back to Dove 'N Doubt, the shard shatters. You sense there's nothing more to do here, so you walk back to the center of the action.
 
 @all
 >score
@@ -1415,6 +1528,11 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 >squandering square
 by one point
 }}SCORE++
+
+@rej,all
+{--rej}#testcase-check-vc-squandering-square-rule-fallthrough
+{--all}#testcase-run-vr-squandering-square-rule-default
+You think up a storm and realize, there is a way to such a place, though maybe it's easier to go east in the future. The name is a bit more specific than what you'd imagined.
 
 @all
 #testcase-room-names-squalor-square
@@ -1561,6 +1679,12 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 by one point
 }}SCORE++
 
+@rej,all
+{--rej}#testcase-check-vc-dollar-dare-rule-fallthrough
+{--all}#testcase-run-vr-dollar-dare-rule-default
+The staller stare is visibly affected by the audacity of someone daring someone else to do ... well, THAT. For just a dollar. Its eyes bug out. Is this a joke? Then the eyes roll around, as if to say, it doesn't see why it bothers to feel nosy.
+The staller stare blinks. It seems to shake where its head would be. It's a bit baffled by what it saw. It rolls its eyes as if to say, any more of this, and I give up.
+
 @all
 >score
 {$SCOS}
@@ -1589,6 +1713,13 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 >caller care
 by one point
 }}SCORE++
+
+@rej,all
+{--rej}#testcase-check-vc-caller-care-rule-fallthrough
+{--all}#testcase-run-vr-caller-care-rule-fallthrough
+{--all}#testcase-run-vr-caller-care-rule-default
+The staller stare is visibly affected by the audacity of someone caring about them. Its eyes bug out. Is this a joke! Then the eyes blink. No, it's not crying, of course it's not, it's the squalor.
+The staller stare blinks repeatedly. The weirdness you introduced was too much for it. It was ready to judge squalor, but not THIS. It closes its eyes and fades into the wall it was on. Perhaps it will find another place to oversee.
 
 @all
 >score
@@ -1630,6 +1761,11 @@ by one point
 }}SCORE++
 }}CURMIN++
 }}CURMINBONUS++
+
+@rej,all
+{--rej}#testcase-check-vc-baller-bear-rule-fallthrough
+{--all}#testcase-run-vr-baller-bear-rule-default
+With the staller stare gone, you leave a bit of hope and genuine solicitousness for the next lost soul who stumbles here.
 
 @all
 >score
@@ -1684,6 +1820,11 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 by one point
 }}SCORE++
 
+@rej,all
+{--rej}#testcase-check-vc-neat-note-rule-fallthrough
+{--all}#testcase-run-vr-neat-note-rule-default
+It seems silly to expect someone to just up and drop by with a neat note. But surprisingly, the bleat bloat dies out, and someone singularly unimpressive-looking walks in, slowly and without confidence.
+
 @all
 >score
 {$SCOS}
@@ -1726,6 +1867,17 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 by one point
 }}SCORE++
 
+@rej,all
+{--rej}#testcase-check-vc-found-fork-rule-fallthrough
+{--all}#testcase-run-vr-found-fork-rule-default
+You tell the downed dork your plans and what you might be able to find together. They seem amenable. You both spend a lot of time looking for a fork, any old fork, but once you find one, you start uncovering others. Squalor Square is just full of litter. The forks are in good shape.
+The downed dork mumbles something about not wanting to leave you this quick, but also not hanging around if they're not wanted. You're in no rush, and you wonder what other secrets Squalor Square holds.
+
+@rej
+#testcase-check-vc-found-fork-rule-if-sco-found-fork-is-true
+>found fork
+You and the dork already found the fork!
+
 @ha
 #+testcase-ha-half-table-of-verb-checks-22-meat
 >meat zmoat
@@ -1763,6 +1915,12 @@ You needn't make the acquaintance of anything minuscule. You need more sizable f
 by one point
 }}SCORE++
 
+@rej,all
+{--rej}#testcase-check-vc-meat-moat-rule-fallthrough
+{--all}#testcase-run-vr-meat-moat-rule-default
+A burly workman named Amped Ox takes you and the downed dork to the Damped Docks, where indeed a small meat moat (heavy meat, light gravy) is discovered. It looks and smells clean. Apparently, it was part of an all-you-can-eat buffet, and the workers ran out of stomach space.
+The downed dork asks if they should stay or go. Your instincts are to stay. Maybe there's one more thing here.
+
 @all
 >score
 {$SCOS}
@@ -1786,6 +1944,13 @@ There's no competition here, violent, friendly, racing or otherwise.
 >beet boat
 by one point
 }}SCORE++
+
+@rej,all
+{--rej}#testcase-check-vc-beet-boat-rule-fallthrough
+{--all}#testcase-run-vr-beet-boat-rule-default
+Amped Ox drops by again, leading you and the downed dork to a new area of the Damped Docks, where you are given a good-sized beet boat. He doesn't particularly like beets, and neither do his coworkers, but why let it go to waste?
+The downed dork looks around. "Anything else?"
+Squalor Square seems pretty empty. You thank them heartily. They say, well, it was nothing, really, and they are sure more with-it people could've found things quicker.
 
 @all
 >score
@@ -1840,6 +2005,17 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 by one point
 }}SCORE++
 
+@rej,all
+{--rej}#testcase-check-vc-fight-fires-rule-fallthrough
+{--all}#testcase-run-vr-fight-fires-rule-default
+What a good citizen you are! What a patron of the arts beyond giving money! You manage to stop the lyres from burning.
+Perhaps some part of them that you can use is left, though.
+
+@rej
+#testcase-check-vc-fight-fires-rule-if-sco-fight-fires-is-true
+>fight fires
+You already fought the fires!
+
 @all
 >score
 {$SCOS}
@@ -1872,6 +2048,11 @@ Summoning the undead is one way to remember those who passed on, but it's a high
 >white wires
 by one point
 }}SCORE++
+
+@rej,all
+{--rej}#testcase-check-vc-white-wires-rule-fallthrough
+{--all}#testcase-run-vr-white-wires-rule-default
+You see what to look for in the lyres. The white wires have to come in handy to fix the oven.
 
 @all
 >score
@@ -2036,6 +2217,13 @@ Well, maybe, but you can't eat saws.
 by one point
 }}SCORE++
 
+@rej,all
+{--rej}#testcase-check-vc-soy-sauce-rule-fallthrough
+{--all}#testcase-run-vr-soy-sauce-rule-default
+Boy Boss Roy Ross nods. "Here you go. Not just packets. A whole big bottle! Don't drink it all at once. Heh."
+You fail to laugh at this joke, and your punishment is to be whisked back from whence you came.
+Which, to be honest, is a big help, because you were pretty sure you couldn't find the way back.
+
 @all
 #+testcase-room-names-wandering-where
 `Wandering ... Where?
@@ -2063,6 +2251,11 @@ No, something sentient, not someone.
 >maundering mare
 by one point
 }}SCORE++
+
+@rej,all
+{--rej}#testcase-check-vc-maundering-mare-rule-fallthrough
+{--all}#testcase-run-vr-maundering-mare-rule-default
+You think up a storm and realize, there is a way to such a place, though maybe it's easier to go south in the future. The name is a bit more specific than what you'd imagined.
 
 @all
 #testcase-room-names-gap-goo
@@ -2253,6 +2446,11 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 by one point
 }}SCORE++
 
+@rej,all
+{--rej}#testcase-check-vc-see-soup-rule-fallthrough
+{--all}#testcase-run-vr-see-soup-rule-default
+You nod to the tree troop. You see what you want. They are glad to give it to you.
+
 @all
 >score
 {$SCOS}
@@ -2266,6 +2464,11 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 >notice knife
 by one point
 }}SCORE++
+
+@rej,all
+{--rej}#testcase-check-vc-notice-knife-rule-fallthrough
+{--all}#testcase-run-vr-notice-knife-rule-default
+Ah! Yes! The lotus life almost took over parts of the zoo. You had to look for the knife, but it is there. And once you do, you notice a whole bunch of knives. Wow, when this zoo blossoms, it blossoms.
 
 @all
 >score
@@ -2290,6 +2493,11 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 by one point
 }}SCORE++
 
+@rej,all
+{--rej}#testcase-check-vc-dented-dials-rule-fallthrough
+{--all}#testcase-run-vr-dented-dials-rule-default
+The vented vials seem useless. Dented dials? Less so. They transmogrify. You take them.
+
 @all
 >score
 {$SCOS}
@@ -2308,6 +2516,12 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 >carrot cake
 by one point
 }}SCORE++
+
+@rej,all
+#note you can't say carrot cake again. The ferret, fake runs off.
+{--rej}#testcase-check-vc-carrot-cake-rule-fallthrough
+{--all}#testcase-run-vr-carrot-cake-rule-default
+Splat! The ferret (fake) runs off to reveal an untouched carrot cake! Its generosity sure isn't fake.
 
 @all
 >score
@@ -2452,6 +2666,11 @@ You can buy a PIE PO once you have currency.
 by one point
 }}SCORE++
 
+@rej,all
+{--rej}#testcase-check-vc-penny-piles-rule-fallthrough
+{--all}#testcase-run-vr-penny-piles-rule-default
+Reading Any Isles, Many Miles carefully, you recognize that it, in fact, covers an isle not far from here (there were so many isles in the book, one was bound to be close,) rumored to hold particularly small-scale wealth. You excuse yourself to go look for it. Bri-Bro doesn't want to let you go at first, because he isn't here to provide a rest area for loiterers.
+
 @all
 >score
 {$SCOS}
@@ -2511,6 +2730,12 @@ Double narrow misses with the words. But you must be close!
 by one point
 }}SCORE++
 
+@rej,all
+{--rej}#testcase-check-vc-pie-po-rule-fallthrough
+{--all}#testcase-run-vr-pie-po-rule-default
+You realize you're kind of broke, and you figure out what the cheapest item on the menu might be. It looks surprisingly good, and it's large, too.
+Bri-Bro whispers to you, "So many people demand the house special. I give them something frou-frou, but it's not really what I enjoy cooking. Now I'll have to pretend to kick you out." He pushes you out of the establishment, but you complain you don't know the way back. Fortunately, he helps you...
+
 @all
 #+testcase-room-names-wandering-where
 `Wandering ... Where?
@@ -2534,6 +2759,11 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 >pondering pair
 by one point
 }}SCORE++
+
+@rej,all
+{--rej}#testcase-check-vc-pondering-pair-rule-fallthrough
+{--all}#testcase-run-vr-pondering-pair-rule-default
+You think up a storm and realize, there is a way to such a place, though maybe it's easier to go north in the future. The name is a bit more specific than what you'd imagined.
 
 @all
 #testcase-room-names-ooh-ooh
@@ -2661,6 +2891,16 @@ That location or thing doesn't exist or isn't known to you yet.
 by one point
 }}SCORE++
 
+@rej,all
+{--rej}#testcase-check-vc-booboo-rule-fallthrough
+{--all}#testcase-run-vr-booboo-rule-default
+Sometimes, you just have to complain about small hurts, physical or mental, and exaggerate them. As long as you get back to your regular life soon after, it's not that bad, really. So you and Loulou and Zuzu do.
+Zuzu and Loulou seem to warm up to you.
+
+@rej
+>booboo
+You already feigned a booboo.
+
 @all
 >score
 {$SCOS}
@@ -2684,6 +2924,11 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 >juju
 by one point
 }}SCORE++
+
+@rej,all
+{--rej}#testcase-check-vc-juju-rule-fallthrough
+{--all}#testcase-run-vr-juju-rule-default
+You find ways to perform juju, or pretend to.
 
 @all
 >score
@@ -2716,6 +2961,11 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 by one point
 }}SCORE++
 
+@rej,all
+{--rej}#testcase-check-vc-muumuu-rule-fallthrough
+{--all}#testcase-run-vr-muumuu-rule-default
+Loulou and Zuzu shrug a bit. Why not? They come in so many different colors.
+
 @all
 >score
 {$SCOS}
@@ -2740,6 +2990,12 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 by one point
 }}SCORE++
 
+@rej,all
+{--rej}#testcase-check-vc-tutu-rule-fallthrough
+{--all}#testcase-run-vr-tutu-rule-default
+can't dance worth a dang, but that seems worth trying, not for the whole stale "ha ha dude in a dress" joke but because it does seem to fit the area's general vibe.
+pound you on the back. You sure have some great ideas in line with their thinking! After some awkward hand gestures they indicate they don't mind if you stay or go. You've earned this packet of cocoa.
+
 @all
 >score
 {$SCOS}
@@ -2762,6 +3018,11 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 >massive mitt
 by one point
 }}SCORE++
+
+@rej,all
+{--rej}#testcase-check-vc-massive-mitt-rule-fallthrough
+{--all}#testcase-run-vr-massive-mitt-rule-default
+Now that you know what to look for, you are patient enough to look through the passive pit. You sift through a phone book, a remote control, some matches, a paddleball, a thermos, and oil cans with gun holes in them before you uncover a massive mitt.
 
 @all
 >score
@@ -2830,6 +3091,16 @@ by one point
 }}CURMIN++
 }}CURMINBONUS++
 
+@rej,all
+{--rej}#testcase-check-vc-cuckoo-rule-fallthrough
+{--all}#testcase-run-vr-cuckoo-rule-default
+You discuss, in an entirely sane manner, Swiss clocks with birds in them, and the chorus of the Mackenzie Brothers' '80s novelty smash hit Take Off.
+Zuzu and Loulou look even happier now. Dare they expect more solidarity?
+
+@rej
+>cuckoo
+It was almost too crazy the first time.
+
 @all
 >score
 {$SCOS}
@@ -2865,6 +3136,16 @@ by one point
 }}CURMIN++
 }}CURMINBONUS++
 
+@rej,all
+{--rej}#testcase-check-vc-doodoo-rule-fallthrough
+{--all}#testcase-run-vr-doodoo-rule-default
+You patrol the area for animal waste, also remarking on other interesting swear-word replacements.
+Loulou and Zuzu are starting to look exhausted from all this imagining.
+
+@rej
+>doodoo
+The value of such a word or phrase drops quickly with each use.
+
 @all
 >score
 {$SCOS}
@@ -2890,6 +3171,13 @@ by one point
 }}SCORE++
 }}CURMIN++
 }}CURMINBONUS++
+
+@rej,all
+{--rej}#testcase-check-vc-poohpooh-rule-fallthrough
+{--all}#testcase-run-vr-poohpooh-rule-default
+You show
+ways to dismiss this little thought experiment.
+wipe their brows after this latest feat of imagination. Nothing more to do here, really.
 
 @all
 >score
@@ -3048,6 +3336,16 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 by one point
 }}SCORE++
 
+@rej,all
+{--rej}#testcase-check-vc-flopper-flea-rule-fallthrough
+{--all}#testcase-run-vr-flopper-flea-rule-default
+Wait! Something about the bee looks funny! Yes, it is not really a bee, but a less aggressive animal in disguise. Just knowing it is a flopper flea makes you less scared. Without fear, your running around gets more strategic, until it gets exhausted chasing you.
+It buzzes and mumbles off. You're not surprised that, as it does, it drops a copper key, which you pick up.
+
+@rej
+>flopper flea
+You already got rid of the bopper bee!
+
 @all
 >score
 {$SCOS}
@@ -3071,6 +3369,14 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 by one point
 }}SCORE++
 
+@rej,all
+{--rej}#testcase-check-vc-veggie-ville-rule-fallthrough
+{--all}#testcase-run-vr-veggie-ville-rule-default
+You realize that the fruit and vegetable groups are sorely underrepresented--well, the greens, at least. It's time to fix that!
+You know there will be many stores in the distance. So you begin your trek. On the way you ask the way to Veggie Ville. People are helpful.
+Once you get there, you worry you have no money to pay. But when they see the Last Least Fast Feast, they recognize what you are here for. Why, they have just the thing: veggies and fruits of irregular shapes, which get thrown out anyway!
+They're impressed with what you've gotten so far. They deem you a worthy leader of the ceremony. They wish you luck and provide directions back...
+
 @all
 `Wandering ... Where?
 
@@ -3092,6 +3398,15 @@ by one point
 }}SCORE++
 }}CURMIN++
 }}CURMINBONUS++
+
+@rej,all
+{--rej}#testcase-check-vc-chrome-craw-rule-fallthrough
+{--all}#testcase-run-vr-chrome-craw-rule-default
+You hear a large creaking from the ground beneath, and lo and behold, a chrome craw rumbles up from the ground! It's a bit scary-looking, but you're curious to explore it. You can go DOWN into it.
+
+@rej
+>chrome craw
+You already opened the chrome craw!
 
 @all
 >score
@@ -3267,6 +3582,11 @@ by one point
 }}CURMIN++
 }}CURMINBONUS++
 
+@rej,all
+{--rej}#testcase-check-vc-honeyed-ham-rule-fallthrough
+{--all}#testcase-run-vr-honeyed-ham-rule-default
+She sniffs and hands you a honeyed ham. Her charity done for the day, she brushes you aside with a hand gesture and then walks off impatiently, herself.
+
 @gt
 #+testcase-goto-table-of-noways-woe-worry-slow-slurry
 >w
@@ -3297,6 +3617,12 @@ by one point
 }}CURMIN++
 }}CURMINBONUS++
 
+@rej,all
+{--rej}#testcase-check-vc-grey-gruel-rule-fallthrough
+{--all}#testcase-run-vr-grey-gruel-rule-default
+The cray cruel fey fool hands you some surprisingly not-cray gray gruel and snickers before running off. What kind of square would actually LIKE gruel?
+But you want to be considerate about allergies, people trying to diet, people with vegan lifestyles, and so forth. It will be useful, you guess, as a base or paste.
+
 @all
 >score
 {$SCOS}
@@ -3314,6 +3640,11 @@ by one point
 }}SCORE++
 }}CURMIN++
 }}CURMINBONUS++
+
+@rej,all
+{--rej}#testcase-check-vc-just-jello-rule-fallthrough
+{--all}#testcase-run-vr-just-jello-rule-default
+The fussed fellow seems relieved to hand you the Jell-o. It may be just Jell-O, but it's all different kinds of colors and flavors. Including pineapple! You remember when some smart-aleck in middle school said pineapple Jell-O would never be a thing. In fact, that smart-aleck snickered when you were chosen for the ceremony.
 
 @gt
 #+testcase-goto-table-of-noways-woe-worry-slow-slurry
@@ -3346,6 +3677,11 @@ by one point
 }}SCORE++
 }}CURMIN++
 }}CURMINBONUS++
+
+@rej,all
+{--rej}#testcase-check-vc-potpourri-rule-fallthrough
+{--all}#testcase-run-vr-potpourri-rule-default
+You realize what the smell is. Well, not the specific ingredients. But it has to be potpourri. Where is it leaking from? Following your nose leads you to a large canister. It might be too much for the feast, but it can be used elsewhere -- and maybe even last until the next feast.
 
 @all
 >score
@@ -3497,6 +3833,15 @@ This isn't a warrior quest, here. No need for armor.
 by one point
 }}SCORE++
 
+@rej,all
+{--rej}#testcase-check-vc-grieve-grow-rule-fallthrough
+{--all}#testcase-run-vr-grieve-grow-rule-default
+You reflect on things. You recognize too much of this is bad. All the same, it puts you in a mindset to do what you must do.
+
+@rej
+>grieve grow
+Too much grief will undo the growing you did.
+
 @all
 >score
 {$SCOS}
@@ -3509,6 +3854,16 @@ It's not a very big house. You suspected the old passage-under-the-rug trick, bu
 >believe below
 by one point
 }}SCORE++
+
+@rej,all
+{--rej}#testcase-check-vc-believe-below-rule-fallthrough
+{--all}#testcase-run-vr-believe-below-rule-default
+Aha! You wondered if something was below the rug. Now you see the outline of a trap door beneath the rug.
+You use the copper key on the trap door down. And it works!
+
+@rej
+>believe below
+You already believed in, and found, a passage down.
 
 @all
 >score
@@ -3625,6 +3980,12 @@ That guide gong, again, rings to notify you that you don't need to go back throu
 #+testcase-values-from-number-of-reeve-row-is-2753
 >ll
 Nothing comes up. The general area here has been changed enough.
+
+@all
+#testcase-run-vr-leave-lo-rule-if-copper-key-is-moot
+>leave lo
+This is ambiguous now you've opened a passage DOWN as well as OUT.
+!Trappy
 
 >d
 
@@ -3767,6 +4128,11 @@ You can hit the WHAPPY WALL once you know where to whap the wall.
 by one point
 }}SCORE++
 
+@rej,all
+{--rej}#testcase-check-vc-scrappy-scrawl-rule-fallthrough
+{--all}#testcase-run-vr-scrappy-scrawl-rule-default
+Ah! You had confidence you could find a scrappy scrawl, and you do. The instructions seem to make sense. You need to look to break open a passage where there is none, yet. An unexpectedly hollow place. Apparently, from the scrawl, one that makes a special sort of noise. Not quite a THWIP or a THWUP. So where is the weak spot?
+
 @hfull
 #+testcase-values-from-number-of-trappy-trawl-is-2805
 >ll
@@ -3854,6 +4220,11 @@ You can have everyone play BAPPY BALL once the feast is complete, to burn off ca
 >whappy wall
 by one point
 }}SCORE++
+
+@rej,all
+{--rej}#testcase-check-vc-whappy-wall-rule-fallthrough
+{--all}#testcase-run-vr-whappy-wall-rule-default
+Whunk. Whunk. The wall makes the same noise, until ... WHAP! There it is! You tap at it a bit, and a passage opens up to ...
 
 @all
 #testcase-room-names-happy-hall
@@ -4013,6 +4384,11 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 by one point
 }}SCORE++
 
+@rej,all
+{--rej}#testcase-check-vc-pappy-paul-rule-fallthrough
+{--all}#testcase-run-vr-pappy-paul-rule-default
+Pappy Paul appears when summoned, looking almost a bit too serious.
+
 @hom
 #testcase-homonym-detail-vh-sappy-sol-rule-default
 #testcase-homonym-reject-table-of-verb-checks-vh-sappy-sol-rule-sol
@@ -4037,6 +4413,11 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 >sappy saul
 by one point
 }}SCORE++
+
+@rej,all
+{--rej}#testcase-check-vc-sappy-saul-rule-fallthrough
+{--all}#testcase-run-vr-sappy-saul-rule-default
+Sappy Saul seems almost too happy to be summoned, then apologetic when he is.
 
 @all
 >score
@@ -4088,6 +4469,11 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 by one point
 }}SCORE++
 
+@rej,all
+{--rej}#testcase-check-vc-lone-laura-rule-fallthrough
+{--all}#testcase-run-vr-lone-laura-rule-default
+Lone Laura appears!
+
 @all
 >score
 {$SCOS}
@@ -4101,6 +4487,11 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 >known nora
 by one point
 }}SCORE++
+
+@rej,all
+{--rej}#testcase-check-vc-known-nora-rule-fallthrough
+{--all}#testcase-run-vr-known-nora-rule-default
+Known Nora appears!
 
 @all
 >score
@@ -4144,6 +4535,11 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 by one point
 }}SCORE++
 
+@rej,all
+{--rej}#testcase-check-vc-cappy-caul-rule-fallthrough
+{--all}#testcase-run-vr-cappy-caul-rule-default
+You retrieve your ceremonial garb. For the first rite, you sacrifice Last Least Fast Feast. There are other copies of it.
+
 @all
 >score
 {$SCOS}
@@ -4181,6 +4577,11 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 >yappy yall
 by one point
 }}SCORE++
+
+@rej,all
+{--rej}#testcase-check-vc-yappy-yall-rule-fallthrough
+{--all}#testcase-run-vr-yappy-yall-rule-default
+Everyone has a say about the deceased.
 
 @all
 >score
@@ -4227,6 +4628,11 @@ Too noisy. And whatever gets bapped should be inanimate.
 >bappy ball
 by one point
 }}SCORE++
+
+@rej,all
+{--rej}#testcase-check-vc-bappy-ball-rule-fallthrough
+{--all}#testcase-run-vr-bappy-ball-rule-default
+A long game of bappy-ball is played. Everyone is exhausted and hungry afterwards. They eat everything that is put in front of them. You doze off, and you are given a vision... one where you are forced to be more, or less, popular than your associate. Yes, "associate" is the right word.
 
 @all
 #testcase-room-names-compete-compel
@@ -4364,6 +4770,11 @@ You can claim your FEET FELL once you've envisioned somewhere safe to fall to.
 by one point
 }}SCORE++
 
+@rej,all
+{--rej}#testcase-check-vc-wheat-well-rule-fallthrough
+{--all}#testcase-run-vr-wheat-well-rule-default
+Yes, the wheat well must be your destination. Now how to stumble across to it?
+
 @all
 >score
 {$SCOS}
@@ -4381,6 +4792,11 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 >feet fell
 by one point
 }}SCORE++
+
+@rej,all
+{--rej}#testcase-check-vc-feet-fell-rule-fallthrough
+{--all}#testcase-run-vr-feet-fell-rule-default
+Oops! With a bit of dream logic, you slip out of where you feel you need to show you are better than someone and to where you can reflect more.
 
 @rej
 #testcase-check-vc-feet-fell-rule-if-sco-feet-fell-is-true
@@ -4400,6 +4816,12 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 >sheet shell
 by one point
 }}SCORE++
+
+@rej,all
+{--rej}#testcase-check-vc-sheet-shell-rule-fallthrough
+{--all}#testcase-run-vr-sheet-shell-rule-default
+Yes, the Wheat Well could use a Sheet Shell.
+Suddenly, with the Sheet Shell in place, ready for a book, you hear your postal delivery person in the distance. You hope to rush to the door, wherever that is. You know if you don't show up, they won't leave any potential package. But how? You need motivation and hustle!
 
 @all
 >score
@@ -4423,6 +4845,11 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 >beat bell
 by one point
 }}SCORE++
+
+@rej,all
+{--rej}#testcase-check-vc-beat-bell-rule-fallthrough
+{--all}#testcase-run-vr-beat-bell-rule-default
+Aaand ... pursuant to general dream/fantasy logic rules, you just make it! But now, what with the Internet taking over with emails, you often forget what your lovable mail carrier's name is! There must be a clue to who they are. As for how they got there, and how they know you're there, you'll just chalk it up to increased efficiency in the postal service due to progress in the ordinary sort of magic that everyone looks down on but would be terribly sorry if it vanished.
 
 @all
 >score
@@ -4451,6 +4878,12 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 >meet mel
 by one point
 }}SCORE++
+
+@rej,all
+{--rej}#testcase-check-vc-meet-mel-rule-fallthrough
+{--all}#testcase-run-vr-meet-mel-rule-default
+Yes! Mel the Mail Maven! It has a certain ring to it. You take Mel's delivery.
+Leet Lel, by Pete Pell. Memories come back to you, of Leet Lel, a larger-than-life figure that showed you so much, but who also seemed to have scorn for you. It was hard to tell.
 
 @all
 >score
@@ -4794,15 +5227,23 @@ Hmm. There must be only one thing to do: evaluate Leet Lel's position in your li
 by one point
 }}SCORE++
 
+@rej,all
+{--rej}#testcase-check-vc-repeat-repel-rule-fallthrough
+{--all}#testcase-run-vr-repeat-repel-rule-default
+Leet Lel left a complex legacy. You can't deny the practical help they gave,
+
 @all
 >missed
 Note that, because there are three different endings, you'll automatically have "missed" two of them, which I don't want to spoil. You can UNDO to track the others down.
 You found everything before the finale, though. Good job!
 
-@all+
+@rej,all
 >undo
 \\
+{--rej}#testcase-check-vc-sweet-swell-rule-fallthrough
+{--all}#testcase-run-vr-sweet-swell-rule-default
 >sweet swell
+You decide that, although Leet Lel could be pretty crude at times, they showed you so much
 by one point
 }}SCORE++
 \\
@@ -4811,7 +5252,10 @@ Note that, because there are three different endings, you'll automatically have 
 You found everything before the finale, though. Good job!
 \\
 >undo
-\\
+
+@rej,all+
+{--rej}#testcase-check-vc-heat-hell-rule-fallthrough
+{--all}#testcase-run-vr-heat-hell-rule-default
 >heat hell
 !by one point
 \\
@@ -4819,6 +5263,7 @@ You found everything before the finale, though. Good job!
 #the other solution is to raise -h, but in that case, tests run slower.
 #so this is a kludge.
 >z
+True, Leet Lel showed you a lot of things that maybe nobody else would show you. But it was always tied up with Lel pointing out your inadequacies, or your shortcomings, or how you should really have noted in the 1st place, without really showing you how to figure these things out for yourself.
 by one point
 }}SCORE++
 \\
