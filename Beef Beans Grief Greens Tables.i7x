@@ -521,7 +521,7 @@ a goodrhyme rule (this is the vc-dollar-dare rule):
 this is the vr-dollar-dare rule:
 	now sco-dollar-dare is true;
 	if stare-score < 3:
-		say "The staller stare is visibly affected by the audacity of someone caring about them. Its eyes bug out. Is this a joke! Then the eyes blink. No, it's not crying, of course it's not, it's the squalor.";
+		say "The staller stare is visibly affected by the audacity of someone daring someone else to do ... well, THAT. For just a dollar. Its eyes bug out. Is this a joke? Then the eyes roll around, as if to say, it doesn't see why it bothers to feel nosy.";
 	else:
 		say "With the staller stare gone, you leave a bit of hope and genuine solicitousness for the next lost soul who stumbles here.";
 	evaluate-stare;
@@ -762,7 +762,7 @@ a goodrhyme rule (this is the vc-dented-dials rule):
 
 this is the vr-dented-dials rule:
 	now sco-dented-dials is true;
-	say "The vented vials seem useless, but dented dials less so. They transmogrify. You take them.";
+	say "The vented vials seem useless. Dented dials? Less so. They transmogrify. You take them.";
 	now player has dented dials;
 
 chapter Took Tarred scoring
@@ -797,7 +797,7 @@ this is the vh-book-barred rule:
 
 this is the vr-book-bard rule:
 	now sco-book-bard is true;
-	say "You wait. People drift by. One is a bard. You book them for the ritual ahead.";
+	say "You wait. People drift by. One is a bard. You book them for the ritual ahead. They can use the business. You refer them to the gnome high council, who are a ways away. But they're willing to pay well.";
 	get-untarred;
 
 a goodrhyme rule (this is the vc-cook-card rule):
@@ -1039,7 +1039,7 @@ a goodrhyme rule (this is the vc-cappy-caul rule):
 
 this is the vr-cappy-caul rule:
 	now sco-cappy-caul is true;
-	say "You retrieved your ceremonial garb. For the first rite, you sacrifice [feast]. There are other copies of it.[paragraph break]Now is the time to stimulate discussion.";
+	say "You retrieve your ceremonial garb. For the first rite, you sacrifice [feast]. There are other copies of it.[paragraph break]Now is the time to stimulate discussion.";
 	moot fast feast;
 	if sco-sassed-ceased is false, max-down;
 
@@ -1251,7 +1251,7 @@ this is the self rhymes check rule:
 chapter Squalor Square
 
 to say a-o:
-	say "[one of]A burly workman named Amped Ox takes you  and the downed dork to the Damped Docks[or]Amped Ox drops by again, leading you and the downed dork to a new area of the Damped Docks[stopping]"
+	say "[one of]A burly workman named Amped Ox takes you and the downed dork to the Damped Docks[or]Amped Ox drops by again, leading you and the downed dork to a new area of the Damped Docks[stopping]"
 
 this is the bloat-transform rule:
 	if player does not have meat moat and player does not have beet boat and player does not have neat note and bleat bloat is not touchable, unavailable;
