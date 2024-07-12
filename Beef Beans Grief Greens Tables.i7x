@@ -62,8 +62,8 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "just"	"jello"	--	--	false	true	false	false	slow slurry	vc-just-jello rule	vr-just-jello rule	--	--
 "scrappy"	"scrawl"	--	--	false	true	true	false	trappy trawl	vc-scrappy-scrawl rule	vr-scrappy-scrawl rule	--	--
 "whappy"	"wall"	--	--	false	true	true	false	trappy trawl	vc-whappy-wall rule	vr-whappy-wall rule	--	"You can hit the [b]WHAPPY WALL[r] [once-now of vc-whappy-wall rule] you know where to whap the wall."
-"lone"	"laura"	"loan"	vh-loan-laura rule	false	true	true	false	happy hall	vc-lone-laura rule	vr-lone-laura rule	--	"You can summon [b]LONE LAURA[r] [once-now of vc-lone-laura rule] you are in the main ritual room."
-"known"	"nora"	--	--	false	true	true	false	happy hall	vc-known-nora rule	vr-known-nora rule	--	"You can summon [b]KNOWN NORA[r] [once-now of vc-known-nora rule] you are in the main ritual room."
+"lone"	"laura"	"loan"	vh-loan-laura rule	false	true	true	false	happy hall	vc-lone-laura rule	vr-lone-laura rule	--	--
+"known"	"nora"	--	--	false	true	true	false	happy hall	vc-known-nora rule	vr-known-nora rule	--	--
 "pappy"	"paul"	"pall"	vh-pappy-pall rule	false	true	true	false	happy hall	vc-pappy-paul rule	vr-pappy-paul rule	--	"You can summon [b]PAPPY PAUL[r] [once-now of vc-pappy-paul rule] you are in the main ritual room."
 "sappy"	"saul"	"sol"	vh-sappy-sol rule	false	true	true	false	happy hall	vc-sappy-saul rule	vr-sappy-saul rule	--	"You can summon [b]SAPPY SAUL[r] [once-now of vc-sappy-saul rule] you are in the main ritual room."
 "cappy"	"caul"	"call"	vh-cappy-call rule	false	true	true	false	happy hall	vc-cappy-caul rule	vr-cappy-caul rule	--	"You can ask for your [b]CAPPY CAUL[r] [once-now of vc-cappy-caul rule] everyone else is present for the ceremony."
@@ -188,7 +188,7 @@ section reeve row general flips
 
 a goodrhyme rule (this is the vc-believe-below rule):
 	if sco-believe-below is true:
-		vcal "You already believed in[if sco-heave-ho is true], and found,[end if] a passage down.";
+		vcal "You already believed in[if trappy trawl is visited], and took,[else if sco-heave-ho is true], and found,[end if] a passage down.";
 		already-done;
 	abide by the self rhymes check rule;
 	ready;
@@ -203,6 +203,9 @@ this is the vr-believe-below rule:
 	process the Reeve Row check passage down rule;
 
 a goodrhyme rule (this is the vc-leave-lo rule):
+	if trappy trawl is visited:
+		vcal "You've left Reeve Row for good.";
+		already-done;
 	if player is not in reeve row:
 		vcal "But you already left Reeve Row!";
 		already-done;
@@ -226,7 +229,7 @@ this is the vr-leave-lo rule:
 
 a goodrhyme rule (this is the vc-heave-ho rule):
 	if sco-heave-ho is true:
-		vcal "You already pulled the rug away!";
+		vcal "There [if trappy trawl is visited]was[else]is[end if] nothing more to heave besides the rayed rug.";
 		already-done;
 	abide by the self rhymes check rule;
 	if sco-oven-out is false:
@@ -247,6 +250,9 @@ this is the vr-heave-ho rule:
 	process the Reeve Row check passage down rule;
 
 a goodrhyme rule (this is the vc-grieve-grow rule):
+	if trappy trawl is visited:
+		vcal "That is the end goal, here. You are close.";
+		already-done;
 	if sco-grieve-grow is true:
 		vcal "Too much grief will undo the growing you did.";
 		already-done;
@@ -441,7 +447,7 @@ this is the vr-tutu rule:
 section passive pit
 
 a goodrhyme rule (this is the vc-massive-mitt rule):
-	if player is not in Ooh Ooh, unavailable;
+	if passive pit is not touchable, unavailable;
 	if sco-massive-mitt is true:
 		vcal "You already got the massive mitt from the passive pit!";
 		already-done;
@@ -485,7 +491,7 @@ a goodrhyme rule (this is the vc-baller-bear rule):
 this is the vr-baller-bear rule:
 	now sco-baller-bear is true;
 	if stare-score < 3:
-		say "The staller stare is visibly affected by the audacity of someone caring about them. Its eyes bug out. Is this a joke! Then the eyes blink. No, it's not crying, of course it's not, it's the squalor.";
+		say "The staller stare is visibly affected by the audacity of someone caring about them. Its eyes bug out. Is this a joke? Then the eyes blink. No, it's not crying, of course it's not, it's the squalor.";
 	else:
 		say "With the staller stare gone, you leave a bit of hope and genuine solicitousness for the next lost soul who stumbles here.";
 	evaluate-stare;
@@ -523,7 +529,7 @@ this is the vr-dollar-dare rule:
 section downed dork scoring
 
 a goodrhyme rule (this is the vc-found-fork rule):
-	if player is not in squalor square, unavailable;
+	if downed dork is not touchable, unavailable;
 	if sco-found-fork is true:
 		vcal "You and the dork already found the fork!";
 		already-done;
@@ -1148,7 +1154,7 @@ this is the vr-feet-fell rule:
 a goodrhyme rule (this is the vc-beat-bell rule):
 	if player is not in compete compel, unavailable;
 	if sco-sheet-shell is false:
-		vcp "You don't have any (door)bell to beat, yet. [if sco-sheet-shell is false]You need to be somewhere more homey[else]Perhaps one will ring soon enough[end if].";
+		vcp "You don't have any (door)bell to beat, yet. [if sco-feet-fell is false]You need to be somewhere more homey[else]Perhaps one will ring soon enough[end if].";
 		not-yet;
 	if sco-beat-bell is true:
 		vcal "You already managed to beat the bell when you needed to!";
