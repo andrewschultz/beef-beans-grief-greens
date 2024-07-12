@@ -4,6 +4,8 @@
 #-- TTC.PY generates test cases not found here
 #--
 
+#tricky todo: see about going each way AFTER solving e.g. laundring lair, e, w
+
 #NOTE: PRC.PY has a bug where it double-prints the text at the end if the final command fails
 
 file=reg-bbgg-thru-min.txt,min,minimum walkthrough
@@ -79,37 +81,46 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 
 @rej
 #testcase-reject-start-table-of-verb-checks-vc-baller-bear-rule
+#testcase-check-vc-baller-bear-rule-if-player-is-not-in-squalor-square
 >baller bear
 {$REJECT2}
 \\
+#testcase-check-vc-bappy-ball-rule-abide-by-the-ritual-stuff-rule
 #testcase-reject-start-table-of-verb-checks-vc-bappy-ball-rule
 >bappy ball
 {$REJECT2}
 \\
+#testcase-check-vc-beat-bell-rule-if-player-is-not-in-compete-compel
 #testcase-reject-start-table-of-verb-checks-vc-beat-bell-rule
 >beat bell
 {$REJECT2}
 \\
 #testcase-reject-start-table-of-verb-checks-vc-beet-boat-rule
+#testcase-check-vc-beet-boat-rule-abide-by-the-be-square-rule
 >beet boat
 {$REJECT2}
 \\
 #testcase-reject-start-table-of-verb-checks-vc-booboo-rule
+#testcase-check-vc-booboo-rule-if-player-is-not-in-ooh-ooh
 >boo boo
 {$REJECT2}
 \\
 #testcase-reject-start-table-of-verb-checks-vc-book-bard-rule
+#testcase-check-vc-book-bard-rule-abide-by-the-shardy-rule
 >book bard
 {$REJECT2}
 \\
 #testcase-reject-start-table-of-verb-checks-vc-caller-care-rule
+#testcase-check-vc-caller-care-rule-if-player-is-not-in-squalor-square
 >caller care
 {$REJECT2}
 \\
+#testcase-check-vc-cappy-caul-rule-abide-by-the-ritual-stuff-rule
 #testcase-reject-start-table-of-verb-checks-vc-cappy-caul-rule
 >cappy caul
 {$REJECT2}
 \\
+#testcase-check-vc-carrot-cake-rule-if-ferret-fake-is-not-touchable
 #testcase-reject-start-table-of-verb-checks-vc-carrot-cake-rule
 >carrot cake
 {$REJECT2}
@@ -118,82 +129,102 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 >chrome craw
 {$REJECT2}
 \\
+#testcase-check-vc-cook-card-rule-abide-by-the-shardy-rule
 #testcase-reject-start-table-of-verb-checks-vc-cook-card-rule
 >cook card
 {$REJECT2}
 \\
+#testcase-check-vc-cuckoo-rule-if-player-is-not-in-ooh-ooh
 #testcase-reject-start-table-of-verb-checks-vc-cuckoo-rule
 >coo koo
 {$REJECT2}
 \\
+#testcase-check-vc-dented-dials-rule-if-player-is-not-in-gap-goo
 #testcase-reject-start-table-of-verb-checks-vc-dented-dials-rule
 >dented dials
 {$REJECT2}
 \\
+#testcase-check-vc-dollar-dare-rule-if-player-is-not-in-squalor-square
 #testcase-reject-start-table-of-verb-checks-vc-dollar-dare-rule
 >dollar dare
 {$REJECT2}
 \\
+#testcase-check-vc-doodoo-rule-if-player-is-not-in-ooh-ooh
 #testcase-reject-start-table-of-verb-checks-vc-doodoo-rule
 >doo doo
 {$REJECT2}
 \\
+#testcase-check-vc-feet-fell-rule-if-player-is-not-in-compete-compel
 #testcase-reject-start-table-of-verb-checks-vc-feet-fell-rule
 >feet fell
 {$REJECT2}
 \\
+#testcase-check-vc-fight-fires-rule-if-light-lyres-are-not-touchable
 #testcase-reject-start-table-of-verb-checks-vc-fight-fires-rule
 >fight fires
 {$REJECT2}
 \\
+#testcase-check-vc-flopper-flea-rule-if-copper-key-is-not-touchable-and-bopper-bee-is-not-touchable
 #testcase-reject-start-table-of-verb-checks-vc-flopper-flea-rule
 >flopper flea
 {$REJECT2}
 \\
+#testcase-check-vc-found-fork-rule-if-downed-dork-is-not-touchable
 #testcase-reject-start-table-of-verb-checks-vc-found-fork-rule
 >found fork
 {$REJECT2}
 \\
+#testcase-check-vc-grey-gruel-rule-if-fey-fool-is-not-in-location-of-player
 #testcase-reject-start-table-of-verb-checks-vc-grey-gruel-rule
 >grey gruel
 {$REJECT2}
 \\
+#testcase-check-vc-sweet-swell-rule-abide-by-the-try-final-point-rule
 #testcase-reject-start-table-of-verb-checks-vc-heat-hell-rule
 >heat hell
 {$REJECT2}
 \\
+#testcase-check-vc-honeyed-ham-rule-if-moneyed-maam-is-not-in-location-of-player
 #testcase-reject-start-table-of-verb-checks-vc-honeyed-ham-rule
 >honeyed ham
 {$REJECT2}
 \\
+#testcase-check-vc-hook-hard-rule-if-shook-shard-is-not-in-location-of-player
 #testcase-reject-start-table-of-verb-checks-vc-hook-hard-rule
 >hook hard
 {$REJECT2}
 \\
+#testcase-check-vc-juju-rule-if-player-is-not-in-ooh-ooh
 #testcase-reject-start-table-of-verb-checks-vc-juju-rule
 >ju ju
 {$REJECT2}
 \\
+#testcase-check-vc-just-jello-rule-if-fussed-fellow-is-not-in-location-of-player
 #testcase-reject-start-table-of-verb-checks-vc-just-jello-rule
 >just jello
 {$REJECT2}
 \\
+#testcase-check-vc-known-nora-rule-if-player-is-not-in-happy-hall
 #testcase-reject-start-table-of-verb-checks-vc-known-nora-rule
 >known nora
 {$REJECT2}
 \\
+#testcase-check-vc-laundering-lair-rule-if-player-is-not-in-wandering-where
 #testcase-reject-start-table-of-verb-checks-vc-laundering-lair-rule
 >laundering lair
 {$REJECT2}
 \\
+#testcase-check-vc-lone-laura-rule-if-player-is-not-in-happy-hall
 #testcase-reject-start-table-of-verb-checks-vc-lone-laura-rule
 >lone laura
 {$REJECT2}
 \\
+#testcase-check-vc-look-lard-rule-abide-by-the-shardy-rule
 #testcase-reject-start-table-of-verb-checks-vc-look-lard-rule
 >look lard
 {$REJECT2}
 \\
+#testcase-check-vc-lovin-lout-rule-if-player-is-not-in-dove-n-doubt
 #testcase-reject-start-table-of-verb-checks-vc-lovin-lout-rule
 >lovin lout
 {$REJECT2}
@@ -202,126 +233,161 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 >massive mitt
 {$REJECT2}
 \\
+#testcase-check-vc-maundering-mare-rule-if-player-is-not-in-wandering-where
 #testcase-reject-start-table-of-verb-checks-vc-maundering-mare-rule
 >maundering mare
 {$REJECT2}
 \\
+#testcase-check-vc-meat-moat-rule-abide-by-the-be-square-rule
+#testcase-check-vc-meat-moat-rule-abide-by-the-be-square-rule # check meat moat case elsewhere
 #testcase-reject-start-table-of-verb-checks-vc-meat-moat-rule
 >meat moat
 {$REJECT2}
 \\
+#testcase-check-vc-meet-mel-rule-if-player-is-not-in-compete-compel
 #testcase-reject-start-table-of-verb-checks-vc-meet-mel-rule
 >meet mel
 {$REJECT2}
 \\
+#testcase-check-vc-meet-mel-rule-if-player-is-not-in-compete-compel
 #testcase-reject-start-table-of-verb-checks-vc-muumuu-rule
 >muu muu
 {$REJECT2}
 \\
+#testcase-check-vc-neat-note-rule-unless-meat-moat-is-touchable-or-beet-boat-is-touchable-or-bleat-bloat-is-touchable
 #testcase-reject-start-table-of-verb-checks-vc-neat-note-rule
 >neat note
 {$REJECT2}
 \\
+#testcase-check-vc-notice-knife-rule-if-lotus-life-is-not-touchable
 #testcase-reject-start-table-of-verb-checks-vc-notice-knife-rule
 >notice knife
 {$REJECT2}
 \\
+#testcase-check-vc-oven-out-rule-if-player-is-not-in-dove-n-doubt-and-oven-is-not-touchable
 #testcase-reject-start-table-of-verb-checks-vc-oven-out-rule
 >oven out
 {$REJECT2}
 \\
+#testcase-check-vc-pappy-paul-rule-abide-by-the-call-a-pal-rule
+#testcase-check-vc-pappy-paul-rule-abide-by-the-call-a-pal-rule # check before happy hall too
 #testcase-reject-start-table-of-verb-checks-vc-pappy-paul-rule
 >pappy paul
 {$REJECT2}
 \\
+#testcase-check-vc-penny-piles-rule-if-player-is-not-in-sty-sto
 #testcase-reject-start-table-of-verb-checks-vc-penny-piles-rule
 >penny piles
 {$REJECT2}
 \\
+#testcase-check-vc-pie-po-rule-if-player-is-not-in-sty-sto
 #testcase-reject-start-table-of-verb-checks-vc-pie-po-rule
 >pie po
 {$REJECT2}
 \\
+#testcase-check-vc-pluck-plate-rule-if-player-is-not-in-stuck-state
 #testcase-reject-start-table-of-verb-checks-vc-pluck-plate-rule
 >pluck plate
 {$REJECT2}
 \\
+#testcase-check-vc-pondering-pair-rule-if-player-is-not-in-wandering-where
 #testcase-reject-start-table-of-verb-checks-vc-pondering-pair-rule
 >pondering pair
 {$REJECT2}
 \\
+#testcase-check-vc-poohpooh-rule-if-player-is-not-in-ooh-ooh
 #testcase-reject-start-table-of-verb-checks-vc-poohpooh-rule
 >poo pooh
 {$REJECT2}
 \\
+#testcase-check-vc-potpourri-rule-if-player-is-not-in-slow-slurry
 #testcase-reject-start-table-of-verb-checks-vc-potpourri-rule
 >pot pourri
 {$REJECT2}
 \\
+#testcase-check-vc-prune-pride-rule-if-goon-guide-is-not-touchable
 #testcase-reject-start-table-of-verb-checks-vc-prune-pride-rule
 >prune pride
 {$REJECT2}
 \\
+#testcase-check-vc-sweet-swell-rule-abide-by-the-try-final-point-rule
 #testcase-reject-start-table-of-verb-checks-vc-repeat-repel-rule
 >repeat repel
 {$REJECT2}
 \\
+#testcase-check-vc-sappy-saul-rule-abide-by-the-call-a-pal-rule
+#testcase-check-vc-sappy-saul-rule-abide-by-the-call-a-pal-rule # see about trawl
 #testcase-reject-start-table-of-verb-checks-vc-sappy-saul-rule
 >sappy saul
 {$REJECT2}
 \\
+#testcase-check-vc-scrappy-scrawl-rule-abide-by-the-trawl-not-hall-rule
+#testcase-check-vc-scrappy-scrawl-rule-abide-by-the-trawl-not-hall-rule # in trawl, check
 #testcase-reject-start-table-of-verb-checks-vc-scrappy-scrawl-rule
 >scrappy scrawl
 {$REJECT2}
 \\
+#testcase-check-vc-see-soup-rule-if-tree-troop-is-not-touchable
 #testcase-reject-start-table-of-verb-checks-vc-see-soup-rule
 >see soup
 {$REJECT2}
 \\
+#testcase-check-vc-sheet-shell-rule-if-player-is-not-in-compete-compel
 #testcase-reject-start-table-of-verb-checks-vc-sheet-shell-rule
 >sheet shell
 {$REJECT2}
 \\
+#testcase-check-vc-shovin-shout-rule-if-player-is-not-in-dove-n-doubt
 #testcase-reject-start-table-of-verb-checks-vc-shovin-shout-rule
 >shovin shout
 {$REJECT2}
 \\
+#testcase-check-vc-soy-sauce-rule-if-player-is-not-in-toy-toss
 #testcase-reject-start-table-of-verb-checks-vc-soy-sauce-rule
 >soy sauce
 {$REJECT2}
 \\
+#testcase-check-vc-spoon-spied-rule-if-player-does-not-have-goon-guide
 #testcase-reject-start-table-of-verb-checks-vc-spoon-spied-rule
 >spoon spied
 {$REJECT2}
 \\
+#testcase-check-vc-squandering-square-rule-if-player-is-not-in-wandering-where
 #testcase-reject-start-table-of-verb-checks-vc-squandering-square-rule
 >squandering square
 {$REJECT2}
 \\
+#testcase-check-vc-sweet-swell-rule-abide-by-the-try-final-point-rule
 #testcase-reject-start-table-of-verb-checks-vc-sweet-swell-rule
 >sweet swell
 {$REJECT2}
 \\
 #testcase-reject-start-table-of-verb-checks-vc-tutu-rule
+#testcase-check-vc-tutu-rule-if-player-is-not-in-ooh-ooh
 >tu tu
 {$REJECT2}
 \\
+#testcase-check-vc-veggie-ville-rule-if-player-is-not-in-edgy-ill
 #testcase-reject-start-table-of-verb-checks-vc-veggie-ville-rule
 >veggie ville
 {$REJECT2}
 \\
+#testcase-check-vc-whappy-wall-rule-abide-by-the-trawl-not-hall-rule
 #testcase-reject-start-table-of-verb-checks-vc-whappy-wall-rule
 >whappy wall
 {$REJECT2}
 \\
+#testcase-check-vc-wheat-well-rule-if-player-is-not-in-compete-compel
 #testcase-reject-start-table-of-verb-checks-vc-wheat-well-rule
 >wheat well
 {$REJECT2}
 \\
+#testcase-check-vc-white-wires-rule-if-light-lyres-are-not-touchable
 #testcase-reject-start-table-of-verb-checks-vc-white-wires-rule
 >white wires
 {$REJECT2}
 \\
+#testcase-check-vc-yappy-yall-rule-abide-by-the-ritual-stuff-rule
 #testcase-reject-start-table-of-verb-checks-vc-yappy-yall-rule
 >yappy yall
 {$REJECT2}
@@ -425,6 +491,18 @@ You notice one dot in the corner of the leet learner.
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (2.00, 1.00.)
 However, it's really dim, as if you don't need to do or think whatever there is to do or think.
 
+@rej
+##balance undos
+>believe below
+by one point
+\\
+#testcase-check-vc-believe-below-rule-if-sco-believe-below-is-true
+>believe below
+You already believed in a passage down.
+\\
+>undo
+>undo
+
 @!min
 >sassed ceased
 by one point
@@ -464,7 +542,7 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 >jade jug
 by one point
 \\
-#testcase-values-from-number-of-rayed-rug-is-2753 #jug solved
+#+testcase-values-from-number-of-rayed-rug-is-2753 #jug solved
 >ll rayed rug
 You notice two dots in the corner of the leet learner.
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.50.)
@@ -481,7 +559,7 @@ by one point
 {$SCOS}
 
 @hfull
-#testcase-values-from-number-of-rayed-rug-is-2753 #mug solved
+#+testcase-values-from-number-of-rayed-rug-is-2753 #mug solved
 >ll rayed rug
 You notice two dots in the corner of the leet learner.
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.50.)
@@ -502,10 +580,17 @@ That has to be really, really close, though! Perhaps a potentially hearty interj
 How to leave with your head held high, with a forceful word showing you're willing to take on the world?
 
 @hfull
-#testcase-values-from-number-of-rayed-rug-is-2753 #mug and jug solved
+#+testcase-values-from-number-of-rayed-rug-is-2753 #mug and jug solved
 >ll rayed rug
 You notice one dot in the corner of the leet learner.
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
+
+@hom
+#testcase-homonym-detail-vh-leave-low-rule-default
+>leave low
+You're already feeling a bit low. You don't need to advertise it, or sink lower.
+That has to be really, really close, though! Perhaps a potentially hearty interjection would work better.
+How to leave with your head held high, with a forceful word showing you're willing to take on the world?
 
 >leave lo
 by one point
@@ -519,6 +604,11 @@ by one point
 >score
 {$SCOS}
 
+@rej
+#testcase-check-vc-leave-lo-rule-if-player-is-not-in-reeve-row
+>leave lo
+But you already left Reeve Row!
+
 @hfull
 #testcase-values-from-number-of-wandering-where-is-2955
 >ll
@@ -526,17 +616,37 @@ You notice four dots in the corner of the leet learner.
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, -0.50.)
 
 @rej
+#testcase-check-vc-jade-jug-rule-if-rayed-rug-is-not-touchable
 #testcase-reject-start-table-of-verb-checks-vc-jade-jug-rule
 >jade jug
 {$REJECT2}
 \\
+#testcase-check-vc-made-mug-rule-if-rayed-rug-is-not-touchable
 #testcase-reject-start-table-of-verb-checks-vc-made-mug-rule
 >made mug
 {$REJECT2}
 \\
+#testcase-check-vc-played-plug-rule-if-rayed-rug-is-not-touchable
 #testcase-reject-start-table-of-verb-checks-vc-played-plug-rule
 >played plug
 {$REJECT2}
+
+@rej+
+# nonstandard case rejects here ... I'd like to keep them separate from the standard "can't do this"
+#testcase-reject-start-table-of-verb-checks-vc-grieve-grow-rule
+#testcase-check-vc-grieve-grow-rule-abide-by-the-self-rhymes-check-rule
+>grieve grow
+That seems worth doing, but this isn't the right place.
+\\
+#testcase-reject-start-table-of-verb-checks-vc-heave-ho-rule
+#testcase-check-vc-heave-ho-rule-abide-by-the-self-rhymes-check-rule
+>heave ho
+That seems worth doing, but this isn't the right place.
+\\
+#testcase-reject-start-table-of-verb-checks-vc-believe-below-rule
+#testcase-check-vc-believe-below-rule-abide-by-the-self-rhymes-check-rule
+>believe below
+That seems worth doing, but this isn't the right place.
 
 @ha
 #testcase-ha-half-table-of-verb-checks-16-chrome
@@ -760,6 +870,11 @@ by one point
 >score
 {$SCOS}
 
+@rej
+#testcase-check-vc-lovin-lout-rule-if-sco-lovin-lout-is-true
+>lovin lout
+The lovin' lout already appeared to help you!
+
 @ha
 #+testcase-ha-half-table-of-verb-checks-28-shout
 >zshovin shout
@@ -788,7 +903,7 @@ No, here should still be the place for slight colloquialisms.
 You notice one dot in the corner of the leet learner.
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 0.00.)
 \\
-#+testcase-values-from-number-of-lovin-lout-is-2705
+#testcase-values-from-number-of-lovin-lout-is-2754
 >ll lout
 You notice one dot in the corner of the leet learner.
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
@@ -816,7 +931,7 @@ by one point
 You notice one dot in the corner of the leet learner.
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, -2.00.)
 \\
-#+testcase-values-from-number-of-lovin-lout-is-2705
+#+testcase-values-from-number-of-lovin-lout-is-2754
 >ll lout
 You notice one dot in the corner of the leet learner.
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, -1.00.)
@@ -847,7 +962,7 @@ The Leet Learner shows nothing, which makes sense. The oven's been taken care of
 You are not in a garden. Try an interjection instead.
 
 @hfull
-#testcase-values-from-number-of-reeve-row-is-2753
+#+testcase-values-from-number-of-reeve-row-is-2753
 >ll
 You notice three dots in the corner of the leet learner.
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 0.67.)
@@ -857,7 +972,7 @@ by one point
 }}SCORE++
 
 @hfull
-#testcase-values-from-number-of-reeve-row-is-2753
+#+testcase-values-from-number-of-reeve-row-is-2753
 >ll
 You notice two dots in the corner of the leet learner.
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.50, 1.50.)
@@ -892,6 +1007,12 @@ You can get a SPOON SPIED once you have managed to consult the goon guide with a
 >ll guide
 You notice two dots in the corner of the leet learner.
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 0.00.)
+
+@hom
+#testcase-homonym-reject-table-of-verb-checks-vh-prune-pried-rule-pried
+#testcase-homonym-detail-vh-prune-pried-rule-default
+>prune pried
+No, no food is stuck in the goon guide.
 
 >prune pride
 by one point
@@ -1081,6 +1202,23 @@ by one point
 You notice one dot in the corner of the leet learner.
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, -1.00.)
 
+@rej
+#+testcase-check-vc-look-lard-rule-abide-by-the-shardy-rule
+>look lard
+The shard is calling to you. You must grasp it and find where it leads before searching for anything that concrete. But you feel you're on the right path.
+#+testcase-check-vc-cook-card-rule-abide-by-the-shardy-rule
+>cook card
+The shard is calling to you. You must grasp it and find where it leads before searching for anything that concrete. But you feel you're on the right path.
+#+testcase-check-vc-book-bard-rule-abide-by-the-shardy-rule
+>book bard
+The shard is calling to you. You must grasp it and find where it leads before searching for anything that concrete. But you feel you're on the right path.
+\\
+#testcase-think-table-of-verb-checks-vc-book-bard-rule
+#testcase-think-table-of-verb-checks-vc-cook-card-rule
+#testcase-think-table-of-verb-checks-vc-look-lard-rule
+>think
+You can exclaim LOOK LARD once you've seen where the shook shard can take you.
+
 >hook hard
 by one point
 
@@ -1269,7 +1407,7 @@ by one point
 {$SCOS}
 
 @hfull
-#testcase-values-from-number-of-wandering-where-is-2955
+#+testcase-values-from-number-of-wandering-where-is-2955
 >ll
 You notice three dots in the corner of the leet learner.
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, -0.33.)
@@ -1427,18 +1565,23 @@ by one point
 >score
 {$SCOS}
 
+@rej
+#testcase-check-vc-dollar-dare-rule-if-sco-dollar-dare-is-true
+>dollar dare
+You already alerted the staller stare to the dollar dare.
+
 @hom
 #testcase-homonym-reject-table-of-verb-checks-collar
 >collar care
 The Leet Learner shakes back and forth. Something you said sounded right, but it didn't feel right.
 
 @hfull
-#testcase-values-from-number-of-squalor-square-is-2856
+#+testcase-values-from-number-of-squalor-square-is-2856
 >ll
 You notice two dots in the corner of the leet learner.
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, -2.00.)
 \\
-#testcase-values-from-number-of-staller-stare-is-2855
+#+testcase-values-from-number-of-staller-stare-is-2855
 >ll staller stare
 You notice two dots in the corner of the leet learner.
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, -1.00.)
@@ -1450,6 +1593,11 @@ by one point
 @all
 >score
 {$SCOS}
+
+@rej
+#testcase-check-vc-caller-care-rule-if-sco-caller-care-is-true
+>caller care
+You already provided caller care!
 
 @ha
 #+testcase-ha-half-table-of-verb-checks-18-baller
@@ -1470,7 +1618,7 @@ The Leet Learner shakes back and forth. Something you said sounded right, but it
 The Leet Learner shakes back and forth. Something you said sounded right, but it didn't feel right.
 
 @hfull
-#testcase-values-from-number-of-squalor-square-is-2856
+#+testcase-values-from-number-of-squalor-square-is-2856
 >ll
 You notice one dot in the corner of the leet learner.
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, -2.00.)
@@ -1486,6 +1634,11 @@ by one point
 @all
 >score
 {$SCOS}
+
+@rej
+#testcase-check-vc-baller-bear-rule-if-sco-baller-bear-is-true
+>baller bear
+You already summoned a baller bear!
 
 @ha
 #testcase-ha-half-table-of-verb-checks-21-neat
@@ -1513,11 +1666,11 @@ by one point
 {$YELLOWCORE}
 
 @hfull
-#testcase-values-from-number-of-squalor-square-is-2856
+#+testcase-values-from-number-of-squalor-square-is-2856
 >ll
 Nothing comes up. The general area here has been changed enough.
 \\
-#testcase-values-from-number-of-staller-stare-is-2855
+#+testcase-values-from-number-of-staller-stare-is-2855
 >ll staller stare
 DEBUG: can't see any such thing error.
 
@@ -1546,7 +1699,7 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 >beet boat
 by one point
 \\
-#testcase-values-from-number-of-neat-note-is-2704 #beet boat solved
+#+testcase-values-from-number-of-neat-note-is-2704 #beet boat solved
 >ll neat note
 You notice one dot in the corner of the leet learner.
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
@@ -1596,10 +1749,15 @@ by one point
 You needn't make the acquaintance of anything minuscule. You need more sizable food portions.
 
 @hfull
-#testcase-values-from-number-of-neat-note-is-2704 #nothing solved
+#+testcase-values-from-number-of-neat-note-is-2704 #nothing solved
 >ll note
 You notice two dots in the corner of the leet learner.
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
+
+@hom
+#testcase-homonym-detail-vh-meet-mote-rule-default
+>meet mote
+You needn't make the acquaintance of anything minuscule. You need more sizable food portions.
 
 >meat moat
 by one point
@@ -1620,6 +1778,11 @@ There's no competition here, violent, friendly, racing or otherwise.
 You notice one dot in the corner of the leet learner.
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 
+@hom
+#testcase-homonym-detail-vh-beat-boat-rule-default
+>beat boat
+There's no competition here, violent, friendly, racing or otherwise.
+
 >beet boat
 by one point
 }}SCORE++
@@ -1629,6 +1792,11 @@ by one point
 {$SCOS}
 
 @rej
+#testcase-check-vc-beet-boat-rule-if-sco-beet-boat-is-true
+>beet boat
+One beet boat is quite enough!
+
+@rej+
 >white wires
 You can't see anything that might have white wires! Well, anything safe to handle!
 \\
@@ -1691,10 +1859,15 @@ by one point
 Summoning the undead is one way to remember those who passed on, but it's a high-risk one.
 
 @hfull
-#testcase-values-from-number-of-light-lyres-is-2755
+#+testcase-values-from-number-of-light-lyres-is-2755
 >ll lyres
 You notice one dot in the corner of the leet learner.
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
+
+@hom
+#testcase-homonym-detail-vh-wight-wires-rule-default
+>wight wires
+Summoning the undead is one way to remember those who passed on, but it's a high-risk one.
 
 >white wires
 by one point
@@ -1859,22 +2032,6 @@ That location or thing doesn't exist or isn't known to you yet.
 >soy saws
 Well, maybe, but you can't eat saws.
 
-@hfull
-#testcase-values-from-number-of-toy-toss-is-2654
->ll
-You notice one dot in the corner of the leet learner.
-The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 1.00.)
-\\
-#testcase-values-from-number-of-boy-boss-roy-ross-is-5308
->ll
-You notice one dot in the corner of the leet learner.
-The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 1.00.)
-\\
-#testcase-values-from-number-of-joy-jaws-is-2654
->ll
-You notice one dot in the corner of the leet learner.
-The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 1.00.)
-
 >soy sauce
 by one point
 }}SCORE++
@@ -1896,6 +2053,12 @@ A guide gong rings to notify you that you don't need to go back through Squalor 
 >ll
 You notice two dots in the corner of the leet learner.
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, -1.00.)
+
+@hom
+#testcase-homonym-reject-table-of-verb-checks-vh-maundering-mayor-rule-mayor
+#testcase-homonym-detail-vh-maundering-mayor-rule-default
+>maundering mayor
+No, something sentient, not someone.
 
 >maundering mare
 by one point
@@ -2131,6 +2294,11 @@ by one point
 >score
 {$SCOS}
 
+@rej
+#testcase-check-vc-dented-dials-rule-if-sco-dented-dials-is-true
+>dented dials
+You already got the dented dials!
+
 @hfull
 #testcase-values-from-number-of-ferret-fake-is-2804
 >ll ferret
@@ -2271,6 +2439,15 @@ That location or thing doesn't exist or isn't known to you yet.
 You notice one dot in the corner of the leet learner.
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.50, 0.00.)
 
+@rej
+#testcase-check-vc-pie-po-rule-if-sco-penny-piles-is-false
+>pie po
+Yes, that is the cheapest item not on the menu, but you don't even have the measly cash to buy it.
+\\
+#testcase-think-table-of-verb-checks-vc-pie-po-rule
+>think
+You can buy a PIE PO once you have currency.
+
 >penny piles
 by one point
 }}SCORE++
@@ -2278,6 +2455,11 @@ by one point
 @all
 >score
 {$SCOS}
+
+@rej
+#+testcase-think-table-of-verb-checks-vc-pie-po-rule
+>think
+You can buy a PIE PO now you have currency.
 
 @ha
 #+testcase-ha-half-table-of-verb-checks-48-pie
@@ -2290,7 +2472,6 @@ by one point
 
 @hom
 #testcase-homonym-reject-table-of-verb-checks-vh-pi-poe-rule-pi-poe
-#testcase-homonym-detail-vh-pi-poe-rule-if-the-player's-command-includes-pi
 >pi po
 Pi times the radius squared, and you've got something.
 \\
@@ -2313,6 +2494,19 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 You notice one dot in the corner of the leet learner.
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, -1.00.)
 
+@hom
+#testcase-homonym-detail-vh-pi-poe-rule-else-if-h1-is-true
+>pi po
+Pi times the radius squared, and you've got something.
+\\
+#testcase-homonym-detail-vh-pi-poe-rule-if-h1-is-true-and-h2-is-true
+>pie poe
+No, not the author, a descriptor.
+\\
+#testcase-homonym-detail-vh-pi-poe-rule-default
+>pi poe
+Double narrow misses with the words. But you must be close!
+
 >pie po
 by one point
 }}SCORE++
@@ -2332,7 +2526,7 @@ by one point
 Yes to thinking, no to disrupting thinking.
 
 @hfull
-#testcase-values-from-number-of-wandering-where-is-2955
+#+testcase-values-from-number-of-wandering-where-is-2955
 >ll
 You notice one dot in the corner of the leet learner.
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, -1.00.)
@@ -2472,17 +2666,17 @@ by one point
 {$SCOS}
 
 @hfull
-#testcase-values-from-number-of-ooh-ooh-is-2653
+#+testcase-values-from-number-of-ooh-ooh-is-2653
 >ll
 You notice six dots in the corner of the leet learner.
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-0.17, -0.17.)
 \\
-#testcase-values-from-number-of-zuzu-is-2602
+#+testcase-values-from-number-of-zuzu-is-2602
 >ll zuzu
 You notice six dots in the corner of the leet learner.
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.83, 0.83.)
 \\
-#testcase-values-from-number-of-loulou-is-2653
+#+testcase-values-from-number-of-loulou-is-2653
 >ll loulou
 You notice six dots in the corner of the leet learner.
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-0.17, -0.17.)
@@ -2503,17 +2697,17 @@ Cows aren't quite it, here. But you have the right sound(s).
 The Leet Learner vibrates back and forth rather violently. You must have been very close.
 
 @hfull
-#testcase-values-from-number-of-ooh-ooh-is-2653
+#+testcase-values-from-number-of-ooh-ooh-is-2653
 >ll
 You notice five dots in the corner of the leet learner.
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 \\
-#testcase-values-from-number-of-zuzu-is-2602
+#+testcase-values-from-number-of-zuzu-is-2602
 >ll zuzu
 You notice five dots in the corner of the leet learner.
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
 \\
-#testcase-values-from-number-of-loulou-is-2653
+#+testcase-values-from-number-of-loulou-is-2653
 >ll loulou
 You notice five dots in the corner of the leet learner.
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
@@ -2527,17 +2721,17 @@ by one point
 {$SCOS}
 
 @hfull
-#testcase-values-from-number-of-ooh-ooh-is-2653
+#+testcase-values-from-number-of-ooh-ooh-is-2653
 >ll
 You notice four dots in the corner of the leet learner.
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 \\
-#testcase-values-from-number-of-zuzu-is-2602
+#+testcase-values-from-number-of-zuzu-is-2602
 >ll zuzu
 You notice four dots in the corner of the leet learner.
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
 \\
-#testcase-values-from-number-of-loulou-is-2653
+#+testcase-values-from-number-of-loulou-is-2653
 >ll loulou
 You notice four dots in the corner of the leet learner.
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
@@ -2612,19 +2806,19 @@ The pride-prong you summoned earlier pokes you to go and see what's ahead, even 
 >undo
 
 @hfull
-#testcase-values-from-number-of-ooh-ooh-is-2653
+#+testcase-values-from-number-of-ooh-ooh-is-2653
 >ll
 You notice three dots in the corner of the leet learner.
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.33, 0.33.)
 However, it's really dim, as if you don't need to do or think whatever there is to do or think.
 \\
-#testcase-values-from-number-of-zuzu-is-2602
+#+testcase-values-from-number-of-zuzu-is-2602
 >ll zuzu
 You notice three dots in the corner of the leet learner.
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.33, 1.33.)
 However, it's really dim, as if you don't need to do or think whatever there is to do or think.
 \\
-#testcase-values-from-number-of-loulou-is-2653
+#+testcase-values-from-number-of-loulou-is-2653
 >ll loulou
 You notice three dots in the corner of the leet learner.
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.33, 0.33.)
@@ -2641,20 +2835,29 @@ by one point
 {$SCOS}
 
 @hfull
-#testcase-values-from-number-of-ooh-ooh-is-2653
+#+testcase-values-from-number-of-ooh-ooh-is-2653
 >ll
 You notice two dots in the corner of the leet learner.
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, 0.50.)
 \\
-#testcase-values-from-number-of-zuzu-is-2602
+#+testcase-values-from-number-of-zuzu-is-2602
 >ll zuzu
 You notice two dots in the corner of the leet learner.
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.50, 1.50.)
 \\
-#testcase-values-from-number-of-loulou-is-2653
+#+testcase-values-from-number-of-loulou-is-2653
 >ll loulou
 You notice two dots in the corner of the leet learner.
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, 0.50.)
+
+@hom
+#testcase-homonym-reject-table-of-verb-checks-do-dew
+>do do
+The Leet Learner shakes back and forth. Something you said sounded right, but it didn't feel right.
+\\
+#testcase-homonym-reject-table-of-verb-checks-do-dew
+>dew dew
+The Leet Learner shakes back and forth. Something you said sounded right, but it didn't feel right.
 
 >doodoo
 by one point
@@ -2667,17 +2870,17 @@ by one point
 {$SCOS}
 
 @hfull
-#testcase-values-from-number-of-ooh-ooh-is-2653
+#+testcase-values-from-number-of-ooh-ooh-is-2653
 >ll
 You notice one dot in the corner of the leet learner.
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
 \\
-#testcase-values-from-number-of-zuzu-is-2602
+#+testcase-values-from-number-of-zuzu-is-2602
 >ll zuzu
 You notice one dot in the corner of the leet learner.
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (2.00, 2.00.)
 \\
-#testcase-values-from-number-of-loulou-is-2653
+#+testcase-values-from-number-of-loulou-is-2653
 >ll loulou
 You notice one dot in the corner of the leet learner.
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
@@ -2693,15 +2896,15 @@ by one point
 {$SCOS}
 
 @hfull
-#testcase-values-from-number-of-ooh-ooh-is-2653
+#+testcase-values-from-number-of-ooh-ooh-is-2653
 >ll
 Nothing comes up. The general area here has been changed enough.
 \\
-#testcase-values-from-number-of-zuzu-is-2602
+#+testcase-values-from-number-of-zuzu-is-2602
 >ll zuzu
 Nothing comes up. You've rhymed Zuzu as much as you needed to.
 \\
-#testcase-values-from-number-of-loulou-is-2653
+#+testcase-values-from-number-of-loulou-is-2653
 >ll loulou
 Nothing comes up. You've rhymed Loulou as much as you needed to.
 
@@ -3148,6 +3351,11 @@ by one point
 >score
 {$SCOS}
 
+@rej
+#testcase-check-vc-potpourri-rule-if-sco-potpourri-is-true
+>potpourri
+You have quite enough potpourri!
+
 @!min
 >u
 
@@ -3279,6 +3487,12 @@ That guide gong, again, rings to notify you that you don't need to go back throu
 
 >in
 
+@hom
+#testcase-homonym-reject-table-of-verb-checks-vh-greave-grow-rule-greave
+#testcase-homonym-detail-vh-greave-grow-rule-default
+>greave grow
+This isn't a warrior quest, here. No need for armor.
+
 >grieve grow
 by one point
 }}SCORE++
@@ -3299,6 +3513,11 @@ by one point
 @all
 >score
 {$SCOS}
+
+@rej
+#+testcase-check-vc-believe-below-rule-if-sco-believe-below-is-true
+>believe below
+You already believed in, and found, a passage down.
 
 @gt
 #+testcase-goto-table-of-noways-reeve-row
@@ -3403,7 +3622,7 @@ That location or thing doesn't exist or isn't known to you yet.
 That guide gong, again, rings to notify you that you don't need to go back through Wandering ... Where?.
 
 @hfull
-#testcase-values-from-number-of-reeve-row-is-2753
+#+testcase-values-from-number-of-reeve-row-is-2753
 >ll
 Nothing comes up. The general area here has been changed enough.
 
@@ -3412,6 +3631,23 @@ Nothing comes up. The general area here has been changed enough.
 @all
 #testcase-room-names-trappy-trawl
 `Trappy Trawl
+
+@rej
+#+testcase-reject-end-table-of-verb-checks-vc-believe-below-rule
+>believe below
+You already believed in, and took, a passage down.
+\\
+#+testcase-reject-end-table-of-verb-checks-vc-grieve-grow-rule
+>grieve grow
+That is the end goal, here. You are close.
+\\
+#+testcase-reject-end-table-of-verb-checks-vc-leave-lo-rule
+>leave lo
+You've left Reeve Row for good.
+\\
+#+testcase-reject-end-table-of-verb-checks-vc-leave-lo-rule
+>heave ho
+There was nothing more to heave besides the rayed rug.
 
 @gt
 #testcase-goto-table-of-noways-trappy-trawl
@@ -3519,6 +3755,7 @@ You notice one dot in the corner of the leet learner.
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
 
 @rej
+#+testcase-check-vc-whappy-wall-rule-abide-by-the-trawl-not-hall-rule
 >whappy wall
 That could be helpful, but you have no indication where a wall might sound whappy. Well, not yet. You need to search for evidence.
 \\
@@ -3531,7 +3768,7 @@ by one point
 }}SCORE++
 
 @hfull
-#testcase-values-from-number-of-trappy-trawl-is-2805
+#+testcase-values-from-number-of-trappy-trawl-is-2805
 >ll
 You notice one dot in the corner of the leet learner.
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, -1.00.)
@@ -3567,12 +3804,15 @@ That might be someone to call once you are in the main ritual room.
 >pappy paul
 That might be someone to call once you are in the main ritual room.
 \\
+#+testcase-check-vc-cappy-caul-rule-abide-by-the-ritual-stuff-rule
 >cappy caul
 That might be an interesting part of the ritual once you make it to the main ritual room.
 \\
+#+testcase-check-vc-yappy-yall-rule-abide-by-the-ritual-stuff-rule
 >yappy yall
 That might be an interesting part of the ritual once you make it to the main ritual room.
 \\
+#+testcase-check-vc-bappy-ball-rule-abide-by-the-ritual-stuff-rule
 >bappy ball
 That might be an interesting part of the ritual once you make it to the main ritual room.
 \\
@@ -3722,12 +3962,15 @@ That location or thing doesn't exist or isn't known to you yet.
 {$YELLOWCORE}
 
 @rej
+#testcase-check-vc-cappy-caul-rule-if-hall-guest-score-<-4
 >cappy caul
 You can't wear the ceremonial gear until everyone's here!
 \\
+#testcase-check-vc-yappy-yall-rule-if-sco-cappy-caul-is-false
 >yappy yall
 You need to retrieve your ceremonial garb first!
 \\
+#testcase-check-vc-bappy-ball-rule-if-sco-yappy-yall-is-false
 >bappy ball
 Sport, eventually, to burn the calories off. But before that, discussion.
 
@@ -3758,7 +4001,7 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 >sappy saul
 by one point
 \\
-#testcase-values-from-number-of-happy-hall-is-2754
+#+testcase-values-from-number-of-happy-hall-is-2754
 >ll
 You notice one dot in the corner of the leet learner.
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
@@ -3775,6 +4018,11 @@ by one point
 #testcase-homonym-reject-table-of-verb-checks-vh-sappy-sol-rule-sol
 >sappy sol
 Hmm. The right track, but a too widely smiling sun might not bring the right vibe. Oh, it might scorch everyone to death, too.
+
+@rej
+#testcase-check-vc-pappy-paul-rule-if-sco-pappy-paul-is-true
+>pappy paul
+You already summoned Pappy Paul!
 
 @all
 >score
@@ -3828,7 +4076,7 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 >known nora
 by one point
 \\
-#testcase-values-from-number-of-own-aura-is-5357
+#+testcase-values-from-number-of-own-aura-is-5357
 >ll aura
 You notice one dot in the corner of the leet learner.
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.50, 1.50.)
@@ -3859,7 +4107,8 @@ by one point
 {$SCOS}
 
 @hfull
-#testcase-values-from-number-of-own-aura-is-5357
+#
++testcase-values-from-number-of-own-aura-is-5357
 >ll aura
 Nothing comes up. You've rhymed the own aura as much as you needed to.
 
@@ -3886,7 +4135,7 @@ You can have everyone play BAPPY BALL once the feast is complete, to burn off ca
 You've called everyone you need. You need something physical.
 
 @hfull
-#testcase-values-from-number-of-happy-hall-is-2754
+#+testcase-values-from-number-of-happy-hall-is-2754
 >ll
 You notice one dot in the corner of the leet learner.
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
@@ -3904,6 +4153,11 @@ by one point
 There's no going back. The ceremony must be finished.
 
 @rej
+#testcase-check-vc-cappy-caul-rule-if-sco-cappy-caul-is-true
+>cappy caul
+You already retrieved your ceremonial garb!
+
+@rej+
 #+testcase-think-table-of-verb-checks-vc-yappy-yall-rule
 >think
 (CAN DO NOW) You can get everyone YAPPY YALL now preparations for the ceremony and feast are complete.
@@ -3919,7 +4173,7 @@ You can have everyone play BAPPY BALL once the feast is complete, to burn off ca
 {$GREENCORE}
 
 @hfull
-#testcase-values-from-number-of-happy-hall-is-2754
+#+testcase-values-from-number-of-happy-hall-is-2754
 >ll
 You notice one dot in the corner of the leet learner.
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
@@ -3959,10 +4213,16 @@ You already held a discussion. Now it is time for games.
 {$REJECT2}
 
 @hfull
-#testcase-values-from-number-of-happy-hall-is-2754
+#+testcase-values-from-number-of-happy-hall-is-2754
 >ll
 You notice one dot in the corner of the leet learner.
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
+
+@hom
+#testcase-homonym-reject-table-of-verb-checks-vh-bappy-bawl-rule-bawl
+#testcase-homonym-detail-vh-bappy-bawl-rule-default
+>bappy bawl
+Too noisy. And whatever gets bapped should be inanimate.
 
 >bappy ball
 by one point
@@ -4122,6 +4382,11 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 by one point
 }}SCORE++
 
+@rej
+#testcase-check-vc-feet-fell-rule-if-sco-feet-fell-is-true
+>feet fell
+You already slid to a more peaceful space!
+
 @all
 >score
 {$SCOS}
@@ -4141,13 +4406,13 @@ by one point
 {$SCOS}
 
 @hom
+#testcase-homonym-reject-table-of-verb-checks-vh-beet-meat-end-rule-beet
 #testcase-homonym-detail-vh-beet-meat-end-rule-default
-#testcase-homonym-reject-table-of-verb-checks-vh-beet-meat-end-rule-meat
 >beet bell
 You already got food like that for the feast. You need a verb here.
 
 @hfull
-#testcase-values-from-number-of-compete-compel-is-2856
+#+testcase-values-from-number-of-compete-compel-is-2856
 >ll
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, 0.00.)
 \\
@@ -4163,6 +4428,11 @@ by one point
 >score
 {$SCOS}
 
+@rej
+#testcase-check-vc-beat-bell-rule-if-sco-beat-bell-is-true
+>beat bell
+You already managed to beat the bell when you needed to!
+
 @hom
 #+testcase-homonym-detail-vh-beet-meat-end-rule-default
 #+testcase-homonym-reject-table-of-verb-checks-vh-beet-meat-end-rule-meat
@@ -4170,11 +4440,11 @@ by one point
 You already got food like that for the feast. You need a verb here.
 
 @hfull
-#testcase-values-from-number-of-compete-compel-is-2856
+#+testcase-values-from-number-of-compete-compel-is-2856
 >ll
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, -1.00.)
 \\
-#testcase-values-from-number-of-sheet-shell-is-2755
+#+testcase-values-from-number-of-sheet-shell-is-2755
 >ll sheet shell
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, -2.00.)
 
@@ -4220,15 +4490,24 @@ You get a sense such a judgment would be more appropriate once you've examined t
 \\
 >repeat repel
 You get a sense such a judgment would be more appropriate once you've examined the book you just got.
+\\
+#+testcase-check-vc-heat-hell-rule-abide-by-the-try-final-point-rule
+#+testcase-check-vc-repeat-repel-rule-abide-by-the-try-final-point-rule
+#+testcase-check-vc-sweet-swell-rule-abide-by-the-try-final-point-rule
+>think
+You need a story to reflect on before concluding REPEAT REPEL.
+You need a story to reflect on before concluding HEAT HELL.
+You need a story to reflect on before concluding SWEET SWELL.
+!CAN DO NOW
 
 @hfull
-#testcase-values-from-number-of-compete-compel-is-2856
+#+testcase-values-from-number-of-compete-compel-is-2856
 >ll
 You notice three dots in the corner of the leet learner.
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.67.)
 !only one thing to do
 \\
-#testcase-values-from-number-of-sheet-shell-is-2755
+#+testcase-values-from-number-of-sheet-shell-is-2755
 >ll sheet shell
 You notice three dots in the corner of the leet learner.
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, -0.33.)
@@ -4237,16 +4516,21 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 >x leet lel
 
 @rej
+#testcase-think-table-of-verb-checks-vc-heat-hell-rule
+#testcase-think-table-of-verb-checks-vc-repeat-repel-rule
+#testcase-think-table-of-verb-checks-vc-sweet-swell-rule
+>think
+(CAN DO NOW) You need a story to reflect on before concluding REPEAT REPEL.
+(CAN DO NOW) You need a story to reflect on before concluding HEAT HELL.
+(CAN DO NOW) You need a story to reflect on before concluding SWEET SWELL.
+
+@rej+
 #testcase-reject-end-table-of-verb-checks-vc-baller-bear-rule
 >baller bear
 {$REJECT2}
 \\
 #testcase-reject-end-table-of-verb-checks-vc-bappy-ball-rule
 >bappy ball
-{$REJECT2}
-\\
-#testcase-reject-end-table-of-verb-checks-vc-believe-below-rule
->believe below
 {$REJECT2}
 \\
 #testcase-reject-end-table-of-verb-checks-vc-booboo-rule
@@ -4305,14 +4589,6 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 >grey gruel
 {$REJECT2}
 \\
-#testcase-reject-end-table-of-verb-checks-vc-grieve-grow-rule
->grieve grow
-{$REJECT2}
-\\
-#testcase-reject-end-table-of-verb-checks-vc-heave-ho-rule
->heave ho
-{$REJECT2}
-\\
 #testcase-reject-end-table-of-verb-checks-vc-honeyed-ham-rule
 >honeyed ham
 {$REJECT2}
@@ -4339,10 +4615,6 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 \\
 #testcase-reject-end-table-of-verb-checks-vc-laundering-lair-rule
 >laundering lair
-{$REJECT2}
-\\
-#testcase-reject-end-table-of-verb-checks-vc-leave-lo-rule
->leave lo
 {$REJECT2}
 \\
 #testcase-reject-end-table-of-verb-checks-vc-lone-laura-rule
@@ -4510,11 +4782,11 @@ You don't need to gush about your current living conditions. You need to reflect
 The Leet Learner vibrates back and forth rather violently. You must have been very close.
 
 @hfull
-#testcase-values-from-number-of-compete-compel-is-2856
+#+testcase-values-from-number-of-compete-compel-is-2856
 >ll
 Hmm. There must be only one thing to do: evaluate Leet Lel's position in your life. There must be three paths you can take.
 \\
-#testcase-values-from-number-of-sheet-shell-is-2755
+#+testcase-values-from-number-of-sheet-shell-is-2755
 >ll sheet shell
 Hmm. There must be only one thing to do: evaluate Leet Lel's position in your life. There must be three paths you can take.
 

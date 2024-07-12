@@ -27,6 +27,12 @@ You're already feeling a bit low. You don't need to advertise it, or sink lower.
 That has to be really, really close, though! Perhaps a potentially hearty interjection would work better.
 How to leave with your head held high, with a forceful word showing you're willing to take on the world?
 
+#testcase-homonym-detail-vh-leave-low-rule-default
+>leave low
+You're already feeling a bit low. You don't need to advertise it, or sink lower.
+That has to be really, really close, though! Perhaps a potentially hearty interjection would work better.
+How to leave with your head held high, with a forceful word showing you're willing to take on the world?
+
 >leave lo
 by one point
 
@@ -57,6 +63,11 @@ You are not in a garden. Try an interjection instead.
 
 >heave ho
 by one point
+
+#testcase-homonym-reject-table-of-verb-checks-vh-prune-pried-rule-pried
+#testcase-homonym-detail-vh-prune-pried-rule-default
+>prune pried
+No, no food is stuck in the goon guide.
 
 >prune pride
 by one point
@@ -127,10 +138,18 @@ by one point
 >meet mote
 You needn't make the acquaintance of anything minuscule. You need more sizable food portions.
 
+#testcase-homonym-detail-vh-meet-mote-rule-default
+>meet mote
+You needn't make the acquaintance of anything minuscule. You need more sizable food portions.
+
 >meat moat
 by one point
 
 #testcase-homonym-reject-table-of-verb-checks-vh-beat-boat-rule-beat
+>beat boat
+There's no competition here, violent, friendly, racing or otherwise.
+
+#testcase-homonym-detail-vh-beat-boat-rule-default
 >beat boat
 There's no competition here, violent, friendly, racing or otherwise.
 
@@ -141,6 +160,10 @@ by one point
 by one point
 
 #testcase-homonym-reject-table-of-verb-checks-vh-wight-wires-rule-wight
+>wight wires
+Summoning the undead is one way to remember those who passed on, but it's a high-risk one.
+
+#testcase-homonym-detail-vh-wight-wires-rule-default
 >wight wires
 Summoning the undead is one way to remember those who passed on, but it's a high-risk one.
 
@@ -156,6 +179,11 @@ Well, maybe, but you can't eat saws.
 
 >soy sauce
 by one point
+
+#testcase-homonym-reject-table-of-verb-checks-vh-maundering-mayor-rule-mayor
+#testcase-homonym-detail-vh-maundering-mayor-rule-default
+>maundering mayor
+No, something sentient, not someone.
 
 >maundering mare
 by one point
@@ -192,7 +220,6 @@ by one point
 by one point
 
 #testcase-homonym-reject-table-of-verb-checks-vh-pi-poe-rule-pi-poe
-#testcase-homonym-detail-vh-pi-poe-rule-if-the-player's-command-includes-pi
 >pi po
 Pi times the radius squared, and you've got something.
 
@@ -201,6 +228,18 @@ Pi times the radius squared, and you've got something.
 No, not the author, a descriptor.
 
 #+testcase-homonym-reject-table-of-verb-checks-vh-pi-poe-rule-pi-poe
+>pi poe
+Double narrow misses with the words. But you must be close!
+
+#testcase-homonym-detail-vh-pi-poe-rule-else-if-h1-is-true
+>pi po
+Pi times the radius squared, and you've got something.
+
+#testcase-homonym-detail-vh-pi-poe-rule-if-h1-is-true-and-h2-is-true
+>pie poe
+No, not the author, a descriptor.
+
+#testcase-homonym-detail-vh-pi-poe-rule-default
 >pi poe
 Double narrow misses with the words. But you must be close!
 
@@ -238,6 +277,14 @@ by one point
 
 >cuckoo
 by one point
+
+#testcase-homonym-reject-table-of-verb-checks-do-dew
+>do do
+The Leet Learner shakes back and forth. Something you said sounded right, but it didn't feel right.
+
+#testcase-homonym-reject-table-of-verb-checks-do-dew
+>dew dew
+The Leet Learner shakes back and forth. Something you said sounded right, but it didn't feel right.
 
 >doodoo
 by one point
@@ -278,6 +325,11 @@ by one point
 >u
 
 >in
+
+#testcase-homonym-reject-table-of-verb-checks-vh-greave-grow-rule-greave
+#testcase-homonym-detail-vh-greave-grow-rule-default
+>greave grow
+This isn't a warrior quest, here. No need for armor.
 
 >grieve grow
 by one point
@@ -332,6 +384,11 @@ by one point
 >yappy yall
 by one point
 
+#testcase-homonym-reject-table-of-verb-checks-vh-bappy-bawl-rule-bawl
+#testcase-homonym-detail-vh-bappy-bawl-rule-default
+>bappy bawl
+Too noisy. And whatever gets bapped should be inanimate.
+
 >bappy ball
 by one point
 
@@ -344,8 +401,8 @@ by one point
 >sheet shell
 by one point
 
+#testcase-homonym-reject-table-of-verb-checks-vh-beet-meat-end-rule-beet
 #testcase-homonym-detail-vh-beet-meat-end-rule-default
-#testcase-homonym-reject-table-of-verb-checks-vh-beet-meat-end-rule-meat
 >beet bell
 You already got food like that for the feast. You need a verb here.
 

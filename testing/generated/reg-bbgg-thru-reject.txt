@@ -11,37 +11,46 @@
 >au 2
 
 #testcase-reject-start-table-of-verb-checks-vc-baller-bear-rule
+#testcase-check-vc-baller-bear-rule-if-player-is-not-in-squalor-square
 >baller bear
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Beef, Beans, Grief, Greens has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
+#testcase-check-vc-bappy-ball-rule-abide-by-the-ritual-stuff-rule
 #testcase-reject-start-table-of-verb-checks-vc-bappy-ball-rule
 >bappy ball
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Beef, Beans, Grief, Greens has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
+#testcase-check-vc-beat-bell-rule-if-player-is-not-in-compete-compel
 #testcase-reject-start-table-of-verb-checks-vc-beat-bell-rule
 >beat bell
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Beef, Beans, Grief, Greens has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
 #testcase-reject-start-table-of-verb-checks-vc-beet-boat-rule
+#testcase-check-vc-beet-boat-rule-abide-by-the-be-square-rule
 >beet boat
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Beef, Beans, Grief, Greens has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
 #testcase-reject-start-table-of-verb-checks-vc-booboo-rule
+#testcase-check-vc-booboo-rule-if-player-is-not-in-ooh-ooh
 >boo boo
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Beef, Beans, Grief, Greens has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
 #testcase-reject-start-table-of-verb-checks-vc-book-bard-rule
+#testcase-check-vc-book-bard-rule-abide-by-the-shardy-rule
 >book bard
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Beef, Beans, Grief, Greens has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
 #testcase-reject-start-table-of-verb-checks-vc-caller-care-rule
+#testcase-check-vc-caller-care-rule-if-player-is-not-in-squalor-square
 >caller care
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Beef, Beans, Grief, Greens has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
+#testcase-check-vc-cappy-caul-rule-abide-by-the-ritual-stuff-rule
 #testcase-reject-start-table-of-verb-checks-vc-cappy-caul-rule
 >cappy caul
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Beef, Beans, Grief, Greens has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
+#testcase-check-vc-carrot-cake-rule-if-ferret-fake-is-not-touchable
 #testcase-reject-start-table-of-verb-checks-vc-carrot-cake-rule
 >carrot cake
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Beef, Beans, Grief, Greens has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
@@ -50,82 +59,102 @@ Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, 
 >chrome craw
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Beef, Beans, Grief, Greens has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
+#testcase-check-vc-cook-card-rule-abide-by-the-shardy-rule
 #testcase-reject-start-table-of-verb-checks-vc-cook-card-rule
 >cook card
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Beef, Beans, Grief, Greens has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
+#testcase-check-vc-cuckoo-rule-if-player-is-not-in-ooh-ooh
 #testcase-reject-start-table-of-verb-checks-vc-cuckoo-rule
 >coo koo
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Beef, Beans, Grief, Greens has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
+#testcase-check-vc-dented-dials-rule-if-player-is-not-in-gap-goo
 #testcase-reject-start-table-of-verb-checks-vc-dented-dials-rule
 >dented dials
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Beef, Beans, Grief, Greens has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
+#testcase-check-vc-dollar-dare-rule-if-player-is-not-in-squalor-square
 #testcase-reject-start-table-of-verb-checks-vc-dollar-dare-rule
 >dollar dare
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Beef, Beans, Grief, Greens has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
+#testcase-check-vc-doodoo-rule-if-player-is-not-in-ooh-ooh
 #testcase-reject-start-table-of-verb-checks-vc-doodoo-rule
 >doo doo
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Beef, Beans, Grief, Greens has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
+#testcase-check-vc-feet-fell-rule-if-player-is-not-in-compete-compel
 #testcase-reject-start-table-of-verb-checks-vc-feet-fell-rule
 >feet fell
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Beef, Beans, Grief, Greens has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
+#testcase-check-vc-fight-fires-rule-if-light-lyres-are-not-touchable
 #testcase-reject-start-table-of-verb-checks-vc-fight-fires-rule
 >fight fires
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Beef, Beans, Grief, Greens has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
+#testcase-check-vc-flopper-flea-rule-if-copper-key-is-not-touchable-and-bopper-bee-is-not-touchable
 #testcase-reject-start-table-of-verb-checks-vc-flopper-flea-rule
 >flopper flea
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Beef, Beans, Grief, Greens has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
+#testcase-check-vc-found-fork-rule-if-downed-dork-is-not-touchable
 #testcase-reject-start-table-of-verb-checks-vc-found-fork-rule
 >found fork
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Beef, Beans, Grief, Greens has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
+#testcase-check-vc-grey-gruel-rule-if-fey-fool-is-not-in-location-of-player
 #testcase-reject-start-table-of-verb-checks-vc-grey-gruel-rule
 >grey gruel
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Beef, Beans, Grief, Greens has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
+#testcase-check-vc-sweet-swell-rule-abide-by-the-try-final-point-rule
 #testcase-reject-start-table-of-verb-checks-vc-heat-hell-rule
 >heat hell
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Beef, Beans, Grief, Greens has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
+#testcase-check-vc-honeyed-ham-rule-if-moneyed-maam-is-not-in-location-of-player
 #testcase-reject-start-table-of-verb-checks-vc-honeyed-ham-rule
 >honeyed ham
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Beef, Beans, Grief, Greens has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
+#testcase-check-vc-hook-hard-rule-if-shook-shard-is-not-in-location-of-player
 #testcase-reject-start-table-of-verb-checks-vc-hook-hard-rule
 >hook hard
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Beef, Beans, Grief, Greens has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
+#testcase-check-vc-juju-rule-if-player-is-not-in-ooh-ooh
 #testcase-reject-start-table-of-verb-checks-vc-juju-rule
 >ju ju
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Beef, Beans, Grief, Greens has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
+#testcase-check-vc-just-jello-rule-if-fussed-fellow-is-not-in-location-of-player
 #testcase-reject-start-table-of-verb-checks-vc-just-jello-rule
 >just jello
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Beef, Beans, Grief, Greens has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
+#testcase-check-vc-known-nora-rule-if-player-is-not-in-happy-hall
 #testcase-reject-start-table-of-verb-checks-vc-known-nora-rule
 >known nora
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Beef, Beans, Grief, Greens has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
+#testcase-check-vc-laundering-lair-rule-if-player-is-not-in-wandering-where
 #testcase-reject-start-table-of-verb-checks-vc-laundering-lair-rule
 >laundering lair
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Beef, Beans, Grief, Greens has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
+#testcase-check-vc-lone-laura-rule-if-player-is-not-in-happy-hall
 #testcase-reject-start-table-of-verb-checks-vc-lone-laura-rule
 >lone laura
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Beef, Beans, Grief, Greens has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
+#testcase-check-vc-look-lard-rule-abide-by-the-shardy-rule
 #testcase-reject-start-table-of-verb-checks-vc-look-lard-rule
 >look lard
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Beef, Beans, Grief, Greens has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
+#testcase-check-vc-lovin-lout-rule-if-player-is-not-in-dove-n-doubt
 #testcase-reject-start-table-of-verb-checks-vc-lovin-lout-rule
 >lovin lout
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Beef, Beans, Grief, Greens has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
@@ -134,126 +163,161 @@ Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, 
 >massive mitt
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Beef, Beans, Grief, Greens has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
+#testcase-check-vc-maundering-mare-rule-if-player-is-not-in-wandering-where
 #testcase-reject-start-table-of-verb-checks-vc-maundering-mare-rule
 >maundering mare
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Beef, Beans, Grief, Greens has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
+#testcase-check-vc-meat-moat-rule-abide-by-the-be-square-rule
+#testcase-check-vc-meat-moat-rule-abide-by-the-be-square-rule # check meat moat case elsewhere
 #testcase-reject-start-table-of-verb-checks-vc-meat-moat-rule
 >meat moat
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Beef, Beans, Grief, Greens has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
+#testcase-check-vc-meet-mel-rule-if-player-is-not-in-compete-compel
 #testcase-reject-start-table-of-verb-checks-vc-meet-mel-rule
 >meet mel
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Beef, Beans, Grief, Greens has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
+#testcase-check-vc-meet-mel-rule-if-player-is-not-in-compete-compel
 #testcase-reject-start-table-of-verb-checks-vc-muumuu-rule
 >muu muu
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Beef, Beans, Grief, Greens has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
+#testcase-check-vc-neat-note-rule-unless-meat-moat-is-touchable-or-beet-boat-is-touchable-or-bleat-bloat-is-touchable
 #testcase-reject-start-table-of-verb-checks-vc-neat-note-rule
 >neat note
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Beef, Beans, Grief, Greens has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
+#testcase-check-vc-notice-knife-rule-if-lotus-life-is-not-touchable
 #testcase-reject-start-table-of-verb-checks-vc-notice-knife-rule
 >notice knife
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Beef, Beans, Grief, Greens has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
+#testcase-check-vc-oven-out-rule-if-player-is-not-in-dove-n-doubt-and-oven-is-not-touchable
 #testcase-reject-start-table-of-verb-checks-vc-oven-out-rule
 >oven out
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Beef, Beans, Grief, Greens has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
+#testcase-check-vc-pappy-paul-rule-abide-by-the-call-a-pal-rule
+#testcase-check-vc-pappy-paul-rule-abide-by-the-call-a-pal-rule # check before happy hall too
 #testcase-reject-start-table-of-verb-checks-vc-pappy-paul-rule
 >pappy paul
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Beef, Beans, Grief, Greens has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
+#testcase-check-vc-penny-piles-rule-if-player-is-not-in-sty-sto
 #testcase-reject-start-table-of-verb-checks-vc-penny-piles-rule
 >penny piles
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Beef, Beans, Grief, Greens has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
+#testcase-check-vc-pie-po-rule-if-player-is-not-in-sty-sto
 #testcase-reject-start-table-of-verb-checks-vc-pie-po-rule
 >pie po
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Beef, Beans, Grief, Greens has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
+#testcase-check-vc-pluck-plate-rule-if-player-is-not-in-stuck-state
 #testcase-reject-start-table-of-verb-checks-vc-pluck-plate-rule
 >pluck plate
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Beef, Beans, Grief, Greens has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
+#testcase-check-vc-pondering-pair-rule-if-player-is-not-in-wandering-where
 #testcase-reject-start-table-of-verb-checks-vc-pondering-pair-rule
 >pondering pair
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Beef, Beans, Grief, Greens has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
+#testcase-check-vc-poohpooh-rule-if-player-is-not-in-ooh-ooh
 #testcase-reject-start-table-of-verb-checks-vc-poohpooh-rule
 >poo pooh
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Beef, Beans, Grief, Greens has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
+#testcase-check-vc-potpourri-rule-if-player-is-not-in-slow-slurry
 #testcase-reject-start-table-of-verb-checks-vc-potpourri-rule
 >pot pourri
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Beef, Beans, Grief, Greens has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
+#testcase-check-vc-prune-pride-rule-if-goon-guide-is-not-touchable
 #testcase-reject-start-table-of-verb-checks-vc-prune-pride-rule
 >prune pride
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Beef, Beans, Grief, Greens has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
+#testcase-check-vc-sweet-swell-rule-abide-by-the-try-final-point-rule
 #testcase-reject-start-table-of-verb-checks-vc-repeat-repel-rule
 >repeat repel
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Beef, Beans, Grief, Greens has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
+#testcase-check-vc-sappy-saul-rule-abide-by-the-call-a-pal-rule
+#testcase-check-vc-sappy-saul-rule-abide-by-the-call-a-pal-rule # see about trawl
 #testcase-reject-start-table-of-verb-checks-vc-sappy-saul-rule
 >sappy saul
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Beef, Beans, Grief, Greens has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
+#testcase-check-vc-scrappy-scrawl-rule-abide-by-the-trawl-not-hall-rule
+#testcase-check-vc-scrappy-scrawl-rule-abide-by-the-trawl-not-hall-rule # in trawl, check
 #testcase-reject-start-table-of-verb-checks-vc-scrappy-scrawl-rule
 >scrappy scrawl
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Beef, Beans, Grief, Greens has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
+#testcase-check-vc-see-soup-rule-if-tree-troop-is-not-touchable
 #testcase-reject-start-table-of-verb-checks-vc-see-soup-rule
 >see soup
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Beef, Beans, Grief, Greens has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
+#testcase-check-vc-sheet-shell-rule-if-player-is-not-in-compete-compel
 #testcase-reject-start-table-of-verb-checks-vc-sheet-shell-rule
 >sheet shell
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Beef, Beans, Grief, Greens has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
+#testcase-check-vc-shovin-shout-rule-if-player-is-not-in-dove-n-doubt
 #testcase-reject-start-table-of-verb-checks-vc-shovin-shout-rule
 >shovin shout
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Beef, Beans, Grief, Greens has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
+#testcase-check-vc-soy-sauce-rule-if-player-is-not-in-toy-toss
 #testcase-reject-start-table-of-verb-checks-vc-soy-sauce-rule
 >soy sauce
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Beef, Beans, Grief, Greens has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
+#testcase-check-vc-spoon-spied-rule-if-player-does-not-have-goon-guide
 #testcase-reject-start-table-of-verb-checks-vc-spoon-spied-rule
 >spoon spied
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Beef, Beans, Grief, Greens has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
+#testcase-check-vc-squandering-square-rule-if-player-is-not-in-wandering-where
 #testcase-reject-start-table-of-verb-checks-vc-squandering-square-rule
 >squandering square
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Beef, Beans, Grief, Greens has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
+#testcase-check-vc-sweet-swell-rule-abide-by-the-try-final-point-rule
 #testcase-reject-start-table-of-verb-checks-vc-sweet-swell-rule
 >sweet swell
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Beef, Beans, Grief, Greens has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
 #testcase-reject-start-table-of-verb-checks-vc-tutu-rule
+#testcase-check-vc-tutu-rule-if-player-is-not-in-ooh-ooh
 >tu tu
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Beef, Beans, Grief, Greens has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
+#testcase-check-vc-veggie-ville-rule-if-player-is-not-in-edgy-ill
 #testcase-reject-start-table-of-verb-checks-vc-veggie-ville-rule
 >veggie ville
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Beef, Beans, Grief, Greens has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
+#testcase-check-vc-whappy-wall-rule-abide-by-the-trawl-not-hall-rule
 #testcase-reject-start-table-of-verb-checks-vc-whappy-wall-rule
 >whappy wall
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Beef, Beans, Grief, Greens has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
+#testcase-check-vc-wheat-well-rule-if-player-is-not-in-compete-compel
 #testcase-reject-start-table-of-verb-checks-vc-wheat-well-rule
 >wheat well
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Beef, Beans, Grief, Greens has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
+#testcase-check-vc-white-wires-rule-if-light-lyres-are-not-touchable
 #testcase-reject-start-table-of-verb-checks-vc-white-wires-rule
 >white wires
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Beef, Beans, Grief, Greens has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
+#testcase-check-vc-yappy-yall-rule-abide-by-the-ritual-stuff-rule
 #testcase-reject-start-table-of-verb-checks-vc-yappy-yall-rule
 >yappy yall
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Beef, Beans, Grief, Greens has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
@@ -264,6 +328,16 @@ Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, 
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Beef, Beans, Grief, Greens has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
 >x
+
+>believe below
+by one point
+
+#testcase-check-vc-believe-below-rule-if-sco-believe-below-is-true
+>believe below
+You already believed in a passage down.
+
+>undo
+>undo
 
 >sassed ceased
 by one point
@@ -284,23 +358,50 @@ by one point
 >leave lo
 by one point
 
+#testcase-check-vc-leave-lo-rule-if-player-is-not-in-reeve-row
+>leave lo
+But you already left Reeve Row!
+
+#testcase-check-vc-jade-jug-rule-if-rayed-rug-is-not-touchable
 #testcase-reject-start-table-of-verb-checks-vc-jade-jug-rule
 >jade jug
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Beef, Beans, Grief, Greens has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
+#testcase-check-vc-made-mug-rule-if-rayed-rug-is-not-touchable
 #testcase-reject-start-table-of-verb-checks-vc-made-mug-rule
 >made mug
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Beef, Beans, Grief, Greens has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
+#testcase-check-vc-played-plug-rule-if-rayed-rug-is-not-touchable
 #testcase-reject-start-table-of-verb-checks-vc-played-plug-rule
 >played plug
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Beef, Beans, Grief, Greens has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
+
+# nonstandard case rejects here ... I'd like to keep them separate from the standard "can't do this"
+#testcase-reject-start-table-of-verb-checks-vc-grieve-grow-rule
+#testcase-check-vc-grieve-grow-rule-abide-by-the-self-rhymes-check-rule
+>grieve grow
+That seems worth doing, but this isn't the right place.
+
+#testcase-reject-start-table-of-verb-checks-vc-heave-ho-rule
+#testcase-check-vc-heave-ho-rule-abide-by-the-self-rhymes-check-rule
+>heave ho
+That seems worth doing, but this isn't the right place.
+
+#testcase-reject-start-table-of-verb-checks-vc-believe-below-rule
+#testcase-check-vc-believe-below-rule-abide-by-the-self-rhymes-check-rule
+>believe below
+That seems worth doing, but this isn't the right place.
 
 >laundering lair
 by one point
 
 >lovin lout
 by one point
+
+#testcase-check-vc-lovin-lout-rule-if-sco-lovin-lout-is-true
+>lovin lout
+The lovin' lout already appeared to help you!
 
 >shovin shout
 by one point
@@ -335,6 +436,22 @@ by one point
 
 >w
 
+#+testcase-check-vc-look-lard-rule-abide-by-the-shardy-rule
+>look lard
+The shard is calling to you. You must grasp it and find where it leads before searching for anything that concrete. But you feel you're on the right path.
+#+testcase-check-vc-cook-card-rule-abide-by-the-shardy-rule
+>cook card
+The shard is calling to you. You must grasp it and find where it leads before searching for anything that concrete. But you feel you're on the right path.
+#+testcase-check-vc-book-bard-rule-abide-by-the-shardy-rule
+>book bard
+The shard is calling to you. You must grasp it and find where it leads before searching for anything that concrete. But you feel you're on the right path.
+
+#testcase-think-table-of-verb-checks-vc-book-bard-rule
+#testcase-think-table-of-verb-checks-vc-cook-card-rule
+#testcase-think-table-of-verb-checks-vc-look-lard-rule
+>think
+You can exclaim LOOK LARD once you've seen where the shook shard can take you.
+
 >hook hard
 by one point
 
@@ -353,11 +470,23 @@ by one point
 >dollar dare
 by one point
 
+#testcase-check-vc-dollar-dare-rule-if-sco-dollar-dare-is-true
+>dollar dare
+You already alerted the staller stare to the dollar dare.
+
 >caller care
 by one point
 
+#testcase-check-vc-caller-care-rule-if-sco-caller-care-is-true
+>caller care
+You already provided caller care!
+
 >baller bear
 by one point
+
+#testcase-check-vc-baller-bear-rule-if-sco-baller-bear-is-true
+>baller bear
+You already summoned a baller bear!
 
 >neat note
 by one point
@@ -370,6 +499,10 @@ by one point
 
 >beet boat
 by one point
+
+#testcase-check-vc-beet-boat-rule-if-sco-beet-boat-is-true
+>beet boat
+One beet boat is quite enough!
 
 >white wires
 You can't see anything that might have white wires! Well, anything safe to handle!
@@ -420,13 +553,29 @@ by one point
 >dented dials
 by one point
 
+#testcase-check-vc-dented-dials-rule-if-sco-dented-dials-is-true
+>dented dials
+You already got the dented dials!
+
 >carrot cake
 by one point
 
 >n
 
+#testcase-check-vc-pie-po-rule-if-sco-penny-piles-is-false
+>pie po
+Yes, that is the cheapest item not on the menu, but you don't even have the measly cash to buy it.
+
+#testcase-think-table-of-verb-checks-vc-pie-po-rule
+>think
+You can buy a PIE PO once you have currency.
+
 >penny piles
 by one point
+
+#+testcase-think-table-of-verb-checks-vc-pie-po-rule
+>think
+You can buy a PIE PO now you have currency.
 
 >pie po
 by one point
@@ -483,6 +632,10 @@ by one point
 >potpourri
 by one point
 
+#testcase-check-vc-potpourri-rule-if-sco-potpourri-is-true
+>potpourri
+You have quite enough potpourri!
+
 >u
 
 >in
@@ -493,8 +646,29 @@ by one point
 >believe below
 by one point
 
+#+testcase-check-vc-believe-below-rule-if-sco-believe-below-is-true
+>believe below
+You already believed in, and found, a passage down.
+
 >d
 
+#+testcase-reject-end-table-of-verb-checks-vc-believe-below-rule
+>believe below
+You already believed in, and took, a passage down.
+
+#+testcase-reject-end-table-of-verb-checks-vc-grieve-grow-rule
+>grieve grow
+That is the end goal, here. You are close.
+
+#+testcase-reject-end-table-of-verb-checks-vc-leave-lo-rule
+>leave lo
+You've left Reeve Row for good.
+
+#+testcase-reject-end-table-of-verb-checks-vc-leave-lo-rule
+>heave ho
+There was nothing more to heave besides the rayed rug.
+
+#+testcase-check-vc-whappy-wall-rule-abide-by-the-trawl-not-hall-rule
 >whappy wall
 That could be helpful, but you have no indication where a wall might sound whappy. Well, not yet. You need to search for evidence.
 
@@ -515,12 +689,15 @@ That might be someone to call once you are in the main ritual room.
 >pappy paul
 That might be someone to call once you are in the main ritual room.
 
+#+testcase-check-vc-cappy-caul-rule-abide-by-the-ritual-stuff-rule
 >cappy caul
 That might be an interesting part of the ritual once you make it to the main ritual room.
 
+#+testcase-check-vc-yappy-yall-rule-abide-by-the-ritual-stuff-rule
 >yappy yall
 That might be an interesting part of the ritual once you make it to the main ritual room.
 
+#+testcase-check-vc-bappy-ball-rule-abide-by-the-ritual-stuff-rule
 >bappy ball
 That might be an interesting part of the ritual once you make it to the main ritual room.
 
@@ -562,17 +739,24 @@ You can have everyone play BAPPY BALL once the feast is complete, to burn off ca
 >whappy wall
 by one point
 
+#testcase-check-vc-cappy-caul-rule-if-hall-guest-score-<-4
 >cappy caul
 You can't wear the ceremonial gear until everyone's here!
 
+#testcase-check-vc-yappy-yall-rule-if-sco-cappy-caul-is-false
 >yappy yall
 You need to retrieve your ceremonial garb first!
 
+#testcase-check-vc-bappy-ball-rule-if-sco-yappy-yall-is-false
 >bappy ball
 Sport, eventually, to burn the calories off. But before that, discussion.
 
 >pappy paul
 by one point
+
+#testcase-check-vc-pappy-paul-rule-if-sco-pappy-paul-is-true
+>pappy paul
+You already summoned Pappy Paul!
 
 >sappy saul
 by one point
@@ -591,6 +775,10 @@ You can have everyone play BAPPY BALL once the feast is complete, to burn off ca
 
 >cappy caul
 by one point
+
+#testcase-check-vc-cappy-caul-rule-if-sco-cappy-caul-is-true
+>cappy caul
+You already retrieved your ceremonial garb!
 
 #+testcase-think-table-of-verb-checks-vc-yappy-yall-rule
 >think
@@ -635,11 +823,19 @@ by one point
 >feet fell
 by one point
 
+#testcase-check-vc-feet-fell-rule-if-sco-feet-fell-is-true
+>feet fell
+You already slid to a more peaceful space!
+
 >sheet shell
 by one point
 
 >beat bell
 by one point
+
+#testcase-check-vc-beat-bell-rule-if-sco-beat-bell-is-true
+>beat bell
+You already managed to beat the bell when you needed to!
 
 >meet mel
 by one point
@@ -653,7 +849,24 @@ You get a sense such a judgment would be more appropriate once you've examined t
 >repeat repel
 You get a sense such a judgment would be more appropriate once you've examined the book you just got.
 
+#+testcase-check-vc-heat-hell-rule-abide-by-the-try-final-point-rule
+#+testcase-check-vc-repeat-repel-rule-abide-by-the-try-final-point-rule
+#+testcase-check-vc-sweet-swell-rule-abide-by-the-try-final-point-rule
+>think
+You need a story to reflect on before concluding REPEAT REPEL.
+You need a story to reflect on before concluding HEAT HELL.
+You need a story to reflect on before concluding SWEET SWELL.
+!CAN DO NOW
+
 >x leet lel
+
+#testcase-think-table-of-verb-checks-vc-heat-hell-rule
+#testcase-think-table-of-verb-checks-vc-repeat-repel-rule
+#testcase-think-table-of-verb-checks-vc-sweet-swell-rule
+>think
+(CAN DO NOW) You need a story to reflect on before concluding REPEAT REPEL.
+(CAN DO NOW) You need a story to reflect on before concluding HEAT HELL.
+(CAN DO NOW) You need a story to reflect on before concluding SWEET SWELL.
 
 #testcase-reject-end-table-of-verb-checks-vc-baller-bear-rule
 >baller bear
@@ -661,10 +874,6 @@ Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, 
 
 #testcase-reject-end-table-of-verb-checks-vc-bappy-ball-rule
 >bappy ball
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Beef, Beans, Grief, Greens has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
-
-#testcase-reject-end-table-of-verb-checks-vc-believe-below-rule
->believe below
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Beef, Beans, Grief, Greens has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
 #testcase-reject-end-table-of-verb-checks-vc-booboo-rule
@@ -723,14 +932,6 @@ Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, 
 >grey gruel
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Beef, Beans, Grief, Greens has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
-#testcase-reject-end-table-of-verb-checks-vc-grieve-grow-rule
->grieve grow
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Beef, Beans, Grief, Greens has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
-
-#testcase-reject-end-table-of-verb-checks-vc-heave-ho-rule
->heave ho
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Beef, Beans, Grief, Greens has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
-
 #testcase-reject-end-table-of-verb-checks-vc-honeyed-ham-rule
 >honeyed ham
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Beef, Beans, Grief, Greens has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
@@ -757,10 +958,6 @@ Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, 
 
 #testcase-reject-end-table-of-verb-checks-vc-laundering-lair-rule
 >laundering lair
-Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Beef, Beans, Grief, Greens has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
-
-#testcase-reject-end-table-of-verb-checks-vc-leave-lo-rule
->leave lo
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Beef, Beans, Grief, Greens has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
 #testcase-reject-end-table-of-verb-checks-vc-lone-laura-rule
