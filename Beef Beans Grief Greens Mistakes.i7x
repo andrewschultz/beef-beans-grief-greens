@@ -27,6 +27,7 @@ mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 
 table of gap goo guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
+"app"	"ooh"	--	false	--	"You don't need to be wowed by technology at the moment."
 "bap"	"boo"	--	false	--	"You don't need violence or taunting here."
 "cap"	"coo"	--	false	--	"You hear no birds cooing, and even if you did, you wouldn't want to stop them."
 "chap"	"chew"	--	false	--	"There is no food court here."
@@ -39,8 +40,10 @@ mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 "nap"	"new"	--	false	--	"Not the time or place to sleep. Not even Reeve Row is, with your tasks."
 "pap"	"poo|pooh"	--	false	--	"You mutter to yourself that someone random was full of nonsense."
 "rap|wrap"	"rue"	--	false	--	"You moan to yourself how rap lost the social conscience it once had."
+"recap"	"recoup"	--	false	--	"With slightly Americanized pronunciation, you look back on what you've done so far."
 "sap"	"sue"	--	false	--	"You get mad at lawyers, or maybe you get mad and really need one."
 "slap"	"slew"	--	false	--	"Violence is not the answer, especially not in bunches."
+"scrap"	"screw"	--	false	--	"You find no tools or hardware lying around."
 "strap"	"strew"	--	false	--	"This is a relatively litter-free place. No strap turns up."
 "tap"	"two|too"	--	false	--	"You don't have anyone to tap for anything."
 "trap"	"true"	--	false	--	"You search diligently for a trap that clearly advertises its trappiness. Nothing comes up."
@@ -59,14 +62,14 @@ this is the in-trappy-trawl rule:
 
 table of hi ho guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
-"cry"	"crow"	--	false	--	"<CLEVER REJECT TEXT>"
-"die"	"dough"	--	false	--	"<CLEVER REJECT TEXT>"
-"fie"	"foe|pho"	--	false	--	"<CLEVER REJECT TEXT>"
+"cry"	"crow"	--	false	--	"[good-guess]."
+"die"	"dough"	--	false	--	"[good-guess]."
+"fie"	"foe|pho"	--	false	--	"[good-guess]."
 "guy"	"go"	--	false	--	"Bri-Bro is staying."
 "lie"	"low"	--	false	--	"No, waiting around won't make Bri-Bro give you a handout so you can leave."
-"my"	"mow"	--	false	--	"<CLEVER REJECT TEXT>"
+"my"	"mow"	--	false	--	"[good-guess]."
 "nigh"	"no"	--	false	--	"You complain to yourself you're never going to buy anything. Sometimes this helps, emotionally, or to kick you into 'but what if I...' mode."
-"rye"	"row"	--	false	--	"<CLEVER REJECT TEXT>"
+"rye"	"row"	--	false	--	"[good-guess]."
 "shy"	"show"	--	false	--	"Bri-Bro, alas, does not give an oversolicitous 'May I help you?'"
 "sigh"	"so"	--	false	--	"Bri-Bro is not moved to generosity by your poor-little-me act."
 "tie"	"toe"	--	false	--	"You check to see if Bri-Bro's footwear has laces. It does not. Foiled!"
@@ -83,13 +86,13 @@ mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 
 table of squalor square guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
-"brawler"	"brer"	--	false	--	"<CLEVER REJECT TEXT>"
-"faller"	"fare"	--	false	--	"<CLEVER REJECT TEXT>"
-"hauler"	"hair|hare"	--	false	--	"<CLEVER REJECT TEXT>"
-"loller"	"lair"	--	false	--	"<CLEVER REJECT TEXT>"
-"mauler"	"mare"	--	false	--	"<CLEVER REJECT TEXT>"
-"pallor"	"pair"	--	false	--	"<CLEVER REJECT TEXT>"
-"waller"	"wear|ware"	--	false	--	"<CLEVER REJECT TEXT>"
+"brawler"	"brer"	--	false	--	"[good-guess]."
+"faller"	"fare"	--	false	--	"[good-guess]."
+"hauler"	"hair|hare"	--	false	--	"[good-guess]."
+"loller"	"lair"	--	false	--	"[good-guess]."
+"mauler"	"mare"	--	false	--	"[good-guess]."
+"pallor"	"pair"	--	false	--	"[good-guess]."
+"waller"	"wear|ware"	--	false	--	"[good-guess]."
 
 table of stuck state guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
@@ -103,7 +106,7 @@ mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 "ruck"	"rate"	--	false	--	"You don't have the energy to start a fight, and you wouldn't want one, but you dread starting one, even one you could win."
 "struck"	"straight"	--	false	--	"You try to jolt yourself into finding a way out."
 "suck"	"sate"	--	false	--	"You have no thirst that needs quenching that way."
-"truck"	"trait"	--	false	--	"<CLEVER REJECT TEXT>"
+"truck"	"trait"	--	false	--	"[good-guess]."
 "uck"	"ate"	--	false	--	"No, the feast is ahead, and it's going to taste good."
 "yuck"	"yate"	--	false	--	"No eucalyptus tree appears, yucky or otherwise."
 
@@ -130,7 +133,30 @@ mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 "pauper|popper"	"pee|pea"	--	false	--	"No, one pea couldn't make a meal or even help."
 "shopper"	"she|shee"	--	false	--	"There is neither need for extended shopping nor a mall to do said shopping in."
 
-guess-table of downed dork is the table of downed dork guesses.
+table of cocoa guesses
+mist-regex	mist-rule	got-yet	leet-rule	mist-txt
+"bobo"	--	false	--	"[good-guess]."
+"gogo"	--	false	--	"[good-guess]."
+"hoho|ho ho"	--	false	--	"[good-guess]."
+"lolo"	--	false	--	"[good-guess]."
+"nono|no no"	--	false	--	"[good-guess]."
+"soso|so so"	--	false	--	"[good-guess]."
+"toto"	--	false	--	"[good-guess]."
+"yoyo"	--	false	--	"[good-guess]."
+
+table of cray cruel fey fool guesses
+mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
+"bay"	"bool"	--	false	--	"[good-guess]."
+"day"	"duel"	--	false	--	"[good-guess]."
+"gay"	"ghoul"	--	false	--	"[good-guess]."
+"hey"	"wholl"	--	false	--	"[good-guess]."
+"jay"	"jewel"	--	false	--	"[good-guess]."
+"k"	"cool"	--	false	--	"[good-guess]."
+"nay"	"newel"	--	false	--	"[good-guess]."
+"pay"	"pool"	--	false	--	"[good-guess]."
+"ray"	"rule"	--	false	--	"[good-guess]."
+"spay"	"spool"	--	false	--	"[good-guess]."
+"stay"	"stool"	--	false	--	"[good-guess]."
 
 table of downed dork guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
@@ -162,6 +188,18 @@ mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 "paid"	"pug"	--	false	--	"You wonder if having a pet will help you overcome grief."
 "slayed"	"slug"	--	false	--	"You look for insects to kill, to get your mind off the unexpected death of an actual person."
 "theyd"	"thug"	--	false	--	"You don't have time or emotional energy to focus on that right now."
+
+table of tree troop guesses
+mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
+"b|bee"	"boop"	--	false	--	"[good-guess]."
+"de"	"dupe"	--	false	--	"[good-guess]."
+"glee"	"gloop"	--	false	--	"[good-guess]."
+"key"	"coop|coup|coupe"	--	false	--	"[good-guess]."
+"pee"	"poop"	--	false	--	"[good-guess]."
+"whee"	"whoop"	--	false	--	"[good-guess]."
+
+to say good-guess:
+	say "Good guess, but I didn't have time to think of witty text. This will change post-release"
 
 volume auxiliary general
 

@@ -285,6 +285,8 @@ the downed dork is a rhymable. "The downed dork sits here, looking helpless, loo
 
 from-number of downed dork is 2804. to-number of downed dork is 2754.
 
+guess-table of downed dork is the table of downed dork guesses.
+
 chapter eet ote
 
 section bleat bloat
@@ -363,6 +365,8 @@ for printing a locale paragraph about a rhymeperson (called rp) in ooh ooh:
 chapter cocoa
 
 some cocoa is a toeat feastitem. description is "Well, it's currently powdered, but when the time comes to dump it in boiling water, you have confidence you'll come through with aplomb!". fdesc is "powdered drink mix"
+
+guess-table of cocoa is the table of cocoa guesses.
 
 chapter passive pit
 
@@ -451,6 +455,8 @@ chapter tree troop
 the tree troop is a plural-named rhymable. "A tree troop sits around, waiting for you to ask for just the right thing. But you get the sense you could even gesture somehow.". description is "They're just miscellaneous entities you can't put your finger on, all sitting around.".
 
 from-number of tree troop is 2705. to-number of tree troop is 2654.
+
+guess-table of tree troop is the table of tree troop guesses.
 
 chapter Ferret Fake
 
@@ -697,9 +703,13 @@ the cray cruel fey fool is an improper-named rhymeperson in Slow Slurry. descrip
 
 from-number of cray cruel fey fool is 5359. to-number of cray cruel fey fool is -2705.
 
+guess-table of cray cruel fey fool is the table of cray cruel fey fool guesses.
+
 section grey gruel
 
 the grey gruel is a toeat okaycold feastitem. understand "gray" and "gray gruel" as gruel when player has gruel.
+
+guess-table of grey gruel is the table of cray cruel fey fool guesses.
 
 section Moneyed Ma'am
 
