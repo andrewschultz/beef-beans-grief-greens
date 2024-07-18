@@ -107,9 +107,6 @@ a goodrhyme rule (this is the vc-spoon-spied rule):
 	if goon guide is not examined:
 		vcp "You try to spy spoons based on your general impressions of the goon guide, but ... well, I'm going to make you read it more closely now you've pruned your pride.";
 		not-yet;
-	if sco-spoon-spied is true:
-		vcal "You already found enough spoons! What is this, a showing for [i]The Room[r]?";
-		already-done;
 	ready;
 
 this is the vr-spoon-spied rule:
@@ -504,8 +501,11 @@ this is the vr-baller-bear rule:
 	if stare-score < 3:
 		say "The staller stare is visibly affected by the audacity of someone caring about them. Its eyes bug out. Is this a joke? Then the eyes blink. No, it's not crying, of course it's not, it's the squalor.";
 	else:
-		say "With the staller stare gone, you leave a bit of hope and genuine solicitousness for the next lost soul who stumbles here.";
+		note-staller-gone;
 	evaluate-stare;
+
+to note-staller-gone:
+	say "You amuse yourself with how the staller stare would've reacted to THAT. A bit of harmless schadenfreude. You think. You hope."
 
 a goodrhyme rule (this is the vc-caller-care rule):
 	if player is not in squalor square, unavailable;
@@ -519,7 +519,7 @@ this is the vr-caller-care rule:
 	if stare-score < 3:
 		say "The staller stare is visibly affected by the audacity of someone caring about them. Its eyes bug out. Is this a joke! Then the eyes blink. No, it's not crying, of course it's not, it's the squalor.";
 	else:
-		say "With the staller stare gone, you leave a bit of hope and genuine solicitousness for the next lost soul who stumbles here.";
+		note-staller-gone;
 	evaluate-stare;
 
 a goodrhyme rule (this is the vc-dollar-dare rule):
@@ -534,7 +534,7 @@ this is the vr-dollar-dare rule:
 	if stare-score < 3:
 		say "The staller stare is visibly affected by the audacity of someone daring someone else to do ... well, THAT. For just a dollar. Its eyes bug out. Is this a joke? Then the eyes roll around, as if to say, it doesn't see why it bothers to feel nosy.";
 	else:
-		say "With the staller stare gone, you leave a bit of hope and genuine solicitousness for the next lost soul who stumbles here.";
+		note-staller-gone;
 	evaluate-stare;
 
 section downed dork scoring
@@ -1403,7 +1403,7 @@ to end-stub:
 	follow the shutdown rules;
 
 to say final-judge-think of (nu - a number):
-	say "You need a story to reflect on before concluding [b][if nu is -1]HEAT HELL[else if nu is 1]SWEET SWELL[else]REPEAT REPEL[end if][r]".
+	say "[if leet lel is examined]You read up on Leet Lel, so you can conclude[else]You need a story to reflect on before concluding[end if] [b][if nu is -1]HEAT HELL[else if nu is 1]SWEET SWELL[else]REPEAT REPEL[end if][r]".
 
 volume can't go
 
