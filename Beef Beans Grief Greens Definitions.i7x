@@ -306,7 +306,9 @@ this is the verb-checker rule:
 				if player is in ooh ooh:
 					if number of words in the player's command > 1:
 						say "[zl] shake their heads, each holding up two fingers. Then they nod their heads, holding up one.";
-						the rule succeeds;
+					else:
+						say "[zl] gesture as if to say, keep talking. You must be on the right track!";
+					the rule succeeds;
 				say "Ooh! You're close. You've probably juggled two valid solutions.";
 				the rule succeeds;
 			abide-nlb the situational-cuing-reject rule;
