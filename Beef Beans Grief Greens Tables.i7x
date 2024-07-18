@@ -59,7 +59,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "pot"	"pourri"	--	--	false	true	false	false	slow slurry	vc-potpourri rule	vr-potpourri rule	"potpourri"	--
 "honeyed"	"ham"	--	--	false	true	false	false	slow slurry	vc-honeyed-ham rule	vr-honeyed-ham rule	--	--
 "grey|gray"	"gruel"	--	--	false	true	false	false	slow slurry	vc-grey-gruel rule	vr-grey-gruel rule	--	--
-"just"	"jello"	--	--	false	true	false	false	slow slurry	vc-just-jello rule	vr-just-jello rule	--	--
+"just"	"jello"	--	--	false	true	false	false	slow slurry	vc-just-jello rule	vr-just-jello rule	"just jell o" or "just jello"	--
 "scrappy"	"scrawl"	--	--	false	true	true	false	trappy trawl	vc-scrappy-scrawl rule	vr-scrappy-scrawl rule	--	--
 "whappy"	"wall"	--	--	false	true	true	false	trappy trawl	vc-whappy-wall rule	vr-whappy-wall rule	--	"You can hit the [b]WHAPPY WALL[r] [once-now of vc-whappy-wall rule] you know where to whap the wall."
 "lone"	"laura"	"loan"	vh-loan-laura rule	false	true	true	false	happy hall	vc-lone-laura rule	vr-lone-laura rule	--	--

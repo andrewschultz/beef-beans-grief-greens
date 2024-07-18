@@ -22,6 +22,8 @@ include Intro Restore Skip by Andrew Schultz.
 
 include Old School Verb Total Carnage by Andrew Schultz.
 
+include Punctuation Stripper by Andrew Schultz.
+
 section PRPR includes
 
 include Prime Pro Rhyme Row Universal by Andrew Schultz.
@@ -985,6 +987,8 @@ this is the goo-clear rule: [this is not strictly right but it works for general
 	the rule succeeds;
 
 volume weird weird parser rules
+
+after reading a command: abide by the punctuation-munge rule;
 
 the ooh ooh one word rule is listed after the goto reject rule in the for printing a parser error rules.
 
