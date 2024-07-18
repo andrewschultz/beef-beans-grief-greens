@@ -99,6 +99,8 @@ this is the vr-prune-pride rule:
 	move shook shard to Dove n Doubt;
 	guide-tweak;
 
+[note we don't have to worry below about if spoon-spied is true, since we prune pride first. Sadly, this means I can't share "You already found enough spoons! What is this, a showing for [i]The Room[r]?" ]
+
 a goodrhyme rule (this is the vc-spoon-spied rule):
 	if player does not have goon guide, unavailable;
 	if sco-prune-pride is false:
@@ -194,7 +196,7 @@ this is the vr-believe-below rule:
 	if sco-heave-ho is false:
 		say "You believe something must be below. Below that rug, you'd guess. You might not be able to remove it by yourself. But you have faith now!";
 	else:
-		say "Aha! You wondered if something was below the rug. Now you see the outline of a trap door beneath the rug[if player does not have copper key], but it's locked[end if]."; [?? if rug there and you believed, you'd like to remove it]
+		say "Aha! You wondered if something was below the rug. Now you see the outline of a trap door beneath where the rug was[if player does not have copper key], but it's locked[end if]."; [?? if rug there and you believed, you'd like to remove it]
 	now sco-believe-below is true;
 	declue-here-by 2855;
 	process the Reeve Row check passage down rule;
@@ -499,7 +501,7 @@ a goodrhyme rule (this is the vc-baller-bear rule):
 this is the vr-baller-bear rule:
 	now sco-baller-bear is true;
 	if stare-score < 3:
-		say "The staller stare is visibly affected by the audacity of someone caring about them. Its eyes bug out. Is this a joke? Then the eyes blink. No, it's not crying, of course it's not, it's the squalor.";
+		say "The staller stare is visibly affected by the audacity of a performing animal, just performing for fun and not trying to outrage anyone. It tries to stare down this oddness, but bears ignore that stuff. The star blinks, feeling weakened.";
 	else:
 		note-staller-gone;
 	evaluate-stare;
@@ -525,14 +527,14 @@ this is the vr-caller-care rule:
 a goodrhyme rule (this is the vc-dollar-dare rule):
 	if player is not in squalor square, unavailable;
 	if sco-dollar-dare is true:
-		vcal "You already alerted the staller stare to the dollar dare.";
+		vcal "You already made light of a dollar dare.";
 		already-done;
 	ready;
 
 this is the vr-dollar-dare rule:
 	now sco-dollar-dare is true;
 	if stare-score < 3:
-		say "The staller stare is visibly affected by the audacity of someone daring someone else to do ... well, THAT. For just a dollar. Its eyes bug out. Is this a joke? Then the eyes roll around, as if to say, it doesn't see why it bothers to feel nosy.";
+		say "The staller stare is visibly affected by the audacity of someone daring someone else to do ... well, THAT. For just a dollar. (Don't worry. Nothing crude. Just standard kid-dare stuff.) Its eyes bug out. Is this a joke? Then the eyes roll around, as if to say, it doesn't see why it bothers to feel nosy.";
 	else:
 		note-staller-gone;
 	evaluate-stare;
@@ -579,7 +581,6 @@ a goodrhyme rule (this is the vc-beet-boat rule):
 		already-done;
 	abide by the be-square rule;
 	ready;
-[	if sco-beet-boat is true and (player is in squalor square or player has beet boat or player has meat moat):]
 
 this is the vh-beat-boat rule:
 	say "There's no competition here, violent, friendly, racing or otherwise."
@@ -969,7 +970,7 @@ a goodrhyme rule (this is the vc-just-jello rule):
 
 this is the vr-just-jello rule:
 	now sco-just-jello is true;
-	say "The [fellow] seems relieved to hand you the Jell-o. It may be just Jell-O, but it's all different kinds of colors and flavors. Including pineapple! You remember when some smart-aleck in middle school said pineapple Jell-O would never be a thing. In fact, that smart-aleck snickered when you were chosen for the ceremony.";
+	say "The [fellow] seems relieved to hand you the Jell-O. It may be just Jell-O, but it's all different kinds of colors and flavors. Including pineapple! You remember when some smart-aleck in middle school said pineapple Jell-O would never be a thing. In fact, that smart-aleck snickered when you were chosen for the ceremony.";
 	now player has just jello;
 	moot fellow;
 

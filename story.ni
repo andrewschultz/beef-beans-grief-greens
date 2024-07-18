@@ -76,7 +76,7 @@ chapter drinkware
 
 the made mug is a drinkware feastitem. fdesc of made mug is "small drinking container(s)". description is "It's your own special mug, as the leader of the ceremony."
 
-the jade jug is a drinkware feastitem. fdesc of jade jug is "large drink holder". description is "While it won't make the liquid in it taste any better, it's a really, really nikce color."
+the jade jug is a drinkware feastitem. fdesc of jade jug is "large drink holder". description is "While this won't make the liquid inside taste any better, it's a really, really nice color."
 
 chapter silverware (not actually spelled out in LLFF)
 
@@ -116,7 +116,6 @@ when play begins:
 	say "Reeve Row is sparsely furnished, but you won't be staying there much. Even if you feel stuck there to begin with. You think of all the gnomes who have passed since the last feast. It takes a while. Then one day you know it is time to move on, even though you know you're forgetting someone important.";
 	wfak;
 	now player has leet learner;
-
 
 volume rooms
 
@@ -700,7 +699,7 @@ guess-table of woe worry slow slurry is the table of woe worry slow slurry guess
 
 section cray cruel fey fool
 
-the cray cruel fey fool is an improper-named rhymeperson in Slow Slurry. description is "They look very bored with plain stuff."
+the cray cruel fey fool is an improper-named rhymeperson in Slow Slurry. "A cray cruel fey fool looks down their nose at you, here. They seem to find you uninteresting, but if you're lucky, you can let them fob something dull off on you.". description is "They look very bored with plain stuff. You wonder why they are staying. Perhaps what they want to get rid of, they couldn't, in more exciting areas."
 
 from-number of cray cruel fey fool is 5359. to-number of cray cruel fey fool is -2705.
 
@@ -710,11 +709,11 @@ section grey gruel
 
 the grey gruel is an okaycold optional feastitem. understand "gray" and "gray gruel" as gruel when player has gruel.
 
-guess-table of grey gruel is the table of cray cruel fey fool guesses.
+guess-table of grey gruel is the table of cray cruel fey fool guesses. description is "As plain-looking as gruel ever was."
 
 section Moneyed Ma'am
 
-the Moneyed Maam is an improper-named female rhymeperson in Slow Slurry. printed name of Moneyed Maam is "Moneyed Ma'am".
+the Moneyed Maam is an improper-named female rhymeperson in Slow Slurry. printed name of Moneyed Maam is "Moneyed Ma'am". description is "She gives you a sidelong glance to let you know time is money and money is time, and even if she has too much money, there's no point in wasting it. So if you want something , ask for it already.". "A moneyed Ma'am paces back and forth and taps an invisible watch on her wrist. You wonder how much of this anxiety is all for show."
 
 from-number of moneyed maam is 2854. to-number of moneyed maam is -2853.
 
@@ -728,15 +727,13 @@ the potpourri is an optional ambiance feastitem. description is "It is eclectic.
 
 section Fussed Fellow
 
-the fussed fellow is an improper-named male rhymeperson in Slow Slurry.
+the fussed fellow is an improper-named male rhymeperson in Slow Slurry. "A fussed fellow fusses about here.". description is "He seems to be wondering why he is even here. But it is his fate to be fussed with stuff he really should be better than. Like, perhaps, helping you out.".
 
 from-number of fussed fellow is 2806. to-number of fussed fellow is -2705.
 
 section just jello
 
-the just jello is an okaycold optional feastitem. "Well, it's just Jell-O but a bunch of different colors. What colors, though!"
-
-volume unsorted
+the just jello is an okaycold optional feastitem. description is "Well, it's just Jell-O but a bunch of different colors. What colors, though!"
 
 volume standard vebs
 
