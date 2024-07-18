@@ -34,6 +34,8 @@ cook-card-note is a truth state that varies.
 
 ooh-clarify is a truth state that varies.
 
+note-beans is a truth state that varies.
+
 section printing details
 
 name-loc is a truth state that varies.
@@ -138,6 +140,10 @@ sco-penny-piles is a truth state that varies.
 
 sco-pie-po is a truth state that varies.
 
+chapter Hedge-Y Hill globals
+
+sco-veggie-ville is a truth state that varies.
+
 chapter Slow Slurry globals
 
 sco-potpourri is a truth state that varies.
@@ -178,8 +184,6 @@ sco-repeat-repel is a truth state that varies.
 eet-ell is a number that varies. [ negative = hell, positive = swell, neutral = repel ]
 
 chapter unsorted globals
-
-sco-veggie-ville is a truth state that varies.
 
 volume test globals
 

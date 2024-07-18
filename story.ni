@@ -181,6 +181,9 @@ report examining Last Least Fast Feast:
 			say "You've moved an oven to Reeve Row, too.";
 		else:
 			say "You'll probably need to cook up some ingredients, but you don't have the right appliance(s), yet.";
+	if note-beans is false:
+		now note-beans is true;
+		say "[line break]From beyond the fourth wall, you wonder where the beans fit into all this. Well, you have enough to tackle. Wiser entities than you probably have that sorted out.";
 	continue the action;
 
 check examining Fast Feast when trappy trawl is visited: say "You've checked all the boxes. All that's left to do is to replace it once the ceremony starts." instead;
