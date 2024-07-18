@@ -76,7 +76,11 @@ chapter drinkware
 
 the made mug is a drinkware feastitem. fdesc of made mug is "small drinking container(s)". description is "It's your own special mug, as the leader of the ceremony."
 
+guess-table of made mug is the table of rayed rug guesses.
+
 the jade jug is a drinkware feastitem. fdesc of jade jug is "large drink holder". description is "While this won't make the liquid inside taste any better, it's a really, really nice color."
+
+guess-table of jade jug is the table of rayed rug guesses.
 
 chapter silverware (not actually spelled out in LLFF)
 
@@ -214,6 +218,8 @@ guess-table of rayed rug is the table of rayed rug guesses.
 chapter played plug
 
 the played plug is an oventhing. description is "It's not just a plug, but a plug with a cord! It looks serviceable enough to provide power. You don't know much about electricity.". fdesc is "a replacement cord for the oven".
+
+guess-table of played plug is table of rayed rug guesses.
 
 chapter goon guide
 

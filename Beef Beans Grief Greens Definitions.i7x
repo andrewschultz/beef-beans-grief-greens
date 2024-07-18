@@ -116,7 +116,7 @@ a feastitem can be cookable, cooked, ingrediential, okaycold, ambiance, drinkwar
 
 a feastitem can be optional. a feastitem is usually not optional.
 
-an oventhing is a kind of thing. an oventhing has text called fdesc.
+an oventhing is a kind of rhymable. an oventhing has text called fdesc.
 
 a rhymeperson is a kind of rhymable. a rhymeperson is proper-named. a rhymeperson can be male or female. a rhymeperson has a rhymeperson called other-guy.
 

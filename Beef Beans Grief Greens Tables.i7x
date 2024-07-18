@@ -4,6 +4,8 @@ Version 1/240113 of Beef Beans Grief Greens Tables by Andrew Schultz begins here
 
 volume the main thing
 
+to say yrrr: say "you return[if player is in reeve row]ed[end if]"
+
 table of verb checks [the order of things to solve is roughly alphabetical, so the lurking lump always gives you the best value, but this is subverted by if one rhyme pushes the game/story further than the others. So Leave Lo is first. Sassed can be anywhere for the bonus point, since the lump explicitly avoids bonus points.]
 w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	idid	best-room	check-rule	run-rule	wfull (topic)	think-advice (text)
 "sassed"	"ceased"	--	--	false	true	false	false	--	vc-sassed-ceased rule	vr-sassed-ceased rule	--	--
@@ -12,10 +14,10 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "prune"	"pride"	"pried"	vh-prune-pried rule	false	true	true	false	reeve row	vc-prune-pride rule	vr-prune-pride rule	--	--
 "spoon"	"spied"	--	--	false	true	true	false	reeve row	vc-spoon-spied rule	vr-spoon-spied rule	--	"You can get a [b]SPOON SPIED[r] [once-now of vc-spoon-spied rule] you have managed to consult the goon guide with a clear mind."
 "believe"	"below"	--	--	false	true	true	false	reeve row	vc-believe-below rule	vr-believe-below rule	--	--
-"played"	"plug"	--	--	false	true	true	false	reeve row	vc-played-plug rule	vr-played-plug rule	--	--
+"played"	"plug"	--	--	false	true	true	false	reeve row	vc-played-plug rule	vr-played-plug rule	--	"You can find a [b]PLAYED PLUG[r] [once-now of vc-played-plug rule] [yrrr]."
 "grieve"	"grow"	"greave"	vh-greave-grow rule	false	true	true	false	reeve row	vc-grieve-grow rule	vr-grieve-grow rule	--	--
-"made|maid"	"mug"	--	--	false	true	true	false	reeve row	vc-made-mug rule	vr-made-mug rule	--	--
-"jade"	"jug"	--	--	false	true	true	false	reeve row	vc-jade-jug rule	vr-jade-jug rule	--	--
+"made|maid"	"mug"	--	--	false	true	true	false	reeve row	vc-made-mug rule	vr-made-mug rule	--	"You can find a [b]MADE MUG[r] [once-now of vc-made-mug rule] [yrrr]."
+"jade"	"jug"	--	--	false	true	true	false	reeve row	vc-jade-jug rule	vr-jade-jug rule	--	"You can find a [b]JADE JUG[r] [once-now of vc-jade-jug rule] [yrrr]."
 "laundering"	"lair"	--	--	false	true	true	false	wandering where	vc-laundering-lair rule	vr-laundering-lair rule	--	--
 "squandering"	"square"	--	--	false	true	true	false	wandering where	vc-squandering-square rule	vr-squandering-square rule	--	--
 "maundering"	"mare"	"mayor"	vh-maundering-mayor rule	false	true	true	false	wandering where	vc-maundering-mare rule	vr-maundering-mare rule	--	--
@@ -143,12 +145,17 @@ chapter reeve row scoring
 
 section rayed rug flips
 
+definition: a rhymable (called rh) is can-rug-rhyme:
+	unless rh is carried, no;
+	if guess-table of rh is table of rayed rug guesses and rh is not rayed rug, yes;
+	no;
+
 this is the aid-ugh rule:
 	if rayed rug is not touchable and made mug is not touchable and jade jug is not touchable and played plug is not touchable, unavailable;
 
 this is the rug-here rule:
 	if rayed rug is not touchable:
-		vcp "Good idea. That must be under the rayed rug back in Reeve Row.";
+		vcp "Looking at the [list of can-rug-rhyme rhymables] that came from the rayed rug, you realize Reeve Row would be a better place to try this.";
 		not-yet;
 
 a goodrhyme rule (this is the vc-played-plug rule):
@@ -181,7 +188,7 @@ this is the vr-made-mug rule:
 	rhyme-rug-check 2703;
 
 a goodrhyme rule (this is the vc-jade-jug rule):
-	if rayed rug is not touchable, unavailable;
+	abide by the aid-ugh rule;
 	if sco-jade-jug is true:
 		vcal "You already have a jade jug for the meal.";
 		already-done;
