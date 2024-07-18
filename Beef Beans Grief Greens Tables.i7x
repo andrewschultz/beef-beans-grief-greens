@@ -46,7 +46,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "doo"	"doo"	"do/dew"	--	false	true	true	false	ooh ooh	vc-doodoo rule	vr-doodoo rule	"doodoo"	--
 "ju"	"ju"	--	--	false	true	true	false	ooh ooh	vc-juju rule	vr-juju rule	"juju"	--
 "muu"	"muu"	"moo/moomoo"	vh-moomoo rule	false	true	true	false	ooh ooh	vc-muumuu rule	vr-muumuu rule	"mumu/muumuu"	--
-"poo"	"pooh"	--	--	false	true	true	false	ooh ooh	vc-poohpooh rule	vr-poohpooh rule	"poopoo/poohpooh"	--
+"poo|pooh"	"poo|pooh"	--	--	false	true	true	false	ooh ooh	vc-poohpooh rule	vr-poohpooh rule	"poopoo/poohpooh"	--
 "tu"	"tu"	--	--	false	true	true	false	ooh ooh	vc-tutu rule	vr-tutu rule	"tutu"	--
 "book"	"bard"	"barred"	vh-book-barred rule	false	true	true	false	took tarred	vc-book-bard rule	vr-book-bard rule	--	"You can [b]BOOK BARD[r] [once-now of vc-book-bard rule] you've seen where the shook shard can take you."
 "cook"	"card"	--	--	false	true	true	false	took tarred	vc-cook-card rule	vr-cook-card rule	--	"You can find a [b]COOK BARD[r] [once-now of vc-cook-card rule] you've seen where the shook shard can take you."
@@ -572,7 +572,7 @@ this is the vr-found-fork rule:
 section bleat bloat scoring
 
 a goodrhyme rule (this is the vc-neat-note rule):
-	unless meat moat is touchable or beet boat is touchable or bleat bloat is touchable, unavailable;
+	unless meat moat is touchable or beet boat is touchable or bleat bloat is touchable or neat note is touchable, unavailable;
 	if sco-neat-note is true:
 		vcal "But you already discovered the neat note. Rediscovering it won't make it neater or help you find more stuff.";
 		already-done;
@@ -654,7 +654,7 @@ this is the vr-white-wires rule:
 chapter Dove N Doubt scoring
 
 a goodrhyme rule (this is the vc-lovin-lout rule):
-	if player is not in dove n doubt, unavailable;
+	if player is not in dove n doubt and lovin lout is not touchable, unavailable;
 	if sco-lovin-lout is true:
 		vcal "The lovin['] lout already appeared to help you!";
 		already-done;
@@ -667,7 +667,7 @@ this is the vr-lovin-lout rule:
 	now to-number of Dove N Doubt is 2805;
 
 a goodrhyme rule (this is the vc-shovin-shout rule):
-	if player is not in dove n doubt, unavailable;
+	if player is not in dove n doubt and lovin lout is not touchable, unavailable;
 	if sco-lovin-lout is false:
 		vcp "That'd give a boost of energy, but a shout won't be enough to move the oven on your own.";
 		not-yet;
@@ -706,9 +706,12 @@ this is the vr-oven-out rule:
 section shook shard scoring
 
 a goodrhyme rule (this is the vc-hook-hard rule):
-	if shook shard is not in location of player, unavailable;
-	if took tarred is visited and player is not in took tarred and cook card is not moot:
+	if shook shard is not in location of player and player does not have cook card and player is not in took tarred, unavailable;
+	if player is in took tarred:
 		vcal "You got hooked now. How to get unhooked?";
+		already-done;
+	if player has cook card:
+		vcal "You got what you needed from the shard.";
 		already-done;
 	ready;
 
@@ -951,7 +954,7 @@ this is the vr-potpourri rule:
 	now player has potpourri;
 
 a goodrhyme rule (this is the vc-honeyed-ham rule):
-	if moneyed maam is not in location of player, unavailable;
+	if moneyed maam is not in location of player and player does not have honeyed ham, unavailable;
 	if sco-honeyed-ham is true:
 		vcal "But you already got the honeyed ham!";
 		already-done;
@@ -964,7 +967,7 @@ this is the vr-honeyed-ham rule:
 	moot moneyed maam;
 
 a goodrhyme rule (this is the vc-grey-gruel rule):
-	if fey fool is not in location of player, unavailable;
+	if fey fool is not in location of player and player does not have grey gruel, unavailable;
 	if sco-grey-gruel is true:
 		vcal "More gruel? Ugh!";
 		already-done;
@@ -977,7 +980,7 @@ this is the vr-grey-gruel rule:
 	moot cray cruel fey fool;
 
 a goodrhyme rule (this is the vc-just-jello rule):
-	if fussed fellow is not in location of player, unavailable;
+	if fussed fellow is not in location of player and player does not have jello, unavailable;
 	if sco-just-jello is true:
 		vcal "There's such a thing as too much Jell-O.";
 		already-done;
