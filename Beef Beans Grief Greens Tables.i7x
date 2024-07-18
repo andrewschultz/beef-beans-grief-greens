@@ -83,7 +83,7 @@ section goon guide
 a goodrhyme rule (this is the vc-prune-pride rule):
 	if goon guide is not touchable, unavailable;
 	if sco-prune-pride is true:
-		vcal "You're already humble enough.";
+		vcal "You're already humble enough. I mean, we could always be more humble, but there's overdoing it, too.";
 		already-done;
 	ready;
 
@@ -682,7 +682,7 @@ section shook shard scoring
 a goodrhyme rule (this is the vc-hook-hard rule):
 	if shook shard is not in location of player, unavailable;
 	if took tarred is visited and player is not in took tarred and cook card is not moot:
-		vcal "You already held the shard.";
+		vcal "You got hooked now. How to get unhooked?";
 		already-done;
 	ready;
 
@@ -1058,7 +1058,13 @@ a goodrhyme rule (this is the vc-yappy-yall rule):
 
 this is the vr-yappy-yall rule:
 	now sco-yappy-yall is true;
-	say "Everyone has a say about the deceased.";
+	say "Everyone has a say about the deceased. Whom they miss most, whom they missed more than they expected, whom they almost forgot.[paragraph break]As conversation dies down, you remember something worrisome[if feast is not examined], which would've nagged you even more if you'd read [feast][end if].[paragraph break]The game's title being [this-game], where are the beans? Not that beans make or break a meal.";
+	wfak;
+	say "A loud voice booms 'Aha! We were waiting for you to ask!' A line of dutiful deans comes in, each with their own bag of beautiful beans. They don't just look beautiful. They smell beautiful, and you know they'll taste beautiful.";
+	wfak;
+	say "'While we knew you'd be up to it, well ... it sort of felt unfair. Byu, Du, you know.' You nod appreciatively. The conversation takes a turn to odd yet enjoyable semantics and various puns. The meal starts in earnest. It and the chatter take  while to die down.";
+	wfak;
+	say "It's time for sport, now. But not any usual sport. Perhaps something with a slightly quirky name.";
 
 a goodrhyme rule (this is the vc-bappy-ball rule):
 	abide by the ritual-stuff rule;

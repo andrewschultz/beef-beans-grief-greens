@@ -186,11 +186,11 @@ report examining Last Least Fast Feast:
 		say "[line break]From beyond the fourth wall, you wonder where the beans fit into all this. Well, you have enough to tackle. Wiser entities than you probably have that sorted out.";
 	continue the action;
 
-check examining Fast Feast when trappy trawl is visited: say "You've checked all the boxes. All that's left to do is to replace it once the ceremony starts." instead;
+check examining Fast Feast when trappy trawl is visited: say "You've checked all the boxes. All that's left to do is to hand [feast] to the elders once the ceremony starts, to help the next gnome chosen." instead;
 
 chapter rayed rug
 
-the rayed rug is a rhymable in Reeve Row. "A rayed rug covers part of the floor here[if sco-played-plug is false]. It's oddly bumpy[end if].". description is "[if rug-score is 3]All the rays are dim now. You've probably gotten all you can out of the rug, which is a lot more than you expected. So, good job[else if rug-score is 2]About one-third of the rays are still bright[else if rug-score is 1]About two-thirds of the rays are still bright[else]You aren't big on decor, but Steve Stowe insisted you keep this rug. It would be useful, he said.[paragraph break]There are a lot of bright rays on the rug[end if][if sco-played-plug is false]. It's bumpy, but you're scared to look under it without knowing or figuring what the bump might be[end if]."
+the rayed rug is a rhymable in Reeve Row. "A rayed rug covers part of the floor here[if sco-played-plug is false]. It's oddly bumpy[end if][if sco-heave-ho is true]. You cast it aside from where it was with [b]HEAVE HO[r], but the bright rays on it suggest it still holds something you could use[end if].". description is "[if rug-score is 3]All the rays are dim now. You've probably gotten all you can out of the rug, which is a lot more than you expected. So, good job[else if rug-score is 2]About one-third of the rays are still bright[else if rug-score is 1]About two-thirds of the rays are still bright[else]You aren't big on decor, but Steve Stowe insisted you keep this rug. It would be useful, he said.[paragraph break]There are a lot of bright rays on the rug[end if][if sco-played-plug is false]. It's bumpy, but you're scared to look under it without knowing or figuring what the bump might be[end if]."
 
 understand "rays" as rayed rug when rayed rug is touchable.
 
@@ -796,7 +796,7 @@ to say here-to of (rm - a room):
 
 report taking inventory when Happy Hall is not visited:
 	if oven-fixed-yet is true:
-		say "You and [the lout] managed to move an oven back [here-to of Reeve Row], which will assist in cooking the final meal.";
+		say "You and [the lout] managed to move an oven back [here-to of Reeve Row], which [if number of cookable feastitems is 0]has done its duty cooking what needed to be cooked[else]will assist in cooking the final meal[end if].";
 	else if oven is in reeve row and number of carried oventhings is 0:
 		say "You moved an oven [here-to of Reeve Row], too, with the help of [the lout].";
 	continue the action;
