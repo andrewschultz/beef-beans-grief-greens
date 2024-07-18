@@ -156,7 +156,7 @@ this is the vr-played-plug rule:
 	say "Ah, that's what the bump in the rayed rug is.";
 	now player has played plug;
 	oven-check;
-	rug-check 2804;
+	rhyme-rug-check 2804;
 
 a goodrhyme rule (this is the vc-made-mug rule):
 	if rayed rug is not touchable, unavailable;
@@ -169,7 +169,7 @@ this is the vr-made-mug rule:
 	now sco-made-mug is true;
 	say "A made mug appears. It will be useful for the meal.";
 	now player has made mug;
-	rug-check 2703;
+	rhyme-rug-check 2703;
 
 a goodrhyme rule (this is the vc-jade-jug rule):
 	if rayed rug is not touchable, unavailable;
@@ -182,7 +182,7 @@ this is the vr-jade-jug rule:
 	now sco-jade-jug is true;
 	say "A jade jug appears. It will be useful for the meal.";
 	now player has jade jug;
-	rug-check 2703;
+	rhyme-rug-check 2703;
 
 section reeve row general flips
 
@@ -247,7 +247,18 @@ this is the vr-heave-ho rule:
 	say "[line break]Your kneeling on the floor to pull the rug up gave you a good view inside the oven. There you find something called a goon guide. But you can't use it, because you're too good to be a goon. That's how it works, right? Or maybe not...";
 	now player has goon guide;
 	declue-here-by 2752;
+	heave-ho-rug-check;
+	general-rug-check;
 	process the Reeve Row check passage down rule;
+
+to general-rug-check:
+	if rug-score is 3 and sco-heave-ho is true:
+		say "The rug doesn't seem useful any more. You tuck it away in a spot where it won't distract you.";
+		moot rayed rug;
+
+to heave-ho-rug-check:
+	if rug-score < 3:
+		say "While you've cast the rug aside, you'll keep an eye on it. You sense it has [if rug-score is 0]a lot[else if rug-score is 1]some[else]one thing[end if] more to offer.";
 
 a goodrhyme rule (this is the vc-grieve-grow rule):
 	if trappy trawl is visited:
@@ -1230,17 +1241,17 @@ book general flip stubs
 
 chapter Reeve Row
 
-to rug-check (nu - a number):
+to rhyme-rug-check (nu - a number):
 	decrease to-number of rayed rug by nu;
 	say "[line break]A ray vanishes from the rug. ";
 	if rug-score is 3:
-		say "The final rays on the rug grow dull. You figure you're done with it, so you put it in a corner where you can just ignore it";
-		moot rayed rug;
+		if sco-heave-ho is false:
+			say "A ray vanishes from the rug. You got a lot from the rug, yet it just looks weird, stuck in the center of the floor. How to move it?";
 	else if rug-score is 2:
-		say "The rug's rays go from one-third dull to one-third bright";
+		say "The rug's rays go from one-third dull to one-third bright.";
 	else:
-		say "Several rays on the rug (you'd say one-third) grow duller";
-	say "."
+		say "Several rays on the rug (you'd say one-third) grow duller.";
+	general-rug-check;
 
 to oven-check:
 	if oven-fix-score is 3:
