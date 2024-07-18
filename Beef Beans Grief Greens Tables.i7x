@@ -54,7 +54,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "pluck"	"plate"	--	--	false	true	true	false	stuck state	vc-pluck-plate rule	vr-pluck-plate rule	--	--
 "penny"	"piles"	--	--	false	true	true	false	sty sto	vc-penny-piles rule	vr-penny-piles rule	--	--
 "pie"	"po"	"pi/poe"	vh-pi-poe rule	false	true	true	false	sty sto	vc-pie-po rule	vr-pie-po rule	--	"You can buy a [b]PIE PO[r] [once-now of vc-pie-po rule] you have currency."
-"veggie"	"ville"	--	--	false	true	true	false	edgy ill	vc-veggie-ville rule	vr-veggie-ville rule	--	--
+"veggie"	"ville"	--	--	false	true	true	false	edgy ill	vc-veggie-ville rule	vr-veggie-ville rule	--	"You can visit [b]VEGGIE VILLE[r] [once-now of vc-veggie-ville rule] the bopper bee isn't distracting you."
 "soy"	"sauce"	"saws"	vh-soy-saws rule	false	true	true	false	toy toss	vc-soy-sauce rule	vr-soy-sauce rule	--	--
 "pot"	"pourri"	--	--	false	true	false	false	slow slurry	vc-potpourri rule	vr-potpourri rule	"potpourri"	--
 "honeyed"	"ham"	--	--	false	true	false	false	slow slurry	vc-honeyed-ham rule	vr-honeyed-ham rule	--	--
