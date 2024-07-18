@@ -54,17 +54,29 @@ understand the command "move" as something new.
 
 volume feast items
 
+[this should be organized so it looks nice examining LLFF]
+
+the soup is a cookable feastitem. fdesc of soup is "an appetizer, sort of". description is "It looks delicious. Not too watery and not too chunky.".
+
+some cocoa is a cookable feastitem. description is "Well, it's currently powdered, but when the time comes to dump it in boiling water, or add it to desert for flavor, you have confidence you'll come through with aplomb!". fdesc is "powdered drink mix". guess-table of cocoa is the table of cocoa guesses.
+
+the beet boat is an okaycold feastitem. description is "It is about as jazzy as beets can get. You're not sure what sort of boat it is, but that doesn't matter.". fdesc is "violet-ish veggies".  guess-table of beet boat is table of bleat bloat guesses.
+
+the veggies are an okaycold feastitem. fdesc of veggies is "veggies in general". description is "All variety of shapes and colors, though green is prominent.".
+
+the meat moat is a cookable feastitem. description is "Fortunately, it's a relatively small moat, without too much liquid, so it won't splash around as you carry it.". fdesc is "protein panorama". guess-table of meat moat is table of bleat bloat guesses.
+
+the pie po is a cookable feastitem. "I guess it is the pie equivalent of a po['] boy sandwich.". printed name is "pie (po['])". fdesc is "tasty pastry". guess-table of pie po is the table of hi ho guesses.
+
+the carrot cake is a cookable feastitem. fdesc of carrot cake is "cake, of course, for dessert". description is "Colorful and delicious.".
+
+chapter drinkware
+
 the made mug is a drinkware feastitem. fdesc of made mug is "small drinking container(s)". description is "It's your own special mug, as the leader of the ceremony."
 
 the jade jug is a drinkware feastitem. fdesc of jade jug is "large drink holder". description is "While it won't make the liquid in it taste any better, it's a really, really nikce color."
 
-the carrot cake is a cookable feastitem. fdesc of carrot cake is "cake, of course". description is "Colorful and delicious.".
-
-the soup is a cookable feastitem. fdesc of soup is "an appetizer, sort of". description is "It looks delicious. Not too watery and not too chunky.".
-
-the veggies are an okaycold feastitem. fdesc of veggies is "greens". description is "All variety of shapes and colors, though green is prominent.".
-
-chapter silverware
+chapter silverware (not actually spelled out in LLFF)
 
 check examining a silverware feastitem: say "Just a bunch of [printed name of noun]." instead;
 
@@ -164,7 +176,7 @@ Yves Eve O is a person. description of Yves is "You are [if gender-variable is 0
 
 section Last Least Fast Feast
 
-Last Least Fast Feast is a rhymable. the player carries Last Least Fast Feast. description of Last Least Fast Feast is "[one of][fast feast] is a vague description of the stuff you need for the end-of-year memorial feast. Perhaps they wanted to allow you artistic license, or perhaps they (or I) realized it'd not be a really fulfilling quest if they were specific. Or perhaps there's some weird obscure reason the feast tastes better or is more spiritually nourishing if it's prepared ad-hoc[or]You check [fast feast] again for what you need[stopping]."
+Last Least Fast Feast is a rhymable. the player carries Last Least Fast Feast. description of Last Least Fast Feast is "[one of][fast feast] is a vague description of the stuff you need for the end-of-year memorial feast. Perhaps they wanted to allow you artistic license, or perhaps they (or I) realized it'd not be a really fulfilling quest if they were specific. Or perhaps there's some weird obscure reason the feast tastes better or is more spiritually nourishing if it's prepared ad-hoc[or]You check [fast feast] again for what you need[stopping].". printed name is "[i]Last Least Fast Feast[r]".
 
 from-number of last least fast feast is -5410. to-number of last least fast feast is -2806.
 
@@ -308,17 +320,7 @@ from-number of neat note is 2704. to-number of neat note is 5408. [neat note:mea
 
 guess-table of bleat bloat is table of bleat bloat guesses.
 
-section meat moat
-
-the meat moat is a cookable feastitem. description is "Fortunately, it's a relatively small moat, without too much liquid, so it won't splash around as you carry it.". fdesc is "protein panorama".
-
-guess-table of meat moat is table of bleat bloat guesses.
-
-section beet boat
-
-the beet boat is an okaycold feastitem. description is "It is about as jazzy as beets can get. You're not sure what sort of boat it is, but that doesn't matter.". fdesc is "vast veggies"
-
-guess-table of beet boat is table of bleat bloat guesses.
+[meat moat and beet boat are in the feastitem section, so they are sorted in order]
 
 chapter ite ires
 
@@ -365,11 +367,7 @@ for printing a locale paragraph about a rhymeperson (called rp) in ooh ooh:
 	say "[list of rhymepersons in ooh ooh] stand here, tired of the old repetitive actions, looking for new repetitive sounding ones.[paragraph break]";
 	now all rhymepersons in ooh ooh are mentioned;
 
-chapter cocoa
-
-some cocoa is a cookable feastitem. description is "Well, it's currently powdered, but when the time comes to dump it in boiling water, or add it to desert for flavor, you have confidence you'll come through with aplomb!". fdesc is "powdered drink mix"
-
-guess-table of cocoa is the table of cocoa guesses.
+[cocoa is with the feastitems, so it's nicely ordered in inventory]
 
 chapter passive pit
 
@@ -668,9 +666,7 @@ chapter penny piles
 
 some penny piles are a plural-named thing. "A lot of pennies, but not a lot of wealth. What can you trade it to Bri-Bro for?"
 
-chapter pie po
-
-the pie po is a cookable feastitem. "I guess it is the pie equivalent of a po['] boy sandwich.". printed name is "pie (po['])". fdesc is "tasty pastry"
+[pie po is with the feastitems, so they're sorted nicely in inventory]
 
 book Edgy Ill Hedge-y Hill
 
