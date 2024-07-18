@@ -74,6 +74,7 @@ this is the flag bad goto to rule:
 this is the flag bad goto from rule:
 	if debug-state is true, say "FROM RULE CHECK: [location of player] ([mrlp]).";
 	if mrlp is dome d'aww, say "You can't go back anywhere you've been until you find a way out of here." instead;
+	if lovin lout is in location of player, say "You'd feel sad and mean ditching the lovin['] lout for any amount of time. Maybe even fearful they'd become un-lovin[']." instead;
 	if location of player is happy hall, say "There's no going back. The ceremony [if sco-cappy-caul is false]awaits[else]must be finished[end if]." instead;
 	if location of player is trappy trawl, say "There's no going back. You must find a way through to the ceremonial lair." instead;
 	if location of player is compete compel, say "This is the end of your journey. No going back." instead;
@@ -176,7 +177,7 @@ this is the side puzzle rooms rule:
 		say "Oh no! Another area completed, another distraction. You failed to watch where you were going, and you wind up by a weird bakery that sells both very expensive and very cheap items. Because you're so broke, service is lacking. You won't get any help perusing the vast selection. In fact, you probably won't get any help unless you ask for something in stock, and it's there. And even then, you'll need to pay for it. This isn't a food pantry.";
 		tangentify Hi Ho I Owe instead;
 	if Edgy Ill is unvisited:
-		say "Oh no! You hear an odd, insistent buzzing in the distance. It comes nearer. A giant bee tries to bop you ... must be a bopper bee! You may have to outsmart it, here.";
+		say "Oh no! You hear an odd, insistent buzzing in the distance. It comes nearer. A giant bee tries to bop you ... must be a bopper bee! It chases you far, far away. You may have to outsmart it, here.";
 		now all wandrooms are tangentified;
 		move player to Edgy Ill instead;
 	say "This is a BUG, but not a critical one. It seems I tried to send you to a side room, but you'd been to them all. Please let me know what room this error message occurred in."

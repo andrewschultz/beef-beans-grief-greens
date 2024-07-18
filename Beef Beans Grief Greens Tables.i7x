@@ -252,7 +252,7 @@ this is the vr-heave-ho rule:
 
 to general-rug-check:
 	if rug-score is 3 and sco-heave-ho is true:
-		say "The rug doesn't seem useful any more. You tuck it away in a spot where it won't distract you.";
+		say "[line break]You found something below the rug, and all its rays are dull. Best to tuck it away in a spot where it won't distract you.";
 		moot rayed rug;
 
 to heave-ho-rug-check:
@@ -1244,10 +1244,10 @@ chapter Reeve Row
 
 to rhyme-rug-check (nu - a number):
 	decrease to-number of rayed rug by nu;
-	say "[line break]A ray vanishes from the rug. ";
+	say "[line break]A ray vanishes from the rug!";
 	if rug-score is 3:
 		if sco-heave-ho is false:
-			say "A ray vanishes from the rug. You got a lot from the rug, yet it just looks weird, stuck in the center of the floor. How to move it?";
+			say "The rug sits uselessly in the center of the floor, now. It looks weird there. Perhaps you could find a way to move it.";
 	else if rug-score is 2:
 		say "The rug's rays go from one-third dull to one-third bright.";
 	else:

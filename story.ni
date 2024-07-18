@@ -141,7 +141,7 @@ check going down in Reeve Row:
 	decrease cur-max-bonus by (3 - stare-score); [ max 1 ]
 	move player to trappy trawl instead; [note sassed-ceased is tracked elsewhere. You can still get it until CAPPY CAUL.]
 
-check going outside in Reeve Row when Lovin Lout is in Reeve Row: say "You sense the lout could help with the rayed rug in some way." instead; [??GT must be inoperative]
+check going outside in Reeve Row when Lovin Lout is in Reeve Row: say "You sense the lout could help with the rayed rug in some way. They would wait lovingly, of course, but you don't want to take advantage of them like that! They seem to want to be useful now." instead;
 
 after printing the locale description for Reeve Row:
 	process the Reeve Row check passage down rule;
@@ -383,6 +383,8 @@ the massive mitt is an oventhing. description is "It's not just big, it's well-p
 book Dove 'N Doubt
 
 Dove N Doubt is a wandroom in Roam Raw. wanddir of Dove N Doubt is west. printed name of Dove N Doubt is "Dove [']N Doubt". "This is obviously a front for illegal activity. Nobody would actually pay money to visit this establishment. I mean, the only worse name could be the Guv [']n Gout."
+
+check going east in dove n doubt when lovin lout is in dove n doubt: say "The lovin['] lout waves to you and points to the oven. They seem eager to help with physical activity, and you suddenly feel a bit rude at the thought of keeping them waiting." instead;
 
 from-number of dove n doubt is 2755. to-number of dove n doubt is 2754.
 
