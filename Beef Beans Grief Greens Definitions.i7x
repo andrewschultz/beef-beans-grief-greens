@@ -109,9 +109,11 @@ the BBGG last point jerkjump check rule is listed last in the check jerkingjumpi
 
 chapter types
 
-a feastitem is a kind of rhymable. a feastitem has text called fdesc. a feastitem can be toeat, auxiliary, ambiance, drinkware or silverware. a feastitem is usually toeat.
+a feastitem is a kind of rhymable. a feastitem has text called fdesc.
 
-a feastitem can be uncookable, cooked, okaycold, optional or uncooked. a feastitem is usually uncookable.
+a feastitem can be cookable, cooked, ingrediential, okaycold, ambiance, drinkware, or silverware. a feastitem is usually cookable.
+
+a feastitem can be optional. a feastitem is usually not optional.
 
 an oventhing is a kind of thing. an oventhing has text called fdesc.
 
@@ -126,14 +128,14 @@ after doing something with a rhymeperson:
 
 definition: a feastitem (called fe) is stillneeded:
 	if fe is carried, no;
-	if fe is okaycold, no;
 	if fe is optional, no;
 	yes;
 
 definition: a feastitem (called F) is feastlistable:
+	if F is optional, no;
 	if F is silverware, no;
-	if F is okaycold, no;
 	if F is ambiance, no;
+	if F is ingrediential, no;
 	yes;
 
 

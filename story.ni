@@ -58,23 +58,23 @@ the made mug is a drinkware feastitem. fdesc of made mug is "small drinking cont
 
 the jade jug is a drinkware feastitem. fdesc of jade jug is "large drink holder". description is "While it won't make the liquid in it taste any better, it's a really, really nikce color."
 
-the carrot cake is a toeat feastitem. fdesc of carrot cake is "cake, of course". description is "Colorful and delicious.".
+the carrot cake is a cookable feastitem. fdesc of carrot cake is "cake, of course". description is "Colorful and delicious.".
 
-the soup is a toeat feastitem. fdesc of soup is "an appetizer, sort of". description is "It looks delicious. Not too watery and not too chunky.".
+the soup is a cookable feastitem. fdesc of soup is "an appetizer, sort of". description is "It looks delicious. Not too watery and not too chunky.".
 
-the veggies are a toeat feastitem. fdesc of veggies is "greens". description is "All variety of shapes and colors, though green is prominent.".
+the veggies are an okaycold feastitem. fdesc of veggies is "greens". description is "All variety of shapes and colors, though green is prominent.".
 
 chapter silverware
 
 check examining a silverware feastitem: say "Just a bunch of [printed name of noun]." instead;
 
-the knives are a plural-named silverware feastitem.
+the knives are a plural-named silverware feastitem. understand "knife" as knives.
 
-the plates are a plural-named silverware feastitem.
+the plates are a plural-named silverware feastitem. understand "plate" as plates.
 
-the spoons are a plural-named silverware feastitem.
+the spoons are a plural-named silverware feastitem. understand "spoon" as spoons.
 
-the forks are a plural-named silverware feastitem.
+the forks are a plural-named silverware feastitem. understand "fork" as forks.
 
 volume beginning stuff
 
@@ -121,7 +121,7 @@ check going down in Reeve Row:
 	if sco-grieve-grow is false, say "You're not emotionally ready, yet. Yet.[paragraph break]There's something you need to do here in Reeve Row, something independent of adventuring, something not at all concrete.[paragraph break]How can you deal with all the loss and steel yourself, so you know it's worth it, and you're worthy of conducting the ceremony?" instead;
 	if copper key is not moot, say "But you haven't unlocked the way down yet." instead;
 	if number of stillneeded feastitems > 0, say "You look at [feast]. You don't have everything, yet[if debug-state is true]([list of stillneeded feastitems])[end if]." instead;
-	if oven-fixed-yet is false, say "But you haven't found a way to cook [the list of toeat feastitems] yet." instead;
+	if oven-fixed-yet is false, say "But you haven't found a way to cook [the list of cookable feastitems] yet." instead;
 	if sco-chrome-craw is false, max-down;
 	decrease cur-max-bonus by (4 - slurry-score); [ max 4 ]
 	decrease cur-max-bonus by (7 - ooh-score); [ max 3 ]
@@ -149,10 +149,10 @@ after printing the locale description for reeve row when oven-fixed-yet is false
 	continue the action;
 
 after printing the locale description for reeve row when oven-fixed-yet is true (this is the Reeve Row get cooking rule):
-	if number of uncooked toeat feastitems carried by the player > 1:
-		say "You re-check the goon guide to see how to cook [the list of uncooked toeat feastitems carried by player].[paragraph break]";
-		now all uncooked toeat feastitems are cooked;
-		if number of uncooked toeat feastitems is 0:
+	if number of cookable feastitems carried by the player > 1:
+		say "You re-check the goon guide to see how to cook [the list of cookable feastitems carried by player].[paragraph break]";
+		now all cookable feastitems carried by the player are cooked;
+		if number of cookable feastitems is 0:
 			say "You've cooked everything you need for the feast!";
 		else:
 			say "There is still more, though.";
@@ -307,13 +307,13 @@ guess-table of bleat bloat is table of bleat bloat guesses.
 
 section meat moat
 
-the meat moat is a toeat uncooked feastitem. description is "Fortunately, it's a relatively small moat, without too much liquid, so it won't splash around as you carry it.". fdesc is "protein panorama".
+the meat moat is a cookable feastitem. description is "Fortunately, it's a relatively small moat, without too much liquid, so it won't splash around as you carry it.". fdesc is "protein panorama".
 
 guess-table of meat moat is table of bleat bloat guesses.
 
 section beet boat
 
-the beet boat is a toeat uncookable feastitem. description is "It is about as jazzy as beets can get. You're not sure what sort of boat it is, but that doesn't matter.". fdesc is "vast veggies"
+the beet boat is an okaycold feastitem. description is "It is about as jazzy as beets can get. You're not sure what sort of boat it is, but that doesn't matter.". fdesc is "vast veggies"
 
 guess-table of beet boat is table of bleat bloat guesses.
 
@@ -364,7 +364,7 @@ for printing a locale paragraph about a rhymeperson (called rp) in ooh ooh:
 
 chapter cocoa
 
-some cocoa is a toeat feastitem. description is "Well, it's currently powdered, but when the time comes to dump it in boiling water, you have confidence you'll come through with aplomb!". fdesc is "powdered drink mix"
+some cocoa is a cookable feastitem. description is "Well, it's currently powdered, but when the time comes to dump it in boiling water, or add it to desert for flavor, you have confidence you'll come through with aplomb!". fdesc is "powdered drink mix"
 
 guess-table of cocoa is the table of cocoa guesses.
 
@@ -613,7 +613,7 @@ chapter cook card
 
 the cook card is an oventhing. description is "It's the card of very special recipes that fell out of the goon guide! You'd love to study it more, but you should really stick to your quest.". fdesc is "a missing insert from the goon guide (okay, you wrote that in, just in case)".
 
-some lard is a toeat feastitem. description is "Not much to say about it. It's lard. I'm not an expert in these things. I just know you shouldn't use too much of it, and you can burn your dish if you forget. But you probably knew that, too.". fdesc is "prevents sticking"
+some lard is an ingrediential feastitem. description is "Not much to say about it. It's lard. I'm not an expert in these things. I just know you shouldn't use too much of it, and you can burn your dish if you forget. But you probably knew that, too.". fdesc is "prevents sticking"
 
 book Toy Toss
 
@@ -635,7 +635,7 @@ from-number of joy jaws is 2654. to-number of joy jaws is 2655. [soy sauce]
 
 chapter soy sauce
 
-the soy sauce is a toeat feastitem. description is "It's a rather large bottle of soy sauce, so people at a feast won't run out. But of course it has that slow-drip neck so people don't mistakenly dump it over their food.". fdesc is "liquid seasoning".
+the soy sauce is an ingrediential feastitem. description is "It's a rather large bottle of soy sauce, so people at a feast won't run out. But of course it has that slow-drip neck so people don't mistakenly dump it over their food.". fdesc is "liquid seasoning".
 
 book Hi Ho I Owe Sty Sto
 
@@ -667,7 +667,7 @@ some penny piles are a plural-named thing. "A lot of pennies, but not a lot of w
 
 chapter pie po
 
-the pie po is a toeat feastitem. "I guess it is the pie equivalent of a po['] boy sandwich.". printed name is "pie (po['])". fdesc is "tasty pastry"
+the pie po is a cookable feastitem. "I guess it is the pie equivalent of a po['] boy sandwich.". printed name is "pie (po['])". fdesc is "tasty pastry"
 
 book Edgy Ill Hedge-y Hill
 
@@ -707,7 +707,7 @@ guess-table of cray cruel fey fool is the table of cray cruel fey fool guesses.
 
 section grey gruel
 
-the grey gruel is a toeat okaycold feastitem. understand "gray" and "gray gruel" as gruel when player has gruel.
+the grey gruel is an okaycold optional feastitem. understand "gray" and "gray gruel" as gruel when player has gruel.
 
 guess-table of grey gruel is the table of cray cruel fey fool guesses.
 
@@ -719,7 +719,7 @@ from-number of moneyed maam is 2854. to-number of moneyed maam is -2853.
 
 section honeyed ham
 
-the honeyed ham is a toeat okaycold feastitem. description is "It may be glazed a bit too much, but concerned feast-goers can just scrape the extra bits off. Maybe take them home in a doggie bag for their kids.".
+the honeyed ham is a cookable optional feastitem. description is "It may be glazed a bit too much, but concerned feast-goers can just scrape the extra bits off. Maybe take them home in a doggie bag for their kids.".
 
 section potpourri
 
@@ -733,7 +733,7 @@ from-number of fussed fellow is 2806. to-number of fussed fellow is -2705.
 
 section just jello
 
-the just jello is a toeat okaycold feastitem. "Well, it's just Jell-O but a bunch of different colors. What colors, though!"
+the just jello is an okaycold optional feastitem. "Well, it's just Jell-O but a bunch of different colors. What colors, though!"
 
 volume unsorted
 
@@ -755,15 +755,21 @@ book taking inventory
 
 the bbgg inventory rule is listed instead of the print standard inventory rule in the carry out taking inventory rulebook.
 
+before printing the name of an optional feastitem while taking inventory:
+	say "[i]";
+
+after printing the name of an optional feastitem while taking inventory:
+	say "[r]"
+
 carry out taking inventory (this is the bbgg inventory rule):
-	say "Currently carrying:[line break]";
-	if number of carried uncooked feastitems > 0, say "  [list of carried uncooked feastitems] (uncooked)[line break]";
-	if number of carried uncookable feastitems > 0, say "  [list of carried uncookable feastitems] (uncookable)[line break]";
-	if number of carried okaycold feastitems > 0, say "  [list of carried okaycold feastitems] (okay cold)[line break]";
-	if number of carried optional feastitems > 0, say "  [list of carried optional feastitems] (optional, for ambiance)[line break]";
+	say "Currently carrying[if number of carried optional feastitems > 0] (bonus items in italics)[end if]:[line break]";
 	if number of carried cooked feastitems > 0, say "  [list of carried cooked feastitems] (cooked)[line break]";
-	if number of carried drinkware feastitems > 0, say "  [list of carried drinkware feastitems] (for drinking stuff)[line break]";
+	if number of carried cookable feastitems > 0, say "  [list of carried cookable feastitems] (uncooked)[line break]";
+	if number of carried ingrediential feastitems > 0, say "  [list of carried ingrediential feastitems] (ingredients)[line break]";
+	if number of carried okaycold feastitems > 0, say "  [list of carried okaycold feastitems] (okay cold)[line break]";
 	if number of carried silverware feastitems > 0, say "  [list of carried silverware feastitems] (utensils)[line break]";
+	if number of carried drinkware feastitems > 0, say "  [list of carried drinkware feastitems] (for drinking stuff)[line break]";
+	if number of carried ambiance feastitems > 0, say "  [list of carried ambiance feastitems] (ambiance)[line break]";
 	if number of carried oventhings > 0, say "  [list of carried oventhings] ([if oven is not in reeve row]to repair something, maybe[else]to fix the oven [here-in of reeve row][end if])[line break]";
 	now all things carried by player are marked for listing;
 	now all feastitems are not marked for listing;
