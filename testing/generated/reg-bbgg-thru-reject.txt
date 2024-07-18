@@ -55,6 +55,7 @@ Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, 
 >carrot cake
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Beef, Beans, Grief, Greens has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
+#testcase-check-vc-chrome-craw-rule-if-wandering-where-is-unvisited
 #testcase-reject-start-table-of-verb-checks-vc-chrome-craw-rule
 >chrome craw
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Beef, Beans, Grief, Greens has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
@@ -159,6 +160,7 @@ Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, 
 >lovin lout
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Beef, Beans, Grief, Greens has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
+#testcase-check-vc-massive-mitt-rule-if-passive-pit-is-not-touchable
 #testcase-reject-start-table-of-verb-checks-vc-massive-mitt-rule
 >massive mitt
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Beef, Beans, Grief, Greens has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
@@ -179,7 +181,7 @@ Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, 
 >meet mel
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Beef, Beans, Grief, Greens has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
-#testcase-check-vc-meet-mel-rule-if-player-is-not-in-compete-compel
+#testcase-check-vc-muumuu-rule-if-player-is-not-in-ooh-ooh
 #testcase-reject-start-table-of-verb-checks-vc-muumuu-rule
 >muumuu
 Most special commands are more than one word. VERBS will give a list of useful, non-puzzle-solving verbs.
@@ -329,7 +331,9 @@ Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, 
 
 >x
 
+#testcase-run-vr-believe-below-rule-if-sco-heave-ho-is-false
 >believe below
+You believe something must be below. Below that rug, you'd guess. You might not be able to remove it by yourself. But you have faith now!
 by one point
 
 #testcase-check-vc-believe-below-rule-if-sco-believe-below-is-true
@@ -356,6 +360,10 @@ by one point
 A made mug appears. It will be useful for the meal.
 A ray vanishes from the rug. Several rays on the rug (you'd say one-third) grow duller.
 
+#testcase-check-vc-made-mug-rule-if-sco-made-mug-is-true
+>made mug
+You already have a made/maid mug for the meal.
+
 >jade jug
 by one point
 
@@ -363,12 +371,29 @@ by one point
 A jade jug appears. It will be useful for the meal.
 A ray vanishes from the rug. The rug's rays go from one-third dull to one-third bright.
 
+#testcase-check-vc-jade-jug-rule-if-sco-jade-jug-is-true
+>jade jug
+You already have a jade jug for the meal.
+
+#testcase-check-vc-heave-ho-rule-if-sco-oven-out-is-false
+>heave ho
+You try to pull the rayed rug, but it feels nailed down in enough places you can only look under a bit. You can't move it by yourself. You need a stronger assistant!
+
+#testcase-think-table-of-verb-checks-vc-heave-ho-rule
+>think
+You can HEAVE HO once you have a strong assistant here who can help you pull the rug up.
+
 >leave lo
 by one point
 
 #testcase-check-vc-leave-lo-rule-fallthrough
 Sometimes you just need the right time to say a simple phrase to get you going. And you do, here.
 
+#+testcase-think-table-of-verb-checks-vc-heave-ho-rule
+>think
+You can HEAVE HO once you have a strong assistant in Reeve Row who can help you pull the rug up.
+
+#testcase-reject-start-table-of-verb-checks-vc-leave-lo-rule
 #testcase-check-vc-leave-lo-rule-if-player-is-not-in-reeve-row
 >leave lo
 But you already left Reeve Row!
@@ -410,6 +435,26 @@ by one point
 #testcase-check-vc-laundering-lair-rule-fallthrough
 You think up a storm and realize, there is a way to such a place, though maybe it's easier to go west in the future. The name is a bit more specific than what you'd imagined.
 
+#testcase-check-vc-chrome-craw-rule-if-player-is-not-in-wandering-where
+>chrome craw
+Ooh! A passage somewhere new? That'd be interesting. But this isn't an open enough space.
+
+#testcase-check-vc-oven-out-rule-if-sco-lovin-lout-is-false
+>oven out
+You can't move the oven out by yourself!
+
+#testcase-think-table-of-verb-checks-vc-oven-out-rule
+>think
+You can say OVEN OUT once you have someone strong enough to push the oven.
+
+#testcase-check-vc-shovin-shout-rule-if-sco-lovin-lout-is-false
+>shovin shout
+That'd give a boost of energy, but a shout won't be enough to move the oven on your own.
+
+#testcase-think-table-of-verb-checks-vc-shovin-shout-rule
+>think
+You can make a SHOVIN SHOUT once you have the help of someone stronger.
+
 >lovin lout
 by one point
 
@@ -421,6 +466,10 @@ You take a closer look at the oven. It's missing a lot! You probably need to fin
 >lovin lout
 The lovin' lout already appeared to help you!
 
+#+testcase-think-table-of-verb-checks-vc-shovin-shout-rule
+>think
+You can make a SHOVIN SHOUT now you have the help of someone stronger.
+
 >shovin shout
 by one point
 
@@ -428,12 +477,36 @@ by one point
 You and the lovin' lout get together and push the oven forward.
 Something seems to crumble loose. Success! You can probably move the oven more ambitiously now.
 
+#testcase-check-vc-shovin-shout-rule-if-sco-shovin-shout-is-true
+>shovin shout
+You already shouted with the lout! It's time to finish removing the oven.
+
+#testcase-check-vc-oven-out-rule-if-sco-shovin-shout-is-false
+>shovin shout
+Before moving the oven out, you'll have to be sure you and the lout can push it a bit.
+
+#+testcase-think-table-of-verb-checks-vc-oven-out-rule
+>think
+You can say OVEN OUT now you have someone strong enough to push the oven.
+
 >oven out
 by one point
 
 #testcase-check-vc-oven-out-rule-fallthrough
 With the right commands and pacing, you and the lovin' lout move the oven from its former position. The lout, very unloutishly indeed, asks if you need the oven to move anywhere. You defer all "Oh, it'd be too much!" but after some nonsense back-and-forthing, you both realize that's wasted energy. You both move the oven back to Reeve Row pretty quickly. The oven is -- well, you sense it isn't ready to cook anything, but it's a lot easier to repair here.
 The lovin' lout waits around, as if they suspect they could help you with one more thing. Very considerate indeed, for a lout!
+
+#+testcase-check-vc-shovin-shout-rule-if-sco-shovin-shout-is-true
+>shovin shout
+You already shouted with the lout! It's time to look elsewhere.
+
+#testcase-check-vc-oven-out-rule-if-sco-oven-out-is-true
+>oven out
+But you've already moved the oven back to Reeve Row!
+
+#+testcase-think-table-of-verb-checks-vc-heave-ho-rule
+>think
+You can HEAVE HO now you have a strong assistant here who can help you pull the rug up.
 
 >heave ho
 by one point
@@ -443,9 +516,11 @@ You and the lovin' lout pull on one, two, THREE! It takes a couple of times, but
 You shake hands with the lovin' lout, who exits and nods to wish you the best.
 Your kneeling on the floor to pull the rug up gave you a good view inside the oven. There you find something called a goon guide. But you can't use it, because you're too good to be a goon. That's how it works, right? Or maybe not...
 
+#testcase-check-vc-spoon-spied-rule-if-sco-prune-pride-is-false
 >spoon spied
 You'd love to find a bit more silverware, and maybe the goon guide would be just the thing. Except you can't lower yourself to read it. Yet.
 
+#testcase-think-table-of-verb-checks-vc-spoon-spied-rule
 >think
 You can get a SPOON SPIED once you have managed to consult the goon guide with a clear mind.
 
@@ -456,7 +531,23 @@ by one point
 You get over your rage at the goon guide allowing bad people to make food as tasty as good people could make. You realize you are not the judge of such things, and you should not be.
 The goon guide will be there with further technical help when you need it, to help repair the oven. You have an idea of the exact parts that are missing now. You will be more observant in the future when you look around.
 
+#testcase-check-vc-prune-pride-rule-if-sco-prune-pride-is-true
+>prune pride
+You're already humble enough. I mean, we could always be more humble, but there's overdoing it, too.
+
+#testcase-check-vc-spoon-spied-rule-if-goon-guide-is-not-examined
+>spoon spied
+You try to spy spoons based on your general impressions of the goon guide, but ... well, I'm going to make you read it more closely now you've pruned your pride.
+
+#+testcase-think-table-of-verb-checks-vc-spoon-spied-rule
+>think
+You can get a SPOON SPIED once you have managed to consult the goon guide with a clear mind.
+
 >x guide
+
+#+testcase-think-table-of-verb-checks-vc-spoon-spied-rule
+>think
+You can get a SPOON SPIED now you have managed to consult the goon guide with a clear mind.
 
 >spoon spied
 by one point
@@ -473,6 +564,10 @@ by one point
 Ah, that's what the bump in the rayed rug is.
 A ray vanishes from the rug. The final rays on the rug grow dull. You figure you're done with it, so you put it in a corner where you can just ignore it.
 
+#testcase-check-vc-played-plug-rule-if-sco-played-plug-is-true
+>played plug
+You already got a played plug!
+
 >out
 
 >pluck plate
@@ -486,9 +581,11 @@ You find one plate, and it give you a greater morale boost than expected. All of
 #+testcase-check-vc-look-lard-rule-abide-by-the-shardy-rule
 >look lard
 The shard is calling to you. You must grasp it and find where it leads before searching for anything that concrete. But you feel you're on the right path.
+
 #+testcase-check-vc-cook-card-rule-abide-by-the-shardy-rule
 >cook card
 The shard is calling to you. You must grasp it and find where it leads before searching for anything that concrete. But you feel you're on the right path.
+
 #+testcase-check-vc-book-bard-rule-abide-by-the-shardy-rule
 >book bard
 The shard is calling to you. You must grasp it and find where it leads before searching for anything that concrete. But you feel you're on the right path.
@@ -504,6 +601,14 @@ by one point
 
 #testcase-check-vc-hook-hard-rule-fallthrough
 You grab the shard and feel pulled to somewhere new...
+
+#+testcase-check-vc-chrome-craw-rule-if-player-is-not-in-wandering-where
+>chrome craw
+Ooh! A passage somewhere new? That'd be interesting. But this isn't an accessible enough space.
+
+#testcase-check-vc-hook-hard-rule-if-took-tarred-is-visited-and-player-is-not-in-took-tarred-and-cook-card-is-not-moot
+>hook hard
+You got hooked now. How to get unhooked?
 
 >book bard
 by one point
@@ -523,7 +628,7 @@ by one point
 Oh my goodness. Could it be ... is it ... the missing insert from the goon guide? What luck!
 You feel the area's hold on you weaken.
 
-#testcase-check-vc-book-bard-rule-if-sco-cook-card-is-true
+#testcase-check-vc-book-bard-rule-if-sco-book-bard-is-true
 >cook card
 You already found a card with cooking tips!
 
@@ -537,6 +642,18 @@ by one point
 #testcase-check-vc-look-lard-rule-fallthrough
 Lard, man. You're still not sure if you really need it, even if the cookbooks say you should. You've never had the guts to rebel and just prepare that dish without lard. Now's not the time to start. So you're glad you looked so diligently, and you're glad it turned up.
 You feel sucked out of whatever the shard held you in. As you come back to Dove 'N Doubt, the shard shatters. You sense there's nothing more to do here, so you walk back to the center of the action.
+
+#testcase-check-vc-look-lard-rule-if-sco-look-lard-is-true
+>look lard
+You're not sure why you need lard, but you're pretty sure you don't need too much of it.
+
+#testcase-check-vc-chrome-craw-rule-if-sides-visited-<-4
+>chrome craw
+That seems like it could work nicely here, but you don't know your way around well enough yet.
+
+#testcase-think-table-of-verb-checks-vc-chrome-craw-rule
+>think
+You can open the CHROME CRAW here once you've explored everywhere you can aboveground.
 
 >squandering square
 by one point
@@ -553,7 +670,7 @@ The staller stare blinks. It seems to shake where its head would be. It's a bit 
 
 #testcase-check-vc-dollar-dare-rule-if-sco-dollar-dare-is-true
 >dollar dare
-You already alerted the staller stare to the dollar dare.
+You already made light of a dollar dare.
 
 >caller care
 by one point
@@ -570,17 +687,46 @@ You already provided caller care!
 by one point
 
 #testcase-check-vc-baller-bear-rule-fallthrough
+WRONG
 With the staller stare gone, you leave a bit of hope and genuine solicitousness for the next lost soul who stumbles here.
 
 #testcase-check-vc-baller-bear-rule-if-sco-baller-bear-is-true
 >baller bear
 You already summoned a baller bear!
 
+#testcase-check-vc-beet-boat-rule-abide-by-the-bloat-transform-rule
+>beet boat
+Perhaps ... but unfortunately, the bleat-bloat distracts you from finding fun new stuff. Perhaps a helpful guide, or guiding document, would be the thing.
+
+#testcase-check-vc-meat-moat-rule-abide-by-the-bloat-transform-rule
+>meat moat
+Perhaps ... but unfortunately, the bleat-bloat distracts you from finding fun new stuff. Perhaps a helpful guide, or guiding document, would be the thing.
+
+#testcase-think-table-of-verb-checks-vc-beet-boat-rule
+>think
+You can find a BEET BOAT once you have found something more useful than the bleat bloat.
+
+#testcase-think-table-of-verb-checks-vc-meat-moat-rule
+>think
+You can find a MEAT MOAT once you have found something more useful than the bleat bloat.
+
 >neat note
 by one point
 
 #testcase-check-vc-neat-note-rule-fallthrough
 It seems silly to expect someone to just up and drop by with a neat note. But surprisingly, the bleat bloat dies out, and someone singularly unimpressive-looking walks in, slowly and without confidence.
+
+#testcase-check-vc-neat-note-rule-if-sco-neat-note-is-true
+>neat note
+But you already discovered the neat note. Rediscovering it won't make it neater.
+
+#+testcase-think-table-of-verb-checks-vc-beet-boat-rule
+>think
+You can find a BEET BOAT now you have found something more useful than the bleat bloat.
+
+#+testcase-think-table-of-verb-checks-vc-meat-moat-rule
+>think
+You can find a MEAT MOAT now you have found something more useful than the bleat bloat.
 
 >found fork
 by one point
@@ -599,6 +745,10 @@ by one point
 #testcase-check-vc-meat-moat-rule-fallthrough
 A burly workman named Amped Ox takes you and the downed dork to the Damped Docks, where indeed a small meat moat (heavy meat, light gravy) is discovered. It looks and smells clean. Apparently, it was part of an all-you-can-eat buffet, and the workers ran out of stomach space.
 The downed dork asks if they should stay or go. Your instincts are to stay. Maybe there's one more thing here.
+
+#testcase-check-vc-meat-moat-rule-if-sco-meat-moat-is-true
+>meat moat
+More than one meat moat would be overkill. And not just for the animals killed to make the meat.
 
 >beet boat
 by one point
@@ -628,6 +778,14 @@ You can handle the WHITE WIRES once the lyres are safe to touch.
 >undo
 >undo
 
+#testcase-check-vc-white-wires-rule-if-sco-fight-fires-is-false
+>white wires
+Okay, the light lyres might have white wires, but they'd be white-hot!
+
+#testcase-think-table-of-verb-checks-vc-white-wires-rule
+>think
+You can handle the WHITE WIRES once the lyres are safe to touch.
+
 >fight fires
 by one point
 
@@ -639,8 +797,16 @@ Perhaps some part of them that you can use is left, though.
 >fight fires
 You already fought the fires!
 
+#+testcase-think-table-of-verb-checks-vc-white-wires-rule
+>think
+You can handle the WHITE WIRES now the lyres are safe to touch.
+
 >white wires
 by one point
+
+#testcase-check-vc-white-wires-rule-if-sco-white-wires-is-true
+>white wires
+You already got the white wires!
 
 #testcase-check-vc-white-wires-rule-fallthrough
 You see what to look for in the lyres. The white wires have to come in handy to fix the oven.
@@ -677,11 +843,19 @@ by one point
 #testcase-check-vc-see-soup-rule-fallthrough
 You nod to the tree troop. You see what you want. They are glad to give it to you.
 
+#testcase-check-vc-see-soup-rule-if-sco-see-soup-is-true
+>see soup
+You already got the soup!
+
 >notice knife
 by one point
 
 #testcase-check-vc-notice-knife-rule-fallthrough
 Ah! Yes! The lotus life almost took over parts of the zoo. You had to look for the knife, but it is there. And once you do, you notice a whole bunch of knives. Wow, when this zoo blossoms, it blossoms.
+
+#testcase-check-vc-notice-knife-rule-if-sco-notice-knife-is-true
+>notice knife
+You already noticed the knife! There is nothing more.
 
 >dented dials
 by one point
@@ -716,6 +890,10 @@ by one point
 #testcase-check-vc-penny-piles-rule-fallthrough
 Reading Any Isles, Many Miles carefully, you recognize that it, in fact, covers an isle not far from here (there were so many isles in the book, one was bound to be close,) rumored to hold particularly small-scale wealth. You excuse yourself to go look for it. Bri-Bro doesn't want to let you go at first, because he isn't here to provide a rest area for loiterers.
 
+#testcase-check-vc-penny-piles-rule-if-sco-penny-piles-is-true
+>penny piles
+You already found enough penny piles to buy something!
+
 #+testcase-think-table-of-verb-checks-vc-pie-po-rule
 >think
 You can buy a PIE PO now you have currency.
@@ -740,6 +918,7 @@ by one point
 Sometimes, you just have to complain about small hurts, physical or mental, and exaggerate them. As long as you get back to your regular life soon after, it's not that bad, really. So you and Loulou and Zuzu do.
 Zuzu and Loulou seem to warm up to you.
 
+#testcase-check-vc-booboo-rule-if-sco-booboo-is-true
 >booboo
 You already feigned a booboo.
 
@@ -749,11 +928,19 @@ by one point
 #testcase-check-vc-juju-rule-fallthrough
 You find ways to perform juju, or pretend to.
 
+#testcase-check-vc-juju-rule-if-sco-juju-is-true
+>juju
+You already fake-performed juju.
+
 >muumuu
 by one point
 
 #testcase-check-vc-muumuu-rule-fallthrough
 Loulou and Zuzu shrug a bit. Why not? They come in so many different colors.
+
+#testcase-check-vc-muumuu-rule-if-sco-muumuu-is-true
+>muumuu
+You already pictured Loulou and Zuzu in muumuus.
 
 >tutu
 by one point
@@ -762,11 +949,19 @@ by one point
 can't dance worth a dang, but that seems worth trying, not for the whole stale "ha ha dude in a dress" joke but because it does seem to fit the area's general vibe.
 pound you on the back. You sure have some great ideas in line with their thinking! After some awkward hand gestures they indicate they don't mind if you stay or go. You've earned this packet of cocoa.
 
+#testcase-check-vc-tutu-rule-if-sco-tutu-is-true
+>tutu
+Tutus get old fast as jokewear.
+
 >massive mitt
 by one point
 
 #testcase-check-vc-massive-mitt-rule-fallthrough
 Now that you know what to look for, you are patient enough to look through the passive pit. You sift through a phone book, a remote control, some matches, a paddleball, a thermos, and oil cans with gun holes in them before you uncover a massive mitt.
+
+#testcase-check-vc-massive-mitt-rule-if-sco-massive-mitt-is-true
+>massive mitt
+You already got the massive mitt from the passive pit!
 
 >cuckoo
 by one point
@@ -775,6 +970,7 @@ by one point
 You discuss, in an entirely sane manner, Swiss clocks with birds in them, and the chorus of the Mackenzie Brothers' '80s novelty smash hit Take Off.
 Zuzu and Loulou look even happier now. Dare they expect more solidarity?
 
+#testcase-check-vc-cuckoo-rule-if-sco-cuckoo-is-true
 >cuckoo
 It was almost too crazy the first time.
 
@@ -785,6 +981,7 @@ by one point
 You patrol the area for animal waste, also remarking on other interesting swear-word replacements.
 Loulou and Zuzu are starting to look exhausted from all this imagining.
 
+#testcase-check-vc-doodoo-rule-if-sco-doodoo-is-true
 >doodoo
 The value of such a word or phrase drops quickly with each use.
 
@@ -796,7 +993,19 @@ You show
 ways to dismiss this little thought experiment.
 wipe their brows after this latest feat of imagination. Nothing more to do here, really.
 
+#testcase-check-vc-poohpooh-rule-if-sco-poohpooh-is-true
+>poohpooh
+There's overdoing things, you reckon.
+
 >s
+
+#testcase-check-vc-veggie-ville-rule-if-sco-flopper-flea-is-false
+>veggie ville
+That'd be somewhere to go, once you disposed of the bopper bee.
+
+#testcase-think-table-of-verb-checks-vc-veggie-ville-rule
+>think
+You can visit VEGGIE VILLE once the bopper bee isn't distracting you.
 
 >flopper flea
 by one point
@@ -805,8 +1014,13 @@ by one point
 Wait! Something about the bee looks funny! Yes, it is not really a bee, but a less aggressive animal in disguise. Just knowing it is a flopper flea makes you less scared. Without fear, your running around gets more strategic, until it gets exhausted chasing you.
 It buzzes and mumbles off. You're not surprised that, as it does, it drops a copper key, which you pick up.
 
+#testcase-check-vc-flopper-flea-rule-if-sco-flopper-flea-is-true
 >flopper flea
 You already got rid of the bopper bee!
+
+#+testcase-think-table-of-verb-checks-vc-veggie-ville-rule
+>think
+You can visit VEGGIE VILLE now the bopper bee isn't distracting you.
 
 >veggie ville
 by one point
@@ -817,12 +1031,23 @@ You know there will be many stores in the distance. So you begin your trek. On t
 Once you get there, you worry you have no money to pay. But when they see the Last Least Fast Feast, they recognize what you are here for. Why, they have just the thing: veggies and fruits of irregular shapes, which get thrown out anyway!
 They're impressed with what you've gotten so far. They deem you a worthy leader of the ceremony. They wish you luck and provide directions back...
 
+>n
+
+#testcase-think-table-of-verb-checks-vc-chrome-craw-rule
+>think
+You can open the CHROME CRAW in Wandering ... Where? once you've explored everywhere you can aboveground.
+
+>undo
+>undo
+
 >chrome craw
 by one point
 
 #testcase-check-vc-chrome-craw-rule-fallthrough
 You hear a large creaking from the ground beneath, and lo and behold, a chrome craw rumbles up from the ground! It's a bit scary-looking, but you're curious to explore it. You can go DOWN into it.
 
+#testcase-check-vc-chrome-craw-rule-if-sco-chrome-craw-is-true
+#+testcase-check-vc-chrome-craw-rule-if-sco-chrome-craw-is-true-if-trappy-trawl-is-visited # really need "else" case for this as it overlaps another
 >chrome craw
 You already opened the chrome craw!
 
@@ -834,6 +1059,10 @@ by one point
 #testcase-check-vc-honeyed-ham-rule-fallthrough
 She sniffs and hands you a honeyed ham. Her charity done for the day, she brushes you aside with a hand gesture and then walks off impatiently, herself.
 
+#testcase-check-vc-honeyed-ham-rule-if-sco-honeyed-ham-is-true
+>honeyed ham
+But you already got the honeyed ham!
+
 >grey gruel
 by one point
 
@@ -841,11 +1070,19 @@ by one point
 The cray cruel fey fool hands you some surprisingly not-cray gray gruel and snickers before running off. What kind of square would actually LIKE gruel?
 But you want to be considerate about allergies, people trying to diet, people with vegan lifestyles, and so forth. It will be useful, you guess, as a base or paste.
 
+#testcase-check-vc-grey-gruel-rule-if-sco-grey-gruel-is-true
+>grey gruel
+More gruel? Ugh!
+
 >just jello
 by one point
 
 #testcase-check-vc-just-jello-rule-fallthrough
 The fussed fellow seems relieved to hand you the Jell-o. It may be just Jell-O, but it's all different kinds of colors and flavors. Including pineapple! You remember when some smart-aleck in middle school said pineapple Jell-O would never be a thing. In fact, that smart-aleck snickered when you were chosen for the ceremony.
+
+#testcase-check-vc-just-jello-rule-if-sco-just-jello-is-true
+>just jello
+There's such a thing as too much Jell-O.
 
 >potpourri
 by one point
@@ -867,6 +1104,7 @@ by one point
 #testcase-check-vc-grieve-grow-rule-fallthrough
 You reflect on things. You recognize too much of this is bad. All the same, it puts you in a mindset to do what you must do.
 
+#testcase-check-vc-grieve-grow-rule-if-sco-grieve-grow-is-true
 >grieve grow
 Too much grief will undo the growing you did.
 
@@ -884,25 +1122,30 @@ You already believed in, and found, a passage down.
 >believe below
 You already believed in, and found, a passage down.
 
+#testcase-check-vc-heave-ho-rule-if-sco-heave-ho-is-true
+>heave ho
+There is nothing more to heave besides the rayed rug.
+
 >d
+
+#+testcase-check-vc-heave-ho-rule-if-sco-heave-ho-is-true
+>heave ho
+There was nothing more to heave besides the rayed rug.
 
 #+testcase-reject-end-table-of-verb-checks-vc-believe-below-rule
 >believe below
 You already believed in, and took, a passage down.
 
 #+testcase-reject-end-table-of-verb-checks-vc-grieve-grow-rule
+#testcase-check-vc-grieve-grow-rule-if-trappy-trawl-is-visited
 >grieve grow
 That is the end goal, here. You are close.
 
-#+testcase-reject-end-table-of-verb-checks-vc-leave-lo-rule
+#testcase-check-vc-leave-lo-rule-if-trappy-trawl-is-visited
 >leave lo
 You've left Reeve Row for good.
 
-#+testcase-reject-end-table-of-verb-checks-vc-leave-lo-rule
->heave ho
-There was nothing more to heave besides the rayed rug.
-
-#+testcase-check-vc-whappy-wall-rule-abide-by-the-trawl-not-hall-rule
+#testcase-check-vc-whappy-wall-rule-if-sco-scrappy-scrawl-is-false
 >whappy wall
 That could be helpful, but you have no indication where a wall might sound whappy. Well, not yet. You need to search for evidence.
 
@@ -915,6 +1158,10 @@ by one point
 
 #testcase-check-vc-scrappy-scrawl-rule-fallthrough
 Ah! You had confidence you could find a scrappy scrawl, and you do. The instructions seem to make sense. You need to look to break open a passage where there is none, yet. An unexpectedly hollow place. Apparently, from the scrawl, one that makes a special sort of noise. Not quite a THWIP or a THWUP. So where is the weak spot?
+
+#testcase-check-vc-scrappy-scrawl-rule-if-sco-scrappy-scrawl-is-true
+>scrappy scrawl
+You already found the scrappy scrawl!
 
 #+testcase-think-table-of-verb-checks-vc-whappy-wall-rule
 >think
@@ -979,6 +1226,10 @@ by one point
 #testcase-check-vc-whappy-wall-rule-fallthrough
 Whunk. Whunk. The wall makes the same noise, until ... WHAP! There it is! You tap at it a bit, and a passage opens up to ...
 
+#testcase-run-vr-whappy-wall-rule-repeat-with-x-running-through-carried-feastitems
+>i
+made mug
+
 #testcase-check-vc-cappy-caul-rule-if-hall-guest-score-<-4
 >cappy caul
 You can't wear the ceremonial gear until everyone's here!
@@ -1007,6 +1258,10 @@ by one point
 #testcase-check-vc-sappy-saul-rule-fallthrough
 Sappy Saul seems almost too happy to be summoned, then apologetic when he is.
 
+#testcase-check-vc-sappy-saul-rule-if-sco-sappy-saul-is-true
+>sappy saul
+You already summoned Sappy Saul!
+
 >lone laura
 by one point
 
@@ -1018,6 +1273,14 @@ by one point
 
 #testcase-check-vc-known-nora-rule-fallthrough
 Known Nora appears!
+
+#testcase-check-vc-known-nora-rule-if-sco-known-nora-is-true
+>known nora
+You already summoned Known Nora!
+
+#testcase-check-vc-lone-laura-rule-if-sco-lone-laura-is-true
+>lone laura
+You already summoned Lone Laura!
 
 #+testcase-think-table-of-verb-checks-vc-cappy-caul-rule
 >think
@@ -1066,12 +1329,23 @@ by one point
 #testcase-check-vc-bappy-ball-rule-fallthrough
 A long game of bappy-ball is played. Everyone is exhausted and hungry afterwards. They eat everything that is put in front of them. You doze off, and you are given a vision... one where you are forced to be more, or less, popular than your associate. Yes, "associate" is the right word.
 
+#testcase-check-vc-chrome-craw-rule-if-sco-chrome-craw-is-true-if-trappy-trawl-is-visited
 >chrome craw
 The chrome craw cannot open a secret path here.
 
+#testcase-check-vc-beat-bell-rule-if-sco-sheet-shell-is-false
+>beat bell
+You don't have any (door)bell to beat, yet. You need to be somewhere more homey.
+
+#testcase-check-vc-meet-mel-rule-if-sco-beat-bell-is-false
+>meet mel
+Nobody named Mel might be around, yet!
+
+#testcase-check-vc-feet-fell-rule-if-sco-wheat-well-is-false
 >feet fell
 But you haven't envisioned any place to fall to!
 
+#testcase-think-table-of-verb-checks-vc-feet-fell-rule
 >think
 You can claim your FEET FELL once you've envisioned somewhere safe to fall to.
 
@@ -1081,6 +1355,12 @@ by one point
 #testcase-check-vc-wheat-well-rule-fallthrough
 Yes, the wheat well must be your destination. Now how to stumble across to it?
 
+#testcase-check-vc-wheat-well-rule-if-sco-wheat-well-is-true
+>wheat well
+You already figured your destination!
+<already-done;>
+
+#testcase-think-table-of-verb-checks-vc-feet-fell-rule
 >think
 (CAN DO NOW) You can claim your FEET FELL now you've envisioned somewhere safe to fall to.
 
@@ -1090,9 +1370,21 @@ by one point
 #testcase-check-vc-feet-fell-rule-fallthrough
 Oops! With a bit of dream logic, you slip out of where you feel you need to show you are better than someone and to where you can reflect more.
 
+#+testcase-check-vc-wheat-well-rule-if-sco-wheat-well-is-true
+>wheat well
+You already got here!
+
 #testcase-check-vc-feet-fell-rule-if-sco-feet-fell-is-true
 >feet fell
 You already slid to a more peaceful space!
+
+#+testcase-check-vc-beat-bell-rule-if-sco-sheet-shell-is-false
+>beat bell
+You don't have any (door)bell to beat, yet. Perhaps one will ring soon enough.
+
+#testcase-think-table-of-verb-checks-vc-beat-bell-rule
+>think
+You can BEAT BELL once there is a (door)bell to beat, or reach before the person ringing it runs away.
 
 >sheet shell
 by one point
@@ -1101,15 +1393,54 @@ by one point
 Yes, the Wheat Well could use a Sheet Shell.
 Suddenly, with the Sheet Shell in place, ready for a book, you hear your postal delivery person in the distance. You hope to rush to the door, wherever that is. You know if you don't show up, they won't leave any potential package. But how? You need motivation and hustle!
 
+#testcase-check-vc-sheet-shell-rule-if-sco-sheet-shell-is-true
+>sheet shell
+You already established a sheet shell here.
+
+#testcase-think-table-of-verb-checks-vc-beat-bell-rule
+>think
+You can BEAT BELL now there is a (door)bell to beat, or reach before the person ringing it runs away.
+
+#testcase-think-table-of-verb-checks-vc-meet-mel-rule
+>think
+You can MEET MEL once you know someone is near.
+
 >beat bell
 by one point
 
 #testcase-check-vc-beat-bell-rule-fallthrough
 Aaand ... pursuant to general dream/fantasy logic rules, you just make it! But now, what with the Internet taking over with emails, you often forget what your lovable mail carrier's name is! There must be a clue to who they are. As for how they got there, and how they know you're there, you'll just chalk it up to increased efficiency in the postal service due to progress in the ordinary sort of magic that everyone looks down on but would be terribly sorry if it vanished.
 
+#testcase-think-table-of-verb-checks-vc-heat-hell-rule
+#testcase-think-table-of-verb-checks-vc-repeat-repel-rule
+#testcase-think-table-of-verb-checks-vc-sweet-swell-rule
+>think
+(CAN DO NOW) You need a story to reflect on before concluding REPEAT REPEL.
+(CAN DO NOW) You need a story to reflect on before concluding HEAT HELL.
+(CAN DO NOW) You need a story to reflect on before concluding SWEET SWELL.
+
 #testcase-check-vc-beat-bell-rule-if-sco-beat-bell-is-true
 >beat bell
 You already managed to beat the bell when you needed to!
+
+#testcase-think-table-of-verb-checks-vc-meet-mel-rule
+>think
+You can MEET MEL now you know someone is near.
+
+#testcase-check-vc-heat-hell-rule-default
+>heat hell
+
+You haven't reflected enough for an angry judgement, yet.
+
+#testcase-check-vc-sweet-swell-rule-default
+>heat hell
+
+You haven't reflected enough for a favorable judgement, yet.
+
+#testcase-check-vc-repeat-repel-rule-default
+>heat hell
+
+You haven't reflected enough for a balanced judgement, yet.
 
 >meet mel
 by one point
@@ -1117,6 +1448,10 @@ by one point
 #testcase-check-vc-meet-mel-rule-fallthrough
 Yes! Mel the Mail Maven! It has a certain ring to it. You take Mel's delivery.
 Leet Lel, by Pete Pell. Memories come back to you, of Leet Lel, a larger-than-life figure that showed you so much, but who also seemed to have scorn for you. It was hard to tell.
+
+#testcase-check-vc-meet-mel-rule-if-sco-meet-mel-is-true
+>meet mel
+You already met Mel!
 
 >heat hell
 You get a sense such a judgment would be more appropriate once you've examined the book you just got.
@@ -1137,14 +1472,6 @@ You need a story to reflect on before concluding SWEET SWELL.
 !CAN DO NOW
 
 >x leet lel
-
-#testcase-think-table-of-verb-checks-vc-heat-hell-rule
-#testcase-think-table-of-verb-checks-vc-repeat-repel-rule
-#testcase-think-table-of-verb-checks-vc-sweet-swell-rule
->think
-(CAN DO NOW) You need a story to reflect on before concluding REPEAT REPEL.
-(CAN DO NOW) You need a story to reflect on before concluding HEAT HELL.
-(CAN DO NOW) You need a story to reflect on before concluding SWEET SWELL.
 
 #testcase-reject-end-table-of-verb-checks-vc-baller-bear-rule
 >baller bear

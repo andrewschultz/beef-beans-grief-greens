@@ -125,6 +125,7 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 >carrot cake
 {$REJECT2}
 \\
+#testcase-check-vc-chrome-craw-rule-if-wandering-where-is-unvisited
 #testcase-reject-start-table-of-verb-checks-vc-chrome-craw-rule
 >chrome craw
 {$REJECT2}
@@ -179,7 +180,7 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 >grey gruel
 {$REJECT2}
 \\
-#testcase-check-vc-sweet-swell-rule-abide-by-the-try-final-point-rule
+#testcase-check-vc-heat-hell-rule-abide-by-the-try-final-point-rule
 #testcase-reject-start-table-of-verb-checks-vc-heat-hell-rule
 >heat hell
 {$REJECT2}
@@ -229,6 +230,7 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 >lovin lout
 {$REJECT2}
 \\
+#testcase-check-vc-massive-mitt-rule-if-passive-pit-is-not-touchable
 #testcase-reject-start-table-of-verb-checks-vc-massive-mitt-rule
 >massive mitt
 {$REJECT2}
@@ -249,7 +251,7 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 >meet mel
 {$REJECT2}
 \\
-#testcase-check-vc-meet-mel-rule-if-player-is-not-in-compete-compel
+#testcase-check-vc-muumuu-rule-if-player-is-not-in-ooh-ooh
 #testcase-reject-start-table-of-verb-checks-vc-muumuu-rule
 >muumuu
 {$REJECT1}
@@ -310,7 +312,7 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 >prune pride
 {$REJECT2}
 \\
-#testcase-check-vc-sweet-swell-rule-abide-by-the-try-final-point-rule
+#testcase-check-vc-repeat-repel-rule-abide-by-the-try-final-point-rule
 #testcase-reject-start-table-of-verb-checks-vc-repeat-repel-rule
 >repeat repel
 {$REJECT2}
@@ -493,7 +495,9 @@ However, it's really dim, as if you don't need to do or think whatever there is 
 
 @rej
 ##balance undos
+#testcase-run-vr-believe-below-rule-if-sco-heave-ho-is-false
 >believe below
+You believe something must be below. Below that rug, you'd guess. You might not be able to remove it by yourself. But you have faith now!
 by one point
 \\
 #testcase-check-vc-believe-below-rule-if-sco-believe-below-is-true
@@ -564,6 +568,11 @@ A ray vanishes from the rug. Several rays on the rug (you'd say one-third) grow 
 >score
 {$SCOS}
 
+@rej
+#testcase-check-vc-made-mug-rule-if-sco-made-mug-is-true
+>made mug
+You already have a made/maid mug for the meal.
+
 @hfull
 #+testcase-values-from-number-of-rayed-rug-is-2753 #mug solved
 >ll rayed rug
@@ -583,6 +592,11 @@ A ray vanishes from the rug. The rug's rays go from one-third dull to one-third 
 @all
 >score
 {$SCOS}
+
+@rej
+#testcase-check-vc-jade-jug-rule-if-sco-jade-jug-is-true
+>jade jug
+You already have a jade jug for the meal.
 
 @hom
 #testcase-homonym-reject-table-of-verb-checks-vh-leave-low-rule-low
@@ -604,14 +618,29 @@ You're already feeling a bit low. You don't need to advertise it, or sink lower.
 That has to be really, really close, though! Perhaps a potentially hearty interjection would work better.
 How to leave with your head held high, with a forceful word showing you're willing to take on the world?
 
+@rej
+#testcase-check-vc-heave-ho-rule-if-sco-oven-out-is-false
+>heave ho
+You try to pull the rayed rug, but it feels nailed down in enough places you can only look under a bit. You can't move it by yourself. You need a stronger assistant!
+\\
+#testcase-think-table-of-verb-checks-vc-heave-ho-rule
+>think
+You can HEAVE HO once you have a strong assistant here who can help you pull the rug up.
+
 >leave lo
 by one point
 }}SCORE++
 
 @rej,all
 {--rej}#testcase-check-vc-leave-lo-rule-fallthrough
-{--all}#testcase-run-vr-leave-lo-rule-default
+{--all}#testcase-run-vr-leave-lo-rule-if-sco-leave-lo-is-false
+{--all}#testcase-run-vr-leave-lo-rule-fallthrough
 Sometimes you just need the right time to say a simple phrase to get you going. And you do, here.
+
+@rej
+#+testcase-think-table-of-verb-checks-vc-heave-ho-rule
+>think
+You can HEAVE HO once you have a strong assistant in Reeve Row who can help you pull the rug up.
 
 @all
 #testcase-room-names-wandering-where
@@ -622,9 +651,19 @@ Sometimes you just need the right time to say a simple phrase to get you going. 
 {$SCOS}
 
 @rej
+#testcase-reject-start-table-of-verb-checks-vc-leave-lo-rule
 #testcase-check-vc-leave-lo-rule-if-player-is-not-in-reeve-row
 >leave lo
 But you already left Reeve Row!
+
+@all
+>in
+`Reeve Row
+\\
+#+testcase-run-vr-leave-lo-rule-if-sco-leave-lo-is-false
+>leave lo
+!Sometimes you just
+You can just go OUT or N/NORTH for fewer keystrokes.
 
 @hfull
 #testcase-values-from-number-of-wandering-where-is-2955
@@ -750,6 +789,20 @@ You think up a storm and realize, there is a way to such a place, though maybe i
 @all+
 >score
 {$SCOS}
+
+@rej
+#testcase-check-vc-chrome-craw-rule-if-player-is-not-in-wandering-where
+>chrome craw
+Ooh! A passage somewhere new? That'd be interesting. But this isn't an open enough space.
+
+@rej+
+#testcase-check-vc-oven-out-rule-if-sco-lovin-lout-is-false
+>oven out
+You can't move the oven out by yourself!
+\\
+#testcase-think-table-of-verb-checks-vc-oven-out-rule
+>think
+You can say OVEN OUT once you have someone strong enough to push the oven.
 
 @gt
 #testcase-goto-table-of-noways-dove-n-doubt
@@ -884,6 +937,15 @@ No, here will be the place for slight colloquialisms.
 You notice one dot in the corner of the leet learner.
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, -1.00.)
 
+@rej
+#testcase-check-vc-shovin-shout-rule-if-sco-lovin-lout-is-false
+>shovin shout
+That'd give a boost of energy, but a shout won't be enough to move the oven on your own.
+\\
+#testcase-think-table-of-verb-checks-vc-shovin-shout-rule
+>think
+You can make a SHOVIN SHOUT once you have the help of someone stronger.
+
 >lovin lout
 by one point
 }}SCORE++
@@ -936,6 +998,11 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 You notice one dot in the corner of the leet learner.
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
 
+@rej
+#+testcase-think-table-of-verb-checks-vc-shovin-shout-rule
+>think
+You can make a SHOVIN SHOUT now you have the help of someone stronger.
+
 >shovin shout
 by one point
 }}SCORE++
@@ -945,6 +1012,11 @@ by one point
 {--all}#testcase-run-vr-shovin-shout-rule-default
 You and the lovin' lout get together and push the oven forward.
 Something seems to crumble loose. Success! You can probably move the oven more ambitiously now.
+
+@rej
+#testcase-check-vc-shovin-shout-rule-if-sco-shovin-shout-is-true
+>shovin shout
+You already shouted with the lout! It's time to finish removing the oven.
 
 @all
 >score
@@ -973,6 +1045,16 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 >ll oven
 You feel like you should get a reading on the oven, but maybe it's more what's around that you need to work with.
 
+@rej
+#testcase-check-vc-oven-out-rule-if-sco-shovin-shout-is-false
+>shovin shout
+Before moving the oven out, you'll have to be sure you and the lout can push it a bit.
+
+@rej+
+#+testcase-think-table-of-verb-checks-vc-oven-out-rule
+>think
+You can say OVEN OUT now you have someone strong enough to push the oven.
+
 >oven out
 by one point
 }}SCORE++
@@ -987,7 +1069,16 @@ The lovin' lout waits around, as if they suspect they could help you with one mo
 #+testcase-room-names-reeve-row
 `Reeve Row
 
-@all+
+@rej
+#+testcase-check-vc-shovin-shout-rule-if-sco-shovin-shout-is-true
+>shovin shout
+You already shouted with the lout! It's time to look elsewhere.
+\\
+#testcase-check-vc-oven-out-rule-if-sco-oven-out-is-true
+>oven out
+But you've already moved the oven back to Reeve Row!
+
+@all
 >score
 {$SCOS}
 
@@ -1007,6 +1098,12 @@ You are not in a garden. Try an interjection instead.
 You notice three dots in the corner of the leet learner.
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 0.67.)
 
+@rej
+#+testcase-think-table-of-verb-checks-vc-heave-ho-rule
+>think
+You can HEAVE HO now you have a strong assistant here who can help you pull the rug up.
+
+@!min
 >heave ho
 by one point
 }}SCORE++
@@ -1017,6 +1114,20 @@ by one point
 You and the lovin' lout pull on one, two, THREE! It takes a couple of times, but the rug bursts free from the floor. You see an outline of the passage you believed was there.
 You shake hands with the lovin' lout, who exits and nods to wish you the best.
 Your kneeling on the floor to pull the rug up gave you a good view inside the oven. There you find something called a goon guide. But you can't use it, because you're too good to be a goon. That's how it works, right? Or maybe not...
+
+@all
+##balance undo
+#testcase-run-vr-heave-ho-rule-process-the-reeve-row-check-passage-down-rule
+>believe below
+There's that trap door here. But it's useless to interact with until you find a key for it.
+by one point
+\\
+#+testcase-run-vr-heave-ho-rule-process-the-reeve-row-check-passage-down-rule
+>l
+There's that trap door here. But it's useless to interact with until you find a key for it.
+\\
+>undo
+>undo
 
 @hfull
 #+testcase-values-from-number-of-reeve-row-is-2753
@@ -1043,9 +1154,11 @@ It's not a very big house. You suspected the old passage-under-the-rug trick, bu
 {$GREENCORE}
 
 @rej
+#testcase-check-vc-spoon-spied-rule-if-sco-prune-pride-is-false
 >spoon spied
 You'd love to find a bit more silverware, and maybe the goon guide would be just the thing. Except you can't lower yourself to read it. Yet.
 \\
+#testcase-think-table-of-verb-checks-vc-spoon-spied-rule
 >think
 You can get a SPOON SPIED once you have managed to consult the goon guide with a clear mind.
 
@@ -1075,6 +1188,20 @@ The goon guide will be there with further technical help when you need it, to he
 >score
 {$SCOS}
 
+@rej
+#testcase-check-vc-prune-pride-rule-if-sco-prune-pride-is-true
+>prune pride
+You're already humble enough. I mean, we could always be more humble, but there's overdoing it, too.
+
+@rej+
+#testcase-check-vc-spoon-spied-rule-if-goon-guide-is-not-examined
+>spoon spied
+You try to spy spoons based on your general impressions of the goon guide, but ... well, I'm going to make you read it more closely now you've pruned your pride.
+\\
+#+testcase-think-table-of-verb-checks-vc-spoon-spied-rule
+>think
+You can get a SPOON SPIED once you have managed to consult the goon guide with a clear mind.
+
 >x guide
 
 @ha
@@ -1091,6 +1218,11 @@ The goon guide will be there with further technical help when you need it, to he
 >ll guide
 You notice one dot in the corner of the leet learner.
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 0.00.)
+
+@rej
+#+testcase-think-table-of-verb-checks-vc-spoon-spied-rule
+>think
+You can get a SPOON SPIED now you have managed to consult the goon guide with a clear mind.
 
 >spoon spied
 by one point
@@ -1116,6 +1248,11 @@ by one point
 {--all}#testcase-run-vr-played-plug-rule-default
 Ah, that's what the bump in the rayed rug is.
 A ray vanishes from the rug. The final rays on the rug grow dull. You figure you're done with it, so you put it in a corner where you can just ignore it.
+
+@rej
+#testcase-check-vc-played-plug-rule-if-sco-played-plug-is-true
+>played plug
+You already got a played plug!
 
 @all
 >score
@@ -1281,9 +1418,11 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 #+testcase-check-vc-look-lard-rule-abide-by-the-shardy-rule
 >look lard
 The shard is calling to you. You must grasp it and find where it leads before searching for anything that concrete. But you feel you're on the right path.
+\\
 #+testcase-check-vc-cook-card-rule-abide-by-the-shardy-rule
 >cook card
 The shard is calling to you. You must grasp it and find where it leads before searching for anything that concrete. But you feel you're on the right path.
+\\
 #+testcase-check-vc-book-bard-rule-abide-by-the-shardy-rule
 >book bard
 The shard is calling to you. You must grasp it and find where it leads before searching for anything that concrete. But you feel you're on the right path.
@@ -1296,6 +1435,7 @@ You can exclaim LOOK LARD once you've seen where the shook shard can take you.
 
 >hook hard
 by one point
+}}SCORE++
 
 @rej,all
 {--rej}#testcase-check-vc-hook-hard-rule-fallthrough
@@ -1306,11 +1446,19 @@ You grab the shard and feel pulled to somewhere new...
 #testcase-room-names-took-tarred
 `Took, Tarred
 
-}}SCORE++
-
-@all
+@all+
 >score
 {$SCOS}
+
+@rej
+#+testcase-check-vc-chrome-craw-rule-if-player-is-not-in-wandering-where
+>chrome craw
+Ooh! A passage somewhere new? That'd be interesting. But this isn't an accessible enough space.
+
+@rej+
+#testcase-check-vc-hook-hard-rule-if-took-tarred-is-visited-and-player-is-not-in-took-tarred-and-cook-card-is-not-moot
+>hook hard
+You got hooked now. How to get unhooked?
 
 @gt
 #testcase-goto-table-of-noways-took-tarred
@@ -1486,18 +1634,13 @@ Oh my goodness. Could it be ... is it ... the missing insert from the goon guide
 You feel the area's hold on you weaken.
 
 @rej
-#testcase-check-vc-book-bard-rule-if-sco-cook-card-is-true
+#testcase-check-vc-cook-card-rule-if-sco-cook-card-is-true
 >cook card
 You already found a card with cooking tips!
 
 @all
 >score
 {$SCOS}
-
-@rej
-#testcase-check-vc-cook-card-rule-if-sco-cook-card-is-true
->cook card
-You already found a card with cooking tips!
 
 @hfull
 #+testcase-values-from-number-of-took-tarred-is-2706
@@ -1515,6 +1658,11 @@ by one point
 Lard, man. You're still not sure if you really need it, even if the cookbooks say you should. You've never had the guts to rebel and just prepare that dish without lard. Now's not the time to start. So you're glad you looked so diligently, and you're glad it turned up.
 You feel sucked out of whatever the shard held you in. As you come back to Dove 'N Doubt, the shard shatters. You sense there's nothing more to do here, so you walk back to the center of the action.
 
+@rej
+#testcase-check-vc-look-lard-rule-if-sco-look-lard-is-true
+>look lard
+You're not sure why you need lard, but you're pretty sure you don't need too much of it.
+
 @all
 >score
 {$SCOS}
@@ -1524,6 +1672,15 @@ You feel sucked out of whatever the shard held you in. As you come back to Dove 
 >ll
 You notice three dots in the corner of the leet learner.
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, -0.33.)
+
+@rej
+#testcase-check-vc-chrome-craw-rule-if-sides-visited-<-4
+>chrome craw
+That seems like it could work nicely here, but you don't know your way around well enough yet.
+\\
+#testcase-think-table-of-verb-checks-vc-chrome-craw-rule
+>think
+You can open the CHROME CRAW here once you've explored everywhere you can aboveground.
 
 >squandering square
 by one point
@@ -1675,6 +1832,40 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 You notice three dots in the corner of the leet learner.
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, -1.00.)
 
+@all
+##balance undos
+#testcase-run-vr-baller-bear-rule-if-stare-score-<-3
+>baller bear
+by one point
+WRONG
+\\
+#testcase-run-vr-caller-care-rule-if-stare-score-<-3
+>caller care
+by one point
+WRONG
+\\
+#testcase-run-vr-dollar-dare-rule-if-stare-score-<-3
+>dollar dare
+by one point
+WRONG
+\\
+>undo
+>undo
+\\
+#+testcase-run-vr-dollar-dare-rule-if-stare-score-<-3
+>dollar dare
+by one point
+WRONG
+\\
+#+testcase-run-vr-caller-care-rule-if-stare-score-<-3
+>caller care
+by one point
+WRONG
+\\
+>undo
+>undo
+>undo
+
 >dollar dare
 by one point
 }}SCORE++
@@ -1682,6 +1873,7 @@ by one point
 @rej,all
 {--rej}#testcase-check-vc-dollar-dare-rule-fallthrough
 {--all}#testcase-run-vr-dollar-dare-rule-default
+{--all}#testcase-run-vr-dollar-dare-rule-fallthrough
 The staller stare is visibly affected by the audacity of someone daring someone else to do ... well, THAT. For just a dollar. Its eyes bug out. Is this a joke? Then the eyes roll around, as if to say, it doesn't see why it bothers to feel nosy.
 The staller stare blinks. It seems to shake where its head would be. It's a bit baffled by what it saw. It rolls its eyes as if to say, any more of this, and I give up.
 
@@ -1692,7 +1884,7 @@ The staller stare blinks. It seems to shake where its head would be. It's a bit 
 @rej
 #testcase-check-vc-dollar-dare-rule-if-sco-dollar-dare-is-true
 >dollar dare
-You already alerted the staller stare to the dollar dare.
+You already made light of a dollar dare.
 
 @hom
 #testcase-homonym-reject-table-of-verb-checks-collar
@@ -1718,6 +1910,7 @@ by one point
 {--rej}#testcase-check-vc-caller-care-rule-fallthrough
 {--all}#testcase-run-vr-caller-care-rule-fallthrough
 {--all}#testcase-run-vr-caller-care-rule-default
+{--all}#+testcase-run-vr-caller-care-rule-if-stare-score-<-3
 The staller stare is visibly affected by the audacity of someone caring about them. Its eyes bug out. Is this a joke! Then the eyes blink. No, it's not crying, of course it's not, it's the squalor.
 The staller stare blinks repeatedly. The weirdness you introduced was too much for it. It was ready to judge squalor, but not THIS. It closes its eyes and fades into the wall it was on. Perhaps it will find another place to oversee.
 
@@ -1765,6 +1958,8 @@ by one point
 @rej,all
 {--rej}#testcase-check-vc-baller-bear-rule-fallthrough
 {--all}#testcase-run-vr-baller-bear-rule-default
+{--all}#testcase-run-vr-baller-bear-rule-fallthrough
+WRONG
 With the staller stare gone, you leave a bit of hope and genuine solicitousness for the next lost soul who stumbles here.
 
 @all
@@ -1816,6 +2011,23 @@ DEBUG: can't see any such thing error.
 You notice one dot in the corner of the leet learner.
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, -1.00.)
 
+@rej
+#testcase-check-vc-beet-boat-rule-abide-by-the-bloat-transform-rule
+>beet boat
+Perhaps ... but unfortunately, the bleat-bloat distracts you from finding fun new stuff. Perhaps a helpful guide, or guiding document, would be the thing.
+\\
+#testcase-check-vc-meat-moat-rule-abide-by-the-bloat-transform-rule
+>meat moat
+Perhaps ... but unfortunately, the bleat-bloat distracts you from finding fun new stuff. Perhaps a helpful guide, or guiding document, would be the thing.
+\\
+#testcase-think-table-of-verb-checks-vc-beet-boat-rule
+>think
+You can find a BEET BOAT once you have found something more useful than the bleat bloat.
+\\
+#testcase-think-table-of-verb-checks-vc-meat-moat-rule
+>think
+You can find a MEAT MOAT once you have found something more useful than the bleat bloat.
+
 >neat note
 by one point
 }}SCORE++
@@ -1828,6 +2040,20 @@ It seems silly to expect someone to just up and drop by with a neat note. But su
 @all
 >score
 {$SCOS}
+
+@rej
+#testcase-check-vc-neat-note-rule-if-sco-neat-note-is-true
+>neat note
+But you already discovered the neat note. Rediscovering it won't make it neater.
+
+@rej+
+#+testcase-think-table-of-verb-checks-vc-beet-boat-rule
+>think
+You can find a BEET BOAT now you have found something more useful than the bleat bloat.
+\\
+#+testcase-think-table-of-verb-checks-vc-meat-moat-rule
+>think
+You can find a MEAT MOAT now you have found something more useful than the bleat bloat.
 
 @hfull
 #testcase-values-from-number-of-neat-note-is-2704 #nothing solved
@@ -1925,6 +2151,11 @@ The downed dork asks if they should stay or go. Your instincts are to stay. Mayb
 >score
 {$SCOS}
 
+@rej
+#testcase-check-vc-meat-moat-rule-if-sco-meat-moat-is-true
+>meat moat
+More than one meat moat would be overkill. And not just for the animals killed to make the meat.
+
 @hom
 #testcase-homonym-reject-table-of-verb-checks-vh-beat-boat-rule-beat
 >beat boat
@@ -2001,6 +2232,15 @@ You can handle the WHITE WIRES once the lyres are safe to touch.
 You notice one dot in the corner of the leet learner.
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.00, 0.00.)
 
+@rej
+#testcase-check-vc-white-wires-rule-if-sco-fight-fires-is-false
+>white wires
+Okay, the light lyres might have white wires, but they'd be white-hot!
+\\
+#testcase-think-table-of-verb-checks-vc-white-wires-rule
+>think
+You can handle the WHITE WIRES once the lyres are safe to touch.
+
 >fight fires
 by one point
 }}SCORE++
@@ -2045,9 +2285,19 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 >wight wires
 Summoning the undead is one way to remember those who passed on, but it's a high-risk one.
 
+@rej
+#+testcase-think-table-of-verb-checks-vc-white-wires-rule
+>think
+You can handle the WHITE WIRES now the lyres are safe to touch.
+
 >white wires
 by one point
 }}SCORE++
+
+@rej
+#testcase-check-vc-white-wires-rule-if-sco-white-wires-is-true
+>white wires
+You already got the white wires!
 
 @rej,all
 {--rej}#testcase-check-vc-white-wires-rule-fallthrough
@@ -2455,6 +2705,11 @@ You nod to the tree troop. You see what you want. They are glad to give it to yo
 >score
 {$SCOS}
 
+@rej
+#testcase-check-vc-see-soup-rule-if-sco-see-soup-is-true
+>see soup
+You already got the soup!
+
 @hfull
 #testcase-values-from-number-of-lotus-life-is-2754
 >ll lotus
@@ -2469,6 +2724,11 @@ by one point
 {--rej}#testcase-check-vc-notice-knife-rule-fallthrough
 {--all}#testcase-run-vr-notice-knife-rule-default
 Ah! Yes! The lotus life almost took over parts of the zoo. You had to look for the knife, but it is there. And once you do, you notice a whole bunch of knives. Wow, when this zoo blossoms, it blossoms.
+
+@rej
+#testcase-check-vc-notice-knife-rule-if-sco-notice-knife-is-true
+>notice knife
+You already noticed the knife! There is nothing more.
 
 @all
 >score
@@ -2676,6 +2936,11 @@ Reading Any Isles, Many Miles carefully, you recognize that it, in fact, covers 
 {$SCOS}
 
 @rej
+#testcase-check-vc-penny-piles-rule-if-sco-penny-piles-is-true
+>penny piles
+You already found enough penny piles to buy something!
+
+@rej+
 #+testcase-think-table-of-verb-checks-vc-pie-po-rule
 >think
 You can buy a PIE PO now you have currency.
@@ -2898,12 +3163,50 @@ Sometimes, you just have to complain about small hurts, physical or mental, and 
 Zuzu and Loulou seem to warm up to you.
 
 @rej
+#testcase-check-vc-booboo-rule-if-sco-booboo-is-true
 >booboo
 You already feigned a booboo.
 
 @all
 >score
 {$SCOS}
+
+@ha
+#testcase-ha-half-table-of-verb-checks-36-boo
+>boo zboo
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-37-coo
+>coo zkoo
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-37-coo-koo
+>zcoo koo
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-38-doo
+>doo zdoo
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-39-ju
+>ju zju
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-40-muu
+>muu zmuu
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-41-poo
+>poo zpooh
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-41-pooh
+>zpoo pooh
+{$GREENCORE}
+\\
+#testcase-ha-half-table-of-verb-checks-42-tu
+>tu ztu
+{$GREENCORE}
 
 @hfull
 #+testcase-values-from-number-of-ooh-ooh-is-2653
@@ -2929,6 +3232,11 @@ by one point
 {--rej}#testcase-check-vc-juju-rule-fallthrough
 {--all}#testcase-run-vr-juju-rule-default
 You find ways to perform juju, or pretend to.
+
+@rej
+#testcase-check-vc-juju-rule-if-sco-juju-is-true
+>juju
+You already fake-performed juju.
 
 @all
 >score
@@ -2970,6 +3278,11 @@ Loulou and Zuzu shrug a bit. Why not? They come in so many different colors.
 >score
 {$SCOS}
 
+@rej
+#testcase-check-vc-muumuu-rule-if-sco-muumuu-is-true
+>muumuu
+You already pictured Loulou and Zuzu in muumuus.
+
 @hfull
 #+testcase-values-from-number-of-ooh-ooh-is-2653
 >ll
@@ -3000,6 +3313,11 @@ pound you on the back. You sure have some great ideas in line with their thinkin
 >score
 {$SCOS}
 
+@rej
+#testcase-check-vc-tutu-rule-if-sco-tutu-is-true
+>tutu
+Tutus get old fast as jokewear.
+
 @ha
 #testcase-ha-half-table-of-verb-checks-17-massive
 >massive zmitt
@@ -3027,6 +3345,11 @@ Now that you know what to look for, you are patient enough to look through the p
 @all
 >score
 {$SCOS}
+
+@rej
+#testcase-check-vc-massive-mitt-rule-if-sco-massive-mitt-is-true
+>massive mitt
+You already got the massive mitt from the passive pit!
 
 @gong
 ##balance undos
@@ -3098,6 +3421,7 @@ You discuss, in an entirely sane manner, Swiss clocks with birds in them, and th
 Zuzu and Loulou look even happier now. Dare they expect more solidarity?
 
 @rej
+#testcase-check-vc-cuckoo-rule-if-sco-cuckoo-is-true
 >cuckoo
 It was almost too crazy the first time.
 
@@ -3126,7 +3450,7 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 >do do
 The Leet Learner shakes back and forth. Something you said sounded right, but it didn't feel right.
 \\
-#testcase-homonym-reject-table-of-verb-checks-do-dew
+#+testcase-homonym-reject-table-of-verb-checks-do-dew
 >dew dew
 The Leet Learner shakes back and forth. Something you said sounded right, but it didn't feel right.
 
@@ -3143,6 +3467,7 @@ You patrol the area for animal waste, also remarking on other interesting swear-
 Loulou and Zuzu are starting to look exhausted from all this imagining.
 
 @rej
+#testcase-check-vc-doodoo-rule-if-sco-doodoo-is-true
 >doodoo
 The value of such a word or phrase drops quickly with each use.
 
@@ -3178,6 +3503,11 @@ by one point
 You show
 ways to dismiss this little thought experiment.
 wipe their brows after this latest feat of imagination. Nothing more to do here, really.
+
+@rej
+#testcase-check-vc-poohpooh-rule-if-sco-poohpooh-is-true
+>poohpooh
+There's overdoing things, you reckon.
 
 @all
 >score
@@ -3332,6 +3662,15 @@ You can't order the bee around, but maybe it's disguised as something else.
 You notice one dot in the corner of the leet learner.
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
 
+@rej
+#testcase-check-vc-veggie-ville-rule-if-sco-flopper-flea-is-false
+>veggie ville
+That'd be somewhere to go, once you disposed of the bopper bee.
+\\
+#testcase-think-table-of-verb-checks-vc-veggie-ville-rule
+>think
+You can visit VEGGIE VILLE once the bopper bee isn't distracting you.
+
 >flopper flea
 by one point
 }}SCORE++
@@ -3343,8 +3682,13 @@ Wait! Something about the bee looks funny! Yes, it is not really a bee, but a le
 It buzzes and mumbles off. You're not surprised that, as it does, it drops a copper key, which you pick up.
 
 @rej
+#testcase-check-vc-flopper-flea-rule-if-sco-flopper-flea-is-true
 >flopper flea
 You already got rid of the bopper bee!
+\\
+#+testcase-think-table-of-verb-checks-vc-veggie-ville-rule
+>think
+You can visit VEGGIE VILLE now the bopper bee isn't distracting you.
 
 @all
 >score
@@ -3393,6 +3737,21 @@ They're impressed with what you've gotten so far. They deem you a worthy leader 
 >zchrome craw
 {$GREENCORE}
 
+@rej
+#+testcase-think-table-of-verb-checks-vc-chrome-craw-rule
+>think
+You can open the CHROME CRAW here now you've explored everywhere you can aboveground.
+\\
+##balance undo
+>n
+\\
+#+testcase-think-table-of-verb-checks-vc-chrome-craw-rule
+>think
+You can open the CHROME CRAW in Wandering ... Where? now you've explored everywhere you can aboveground.
+\\
+>undo
+>undo
+
 >chrome craw
 by one point
 }}SCORE++
@@ -3405,6 +3764,8 @@ by one point
 You hear a large creaking from the ground beneath, and lo and behold, a chrome craw rumbles up from the ground! It's a bit scary-looking, but you're curious to explore it. You can go DOWN into it.
 
 @rej
+#testcase-check-vc-chrome-craw-rule-if-sco-chrome-craw-is-true
+#testcase-check-vc-chrome-craw-rule-if-sco-chrome-craw-is-true-if-trappy-trawl-is-visited # really need "else" case for this as it overlaps another
 >chrome craw
 You already opened the chrome craw!
 
@@ -3587,6 +3948,11 @@ by one point
 {--all}#testcase-run-vr-honeyed-ham-rule-default
 She sniffs and hands you a honeyed ham. Her charity done for the day, she brushes you aside with a hand gesture and then walks off impatiently, herself.
 
+@rej
+#testcase-check-vc-honeyed-ham-rule-if-sco-honeyed-ham-is-true
+>honeyed ham
+But you already got the honeyed ham!
+
 @gt
 #+testcase-goto-table-of-noways-woe-worry-slow-slurry
 >w
@@ -3623,6 +3989,11 @@ by one point
 The cray cruel fey fool hands you some surprisingly not-cray gray gruel and snickers before running off. What kind of square would actually LIKE gruel?
 But you want to be considerate about allergies, people trying to diet, people with vegan lifestyles, and so forth. It will be useful, you guess, as a base or paste.
 
+@rej
+#testcase-check-vc-grey-gruel-rule-if-sco-grey-gruel-is-true
+>grey gruel
+More gruel? Ugh!
+
 @all
 >score
 {$SCOS}
@@ -3645,6 +4016,11 @@ by one point
 {--rej}#testcase-check-vc-just-jello-rule-fallthrough
 {--all}#testcase-run-vr-just-jello-rule-default
 The fussed fellow seems relieved to hand you the Jell-o. It may be just Jell-O, but it's all different kinds of colors and flavors. Including pineapple! You remember when some smart-aleck in middle school said pineapple Jell-O would never be a thing. In fact, that smart-aleck snickered when you were chosen for the ceremony.
+
+@rej
+#testcase-check-vc-just-jello-rule-if-sco-just-jello-is-true
+>just jello
+There's such a thing as too much Jell-O.
 
 @gt
 #+testcase-goto-table-of-noways-woe-worry-slow-slurry
@@ -3839,6 +4215,7 @@ by one point
 You reflect on things. You recognize too much of this is bad. All the same, it puts you in a mindset to do what you must do.
 
 @rej
+#testcase-check-vc-grieve-grow-rule-if-sco-grieve-grow-is-true
 >grieve grow
 Too much grief will undo the growing you did.
 
@@ -3857,9 +4234,17 @@ by one point
 
 @rej,all
 {--rej}#testcase-check-vc-believe-below-rule-fallthrough
-{--all}#testcase-run-vr-believe-below-rule-default
+{--all}#testcase-run-vr-believe-below-rule-fallthrough
+{--all}#+testcase-run-vr-believe-below-rule-if-sco-heave-ho-is-false
+{--all}#testcase-run-vr-believe-below-rule-process-the-reeve-row-check-passage-down-rule
 Aha! You wondered if something was below the rug. Now you see the outline of a trap door beneath the rug.
 You use the copper key on the trap door down. And it works!
+
+@all
+>out
+\\
+>in
+There's a passage down, through the trap door you opened.
 
 @rej
 >believe below
@@ -3987,28 +4372,51 @@ Nothing comes up. The general area here has been changed enough.
 This is ambiguous now you've opened a passage DOWN as well as OUT.
 !Trappy
 
+@rej
+#testcase-check-vc-heave-ho-rule-if-sco-heave-ho-is-true
+>heave ho
+There is nothing more to heave besides the rayed rug.
+
+@min
+#+testcase-run-vr-heave-ho-rule-process-the-reeve-row-check-passage-down-rule
+>heave ho
+You use the copper key on the trap door down. And it works!
+by one point
+
 >d
 
 @all
 #testcase-room-names-trappy-trawl
 `Trappy Trawl
 
+@min
+#testcase-run-vr-cappy-caul-rule-if-sco-sassed-ceased-is-false
+>score
+You have scored a total of {$SCORE} out of 69 points and need 59 to win. You have found 0 of {$CURMAXBONUS} bonus points so far. You are locked out of 1 point. You can check for the maximum score dropping in the upper right, which usually happens when you take a one-way passage.
+\\
+#testcase-check-vc-chrome-craw-rule-if-trappy-trawl-is-visited
+>chrome craw
+You could have opened the chrome craw in Wandering ... Where?, but it's too late now. You don't want to go back. Everyone is waiting.
+
 @rej
-#+testcase-reject-end-table-of-verb-checks-vc-believe-below-rule
+#testcase-reject-end-table-of-verb-checks-vc-heave-ho-rule
+#+testcase-check-vc-heave-ho-rule-if-sco-heave-ho-is-true
+>heave ho
+There was nothing more to heave besides the rayed rug.
+\\
+#testcase-reject-end-table-of-verb-checks-vc-believe-below-rule
 >believe below
 You already believed in, and took, a passage down.
 \\
-#+testcase-reject-end-table-of-verb-checks-vc-grieve-grow-rule
+#testcase-reject-end-table-of-verb-checks-vc-grieve-grow-rule
+#testcase-check-vc-grieve-grow-rule-if-trappy-trawl-is-visited
 >grieve grow
 That is the end goal, here. You are close.
 \\
-#+testcase-reject-end-table-of-verb-checks-vc-leave-lo-rule
+#testcase-reject-end-table-of-verb-checks-vc-leave-lo-rule
+#testcase-check-vc-leave-lo-rule-if-trappy-trawl-is-visited
 >leave lo
 You've left Reeve Row for good.
-\\
-#+testcase-reject-end-table-of-verb-checks-vc-leave-lo-rule
->heave ho
-There was nothing more to heave besides the rayed rug.
 
 @gt
 #testcase-goto-table-of-noways-trappy-trawl
@@ -4116,7 +4524,7 @@ You notice one dot in the corner of the leet learner.
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
 
 @rej
-#+testcase-check-vc-whappy-wall-rule-abide-by-the-trawl-not-hall-rule
+#testcase-check-vc-whappy-wall-rule-if-sco-scrappy-scrawl-is-false
 >whappy wall
 That could be helpful, but you have no indication where a wall might sound whappy. Well, not yet. You need to search for evidence.
 \\
@@ -4132,6 +4540,11 @@ by one point
 {--rej}#testcase-check-vc-scrappy-scrawl-rule-fallthrough
 {--all}#testcase-run-vr-scrappy-scrawl-rule-default
 Ah! You had confidence you could find a scrappy scrawl, and you do. The instructions seem to make sense. You need to look to break open a passage where there is none, yet. An unexpectedly hollow place. Apparently, from the scrawl, one that makes a special sort of noise. Not quite a THWIP or a THWUP. So where is the weak spot?
+
+@rej
+#testcase-check-vc-scrappy-scrawl-rule-if-sco-scrappy-scrawl-is-true
+>scrappy scrawl
+You already found the scrappy scrawl!
 
 @hfull
 #+testcase-values-from-number-of-trappy-trawl-is-2805
@@ -4229,6 +4642,11 @@ Whunk. Whunk. The wall makes the same noise, until ... WHAP! There it is! You ta
 @all
 #testcase-room-names-happy-hall
 `Happy Hall
+
+@rej
+#testcase-run-vr-whappy-wall-rule-repeat-with-x-running-through-carried-feastitems
+>i
+made mug
 
 @gt
 #testcase-goto-tries-happy-hall-reeve-row
@@ -4423,6 +4841,11 @@ Sappy Saul seems almost too happy to be summoned, then apologetic when he is.
 >score
 {$SCOS}
 
+@rej
+#testcase-check-vc-sappy-saul-rule-if-sco-sappy-saul-is-true
+>sappy saul
+You already summoned Sappy Saul!
+
 @ha
 #testcase-ha-half-table-of-verb-checks-57-laura
 >zlone laura
@@ -4496,6 +4919,15 @@ Known Nora appears!
 @all
 >score
 {$SCOS}
+
+@rej
+#testcase-check-vc-known-nora-rule-if-sco-known-nora-is-true
+>known nora
+You already summoned Known Nora!
+\\
+#testcase-check-vc-lone-laura-rule-if-sco-lone-laura-is-true
+>lone laura
+You already summoned Lone Laura!
 
 @hfull
 #
@@ -4649,8 +5081,18 @@ You notice one dot in the corner of the leet learner.
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-2.00, -2.00.)
 
 @rej
+#+testcase-check-vc-chrome-craw-rule-if-sco-chrome-craw-is-true-if-trappy-trawl-is-visited
 >chrome craw
 The chrome craw cannot open a secret path here.
+
+@rej+
+#testcase-check-vc-beat-bell-rule-if-sco-sheet-shell-is-false
+>beat bell
+You don't have any (door)bell to beat, yet. You need to be somewhere more homey.
+\\
+#testcase-check-vc-meet-mel-rule-if-sco-beat-bell-is-false
+>meet mel
+Nobody named Mel might be around, yet!
 
 @gt
 #testcase-goto-tries-compete-compel-reeve-row
@@ -4760,9 +5202,11 @@ You're already there! Well, here.
 This is the final lair of solitude. You've completed a quest for your peers. Now you will sit here and sort things out.
 
 @rej
+#testcase-check-vc-feet-fell-rule-if-sco-wheat-well-is-false
 >feet fell
 But you haven't envisioned any place to fall to!
 \\
+#testcase-think-table-of-verb-checks-vc-feet-fell-rule
 >think
 You can claim your FEET FELL once you've envisioned somewhere safe to fall to.
 
@@ -4775,11 +5219,18 @@ by one point
 {--all}#testcase-run-vr-wheat-well-rule-default
 Yes, the wheat well must be your destination. Now how to stumble across to it?
 
+@rej
+#testcase-check-vc-wheat-well-rule-if-sco-wheat-well-is-true
+>wheat well
+You already figured your destination!
+<already-done;>
+
 @all
 >score
 {$SCOS}
 
 @rej
+#+testcase-think-table-of-verb-checks-vc-feet-fell-rule
 >think
 (CAN DO NOW) You can claim your FEET FELL now you've envisioned somewhere safe to fall to.
 
@@ -4799,9 +5250,21 @@ by one point
 Oops! With a bit of dream logic, you slip out of where you feel you need to show you are better than someone and to where you can reflect more.
 
 @rej
+#+testcase-check-vc-wheat-well-rule-if-sco-wheat-well-is-true
+>wheat well
+You already got here!
+\\
 #testcase-check-vc-feet-fell-rule-if-sco-feet-fell-is-true
 >feet fell
 You already slid to a more peaceful space!
+\\
+#+testcase-check-vc-beat-bell-rule-if-sco-sheet-shell-is-false
+>beat bell
+You don't have any (door)bell to beat, yet. Perhaps one will ring soon enough.
+\\
+#testcase-think-table-of-verb-checks-vc-beat-bell-rule
+>think
+You can BEAT BELL once there is a (door)bell to beat, or reach before the person ringing it runs away.
 
 @all
 >score
@@ -4827,6 +5290,11 @@ Suddenly, with the Sheet Shell in place, ready for a book, you hear your postal 
 >score
 {$SCOS}
 
+@rej
+#testcase-check-vc-sheet-shell-rule-if-sco-sheet-shell-is-true
+>sheet shell
+You already established a sheet shell here.
+
 @hom
 #testcase-homonym-reject-table-of-verb-checks-vh-beet-meat-end-rule-beet
 #testcase-homonym-detail-vh-beet-meat-end-rule-default
@@ -4842,6 +5310,15 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 >ll sheet shell
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, -1.00.)
 
+@rej
+#+testcase-think-table-of-verb-checks-vc-beat-bell-rule
+>think
+You can BEAT BELL now there is a (door)bell to beat, or reach before the person ringing it runs away.
+\\
+#testcase-think-table-of-verb-checks-vc-meet-mel-rule
+>think
+You can MEET MEL once you know someone is near.
+
 >beat bell
 by one point
 }}SCORE++
@@ -4856,13 +5333,22 @@ Aaand ... pursuant to general dream/fantasy logic rules, you just make it! But n
 {$SCOS}
 
 @rej
+#testcase-think-table-of-verb-checks-vc-heat-hell-rule
+#testcase-think-table-of-verb-checks-vc-repeat-repel-rule
+#testcase-think-table-of-verb-checks-vc-sweet-swell-rule
+>think
+(CAN DO NOW) You need a story to reflect on before concluding REPEAT REPEL.
+(CAN DO NOW) You need a story to reflect on before concluding HEAT HELL.
+(CAN DO NOW) You need a story to reflect on before concluding SWEET SWELL.
+
+@rej+
 #testcase-check-vc-beat-bell-rule-if-sco-beat-bell-is-true
 >beat bell
 You already managed to beat the bell when you needed to!
 
 @hom
 #+testcase-homonym-detail-vh-beet-meat-end-rule-default
-#+testcase-homonym-reject-table-of-verb-checks-vh-beet-meat-end-rule-meat
+#testcase-homonym-reject-table-of-verb-checks-vh-beet-meat-end-rule-meat
 >meat mel
 You already got food like that for the feast. You need a verb here.
 
@@ -4874,6 +5360,27 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 #+testcase-values-from-number-of-sheet-shell-is-2755
 >ll sheet shell
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (-1.00, -2.00.)
+
+@rej
+#+testcase-think-table-of-verb-checks-vc-meet-mel-rule
+>think
+You can MEET MEL now you know someone is near.
+
+@rej+
+#testcase-check-vc-heat-hell-rule-default
+>heat hell
+\\
+You haven't reflected enough for an angry judgement, yet.
+\\
+#testcase-check-vc-sweet-swell-rule-default
+>heat hell
+\\
+You haven't reflected enough for a favorable judgement, yet.
+\\
+#testcase-check-vc-repeat-repel-rule-default
+>heat hell
+\\
+You haven't reflected enough for a balanced judgement, yet.
 
 >meet mel
 by one point
@@ -4888,6 +5395,11 @@ Leet Lel, by Pete Pell. Memories come back to you, of Leet Lel, a larger-than-li
 @all
 >score
 {$SCOS}
+
+@rej
+#testcase-check-vc-meet-mel-rule-if-sco-meet-mel-is-true
+>meet mel
+You already met Mel!
 
 @ha
 #testcase-ha-half-table-of-verb-checks-69-repeat
@@ -4949,13 +5461,14 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 >x leet lel
 
 @rej
-#testcase-think-table-of-verb-checks-vc-heat-hell-rule
-#testcase-think-table-of-verb-checks-vc-repeat-repel-rule
-#testcase-think-table-of-verb-checks-vc-sweet-swell-rule
+#+testcase-check-vc-heat-hell-rule-abide-by-the-try-final-point-rule
+#+testcase-check-vc-repeat-repel-rule-abide-by-the-try-final-point-rule
+#+testcase-check-vc-sweet-swell-rule-abide-by-the-try-final-point-rule
 >think
-(CAN DO NOW) You need a story to reflect on before concluding REPEAT REPEL.
-(CAN DO NOW) You need a story to reflect on before concluding HEAT HELL.
-(CAN DO NOW) You need a story to reflect on before concluding SWEET SWELL.
+You read up on Leet Lel, so you can conclude REPEAT REPEL.
+You read up on Leet Lel, so you can conclude HEAT HELL.
+You read up on Leet Lel, so you can conclude SWEET SWELL.
+CAN DO NOW
 
 @rej+
 #testcase-reject-end-table-of-verb-checks-vc-baller-bear-rule

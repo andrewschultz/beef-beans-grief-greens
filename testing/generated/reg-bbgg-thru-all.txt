@@ -19,6 +19,7 @@
 by one point
 
 #testcase-run-vr-sassed-ceased-rule-default
+#testcase-run-vr-sassed-ceased-rule-fallthrough
 Yes, you're glad you were given this responsibility, and people snickered about how flaky you were.
 
 >score
@@ -48,6 +49,8 @@ You have scored a total of 3 out of 69 points and need 60 to win. You have found
 by one point
 
 #testcase-run-vr-leave-lo-rule-default
+#testcase-run-vr-leave-lo-rule-fallthrough
+#testcase-run-vr-leave-lo-rule-if-sco-leave-lo-is-false
 Sometimes you just need the right time to say a simple phrase to get you going. And you do, here.
 
 #testcase-room-names-wandering-where
@@ -55,6 +58,14 @@ Sometimes you just need the right time to say a simple phrase to get you going. 
 
 >score
 You have scored a total of 4 out of 69 points and need 60 to win. You have found 1 of 10 bonus points so far.
+
+>in
+`Reeve Row
+
+#+testcase-run-vr-leave-lo-rule-if-sco-leave-lo-is-false
+>leave lo
+!Sometimes you just
+You can just go OUT or N/NORTH for fewer keystrokes.
 
 >laundering lair
 by one point
@@ -108,6 +119,18 @@ by one point
 You and the lovin' lout pull on one, two, THREE! It takes a couple of times, but the rug bursts free from the floor. You see an outline of the passage you believed was there.
 You shake hands with the lovin' lout, who exits and nods to wish you the best.
 Your kneeling on the floor to pull the rug up gave you a good view inside the oven. There you find something called a goon guide. But you can't use it, because you're too good to be a goon. That's how it works, right? Or maybe not...
+
+#testcase-run-vr-heave-ho-rule-process-the-reeve-row-check-passage-down-rule
+>believe below
+There's that trap door here. But it's useless to interact with until you find a key for it.
+by one point
+
+#+testcase-run-vr-heave-ho-rule-process-the-reeve-row-check-passage-down-rule
+>l
+There's that trap door here. But it's useless to interact with until you find a key for it.
+
+>undo
+>undo
 
 >score
 You have scored a total of 9 out of 69 points and need 60 to win. You have found 1 of 10 bonus points so far.
@@ -218,10 +241,43 @@ You think up a storm and realize, there is a way to such a place, though maybe i
 >score
 You have scored a total of 18 out of 69 points and need 60 to win. You have found 1 of 10 bonus points so far.
 
+#testcase-run-vr-baller-bear-rule-if-stare-score-<-3
+>baller bear
+by one point
+WRONG
+
+#testcase-run-vr-caller-care-rule-if-stare-score-<-3
+>caller care
+by one point
+WRONG
+
+#testcase-run-vr-dollar-dare-rule-if-stare-score-<-3
+>dollar dare
+by one point
+WRONG
+
+>undo
+>undo
+
+#testcase-run-vr-dollar-dare-rule-if-stare-score-<-3
+>dollar dare
+by one point
+WRONG
+
+#testcase-run-vr-caller-care-rule-if-stare-score-<-3
+>caller care
+by one point
+WRONG
+
+>undo
+>undo
+>undo
+
 >dollar dare
 by one point
 
 #testcase-run-vr-dollar-dare-rule-default
+#testcase-run-vr-dollar-dare-rule-fallthrough
 The staller stare is visibly affected by the audacity of someone daring someone else to do ... well, THAT. For just a dollar. Its eyes bug out. Is this a joke? Then the eyes roll around, as if to say, it doesn't see why it bothers to feel nosy.
 The staller stare blinks. It seems to shake where its head would be. It's a bit baffled by what it saw. It rolls its eyes as if to say, any more of this, and I give up.
 
@@ -231,8 +287,9 @@ You have scored a total of 19 out of 69 points and need 60 to win. You have foun
 >caller care
 by one point
 
-#testcase-check-vr-caller-care-rule-fallthrough
+#testcase-run-vr-caller-care-rule-fallthrough
 #testcase-run-vr-caller-care-rule-default
+#testcase-run-vr-caller-care-rule-if-stare-score-<-3
 The staller stare is visibly affected by the audacity of someone caring about them. Its eyes bug out. Is this a joke! Then the eyes blink. No, it's not crying, of course it's not, it's the squalor.
 The staller stare blinks repeatedly. The weirdness you introduced was too much for it. It was ready to judge squalor, but not THIS. It closes its eyes and fades into the wall it was on. Perhaps it will find another place to oversee.
 
@@ -243,6 +300,8 @@ You have scored a total of 20 out of 69 points and need 60 to win. You have foun
 by one point
 
 #testcase-run-vr-baller-bear-rule-default
+#testcase-run-vr-baller-bear-rule-fallthrough
+WRONG
 With the staller stare gone, you leave a bit of hope and genuine solicitousness for the next lost soul who stumbles here.
 
 >score
@@ -598,8 +657,16 @@ You have scored a total of 53 out of 69 points and need 69 to win. You have foun
 by one point
 
 #testcase-run-vr-believe-below-rule-default
+#testcase-run-vr-believe-below-rule-fallthrough
+#+testcase-run-vr-believe-below-rule-if-sco-heave-ho-is-false
+#testcase-run-vr-believe-below-rule-process-the-reeve-row-check-passage-down-rule
 Aha! You wondered if something was below the rug. Now you see the outline of a trap door beneath the rug.
 You use the copper key on the trap door down. And it works!
+
+>out
+
+>in
+There's a passage down, through the trap door you opened.
 
 >score
 You have scored a total of 54 out of 69 points and need 69 to win. You have found 10 of 10 bonus points so far.

@@ -33,9 +33,6 @@ by one point
 >oven out
 by one point
 
->heave ho
-by one point
-
 >prune pride
 by one point
 
@@ -170,7 +167,20 @@ by one point
 >believe below
 by one point
 
+#testcase-run-vr-heave-ho-rule-process-the-reeve-row-check-passage-down-rule
+>heave ho
+You use the copper key on the trap door down. And it works!
+by one point
+
 >d
+
+#testcase-run-vr-cappy-caul-rule-if-sco-sassed-ceased-is-false
+>score
+You have scored a total of {$SCORE} out of 69 points and need 59 to win. You have found 0 of {$CURMAXBONUS} bonus points so far. You are locked out of 1 point. You can check for the maximum score dropping in the upper right, which usually happens when you take a one-way passage.
+
+#testcase-check-vc-chrome-craw-rule-if-trappy-trawl-is-visited
+>chrome craw
+You could have opened the chrome craw in Wandering ... Where?, but it's too late now. You don't want to go back. Everyone is waiting.
 
 >scrappy scrawl
 by one point
