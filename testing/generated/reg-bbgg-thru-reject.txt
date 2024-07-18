@@ -354,6 +354,64 @@ Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, 
 >undo
 >undo
 
+>made mug
+by one point
+
+>leave lo
+by one point
+
+>jade jug
+Looking at the made mug that came from the rayed rug, you realize Reeve Row would be a better place to try this.
+
+>played plug
+Looking at the made mug that came from the rayed rug, you realize Reeve Row would be a better place to try this.
+
+>think
+You can find a JADE JUG once you return.
+You can find a PLAYED PLUG once you return.
+
+>in
+
+>think
+(CAN DO NOW) You can find a JADE JUG now you returned.
+(CAN DO NOW) You can find a PLAYED PLUG now you returned.
+
+>undo
+>undo
+>undo
+>undo
+>undo
+>undo
+>undo
+
+>played plug
+by one point
+
+>jade jug
+by one point
+
+>leave lo
+by one point
+
+>made mug
+Looking at the jade jug and played plug that came from the rayed rug, you realize Reeve Row would be a better place to try this.
+
+>think
+You can find a MADE MUG once you return.
+
+>in
+
+>think
+(CAN DO NOW) You can find a MADE MUG now you returned.
+
+>undo
+>undo
+>undo
+>undo
+>undo
+>undo
+>undo
+
 #testcase-run-vr-believe-below-rule-if-sco-heave-ho-is-false
 >believe below
 You believe something must be below. Below that rug, you'd guess. You might not be able to remove it by yourself. But you have faith now!
@@ -1247,7 +1305,7 @@ Sport, eventually, to burn the calories off. But before that, discussion.
 by one point
 
 #testcase-check-vc-pappy-paul-rule-fallthrough
-Pappy Paul appears when summoned, looking almost a bit too serious.
+Pappy Paul appears when summoned, looking almost a bit too serious. He apologizes for this, but you reassure him this isn't a comedy roast. He chuckles slightly--the best compliment a joke can get from him!
 
 #testcase-check-vc-pappy-paul-rule-if-sco-pappy-paul-is-true
 >pappy paul
@@ -1257,7 +1315,7 @@ You already summoned Pappy Paul!
 by one point
 
 #testcase-check-vc-sappy-saul-rule-fallthrough
-Sappy Saul seems almost too happy to be summoned, then apologetic when he is.
+Sappy Saul seems almost too happy to be summoned, then apologetic for his display. You vaguely encourage him to be himself.
 
 #testcase-check-vc-sappy-saul-rule-if-sco-sappy-saul-is-true
 >sappy saul

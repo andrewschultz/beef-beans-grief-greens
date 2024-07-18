@@ -434,6 +434,66 @@ by one point
 >undo
 >undo
 
+@rej+
+##balance undo
+>made mug
+by one point
+\\
+>leave lo
+by one point
+\\
+>jade jug
+Looking at the made mug that came from the rayed rug, you realize Reeve Row would be a better place to try this.
+\\
+>played plug
+Looking at the made mug that came from the rayed rug, you realize Reeve Row would be a better place to try this.
+\\
+>think
+You can find a JADE JUG once you return.
+You can find a PLAYED PLUG once you return.
+\\
+>in
+\\
+>think
+(CAN DO NOW) You can find a JADE JUG now you returned.
+(CAN DO NOW) You can find a PLAYED PLUG now you returned.
+\\
+>undo
+>undo
+>undo
+>undo
+>undo
+>undo
+>undo
+\\
+>played plug
+by one point
+\\
+>jade jug
+by one point
+\\
+>leave lo
+by one point
+\\
+>made mug
+Looking at the jade jug and played plug that came from the rayed rug, you realize Reeve Row would be a better place to try this.
+\\
+>think
+You can find a MADE MUG once you return.
+\\
+>in
+\\
+>think
+(CAN DO NOW) You can find a MADE MUG now you returned.
+\\
+>undo
+>undo
+>undo
+>undo
+>undo
+>undo
+>undo
+
 @ha
 #testcase-ha-half-table-of-verb-checks-2-leave
 >leave zlo
@@ -4808,7 +4868,7 @@ by one point
 @rej,all
 {--rej}#testcase-check-vc-pappy-paul-rule-fallthrough
 {--all}#testcase-run-vr-pappy-paul-rule-default
-Pappy Paul appears when summoned, looking almost a bit too serious.
+Pappy Paul appears when summoned, looking almost a bit too serious. He apologizes for this, but you reassure him this isn't a comedy roast. He chuckles slightly--the best compliment a joke can get from him!
 
 @hom
 #testcase-homonym-detail-vh-sappy-sol-rule-default
@@ -4838,7 +4898,7 @@ by one point
 @rej,all
 {--rej}#testcase-check-vc-sappy-saul-rule-fallthrough
 {--all}#testcase-run-vr-sappy-saul-rule-default
-Sappy Saul seems almost too happy to be summoned, then apologetic when he is.
+Sappy Saul seems almost too happy to be summoned, then apologetic for his display. You vaguely encourage him to be himself.
 
 @all
 >score

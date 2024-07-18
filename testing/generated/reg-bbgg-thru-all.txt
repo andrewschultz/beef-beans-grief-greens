@@ -714,7 +714,7 @@ You have scored a total of 56 out of 69 points and need 69 to win. You have foun
 by one point
 
 #testcase-run-vr-pappy-paul-rule-default
-Pappy Paul appears when summoned, looking almost a bit too serious.
+Pappy Paul appears when summoned, looking almost a bit too serious. He apologizes for this, but you reassure him this isn't a comedy roast. He chuckles slightly--the best compliment a joke can get from him!
 
 >score
 You have scored a total of 57 out of 69 points and need 69 to win. You have found 10 of 10 bonus points so far.
@@ -723,7 +723,7 @@ You have scored a total of 57 out of 69 points and need 69 to win. You have foun
 by one point
 
 #testcase-run-vr-sappy-saul-rule-default
-Sappy Saul seems almost too happy to be summoned, then apologetic when he is.
+Sappy Saul seems almost too happy to be summoned, then apologetic for his display. You vaguely encourage him to be himself.
 
 >score
 You have scored a total of 58 out of 69 points and need 69 to win. You have found 10 of 10 bonus points so far.
