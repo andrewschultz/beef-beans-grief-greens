@@ -21,7 +21,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "maundering"	"mare"	"mayor"	vh-maundering-mayor rule	false	true	true	false	wandering where	vc-maundering-mare rule	vr-maundering-mare rule	--	--
 "pondering"	"pair"	"pare"	vh-pondering-pare rule	false	true	true	false	wandering where	vc-pondering-pair rule	vr-pondering-pair rule	--	--
 "flopper"	"flea"	"flee"	vh-flopper-flee rule	false	true	true	false	wandering where	vc-flopper-flea rule	vr-flopper-flea rule	--	--
-"chrome"	"craw"	--	--	false	true	false	false	wandering where	vc-chrome-craw rule	vr-chrome-craw rule	--	"You can open the [b]CHROME CRAW[r] [here-in of wandering] [once-now of vc-believe-below rule] you've explored everywhere you can aboveground."
+"chrome"	"craw"	--	--	false	true	false	false	wandering where	vc-chrome-craw rule	vr-chrome-craw rule	--	"You can open the [b]CHROME CRAW[r] [here-in of wandering] [if sides-visited >= 4]now[else]once[end if] you've explored everywhere you can aboveground."
 "massive"	"mitt"	--	--	false	true	true	false	Ooh Ooh	vc-massive-mitt rule	vr-massive-mitt rule	--	--
 "baller"	"bear"	"bawler/bare"	--	false	true	true	false	squalor square	vc-baller-bear rule	vr-baller-bear rule	--	--
 "caller"	"care"	"collar"	--	false	true	true	false	squalor square	vc-caller-care rule	vr-caller-care rule	--	--
@@ -341,8 +341,8 @@ a goodrhyme rule (this is the vc-chrome-craw rule):
 			vcal "You already opened the chrome craw!";
 		already-done;
 	if trappy trawl is visited:
-		vcp "You could have opened the chrome craw in [wandering], but it's too late now. You don't want to go back. Everyone is waiting.";
-		unavailable; [not-yet isn't applicable here since you can't ever make your way back]
+		vcal "You could have opened the chrome craw in [wandering], but it's too late now. You don't want to go back. Everyone is waiting.";
+		already-done; [not-yet isn't applicable here since you can't ever make your way back, and unavailable shuts you off completely. "Not-redoable" might be more accurate.]
 	if player is not in wandering where:
 		vcp "Ooh! A passage somewhere new? That'd be interesting. But this isn't an [if mrlp is dome d'aww]accessible[else]open[end if] enough space.";
 		not-yet;
