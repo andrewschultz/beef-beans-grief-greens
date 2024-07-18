@@ -367,14 +367,14 @@ Looking at the made mug that came from the rayed rug, you realize Reeve Row woul
 Looking at the made mug that came from the rayed rug, you realize Reeve Row would be a better place to try this.
 
 >think
-You can find a JADE JUG once you return.
-You can find a PLAYED PLUG once you return.
+You can find a JADE JUG once you return to Reeve Row.
+You can find a PLAYED PLUG once you return to Reeve Row.
 
 >in
 
 >think
-(CAN DO NOW) You can find a JADE JUG now you returned.
-(CAN DO NOW) You can find a PLAYED PLUG now you returned.
+(CAN DO NOW) You can find a JADE JUG now you returned to Reeve Row.
+(CAN DO NOW) You can find a PLAYED PLUG now you returned to Reeve Row.
 
 >undo
 >undo
@@ -397,12 +397,12 @@ by one point
 Looking at the jade jug and played plug that came from the rayed rug, you realize Reeve Row would be a better place to try this.
 
 >think
-You can find a MADE MUG once you return.
+You can find a MADE MUG once you return to Reeve Row.
 
 >in
 
 >think
-(CAN DO NOW) You can find a MADE MUG now you returned.
+(CAN DO NOW) You can find a MADE MUG now you returned to Reeve Row.
 
 >undo
 >undo

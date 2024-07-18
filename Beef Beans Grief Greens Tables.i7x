@@ -4,7 +4,7 @@ Version 1/240113 of Beef Beans Grief Greens Tables by Andrew Schultz begins here
 
 volume the main thing
 
-to say yrrr: say "you return[if player is in reeve row]ed[end if]"
+to say yrrr: say "you return[if player is in reeve row]ed[end if] to Reeve Row"
 
 table of verb checks [the order of things to solve is roughly alphabetical, so the lurking lump always gives you the best value, but this is subverted by if one rhyme pushes the game/story further than the others. So Leave Lo is first. Sassed can be anywhere for the bonus point, since the lump explicitly avoids bonus points.]
 w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	idid	best-room	check-rule	run-rule	wfull (topic)	think-advice (text)
