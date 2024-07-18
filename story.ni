@@ -147,7 +147,7 @@ after printing the locale description for Reeve Row:
 	process the Reeve Row check passage down rule;
 	continue the action;
 
-this is the Reeve Row check passage down rule:
+this is the Reeve Row check passage down rule: [note: we should never have HEAVE HO after getting the copper key, since you need HEAVE HO to solve a sideroom and make the bopper bee appear. ]
 	if sco-heave-ho is true and sco-believe-below is true:
 		if player has copper key:
 			say "You use the copper key on the trap door down. And it works!";
@@ -297,7 +297,7 @@ from-number of staller stare is 2855. to-number of staller stare is 8412. [squal
 
 chapter downed dork
 
-the downed dork is a rhymable. "The downed dork sits here, looking helpless, lookikng like they wish they could help, even with a trivial-seeming task.". description is "Well, you've been called a dork before. You seem to have a radar for others, and sympathy, of course, whether they be gnome, human, elf, orc or troll. You feel like you could work together with the dork."
+the downed dork is a rhymable. "The downed dork sits here, looking helpless, looking like they wish they could help, even with a trivial-seeming task.". description is "Well, you've been called a dork before. You seem to have a radar for others, and sympathy, of course, whether they be gnome, human, elf, orc or troll. You feel like you could work together with the dork."
 
 from-number of downed dork is 2804. to-number of downed dork is 2754.
 

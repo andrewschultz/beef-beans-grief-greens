@@ -503,6 +503,7 @@ this is the vr-baller-bear rule:
 	if stare-score < 3:
 		say "The staller stare is visibly affected by the audacity of a performing animal, just performing for fun and not trying to outrage anyone. It tries to stare down this oddness, but bears ignore that stuff. The star blinks, feeling weakened.";
 	else:
+		say "You attune yourself to your surrounding, watching a baller bear juggling and riding a unicycle. It's worth the time to relax and enjoy.";
 		note-staller-gone;
 	evaluate-stare;
 
@@ -521,6 +522,7 @@ this is the vr-caller-care rule:
 	if stare-score < 3:
 		say "The staller stare is visibly affected by the audacity of someone caring about them. Its eyes bug out. Is this a joke! Then the eyes blink. No, it's not crying, of course it's not, it's the squalor.";
 	else:
+		say "With the staller stare gone, you leave a bit of hope and genuine solicitousness for the next lost soul who stumbles here. Unfortunately, in such a seedy place, people may look at it askance. 'Why? What's the angle?' But you have to try.";
 		note-staller-gone;
 	evaluate-stare;
 
@@ -533,8 +535,9 @@ a goodrhyme rule (this is the vc-dollar-dare rule):
 
 this is the vr-dollar-dare rule:
 	now sco-dollar-dare is true;
+	say "You espy kids being kids, bragging and calling each other chicken. It's a rite of passage, really.";
 	if stare-score < 3:
-		say "The staller stare is visibly affected by the audacity of someone daring someone else to do ... well, THAT. For just a dollar. (Don't worry. Nothing crude. Just standard kid-dare stuff.) Its eyes bug out. Is this a joke? Then the eyes roll around, as if to say, it doesn't see why it bothers to feel nosy.";
+		say "[line break]The staller stare is visibly affected by the audacity of someone daring someone else to do ... well, THAT. For just a dollar. (Don't worry. Nothing crude. Just standard kid-dare stuff.) Its eyes bug out. Is this a joke? Then the eyes roll around, as if to say, it doesn't see why it bothers to feel nosy.";
 	else:
 		note-staller-gone;
 	evaluate-stare;
@@ -560,7 +563,7 @@ section bleat bloat scoring
 a goodrhyme rule (this is the vc-neat-note rule):
 	unless meat moat is touchable or beet boat is touchable or bleat bloat is touchable, unavailable;
 	if sco-neat-note is true:
-		vcal "But you already discovered the neat note. Rediscovering it won't make it neater.";
+		vcal "But you already discovered the neat note. Rediscovering it won't make it neater or help you find more stuff.";
 		already-done;
 	ready;
 
@@ -622,7 +625,7 @@ this is the vr-fight-fires rule:
 a goodrhyme rule (this is the vc-white-wires rule):
 	if light lyres are not touchable, unavailable;
 	if sco-fight-fires is false:
-		vcp "You can't see anything that might have white wires! Well, anything safe to handle!";
+		vcp "Okay, the light lyres might have white wires, but they'd be white-hot!";
 		not-yet;
 	if sco-white-wires is true:
 		vcal "You already got the white wires!";
@@ -720,6 +723,7 @@ this is the vr-zap-zoo rule:
 	move tree troop to gap goo;
 	move lotus life to gap goo;
 	declue-here;
+	try looking;
 
 section items in Gap Goo
 
@@ -1019,7 +1023,7 @@ this is the vh-pappy-pall rule:
 
 this is the vr-pappy-paul rule:
 	now sco-pappy-paul is true;
-	say "Pappy Paul appears when summoned, looking almost a bit too serious.";
+	say "Pappy Paul appears when summoned, looking almost a bit too serious. He apologizes for this, but you reassure him this isn't a comedy roast. He chuckles slightly--the best compliment a joke can get from him!";
 	reduce-hall-if;
 	hall-move Pappy Paul;
 
@@ -1035,7 +1039,7 @@ this is the vh-sappy-sol rule:
 
 this is the vr-sappy-saul rule:
 	now sco-sappy-saul is true;
-	say "Sappy Saul seems almost too happy to be summoned, then apologetic when he is.";
+	say "Sappy Saul seems almost too happy to be summoned, then apologetic for his display. You vaguely encourage him to be himself.";
 	reduce-hall-if;
 	hall-move Sappy Saul;
 
@@ -1107,7 +1111,7 @@ this is the vh-loan-laura rule:
 
 this is the vr-lone-laura rule:
 	now sco-lone-laura is true;
-	say "Lone Laura appears!";
+	say "Lone Laura appears! She waves semi-awkwardly, and you hem and haw about how you hope you aren't disturbing her. No, she just doesn't go in for small talk. She saves her social energy for important stuff, like this. You must have worked hard to find everything!";
 	decrease to-number of own aura by 2705;
 	hall-move Lone Laura;
 
@@ -1120,7 +1124,7 @@ a goodrhyme rule (this is the vc-known-nora rule):
 
 this is the vr-known-nora rule:
 	now sco-known-nora is true;
-	say "Known Nora appears!";
+	say "Known Nora appears! You're worried you won't know her, and you don't, but you know OF her, quickly recalling tales of her throughout the kingdom. When she greets you, you feel much more well-known than you have before. You briefly wonder if your successful quest is getting to your head, but you realize Nora's confidence is the sort that is shared and not shoved in others['] faces.";
 	decrease to-number of own aura by 2754;
 	hall-move Known Nora;
 
@@ -1142,7 +1146,7 @@ this is the vr-wheat-well rule:
 a goodrhyme rule (this is the vc-sheet-shell rule):
 	if player is not in compete compel, unavailable;
 	if sco-sheet-shell is true:
-		vcal "You already know the need for a sheet shell.";
+		vcal "You already established a sheet shell here.";
 		already-done;
 	ready;
 
