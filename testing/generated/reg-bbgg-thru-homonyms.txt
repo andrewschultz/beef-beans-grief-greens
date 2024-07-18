@@ -282,7 +282,7 @@ by one point
 >do do
 The Leet Learner shakes back and forth. Something you said sounded right, but it didn't feel right.
 
-#testcase-homonym-reject-table-of-verb-checks-do-dew
+#+testcase-homonym-reject-table-of-verb-checks-do-dew
 >dew dew
 The Leet Learner shakes back and forth. Something you said sounded right, but it didn't feel right.
 
@@ -410,7 +410,7 @@ You already got food like that for the feast. You need a verb here.
 by one point
 
 #+testcase-homonym-detail-vh-beet-meat-end-rule-default
-#+testcase-homonym-reject-table-of-verb-checks-vh-beet-meat-end-rule-meat
+#testcase-homonym-reject-table-of-verb-checks-vh-beet-meat-end-rule-meat
 >meat mel
 You already got food like that for the feast. You need a verb here.
 

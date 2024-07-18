@@ -528,44 +528,44 @@ by one point
 >pondering pair
 by one point
 
->booboo
-by one point
-
 #testcase-ha-half-table-of-verb-checks-36-boo
->boo zboo
-The HA HALF button on your Leet Learner lights up green.
+>boo
+gesture as if to say, keep talking. You must be on the right track!
 
 #testcase-ha-half-table-of-verb-checks-37-coo
 >coo zkoo
-The HA HALF button on your Leet Learner lights up green.
+gesture as if to say, keep talking. You must be on the right track!
 
 #testcase-ha-half-table-of-verb-checks-37-coo-koo
 >zcoo koo
-The HA HALF button on your Leet Learner lights up green.
+gesture as if to say, keep talking. You must be on the right track!
 
 #testcase-ha-half-table-of-verb-checks-38-doo
 >doo zdoo
-The HA HALF button on your Leet Learner lights up green.
+gesture as if to say, keep talking. You must be on the right track!
 
 #testcase-ha-half-table-of-verb-checks-39-ju
 >ju zju
-The HA HALF button on your Leet Learner lights up green.
+gesture as if to say, keep talking. You must be on the right track!
 
 #testcase-ha-half-table-of-verb-checks-40-muu
 >muu zmuu
-The HA HALF button on your Leet Learner lights up green.
+gesture as if to say, keep talking. You must be on the right track!
 
-#testcase-ha-half-table-of-verb-checks-41-poo
+#testcase-ha-half-table-of-verb-checks-41-poo-pooh
 >poo zpooh
-The HA HALF button on your Leet Learner lights up green.
+gesture as if to say, keep talking. You must be on the right track!
 
-#testcase-ha-half-table-of-verb-checks-41-pooh
+#+testcase-ha-half-table-of-verb-checks-41-poo-pooh
 >zpoo pooh
-The HA HALF button on your Leet Learner lights up green.
+gesture as if to say, keep talking. You must be on the right track!
 
 #testcase-ha-half-table-of-verb-checks-42-tu
 >tu ztu
-The HA HALF button on your Leet Learner lights up green.
+gesture as if to say, keep talking. You must be on the right track!
+
+>booboo
+by one point
 
 >juju
 by one point

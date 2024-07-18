@@ -409,6 +409,31 @@ You are now blocked from paths with no points, critical or bonus, available in a
 
 >x
 
+@rej
+##balance undo
+>leave lo
+by one point
+\\
+#testcase-check-vc-jade-jug-rule-if-rayed-rug-is-not-touchable
+#testcase-reject-start-table-of-verb-checks-vc-jade-jug-rule
+>jade jug
+{$REJECT2}
+\\
+#testcase-check-vc-made-mug-rule-if-rayed-rug-is-not-touchable
+#testcase-reject-start-table-of-verb-checks-vc-made-mug-rule
+>made mug
+{$REJECT2}
+\\
+#testcase-check-vc-played-plug-rule-if-rayed-rug-is-not-touchable
+#testcase-reject-start-table-of-verb-checks-vc-played-plug-rule
+>played plug
+{$REJECT2}
+\\
+>undo
+>undo
+>undo
+>undo
+
 @ha
 #testcase-ha-half-table-of-verb-checks-2-leave
 >leave zlo
@@ -562,7 +587,8 @@ by one point
 {--rej}#testcase-check-vc-made-mug-rule-fallthrough
 {--all}#testcase-run-vr-made-mug-rule-default
 A made mug appears. It will be useful for the meal.
-A ray vanishes from the rug. Several rays on the rug (you'd say one-third) grow duller.
+A ray vanishes from the rug!
+Several rays on the rug (you'd say one-third) grow duller.
 
 @all
 >score
@@ -587,7 +613,8 @@ by one point
 {--rej}#testcase-check-vc-jade-jug-rule-fallthrough
 {--all}#testcase-run-vr-jade-jug-rule-default
 A jade jug appears. It will be useful for the meal.
-A ray vanishes from the rug. The rug's rays go from one-third dull to one-third bright.
+A ray vanishes from the rug!
+The rug's rays go from one-third dull to one-third bright.
 
 @all
 >score
@@ -672,22 +699,6 @@ You notice four dots in the corner of the leet learner.
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, -0.50.)
 
 @rej
-#testcase-check-vc-jade-jug-rule-if-rayed-rug-is-not-touchable
-#testcase-reject-start-table-of-verb-checks-vc-jade-jug-rule
->jade jug
-{$REJECT2}
-\\
-#testcase-check-vc-made-mug-rule-if-rayed-rug-is-not-touchable
-#testcase-reject-start-table-of-verb-checks-vc-made-mug-rule
->made mug
-{$REJECT2}
-\\
-#testcase-check-vc-played-plug-rule-if-rayed-rug-is-not-touchable
-#testcase-reject-start-table-of-verb-checks-vc-played-plug-rule
->played plug
-{$REJECT2}
-
-@rej+
 # nonstandard case rejects here ... I'd like to keep them separate from the standard "can't do this"
 #testcase-reject-start-table-of-verb-checks-vc-grieve-grow-rule
 #testcase-check-vc-grieve-grow-rule-abide-by-the-self-rhymes-check-rule
@@ -860,7 +871,7 @@ That location or thing doesn't exist or isn't known to you yet.
 >undo
 \\
 #testcase-goto-tries-dove-n-doubt-hi-ho-i-owe
->gt hi ho
+>gt sty sto
 That location or thing doesn't exist or isn't known to you yet.
 \\
 >undo
@@ -961,6 +972,10 @@ You take a closer look at the oven. It's missing a lot! You probably need to fin
 {$SCOS}
 
 @rej
+#testcase-check-vc-oven-out-rule-if-sco-shovin-shout-is-false
+>oven out
+Before moving the oven out, you'll have to be sure you and the lout can push it a bit.
+\\
 #testcase-check-vc-lovin-lout-rule-if-sco-lovin-lout-is-true
 >lovin lout
 The lovin' lout already appeared to help you!
@@ -1046,11 +1061,6 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 You feel like you should get a reading on the oven, but maybe it's more what's around that you need to work with.
 
 @rej
-#testcase-check-vc-oven-out-rule-if-sco-shovin-shout-is-false
->shovin shout
-Before moving the oven out, you'll have to be sure you and the lout can push it a bit.
-
-@rej+
 #+testcase-think-table-of-verb-checks-vc-oven-out-rule
 >think
 You can say OVEN OUT now you have someone strong enough to push the oven.
@@ -1103,7 +1113,6 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 >think
 You can HEAVE HO now you have a strong assistant here who can help you pull the rug up.
 
-@!min
 >heave ho
 by one point
 }}SCORE++
@@ -1247,7 +1256,8 @@ by one point
 {--rej}#testcase-check-vc-played-plug-rule-fallthrough
 {--all}#testcase-run-vr-played-plug-rule-default
 Ah, that's what the bump in the rayed rug is.
-A ray vanishes from the rug. The final rays on the rug grow dull. You figure you're done with it, so you put it in a corner where you can just ignore it.
+A ray vanishes from the rug!
+You found something below the rug, and all its rays are dull. Best to tuck it away in a spot where it won't distract you.
 
 @rej
 #testcase-check-vc-played-plug-rule-if-sco-played-plug-is-true
@@ -1322,7 +1332,7 @@ You're already there! Well, here.
 >undo
 \\
 #testcase-goto-tries-stuck-state-hi-ho-i-owe
->gt hi ho
+>gt sty sto
 That location or thing doesn't exist or isn't known to you yet.
 \\
 >undo
@@ -1451,6 +1461,17 @@ You grab the shard and feel pulled to somewhere new...
 {$SCOS}
 
 @rej
+##balance undo
+>look lard
+\\
+#testcase-check-vc-look-lard-rule-if-sco-look-lard-is-true
+>lard look
+You're not sure why you need lard, but you're pretty sure you don't need too much of it.
+\\
+>undo
+>undo
+
+@rej+
 #+testcase-check-vc-chrome-craw-rule-if-player-is-not-in-wandering-where
 >chrome craw
 Ooh! A passage somewhere new? That'd be interesting. But this isn't an accessible enough space.
@@ -1518,7 +1539,7 @@ You can't go back anywhere you've been until you find a way out of here.
 >undo
 \\
 #testcase-goto-tries-took-tarred-hi-ho-i-owe
->gt hi ho
+>gt sty sto
 That location or thing doesn't exist or isn't known to you yet.
 \\
 >undo
@@ -1658,11 +1679,6 @@ by one point
 Lard, man. You're still not sure if you really need it, even if the cookbooks say you should. You've never had the guts to rebel and just prepare that dish without lard. Now's not the time to start. So you're glad you looked so diligently, and you're glad it turned up.
 You feel sucked out of whatever the shard held you in. As you come back to Dove 'N Doubt, the shard shatters. You sense there's nothing more to do here, so you walk back to the center of the action.
 
-@rej
-#testcase-check-vc-look-lard-rule-if-sco-look-lard-is-true
->look lard
-You're not sure why you need lard, but you're pretty sure you don't need too much of it.
-
 @all
 >score
 {$SCOS}
@@ -1780,7 +1796,7 @@ Stuck State was an isolated area. You can't go back, and you don't need to.
 >undo
 \\
 #testcase-goto-tries-squalor-square-hi-ho-i-owe
->gt hi ho
+>gt sty sto
 That location or thing doesn't exist or isn't known to you yet.
 \\
 >undo
@@ -1837,17 +1853,21 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 #testcase-run-vr-baller-bear-rule-if-stare-score-<-3
 >baller bear
 by one point
-WRONG
+The staller stare is visibly affected by the audacity of a performing animal, just performing for fun and not trying to outrage anyone. It tries to stare down this oddness, but bears ignore that stuff. The star blinks, feeling weakened.
+The staller stare blinks. It seems to shake where its head would be. It's a bit baffled by what it saw. It rolls its eyes as if to say, any more of this, and I give up.
 \\
 #testcase-run-vr-caller-care-rule-if-stare-score-<-3
 >caller care
 by one point
-WRONG
+The staller stare is visibly affected by the audacity of someone caring about them. Its eyes bug out. Is this a joke! Then the eyes blink. No, it's not crying, of course it's not, it's the squalor.
+The staller stare blinks repeatedly. The weirdness you introduced was too much for it. It was ready to judge squalor, but not THIS. It closes its eyes and fades into the wall it was on. Perhaps it will find another place to oversee.
 \\
 #testcase-run-vr-dollar-dare-rule-if-stare-score-<-3
 >dollar dare
 by one point
-WRONG
+You espy kids being kids, bragging and calling each other chicken. It's a rite of passage, really.
+!The staller stare is visibly affected
+You amuse yourself with how the staller stare would've reacted to THAT. A bit of harmless schadenfreude. You think. You hope.
 \\
 >undo
 >undo
@@ -1855,12 +1875,15 @@ WRONG
 #+testcase-run-vr-dollar-dare-rule-if-stare-score-<-3
 >dollar dare
 by one point
-WRONG
+The staller stare is visibly affected by the audacity of someone daring someone else to do ... well, THAT. For just a dollar. (Don't worry. Nothing crude. Just standard kid-dare stuff.) Its eyes bug out. Is this a joke? Then the eyes roll around, as if to say, it doesn't see why it bothers to feel nosy.
+The staller stare blinks repeatedly. The weirdness you introduced was too much for it. It was ready to judge squalor, but not THIS. It closes its eyes and fades into the wall it was on. Perhaps it will find another place to oversee.
+Sadly, it is replaced by an almost-as-distracting bleat-bloat.
 \\
 #+testcase-run-vr-caller-care-rule-if-stare-score-<-3
 >caller care
 by one point
-WRONG
+With the staller stare gone, you leave a bit of hope and genuine solicitousness for the next lost soul who stumbles here. Unfortunately, in such a seedy place, people may look at it askance. "Why? What's the angle?" But you have to try.
+You amuse yourself with how the staller stare would've reacted to THAT. A bit of harmless schadenfreude. You think. You hope.
 \\
 >undo
 >undo
@@ -1874,7 +1897,8 @@ by one point
 {--rej}#testcase-check-vc-dollar-dare-rule-fallthrough
 {--all}#testcase-run-vr-dollar-dare-rule-default
 {--all}#testcase-run-vr-dollar-dare-rule-fallthrough
-The staller stare is visibly affected by the audacity of someone daring someone else to do ... well, THAT. For just a dollar. Its eyes bug out. Is this a joke? Then the eyes roll around, as if to say, it doesn't see why it bothers to feel nosy.
+You espy kids being kids, bragging and calling each other chicken. It's a rite of passage, really.
+The staller stare is visibly affected by the audacity of someone daring someone else to do ... well, THAT. For just a dollar. (Don't worry. Nothing crude. Just standard kid-dare stuff.) Its eyes bug out. Is this a joke? Then the eyes roll around, as if to say, it doesn't see why it bothers to feel nosy.
 The staller stare blinks. It seems to shake where its head would be. It's a bit baffled by what it saw. It rolls its eyes as if to say, any more of this, and I give up.
 
 @all
@@ -1959,8 +1983,8 @@ by one point
 {--rej}#testcase-check-vc-baller-bear-rule-fallthrough
 {--all}#testcase-run-vr-baller-bear-rule-default
 {--all}#testcase-run-vr-baller-bear-rule-fallthrough
-WRONG
-With the staller stare gone, you leave a bit of hope and genuine solicitousness for the next lost soul who stumbles here.
+You attune yourself to your surrounding, watching a baller bear juggling and riding a unicycle. It's worth the time to relax and enjoy.
+You amuse yourself with how the staller stare would've reacted to THAT. A bit of harmless schadenfreude. You think. You hope.
 
 @all
 >score
@@ -2021,11 +2045,9 @@ Perhaps ... but unfortunately, the bleat-bloat distracts you from finding fun ne
 Perhaps ... but unfortunately, the bleat-bloat distracts you from finding fun new stuff. Perhaps a helpful guide, or guiding document, would be the thing.
 \\
 #testcase-think-table-of-verb-checks-vc-beet-boat-rule
->think
-You can find a BEET BOAT once you have found something more useful than the bleat bloat.
-\\
 #testcase-think-table-of-verb-checks-vc-meat-moat-rule
 >think
+You can find a BEET BOAT once you have found something more useful than the bleat bloat.
 You can find a MEAT MOAT once you have found something more useful than the bleat bloat.
 
 >neat note
@@ -2044,7 +2066,7 @@ It seems silly to expect someone to just up and drop by with a neat note. But su
 @rej
 #testcase-check-vc-neat-note-rule-if-sco-neat-note-is-true
 >neat note
-But you already discovered the neat note. Rediscovering it won't make it neater.
+But you already discovered the neat note. Rediscovering it won't make it neater or help you find more stuff.
 
 @rej+
 #+testcase-think-table-of-verb-checks-vc-beet-boat-rule
@@ -2192,23 +2214,6 @@ Squalor Square seems pretty empty. You thank them heartily. They say, well, it w
 >beet boat
 One beet boat is quite enough!
 
-@rej+
->white wires
-You can't see anything that might have white wires! Well, anything safe to handle!
-\\
->think
-You can handle the WHITE WIRES once the lyres are safe to touch.
-\\
->fight fires
-\\
->think
-(CAN DO NOW) You can handle the WHITE WIRES now the lyres are safe to touch.
-\\
->undo
->undo
->undo
->undo
-
 @ha
 #testcase-ha-half-table-of-verb-checks-25-fight
 >fight zfires
@@ -2294,15 +2299,15 @@ You can handle the WHITE WIRES now the lyres are safe to touch.
 by one point
 }}SCORE++
 
-@rej
-#testcase-check-vc-white-wires-rule-if-sco-white-wires-is-true
->white wires
-You already got the white wires!
-
 @rej,all
 {--rej}#testcase-check-vc-white-wires-rule-fallthrough
 {--all}#testcase-run-vr-white-wires-rule-default
 You see what to look for in the lyres. The white wires have to come in handy to fix the oven.
+
+@rej
+#testcase-check-vc-white-wires-rule-if-sco-white-wires-is-true
+>white wires
+You already got the white wires!
 
 @all
 >score
@@ -2407,7 +2412,7 @@ You can't go back anywhere you've been until you find a way out of here.
 >undo
 \\
 #testcase-goto-tries-toy-toss-hi-ho-i-owe
->gt hi ho
+>gt sty sto
 That location or thing doesn't exist or isn't known to you yet.
 \\
 >undo
@@ -2577,7 +2582,7 @@ Stuck State was an isolated area. You can't go back, and you don't need to.
 >undo
 \\
 #testcase-goto-tries-gap-goo-hi-ho-i-owe
->gt hi ho
+>gt sty sto
 That location or thing doesn't exist or isn't known to you yet.
 \\
 >undo
@@ -2849,7 +2854,7 @@ You can't go back anywhere you've been until you find a way out of here.
 >undo
 \\
 #testcase-goto-tries-hi-ho-i-owe-hi-ho-i-owe
->gt hi ho
+>gt sty sto
 You're already there! Well, here.
 \\
 >undo
@@ -3038,6 +3043,43 @@ You think up a storm and realize, there is a way to such a place, though maybe i
 >score
 {$SCOS}
 
+@ha
+#testcase-ha-half-table-of-verb-checks-36-boo
+>boo
+gesture as if to say, keep talking. You must be on the right track!
+\\
+#testcase-ha-half-table-of-verb-checks-37-coo
+>coo zkoo
+gesture as if to say, keep talking. You must be on the right track!
+\\
+#testcase-ha-half-table-of-verb-checks-37-coo-koo
+>zcoo koo
+gesture as if to say, keep talking. You must be on the right track!
+\\
+#testcase-ha-half-table-of-verb-checks-38-doo
+>doo zdoo
+gesture as if to say, keep talking. You must be on the right track!
+\\
+#testcase-ha-half-table-of-verb-checks-39-ju
+>ju zju
+gesture as if to say, keep talking. You must be on the right track!
+\\
+#testcase-ha-half-table-of-verb-checks-40-muu
+>muu zmuu
+gesture as if to say, keep talking. You must be on the right track!
+\\
+#testcase-ha-half-table-of-verb-checks-41-poo-pooh
+>poo zpooh
+gesture as if to say, keep talking. You must be on the right track!
+\\
+#+testcase-ha-half-table-of-verb-checks-41-poo-pooh
+>zpoo pooh
+gesture as if to say, keep talking. You must be on the right track!
+\\
+#testcase-ha-half-table-of-verb-checks-42-tu
+>tu ztu
+gesture as if to say, keep talking. You must be on the right track!
+
 @hfull
 #testcase-values-from-number-of-ooh-ooh-is-2653
 >ll
@@ -3111,7 +3153,7 @@ Stuck State was an isolated area. You can't go back, and you don't need to.
 >undo
 \\
 #testcase-goto-tries-ooh-ooh-hi-ho-i-owe
->gt hi ho
+>gt sty sto
 "Hi-Ho, I Owe" Sty-Sto' was an isolated area. You can't go back, and you don't need to.
 \\
 >undo
@@ -3159,8 +3201,8 @@ by one point
 @rej,all
 {--rej}#testcase-check-vc-booboo-rule-fallthrough
 {--all}#testcase-run-vr-booboo-rule-default
-Sometimes, you just have to complain about small hurts, physical or mental, and exaggerate them. As long as you get back to your regular life soon after, it's not that bad, really. So you and Loulou and Zuzu do.
-Zuzu and Loulou seem to warm up to you.
+/Sometimes, you just have to complain about small hurts, physical or mental, and exaggerate them. As long as you get back to your regular life soon after, it's not that bad, really. So you and (Loulou and Zuzu|Zuzu and Loulou) do.
+/(Zuzu and Loulou|Loulou and Zuzu) seem to warm up to you.
 
 @rej
 #testcase-check-vc-booboo-rule-if-sco-booboo-is-true
@@ -3170,43 +3212,6 @@ You already feigned a booboo.
 @all
 >score
 {$SCOS}
-
-@ha
-#testcase-ha-half-table-of-verb-checks-36-boo
->boo zboo
-{$GREENCORE}
-\\
-#testcase-ha-half-table-of-verb-checks-37-coo
->coo zkoo
-{$GREENCORE}
-\\
-#testcase-ha-half-table-of-verb-checks-37-coo-koo
->zcoo koo
-{$GREENCORE}
-\\
-#testcase-ha-half-table-of-verb-checks-38-doo
->doo zdoo
-{$GREENCORE}
-\\
-#testcase-ha-half-table-of-verb-checks-39-ju
->ju zju
-{$GREENCORE}
-\\
-#testcase-ha-half-table-of-verb-checks-40-muu
->muu zmuu
-{$GREENCORE}
-\\
-#testcase-ha-half-table-of-verb-checks-41-poo
->poo zpooh
-{$GREENCORE}
-\\
-#testcase-ha-half-table-of-verb-checks-41-pooh
->zpoo pooh
-{$GREENCORE}
-\\
-#testcase-ha-half-table-of-verb-checks-42-tu
->tu ztu
-{$GREENCORE}
 
 @hfull
 #+testcase-values-from-number-of-ooh-ooh-is-2653
@@ -3408,6 +3413,7 @@ You notice three dots in the corner of the leet learner.
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (0.33, 0.33.)
 However, it's really dim, as if you don't need to do or think whatever there is to do or think.
 
+@!min
 >cuckoo
 by one point
 }}SCORE++
@@ -3418,7 +3424,7 @@ by one point
 {--rej}#testcase-check-vc-cuckoo-rule-fallthrough
 {--all}#testcase-run-vr-cuckoo-rule-default
 You discuss, in an entirely sane manner, Swiss clocks with birds in them, and the chorus of the Mackenzie Brothers' '80s novelty smash hit Take Off.
-Zuzu and Loulou look even happier now. Dare they expect more solidarity?
+/(Zuzu and Loulou|Loulou and Zuzu) look even happier now. Dare they expect more solidarity?
 
 @rej
 #testcase-check-vc-cuckoo-rule-if-sco-cuckoo-is-true
@@ -3454,6 +3460,7 @@ The Leet Learner shakes back and forth. Something you said sounded right, but it
 >dew dew
 The Leet Learner shakes back and forth. Something you said sounded right, but it didn't feel right.
 
+@!min
 >doodoo
 by one point
 }}SCORE++
@@ -3464,7 +3471,7 @@ by one point
 {--rej}#testcase-check-vc-doodoo-rule-fallthrough
 {--all}#testcase-run-vr-doodoo-rule-default
 You patrol the area for animal waste, also remarking on other interesting swear-word replacements.
-Loulou and Zuzu are starting to look exhausted from all this imagining.
+/(Loulou and Zuzu|Zuzu and Loulou) are starting to look exhausted from all this imagining.
 
 @rej
 #testcase-check-vc-doodoo-rule-if-sco-doodoo-is-true
@@ -3491,6 +3498,7 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 You notice one dot in the corner of the leet learner.
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
 
+@!min
 >poohpooh
 by one point
 }}SCORE++
@@ -3600,7 +3608,7 @@ You can't go back anywhere you've been until you find a way out of here.
 >undo
 \\
 #testcase-goto-tries-edgy-ill-hedge-y-hill-hi-ho-i-owe
->gt hi ho
+>gt sty sto
 You can't go back anywhere you've been until you find a way out of here.
 \\
 >undo
@@ -3752,6 +3760,7 @@ You can open the CHROME CRAW in Wandering ... Where? now you've explored everywh
 >undo
 >undo
 
+@!min
 >chrome craw
 by one point
 }}SCORE++
@@ -3859,7 +3868,7 @@ Stuck State was an isolated area. You can't go back, and you don't need to.
 >undo
 \\
 #testcase-goto-tries-woe-worry-slow-slurry-hi-ho-i-owe
->gt hi ho
+>gt sty sto
 "Hi-Ho, I Owe" Sty-Sto' was an isolated area. You can't go back, and you don't need to.
 \\
 >undo
@@ -4015,7 +4024,7 @@ by one point
 @rej,all
 {--rej}#testcase-check-vc-just-jello-rule-fallthrough
 {--all}#testcase-run-vr-just-jello-rule-default
-The fussed fellow seems relieved to hand you the Jell-o. It may be just Jell-O, but it's all different kinds of colors and flavors. Including pineapple! You remember when some smart-aleck in middle school said pineapple Jell-O would never be a thing. In fact, that smart-aleck snickered when you were chosen for the ceremony.
+The fussed fellow seems relieved to hand you the Jell-O. It may be just Jell-O, but it's all different kinds of colors and flavors. Including pineapple! You remember when some smart-aleck in middle school said pineapple Jell-O would never be a thing. In fact, that smart-aleck snickered when you were chosen for the ceremony.
 
 @rej
 #testcase-check-vc-just-jello-rule-if-sco-just-jello-is-true
@@ -4130,7 +4139,7 @@ Stuck State was an isolated area. You can't go back, and you don't need to.
 >undo
 \\
 #testcase-goto-tries-wandering-where-hi-ho-i-owe
->gt hi ho
+>gt sty sto
 "Hi-Ho, I Owe" Sty-Sto' was an isolated area. You can't go back, and you don't need to.
 \\
 >undo
@@ -4237,7 +4246,7 @@ by one point
 {--all}#testcase-run-vr-believe-below-rule-fallthrough
 {--all}#+testcase-run-vr-believe-below-rule-if-sco-heave-ho-is-false
 {--all}#testcase-run-vr-believe-below-rule-process-the-reeve-row-check-passage-down-rule
-Aha! You wondered if something was below the rug. Now you see the outline of a trap door beneath the rug.
+Aha! You wondered if something was below the rug. Now you see the outline of a trap door beneath where the rug was.
 You use the copper key on the trap door down. And it works!
 
 @all
@@ -4314,7 +4323,7 @@ Stuck State was an isolated area. You can't go back, and you don't need to.
 >undo
 \\
 #testcase-goto-tries-reeve-row-hi-ho-i-owe
->gt hi ho
+>gt sty sto
 "Hi-Ho, I Owe" Sty-Sto' was an isolated area. You can't go back, and you don't need to.
 \\
 >undo
@@ -4377,12 +4386,6 @@ This is ambiguous now you've opened a passage DOWN as well as OUT.
 >heave ho
 There is nothing more to heave besides the rayed rug.
 
-@min
-#+testcase-run-vr-heave-ho-rule-process-the-reeve-row-check-passage-down-rule
->heave ho
-You use the copper key on the trap door down. And it works!
-by one point
-
 >d
 
 @all
@@ -4392,7 +4395,7 @@ by one point
 @min
 #testcase-run-vr-cappy-caul-rule-if-sco-sassed-ceased-is-false
 >score
-You have scored a total of {$SCORE} out of 69 points and need 59 to win. You have found 0 of {$CURMAXBONUS} bonus points so far. You are locked out of 1 point. You can check for the maximum score dropping in the upper right, which usually happens when you take a one-way passage.
+You have scored a total of {SCORE} out of 69 points and need 59 to win. You have found 0 of {CURMAXBONUS} bonus points so far. You are locked out of 9 points. You can check for the maximum score dropping in the upper right, which usually happens when you take a one-way passage.
 \\
 #testcase-check-vc-chrome-craw-rule-if-trappy-trawl-is-visited
 >chrome craw
@@ -4457,7 +4460,7 @@ There's no going back. You must find a way through to the ceremonial lair.
 There's no going back. You must find a way through to the ceremonial lair.
 \\
 #testcase-goto-tries-trappy-trawl-hi-ho-i-owe
->gt hi ho
+>gt sty sto
 There's no going back. You must find a way through to the ceremonial lair.
 \\
 #testcase-goto-tries-trappy-trawl-toy-toss
@@ -4646,7 +4649,7 @@ Whunk. Whunk. The wall makes the same noise, until ... WHAP! There it is! You ta
 @rej
 #testcase-run-vr-whappy-wall-rule-repeat-with-x-running-through-carried-feastitems
 >i
-made mug
+!made mug
 
 @gt
 #testcase-goto-tries-happy-hall-reeve-row
@@ -4682,7 +4685,7 @@ There's no going back. The ceremony awaits.
 There's no going back. The ceremony awaits.
 \\
 #testcase-goto-tries-happy-hall-hi-ho-i-owe
->gt hi ho
+>gt sty sto
 There's no going back. The ceremony awaits.
 \\
 #testcase-goto-tries-happy-hall-toy-toss
@@ -4930,8 +4933,7 @@ You already summoned Known Nora!
 You already summoned Lone Laura!
 
 @hfull
-#
-+testcase-values-from-number-of-own-aura-is-5357
+#+testcase-values-from-number-of-own-aura-is-5357
 >ll aura
 Nothing comes up. You've rhymed the own aura as much as you needed to.
 
@@ -5128,7 +5130,7 @@ This is the end of your journey. No going back.
 This is the end of your journey. No going back.
 \\
 #testcase-goto-tries-compete-compel-hi-ho-i-owe
->gt hi ho
+>gt sty sto
 This is the end of your journey. No going back.
 \\
 #testcase-goto-tries-compete-compel-toy-toss
@@ -5223,7 +5225,6 @@ Yes, the wheat well must be your destination. Now how to stumble across to it?
 #testcase-check-vc-wheat-well-rule-if-sco-wheat-well-is-true
 >wheat well
 You already figured your destination!
-<already-done;>
 
 @all
 >score
@@ -5333,15 +5334,6 @@ Aaand ... pursuant to general dream/fantasy logic rules, you just make it! But n
 {$SCOS}
 
 @rej
-#testcase-think-table-of-verb-checks-vc-heat-hell-rule
-#testcase-think-table-of-verb-checks-vc-repeat-repel-rule
-#testcase-think-table-of-verb-checks-vc-sweet-swell-rule
->think
-(CAN DO NOW) You need a story to reflect on before concluding REPEAT REPEL.
-(CAN DO NOW) You need a story to reflect on before concluding HEAT HELL.
-(CAN DO NOW) You need a story to reflect on before concluding SWEET SWELL.
-
-@rej+
 #testcase-check-vc-beat-bell-rule-if-sco-beat-bell-is-true
 >beat bell
 You already managed to beat the bell when you needed to!
@@ -5373,14 +5365,22 @@ You can MEET MEL now you know someone is near.
 You haven't reflected enough for an angry judgement, yet.
 \\
 #testcase-check-vc-sweet-swell-rule-default
->heat hell
+>sweet swell
 \\
 You haven't reflected enough for a favorable judgement, yet.
 \\
 #testcase-check-vc-repeat-repel-rule-default
->heat hell
+>repeat repel
 \\
 You haven't reflected enough for a balanced judgement, yet.
+\\
+#testcase-think-table-of-verb-checks-vc-heat-hell-rule
+#testcase-think-table-of-verb-checks-vc-repeat-repel-rule
+#testcase-think-table-of-verb-checks-vc-sweet-swell-rule
+>think
+You need a story to reflect on before concluding REPEAT REPEL.
+You need a story to reflect on before concluding HEAT HELL.
+You need a story to reflect on before concluding SWEET SWELL.
 
 >meet mel
 by one point
@@ -5435,15 +5435,6 @@ You get a sense such a judgment would be more appropriate once you've examined t
 \\
 >repeat repel
 You get a sense such a judgment would be more appropriate once you've examined the book you just got.
-\\
-#+testcase-check-vc-heat-hell-rule-abide-by-the-try-final-point-rule
-#+testcase-check-vc-repeat-repel-rule-abide-by-the-try-final-point-rule
-#+testcase-check-vc-sweet-swell-rule-abide-by-the-try-final-point-rule
->think
-You need a story to reflect on before concluding REPEAT REPEL.
-You need a story to reflect on before concluding HEAT HELL.
-You need a story to reflect on before concluding SWEET SWELL.
-!CAN DO NOW
 
 @hfull
 #+testcase-values-from-number-of-compete-compel-is-2856

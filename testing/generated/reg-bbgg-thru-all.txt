@@ -19,7 +19,6 @@
 by one point
 
 #testcase-run-vr-sassed-ceased-rule-default
-#testcase-run-vr-sassed-ceased-rule-fallthrough
 Yes, you're glad you were given this responsibility, and people snickered about how flaky you were.
 
 >score
@@ -30,7 +29,8 @@ by one point
 
 #testcase-run-vr-made-mug-rule-default
 A made mug appears. It will be useful for the meal.
-A ray vanishes from the rug. Several rays on the rug (you'd say one-third) grow duller.
+A ray vanishes from the rug!
+Several rays on the rug (you'd say one-third) grow duller.
 
 >score
 You have scored a total of 2 out of 69 points and need 60 to win. You have found 1 of 10 bonus points so far.
@@ -40,7 +40,8 @@ by one point
 
 #testcase-run-vr-jade-jug-rule-default
 A jade jug appears. It will be useful for the meal.
-A ray vanishes from the rug. The rug's rays go from one-third dull to one-third bright.
+A ray vanishes from the rug!
+The rug's rays go from one-third dull to one-third bright.
 
 >score
 You have scored a total of 3 out of 69 points and need 60 to win. You have found 1 of 10 bonus points so far.
@@ -48,9 +49,8 @@ You have scored a total of 3 out of 69 points and need 60 to win. You have found
 >leave lo
 by one point
 
-#testcase-run-vr-leave-lo-rule-default
-#testcase-run-vr-leave-lo-rule-fallthrough
 #testcase-run-vr-leave-lo-rule-if-sco-leave-lo-is-false
+#testcase-run-vr-leave-lo-rule-fallthrough
 Sometimes you just need the right time to say a simple phrase to get you going. And you do, here.
 
 #testcase-room-names-wandering-where
@@ -163,7 +163,8 @@ by one point
 
 #testcase-run-vr-played-plug-rule-default
 Ah, that's what the bump in the rayed rug is.
-A ray vanishes from the rug. The final rays on the rug grow dull. You figure you're done with it, so you put it in a corner where you can just ignore it.
+A ray vanishes from the rug!
+You found something below the rug, and all its rays are dull. Best to tuck it away in a spot where it won't distract you.
 
 >score
 You have scored a total of 12 out of 69 points and need 60 to win. You have found 1 of 10 bonus points so far.
@@ -244,30 +245,37 @@ You have scored a total of 18 out of 69 points and need 60 to win. You have foun
 #testcase-run-vr-baller-bear-rule-if-stare-score-<-3
 >baller bear
 by one point
-WRONG
+The staller stare is visibly affected by the audacity of a performing animal, just performing for fun and not trying to outrage anyone. It tries to stare down this oddness, but bears ignore that stuff. The star blinks, feeling weakened.
+The staller stare blinks. It seems to shake where its head would be. It's a bit baffled by what it saw. It rolls its eyes as if to say, any more of this, and I give up.
 
 #testcase-run-vr-caller-care-rule-if-stare-score-<-3
 >caller care
 by one point
-WRONG
+The staller stare is visibly affected by the audacity of someone caring about them. Its eyes bug out. Is this a joke! Then the eyes blink. No, it's not crying, of course it's not, it's the squalor.
+The staller stare blinks repeatedly. The weirdness you introduced was too much for it. It was ready to judge squalor, but not THIS. It closes its eyes and fades into the wall it was on. Perhaps it will find another place to oversee.
 
 #testcase-run-vr-dollar-dare-rule-if-stare-score-<-3
 >dollar dare
 by one point
-WRONG
+You espy kids being kids, bragging and calling each other chicken. It's a rite of passage, really.
+!The staller stare is visibly affected
+You amuse yourself with how the staller stare would've reacted to THAT. A bit of harmless schadenfreude. You think. You hope.
 
 >undo
 >undo
 
-#testcase-run-vr-dollar-dare-rule-if-stare-score-<-3
+#+testcase-run-vr-dollar-dare-rule-if-stare-score-<-3
 >dollar dare
 by one point
-WRONG
+The staller stare is visibly affected by the audacity of someone daring someone else to do ... well, THAT. For just a dollar. (Don't worry. Nothing crude. Just standard kid-dare stuff.) Its eyes bug out. Is this a joke? Then the eyes roll around, as if to say, it doesn't see why it bothers to feel nosy.
+The staller stare blinks repeatedly. The weirdness you introduced was too much for it. It was ready to judge squalor, but not THIS. It closes its eyes and fades into the wall it was on. Perhaps it will find another place to oversee.
+Sadly, it is replaced by an almost-as-distracting bleat-bloat.
 
-#testcase-run-vr-caller-care-rule-if-stare-score-<-3
+#+testcase-run-vr-caller-care-rule-if-stare-score-<-3
 >caller care
 by one point
-WRONG
+With the staller stare gone, you leave a bit of hope and genuine solicitousness for the next lost soul who stumbles here. Unfortunately, in such a seedy place, people may look at it askance. "Why? What's the angle?" But you have to try.
+You amuse yourself with how the staller stare would've reacted to THAT. A bit of harmless schadenfreude. You think. You hope.
 
 >undo
 >undo
@@ -278,7 +286,8 @@ by one point
 
 #testcase-run-vr-dollar-dare-rule-default
 #testcase-run-vr-dollar-dare-rule-fallthrough
-The staller stare is visibly affected by the audacity of someone daring someone else to do ... well, THAT. For just a dollar. Its eyes bug out. Is this a joke? Then the eyes roll around, as if to say, it doesn't see why it bothers to feel nosy.
+You espy kids being kids, bragging and calling each other chicken. It's a rite of passage, really.
+The staller stare is visibly affected by the audacity of someone daring someone else to do ... well, THAT. For just a dollar. (Don't worry. Nothing crude. Just standard kid-dare stuff.) Its eyes bug out. Is this a joke? Then the eyes roll around, as if to say, it doesn't see why it bothers to feel nosy.
 The staller stare blinks. It seems to shake where its head would be. It's a bit baffled by what it saw. It rolls its eyes as if to say, any more of this, and I give up.
 
 >score
@@ -289,7 +298,7 @@ by one point
 
 #testcase-run-vr-caller-care-rule-fallthrough
 #testcase-run-vr-caller-care-rule-default
-#testcase-run-vr-caller-care-rule-if-stare-score-<-3
+#+testcase-run-vr-caller-care-rule-if-stare-score-<-3
 The staller stare is visibly affected by the audacity of someone caring about them. Its eyes bug out. Is this a joke! Then the eyes blink. No, it's not crying, of course it's not, it's the squalor.
 The staller stare blinks repeatedly. The weirdness you introduced was too much for it. It was ready to judge squalor, but not THIS. It closes its eyes and fades into the wall it was on. Perhaps it will find another place to oversee.
 
@@ -301,8 +310,8 @@ by one point
 
 #testcase-run-vr-baller-bear-rule-default
 #testcase-run-vr-baller-bear-rule-fallthrough
-WRONG
-With the staller stare gone, you leave a bit of hope and genuine solicitousness for the next lost soul who stumbles here.
+You attune yourself to your surrounding, watching a baller bear juggling and riding a unicycle. It's worth the time to relax and enjoy.
+You amuse yourself with how the staller stare would've reacted to THAT. A bit of harmless schadenfreude. You think. You hope.
 
 >score
 You have scored a total of 21 out of 69 points and need 61 to win. You have found 2 of 10 bonus points so far.
@@ -486,8 +495,8 @@ You have scored a total of 37 out of 69 points and need 61 to win. You have foun
 by one point
 
 #testcase-run-vr-booboo-rule-default
-Sometimes, you just have to complain about small hurts, physical or mental, and exaggerate them. As long as you get back to your regular life soon after, it's not that bad, really. So you and Loulou and Zuzu do.
-Zuzu and Loulou seem to warm up to you.
+/Sometimes, you just have to complain about small hurts, physical or mental, and exaggerate them. As long as you get back to your regular life soon after, it's not that bad, really. So you and (Loulou and Zuzu|Zuzu and Loulou) do.
+/(Zuzu and Loulou|Loulou and Zuzu) seem to warm up to you.
 
 >score
 You have scored a total of 38 out of 69 points and need 61 to win. You have found 2 of 10 bonus points so far.
@@ -534,7 +543,7 @@ by one point
 
 #testcase-run-vr-cuckoo-rule-default
 You discuss, in an entirely sane manner, Swiss clocks with birds in them, and the chorus of the Mackenzie Brothers' '80s novelty smash hit Take Off.
-Zuzu and Loulou look even happier now. Dare they expect more solidarity?
+/(Zuzu and Loulou|Loulou and Zuzu) look even happier now. Dare they expect more solidarity?
 
 >score
 You have scored a total of 43 out of 69 points and need 62 to win. You have found 3 of 10 bonus points so far.
@@ -544,7 +553,7 @@ by one point
 
 #testcase-run-vr-doodoo-rule-default
 You patrol the area for animal waste, also remarking on other interesting swear-word replacements.
-Loulou and Zuzu are starting to look exhausted from all this imagining.
+/(Loulou and Zuzu|Zuzu and Loulou) are starting to look exhausted from all this imagining.
 
 >score
 You have scored a total of 44 out of 69 points and need 63 to win. You have found 4 of 10 bonus points so far.
@@ -626,7 +635,7 @@ You have scored a total of 50 out of 69 points and need 67 to win. You have foun
 by one point
 
 #testcase-run-vr-just-jello-rule-default
-The fussed fellow seems relieved to hand you the Jell-o. It may be just Jell-O, but it's all different kinds of colors and flavors. Including pineapple! You remember when some smart-aleck in middle school said pineapple Jell-O would never be a thing. In fact, that smart-aleck snickered when you were chosen for the ceremony.
+The fussed fellow seems relieved to hand you the Jell-O. It may be just Jell-O, but it's all different kinds of colors and flavors. Including pineapple! You remember when some smart-aleck in middle school said pineapple Jell-O would never be a thing. In fact, that smart-aleck snickered when you were chosen for the ceremony.
 
 >score
 You have scored a total of 51 out of 69 points and need 68 to win. You have found 9 of 10 bonus points so far.
@@ -656,11 +665,10 @@ You have scored a total of 53 out of 69 points and need 69 to win. You have foun
 >believe below
 by one point
 
-#testcase-run-vr-believe-below-rule-default
 #testcase-run-vr-believe-below-rule-fallthrough
 #+testcase-run-vr-believe-below-rule-if-sco-heave-ho-is-false
 #testcase-run-vr-believe-below-rule-process-the-reeve-row-check-passage-down-rule
-Aha! You wondered if something was below the rug. Now you see the outline of a trap door beneath the rug.
+Aha! You wondered if something was below the rug. Now you see the outline of a trap door beneath where the rug was.
 You use the copper key on the trap door down. And it works!
 
 >out

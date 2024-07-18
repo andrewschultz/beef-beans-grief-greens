@@ -700,8 +700,7 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 >known nora
 by one point
 
-#
-+testcase-values-from-number-of-own-aura-is-5357
+#+testcase-values-from-number-of-own-aura-is-5357
 >ll aura
 Nothing comes up. You've rhymed the own aura as much as you needed to.
 

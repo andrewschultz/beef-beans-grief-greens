@@ -108,7 +108,7 @@ That location or thing doesn't exist or isn't known to you yet.
 >undo
 
 #testcase-goto-tries-dove-n-doubt-hi-ho-i-owe
->gt hi ho
+>gt sty sto
 That location or thing doesn't exist or isn't known to you yet.
 
 >undo
@@ -233,7 +233,7 @@ You're already there! Well, here.
 >undo
 
 #testcase-goto-tries-stuck-state-hi-ho-i-owe
->gt hi ho
+>gt sty sto
 That location or thing doesn't exist or isn't known to you yet.
 
 >undo
@@ -339,7 +339,7 @@ You can't go back anywhere you've been until you find a way out of here.
 >undo
 
 #testcase-goto-tries-took-tarred-hi-ho-i-owe
->gt hi ho
+>gt sty sto
 That location or thing doesn't exist or isn't known to you yet.
 
 >undo
@@ -447,7 +447,7 @@ Stuck State was an isolated area. You can't go back, and you don't need to.
 >undo
 
 #testcase-goto-tries-squalor-square-hi-ho-i-owe
->gt hi ho
+>gt sty sto
 That location or thing doesn't exist or isn't known to you yet.
 
 >undo
@@ -570,7 +570,7 @@ You can't go back anywhere you've been until you find a way out of here.
 >undo
 
 #testcase-goto-tries-toy-toss-hi-ho-i-owe
->gt hi ho
+>gt sty sto
 That location or thing doesn't exist or isn't known to you yet.
 
 >undo
@@ -670,7 +670,7 @@ Stuck State was an isolated area. You can't go back, and you don't need to.
 >undo
 
 #testcase-goto-tries-gap-goo-hi-ho-i-owe
->gt hi ho
+>gt sty sto
 That location or thing doesn't exist or isn't known to you yet.
 
 >undo
@@ -781,7 +781,7 @@ You can't go back anywhere you've been until you find a way out of here.
 >undo
 
 #testcase-goto-tries-hi-ho-i-owe-hi-ho-i-owe
->gt hi ho
+>gt sty sto
 You're already there! Well, here.
 
 >undo
@@ -884,7 +884,7 @@ Stuck State was an isolated area. You can't go back, and you don't need to.
 >undo
 
 #testcase-goto-tries-ooh-ooh-hi-ho-i-owe
->gt hi ho
+>gt sty sto
 "Hi-Ho, I Owe" Sty-Sto' was an isolated area. You can't go back, and you don't need to.
 
 >undo
@@ -1016,7 +1016,7 @@ You can't go back anywhere you've been until you find a way out of here.
 >undo
 
 #testcase-goto-tries-edgy-ill-hedge-y-hill-hi-ho-i-owe
->gt hi ho
+>gt sty sto
 You can't go back anywhere you've been until you find a way out of here.
 
 >undo
@@ -1128,7 +1128,7 @@ Stuck State was an isolated area. You can't go back, and you don't need to.
 >undo
 
 #testcase-goto-tries-woe-worry-slow-slurry-hi-ho-i-owe
->gt hi ho
+>gt sty sto
 "Hi-Ho, I Owe" Sty-Sto' was an isolated area. You can't go back, and you don't need to.
 
 >undo
@@ -1240,7 +1240,7 @@ Stuck State was an isolated area. You can't go back, and you don't need to.
 >undo
 
 #testcase-goto-tries-wandering-where-hi-ho-i-owe
->gt hi ho
+>gt sty sto
 "Hi-Ho, I Owe" Sty-Sto' was an isolated area. You can't go back, and you don't need to.
 
 >undo
@@ -1346,7 +1346,7 @@ Stuck State was an isolated area. You can't go back, and you don't need to.
 >undo
 
 #testcase-goto-tries-reeve-row-hi-ho-i-owe
->gt hi ho
+>gt sty sto
 "Hi-Ho, I Owe" Sty-Sto' was an isolated area. You can't go back, and you don't need to.
 
 >undo
@@ -1426,7 +1426,7 @@ There's no going back. You must find a way through to the ceremonial lair.
 There's no going back. You must find a way through to the ceremonial lair.
 
 #testcase-goto-tries-trappy-trawl-hi-ho-i-owe
->gt hi ho
+>gt sty sto
 There's no going back. You must find a way through to the ceremonial lair.
 
 #testcase-goto-tries-trappy-trawl-toy-toss
@@ -1492,7 +1492,7 @@ There's no going back. The ceremony awaits.
 There's no going back. The ceremony awaits.
 
 #testcase-goto-tries-happy-hall-hi-ho-i-owe
->gt hi ho
+>gt sty sto
 There's no going back. The ceremony awaits.
 
 #testcase-goto-tries-happy-hall-toy-toss
@@ -1580,7 +1580,7 @@ This is the end of your journey. No going back.
 This is the end of your journey. No going back.
 
 #testcase-goto-tries-compete-compel-hi-ho-i-owe
->gt hi ho
+>gt sty sto
 This is the end of your journey. No going back.
 
 #testcase-goto-tries-compete-compel-toy-toss
