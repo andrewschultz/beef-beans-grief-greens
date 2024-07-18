@@ -143,11 +143,20 @@ chapter reeve row scoring
 
 section rayed rug flips
 
+this is the aid-ugh rule:
+	if rayed rug is not touchable and made mug is not touchable and jade jug is not touchable and played plug is not touchable, unavailable;
+
+this is the rug-here rule:
+	if rayed rug is not touchable:
+		vcp "Good idea. That must be under the rayed rug back in Reeve Row.";
+		not-yet;
+
 a goodrhyme rule (this is the vc-played-plug rule):
-	if rayed rug is not touchable, unavailable;
+	abide by the aid-ugh rule;
 	if sco-played-plug is true:
 		vcal "You already got a played plug!";
 		already-done;
+	abide by the rug-here rule;
 	ready;
 
 this is the vr-played-plug rule:
@@ -158,10 +167,11 @@ this is the vr-played-plug rule:
 	rhyme-rug-check 2804;
 
 a goodrhyme rule (this is the vc-made-mug rule):
-	if rayed rug is not touchable, unavailable;
+	abide by the aid-ugh rule;
 	if sco-made-mug is true:
 		vcal "You already have a made/maid mug for the meal.";
 		already-done;
+	abide by the rug-here rule;
 	ready;
 
 this is the vr-made-mug rule:
@@ -175,6 +185,7 @@ a goodrhyme rule (this is the vc-jade-jug rule):
 	if sco-jade-jug is true:
 		vcal "You already have a jade jug for the meal.";
 		already-done;
+	abide by the rug-here rule;
 	ready;
 
 this is the vr-jade-jug rule:
