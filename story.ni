@@ -337,9 +337,13 @@ The light lyres are a rhymable. "Some light lyres lie here, [if sco-white-wires 
 
 from-number of light lyres is 2755. to-number of light lyres is 2755.
 
+guess-table of light lyres is table of light lyres guesses.
+
 section white wires
 
 the white wires are an oventhing. description is "[if oven is not in reeve row]You assume they're useful to fix some appliance[else]You think you know of a missing appliance that could use these[end if].". fdesc is "revamped oven circuitry".
+
+guess-table of white wires is table of light lyres guesses.
 
 book Ooh Ooh
 
@@ -700,7 +704,9 @@ guess-table of bopper bee is the table of bopper bee guesses.
 
 chapter Copper Key
 
-the copper key is a thing. "You hope it opens passage below [here-in of reeve row].".
+the copper key is a rhymable. description is "You hope it opens passage below [here-in of reeve row].".
+
+guess-table of copper key is table of bopper bee guesses.
 
 book Woe Worry Slow Slurry
 
@@ -744,9 +750,13 @@ the fussed fellow is an improper-named male rhymeperson in Slow Slurry. "A fusse
 
 from-number of fussed fellow is 2806. to-number of fussed fellow is -2705.
 
+guess-table of fussed fellow is table of fussed fellow guesses.
+
 section just jello
 
 the just jello is an okaycold optional feastitem. description is "Well, it's just Jell-O but a bunch of different colors. What colors, though!"
+
+guess-table of just jello is table of fussed fellow guesses.
 
 volume standard vebs
 
