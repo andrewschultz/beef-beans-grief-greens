@@ -1048,14 +1048,15 @@ volume weird weird parser rules
 
 after reading a command: abide by the punctuation-munge rule;
 
-the ooh ooh one word rule is listed after the goto reject rule in the for printing a parser error rules.
+the ooh ooh one word rule is listed before the default parser error notification rule in the for printing a parser error rules.
 
 rule for printing a parser error when player is in ooh ooh (this is the ooh ooh one word rule):
-	if number of words in the player's command is 1, continue the action;
 	if ooh-score is 7:
-		say "[zl] shrug. Whatever you were trying to do, it doesn't matter.";
-		the rule succeeds;
-	say "[zl] make the talky-talky gesture with their hands. Apparently, you are using too many words, even if it doesn't seem like you're using too many. You feel rebuked[if sco-doodoo is false and sco-poohpooh is false]. You wonder, however, if you could sneak a hyphenated or hyphen-able word in[end if][if ooh-score is 0].[paragraph break]Well, if you wanted a change from the usual rhymes so far, you got it, sort of[end if].";
+		say "[zl] shrug. They look worn out by all the non-standard parser command performance art. You have to admit you are too.[paragraph break]Or maybe you just made a typo. Whichever, you've done all you can to impress them[if sco-prune-pride is false].[paragraph break]You do wonder if a clearer idea of your goals might help you see more later, something they can't help you with[else if sco-massive-mitt is false]. But that passive pit, well, there might be something there[end if].";
+	else if number of words in the player's command is 1:
+		say "[zl] nod their heads to the left in unsion, then to the right. They seem to like your style. But the final result is lacking.";
+	else:
+		say "[zl] make the talky-talky gesture with their hands. Apparently, you are using too many words, even if it doesn't seem like you're using too many. You feel rebuked[if sco-doodoo is false and sco-poohpooh is false]. You wonder, however, if you could sneak a hyphenated or hyphen-able word in[end if][if ooh-score is 0].[paragraph break]Well, if you wanted a change from the usual rhymes so far, you got it, sort of[end if].";
 	the rule succeeds;
 
 volume name detection
