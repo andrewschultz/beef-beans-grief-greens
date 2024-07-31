@@ -177,7 +177,7 @@ this is the side puzzle rooms rule:
 		say "Oh no! Another area completed, another distraction. You failed to watch where you were going, and you wind up by a weird bakery that sells both very expensive and very cheap items. Because you're so broke, service is lacking. You won't get any help perusing the vast selection. In fact, you probably won't get any help unless you ask for something in stock, and it's there. And even then, you'll need to pay for it. This isn't a food pantry.";
 		tangentify Hi Ho I Owe instead;
 	if Edgy Ill is unvisited:
-		say "Oh no! You hear an odd, insistent buzzing in the distance. It comes nearer. A giant bee tries to bop you ... must be a bopper bee! It chases you far, far away. You may have to outsmart it, here.";
+		say "Oh no! You hear an odd, insistent buzzing in the distance. It comes nearer. A giant bee tries to bop you ... must be a bopper bee! Once again, you wind up being chased far, far away from Reeve Row.[paragraph break]Once your fight-or-flight reaction wears off a bit, you realize that if the bee were really that strong, it probably could've done physical harm. But that doesn't fix that you're lost, and it's fast enough to block you from going places.";
 		now all wandrooms are tangentified;
 		move player to Edgy Ill instead;
 	say "This is a BUG, but not a critical one. It seems I tried to send you to a side room, but you'd been to them all. Please let me know what room this error message occurred in."
@@ -237,8 +237,16 @@ to decide which number is hall-guest-score:
 to decide which number is hall-male-guest-score:
 	decide on (boolval of sco-pappy-paul) + (boolval of sco-sappy-saul);
 
+[to decide whether hall-males-only:
+	if hall-male-guest-score is 2 and hall-guest-score is 2, yes;
+	no;]
+
 to decide which number is hall-female-guest-score:
 	decide on (boolval of sco-lone-laura) + (boolval of sco-known-nora);
+
+[to decide whether hall-females-only:
+	if hall-female-guest-score is 2 and hall-guest-score is 2, yes;
+	no;]
 
 to decide which number is ooh-score:
 	decide on (boolval of sco-booboo) + (boolval of sco-cuckoo) + (boolval of sco-doodoo) + (boolval of sco-juju) + (boolval of sco-muumuu) + (boolval of sco-poohpooh) + (boolval of sco-tutu)
@@ -247,7 +255,7 @@ to decide which number is well-score:
 	decide on (boolval of sco-feet-fell) + (boolval of sco-wheat-well) + (boolval of sco-sheet-shell) + (boolval of sco-beat-bell) + (boolval of sco-meet-mel);
 
 to decide which number is sides-visited:
-	decide on number of visited rooms in Dome D'aww;
+	decide on number of visited rooms in Dome D'Aww; [this is one that keeps fooling me when I come back to it. The point is: each room in DD appears after you solve a wandroom. You need to solve 4 of each. Sides-visited = 4 is when Chrome Craw opens.]
 
 to decide which number is slurry-score:
 	decide on (boolval of sco-just-jello) + (boolval of sco-honeyed-ham) + (boolval of sco-grey-gruel) + (boolval of sco-potpourri);
