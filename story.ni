@@ -14,6 +14,8 @@ release along with a website.
 
 release along with the "parchment" interpreter.
 
+the release number is 2.
+
 section general includes
 
 include Trivial Niceties by Andrew Schultz.
@@ -164,6 +166,11 @@ this is the Reeve Row check passage down rule: [note: we should never have HEAVE
 			move trap door to reeve row;
 		else:
 			say "There's a passage down, through the trap door you opened.";
+		if all-but-varnish-faces and varnish-face-reveal is false:
+			say "[line break]The perfectionist in you wonders if there is a bit more to do. I mean, you think you've done everything, but there's always a bit more to look for. You didn't find something extra in EVERY location. Perhaps now you have everything done on the list and then some, you'll see a few things more clearly. Or, you know, you can just get on with stuff.";
+			now varnish-face-reveal is true;
+			move vain varnish to Gap Goo;
+			move failed faces to Dove N Doubt;
 
 after printing the locale description for reeve row when oven-fixed-yet is false (this is the Reeve Row fix oven rule):
 	oven-check;
@@ -452,6 +459,12 @@ check taking oven:
 	if sco-lovin-lout is true, say "You try, then the lout tries. It doesn't move. You need a command[if sco-shovin-shout is false] or two[end if]." instead;
 	say "Can't do too much on your own. It appears to be stuck." instead;
 
+chapter failed faces
+
+the failed faces are a rhymable. "Failed faces [one of]you didn't notice before when taking care of the main stuff [or][stopping]are scrawled here. Perhaps you can make something happier out of them.". description is "The failed faces aren't exactly high art. They're all frowning or angry. Some aren't anatomically correct. Yet they have potential to be something more than a cheap gag, or a wordless 'I was here.'".
+
+from-number of failed faces is 2805. to-number of failed faces is -2805.
+
 chapter shook shard
 
 the shook shard is a rhymable. description is "It seems to have a weird hold on you, or have a bigger hold on you than it does. You sense potential for a tough, but worthwhile, fight, if you wish to grasp the occasion.".
@@ -499,6 +512,16 @@ chapter Ferret Fake
 the ferret fake is a rhymable. printed name is "ferret, fake". "A ferret (fake) scurries about here.". description is "You keep thinking of food when you look at it. You don't want to, like, cook and eat it, but it reminds you of something..."
 
 from-number of ferret fake is 2804. to-number of ferret fake is 2804.
+
+chapter vain varnish
+
+the vain varnish is a rhymable. "Some vain varnish [one of]you hadn't noticed before [or][stopping]lies here. It doesn't seem appropriate for a wildlife habitat. It could be toxic, in fact.". description is "There's nothing to paint, here. Perhaps it should be something a little more organic, instead."
+
+from-number of vain varnish is 2707. to-number of vain varnish is -2707.
+
+chapter garnish
+
+the garnish is a rhymable. description is "The garnish is green and not really edible on its own. But it will make all the food you brought look nicer.".
 
 volume endgame
 

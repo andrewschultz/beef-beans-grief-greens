@@ -38,6 +38,8 @@ note-beans is a truth state that varies.
 
 take-carried-warn is a truth state that varies.
 
+varnish-face-reveal is a truth state that varies.
+
 section printing details
 
 name-loc is a truth state that varies.

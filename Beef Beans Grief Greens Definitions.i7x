@@ -204,11 +204,34 @@ check going to a wandroom when sco-prune-pride is false and sco-oven-out is true
 
 chapter conglomerations
 
+section general
+
+to decide which number is sides-visited:
+	decide on number of visited rooms in Dome D'Aww; [this is one that keeps fooling me when I come back to it. The point is: each room in DD appears after you solve a wandroom. You need to solve 4 of each. Sides-visited = 4 is when Chrome Craw opens.]
+
+to decide whether all-but-varnish-faces:
+	if ooh-score < 7, no;
+	if stare-score < 3, no;
+	if slurry-score < 4, no;
+	yes;
+
+section reeve row
+
 to decide which number is rug-score:
 	decide on (boolval of sco-made-mug) + (boolval of sco-jade-jug) + (boolval of sco-played-plug);
 
+section Wandering Where
+
 to decide which number is wander-score:
 	decide on (boolval of sco-squandering-square) + (boolval of sco-laundering-lair) + (boolval of sco-pondering-pair) + (boolval of sco-maundering-mare);
+
+to decide which number is slurry-score:
+	decide on (boolval of sco-just-jello) + (boolval of sco-honeyed-ham) + (boolval of sco-grey-gruel) + (boolval of sco-potpourri);
+
+to decide which number is guide-score:
+	decide on (boolval of sco-prune-pride) + (boolval of sco-spoon-spied);
+
+section Dove N Doubt
 
 to decide which number is oven-score:
 	decide on (boolval of sco-lovin-lout) + (boolval of sco-shovin-shout) + (boolval of sco-oven-out);
@@ -219,6 +242,8 @@ to decide which number is oven-fix-score:
 to decide which number is shard-score:
 	decide on (boolval of sco-book-bard) + (boolval of sco-cook-card) + (boolval of sco-look-lard);
 
+section Squalor Square
+
 to decide which number is stare-score:
 	decide on (boolval of sco-dollar-dare) + (boolval of sco-caller-care) + (boolval of sco-baller-bear);
 
@@ -228,8 +253,12 @@ to decide which number is square-food-score:
 to decide which number is dork-score:
 	decide on (boolval of sco-found-fork) + (boolval of sco-meat-moat) + (boolval of sco-beet-boat);
 
-to decide which number is guide-score:
-	decide on (boolval of sco-prune-pride) + (boolval of sco-spoon-spied);
+section Ooh Ooh
+
+to decide which number is ooh-score:
+	decide on (boolval of sco-booboo) + (boolval of sco-cuckoo) + (boolval of sco-doodoo) + (boolval of sco-juju) + (boolval of sco-muumuu) + (boolval of sco-poohpooh) + (boolval of sco-tutu)
+
+section Happy Hall
 
 to decide which number is hall-guest-score:
 	decide on (boolval of sco-pappy-paul) + (boolval of sco-sappy-saul) + (boolval of sco-lone-laura) + (boolval of sco-known-nora);
@@ -248,17 +277,10 @@ to decide which number is hall-female-guest-score:
 	if hall-female-guest-score is 2 and hall-guest-score is 2, yes;
 	no;]
 
-to decide which number is ooh-score:
-	decide on (boolval of sco-booboo) + (boolval of sco-cuckoo) + (boolval of sco-doodoo) + (boolval of sco-juju) + (boolval of sco-muumuu) + (boolval of sco-poohpooh) + (boolval of sco-tutu)
+chapter compete compel
 
 to decide which number is well-score:
 	decide on (boolval of sco-feet-fell) + (boolval of sco-wheat-well) + (boolval of sco-sheet-shell) + (boolval of sco-beat-bell) + (boolval of sco-meet-mel);
-
-to decide which number is sides-visited:
-	decide on number of visited rooms in Dome D'Aww; [this is one that keeps fooling me when I come back to it. The point is: each room in DD appears after you solve a wandroom. You need to solve 4 of each. Sides-visited = 4 is when Chrome Craw opens.]
-
-to decide which number is slurry-score:
-	decide on (boolval of sco-just-jello) + (boolval of sco-honeyed-ham) + (boolval of sco-grey-gruel) + (boolval of sco-potpourri);
 
 chapter endgame
 
