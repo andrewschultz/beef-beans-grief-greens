@@ -416,16 +416,30 @@ from-number of lovin lout is 2754. to-number of lovin lout is 2805.
 
 chapter oven
 
-The oven is a thing in Dove N Doubt. "[if player is in reeve row]The oven you moved from [dove] is here, [oven-status][else]An oven is parked here, but it's [oven-move]. Useful for cooking a big meal, you suspect[end if].". description is "[if oven is in dove]Old and heavy, but it's not attached to anything. With enough strength, it could be moved[else if oven-fixed-yet is false]Broken. Perhaps you could find replacement parts[else]Serviceable, now you prepared it[end if]."
+The oven is a thing in Dove N Doubt. "[if player is in reeve row]The oven you moved from [dove] is here, [oven-status][else]An oven is parked here, but it's [oven-move]. Useful for cooking a big meal, you suspect[end if].". description is "[if oven is in dove]Old and heavy, but it's not attached to anything. With enough strength, it could be moved[else if oven-fixed-yet is false]Broken. Perhaps you could find [oven-more][else]Serviceable, now you prepared it.[paragraph break]So serviceable, you won't need to type any parser commands to use it[end if]."
+
+to say oven-more:
+	if oven-fix-score is 1:
+		say "a couple more replacement parts";
+	else if oven-fix-score is 2:
+		say "one more replacement part";
+	else:
+		say "a few replacement parts to get it working"
 
 check lling the oven:
 	say "[if oven is in Dove N Doubt]You feel like you should get a reading on the oven, but maybe it's more what's around that you need to work with[else]The Leet Learner shows nothing, which makes sense. The oven's been taken care of. You'll use it when you need to[end if]." instead;
 
 to say oven-status:
 	if oven-fix-score is 3:
-		say "ready to cook raw materials and such";
+		say "ready to cook raw materials and such, no parser-wrangling needed";
 	else:
-		say "but it seems broken"
+		say "but it seems broken";
+		if oven-fix-score is 2:
+			say ". You almost have everything you need to fix it";
+		else if oven-fix-score is 1:
+			say ". You will need more than [the random carried oventhing] to fix it";
+		else:
+			say ". You haven't come across anything that would help fix it yet"
 
 to say oven-move:
 	if sco-shovin-shout is false:
@@ -822,7 +836,7 @@ to say here-to of (rm - a room):
 
 report taking inventory when Happy Hall is not visited:
 	if oven-fixed-yet is true:
-		say "You and [the lout] managed to move an oven back [here-to of Reeve Row], which [if number of cookable feastitems is 0]has done its duty cooking what needed to be cooked[else]will assist in cooking the final meal[end if].";
+		say "You and [the lout] managed to move an oven back [here-to of Reeve Row], which [if number of cookable feastitems is 0]has done its duty cooking what needed to be cooked[else]will assist in cooking the final meal. You won't have to type in any commands[end if].";
 	else if oven is in reeve row and number of carried oventhings is 0:
 		say "You moved an oven [here-to of Reeve Row], too, with the help of [the lout].";
 	continue the action;
