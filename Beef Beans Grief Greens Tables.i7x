@@ -21,7 +21,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "laundering"	"lair"	--	--	false	true	true	false	wandering where	vc-laundering-lair rule	vr-laundering-lair rule	--	--
 "squandering"	"square"	--	--	false	true	true	false	wandering where	vc-squandering-square rule	vr-squandering-square rule	--	--
 "maundering"	"mare"	"mayor"	vh-maundering-mayor rule	false	true	true	false	wandering where	vc-maundering-mare rule	vr-maundering-mare rule	--	--
-"pondering"	"pair"	"pare"	vh-pondering-pare rule	false	true	true	false	wandering where	vc-pondering-pair rule	vr-pondering-pair rule	--	--
+"pondering"	"pair"	"pare/pear"	vh-pondering-pare-pear rule	false	true	true	false	wandering where	vc-pondering-pair rule	vr-pondering-pair rule	--	--
 "flopper"	"flea"	"flee"	vh-flopper-flee rule	false	true	true	false	wandering where	vc-flopper-flea rule	vr-flopper-flea rule	--	--
 "chrome"	"craw"	--	--	false	true	false	false	wandering where	vc-chrome-craw rule	vr-chrome-craw rule	--	"You can open the [b]CHROME CRAW[r] [here-in of wandering] [if sides-visited >= 4]now[else]once[end if] you've explored everywhere you can aboveground."
 "massive"	"mitt"	--	--	false	true	true	false	Ooh Ooh	vc-massive-mitt rule	vr-massive-mitt rule	--	--
@@ -34,7 +34,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "found"	"fork"	--	--	false	true	true	false	squalor square	vc-found-fork rule	vr-found-fork rule	--	--
 "fight"	"fires"	--	--	false	true	true	false	squalor square	vc-fight-fires rule	vr-fight-fires rule	--	--
 "white"	"wires"	"wight"	vh-wight-wires rule	false	true	true	false	squalor square	vc-white-wires rule	vr-white-wires rule	--	"You can handle the [b]WHITE WIRES[r] [once-now of vc-white-wires rule] the lyres are safe to touch."
-"lovin"	"lout"	--	--	false	true	true	false	dove n doubt	vc-lovin-lout rule	vr-lovin-lout rule	--	--
+"lovin"	"lout"	--	vh-shovin-shout rule	false	true	true	false	dove n doubt	vc-lovin-lout rule	vr-lovin-lout rule	--	--
 "shovin"	"shout"	--	--	false	true	true	false	dove n doubt	vc-shovin-shout rule	vr-shovin-shout rule	--	"You can make a [b]SHOVIN SHOUT[r] [once-now of vc-shovin-shout rule] you have the help of someone stronger."
 "oven"	"out"	--	--	false	true	true	false	dove n doubt	vc-oven-out rule	vr-oven-out rule	--	"You can say [b]OVEN OUT[r] [once-now of vc-oven-out rule] you have someone strong enough to push the oven."
 "hook"	"hard"	--	--	false	true	true	false	dove n doubt	vc-hook-hard rule	vr-hook-hard rule	--	--
@@ -299,8 +299,11 @@ a goodrhyme rule (this is the vc-pondering-pair rule):
 	if player is not in wandering where, unavailable;
 	ready;
 
-this is the vh-pondering-pare rule:
-	say "Yes to thinking, no to disrupting thinking.";
+this is the vh-pondering-pare-pear rule:
+	if the player's command includes "pear":
+		say "Ooh! That would be a food, but you couldn't cut up something living.";
+	else:
+		say "Yes to thinking, no to disrupting thinking.";
 
 this is the vr-pondering-pair rule:
 	now sco-pondering-pair is true;
@@ -680,6 +683,15 @@ a goodrhyme rule (this is the vc-shovin-shout rule):
 		vcal "You already shouted with the lout! It's time to [if sco-oven-out is true]look elsewhere[else]finish removing the oven[end if].";
 		already-done;
 	ready;
+
+this is the vh-shovin-shout rule:
+	let shovin-here be whether or not the player's command includes "shout";
+	if the player's command includes "n":
+		say "The shout comes before the [if shovin-here is true]shove. Well, the shovin['][else]right action, or its participle[end if].";
+	else if shovin-here is true:
+		say "Very, very close. You want two words, one of which would have an apostrophe at the end.";
+	else:
+		say "Shove is the right idea. But there's something that goes with shoving. Well, shovin[']."
 
 this is the vr-shovin-shout rule:
 	now sco-shovin-shout is true;
@@ -1491,14 +1503,25 @@ volume homonyms
 
 table of thing homonyms
 mything	hom-rule (a rule)	myhom (topic)	custom-msg (text)
-(a thing)	--	--	--
+rayed rug	vh-raid-rug rule	"raid"	--
+
+this is the vh-raid-rug rule:
+	say "You ";
+	if rug-score is 3:
+		say "raided the rug enough, so to speak, to get the mug, jug and plug";
+	else:
+		say "will need to raid the rug[if rug-score > 0] some more[end if] to find what you need, but not with homonyms"
 
 table of room homonyms
 loc	hom-rule (a rule)	myhom (topic)	custom-msg (text)
 dove n doubt	vh-love-shove rule		"loving/shoving"	--
+sty sto	vh-sty-sto rule	"eye/oh/stow/high/hoe"	--
 
 this is the vh-love-shove rule:
 	say "No, here [if oven-score is 0]will be[else if oven-score is 1]should still be[else]was[end if] the place for slight colloquialisms."
+
+this is the vh-sty-sto rule:
+	say "You need a slightly colloquial food that rhymes with the shop. No homonyms."
 
 volume irregular lump solutions
 
