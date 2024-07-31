@@ -459,12 +459,6 @@ check taking oven:
 	if sco-lovin-lout is true, say "You try, then the lout tries. It doesn't move. You need a command[if sco-shovin-shout is false] or two[end if]." instead;
 	say "Can't do too much on your own. It appears to be stuck." instead;
 
-chapter failed faces
-
-the failed faces are a rhymable. "Failed faces [one of]you didn't notice before when taking care of the main stuff [or][stopping]are scrawled here. Perhaps you can make something happier out of them.". description is "The failed faces aren't exactly high art. They're all frowning or angry. Some aren't anatomically correct. Yet they have potential to be something more than a cheap gag, or a wordless 'I was here.'".
-
-from-number of failed faces is 2805. to-number of failed faces is -2805.
-
 chapter shook shard
 
 the shook shard is a rhymable. description is "It seems to have a weird hold on you, or have a bigger hold on you than it does. You sense potential for a tough, but worthwhile, fight, if you wish to grasp the occasion.".
@@ -472,6 +466,16 @@ the shook shard is a rhymable. description is "It seems to have a weird hold on 
 from-number of shook shard is 2755. to-number of shook shard is 2704. [shook shard:hook hard]
 
 check taking shook shard: say "Well, there's a special WAY to take the shook shard." instead;
+
+chapter failed faces
+
+the failed faces are a rhymable. "Failed faces [one of]you didn't notice before when taking care of the main stuff [or][stopping]are scrawled here. Perhaps you can make something happier out of them.". description is "The failed faces aren't exactly high art. They're all frowning or angry. Some aren't anatomically correct. Yet they have potential to be something more than a cheap gag, or a wordless 'I was here.'".
+
+from-number of failed faces is 2805. to-number of failed faces is -2805.
+
+chapter veiled vases
+
+the veiled vases are an optional ambiance feastitem. description is "The veiled vases won't make anything taste better, but they'll make everything look that much nicer."
 
 book Gap Goo
 
@@ -1144,6 +1148,11 @@ this is the show-misses rule:
 			say "The fussed fellow had [b]JUST JELLO[r] for you.";
 		if sco-potpourri is false:
 			say "The smell all around [slurry] was [b]POTPOURRI[r].";
+	if not all-but-varnish-faces:
+		say "You didn't get all the aboveground points, but if you had, it would've unlocked two other bonus points.";
+	else if backtrack-score < 2:
+		if sco-veiled-vases is false:
+			say "The failed faces that appeared in [dove] could have become [b]VEILED VASES[r].";
 [	repeat through table of verb checks:
 		if core entry is false and idid entry is true:
 			say "BONUS GOTTEN: [w1 entry] [w2 entry].";

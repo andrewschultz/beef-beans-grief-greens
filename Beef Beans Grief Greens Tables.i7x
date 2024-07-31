@@ -43,6 +43,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "carrot"	"cake"	--	--	false	true	true	false	Gap Goo	vc-carrot-cake rule	vr-carrot-cake rule	--	--
 "see"	"soup"	"sea"	vh-sea-soup rule	false	true	true	false	gap goo	vc-see-soup rule	vr-see-soup rule	--	--
 "dented"	"dials"	--	--	false	true	true	false	gap goo	vc-dented-dials rule	vr-dented-dials rule	--	--
+"veiled"	"vases"	--	--	false	true	false	false	dove n doubt	vc-veiled-vases rule	vr-veiled-vases rule	--	--
 "boo"	"boo"	--	--	false	true	true	false	ooh ooh	vc-booboo rule	vr-booboo rule	"booboo"	--
 "coo"	"coo/koo"	--	--	false	true	true	false	ooh ooh	vc-cuckoo rule	vr-cuckoo rule	"cuckoo"	--
 "doo"	"doo"	"do/dew"	--	false	true	true	false	ooh ooh	vc-doodoo rule	vr-doodoo rule	"doodoo"	--
@@ -719,6 +720,18 @@ this is the vr-oven-out rule:
 	move oven to Reeve Row;
 	move lovin lout to Reeve Row;
 	drop-player-at Reeve Row;
+
+a goodrhyme rule (this is the vc-veiled-vases rule):
+	if player is not in dove n doubt and player does not have veiled vases, unavailable;
+	if sco-veiled-vases is true:
+		vcal "You already got enough veiled vases!";
+		already-done;
+	ready;
+
+this is the vr-veiled-vases rule:
+	now sco-veiled-vases is true;
+	say "The failed faces, which were kind of stick-figureish, unwrap and tie themselves back into a spider web of sorts. The web thickens. Then the wall the faces were on hardens and becomes clearer. You have veiled vases!";
+	now player has veiled vases;
 
 section shook shard scoring
 

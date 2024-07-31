@@ -215,6 +215,9 @@ to decide whether all-but-varnish-faces:
 	if slurry-score < 4, no;
 	yes;
 
+to decide which number is backtrack-score:
+	decide on (boolval of sco-veiled-vases) + (boolval of sco-vain-varnish);
+
 section reeve row
 
 to decide which number is rug-score:

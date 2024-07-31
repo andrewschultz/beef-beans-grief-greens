@@ -6,7 +6,7 @@ volume variables
 
 core-max is 59.
 
-max-bonus is 10.
+max-bonus is 11.
 
 entry-in-series is 8.
 
@@ -97,6 +97,8 @@ sco-lovin-lout is a truth state that varies.
 sco-shovin-shout is a truth state that varies.
 sco-oven-out is a truth state that varies.
 
+sco-veiled-vases is a truth state that varies.
+
 section shard globals
 
 sco-hook-hard is a truth state that varies.
@@ -129,6 +131,8 @@ sco-notice-knife is a truth state that varies.
 sco-carrot-cake is a truth state that varies.
 sco-see-soup is a truth state that varies.
 sco-dented-dials is a truth state that varies.
+
+sco-vain-varnish is a truth state that varies.
 
 chapter Stuck State globals
 
