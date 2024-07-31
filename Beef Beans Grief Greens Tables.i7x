@@ -811,6 +811,7 @@ this is the vr-dented-dials rule:
 	now sco-dented-dials is true;
 	say "The vented vials seem useless. Dented dials? Less so. They transmogrify. You take them.";
 	now player has dented dials;
+	moot vented vials;
 
 chapter Took Tarred scoring
 
@@ -1278,7 +1279,7 @@ book general flip stubs
 chapter Reeve Row
 
 to rhyme-rug-check (nu - a number):
-	decrease to-number of rayed rug by nu;
+	declue-thing-by rayed rug and nu;
 	say "[line break]A ray vanishes from the rug!";
 	if rug-score is 3:
 		if sco-heave-ho is false:
