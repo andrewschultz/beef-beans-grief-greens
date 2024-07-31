@@ -297,7 +297,7 @@ check entering Chrome Craw: try going down instead;
 
 book Squalor Square
 
-Squalor Square is a wandroom in Roam Raw. wanddir of Squalor Square is east. "Definitely one of the seedier places you've been in."
+Squalor Square is a wandroom in Roam Raw. wanddir of Squalor Square is east. "Definitely one of the seedier places you've been in[if player has neat note]. You sense there are places to look around, but you'd need the guidance of your neat note[end if]."
 
 from-number of squalor square is 2856. to-number of squalor square is 8412. [squalor square,staller stare:baller bear,caller care,dollar dare]
 
@@ -454,7 +454,7 @@ check taking oven:
 
 chapter shook shard
 
-the shook shard is a rhymable. description is "It seems to have a weird hold on you, or have a bigger hold on you than it does.".
+the shook shard is a rhymable. description is "It seems to have a weird hold on you, or have a bigger hold on you than it does. You sense potential for a tough, but worthwhile, fight, if you wish to grasp the occasion.".
 
 from-number of shook shard is 2755. to-number of shook shard is 2704. [shook shard:hook hard]
 
@@ -527,6 +527,8 @@ guess-table of happy hall is the table of happy hall guesses.
 after printing the locale description when player is in happy hall:
 	if hall-guest-score is 0:
 		say "The hall is very empty right now. It's where you're supposed to be for the ritual. But you need others along.";
+	else if (hall-guest-score is 2 or hall-guest-score is 3) and hall-male-guest-score is 2:
+		say "The hall's own aura has become more prominent, with Paul and Saul along.";
 	else if hall-guest-score < 4:
 		say "[line break]So, whom else to invite?";
 	else if sco-cappy-caul is false:
@@ -696,7 +698,9 @@ from-number of bri bro is 2653. to-number of bri bro is 2652.
 
 chapter any isles many miles
 
-Any Isles Many Miles is a rhymable in Hi Ho I Owe Sty Sto. printed name is "[i]Any Isles, Many Miles[r]". "A brochure called [isles] lies here. It's written by a group of authors including Jenny Giles, Kenny Kyles, Rennie Riles, Benny Biles, and Lenny Lyles.[paragraph break]That may sound excessive, but I assure you there were MANY miles between the isles, so it was not practical for one author to explore them all!"
+Any Isles Many Miles is a rhymable in Hi Ho I Owe Sty Sto. printed name is "[i]Any Isles, Many Miles[r]". "A brochure called [isles] lies here. It's stamped as for reference only."
+
+description of Many Miles is "[isles] is written by a group of authors including Jenny Giles, Kenny Kyles, Rennie Riles, Benny Biles, and Lenny Lyles.[paragraph break]That may sound excessive, but I assure you there were MANY miles between the isles, so it was not practical for one author to explore them all!"
 
 understand "brochure" as Many Miles when player is in Sty Sto.
 
