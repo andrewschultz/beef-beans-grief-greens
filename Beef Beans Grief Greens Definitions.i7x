@@ -252,6 +252,15 @@ to decide which number is sides-visited:
 to decide which number is slurry-score:
 	decide on (boolval of sco-just-jello) + (boolval of sco-honeyed-ham) + (boolval of sco-grey-gruel) + (boolval of sco-potpourri);
 
+chapter endgame
+
+to decide which number is final-guesses:
+	decide on (pre-end-guess of vc-heat-hell rule) + (pre-end-guess of vc-sweet-swell rule) + (pre-end-guess of vc-repeat-repel rule);
+
+to decide which number is pre-end-guess of (ru - a rule):
+	choose row with check-rule of ru in table of verb checks;
+	decide on boolval of think-cue entry;
+
 volume big rule
 
 this is the verb-checker rule:

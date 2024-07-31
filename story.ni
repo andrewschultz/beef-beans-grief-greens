@@ -579,7 +579,7 @@ other-guy of Lone Laura is Known Nora.
 
 book Wheat Well
 
-Compete Compel is a room in Gnome Gnaw. printed name is "[if sco-feet-fell is false]Compete! Compel![else]Wheat Well[end if]". "You feel an urge to show you're the greatest. And yet you also recognize how unhealthy this is. You need a way out, and you need a place to go, but there's no easy way to walk. How could you slip away, and where?"
+Compete Compel is a room in Gnome Gnaw. printed name is "[if sco-feet-fell is false]Compete! Compel![else]Wheat Well[end if]". "[if sco-feet-fell is true]You've shook off the old 'I need to show I'm great' and have the humbler goal of just  sorting out your feelings.[else]You feel an urge to show you're the greatest. And yet you also recognize how unhealthy this is. You need a way out, and you need a place to go, but there's no easy way to walk. How could you slip away, and where?[end if]"
 
 from-number of compete compel is 2856. to-number of compete compel is 2754.
 
@@ -598,6 +598,11 @@ from-number of sheet shell is 2755. to-number of sheet shell is 2704.
 chapter Leet Lel by Pete Pell
 
 Leet Lel by Pete Pell is a thing. printed name is "[i]Leet Lel[r], by Pete Pell". description is "[one of]It's a biography of someone who passed this year, someone who you had various strong opinions about. Someone you couldn't put out of your mind for stretches. Someone who taught you so much but could be pretty annoying at times. They had ... baggage. They could've been a heck of a lot nicer.[paragraph break]Pete Pell has laid out the facts, though, and it's up to you to decide whether Lel's good outweighs the bad, or vice versa, or they balance out.[paragraph break]It's up to you, what your final opinion of Lel is. But now is the time to decide and move on.[paragraph break]Do you wish to hold on to positive or negative feelings? Or do you wish to cast them out all together? You sense [leet lel] has given you enough motivation for any of the three, without judgement.[or]You don't have the time or emotional energy to read through it again. You need to make a decision on what kind of fate Leet Lel deserves, what kind of person Leet Lel was, based on your interpretations of the readings, and move on.[paragraph break]Positive? Neutral? Or just beat back any feelings at all about Leet Lel?[stopping]".
+
+report examining leet lel for the first time:
+	if final-guesses > 0:
+		say "You've already thought up [if final-guesses is 1]one[else if final-guesses is 2]two[else]all[end if] of the possible conclusions you could get from [the leet], before Mel delivered it to you. [b]THINK[r] will jog your memory[if final-guesses is 3]--you found them all[else], though you haven't found every possibility[end if].[paragraph break]You can only pick one (without [b]UNDO[r]), though there is no right or wrong way.";
+	continue the action;
 
 understand "book" as Leet Lel when player has leet lel.
 
