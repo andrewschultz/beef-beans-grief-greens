@@ -36,6 +36,8 @@ ooh-clarify is a truth state that varies.
 
 note-beans is a truth state that varies.
 
+take-carried-warn is a truth state that varies.
+
 section printing details
 
 name-loc is a truth state that varies.

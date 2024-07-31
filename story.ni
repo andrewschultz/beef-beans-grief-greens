@@ -872,6 +872,16 @@ report lling when ooh-clarify is false:
 		now ooh-clarify is true;
 	continue the action;
 
+chapter taking
+
+check taking a thing carried by the player:
+	if take-carried-warn is false:
+		say "You shouldn't need to take anything in [this-game]. If you discover something you can carry, you'll automatically take it.";
+		now take-carried-warn is true;
+	else:
+		say "You already have [the noun].";
+	the rule fails;
+
 chapter talktoing
 
 check talktoing a rhymeperson:
