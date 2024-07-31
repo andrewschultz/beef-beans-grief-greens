@@ -438,7 +438,7 @@ You already felt relief things settled down!
 by one point
 
 #testcase-check-vc-made-mug-rule-fallthrough
-A made mug appears. It will be useful for the meal.
+You find and take a made mug hidden in the rug.
 A ray vanishes from the rug!
 Several rays on the rug (you'd say one-third) grow duller.
 
@@ -450,7 +450,7 @@ You already have a made/maid mug for the meal.
 by one point
 
 #testcase-check-vc-jade-jug-rule-fallthrough
-A jade jug appears. It will be useful for the meal.
+You find and take a jade jug hidden in the rug.
 A ray vanishes from the rug!
 The rug's rays go from one-third dull to one-third bright.
 
@@ -464,7 +464,7 @@ You try to pull the rayed rug, but it feels nailed down in enough places you can
 
 #testcase-think-table-of-verb-checks-vc-heave-ho-rule
 >think
-You can HEAVE HO once you have a strong assistant here who can help you pull the rug up.
+You can HEAVE HO once you're here with someone strong enough to help you pull the rayed rug up.
 
 >leave lo
 by one point
@@ -474,7 +474,7 @@ Sometimes you just need the right time to say a simple phrase to get you going. 
 
 #+testcase-think-table-of-verb-checks-vc-heave-ho-rule
 >think
-You can HEAVE HO once you have a strong assistant in Reeve Row who can help you pull the rug up.
+You can HEAVE HO once you're in Reeve Row with someone strong enough to help you pull the rayed rug up.
 
 #testcase-reject-start-table-of-verb-checks-vc-leave-lo-rule
 #testcase-check-vc-leave-lo-rule-if-player-is-not-in-reeve-row
@@ -574,14 +574,14 @@ But you've already moved the oven back to Reeve Row!
 
 #+testcase-think-table-of-verb-checks-vc-heave-ho-rule
 >think
-You can HEAVE HO now you have a strong assistant here who can help you pull the rug up.
+You can HEAVE HO now you're here with someone strong enough to help you pull the rayed rug up.
 
 >heave ho
 by one point
 
 #testcase-check-vc-heave-ho-rule-fallthrough
 You and the lovin' lout pull on one, two, THREE! It takes a couple of times, but the rug bursts free from the floor. You see an outline of the passage you believed was there.
-You shake hands with the lovin' lout, who exits and nods to wish you the best.
+The lovin' lout beams at such a display of strength! You smile back and nod vigorously. Then the lovin' lout claps you on the shoulder, smiles and shakes your hand before leaving.
 Your kneeling on the floor to pull the rug up gave you a good view inside the oven. There you find something called a goon guide. But you can't use it, because you're too good to be a goon. That's how it works, right? Or maybe not...
 
 #testcase-check-vc-spoon-spied-rule-if-sco-prune-pride-is-false
@@ -714,7 +714,7 @@ You already found a card with cooking tips!
 by one point
 
 #testcase-check-vc-look-lard-rule-fallthrough
-Lard, man. You're still not sure if you really need it, even if the cookbooks say you should. You've never had the guts to rebel and just prepare that dish without lard. Now's not the time to start. So you're glad you looked so diligently, and you're glad it turned up.
+Lard, man. You're still not sure if you really need it, even if the cookbooks say you should. You've never had the guts to rebel and just prepare that dish without lard. Now's not the time to start, with others relying on you. So you're glad you looked so diligently, and you're glad it turned up.
 You feel sucked out of whatever the shard held you in. As you come back to Dove 'N Doubt, the shard shatters. You sense there's nothing more to do here, so you walk back to the center of the action.
 
 #testcase-check-vc-chrome-craw-rule-if-sides-visited-<-4
@@ -1169,7 +1169,7 @@ Too much grief will undo the growing you did.
 by one point
 
 #testcase-check-vc-believe-below-rule-fallthrough
-Aha! You wondered if something was below the rug. Now you see the outline of a trap door beneath where the rug was.
+You stare at the floor again. Aha! There it is! Yes, your mental and physical preparation help you see a trap door indicating a passage down.
 You use the copper key on the trap door down. And it works!
 
 >believe below

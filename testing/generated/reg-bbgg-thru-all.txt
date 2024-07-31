@@ -28,7 +28,7 @@ You have scored a total of 1 out of 69 points and need 60 to win. You have found
 by one point
 
 #testcase-run-vr-made-mug-rule-default
-A made mug appears. It will be useful for the meal.
+You find and take a made mug hidden in the rug.
 A ray vanishes from the rug!
 Several rays on the rug (you'd say one-third) grow duller.
 
@@ -39,7 +39,7 @@ You have scored a total of 2 out of 69 points and need 60 to win. You have found
 by one point
 
 #testcase-run-vr-jade-jug-rule-default
-A jade jug appears. It will be useful for the meal.
+You find and take a jade jug hidden in the rug.
 A ray vanishes from the rug!
 The rug's rays go from one-third dull to one-third bright.
 
@@ -117,17 +117,19 @@ by one point
 
 #testcase-run-vr-heave-ho-rule-default
 You and the lovin' lout pull on one, two, THREE! It takes a couple of times, but the rug bursts free from the floor. You see an outline of the passage you believed was there.
-You shake hands with the lovin' lout, who exits and nods to wish you the best.
+The lovin' lout beams at such a display of strength! You smile back and nod vigorously. Then the lovin' lout claps you on the shoulder, smiles and shakes your hand before leaving.
 Your kneeling on the floor to pull the rug up gave you a good view inside the oven. There you find something called a goon guide. But you can't use it, because you're too good to be a goon. That's how it works, right? Or maybe not...
 
 #testcase-run-vr-heave-ho-rule-process-the-reeve-row-check-passage-down-rule
 >believe below
-There's that trap door here. But it's useless to interact with until you find a key for it.
+You stare at the floor again. Aha! There it is! Yes, your mental and physical preparation help you see a trap door indicating a passage down.
+However, the trap door down is useless to tinker with until you find a key for it.
 by one point
 
 #+testcase-run-vr-heave-ho-rule-process-the-reeve-row-check-passage-down-rule
 >l
-There's that trap door here. But it's useless to interact with until you find a key for it.
+A trap door you uncovered leads down, or it will, once you figure how to unlock it.
+The trap door down is useless to tinker with until you find a key for it.
 
 >undo
 >undo
@@ -224,7 +226,7 @@ You have scored a total of 16 out of 69 points and need 60 to win. You have foun
 by one point
 
 #testcase-run-vr-look-lard-rule-default
-Lard, man. You're still not sure if you really need it, even if the cookbooks say you should. You've never had the guts to rebel and just prepare that dish without lard. Now's not the time to start. So you're glad you looked so diligently, and you're glad it turned up.
+Lard, man. You're still not sure if you really need it, even if the cookbooks say you should. You've never had the guts to rebel and just prepare that dish without lard. Now's not the time to start, with others relying on you. So you're glad you looked so diligently, and you're glad it turned up.
 You feel sucked out of whatever the shard held you in. As you come back to Dove 'N Doubt, the shard shatters. You sense there's nothing more to do here, so you walk back to the center of the action.
 
 >score
@@ -668,7 +670,7 @@ by one point
 #testcase-run-vr-believe-below-rule-fallthrough
 #+testcase-run-vr-believe-below-rule-if-sco-heave-ho-is-false
 #testcase-run-vr-believe-below-rule-process-the-reeve-row-check-passage-down-rule
-Aha! You wondered if something was below the rug. Now you see the outline of a trap door beneath where the rug was.
+You stare at the floor again. Aha! There it is! Yes, your mental and physical preparation help you see a trap door indicating a passage down.
 You use the copper key on the trap door down. And it works!
 
 >out

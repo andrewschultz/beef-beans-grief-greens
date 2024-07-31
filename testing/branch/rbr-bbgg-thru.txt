@@ -646,7 +646,7 @@ by one point
 @rej,all
 {--rej}#testcase-check-vc-made-mug-rule-fallthrough
 {--all}#testcase-run-vr-made-mug-rule-default
-A made mug appears. It will be useful for the meal.
+You find and take a made mug hidden in the rug.
 A ray vanishes from the rug!
 Several rays on the rug (you'd say one-third) grow duller.
 
@@ -672,7 +672,7 @@ by one point
 @rej,all
 {--rej}#testcase-check-vc-jade-jug-rule-fallthrough
 {--all}#testcase-run-vr-jade-jug-rule-default
-A jade jug appears. It will be useful for the meal.
+You find and take a jade jug hidden in the rug.
 A ray vanishes from the rug!
 The rug's rays go from one-third dull to one-third bright.
 
@@ -712,7 +712,7 @@ You try to pull the rayed rug, but it feels nailed down in enough places you can
 \\
 #testcase-think-table-of-verb-checks-vc-heave-ho-rule
 >think
-You can HEAVE HO once you have a strong assistant here who can help you pull the rug up.
+You can HEAVE HO once you're here with someone strong enough to help you pull the rayed rug up.
 
 >leave lo
 by one point
@@ -727,7 +727,7 @@ Sometimes you just need the right time to say a simple phrase to get you going. 
 @rej
 #+testcase-think-table-of-verb-checks-vc-heave-ho-rule
 >think
-You can HEAVE HO once you have a strong assistant in Reeve Row who can help you pull the rug up.
+You can HEAVE HO once you're in Reeve Row with someone strong enough to help you pull the rayed rug up.
 
 @all
 #testcase-room-names-wandering-where
@@ -1171,7 +1171,7 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 @rej
 #+testcase-think-table-of-verb-checks-vc-heave-ho-rule
 >think
-You can HEAVE HO now you have a strong assistant here who can help you pull the rug up.
+You can HEAVE HO now you're here with someone strong enough to help you pull the rayed rug up.
 
 >heave ho
 by one point
@@ -1181,19 +1181,21 @@ by one point
 {--rej}#testcase-check-vc-heave-ho-rule-fallthrough
 {--all}#testcase-run-vr-heave-ho-rule-default
 You and the lovin' lout pull on one, two, THREE! It takes a couple of times, but the rug bursts free from the floor. You see an outline of the passage you believed was there.
-You shake hands with the lovin' lout, who exits and nods to wish you the best.
+The lovin' lout beams at such a display of strength! You smile back and nod vigorously. Then the lovin' lout claps you on the shoulder, smiles and shakes your hand before leaving.
 Your kneeling on the floor to pull the rug up gave you a good view inside the oven. There you find something called a goon guide. But you can't use it, because you're too good to be a goon. That's how it works, right? Or maybe not...
 
 @all
 ##balance undo
 #testcase-run-vr-heave-ho-rule-process-the-reeve-row-check-passage-down-rule
 >believe below
-There's that trap door here. But it's useless to interact with until you find a key for it.
+You stare at the floor again. Aha! There it is! Yes, your mental and physical preparation help you see a trap door indicating a passage down.
+However, the trap door down is useless to tinker with until you find a key for it.
 by one point
 \\
 #+testcase-run-vr-heave-ho-rule-process-the-reeve-row-check-passage-down-rule
 >l
-There's that trap door here. But it's useless to interact with until you find a key for it.
+A trap door you uncovered leads down, or it will, once you figure how to unlock it.
+The trap door down is useless to tinker with until you find a key for it.
 \\
 >undo
 >undo
@@ -1736,7 +1738,7 @@ by one point
 @rej,all
 {--rej}#testcase-check-vc-look-lard-rule-fallthrough
 {--all}#testcase-run-vr-look-lard-rule-default
-Lard, man. You're still not sure if you really need it, even if the cookbooks say you should. You've never had the guts to rebel and just prepare that dish without lard. Now's not the time to start. So you're glad you looked so diligently, and you're glad it turned up.
+Lard, man. You're still not sure if you really need it, even if the cookbooks say you should. You've never had the guts to rebel and just prepare that dish without lard. Now's not the time to start, with others relying on you. So you're glad you looked so diligently, and you're glad it turned up.
 You feel sucked out of whatever the shard held you in. As you come back to Dove 'N Doubt, the shard shatters. You sense there's nothing more to do here, so you walk back to the center of the action.
 
 @all
@@ -3026,7 +3028,7 @@ Pi times the radius squared, and you've got something.
 \\
 #+testcase-homonym-reject-table-of-verb-checks-vh-pi-poe-rule-pi-poe
 >pie poe
-No, not the author, a descriptor.
+A pie would hit the spot. But not the author--perhaps a descriptor. A slangy one.
 \\
 #+testcase-homonym-reject-table-of-verb-checks-vh-pi-poe-rule-pi-poe
 >pi poe
@@ -3050,7 +3052,7 @@ Pi times the radius squared, and you've got something.
 \\
 #testcase-homonym-detail-vh-pi-poe-rule-if-h1-is-true-and-h2-is-true
 >pie poe
-No, not the author, a descriptor.
+A pie would hit the spot. But not the author--perhaps a descriptor. A slangy one.
 \\
 #testcase-homonym-detail-vh-pi-poe-rule-default
 >pi poe
@@ -4306,7 +4308,7 @@ by one point
 {--all}#testcase-run-vr-believe-below-rule-fallthrough
 {--all}#+testcase-run-vr-believe-below-rule-if-sco-heave-ho-is-false
 {--all}#testcase-run-vr-believe-below-rule-process-the-reeve-row-check-passage-down-rule
-Aha! You wondered if something was below the rug. Now you see the outline of a trap door beneath where the rug was.
+You stare at the floor again. Aha! There it is! Yes, your mental and physical preparation help you see a trap door indicating a passage down.
 You use the copper key on the trap door down. And it works!
 
 @all

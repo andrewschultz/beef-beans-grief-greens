@@ -225,7 +225,7 @@ Pi times the radius squared, and you've got something.
 
 #+testcase-homonym-reject-table-of-verb-checks-vh-pi-poe-rule-pi-poe
 >pie poe
-No, not the author, a descriptor.
+A pie would hit the spot. But not the author--perhaps a descriptor. A slangy one.
 
 #+testcase-homonym-reject-table-of-verb-checks-vh-pi-poe-rule-pi-poe
 >pi poe
@@ -237,7 +237,7 @@ Pi times the radius squared, and you've got something.
 
 #testcase-homonym-detail-vh-pi-poe-rule-if-h1-is-true-and-h2-is-true
 >pie poe
-No, not the author, a descriptor.
+A pie would hit the spot. But not the author--perhaps a descriptor. A slangy one.
 
 #testcase-homonym-detail-vh-pi-poe-rule-default
 >pi poe
