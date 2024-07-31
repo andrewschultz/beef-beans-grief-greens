@@ -213,8 +213,6 @@ a goodrhyme rule (this is the vc-believe-below rule):
 this is the vr-believe-below rule:
 	if sco-heave-ho is false:
 		say "You believe something must be below. Below that rug, you'd guess. You might not be able to remove it by yourself. But you have faith now!";
-	else:
-		say "Aha! You wondered if something was below the rug. Now you see the outline of a trap door beneath where the rug was[if player does not have copper key], but it's locked[end if]."; [?? if rug there and you believed, you'd like to remove it]
 	now sco-believe-below is true;
 	declue-here-by 2855;
 	process the Reeve Row check passage down rule;

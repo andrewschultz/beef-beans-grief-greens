@@ -153,11 +153,15 @@ after printing the locale description for Reeve Row:
 
 this is the Reeve Row check passage down rule: [note: we should never have HEAVE HO after getting the copper key, since you need HEAVE HO to solve a sideroom and make the bopper bee appear. ]
 	if sco-heave-ho is true and sco-believe-below is true:
+		if trap door is off-stage:
+			say "You stare at the floor again. Aha! There it is! Yes, your mental and physical preparation help you see a trap door indicating a passage down.[paragraph break]";
+			move trap door to reeve row;
 		if player has copper key:
 			say "You use the copper key on the trap door down. And it works!";
 			moot copper key;
 		else if copper key is off-stage:
-			say "There's that trap door here. But it's useless to interact with until you find a key for it.";
+			say "[one of]However, the[or]The[stopping] trap door down is useless to tinker with until you find a key for it.";
+			move trap door to reeve row;
 		else:
 			say "There's a passage down, through the trap door you opened.";
 
@@ -245,6 +249,10 @@ after examining goon guide when sco-prune-pride is true:
 	if cook-card-note is false:
 		say "[line break]Oh. It appears that there was also a list of extra-special recipes that was in one of the flaps, but it fell out. [if sco-cook-card is true]Must be that cook card you found[else]Maybe by some crazy coincidence, you can find it[end if].";
 	continue the action;
+
+chapter trap door
+
+the trap door is a thing. description is "The trap door is locked now. There's nothing to be done with it.". "A trap door you uncovered leads down[unless player has copper key], or it will, once you figure how to unlock it[end if].".
 
 volume "where" rooms
 
