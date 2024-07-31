@@ -870,7 +870,7 @@ a goodrhyme rule (this is the vc-look-lard rule):
 
 this is the vr-look-lard rule:
 	now sco-look-lard is true;
-	say "Lard, man. You're still not sure if you really need it, even if the cookbooks say you should. You've never had the guts to rebel and just prepare that dish without lard. Now's not the time to start. So you're glad you looked so diligently, and you're glad it turned up.";
+	say "Lard, man. You're still not sure if you really need it, even if the cookbooks say you should. You've never had the guts to rebel and just prepare that dish without lard. Now's not the time to start, with others relying on you. So you're glad you looked so diligently, and you're glad it turned up.";
 	now player has lard;
 	get-untarred;
 
@@ -916,7 +916,7 @@ this is the vh-pi-poe rule:
 	else if h1 is true:
 		say "Pi times the radius squared, and you've got something.";
 	else:
-		say "No, not the author, a descriptor.";
+		say "A pie would hit the spot. But not the author--perhaps a descriptor. A slangy one.";
 
 this is the vr-pie-po rule:
 	now sco-pie-po is true;
@@ -1236,7 +1236,7 @@ a goodrhyme rule (this is the vc-meet-mel rule):
 
 this is the vr-meet-mel rule:
 	now sco-meet-mel is true;
-	say "Yes! Mel the Mail Maven! It has a certain ring to it. You take Mel's delivery.[paragraph break][pete pell]. Memories come back to you, of Leet Lel, a larger-than-life figure that showed you so much, but who also seemed to have scorn for you. It was hard to tell.";
+	say "Yes! Mel the Mail Maven! It has a certain ring to it. You take Mel's delivery. Mel, with a busy route ahead, salutes you and moves on.[paragraph break][pete pell]. Memories come back to you, of Leet Lel, a larger-than-life figure that showed you so much, but who also seemed to have scorn for you. It was hard to tell.";
 	now player has pete pell;
 	now to-number of compete compel is 8264;
 	now to-number of sheet shell is 8264;
@@ -1407,7 +1407,9 @@ to hall-move (rh - a rhymeperson):
 	move rh to Happy Hall;
 	if rh is female:
 		set pronoun her to rh;
-		if to-number of own aura is 0, now to-number of own aura is -4;
+		if to-number of own aura is 0:
+			say "[line break]The hall's own aura pulses, then gets lighter.";
+			now to-number of own aura is -4;
 	else:
 		set pronoun him to rh;
 	if other-guy of rh is in Happy Hall:
