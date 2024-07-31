@@ -858,16 +858,18 @@ book abouing
 carry out abouting:
 	say "[this-game] is entry [entry-in-series] of [pprr]. It was written for ParserComp 2024.";
 	say "[line break]In such a long series, there's the possibility the concept may get stale. Puzzles overlap. I recognize a word I rhymed before, and I fail to recognize another. But then I also see, oh, this rhyme chain works well. It might be worth writing.";
-	say "[line break]There is a ceiling to all this, though, and a temptation to think, why bother? I said I wouldn't write another game without a specific theme, and, well, when I heard 'beef and beans' I said, no, no way, I couldn't extend it to a whole feast, could I?";
-	say "[line break]I worry I'm stopping too late instead of too soon. But I am pleased with what I have, and I hope you are, too. There was an opportunity for a weird little story. So I hope it flies for you.";
+	say "[line break]There is a ceiling to all this, though, and a temptation to think, why bother? I said I wouldn't write another game without a specific theme, and, well, when I heard 'beef and beans' I made the mental rhyme in my head and said, no, no way, I couldn't extend it to a whole feast, could I?";
+	say "[line break]With the seiries, I worry I'm stopping too late instead of too soon. But I am pleased with what I have, and I hope you are, too. There was an opportunity for a weird little story. So I hope it flies for you.";
 	say "[line break]The other [pprr] entries are [series-names]. I hope you make time to play them if you haven't, though if you're playing this during ParserComp, do look at all the other entries there first.";
+	say "[line break]As for ParserComp, I'm not thrilled with the time frame I used to publish BBGG. I thought it'd be much smaller than it wound up being. Part of me said 'Oh, don't write another IFComp entry like this. People will get sick of this.' And BBGG felt parser-y. So I rushed some things, and I had a lot of scope creep. But I hope there is enough there, especially in later versions.";
+	say "[line break]To report bugs, email me at blurglecruncheon@email.com, or go to http://github.com/andrewschultz/beef-beans-grief-greens. Transcripts are also appreciated, though they may take a while.";
 
 book creditsing
 
 carry out creditsing:
-	say "Thanks to Adam Sommerfield for holding the first ParserComp and fos1 for keeping it going this year, and Christopher Merriner for helping previously.";
-	say "[line break]Thanks to Onno Brouwer, Wade Clarke and Josh Grams for testing. I gave them a ton to deal with, and they found a lot.";
-	say "[line break]Thanks to Brian Rushton for an in-comp bug report.";
+	say "Thanks to Adam Sommerfield for holding the first ParserComp and fos1 and Garry Francis for keeping it going this year, and Christopher Merriner for helping previously.";
+	say "[line break]Thanks to Onno Brouwer, Wade Clarke and Josh Grams for testing. I gave them a ton to deal with in relatively little time, and they found a lot.";
+	say "[line break]Thanks to A DiBianca, Brian Rushton and Tabitha for in-comp bug reports and/or transcripts. They helped a lot, too.";
 	say "[line break]Thanks to people who tested previous entries in the series. They helped iron out some core bugs that made code reusable. Often they alerted me to stuff that couldn't be wrong";
 	say "[line break]Thanks to you for playing this.";
 
