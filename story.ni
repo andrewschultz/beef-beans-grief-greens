@@ -1086,7 +1086,7 @@ this is the show-misses rule:
 	if sco-sassed-ceased is false:
 		say "You could've felt a bit more important with [b]SASSED CEASED[r] when you had the [feast].";
 	if stare-score is 2:
-		say "You could've distracted the staller stare in Squalor Square a bit more with [b][if sco-baller-bear is false]BALLER BEAR[else if sco-caller-care is false]CALLER CARE[else]DOLLAR DARE[r].";
+		say "You could've distracted the staller stare in Squalor Square a bit more with [b][if sco-baller-bear is false]BALLER BEAR[else if sco-caller-care is false]CALLER CARE[else]DOLLAR DARE[end if][r].";
 	if ooh-score < 7:
 		say "You could've done or thought more with [zl].";
 		if sco-booboo is false:
@@ -1104,7 +1104,7 @@ this is the show-misses rule:
 		if sco-tutu is false:
 			say "-- You could've suggested [zl] wear a [b]TUTU[r].";
 	if sco-chrome-craw is false:
-		say "There was a [b]CHROME CRAW[r] that rhymed with the regions after the room name on the status line. It held some bonus dishes and, well, not quite garnish.";
+		say "There was a [b]CHROME CRAW[r] that rhymed with the regions after the room name on the status line. It held some bonus dishes and, well, not quite garnish. There was a specific window to visit it: after you'd seen all locations around [wandering] but before going down from Reeve Row.";
 	else:
 		if sco-honeyed-ham is false:
 			say "The Moneyed Ma'am would've given you a [b]HONEYED HAM[r].";
