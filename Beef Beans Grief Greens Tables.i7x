@@ -10,7 +10,7 @@ table of verb checks [the order of things to solve is roughly alphabetical, so t
 w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	idid	best-room	check-rule	run-rule	wfull (topic)	think-advice (text)
 "sassed"	"ceased"	--	--	false	true	false	false	--	vc-sassed-ceased rule	vr-sassed-ceased rule	--	--
 "leave"	"lo"	"low"	vh-leave-low rule	false	true	true	false	reeve row	vc-leave-lo rule	vr-leave-lo rule	--	--
-"heave"	"ho"	"hoe"	vh-heave-hoe rule	false	true	true	false	reeve row	vc-heave-ho rule	vr-heave-ho rule	--	"You can [b]HEAVE HO[r] [once-now of vc-heave-ho rule] you have a strong assistant [here-in of reeve row] who can help you pull the rug up."
+"heave"	"ho"	"hoe"	vh-heave-hoe rule	false	true	true	false	reeve row	vc-heave-ho rule	vr-heave-ho rule	--	"You can [b]HEAVE HO[r] [once-now of vc-heave-ho rule] you're [here-in of reeve row] with someone strong enough to help you pull the rayed rug up."
 "prune"	"pride"	"pried"	vh-prune-pried rule	false	true	true	false	reeve row	vc-prune-pride rule	vr-prune-pride rule	--	--
 "spoon"	"spied"	--	--	false	true	true	false	reeve row	vc-spoon-spied rule	vr-spoon-spied rule	--	"You can get a [b]SPOON SPIED[r] [once-now of vc-spoon-spied rule] you have managed to consult the goon guide with a clear mind."
 "believe"	"below"	--	--	false	true	true	false	reeve row	vc-believe-below rule	vr-believe-below rule	--	--
@@ -168,7 +168,7 @@ a goodrhyme rule (this is the vc-played-plug rule):
 
 this is the vr-played-plug rule:
 	now sco-played-plug is true;
-	say "Ah, that's what the bump in the rayed rug is.";
+	say "Ah, that's what the bump in the rayed rug is. You take it.";
 	now player has played plug;
 	oven-check;
 	rhyme-rug-check 2804;
@@ -183,7 +183,7 @@ a goodrhyme rule (this is the vc-made-mug rule):
 
 this is the vr-made-mug rule:
 	now sco-made-mug is true;
-	say "A made mug appears. It will be useful for the meal.";
+	say "You find and take a made mug hidden in the rug.";
 	now player has made mug;
 	rhyme-rug-check 2703;
 
@@ -197,7 +197,7 @@ a goodrhyme rule (this is the vc-jade-jug rule):
 
 this is the vr-jade-jug rule:
 	now sco-jade-jug is true;
-	say "A jade jug appears. It will be useful for the meal.";
+	say "You find and take a jade jug hidden in the rug.";
 	now player has jade jug;
 	rhyme-rug-check 2703;
 
@@ -257,7 +257,7 @@ this is the vh-heave-hoe rule:
 
 this is the vr-heave-ho rule:
 	now sco-heave-ho is true;
-	say "You and [the lout] pull on one, two, THREE! It takes a couple of times, but the rug bursts free from the floor. You see [if sco-believe-below is true]nothing under the rug. You were sort of hoping for a new passage. Maybe you can do more than just hope.[paragraph break]Maybe there's a way to visualize a way down[else]an outline of the passage you believed was there[end if].[paragraph break]You shake hands with [the lout], who exits and nods to wish you the best.";
+	say "You and [the lout] pull on one, two, THREE! It takes a couple of times, but the rug bursts free from the floor. You see [if sco-believe-below is true]nothing under the rug. You were sort of hoping for a new passage. Maybe you can do more than just hope.[paragraph break]Maybe there's a way to visualize a way down[else]an outline of the passage you believed was there[end if].[paragraph break]The lovin['] lout beams at such a display of strength! You smile back and nod vigorously. Then [the lout] claps you on the shoulder, smiles and shakes your hand before leaving.";
 	moot lout;
 	say "[line break]Your kneeling on the floor to pull the rug up gave you a good view inside the oven. There you find something called a goon guide. But you can't use it, because you're too good to be a goon. That's how it works, right? Or maybe not...";
 	now player has goon guide;
