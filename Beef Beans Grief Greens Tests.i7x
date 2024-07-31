@@ -168,6 +168,8 @@ carry out diaging:
 			say "Thing [x] may need from-number and to-number.";
 	if got-thing is false, say "All things have from/to.";
 	repeat with F running through feastitems:
+		if f is silverware, next;
+		if f is optional, next;
 		if fdesc of F is empty, say "[F] needs fdesc.";
 	the rule succeeds;
 
