@@ -216,7 +216,7 @@ to decide whether all-but-varnish-faces:
 	yes;
 
 to decide which number is backtrack-score:
-	decide on (boolval of sco-veiled-vases) + (boolval of sco-vain-varnish);
+	decide on (boolval of sco-veiled-vases) + (boolval of sco-gain-garnish);
 
 section reeve row
 

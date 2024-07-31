@@ -6,7 +6,7 @@ volume variables
 
 core-max is 59.
 
-max-bonus is 11.
+max-bonus is 12.
 
 entry-in-series is 8.
 
@@ -132,7 +132,7 @@ sco-carrot-cake is a truth state that varies.
 sco-see-soup is a truth state that varies.
 sco-dented-dials is a truth state that varies.
 
-sco-vain-varnish is a truth state that varies.
+sco-gain-garnish is a truth state that varies.
 
 chapter Stuck State globals
 

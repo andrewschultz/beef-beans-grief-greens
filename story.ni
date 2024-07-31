@@ -1153,6 +1153,8 @@ this is the show-misses rule:
 	else if backtrack-score < 2:
 		if sco-veiled-vases is false:
 			say "The failed faces that appeared in [dove] could have become [b]VEILED VASES[r].";
+		if sco-gain-garnish is false:
+			say "Around the vain varnish that appeared in [gap], you could've tried to [b]GAIN GARNISH[r].";
 [	repeat through table of verb checks:
 		if core entry is false and idid entry is true:
 			say "BONUS GOTTEN: [w1 entry] [w2 entry].";

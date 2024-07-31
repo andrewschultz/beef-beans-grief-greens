@@ -38,12 +38,13 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "shovin"	"shout"	--	--	false	true	true	false	dove n doubt	vc-shovin-shout rule	vr-shovin-shout rule	--	"You can make a [b]SHOVIN SHOUT[r] [once-now of vc-shovin-shout rule] you have the help of someone stronger."
 "oven"	"out"	--	--	false	true	true	false	dove n doubt	vc-oven-out rule	vr-oven-out rule	--	"You can say [b]OVEN OUT[r] [once-now of vc-oven-out rule] you have someone strong enough to push the oven."
 "hook"	"hard"	--	--	false	true	true	false	dove n doubt	vc-hook-hard rule	vr-hook-hard rule	--	--
+"veiled"	"vases"	--	--	false	true	false	false	dove n doubt	vc-veiled-vases rule	vr-veiled-vases rule	--	--
 "zap"	"zoo"	--	--	false	true	true	false	Gap Goo	vc-zap-zoo rule	vr-zap-zoo rule	--	--
 "notice"	"knife"	--	--	false	true	true	false	Gap Goo	vc-notice-knife rule	vr-notice-knife rule	--	--
 "carrot"	"cake"	--	--	false	true	true	false	Gap Goo	vc-carrot-cake rule	vr-carrot-cake rule	--	--
 "see"	"soup"	"sea"	vh-sea-soup rule	false	true	true	false	gap goo	vc-see-soup rule	vr-see-soup rule	--	--
 "dented"	"dials"	--	--	false	true	true	false	gap goo	vc-dented-dials rule	vr-dented-dials rule	--	--
-"veiled"	"vases"	--	--	false	true	false	false	dove n doubt	vc-veiled-vases rule	vr-veiled-vases rule	--	--
+"gain"	"garnish"	--	--	false	true	false	false	gap goo	vc-gain-garnish rule	vr-gain-garnish rule	--	--
 "boo"	"boo"	--	--	false	true	true	false	ooh ooh	vc-booboo rule	vr-booboo rule	"booboo"	--
 "coo"	"coo/koo"	--	--	false	true	true	false	ooh ooh	vc-cuckoo rule	vr-cuckoo rule	"cuckoo"	--
 "doo"	"doo"	"do/dew"	--	false	true	true	false	ooh ooh	vc-doodoo rule	vr-doodoo rule	"doodoo"	--
@@ -825,6 +826,18 @@ this is the vr-dented-dials rule:
 	say "The vented vials seem useless. Dented dials? Less so. They transmogrify. You take them.";
 	now player has dented dials;
 	moot vented vials;
+
+a goodrhyme rule (this is the vc-gain-garnish rule):
+	if vain varnish is not touchable and garnish is not touchable, unavailable;
+	if sco-gain-garnish is true:
+		vcal "You only need so much garnish.";
+		already-done;
+	ready;
+
+this is the vr-gain-garnish rule:
+	now sco-gain-garnish is true;
+	say "You know what would make a lot more sense in a wooded area than toxic old varnish? Garnish! Green stuff! Once you've thought about that, you find more garnish than you need, growing all around.";
+	now player has garnish;
 
 chapter Took Tarred scoring
 
