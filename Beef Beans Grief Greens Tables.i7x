@@ -992,10 +992,10 @@ chapter faerie fair scoring
 to fruit-check:
 	say "[line break]";
 	if core-faerie-score is 2:
-		say "You've got all you need. Your list of foods now feels very balanced. Back you go to more familiar places.";
+		say "You've got all you need. Your list of foods now feels very balanced. The faeries help you double-check your list. You're surprised how effective this non-magical solution is to nail things down. Everyone agrees you're close to the end.[paragraph break]Even better, they know a way back to [wandering] which they may or may not have gotten by magic. It certainly feels that way, given how lost you have gotten. You ask if there is any way to avoid getting lost again. They assure you you won't need to. Off you go.";
 		drop-player-at Wandering Where;
 	else:
-		say "Well, you feel like you could use some more fruits. The faeries haven't booted you yet.";
+		say "Well, you feel like you could use some more fruits. The faeries haven't sent you on your way yet. They seem to be expecting you to ask for a bit more, in fact.";
 
 a goodrhyme rule (this is the vc-berry-bear rule):
 	if player is not in faerie fair, unavailable;
@@ -1586,14 +1586,9 @@ volume homonyms
 
 table of thing homonyms
 mything	hom-rule (a rule)	myhom (topic)	custom-msg (text)
-rayed rug	vh-raid-rug rule	"raid"	--
+rayed rug	--	"raid"	"You [if rug-score is 3]raided the rug enough, so to speak, to get the mug, jug and plug[else]will need to raid the rug[rug-more] to find what you need, but not with homonyms[end if]."
 
-this is the vh-raid-rug rule:
-	say "You ";
-	if rug-score is 3:
-		say "raided the rug enough, so to speak, to get the mug, jug and plug";
-	else:
-		say "will need to raid the rug[if rug-score > 0] some more[end if] to find what you need, but not with homonyms"
+to say rug-more: say "[if rug-score > 0] some more[end if]"
 
 table of room homonyms
 loc	hom-rule (a rule)	myhom (topic)	custom-msg (text)

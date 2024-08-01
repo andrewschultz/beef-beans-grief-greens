@@ -16,6 +16,8 @@ release along with the "parchment" interpreter.
 
 the release number is 2.
 
+Use memory economy.
+
 section general includes
 
 include Trivial Niceties by Andrew Schultz.
@@ -150,8 +152,36 @@ check going down in Reeve Row:
 check going outside in Reeve Row when Lovin Lout is in Reeve Row: say "You sense the lout could help with the rayed rug in some way. They would wait lovingly, of course, but you don't want to take advantage of them like that! They seem to want to be useful now." instead;
 
 after printing the locale description for Reeve Row:
+	if star storage is examined:
+		follow the dump items to FFSS rule;
 	process the Reeve Row check passage down rule;
 	continue the action;
+
+to decide whether plural-it:
+	if number of carried feastitems > 1, yes;
+	if number of carried feastitems is 0, no;
+	let FI be a random feastitem;
+	if FI is plural-named, yes;
+	no;
+
+report examining Far Forage Star Storage when Far Forage Star Storage was not examined:
+	follow the dump items to FFSS rule;
+	continue the action;
+
+this is the dump items to FFSS rule:
+	if number of carried feastitems is 0, continue the action;
+	say "[one of]You have an idea! S[or]Again, s[stopping]ince [the list of carried feastitems] won't be needed until the feast, or the final preparation, you [if player is not in Reeve Row]detour briefly to [end if]put [if plural-it]them[else]it[end if] in [the storage].";
+	if ever-feast-warn is false:
+		say "[line break][i][bracket][b]NOTE:[r][i] everything you put in storage will be inaccessible, but you won't need to interact with it. Just getting it is enough.[close bracket][r][line break]";
+		now ever-feast-warn is true;
+	now all carried feastitems are in hidey house;
+	continue the action;
+
+to say storage-hold:
+	if number of things in Hidey House is 0:
+		say "Nothing yet.[no line break]";
+	else:
+		say "[list of things in Hidey House].[no line break]";
 
 this is the Reeve Row check passage down rule: [note: we should never have HEAVE HO after getting the copper key, since you need HEAVE HO to solve a sideroom and make the bopper bee appear. ]
 	if sco-heave-ho is true and sco-believe-below is true:
@@ -176,16 +206,6 @@ after printing the locale description for reeve row when oven-fixed-yet is false
 	oven-check;
 	continue the action;
 
-after printing the locale description for reeve row when oven-fixed-yet is true (this is the Reeve Row get cooking rule):
-	if number of cookable feastitems carried by the player > 1:
-		say "You re-check the goon guide to see how to cook [the list of cookable feastitems carried by player].[paragraph break]";
-		now all cookable feastitems carried by the player are cooked;
-		if number of cookable feastitems is 0:
-			say "You've cooked everything you need for the feast!";
-		else:
-			say "There is still more, though.";
-	continue the action;
-
 chapter you
 
 Yves Eve O is a person. description of Yves is "You are [if gender-variable is 0]Yves (or Eve) O. Sorry, I forgot to ask. You can choose if you want, or you can leave it undefined[else if gender-variable is 1]Yves O[else]Eve O[end if]. You haven't worried much about appearances, recently.". the player is Yves Eve O. the player is in Reeve Row. the player is neuter.
@@ -200,9 +220,9 @@ guess-table of fast feast is the table of fast feast guesses.
 
 report examining Last Least Fast Feast:
 	repeat with F running through feastlistable feastitems:
-		say "[fixed letter spacing]( [if player has F]X[else]-[end if] ) [fdesc of F][variable letter spacing][line break]";
+		say "[fixed letter spacing]( [if F is found]X[else]-[end if] ) [fdesc of F][variable letter spacing][line break]";
 		if debug-state is true and fdesc of F is empty, say "NOTE TO SELF: fill in [F].";
-	say "[fixed letter spacing]([number of carried silverware feastitems]/[number of silverware feastitems]) silverware and such[variable letter spacing][if number of carried silverware feastitems > 0] (got [list of carried silverware feastitems])[end if][line break]";
+	say "[fixed letter spacing]([number of found silverware feastitems]/[number of silverware feastitems]) silverware and such[variable letter spacing][if number of found silverware feastitems > 0] (got [list of found silverware feastitems])[end if][line break]";
 	if Trappy Trawl is unvisited:
 		say "[line break]";
 		if oven is in reeve row:
@@ -211,7 +231,7 @@ report examining Last Least Fast Feast:
 			say "You'll probably need to cook up some ingredients, but you don't have the right appliance(s), yet.";
 	if note-beans is false:
 		now note-beans is true;
-		say "[line break]From beyond the fourth wall, you wonder where the beans fit into all this. Well, you have enough to tackle. Wiser entities than you probably have that sorted out.";
+		say "[line break]From beyond the fourth wall, you wonder where the titular beans fit into all this. Well, you have enough to tackle. Wiser entities than you probably have that sorted out.";
 	continue the action;
 
 check examining Fast Feast when trappy trawl is visited: say "You've checked all the boxes. All that's left to do is to hand [feast] to the elders once the ceremony starts, to help the next gnome chosen." instead;
@@ -225,6 +245,14 @@ understand "rays" as rayed rug when rayed rug is touchable.
 from-number of rayed rug is 2753. to-number of rayed rug is 8210.
 
 guess-table of rayed rug is the table of rayed rug guesses.
+
+chapter Far Forage Star Storage
+
+the Far Forage Star Storage is a thing in Reeve Row. printed name is "[i]Far-Forage Star Storage[r]". "[if storage is not examined]In the corner is something called [storage]. Perhaps you should [b]X[r] or [b]EXAMINE[r] it to be clear on its purpose[else]The [storage] sits in the corner, ready to hold stuff for the feast you don't want to schlep around[end if].". understand "FFSS" and "SS" and "FF" and "FS" as Star Storage when player is in Reeve Row.
+
+description of Far Forage Star Storage is "[one of]The [storage] has a surprising amount of space inside. You could fit a lot of stuff here, which is useful.[or]Currently, your [storage] holds:[paragraph break][storage-hold][stopping]".
+
+check taking Star Storage: say "It's actually there to help avoid inventory bloat. Taking it would thus be counterproductive." instead;
 
 chapter played plug
 
@@ -739,13 +767,13 @@ from-number of any isles many miles is 5360. to-number of any isles many miles i
 
 chapter penny piles
 
-some penny piles are a plural-named thing. "A lot of pennies, but not a lot of wealth. What can you trade it to Bri-Bro for?"
+some penny piles are a plural-named thing. "A lot of pennies, but not a lot of wealth. What can you trade them to Bri-Bro for?"
 
 [pie po is with the feastitems, so they're sorted nicely in inventory]
 
 book Edgy Ill Hedge-y Hill
 
-Edgy Ill Hedge-y Hill is a room in Dome D'Aww. "You sense there is shopping to be done behind the hills. But you can't quite remember the name of the store. You also sense behind each hill to each direction is a store like the one you want, but it isn't what you want.".
+Edgy Ill Hedge-y Hill is a room in Dome D'Aww. "You sense there is shopping to be done behind the hills. But you can't quite remember the name of the store. You also sense behind each hill to each direction is a store like the one you want, but it isn't what you want. Might provide clues, though.".
 
 from-number of edgy ill hedge-y hill is 5507. to-number of edgy ill hedge-y hill is 2805.
 
@@ -860,7 +888,7 @@ after printing the name of an optional feastitem while taking inventory:
 	say "[r]"
 
 carry out taking inventory (this is the bbgg inventory rule):
-	say "Currently carrying[if number of carried optional feastitems > 0] (bonus items in italics)[end if]:[line break]";
+	say "Currently carrying[if number of found optional feastitems > 0] (bonus items in italics)[end if]:[line break]";
 	if number of carried cooked feastitems > 0, say "  [list of carried cooked feastitems] (cooked)[line break]";
 	if number of carried cookable feastitems > 0, say "  [list of carried cookable feastitems] (uncooked)[line break]";
 	if number of carried ingrediential feastitems > 0, say "  [list of carried ingrediential feastitems] (ingredients)[line break]";
@@ -872,7 +900,10 @@ carry out taking inventory (this is the bbgg inventory rule):
 	now all things carried by player are marked for listing;
 	now all feastitems are not marked for listing;
 	now all oventhings are not marked for listing;
-	list the contents of the player, with newlines, indented, including contents, giving inventory information, with extra indentation, listing marked items only.
+	list the contents of the player, with newlines, indented, including contents, giving inventory information, with extra indentation, listing marked items only;
+	let NFI be number of feastitems in hidey house;
+	if NFI > 0:
+		say "You've also put [NFI in words] feast item[if NFI > 1]s[end if] in [star storage]. To see [if NFI > 1]them[else]it[end if], [b]X STORAGE[r].";
 
 [before listing contents when taking inventory:
 	group feastitems together;
@@ -1187,7 +1218,7 @@ this is the show-misses rule:
 
 volume hint mapping
 
-include Beef Beans Grief Greens Hints by Andrew Schultz.
+[include Beef Beans Grief Greens Hints by Andrew Schultz.]
 
 volume index map nonsense
 

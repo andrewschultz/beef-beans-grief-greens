@@ -127,8 +127,13 @@ after doing something with a rhymeperson:
 	set the pronoun them to noun;
 	continue the action;
 
+definition: a feastitem (called fe) is found:
+	if fe is carried, yes;
+	if fe is in Hidey House, yes;
+	no;
+
 definition: a feastitem (called fe) is stillneeded:
-	if fe is carried, no;
+	if fe is found, no;
 	if fe is optional, no;
 	yes;
 
