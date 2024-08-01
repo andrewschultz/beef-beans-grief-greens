@@ -101,9 +101,9 @@ mist-regex	mist-rule	got-yet	leet-rule	mist-txt
 
 to say too-abstract:
 	if loulou is in ooh ooh:
-		say "[zl] look pensive and huddle for a bit. You see animated gesturing. Then they turn to you and shake their heads with a 'missed it by this much' gesture.[paragraph break]You thought you were on to something, there, but what you said was probably too abstract, or too interjection-y.";
+		say "[zl] look pensive and huddle for a bit. You see animated gesturing. Then they turn to you and shake their heads with a 'missed it by this much' gesture.[paragraph break]You thought you were on to something, there, but what you said was probably too abstract, or too interjection-y";
 	else:
-		say "Too abstract, or interjection-y. But [zl] are gone, anyway.";
+		say "Too abstract, or interjection-y. But [zl] are gone, anyway";
 
 table of reeve row guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
@@ -198,6 +198,16 @@ mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 "ray"	"rule"	--	false	--	"[good-guess]."
 "spay"	"spool"	--	false	--	"[good-guess]."
 "stay"	"stool"	--	false	--	"[good-guess]."
+
+table of didi mimi guesses
+mist-regex	mist-rule	got-yet	leet-rule	mist-txt
+"bebe|beebee"	--	false	--	"[md] fire fake guns at each other, both getting hit and brushing off their fake wounds easily."
+"chichi"	--	false	--	"[md] mime eating hot Mexican food."
+"feefee|fifi"	--	false	--	"[md] mimic walking spoiled poodles, then being upset for no reason at all."
+"gigi"	--	false	--	"[md] mimic old people, walking with imaginary canes and showing you photo albums of imaginary grandkids."
+"hehe|heehee"	--	false	--	"[md] lurch between miming giggles and loud corny laughs."
+"peepee"	--	false	--	"[md] squat down for a second and look frustrated at your tastelessness, washing their hands in an invisible faucet after."
+"weewee"	--	false	--	"[md] put their hands over their hearts and begin whistling [i]La Marseillaise[r]. That's what you were looking for, right?"
 
 table of downed dork guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt

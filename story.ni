@@ -414,7 +414,7 @@ guess-table of Ooh Ooh is table of ooh ooh guesses.
 
 chapter zuzu
 
-Zuzu is a rhymeperson in Ooh Ooh. description is "Zuzu is short-ish for Suzanne, you're pretty sure. She wears a t-shirt saying MAMA. You've no clue where the kid is."
+Zuzu is a female rhymeperson in Ooh Ooh. description is "Zuzu is short-ish for Suzanne, you're pretty sure. She wears a t-shirt saying MAMA. You've no clue where the kid is."
 
 from-number of zuzu is 2602. to-number of zuzu is 18520.
 
@@ -422,9 +422,19 @@ guess-table of Zuzu is table of papa guesses. [it can be Loulou or Zuzu]
 
 chapter lulu
 
-Loulou is a rhymeperson in Ooh Ooh. description is "Loulou is a male name, you remember from Gustave Flaubert's [i]Un Coeur Simple[r]. He wears a t-shirt saying PAPA. You've no clue where the kid is."
+Loulou is a male rhymeperson in Ooh Ooh. description is "Loulou is a male name, you remember from Gustave Flaubert's [i]Un Coeur Simple[r]. He wears a t-shirt saying PAPA. You've no clue where the kid is."
 
 from-number of loulou is 2653. to-number of loulou is 18520.
+
+chapter Didi
+
+Didi is a male rhymeperson. description is "Didi is a male name, short for Dietmar or Didier. He wears a t-shirt saying EEEE. But he does not look screamy."
+
+guess-table of Didi is table of Didi Mimi guesses.
+
+chapter Didi
+
+Mimi is a female rhymeperson. description is "Mimi is a female name, short for Miriam or Emilia. She wears a t-shirt saying EEEE. But she does not look screamy."
 
 chapter ooh ooh people organization
 
@@ -434,7 +444,10 @@ other-guy of Zuzu is Loulou.
 
 for printing a locale paragraph about a rhymeperson (called rp) in ooh ooh:
 	if rp is mentioned, continue the action;
-	say "[list of rhymepersons in ooh ooh] stand here, tired of the old repetitive actions, looking for new repetitive sounding ones.[paragraph break]";
+	if zuzu is moot:
+		say "[md] are here to mime with if you want, though they made it clear they can offer no substantial reward.";
+	else:
+		say "[zl] stand here, tired of the old repetitive actions, looking for new repetitive sounding ones.[paragraph break]";
 	now all rhymepersons in ooh ooh are mentioned;
 
 [cocoa is with the feastitems, so it's nicely ordered in inventory]
@@ -1153,11 +1166,16 @@ the ooh ooh one word rule is listed before the default parser error notification
 
 rule for printing a parser error when player is in ooh ooh (this is the ooh ooh one word rule):
 	if ooh-score is 7:
-		say "[zl] shrug. They look worn out by all the non-standard parser command performance art. You have to admit you are too.[paragraph break]Or maybe you just made a typo. Whichever, you've done all you can to impress them[if sco-prune-pride is false].[paragraph break]You do wonder if a clearer idea of your goals might help you see more later, something they can't help you with[else if sco-massive-mitt is false]. But that passive pit, well, there might be something there[end if].";
+		say "[md] shrug. They have the same ethos as the departed [zl], even if they have no possessions to help you";
 	else if number of words in the player's command is 1:
-		say "[zl] nod their heads to the left in unsion, then to the right. They seem to like your style. But the final result is lacking.";
+		say "[zl] nod their heads to the left in unsion, then to the right. They seem to like your style. But the final result is lacking";
 	else:
-		say "[zl] make the talky-talky gesture with their hands. Apparently, you are using too many words, even if it doesn't seem like you're using too many. You feel rebuked[if sco-doodoo is false and sco-poohpooh is false]. You wonder, however, if you could sneak a hyphenated or hyphen-able word in[end if][if ooh-score is 0].[paragraph break]Well, if you wanted a change from the usual rhymes so far, you got it, sort of[end if].";
+		say "[zl] make the talky-talky gesture with their hands. Apparently, you are using too many words, even if it doesn't seem like you're using too many. You feel rebuked[if sco-doodoo is false and sco-poohpooh is false]. You wonder, however, if you could sneak a hyphenated or hyphen-able word in[end if][if ooh-score is 0].[paragraph break]Well, if you wanted a change from the usual rhymes so far, you got it, sort of[end if]";
+	if sco-prune-pride is false:
+		say ".[paragraph break]You do wonder, though, if a clearer idea of your goals might help you see more later, something they can't help you with";
+	else if sco-massive-mitt is false:
+		say ". But that passive pit, well, there might be something there";
+	say ".";
 	the rule succeeds;
 
 volume name detection

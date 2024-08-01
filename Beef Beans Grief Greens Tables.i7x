@@ -417,8 +417,14 @@ this is the vr-flopper-flea rule:
 
 chapter ooh ooh scoring
 
-a goodrhyme rule (this is the vc-booboo rule):
+this is the oohooh-post-zl rule:
 	if player is not in ooh ooh, unavailable;
+	if mimi is in ooh ooh:
+		vcal "That worked for Zuzu and Loulou, but they're long gone.";
+		already-done;
+
+a goodrhyme rule (this is the vc-booboo rule):
+	abide by the oohooh-post-zl rule;
 	if sco-booboo is true:
 		vcal "You already feigned a booboo.";
 		already-done;
@@ -430,7 +436,7 @@ this is the vr-booboo rule:
 	process-cocoa 2653;
 
 a goodrhyme rule (this is the vc-cuckoo rule):
-	if player is not in ooh ooh, unavailable;
+	abide by the oohooh-post-zl rule;
 	if sco-cuckoo is true:
 		vcal "It was almost too crazy the first time.";
 		already-done;
@@ -442,7 +448,7 @@ this is the vr-cuckoo rule:
 	process-cocoa 2653;
 
 a goodrhyme rule (this is the vc-doodoo rule):
-	if player is not in ooh ooh, unavailable;
+	abide by the oohooh-post-zl rule;
 	if sco-doodoo is true:
 		vcal "The value of such a word or phrase drops quickly with each use.";
 		already-done;
@@ -454,7 +460,7 @@ this is the vr-doodoo rule:
 	process-cocoa 2653;
 
 a goodrhyme rule (this is the vc-juju rule):
-	if player is not in ooh ooh, unavailable;
+	abide by the oohooh-post-zl rule;
 	if sco-juju is true:
 		vcal "You already fake-performed juju.";
 		already-done;
@@ -466,7 +472,7 @@ this is the vr-juju rule:
 	process-cocoa 2602;
 
 a goodrhyme rule (this is the vc-muumuu rule):
-	if player is not in ooh ooh, unavailable;
+	abide by the oohooh-post-zl rule;
 	if sco-muumuu is true:
 		vcal "You already pictured Loulou and Zuzu in muumuus.";
 		already-done;
@@ -481,7 +487,7 @@ this is the vr-muumuu rule:
 	process-cocoa 2653;
 
 a goodrhyme rule (this is the vc-poohpooh rule):
-	if player is not in ooh ooh, unavailable;
+	abide by the oohooh-post-zl rule;
 	if sco-poohpooh is true:
 		vcal "There's overdoing things, you reckon.";
 		already-done;
@@ -493,7 +499,7 @@ this is the vr-poohpooh rule:
 	process-cocoa 2704;
 
 a goodrhyme rule (this is the vc-tutu rule):
-	if player is not in ooh ooh, unavailable;
+	abide by the oohooh-post-zl rule;
 	if sco-tutu is true:
 		vcal "Tutus get old fast as jokewear.";
 		already-done;
@@ -1443,6 +1449,9 @@ chapter Ooh Ooh
 to say zl:
 	say "[one of]Zuzu and Loulou[or]Loulou and Zuzu[at random]"
 
+to say md:
+	say "[one of]Didi and Mimi[or]Mimi and Didi[at random]"
+
 to process-cocoa (nu - a number):
 	say "[line break]";
 	if ooh-score is 7:
@@ -1466,7 +1475,7 @@ to process-cocoa (nu - a number):
 	else if ooh-score is 2:
 		say "[zl] warm up to you further.";
 	else if ooh-score is 3:
-		say "[zl] discuss among themselves, pointing at you. After some chatter, they both hold up one finger. ";
+		say "[zl] discuss among themselves, pointing at you. After some chatter, they both hold up one finger.";
 	else if ooh-score is 4:
 		say "[zl] pound you on the back. You sure have some great ideas in line with their thinking! After some awkward hand gestures they indicate they don't mind if you stay or go. You've earned this packet of cocoa.";
 		now player has cocoa;
@@ -1481,7 +1490,11 @@ to process-cocoa (nu - a number):
 	else if ooh-score is 6:
 		say "[zl] are starting to look exhausted from all this imagining.";
 	else if ooh-score is 7:
-		say "[zl] wipe their brows after this latest feat of imagination. Nothing more to do here, really.";
+		say "[zl] wipe their brows after this latest feat of imagination. They indicate they need to get going. I mean, looking at their t-shirts, they have a family, and stuff. They can't hang with you forever.[paragraph break]But wait! What is this? They slap hands tag-team style with two folks who look a lot like them.[paragraph break]Some scribbling on the ground notes that your new mime-y acquaintances are Mimi and Didi. However, they make the empty pockets gesture, as if to say, they can't actually give you anything. They're just here for entertainment [zl] couldn't quite provide.";
+		move mimi to ooh ooh;
+		move didi to ooh ooh;
+		moot loulou;
+		moot zuzu;
 	else:
 		say "BUG. This should not be reached, but [ooh-score] should between 1 and 7.";
 
