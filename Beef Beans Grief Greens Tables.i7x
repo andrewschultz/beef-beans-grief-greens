@@ -318,6 +318,11 @@ this is the vr-par-porridge rule:
 	now sco-par-porridge is true;
 	say "Looking carefully through [the star storage], you find, indeed, some par porridge you'd otherwise have missed. It, or the product on the box (it's instant porridge, you see,) looks astoundingly bland, even for porridge. But then again, since the planned feast isn't meant to be a raucous party, some no-fun foods probably should be an option.";
 	move par porridge to hidey house;
+	porridge-gruel-comp;
+
+to porridge-gruel-comp:
+	if sco-par-porridge is true and sco-grey-gruel is true:
+		say "[line break]Well. Isn't this a thing, now? Porridge and gruel! You always assumed the two were the same. Then again, you also didn't see the difference between skim milk and 1% milk for the longest time. And you were also chided for not minding the difference between butter and margarine.[paragraph break]You take a bit of time for self-enlightenment to find that gruel may, in fact, just be a watery version of porridge. Then you sort of wonder why you bothered.[paragraph break]But then looking on the porridge ingredients box, you notice it has a few spices and such. Spices [the fool] would hate to see poured in the gruel. So that's something."
 
 chapter wandering where scoring
 
@@ -1094,9 +1099,10 @@ a goodrhyme rule (this is the vc-grey-gruel rule):
 
 this is the vr-grey-gruel rule:
 	now sco-grey-gruel is true;
-	say "The [fool] hands you some surprisingly not-cray gray gruel and snickers before running off. What kind of square would actually LIKE gruel?[paragraph break]But you want to be considerate about allergies, people trying to diet, people with vegan lifestyles, and so forth. It will be useful, you guess, as a base or paste.";
+	say "The [fool] hands you a steaming covered bowl of surprisingly gray gruel, which seems not cray (if cruel as a constant diet,) and lectures you about how REAL gruel doesn't have any additives to make it taste better. How unnatural! They make you promise not to go adding anything to the gruel all sneakily now they've been so generous, before running off. You hear a 'REMEMBER, YOU PROMISED!' in the distance.[paragraph break]Upset at being ordered around thus, you figure it's just good in general to be considerate about allergies, people trying to diet, people with vegan lifestyles, and so forth. Perhaps it will be useful as a base or paste.[paragraph break]Still, one sniff of the gruel leaves you thinking 'Eh, ooh, ill!'";
 	now player has grey gruel;
 	moot cray cruel fey fool;
+	porridge-gruel-comp;
 
 a goodrhyme rule (this is the vc-just-jello rule):
 	if fussed fellow is not in location of player and player does not have jello, unavailable;
