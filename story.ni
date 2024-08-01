@@ -370,11 +370,15 @@ after printing the locale description when player is in ooh ooh and ooh-score < 
 
 from-number of ooh ooh is 2653. to-number of ooh ooh is 18520.
 
+guess-table of Ooh Ooh is table of ooh ooh guesses.
+
 chapter zuzu
 
 Zuzu is a rhymeperson in Ooh Ooh. description is "Zuzu is short-ish for Suzanne, you're pretty sure. She wears a t-shirt saying MAMA. You've no clue where the kid is."
 
 from-number of zuzu is 2602. to-number of zuzu is 18520.
+
+guess-table of Zuzu is table of papa guesses. [it can be Loulou or Zuzu]
 
 chapter lulu
 

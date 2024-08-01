@@ -83,6 +83,19 @@ mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 "tie"	"toe"	--	false	--	"You check to see if Bri-Bro's footwear has laces. It does not. Foiled!"
 "why"	"woe|whoah|whoa"	--	false	--	"You question why Bri-Bro won't give you something for free or just tell you what you want. But you don't do anything super-crazy like wonder why you bothered to get so far through this game. (I'm glad you did, though, so thanks!)"
 
+table of ooh ooh guesses
+mist-regex	mist-rule	got-yet	leet-rule	mist-txt
+"froufrou"	--	false	--	"[too-abstract]."
+"googoo"	--	false	--	"[too-abstract]."
+"snusnu"	--	false	--	"Ah, someone's a Futurama fan, I see. But this is not that sort of game."
+"woowoo"	--	false	--	"[too-abstract]."
+
+to say too-abstract:
+	if loulou is in ooh ooh:
+		say "[zl] look pensive and huddle for a bit. You see animated gesturing. Then they turn to you and shake their heads with a 'missed it by this much' gesture.[paragraph break]You thought you were on to something, there, but what you said was probably too abstract, or too interjection-y.";
+	else:
+		say "Too abstract, or interjection-y. But [zl] are gone, anyway.";
+
 table of reeve row guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 "peeve"	"po|poe"	--	false	--	"Not wise, without a real raven-heal-haven."
@@ -166,12 +179,12 @@ mist-regex	mist-rule	got-yet	leet-rule	mist-txt
 table of cray cruel fey fool guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 "bay"	"bool"	--	false	--	"[good-guess]."
-"day"	"duel"	--	false	--	"[good-guess]."
+"day"	"dual|duel"	--	false	--	"[good-guess]."
 "gay"	"ghoul"	--	false	--	"[good-guess]."
 "hey"	"wholl"	--	false	--	"[good-guess]."
-"jay"	"jewel"	--	false	--	"[good-guess]."
+"j|jay"	"jewel"	--	false	--	"[good-guess]."
 "k|kay"	"cool"	--	false	--	"[good-guess]."
-"nay"	"newel|newell"	--	false	--	"[good-guess]."
+"nay|neigh"	"newel|newell"	--	false	--	"[good-guess]."
 "pay"	"pool"	--	false	--	"[good-guess]."
 "ray"	"rule"	--	false	--	"[good-guess]."
 "spay"	"spool"	--	false	--	"[good-guess]."
@@ -215,22 +228,31 @@ mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 "tight"	"tires"	--	false	--	"[good-guess]."
 "might|mite"	"myers"	--	false	--	"[good-guess]."
 
-table of loulou guesses
-mist-regex	mist-rule	got-yet	leet-rule	mist-txt
-"froufrou"	--	false	--	"[too-abstract]."
-"googoo"	--	false	--	"[too-abstract]."
-"snusnu"	--	false	--	"Ah, someone's a Futurama fan, I see. But this is not that sort of game."
-"woowoo"	--	false	--	"[too-abstract]."
-
-to say too-abstract:
-	say "[zl] look pensive and huddle for a bit. You see animated gesturing. Then they turn to you and shake their heads with a 'missed it by this much' gesture.[paragraph break]You thought you were on to something, there, but what you said was probably too abstract, or too interjection-y."
-
 table of own aura guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 "cone|koan"	"cora"	--	false	--	"Koan Cora is off in her, uh, cone, thinking up philosophy. Very worthy and high-character, for sure, but a bad fit for the feast."
 "moan"	"maura"	--	false	--	"Maura would be a decent addition, but she's not going to arrive if you moan, and there's no other way to ask her."
 "flown"	"flora"	--	false	--	"Flora who have fled to a nature preserve deserve to stay there."
+"phone"	"fora"	--	false	--	"You don't need to phonebank for additional participants or ritual ideas. In fact, phones would disrupt things, in general. People would tinker with them during the ritual, even if they meant not to."
 "tone"	"torah"	--	false	--	"You need no religious tracts."
+"zone"	"zora"	--	false	--	"Zora's thoughts on basketball are surprisingly interesting and philosophical but not right for the feast."
+
+table of papa guesses [note: we could technically hide this until you've examined both Loulou and Zuzu's shirts.] [??zuzu and loulou leave. They have kids, as you notice from what they are wearing.]
+mist-regex	mist-rule	got-yet	leet-rule	mist-txt
+"baba|baabaa"	--	false	--	"[zl] fail to lead you to a teenage wasteland[shirt-riff]."
+"blahblah"	--	false	--	"[zl] aren't big on long speeches[shirt-riff]."
+"caca|kaka"	--	false	--	"[zl] don't mind minor profanity, but in English, please[shirt-riff]." [?? again we can have something different if sco-doodoo is true]
+"chacha"	--	false	--	"[zl] aren't dressed to dance like that[shirt-riff]."
+"dada"	--	false	--	"[zl] are already putting on a Dada performance[shirt-riff]."
+"haha"	--	false	--	"[zl] aren't big on forced laughter. Laughter, yes. Laughter on demand, no[shirt-riff]."
+"lala"	--	false	--	"Singing's a bit too much, here[shirt-riff]."
+"nana"	--	false	--	"[zl] look confused. They aren't sure which song to act out. So many good ones have a 'nana' bit. The Rising, Na Na Hey Hey Goodbye, Hey Jude, Centerfold, Life is Life, Sweet Caroline, even Gettin['] Jiggy Wit It ... too vague, there[shirt-riff]."
+"tata"	--	false	--	"[zl] won't leave until you've riffed on them all the way[shirt-riff]."
+"wawa|wahwah"	--	false	--	"[zl] aren't thirsty, and neither are you[shirt-riff]."
+"zsazsa"	--	false	--	"[zl] can't resurrect Ms. Gabor[shirt-riff]."
+
+to say shirt-riff:
+	say ". Also, riffing on [zl]'s shirts seem unnecessary. Better to focus on what they have in common with the location.[paragraph break]But of course you can rack up good tries if you want[or][stopping]"
 
 table of rayed rug guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
