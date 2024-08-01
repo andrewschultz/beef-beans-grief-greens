@@ -9,7 +9,7 @@ to say yrrr: say "you return[if player is in reeve row]ed[end if] to Reeve Row"
 table of verb checks [the order of things to solve is roughly alphabetical, so the lurking lump always gives you the best value, but this is subverted by if one rhyme pushes the game/story further than the others. So Leave Lo is first. Sassed can be anywhere for the bonus point, since the lump explicitly avoids bonus points.]
 w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	idid	best-room	check-rule	run-rule	wfull (topic)	think-advice (text)
 "sassed"	"ceased"	--	--	false	true	false	false	--	vc-sassed-ceased rule	vr-sassed-ceased rule	--	--
-"leave"	"lo"	"low"	vh-leave-low rule	false	true	true	false	reeve row	vc-leave-lo rule	vr-leave-lo rule	--	--
+"leave"	"lo"	"low"	vh-leave-low rule	false	true	true	false	reeve row	vc-leave-lo rule	vr-leave-lo rule	--	"You can [b]LEAVE LO[r] [once-now of vc-leave-lo rule] you [if fast feast is not examined]have read up on what you need[else]feel more confident you have somewhere to dump a potentially huge pile of feast items you may find[end if]."
 "heave"	"ho"	"hoe"	vh-heave-hoe rule	false	true	true	false	reeve row	vc-heave-ho rule	vr-heave-ho rule	--	"You can [b]HEAVE HO[r] [once-now of vc-heave-ho rule] you're [here-in of reeve row] with someone strong enough to help you pull the rayed rug up."
 "prune"	"pride"	"pried"	vh-prune-pried rule	false	true	true	false	reeve row	vc-prune-pride rule	vr-prune-pride rule	--	--
 "spoon"	"spied"	--	--	false	true	true	false	reeve row	vc-spoon-spied rule	vr-spoon-spied rule	--	"You can get a [b]SPOON SPIED[r] [once-now of vc-spoon-spied rule] you have managed to consult the goon guide with a clear mind."
@@ -223,6 +223,12 @@ this is the vr-believe-below rule:
 	process the Reeve Row check passage down rule;
 
 a goodrhyme rule (this is the vc-leave-lo rule):
+	if last least fast feast is not examined:
+		vcp "You want to get going, but this feels like jumping the gun. It might be a good idea to have some idea what you're looking for. You were given instructions.";
+		not-yet;
+	if star storage is not examined:
+		vcp "Whoah! That list of needed stuff is really long! You fear having to juggle a whole lot as you walk around goodness knows where.[paragraph break]Perhaps examining things here in Reeve Row will help you feel more at ease.";
+		not-yet;
 	if trappy trawl is visited:
 		vcal "You've left Reeve Row for good.";
 		already-done;
@@ -239,7 +245,7 @@ this is the vr-leave-lo rule:
 		say "This is ambiguous now you've opened a passage [b]DOWN[r] as well as [b]OUT[r].";
 		the rule succeeds;
 	if sco-leave-lo is false:
-		say "Sometimes you just need the right time to say a simple phrase to get you going. And you do, here.";
+		say "Sometimes you just need the right time to say a simple phrase to get you going. And you do, here. Confident you will never have to juggle your inventory thanks to [the storage], you're ready for this scavenger hunt.";
 		open-psg outside and wandering where;
 	else:
 		say "[i][bracket]You can just go [b]OUT[r][i] or [b]N/NORTH[r][i] for fewer keystrokes.[close bracket]";
