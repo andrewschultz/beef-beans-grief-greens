@@ -166,6 +166,8 @@ to decide whether plural-it:
 
 report examining Far Forage Star Storage when Far Forage Star Storage was not examined:
 	follow the dump items to FFSS rule;
+	if sco-par-porridge is false:
+		say "It's weird. The [star storage] is so nondescript, you wonder if it's hiding something nondescript that might add to the feast in some odd way. But it might not be worth wracking your mind over.";
 	continue the action;
 
 this is the dump items to FFSS rule:
@@ -214,6 +216,8 @@ section Last Least Fast Feast
 
 Last Least Fast Feast is a rhymable. the player carries Last Least Fast Feast. description of Last Least Fast Feast is "[one of][fast feast] is a vague description of the stuff you need for the end-of-year memorial feast. Perhaps they wanted to allow you artistic license, or perhaps they (or I) realized it'd not be a really fulfilling quest if they were specific. Or perhaps there's some weird obscure reason the feast tastes better or is more spiritually nourishing if it's prepared ad-hoc[or]You check [fast feast] again for what you need[stopping].". printed name is "[i]Last Least Fast Feast[r]".
 
+understand "lf" and "llff" and "ll" as Last Least Fast Feast when player has Last Least Fast Feast.
+
 from-number of last least fast feast is -5410. to-number of last least fast feast is -2806.
 
 guess-table of fast feast is the table of fast feast guesses.
@@ -248,11 +252,19 @@ guess-table of rayed rug is the table of rayed rug guesses.
 
 chapter Far Forage Star Storage
 
-the Far Forage Star Storage is a thing in Reeve Row. printed name is "[i]Far-Forage Star Storage[r]". "[if storage is not examined]In the corner is something called [storage]. Perhaps you should [b]X[r] or [b]EXAMINE[r] it to be clear on its purpose[else]The [storage] sits in the corner, ready to hold stuff for the feast you don't want to schlep around[end if].". understand "FFSS" and "SS" and "FF" and "FS" as Star Storage when player is in Reeve Row.
+the Far Forage Star Storage is a rhymable in Reeve Row. printed name is "[i]Far-Forage Star Storage[r]". "[if storage is not examined]In the corner is something called [storage]. Perhaps you should [b]X[r] or [b]EXAMINE[r] it to be clear on its purpose[else]The [storage] sits in the corner, ready to hold stuff for the feast you don't want to schlep around everywhere[end if].".
+
+from-number of far forage star storage is 5363. to-number of far forage star storage is -2658.
+
+understand "FFSS" and "SS" and "FF" and "FS" as Far Forage Star Storage when player is in Reeve Row.
 
 description of Far Forage Star Storage is "[one of]The [storage] has a surprising amount of space inside. You could fit a lot of stuff here, which is useful.[or]Currently, your [storage] holds:[paragraph break][storage-hold][stopping]".
 
 check taking Star Storage: say "It's actually there to help avoid inventory bloat. Taking it would thus be counterproductive." instead;
+
+section par porridge
+
+the par porridge is an optional okaycold feastitem. description is "The box it's in doesn't even try to pretend it's not boring."
 
 chapter played plug
 
@@ -1181,6 +1193,8 @@ this is the show-misses rule:
 		the rule succeeds;
 	if sco-sassed-ceased is false:
 		say "You could've felt a bit more important with [b]SASSED CEASED[r] when you had the [feast].";
+	if sco-par-porridge is false:
+		say "You could've looked deeper in [star storage] for plain old [b]PAR PORRIDGE[r].";
 	if stare-score is 2:
 		say "You could've distracted the staller stare in Squalor Square a bit more with [b][if sco-baller-bear is false]BALLER BEAR[else if sco-caller-care is false]CALLER CARE[else]DOLLAR DARE[end if][r].";
 	if ooh-score < 7:
