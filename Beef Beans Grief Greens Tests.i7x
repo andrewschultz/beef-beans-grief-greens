@@ -12,13 +12,13 @@ test thru with "test trtr/test hh/test final/test allend".
 
 test jthru with "test w1a/test w2w1/test w2w2/out/pluck plate/in/out/test pair/test square/test mare/test shard/in/believe below/test bee/d/test thru".
 
-test wpretrawl with "test w1a/test w2w/out/pluck plate/test w2w3/test w2et/w/soy sauce/test w2s/n/penny piles/pie po/test w2n/s/flopper flea/veggie ville/test w2x".
+test wpretrawl with "test w1a/test w2w/out/pluck plate/test w2w3/test w2et/w/soy sauce/test w2s/n/penny piles/pie po/test w2n/s/test w2l1/sherry share/test w2l2/test w2x".
 
 test wtrawl with "test wpretrawl/test w3".
 
 test wthru with "test wtrawl/test w3b/test w4/test w5/test w6/test w7".
 
-test wmin with "test w1/test w2w/out/pluck plate/test w2w3/test w2em/w/soy sauce/test w2s/n/penny piles/pie po/test w2n1/test w2n2/s/flopper flea/veggie ville/test w3/test w4/test w5/test w6/test w7".
+test wmin with "test w1/test w2w/out/pluck plate/test w2w3/test w2em/w/soy sauce/test w2s/n/penny piles/pie po/test w2n1/test w2n2/s/test w2f/test w2l1/test w2l2/test w3/test w4/test w5/test w6/test w7".
 
 book verified tests that are part of the game
 
@@ -59,6 +59,9 @@ test w2n with "test w2n1/test w2n2/test w2n3".
 test w2n1 with "pondering pair/booboo/juju/muumuu/tutu".
 test w2n2 with "massive mitt".
 test w2n3 with "cuckoo/doodoo/poohpooh". [north]
+
+test w2l1 with "flopper flea/veggie ville".
+test w2l2 with "berry bear/cherry chair".
 
 test w2x with "chrome craw/d/honeyed ham/grey gruel/just jello/potpourri/u".
 
@@ -175,7 +178,7 @@ carry out diaging:
 		if fdesc of F is empty, say "[F] needs fdesc.";
 	the rule succeeds;
 
-a rhymable can be final-form. a rhymable is usually not final-form.
+[a rhymable can be final-form. a rhymable is usually not final-form.]
 
 Beef Beans Grief Greens Tests ends here.
 

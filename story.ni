@@ -765,6 +765,24 @@ the copper key is a rhymable. description is "You hope it opens passage below [h
 
 guess-table of copper key is table of bopper bee guesses.
 
+book Faerie Fair
+
+Faerie Fair is a room in Dome D'Aww. "A magical place! You wonder what [if full-faerie-score > 0]other [end if]sort of wonderful foods or consumables are available here."
+
+from-number of faerie fair is 2804. to-number of faerie fair is 5559.
+
+chapter cherries
+
+the cherries are an okaycold optional feastitem. understand "cherry" as cherries. description is "Lots of cherries, and the faeries even pitted them for you, too! Wow!"
+
+chapter verries
+
+the berries are an okaycold optional feastitem. understand "berry" as berries. description is "Lots of berries of all sorts of colors. You see ones you've tasted, ones you'd only heard about, and ones you had no clue about."
+
+chapter sherry
+
+the sherry is an okaycold optional feastitem. description is "several bottles of different flavors of sherry. Nothing you can get too drunk off."
+
 book Woe Worry Slow Slurry
 
 Woe Worry Slow Slurry is a room in Roam Raw. printed name is "Woe/Worry Slow Slurry". "You don't have to stay here, you know. You still worry about missing anything and if you look rude leaving."

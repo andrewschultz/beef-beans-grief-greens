@@ -261,6 +261,14 @@ section Ooh Ooh
 to decide which number is ooh-score:
 	decide on (boolval of sco-booboo) + (boolval of sco-cuckoo) + (boolval of sco-doodoo) + (boolval of sco-juju) + (boolval of sco-muumuu) + (boolval of sco-poohpooh) + (boolval of sco-tutu)
 
+section Faerie Fair
+
+to decide which number is core-faerie-score:
+	decide on (boolval of sco-cherry-chair) + (boolval of sco-berry-bear);
+
+to decide which number is full-faerie-score:
+	decide on (boolval of sco-cherry-chair) + (boolval of sco-berry-bear) + (boolval of sco-sherry-share);
+
 section Happy Hall
 
 to decide which number is hall-guest-score:

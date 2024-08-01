@@ -59,6 +59,9 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "penny"	"piles"	--	--	false	true	true	false	sty sto	vc-penny-piles rule	vr-penny-piles rule	--	--
 "pie"	"po"	"pi/poe"	vh-pi-poe rule	false	true	true	false	sty sto	vc-pie-po rule	vr-pie-po rule	--	"You can buy a [b]PIE PO[r] [once-now of vc-pie-po rule] you have currency."
 "veggie"	"ville"	--	--	false	true	true	false	edgy ill	vc-veggie-ville rule	vr-veggie-ville rule	--	"You can visit [b]VEGGIE VILLE[r] [once-now of vc-veggie-ville rule] the bopper bee isn't distracting you."
+"berry"	"bear"	--	--	false	true	true	false	faerie fair	vc-berry-bear rule	vr-berry-bear rule	--	--
+"cherry"	"chair"	--	--	false	true	true	false	faerie fair	vc-cherry-chair rule	vr-cherry-chair rule	--	--
+"sherry"	"share"	--	--	false	true	false	false	faerie fair	vc-sherry-share rule	vr-sherry-share rule	--	--
 "soy"	"sauce"	"saws"	vh-soy-saws rule	false	true	true	false	toy toss	vc-soy-sauce rule	vr-soy-sauce rule	--	--
 "pot"	"pourri"	--	--	false	true	false	false	slow slurry	vc-potpourri rule	vr-potpourri rule	"potpourri"	--
 "honeyed"	"ham"	--	--	false	true	false	false	slow slurry	vc-honeyed-ham rule	vr-honeyed-ham rule	--	--
@@ -966,7 +969,7 @@ this is the vr-soy-sauce rule:
 	now player has soy sauce;
 	drop-player-at Wandering Where;
 
-chapter edgy ill scoring
+chapter edgy ill hedge-y hill scoring
 
 a goodrhyme rule (this is the vc-veggie-ville rule):
 	if player is not in edgy ill, unavailable;
@@ -978,10 +981,61 @@ a goodrhyme rule (this is the vc-veggie-ville rule):
 this is the vr-veggie-ville rule:
 	now sco-veggie-ville is true;
 	say "You realize that the fruit and vegetable groups are sorely underrepresented--well, the greens, at least. It's time to fix that!";
-	say "[line break]You know there will be many stores in the distance. So you begin your trek. On the way you ask the way to Veggie Ville. People are helpful.[paragraph break]Once you get there, you worry you have no money to pay. But when they see the [feast], they recognize what you are here for. Why, they have just the thing: veggies and fruits of irregular shapes, which get thrown out anyway!";
-	say "[line break]They're impressed with what you've gotten so far. They deem you a worthy leader of the ceremony. They wish you luck and provide directions back...";
+	say "[line break]You know there will be many stores in the distance. So you begin your trek. On the way you ask the way to Veggie Ville. People are helpful.[paragraph break]Once you get there, you worry you have no money to pay. But when they see the [feast], they recognize what you are here for. Why, they have just the thing: veggies of irregular shapes, which get thrown out anyway!";
+	say "[line break]They're impressed with what you've gotten so far. You are grateful, but ... well, it's a bit awkward. One major food group is still missing.";
+	say "'Oh!' you hear. 'The faeries can fix that!' They provide detailed instructions on how to get home, but first, a detour to ...";
 	now player has veggies;
-	drop-player-at Wandering Where;
+	move player to Faerie Fair;
+
+chapter faerie fair scoring
+
+to fruit-check:
+	say "[line break]";
+	if core-faerie-score is 2:
+		say "You've got all you need. Your list of foods now feels very balanced. Back you go to more familiar places.";
+		drop-player-at Wandering Where;
+	else:
+		say "Well, you feel like you could use some more fruits. The faeries haven't booted you yet.";
+
+a goodrhyme rule (this is the vc-berry-bear rule):
+	if player is not in faerie fair, unavailable;
+	if sco-berry-bear is true:
+		vcal "You already have plenty of berries!";
+		already-done;
+	ready;
+
+this is the vr-berry-bear rule:
+	now sco-berry-bear is true;
+	say "You summon the berry bear, who quite joyfully gives you all manner of berries, common and obscure. It almost won't shut up about which go well with what.";
+	now player has berries;
+	fruit-check;
+	decrease to-number of faerie fair by 2754;
+
+a goodrhyme rule (this is the vc-cherry-chair rule):
+	if player is not in faerie fair, unavailable;
+	if sco-cherry-chair is true:
+		vcal "You already have enough cherries!";
+		already-done;
+	ready;
+
+this is the vr-cherry-chair rule:
+	now sco-cherry-chair is true;
+	say "You're unclear whether or not you'll find a dignitary who tell you all you want to know about cherries and then some, or some giant chair with cherries piled way high. Surprisingly, it's both. It's a lot to carry.";
+	now player has cherries;
+	fruit-check;
+	decrease to-number of faerie fair by 2805;
+
+a goodrhyme rule (this is the vc-sherry-share rule):
+	if player is not in faerie fair, unavailable;
+	if sco-sherry-share is true:
+		vcal "You don't want to overdo the alcohol, here.";
+		already-done;
+	ready;
+
+this is the vr-sherry-share rule:
+	now sco-sherry-share is true;
+	say "The faeries seem impressed and give you a bunch of bottles of different brands of sherry. It's sort of fruity-tasting, so it sort of counts as fruit.";
+	now player has sherry;
 
 chapter slow slurry scoring
 
