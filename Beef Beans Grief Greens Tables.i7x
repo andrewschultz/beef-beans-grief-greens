@@ -23,7 +23,6 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "squandering"	"square"	--	--	false	true	true	false	wandering where	vc-squandering-square rule	vr-squandering-square rule	--	--
 "maundering"	"mare"	"mayor"	vh-maundering-mayor rule	false	true	true	false	wandering where	vc-maundering-mare rule	vr-maundering-mare rule	--	--
 "pondering"	"pair"	"pare/pear"	vh-pondering-pare-pear rule	false	true	true	false	wandering where	vc-pondering-pair rule	vr-pondering-pair rule	--	--
-"flopper"	"flea"	"flee"	vh-flopper-flee rule	false	true	true	false	wandering where	vc-flopper-flea rule	vr-flopper-flea rule	--	--
 "chrome"	"craw"	--	--	false	true	false	false	wandering where	vc-chrome-craw rule	vr-chrome-craw rule	--	"You can open the [b]CHROME CRAW[r] [here-in of wandering] [if sides-visited >= 4]now[else]once[end if] you've explored everywhere you can aboveground."
 "massive"	"mitt"	--	--	false	true	true	false	Ooh Ooh	vc-massive-mitt rule	vr-massive-mitt rule	--	--
 "baller"	"bear"	"bawler/bare"	--	false	true	true	false	squalor square	vc-baller-bear rule	vr-baller-bear rule	--	--
@@ -59,7 +58,9 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "pluck"	"plate"	--	--	false	true	true	false	stuck state	vc-pluck-plate rule	vr-pluck-plate rule	--	--
 "penny"	"piles"	--	--	false	true	true	false	sty sto	vc-penny-piles rule	vr-penny-piles rule	--	--
 "pie"	"po"	"pi/poe"	vh-pi-poe rule	false	true	true	false	sty sto	vc-pie-po rule	vr-pie-po rule	--	"You can buy a [b]PIE PO[r] [once-now of vc-pie-po rule] you have currency."
+"flopper"	"flea"	"flee"	vh-flopper-flee rule	false	true	true	false	wandering where	vc-flopper-flea rule	vr-flopper-flea rule	--	--
 "veggie"	"ville"	--	--	false	true	true	false	edgy ill	vc-veggie-ville rule	vr-veggie-ville rule	--	"You can visit [b]VEGGIE VILLE[r] [once-now of vc-veggie-ville rule] the bopper bee isn't distracting you."
+"topper"	"tea"	--	vh-topper-tee rule	false	true	false	false	edgy ill	vc-topper-tea rule	vr-topper-tea rule	--	--
 "berry"	"bear"	--	--	false	true	true	false	faerie fair	vc-berry-bear rule	vr-berry-bear rule	--	--
 "cherry"	"chair"	--	--	false	true	true	false	faerie fair	vc-cherry-chair rule	vr-cherry-chair rule	--	--
 "sherry"	"share"	--	--	false	true	false	false	faerie fair	vc-sherry-share rule	vr-sherry-share rule	--	--
@@ -414,6 +415,11 @@ this is the vr-flopper-flea rule:
 	say "Wait! Something about the bee looks funny! Yes, it is not really a bee, but a less aggressive animal in disguise. Just knowing it is a flopper flea makes you less scared. Without fear, your running around gets more strategic, until it gets exhausted chasing you.[paragraph break]It buzzes and mumbles off. You're not surprised that, as it does, it drops a copper key, which you pick up.";
 	now player has copper key;
 	moot bopper bee;
+	if topper tea is touchable:
+		say "[line break]Oh yes. You pick up all the lovely packets of Topper Tea at your leisure.";
+		now player has topper tea;
+	else:
+		max-down;
 
 chapter ooh ooh scoring
 
@@ -1018,6 +1024,31 @@ this is the vr-veggie-ville rule:
 	say "'Oh!' you hear. 'The faeries can fix that!' They provide detailed instructions on how to get home, but first, a detour to ...";
 	now player has veggies;
 	move player to Faerie Fair;
+
+a goodrhyme rule (this is the vc-topper-tea rule):
+	unless flea-rhymes-near, unavailable;
+	if sco-topper-tea is true:
+		vcal "You already have more flavors of tea than you could have imagined!";
+		already-done;
+	if bopper bee is moot:
+		vcal "Oh no! The bopper bee/flopper flea held some topper tea, but it's gone now.";
+		already-done;
+	ready;
+
+to decide whether flea-rhymes-near:
+	if bopper bee is touchable, yes;
+	if copper key is touchable, yes;
+	if topper tea is touchable, yes;
+	no;
+
+this is the vh-topper-tee rule:
+	if flea-rhymes-near and the player's command includes "tee":
+		say "There are no golf courses above ground, and you don't need to dawdle like that. And the ritual room certainly won't be big enough.";
+
+this is the vr-topper-tea rule:
+	now sco-topper-tea is true;
+	say "Oh my goodness! The bopper bee shakes itself out as it chases you, and out fall all manner of packets of tea. The sheer variety of fonts and colors dazzles you. You can't pick them up yet, of course, with the bee chasing you. But once it's gone, it'll be no problem.";
+	move topper tea to Edgy Ill;
 
 chapter faerie fair scoring
 

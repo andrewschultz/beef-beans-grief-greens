@@ -219,6 +219,7 @@ to decide whether all-but-varnish-faces: [this is to determine if we launch varn
 	if stare-score < 3, no;
 	if slurry-score < 4, no;
 	if sco-par-porridge is false, no;
+	if sco-topper-tea is false, no;
 	yes;
 
 to decide which number is backtrack-score:

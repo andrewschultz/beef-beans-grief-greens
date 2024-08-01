@@ -808,9 +808,23 @@ chapter Bopper Bee
 
 the Bopper Bee is a rhymable in Edgy Ill. "A bopper bee floats about here, agile and bigger and more aggressive than you. You're not going anywhere until you've disposed of it.". description is "Something looks off about it. Perhaps it can be transformed into a flying animal less harmful."
 
+report examining Bopper Bee when sco-topper-tea is false:
+	say "It's a mean and greedy looking thing, really oddly bulky. So bulky, in fact, it might hide something that'd help the feast, something the regents despaired from asking for, because it seemed too superlative or too nice.";
+	continue the action;
+
 from-number of bopper bee is 2803. to-number of bopper bee is 2854.
 
 guess-table of bopper bee is the table of bopper bee guesses.
+
+chapter topper tea
+
+the topper tea is a rhymable. "Topper Tea, obviously very flavorful, lies here. But you can't pick it up until you've disposed of the bee.". description is "So many sub-brand names, though Topper Tea is the main one. So many flavors you don't even know what they taste like, but you want to. So many packet colors and, well, even teabag shapes!"
+
+check taking topper tea when player does not have topper tea: say "You'll take the tea with the bee gone." instead;
+
+from-number of topper tea is 2803. to-number of topper tea is 2854.
+
+guess-table of topper tea is the table of bopper bee guesses.
 
 chapter Copper Key
 
@@ -1242,6 +1256,8 @@ this is the show-misses rule:
 			say "The fussed fellow had [b]JUST JELLO[r] for you.";
 		if sco-potpourri is false:
 			say "The smell all around [slurry] was [b]POTPOURRI[r].";
+	if sco-topper-tea is false:
+		say "You could've also shaken the bopper bee down for [b]TOPPER TEA[r].";
 	if not all-but-varnish-faces:
 		say "You didn't get all the aboveground points, but if you had, it would've unlocked two other bonus points.";
 	else if backtrack-score < 2:

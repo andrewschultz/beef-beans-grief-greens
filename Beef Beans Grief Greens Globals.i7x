@@ -6,7 +6,7 @@ volume variables
 
 core-max is 61.
 
-max-bonus is 14.
+max-bonus is 15.
 
 entry-in-series is 8.
 
@@ -157,6 +157,8 @@ sco-pie-po is a truth state that varies.
 chapter Hedge-Y Hill globals
 
 sco-veggie-ville is a truth state that varies.
+
+sco-topper-tea is a truth state that varies.
 
 chapter Faerie Fair globals
 
