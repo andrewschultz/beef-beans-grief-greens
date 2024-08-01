@@ -18,6 +18,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "grieve"	"grow"	"greave"	vh-greave-grow rule	false	true	true	false	reeve row	vc-grieve-grow rule	vr-grieve-grow rule	--	--
 "made|maid"	"mug"	--	--	false	true	true	false	reeve row	vc-made-mug rule	vr-made-mug rule	--	"You can find a [b]MADE MUG[r] [once-now of vc-made-mug rule] [yrrr]."
 "jade"	"jug"	--	--	false	true	true	false	reeve row	vc-jade-jug rule	vr-jade-jug rule	--	"You can find a [b]JADE JUG[r] [once-now of vc-jade-jug rule] [yrrr]."
+"par"	"porridge"	--	--	false	true	false	false	reeve row	vc-par-porridge rule	vr-par-porridge rule	--	--
 "laundering"	"lair"	--	--	false	true	true	false	wandering where	vc-laundering-lair rule	vr-laundering-lair rule	--	--
 "squandering"	"square"	--	--	false	true	true	false	wandering where	vc-squandering-square rule	vr-squandering-square rule	--	--
 "maundering"	"mare"	"mayor"	vh-maundering-mayor rule	false	true	true	false	wandering where	vc-maundering-mare rule	vr-maundering-mare rule	--	--
@@ -303,6 +304,20 @@ this is the vr-grieve-grow rule:
 	now sco-grieve-grow is true;
 	say "You reflect on things. You recognize too much of this is bad. All the same, it puts you in a mindset to do what you must do.";
 	declue-here-by 2804;
+
+section optional point
+
+a goodrhyme rule (this is the vc-par-porridge rule):
+	if player is not in reeve row, unavailable;
+	if sco-par-porridge is true:
+		vcal "You don't need a glut of porridge.";
+		already-done;
+	ready;
+
+this is the vr-par-porridge rule:
+	now sco-par-porridge is true;
+	say "Looking carefully through [the star storage], you find, indeed, some par porridge you'd otherwise have missed. It, or the product on the box (it's instant porridge, you see,) looks astoundingly bland, even for porridge. But then again, since the planned feast isn't meant to be a raucous party, some no-fun foods probably should be an option.";
+	move par porridge to hidey house;
 
 chapter wandering where scoring
 

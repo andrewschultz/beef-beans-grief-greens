@@ -33,8 +33,8 @@ test p6 with "test p5/test w6".
 
 chapter start
 
-test w1 with "x/made mug/jade jug/leave lo". [start of game]
-test w1a with "x/made mug/jade jug/sassed ceased/leave lo". [start of game with bonus points]
+test w1 with "x/x ffss/made mug/jade jug/leave lo". [start of game]
+test w1a with "x/x ffss/made mug/jade jug/sassed ceased/par porridge/leave lo". [start of game with bonus points]
 
 chapter tests for wandering where branches
 

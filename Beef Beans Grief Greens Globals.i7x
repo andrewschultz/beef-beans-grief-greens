@@ -6,7 +6,7 @@ volume variables
 
 core-max is 61.
 
-max-bonus is 13.
+max-bonus is 14.
 
 entry-in-series is 8.
 
@@ -69,6 +69,10 @@ section oven/guide-specific globals
 
 sco-prune-pride is a truth state that varies.
 sco-spoon-spied is a truth state that varies.
+
+section optional globals
+
+sco-par-porridge is a truth state that varies.
 
 chapter Wandering Where globals
 
@@ -154,6 +158,12 @@ chapter Hedge-Y Hill globals
 
 sco-veggie-ville is a truth state that varies.
 
+chapter Faerie Fair globals
+
+sco-berry-bear is a truth state that varies.
+sco-cherry-chair is a truth state that varies.
+sco-sherry-share is a truth state that varies.
+
 chapter Slow Slurry globals
 
 sco-potpourri is a truth state that varies.
@@ -194,10 +204,6 @@ sco-repeat-repel is a truth state that varies.
 eet-ell is a number that varies. [ negative = hell, positive = swell, neutral = repel ]
 
 chapter unsorted globals
-
-sco-berry-bear is a truth state that varies.
-sco-cherry-chair is a truth state that varies.
-sco-sherry-share is a truth state that varies.
 
 volume test globals
 

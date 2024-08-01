@@ -214,10 +214,11 @@ section general
 to decide which number is sides-visited:
 	decide on number of visited rooms in Dome D'Aww; [this is one that keeps fooling me when I come back to it. The point is: each room in DD appears after you solve a wandroom. You need to solve 4 of each. Sides-visited = 4 is when Chrome Craw opens.]
 
-to decide whether all-but-varnish-faces:
+to decide whether all-but-varnish-faces: [this is to determine if we launch varnish and faces. sco-sassed-ceased/SASSED CEASED is not included because it can still be done before the ceremony starts.]
 	if ooh-score < 7, no;
 	if stare-score < 3, no;
 	if slurry-score < 4, no;
+	if sco-par-porridge is false, no;
 	yes;
 
 to decide which number is backtrack-score:
