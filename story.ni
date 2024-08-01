@@ -939,12 +939,12 @@ book abouing
 
 carry out abouting:
 	say "[this-game] is entry [entry-in-series] of [pprr]. It was written for ParserComp 2024.";
-	say "[line break]In such a long series, there's the possibility the concept may get stale. Puzzles overlap. I recognize a word I rhymed before, and I fail to recognize another. But then I also see, oh, this rhyme chain works well. It might be worth writing.";
-	say "[line break]There is a ceiling to all this, though, and a temptation to think, why bother? I said I wouldn't write another game without a specific theme, and, well, when I heard 'beef and beans' I made the mental rhyme in my head and said, no, no way, I couldn't extend it to a whole feast, could I?";
-	say "[line break]With the seiries, I worry I'm stopping too late instead of too soon. But I am pleased with what I have, and I hope you are, too. There was an opportunity for a weird little story. So I hope it flies for you.";
+	say "[line break]In such a long series, there's the possibility the concept may get stale. Puzzles overlap. I recognize a word I rhymed before, and I fail to recognize another. But then I also see, oh, this rhyme chain works well. It might be worth writing. There's also an issue of 'this rhyme, or something close to it, has been done before' versus 'this is a new rhyme, but the reason I didn't do it before is, it was too much of a stretch.'";
+	say "[line break]There's obviously a finite combination of rhymes, and with it, and a temptation to think, why bother? I said I wouldn't write another game without a specific theme, and, well, when I heard 'beef and beans' I made the mental rhyme in my head and said, no, no way, I couldn't extend it to a whole feast, could I?";
+	say "[line break]With the series, I worry I'm stopping too late instead of too soon. But I am pleased with what I have, and I hope you are, too. There was an opportunity for a weird little story. So I hope it flies for you.";
 	say "[line break]The other [pprr] entries are [series-names]. I hope you make time to play them if you haven't, though if you're playing this during ParserComp, do look at all the other entries there first.";
 	say "[line break]As for ParserComp, I'm not thrilled with the time frame I used to publish BBGG. I thought it'd be much smaller than it wound up being. Part of me said 'Oh, don't write another IFComp entry like this. People will get sick of this.' And BBGG felt parser-y. So I rushed some things, and I had a lot of scope creep. But I hope there is enough there, especially in later versions.";
-	say "[line break]To report bugs, email me at blurglecruncheon@email.com, or go to http://github.com/andrewschultz/beef-beans-grief-greens. Transcripts are also appreciated, though they may take a while.";
+	say "[line break]To report bugs, email me at blurglecruncheon@email.com, or go to http://github.com/andrewschultz/beef-beans-grief-greens. Transcripts are also appreciated, though they may take a while to process. Sometimes something that seems like a small error uncovers something bigger.";
 
 book creditsing
 
@@ -970,6 +970,13 @@ carry out verbsing:
 	say "[line break][b]T[r] lets you talk to people or entities, but it's just for fun.";
 	say "[line break]Useful meta-verbs: [b]OPTS[r] gives game options, and [b]META[r] gives general information commands.";
 	the rule succeeds;
+
+book versioning
+
+carry out versioning:
+	say "Release 1 of [this-game] was published June 30, 2024, for ParserComp. I submitted a bug-fix update just before it closed on July 31, 2024. There was no new content, but perhaps the accumulated tweaks were enough for a Release 2.";
+	say "Release 2 was published on August 1, 2024, after adding features and additional points I'd brainstormed over the course of ParserComp. It wasn't intended to be fully bug-free, but it was intended to add ease-of-play as well as a type of food I'd forgotten. It had two more necessary points and five more optional points, as well as [the star storage] to reduce inventory clutter. It also still has some placeholders for good guesses I'd like to tweak.";
+	say "Release 3 is expected to be published soon after Release 2. It should fill in all good guesses and track down major bugs left.";
 
 book xyzzying
 
