@@ -67,7 +67,7 @@ mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 table of happy hall guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 "appy"	"all"	--	false	--	"You have heard rumors other worlds with an odd quasi-magic called technology and the results when everyone becomes too dependent on it, or uses it instead of getting to know others."
-"crappy"	"crawl"	--	false	--	"Minor profanities often help you see what you really need to do. So why not indulge a bit?"
+"crappy"	"crawl"	--	false	--	"[if player is in trappy trawl]Minor profanities often help you see what you really need to do. So why not indulge a bit?[else]Whining about your journey here would violate the feast's decorum.[end if]"
 "happy"	"hall"	in-trappy-trawl rule	false	--	"Yes, that seems like where you need to go. But you'll need to discover a different mechanism to get there."
 "mappy"	"mall"	--	false	--	"You have heard rumors of a grand indoor venue where people need a map to get through. And of an eight-bit policeman mouse who chases cats through an odd house."
 
@@ -77,17 +77,17 @@ this is the in-trappy-trawl rule:
 
 table of hi ho guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
-"buy/bye"	"bow/bo"	--	false	--	"[good-guess]."
-"cry"	"crow"	--	false	--	"[good-guess]."
+"buy/bye"	"bow/bo"	--	false	--	"You don't need to put a bow on the feast to prettify it."
+"cry"	"crow"	--	false	--	"The feast ahead is a solemn meal, but nobody will need to eat crow."
 "die"	"dough|doh|doe"	--	false	--	"Bri-Bro fails to serve up a killer entree, meat- or pastry-based."
-"fie"	"foe|pho"	--	false	--	"[good-guess]."
+"fie"	"foe|pho"	--	false	--	"Nobody's the enemy here, and this place isn't classy enough to grok what pho is."
 "guy"	"go"	--	false	--	"Bri-Bro is staying."
 "lie"	"low"	--	false	--	"No, waiting around won't make Bri-Bro give you a handout so you can leave."
-"my"	"mow"	--	false	--	"[good-guess]."
+"my"	"mow"	--	false	--	"No grass needs mowing, but if it did, Bri-Bro would be too cheap to give you store credit."
 "nigh"	"no"	--	false	--	"You complain to yourself you're never going to buy anything. Sometimes this helps, emotionally, or to kick you into 'but what if I...' mode."
-"rye"	"roe"	--	false	--	"[good-guess]."
+"rye"	"roe|row"	--	false	--	"This is a seedy food store, not a seedy liquor store."
 "shy"	"show"	--	false	--	"Bri-Bro, for better or worse, does not give an oversolicitous 'May I help you?'"
-"sly"	"slow"	--	false	--	"[good-guess]."
+"sly"	"slow"	--	false	--	"Bri-Bro is not the impatient type. He'll figure whatever your plan is."
 "sigh"	"so"	--	false	--	"Bri-Bro is not moved to generosity by your poor-little-me act."
 "tie"	"toe"	--	false	--	"You check to see if Bri-Bro's footwear has laces. It does not. Foiled!"
 "why"	"woe|whoah|whoa"	--	false	--	"You question why Bri-Bro won't give you something for free or just tell you what you want. But you don't do anything super-crazy like wonder why you bothered to get so far through this game. (I'm glad you did, though, so thanks!)"
@@ -162,12 +162,12 @@ mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 table of bopper bee guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 "copper"	"key"	by-bee rule	false	--	"Why, a copper key would be just the thing! One that somehow magically fits the lock to the basement! No, I'm afraid it'll be a bit trickier than that. Perhaps the bopper bee holds a copper key, but it's not giving up just because you ask. It needs to be exposed or taken down somehow."
-"hopper"	"he|hee"	--	false	--	"Frog legs aren't on the menu, and you don't need a hopper to store stuff, and you [if sco-flopper-flea is false]can't tell[else]couldn't have told[end if] the bee's gender anyway."
+"hopper"	"he|hee"	--	false	--	"Frog legs aren't on the menu, and with [the storage], you don't need a hopper to store stuff. Plus, you [if sco-flopper-flea is false]can't tell[else]couldn't have told[end if] the bee's gender anyway."
 "mopper"	"me"	--	false	--	"[if sco-flopper-flea is true]Boasting is most ungainly[else]The bopper bee doesn't respond to taunts. Not that you're much of a taunter, anyway[end if]."
 "pauper|popper"	"pee|pea"	--	false	--	"No, one pea couldn't make a meal or even help."
 "plopper"	"plea"	--	false	--	"[if sco-flopper-flea is true]You have no need of fertilizer to grow the foods you need[else]Well, that'd be one way to get stuff from the flopper flea. Not the most sanitary, but it'd be a way[end if]."
 "sopper"	"sea"	--	false	--	"You find no path to a coast."
-"shopper"	"she|shee"	--	false	--	"There is neither need for extended shopping nor a mall to do said shopping in."
+"shopper"	"she|shee"	--	false	--	"There is neither need for extended shopping nor a mall to do said shopping in, nor speculation on which gender likes shopping more."
 "whopper"	"whee"	--	false	--	"You tell a lie, and the bee's loud buzzing leaves a crackly 'Sir/Ma'am, this is an Arby's.' in your head.[paragraph break]Whatever an Arby's is."
 
 this is the by-bee rule:

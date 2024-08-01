@@ -464,7 +464,7 @@ the massive mitt is an oventhing. description is "It's not just big, it's well-p
 
 book Dove 'N Doubt
 
-Dove N Doubt is a wandroom in Roam Raw. wanddir of Dove N Doubt is west. printed name of Dove N Doubt is "Dove [']N Doubt". "This is obviously a front for illegal activity. Nobody would actually pay money to visit this establishment. I mean, the only worse name could be the Guv [']n Gout."
+Dove N Doubt is a wandroom in Roam Raw. wanddir of Dove N Doubt is west. printed name of Dove N Doubt is "Dove [']N Doubt". "This is obviously a front for illegal activity. Nobody would actually pay money to visit this establishment. I mean, the only worse name could be the Guv [']N Gout."
 
 check going east in dove n doubt when lovin lout is in dove n doubt: say "The lovin['] lout waves to you and points to the oven. They seem eager to help with physical activity, and you suddenly feel a bit rude at the thought of keeping them waiting." instead;
 
@@ -1221,7 +1221,7 @@ this is the show-misses rule:
 	say "Note that, because there are three different endings, you'll automatically have 'missed' two of them, which I don't want to spoil. You can [b]UNDO[r] to track the others down.";
 	say "[line break]";
 	if cur-bonus is max-bonus:
-		say "You found everything before the finale, though. Good job!";
+		say "However, you found all the hidden points before the finale. Great job!";
 		the rule succeeds;
 	if sco-sassed-ceased is false:
 		say "You could've felt a bit more important with [b]SASSED CEASED[r] when you had the [feast].";

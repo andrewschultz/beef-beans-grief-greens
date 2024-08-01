@@ -226,7 +226,7 @@ this is the vr-believe-below rule:
 
 a goodrhyme rule (this is the vc-leave-lo rule):
 	if last least fast feast is not examined:
-		vcp "You want to get going, but this feels like jumping the gun. It might be a good idea to have some idea what you're looking for. You were given instructions.";
+		vcp "You want to get going, but this feels like jumping the gun. It might be a good idea to have some idea what you're looking for. You were given instructions to examine.";
 		not-yet;
 	if star storage is not examined:
 		vcp "Whoah! That list of needed stuff is really long! You fear having to juggle a whole lot as you walk around goodness knows where.[paragraph break]Perhaps examining things here in Reeve Row will help you feel more at ease.";
@@ -323,7 +323,7 @@ this is the vr-par-porridge rule:
 
 to porridge-gruel-comp:
 	if sco-par-porridge is true and sco-grey-gruel is true:
-		say "[line break]Well. Isn't this a thing, now? Porridge and gruel! You always assumed the two were the same. Then again, you also didn't see the difference between skim milk and 1% milk for the longest time. And you were also chided for not minding the difference between butter and margarine.[paragraph break]You take a bit of time for self-enlightenment to find that gruel may, in fact, just be a watery version of porridge. Then you sort of wonder why you bothered.[paragraph break]But then looking on the porridge ingredients box, you notice it has a few spices and such. Spices [the fool] would hate to see poured in the gruel. So that's something."
+		say "[line break]Well. Isn't this a thing, now? Porridge and gruel! You always assumed the two were the same. Then again, you also didn't see the difference between skim milk and 1% milk for the longest time. And you were also chided for not minding the difference between butter and margarine.[paragraph break]You take a bit of time for self-enlightenment to find that gruel may, in fact, just be a watery version of porridge. Then you sort of wonder why you bothered.[paragraph break]But then looking on the porridge ingredients box, you notice it has a few spice packets and such. Spices [the fool] would hate to see poured in the gruel. So that's something.[paragraph break]After some thought, you decide it'd be a-okay to add some unused berries to the unspiced porridge. The faeries gave you so many."
 
 chapter wandering where scoring
 
@@ -987,7 +987,7 @@ this is the vh-pi-poe rule:
 
 this is the vr-pie-po rule:
 	now sco-pie-po is true;
-	say "You realize you're kind of broke, and you figure out what the cheapest item on the menu might be. It looks surprisingly good, and it's large, too.[paragraph break]Bri-Bro whispers to you, 'So many people demand the house special. I give them something frou-frou, but it's not really what I enjoy cooking. Now I'll have to pretend to kick you out.' He pushes you out of the establishment, but you complain you don't know the way back. Fortunately, he helps you...";
+	say "You realize you're kind of broke, and you figure out what the cheapest item on the menu might be. It looks surprisingly good, and it's large, too.[paragraph break]Bri-Bro hands it to you with a 'My made pie! Paid!' Then he whispers to you, 'So many people demand the house special. I give them something frou-frou, but it's not really what I enjoy cooking. Now I'll have to pretend to kick you out.' He pushes you out of the establishment, but you complain you don't know the way back. Fortunately, he helps you...";
 	now player has pie po;
 	moot penny piles;
 	drop-player-at Wandering Where;
@@ -1018,7 +1018,7 @@ a goodrhyme rule (this is the vc-veggie-ville rule):
 
 this is the vr-veggie-ville rule:
 	now sco-veggie-ville is true;
-	say "You realize that the fruit and vegetable groups are sorely underrepresented--well, the greens, at least. It's time to fix that!";
+	say "You realize that the fruit and vegetable groups are sorely underrepresented in your haul so far. It's time to fix that! Well, the greens, at least.";
 	say "[line break]You know there will be many stores in the distance. So you begin your trek. On the way you ask the way to Veggie Ville. People are helpful.[paragraph break]Once you get there, you worry you have no money to pay. But when they see the [feast], they recognize what you are here for. Why, they have just the thing: veggies of irregular shapes, which get thrown out anyway!";
 	say "[line break]They're impressed with what you've gotten so far. You are grateful, but ... well, it's a bit awkward. One major food group is still missing.";
 	say "'Oh!' you hear. 'The faeries can fix that!' They provide detailed instructions on how to get home, but first, a detour to ...";
@@ -1565,6 +1565,8 @@ to hall-move (rh - a rhymeperson):
 		set pronoun him to rh;
 	if other-guy of rh is in Happy Hall:
 		say "[line break][rh] and [other-guy of rh] acknowledge each other with a nod. But they don't get too close.";
+	if hall-guest-score is 4 and sco-sassed-ceased is false:
+		say "[line break]Everyone's here. It is just about time for the ceremony to begin. You look at [least]. You feel proud you did all that was requested[if cur-bonus > 0] and then some[end if]. Perhaps you can treat yourself to a bit of self-praise before handing it over. Not for pride, but to feel confidence going forwar, in big things and small.";
 
 chapter Compete Compel
 
