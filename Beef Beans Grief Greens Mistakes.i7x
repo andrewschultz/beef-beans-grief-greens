@@ -29,6 +29,15 @@ table of edgy ill guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 "wedgie"	"will"	--	false	--	"You pause in fear a moment. That'd hurt. Fortunately, there are no such predators around."
 
+table of faerie fair guesses
+mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
+"hairy"	"hare"	--	false	--	"Most of them are. Well, furry. But what could a hare give you? You already have the carrot cake."
+"marry|merry"	"mayor|mare"	--	false	--	"With your tasks, there's no time for celebrations here right now, eccentric or normal."
+"parry|perry"	"pear"	--	false	--	"Right food group, but you need more than one fruit."
+"scary"	"scare"	--	false	--	"It's so peaceful here. Why would you want to introduce a double-scare?"
+"sweary"	"swear"	--	false	--	"The faerie magic blunts the force of your attempted swears. Or mayb you were just never good at forceful swearing, anyway. A good thing to be lousy at."
+"wary"	"wear|ware"	--	false	--	"There's no need to be suspicious here."
+
 table of gap goo guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 "app"	"ooh"	--	false	--	"You don't need to be wowed by technology at the moment."
@@ -252,7 +261,7 @@ mist-regex	mist-rule	got-yet	leet-rule	mist-txt
 "zsazsa"	--	false	--	"[zl] can't resurrect Ms. Gabor[shirt-riff]."
 
 to say shirt-riff:
-	say ". Also, riffing on [zl]'s shirts seem unnecessary. Better to focus on what they have in common with the location.[paragraph break]But of course you can rack up good tries if you want[or][stopping]"
+	say "[one of]. Also, riffing on [zl]'s shirts seem unnecessary. Better to focus on what they have in common with the location.[paragraph break]But of course you can rack up good tries if you want[or][stopping]"
 
 table of rayed rug guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt

@@ -771,6 +771,8 @@ Faerie Fair is a room in Dome D'Aww. "A magical place! You wonder what [if full-
 
 from-number of faerie fair is 2804. to-number of faerie fair is 5559.
 
+guess-table of Faerie Fair is table of faerie fair guesses.
+
 chapter cherries
 
 the cherries are an okaycold optional feastitem. understand "cherry" as cherries. description is "Lots of cherries, and the faeries even pitted them for you, too! Wow!"
