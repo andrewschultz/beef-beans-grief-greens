@@ -8,10 +8,10 @@ Currently on release 2, which adds 2 more core points (missing food group) and a
 
 Others are
 
-# Very Vile Fairy File
-# Quite Queer Night Near
-# Low-Key Learny Jokey Journey
-# Civil Seeming Drivel Dreaming
-# There Those Dare Doze
-# Bright Brave Knight Knave
-# Taller Tech Mauler Mech.
+1. [Very Vile Fairy File](http://github.com/andrewschultz/very-vile-fairy-file)
+2. [Quite Queer Night Near](http://github.com/andrewschultz/quite-queer-night-near)
+3. [Low-Key Learny Jokey Journey](http://github.com/andrewschultz/low-key-learny-jokey-journey)
+4. [Civil Seeming Drivel Dreaming](http://github.com/andrewschultz/civil-seeming-drivel-dreaming)
+5. [There Those Dare Doze](http://github.com/andrewschultz/there-those-dare-doze)
+6. [Bright Brave Knight Knave](http://github.com/andrewschultz/bright-brave-knight-knave)
+7. [Taller Tech Mauler Mech](http://github.com/andrewschultz/taller-tech-mauler-mech)
