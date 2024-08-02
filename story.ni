@@ -279,6 +279,12 @@ check taking some soda:
 
 guess-table of soda is table of some soda guesses.
 
+chapter grift gorp
+
+there is a rhymable called geared gorp in Reeve Row. it is scenery. description is "[one of]GORP. Good Old Raisins and Peanuts. Basic nutrition for a long outing such as yours.[paragraph break]But it's[or]It's[stopping] not just any GORP, though. The elders explained the geared gorp was, well, geared for helping you get through your assignment as quickly as possible.[paragraph break]Of course, the downside would be, you'd forget any moments along the way that might make you happy. That would even include the ceremony! All that would be left would be reflections on someone else, or others, you lost.[paragraph break]But perhaps that could work well, if there are other things you need or want to remember, and the exhaustion of a long adventure might block them out.[paragraph break]The elders also told you it required a magic phrase to say before eating it, just so you were sure you knew what you were doing."
+
+from-number of geared gorp is 2804. to-number of geared gorp is -2754.
+
 chapter goon guide
 
 the goon guide is a rhymable. description is "[one of]Now you've pruned your pride, you focus on the content of the goon guide. It tells you what to do to fix an oven and make very very tasty foods indeed[or]You revisit the goon guide to determine what you need[stopping].[paragraph break]There's even a handy checklist on the first page!"

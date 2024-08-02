@@ -213,6 +213,8 @@ eet-ell is a number that varies. [ negative = hell, positive = swell, neutral = 
 
 chapter unsorted globals
 
+sco-weird-warp is a truth state that varies.
+
 volume test globals
 
 allow-win is a truth state that varies. allow-win is true.

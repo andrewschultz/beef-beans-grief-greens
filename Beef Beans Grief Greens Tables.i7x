@@ -20,6 +20,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "jade"	"jug"	--	--	false	true	true	false	reeve row	vc-jade-jug rule	vr-jade-jug rule	--	"You can find a [b]JADE JUG[r] [once-now of vc-jade-jug rule] [yrrr]."
 "par"	"porridge"	--	--	false	true	false	false	reeve row	vc-par-porridge rule	vr-par-porridge rule	--	--
 "come"	"coda"	--	--	false	true	false	true	reeve row	vc-come-coda rule	vr-come-coda rule	--	-- ["IDID" is true because I don't want to make doing everything and drinking soda an extra point]
+"weird"	"warp"	--	--	false	true	false	true	reeve row	vc-weird-warp rule	vr-weird-warp rule	--	--
 "laundering"	"lair"	--	--	false	true	true	false	wandering where	vc-laundering-lair rule	vr-laundering-lair rule	--	--
 "squandering"	"square"	--	--	false	true	true	false	wandering where	vc-squandering-square rule	vr-squandering-square rule	--	--
 "maundering"	"mare"	"mayor"	vh-maundering-mayor rule	false	true	true	false	wandering where	vc-maundering-mare rule	vr-maundering-mare rule	--	--
@@ -341,6 +342,19 @@ this is the vr-come-coda rule:
 		now all things carried by player are in Gazy Gap;
 		now player has Last Least Fast Feast;
 		move-and-min-check Trappy Trawl;
+
+a goodrhyme rule (this is the vc-weird-warp rule):
+	if player is not in reeve row, unavailable;
+	ready;
+
+this is the vr-weird-warp rule:
+	now sco-weird-warp is true;
+	say "It's a big decision, but, well, the elders assured you it was yours and yours alone. No guilt over copping out, for whatever reason. Perhaps some of their requests were unfair. They did their best, and they understood, you would, too.";
+	if core-score is 46:
+		say "[line break]While you're pretty sure you found everything you needed aboveground, you don't want to hog or remember the spotlight, or risk making a mistake. That would be too painful.";
+	else:
+		say "[line break]You check off what's [if core-score > 0]left[else]needed[end if] very efficiently indeed. While you don't stop to smell the flowers, you feel pleased with how you're getting stuff done without worrying. The people you meet drift in and out. You feel some guilt at ignoring them and being self-centered, but on the other hand, you did your job. About all you remember is being congratulated on a job well done, before being escorted to a final place where you get to think about things.";
+	move-and-min-check Compete Compel;
 
 chapter wandering where scoring
 
