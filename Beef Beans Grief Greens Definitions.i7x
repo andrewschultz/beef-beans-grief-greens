@@ -144,8 +144,7 @@ definition: a feastitem (called F) is feastlistable:
 	if F is ingrediential, no;
 	yes;
 
-
-chapter wandering
+chapter wandering and wandrooms
 
 a wandroom is a kind of room. A wandroom has a direction called wanddir.
 
@@ -308,6 +307,26 @@ to decide which number is final-guesses:
 to decide which number is pre-end-guess of (ru - a rule):
 	choose row with check-rule of ru in table of verb checks;
 	decide on boolval of think-cue entry;
+
+chapter max-down stub(s)
+
+to basic-trawl-max-score-check:
+	if sco-chrome-craw is false, max-down;
+	if sco-par-porridge is false, max-down;
+	if sco-veiled-vases is false, max-down;
+	if sco-gain-garnish is false, max-down;
+	decrease cur-max-bonus by (4 - slurry-score); [ max 4 ]
+	decrease cur-max-bonus by (7 - ooh-score); [ max 3 ]
+	decrease cur-max-bonus by (3 - stare-score); [ max 1 ]
+
+to move-and-min-check (rm - a room):
+	if rm is compete compel and sco-sassed-ceased is false, max-down;
+	basic-trawl-max-score-check;
+	repeat through table of verb checks:
+		if there is a best-room entry and best-room entry is rm, break;
+		if core entry is true and idid entry is false:
+			up-reg;
+	move player to rm;
 
 volume big rule
 
