@@ -427,6 +427,7 @@ this is the verb-checker rule:
 				blank out the core entry;
 				now zap-core-entry is false;
 			process the score and thinking changes rule;
+			process the remind warp undo rule;
 			if there is a core entry and core entry is false, check-lump-progress;
 			the rule succeeds;
 		if shut-scan is true, next;

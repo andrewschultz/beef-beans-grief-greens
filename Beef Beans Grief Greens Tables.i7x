@@ -334,6 +334,7 @@ a goodrhyme rule (this is the vc-come-coda rule):
 this is the vr-come-coda rule:
 	increment the turn count;
 	now sco-come-coda is true;
+	now i-warped is true;
 	say "You say the magic words and pop the can open. You wonder if you should have shaken it first, but you also wonder if that would kill the magic. No matter.";
 	if all-but-varnish-faces and sco-gain-garnish is true and sco-veiled-vases is true:
 		say "[line break]It's more a celebratory thing for finding everything than a need to warp (and good job there!) It tastes really good, so good, in fact, you don't even care you weren't awarded a point for figuring the phrase out. (Well, the description DID say so.)";
@@ -349,12 +350,17 @@ a goodrhyme rule (this is the vc-weird-warp rule):
 
 this is the vr-weird-warp rule:
 	now sco-weird-warp is true;
+	now i-warped is true;
 	say "It's a big decision, but, well, the elders assured you it was yours and yours alone. No guilt over copping out, for whatever reason. Perhaps some of their requests were unfair. They did their best, and they understood, you would, too.";
 	if core-score is 46:
 		say "[line break]While you're pretty sure you found everything you needed aboveground, you don't want to hog or remember the spotlight, or risk making a mistake. That would be too painful.";
 	else:
 		say "[line break]You check off what's [if core-score > 0]left[else]needed[end if] very efficiently indeed. While you don't stop to smell the flowers, you feel pleased with how you're getting stuff done without worrying. The people you meet drift in and out. You feel some guilt at ignoring them and being self-centered, but on the other hand, you did your job. About all you remember is being congratulated on a job well done, before being escorted to a final place where you get to think about things.";
 	move-and-min-check Compete Compel;
+
+this is the remind warp undo rule:
+	if i-warped is true:
+		say "[line break]This is a reminder that you can [b]UNDO[r] digesting the warp consumable if you want to.";
 
 chapter wandering where scoring
 
