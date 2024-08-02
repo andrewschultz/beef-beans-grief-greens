@@ -19,6 +19,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "made|maid"	"mug"	--	--	false	true	true	false	reeve row	vc-made-mug rule	vr-made-mug rule	--	"You can find a [b]MADE MUG[r] [once-now of vc-made-mug rule] [yrrr]."
 "jade"	"jug"	--	--	false	true	true	false	reeve row	vc-jade-jug rule	vr-jade-jug rule	--	"You can find a [b]JADE JUG[r] [once-now of vc-jade-jug rule] [yrrr]."
 "par"	"porridge"	--	--	false	true	false	false	reeve row	vc-par-porridge rule	vr-par-porridge rule	--	--
+"come"	"coda"	--	--	false	true	true	false	reeve row	vc-come-coda rule	vr-come-coda rule	--	--
 "laundering"	"lair"	--	--	false	true	true	false	wandering where	vc-laundering-lair rule	vr-laundering-lair rule	--	--
 "squandering"	"square"	--	--	false	true	true	false	wandering where	vc-squandering-square rule	vr-squandering-square rule	--	--
 "maundering"	"mare"	"mayor"	vh-maundering-mayor rule	false	true	true	false	wandering where	vc-maundering-mare rule	vr-maundering-mare rule	--	--
@@ -324,6 +325,25 @@ this is the vr-par-porridge rule:
 to porridge-gruel-comp:
 	if sco-par-porridge is true and sco-grey-gruel is true:
 		say "[line break]Well. Isn't this a thing, now? Porridge and gruel! You always assumed the two were the same. Then again, you also didn't see the difference between skim milk and 1% milk for the longest time. And you were also chided for not minding the difference between butter and margarine.[paragraph break]You take a bit of time for self-enlightenment to find that gruel may, in fact, just be a watery version of porridge. Then you sort of wonder why you bothered.[paragraph break]But then looking on the porridge ingredients box, you notice it has a few spice packets and such. Spices [the fool] would hate to see poured in the gruel. So that's something.[paragraph break]After some thought, you decide it'd be a-okay to add some unused berries to the unspiced porridge. The faeries gave you so many."
+
+a goodrhyme rule (this is the vc-come-coda rule):
+	if player is not in reeve row, unavailable;
+	ready;
+
+this is the vr-come-coda rule:
+	increment the turn count;
+	now sco-come-coda is true;
+	say "You say the magic words and pop the can open. You wonder if you should have shaken it first, but you also wonder if that would kill the magic. No matter.";
+	if all-but-varnish-faces and sco-gain-garnish is true and sco-veiled-vases is true:
+		say "[line break]It's more a celebratory thing for finding everything than a need to warp (and good job there!) It tastes really good, so good, in fact, you don't even care you weren't awarded a point for figuring the phrase out. (Well, the description DID say so.)";
+	else:
+		say "Everything's a blur. You're figuring out things to do left and right, gaining and using items as needed, but somehow it feels even more mechanical than it should, and the joy of adventuring just isn't there. But then it's a solemn feast. So you don't need that. It wouldn't pay to be all smiles and have the focus on yourself with stories of how fun it all was.";
+		repeat through table of verb checks:
+			if core entry is true and idid entry is false:
+				up-reg;
+		now all things carried by player are in Gazy Gap;
+		now player has Last Least Fast Feast;
+		move player to Trappy Trawl;
 
 chapter wandering where scoring
 

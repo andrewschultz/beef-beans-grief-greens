@@ -74,6 +74,10 @@ section optional globals
 
 sco-par-porridge is a truth state that varies.
 
+section warp globals
+
+sco-come-coda is a truth state that varies.
+
 chapter Wandering Where globals
 
 sco-pondering-pair is a truth state that varies.

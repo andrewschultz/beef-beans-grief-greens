@@ -286,6 +286,16 @@ mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 "slayed"	"slug"	--	false	--	"You look for insects to kill, to get your mind off the unexpected death of an actual person."
 "theyd"	"thug"	--	false	--	"You don't have time or emotional energy to focus on that right now."
 
+table of some soda guesses
+mist-1	mist-2	mist-regex (text)	mist-rule	got-yet	leet-rule	mist-txt
+--	--	"dumb doh duh"	--	false	--	"[impressive-soda]."
+--	--	"hum ho huh"	--	false	--	"[impressive-soda]."
+"(uh mo|um oh)"	"uh"	--	--	false	--	"[impressive-soda]."
+"yum"	"yoda"	--	--	false	--	"Changing unnecessary letters, you are."
+
+to say impressive-soda:
+	say "If you figured this joke good-guess without consulting the source, that is very good indeed! If not, [one of]you are close to figuring the actual warp command. Saying this or something like it will give you a eureka momentr[or]well, here is your eureka moment: [b]COME CODA[r][or]you spend [one of]some[or]a bit more[stopping] time wondering what took you so long. Or what the hell the author was thinking[stopping]."
+
 table of tree troop guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 "b|bee"	"boop"	--	false	--	"[good-guess]."

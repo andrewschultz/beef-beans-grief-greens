@@ -275,6 +275,16 @@ the played plug is an oventhing. description is "It's not just a plug, but a plu
 
 guess-table of played plug is table of rayed rug guesses.
 
+chapter some soda
+
+there is a singular-named rhymable called some soda in Reeve Row. "Some soda lies here, unopened. [if some soda is not examined]You recall it has magical powers[else]Just in case you need to get on with things[end if].". description is "One read of the label and you see the 'some' is not 'just any soda' but 'some' in the 'boy, that's some soda' sense! Of course, you can't imagine how it tastes, with all those bizarre artificial ingredients, but the fine print also mentions its magic powers which will help you get the minimum of things you need aboveground with, sadly, no memory of everything you got after you drank it.[paragraph break][one of]Why, yes, this is a deus ex machina for people who may've gotten bottled up and canned things in release 1.[paragraph break]But you have to figure the phrase to activate it. Said phrase requires no tortured spelling tricks.[paragraph break][i][bracket][b]NOTE[r][i] for completionists: using this phrase once you're ready for the feast is not a bonus point.[close bracket][r][line break][or]The catch is, you need a magic phrase.[stopping]"
+
+check taking some soda:
+	say "You can't bring yourself to take it. Soda isn't right for the feast. Besides, [if sco-sherry-share is true]you found a bubbly drink[else if faerie fair is visited]you missed a bubbly drink[else]there's a bubbly drink you can find along the way, if you're clever[end if].";
+	say "[line break][one of]It's not blasphemous or anything, it's just, well, humans introduced it, and the feast is for gnomes. Plus it makes non-humans burp even more. Which would ruin the solemnity of it all. [or][stopping]If you wish to use the soda to warp through, figure and say the phrase." instead;
+
+guess-table of soda is table of some soda guesses.
+
 chapter goon guide
 
 the goon guide is a rhymable. description is "[one of]Now you've pruned your pride, you focus on the content of the goon guide. It tells you what to do to fix an oven and make very very tasty foods indeed[or]You revisit the goon guide to determine what you need[stopping].[paragraph break]There's even a handy checklist on the first page!"
