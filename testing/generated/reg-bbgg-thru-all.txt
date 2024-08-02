@@ -15,6 +15,8 @@
 
 >x
 
+>x ffss
+
 >sassed ceased
 by one point
 
@@ -22,7 +24,7 @@ by one point
 Yes, you're glad you were given this responsibility, and people snickered about how flaky you were.
 
 >score
-You have scored a total of 1 out of 69 points and need 60 to win. You have found 1 of 10 bonus points so far.
+You have scored a total of 1 out of 76 points and need 62 to win. You have found 1 of 15 bonus points so far.
 
 >made mug
 by one point
@@ -33,7 +35,7 @@ A ray vanishes from the rug!
 Several rays on the rug (you'd say one-third) grow duller.
 
 >score
-You have scored a total of 2 out of 69 points and need 60 to win. You have found 1 of 10 bonus points so far.
+You have scored a total of 2 out of 76 points and need 62 to win. You have found 1 of 15 bonus points so far.
 
 >jade jug
 by one point
@@ -44,7 +46,7 @@ A ray vanishes from the rug!
 The rug's rays go from one-third dull to one-third bright.
 
 >score
-You have scored a total of 3 out of 69 points and need 60 to win. You have found 1 of 10 bonus points so far.
+You have scored a total of 3 out of 76 points and need 62 to win. You have found 1 of 15 bonus points so far.
 
 >leave lo
 by one point
@@ -57,7 +59,7 @@ Sometimes you just need the right time to say a simple phrase to get you going. 
 `Wandering ... Where?
 
 >score
-You have scored a total of 4 out of 69 points and need 60 to win. You have found 1 of 10 bonus points so far.
+You have scored a total of 4 out of 76 points and need 62 to win. You have found 1 of 15 bonus points so far.
 
 >in
 `Reeve Row
@@ -77,7 +79,7 @@ You think up a storm and realize, there is a way to such a place, though maybe i
 `Dove 'N Doubt
 
 >score
-You have scored a total of 5 out of 69 points and need 60 to win. You have found 1 of 10 bonus points so far.
+You have scored a total of 5 out of 76 points and need 62 to win. You have found 1 of 15 bonus points so far.
 
 >lovin lout
 by one point
@@ -87,7 +89,7 @@ A lovin' lout strolls sheepishly into view, not sure to explain whether they've 
 You take a closer look at the oven. It's missing a lot! You probably need to find bits and pieces to make it serviceable again.
 
 >score
-You have scored a total of 6 out of 69 points and need 60 to win. You have found 1 of 10 bonus points so far.
+You have scored a total of 6 out of 76 points and need 62 to win. You have found 1 of 15 bonus points so far.
 
 >shovin shout
 by one point
@@ -97,7 +99,7 @@ You and the lovin' lout get together and push the oven forward.
 Something seems to crumble loose. Success! You can probably move the oven more ambitiously now.
 
 >score
-You have scored a total of 7 out of 69 points and need 60 to win. You have found 1 of 10 bonus points so far.
+You have scored a total of 7 out of 76 points and need 62 to win. You have found 1 of 15 bonus points so far.
 
 >oven out
 by one point
@@ -110,7 +112,7 @@ The lovin' lout waits around, as if they suspect they could help you with one mo
 `Reeve Row
 
 >score
-You have scored a total of 8 out of 69 points and need 60 to win. You have found 1 of 10 bonus points so far.
+You have scored a total of 8 out of 76 points and need 62 to win. You have found 1 of 15 bonus points so far.
 
 >heave ho
 by one point
@@ -135,7 +137,7 @@ The trap door down is useless to tinker with until you find a key for it.
 >undo
 
 >score
-You have scored a total of 9 out of 69 points and need 60 to win. You have found 1 of 10 bonus points so far.
+You have scored a total of 9 out of 76 points and need 62 to win. You have found 1 of 15 bonus points so far.
 
 >prune pride
 by one point
@@ -145,7 +147,7 @@ You get over your rage at the goon guide allowing bad people to make food as tas
 The goon guide will be there with further technical help when you need it, to help repair the oven. You have an idea of the exact parts that are missing now. You will be more observant in the future when you look around.
 
 >score
-You have scored a total of 10 out of 69 points and need 60 to win. You have found 1 of 10 bonus points so far.
+You have scored a total of 10 out of 76 points and need 62 to win. You have found 1 of 15 bonus points so far.
 
 >x guide
 
@@ -158,7 +160,7 @@ And here you thought it would just help you fix the oven!
 You flip through the goon guide once again. You seem to have gotten the big stuff from it. You tuck it in a safe place behind the oven for reference. You have enough to carry around.
 
 >score
-You have scored a total of 11 out of 69 points and need 60 to win. You have found 1 of 10 bonus points so far.
+You have scored a total of 11 out of 76 points and need 62 to win. You have found 1 of 15 bonus points so far.
 
 >played plug
 by one point
@@ -169,7 +171,10 @@ A ray vanishes from the rug!
 You found something below the rug, and all its rays are dull. Best to tuck it away in a spot where it won't distract you.
 
 >score
-You have scored a total of 12 out of 69 points and need 60 to win. You have found 1 of 10 bonus points so far.
+You have scored a total of 12 out of 76 points and need 62 to win. You have found 1 of 15 bonus points so far.
+
+>par porridge
+by one point
 
 >out
 
@@ -186,7 +191,7 @@ You find one plate, and it give you a greater morale boost than expected. All of
 `Wandering ... Where?
 
 >score
-You have scored a total of 13 out of 69 points and need 60 to win. You have found 1 of 10 bonus points so far.
+You have scored a total of 14 out of 76 points and need 63 to win. You have found 2 of 15 bonus points so far.
 
 >w
 
@@ -200,7 +205,7 @@ You grab the shard and feel pulled to somewhere new...
 `Took, Tarred
 
 >score
-You have scored a total of 14 out of 69 points and need 60 to win. You have found 1 of 10 bonus points so far.
+You have scored a total of 15 out of 76 points and need 63 to win. You have found 2 of 15 bonus points so far.
 
 >book bard
 by one point
@@ -210,7 +215,7 @@ You wait. People drift by. One is a bard. You book them for the ritual ahead. Th
 You feel the area's hold on you weaken.
 
 >score
-You have scored a total of 15 out of 69 points and need 60 to win. You have found 1 of 10 bonus points so far.
+You have scored a total of 16 out of 76 points and need 63 to win. You have found 2 of 15 bonus points so far.
 
 >cook card
 by one point
@@ -220,7 +225,7 @@ Oh my goodness. Could it be ... is it ... the missing insert from the goon guide
 You feel the area's hold on you weaken.
 
 >score
-You have scored a total of 16 out of 69 points and need 60 to win. You have found 1 of 10 bonus points so far.
+You have scored a total of 17 out of 76 points and need 63 to win. You have found 2 of 15 bonus points so far.
 
 >look lard
 by one point
@@ -230,7 +235,7 @@ Lard, man. You're still not sure if you really need it, even if the cookbooks sa
 You feel sucked out of whatever the shard held you in. As you come back to Dove 'N Doubt, the shard shatters. You sense there's nothing more to do here, so you walk back to the center of the action.
 
 >score
-You have scored a total of 17 out of 69 points and need 60 to win. You have found 1 of 10 bonus points so far.
+You have scored a total of 18 out of 76 points and need 63 to win. You have found 2 of 15 bonus points so far.
 
 >squandering square
 by one point
@@ -242,7 +247,7 @@ You think up a storm and realize, there is a way to such a place, though maybe i
 `Squalor Square
 
 >score
-You have scored a total of 18 out of 69 points and need 60 to win. You have found 1 of 10 bonus points so far.
+You have scored a total of 19 out of 76 points and need 63 to win. You have found 2 of 15 bonus points so far.
 
 #testcase-run-vr-baller-bear-rule-if-stare-score-<-3
 >baller bear
@@ -293,7 +298,7 @@ The staller stare is visibly affected by the audacity of someone daring someone 
 The staller stare blinks. It seems to shake where its head would be. It's a bit baffled by what it saw. It rolls its eyes as if to say, any more of this, and I give up.
 
 >score
-You have scored a total of 19 out of 69 points and need 60 to win. You have found 1 of 10 bonus points so far.
+You have scored a total of 20 out of 76 points and need 63 to win. You have found 2 of 15 bonus points so far.
 
 >caller care
 by one point
@@ -305,7 +310,7 @@ The staller stare is visibly affected by the audacity of someone caring about th
 The staller stare blinks repeatedly. The weirdness you introduced was too much for it. It was ready to judge squalor, but not THIS. It closes its eyes and fades into the wall it was on. Perhaps it will find another place to oversee.
 
 >score
-You have scored a total of 20 out of 69 points and need 60 to win. You have found 1 of 10 bonus points so far.
+You have scored a total of 21 out of 76 points and need 63 to win. You have found 2 of 15 bonus points so far.
 
 >baller bear
 by one point
@@ -316,7 +321,7 @@ You attune yourself to your surrounding, watching a baller bear juggling and rid
 You amuse yourself with how the staller stare would've reacted to THAT. A bit of harmless schadenfreude. You think. You hope.
 
 >score
-You have scored a total of 21 out of 69 points and need 61 to win. You have found 2 of 10 bonus points so far.
+You have scored a total of 22 out of 76 points and need 64 to win. You have found 3 of 15 bonus points so far.
 
 >neat note
 by one point
@@ -325,7 +330,7 @@ by one point
 It seems silly to expect someone to just up and drop by with a neat note. But surprisingly, the bleat bloat dies out, and someone singularly unimpressive-looking walks in, slowly and without confidence.
 
 >score
-You have scored a total of 22 out of 69 points and need 61 to win. You have found 2 of 10 bonus points so far.
+You have scored a total of 23 out of 76 points and need 64 to win. You have found 3 of 15 bonus points so far.
 
 >found fork
 by one point
@@ -342,7 +347,7 @@ A burly workman named Amped Ox takes you and the downed dork to the Damped Docks
 The downed dork asks if they should stay or go. Your instincts are to stay. Maybe there's one more thing here.
 
 >score
-You have scored a total of 24 out of 69 points and need 61 to win. You have found 2 of 10 bonus points so far.
+You have scored a total of 25 out of 76 points and need 64 to win. You have found 3 of 15 bonus points so far.
 
 >beet boat
 by one point
@@ -353,7 +358,7 @@ The downed dork looks around. "Anything else?"
 Squalor Square seems pretty empty. You thank them heartily. They say, well, it was nothing, really, and they are sure more with-it people could've found things quicker.
 
 >score
-You have scored a total of 25 out of 69 points and need 61 to win. You have found 2 of 10 bonus points so far.
+You have scored a total of 26 out of 76 points and need 64 to win. You have found 3 of 15 bonus points so far.
 
 >fight fires
 by one point
@@ -363,7 +368,7 @@ What a good citizen you are! What a patron of the arts beyond giving money! You 
 Perhaps some part of them that you can use is left, though.
 
 >score
-You have scored a total of 26 out of 69 points and need 61 to win. You have found 2 of 10 bonus points so far.
+You have scored a total of 27 out of 76 points and need 64 to win. You have found 3 of 15 bonus points so far.
 
 >white wires
 by one point
@@ -372,7 +377,7 @@ by one point
 You see what to look for in the lyres. The white wires have to come in handy to fix the oven.
 
 >score
-You have scored a total of 27 out of 69 points and need 61 to win. You have found 2 of 10 bonus points so far.
+You have scored a total of 28 out of 76 points and need 64 to win. You have found 3 of 15 bonus points so far.
 
 >w
 
@@ -391,7 +396,7 @@ Which, to be honest, is a big help, because you were pretty sure you couldn't fi
 `Wandering ... Where?
 
 >score
-You have scored a total of 28 out of 69 points and need 61 to win. You have found 2 of 10 bonus points so far.
+You have scored a total of 29 out of 76 points and need 64 to win. You have found 3 of 15 bonus points so far.
 
 >maundering mare
 by one point
@@ -403,7 +408,7 @@ You think up a storm and realize, there is a way to such a place, though maybe i
 `Gap, Goo
 
 >score
-You have scored a total of 29 out of 69 points and need 61 to win. You have found 2 of 10 bonus points so far.
+You have scored a total of 30 out of 76 points and need 64 to win. You have found 3 of 15 bonus points so far.
 
 >zap zoo
 by one point
@@ -415,7 +420,7 @@ by one point
 Yes, yes. Much better now. The terrain changes! So much appears: a ferret (fake,) a tree troop, and lotus life. They're all very nice and add local flavor, but perhaps you need to appreciate them right to achieve your own goals.
 
 >score
-You have scored a total of 30 out of 69 points and need 61 to win. You have found 2 of 10 bonus points so far.
+You have scored a total of 31 out of 76 points and need 64 to win. You have found 3 of 15 bonus points so far.
 
 >see soup
 by one point
@@ -424,7 +429,7 @@ by one point
 You nod to the tree troop. You see what you want. They are glad to give it to you.
 
 >score
-You have scored a total of 31 out of 69 points and need 61 to win. You have found 2 of 10 bonus points so far.
+You have scored a total of 32 out of 76 points and need 64 to win. You have found 3 of 15 bonus points so far.
 
 >notice knife
 by one point
@@ -433,7 +438,7 @@ by one point
 Ah! Yes! The lotus life almost took over parts of the zoo. You had to look for the knife, but it is there. And once you do, you notice a whole bunch of knives. Wow, when this zoo blossoms, it blossoms.
 
 >score
-You have scored a total of 32 out of 69 points and need 61 to win. You have found 2 of 10 bonus points so far.
+You have scored a total of 33 out of 76 points and need 64 to win. You have found 3 of 15 bonus points so far.
 
 >dented dials
 by one point
@@ -442,7 +447,7 @@ by one point
 The vented vials seem useless. Dented dials? Less so. They transmogrify. You take them.
 
 >score
-You have scored a total of 33 out of 69 points and need 61 to win. You have found 2 of 10 bonus points so far.
+You have scored a total of 34 out of 76 points and need 64 to win. You have found 3 of 15 bonus points so far.
 
 >carrot cake
 by one point
@@ -452,7 +457,7 @@ by one point
 Splat! The ferret (fake) runs off to reveal an untouched carrot cake! Its generosity sure isn't fake.
 
 >score
-You have scored a total of 34 out of 69 points and need 61 to win. You have found 2 of 10 bonus points so far.
+You have scored a total of 35 out of 76 points and need 64 to win. You have found 3 of 15 bonus points so far.
 
 >n
 
@@ -466,20 +471,20 @@ by one point
 Reading Any Isles, Many Miles carefully, you recognize that it, in fact, covers an isle not far from here (there were so many isles in the book, one was bound to be close,) rumored to hold particularly small-scale wealth. You excuse yourself to go look for it. Bri-Bro doesn't want to let you go at first, because he isn't here to provide a rest area for loiterers.
 
 >score
-You have scored a total of 35 out of 69 points and need 61 to win. You have found 2 of 10 bonus points so far.
+You have scored a total of 36 out of 76 points and need 64 to win. You have found 3 of 15 bonus points so far.
 
 >pie po
 by one point
 
 #testcase-run-vr-pie-po-rule-default
 You realize you're kind of broke, and you figure out what the cheapest item on the menu might be. It looks surprisingly good, and it's large, too.
-Bri-Bro whispers to you, "So many people demand the house special. I give them something frou-frou, but it's not really what I enjoy cooking. Now I'll have to pretend to kick you out." He pushes you out of the establishment, but you complain you don't know the way back. Fortunately, he helps you...
+Bri-Bro hands it to you with a "My made pie! Paid!" Then he whispers to you, "So many people demand the house special. I give them something frou-frou, but it's not really what I enjoy cooking. Now I'll have to pretend to kick you out." He pushes you out of the establishment, but you complain you don't know the way back. Fortunately, he helps you...
 
 #+testcase-room-names-wandering-where
 `Wandering ... Where?
 
 >score
-You have scored a total of 36 out of 69 points and need 61 to win. You have found 2 of 10 bonus points so far.
+You have scored a total of 37 out of 76 points and need 64 to win. You have found 3 of 15 bonus points so far.
 
 >pondering pair
 by one point
@@ -491,7 +496,7 @@ You think up a storm and realize, there is a way to such a place, though maybe i
 `Ooh, Ooh...!
 
 >score
-You have scored a total of 37 out of 69 points and need 61 to win. You have found 2 of 10 bonus points so far.
+You have scored a total of 38 out of 76 points and need 64 to win. You have found 3 of 15 bonus points so far.
 
 >booboo
 by one point
@@ -501,7 +506,7 @@ by one point
 /(Zuzu and Loulou|Loulou and Zuzu) seem to warm up to you.
 
 >score
-You have scored a total of 38 out of 69 points and need 61 to win. You have found 2 of 10 bonus points so far.
+You have scored a total of 39 out of 76 points and need 64 to win. You have found 3 of 15 bonus points so far.
 
 >juju
 by one point
@@ -510,7 +515,7 @@ by one point
 You find ways to perform juju, or pretend to.
 
 >score
-You have scored a total of 39 out of 69 points and need 61 to win. You have found 2 of 10 bonus points so far.
+You have scored a total of 40 out of 76 points and need 64 to win. You have found 3 of 15 bonus points so far.
 
 >muumuu
 by one point
@@ -519,7 +524,7 @@ by one point
 Loulou and Zuzu shrug a bit. Why not? They come in so many different colors.
 
 >score
-You have scored a total of 40 out of 69 points and need 61 to win. You have found 2 of 10 bonus points so far.
+You have scored a total of 41 out of 76 points and need 64 to win. You have found 3 of 15 bonus points so far.
 
 >tutu
 by one point
@@ -529,7 +534,7 @@ can't dance worth a dang, but that seems worth trying, not for the whole stale "
 pound you on the back. You sure have some great ideas in line with their thinking! After some awkward hand gestures they indicate they don't mind if you stay or go. You've earned this packet of cocoa.
 
 >score
-You have scored a total of 41 out of 69 points and need 61 to win. You have found 2 of 10 bonus points so far.
+You have scored a total of 42 out of 76 points and need 64 to win. You have found 3 of 15 bonus points so far.
 
 >massive mitt
 by one point
@@ -538,7 +543,7 @@ by one point
 Now that you know what to look for, you are patient enough to look through the passive pit. You sift through a phone book, a remote control, some matches, a paddleball, a thermos, and oil cans with gun holes in them before you uncover a massive mitt.
 
 >score
-You have scored a total of 42 out of 69 points and need 61 to win. You have found 2 of 10 bonus points so far.
+You have scored a total of 43 out of 76 points and need 64 to win. You have found 3 of 15 bonus points so far.
 
 >cuckoo
 by one point
@@ -548,7 +553,7 @@ You discuss, in an entirely sane manner, Swiss clocks with birds in them, and th
 /(Zuzu and Loulou|Loulou and Zuzu) look even happier now. Dare they expect more solidarity?
 
 >score
-You have scored a total of 43 out of 69 points and need 62 to win. You have found 3 of 10 bonus points so far.
+You have scored a total of 44 out of 76 points and need 65 to win. You have found 4 of 15 bonus points so far.
 
 >doodoo
 by one point
@@ -558,7 +563,7 @@ You patrol the area for animal waste, also remarking on other interesting swear-
 /(Loulou and Zuzu|Zuzu and Loulou) are starting to look exhausted from all this imagining.
 
 >score
-You have scored a total of 44 out of 69 points and need 63 to win. You have found 4 of 10 bonus points so far.
+You have scored a total of 45 out of 76 points and need 66 to win. You have found 5 of 15 bonus points so far.
 
 >poohpooh
 by one point
@@ -566,15 +571,22 @@ by one point
 #testcase-run-vr-poohpooh-rule-default
 You show
 ways to dismiss this little thought experiment.
-wipe their brows after this latest feat of imagination. Nothing more to do here, really.
+wipe their brows after this latest feat of imagination. They indicate they need to get going. I mean, looking at their t-shirts, they have a family, and stuff. They can't hang with you forever.
+But wait! What is this? They slap hands tag-team style with two folks who look a lot like them.
+Some scribbling on the ground notes that your new mime-y acquaintances are 
+. However, they make the empty pockets gesture, as if to say, they can't actually give you anything. They're just here for entertainment and performances
+couldn't quite provide.
 
 >score
-You have scored a total of 45 out of 69 points and need 64 to win. You have found 5 of 10 bonus points so far.
+You have scored a total of 46 out of 76 points and need 67 to win. You have found 6 of 15 bonus points so far.
 
 >s
 
 #testcase-room-names-edgy-ill-hedge-y-hill
 `Edgy Ill Hedge-y Hill
+
+>topper tea
+by one point
 
 >flopper flea
 by one point
@@ -584,21 +596,33 @@ Wait! Something about the bee looks funny! Yes, it is not really a bee, but a le
 It buzzes and mumbles off. You're not surprised that, as it does, it drops a copper key, which you pick up.
 
 >score
-You have scored a total of 46 out of 69 points and need 64 to win. You have found 5 of 10 bonus points so far.
+You have scored a total of 48 out of 76 points and need 68 to win. You have found 7 of 15 bonus points so far.
 
 >veggie ville
 by one point
 
 #testcase-run-vr-veggie-ville-rule-default
-You realize that the fruit and vegetable groups are sorely underrepresented--well, the greens, at least. It's time to fix that!
+You realize that the fruit and vegetable groups are sorely underrepresented in your haul so far. It's time to fix that! Well, the greens, at least.
 You know there will be many stores in the distance. So you begin your trek. On the way you ask the way to Veggie Ville. People are helpful.
-Once you get there, you worry you have no money to pay. But when they see the Last Least Fast Feast, they recognize what you are here for. Why, they have just the thing: veggies and fruits of irregular shapes, which get thrown out anyway!
-They're impressed with what you've gotten so far. They deem you a worthy leader of the ceremony. They wish you luck and provide directions back...
+Once you get there, you worry you have no money to pay. But when they see the Last Least Fast Feast, they recognize what you are here for. Why, they have just the thing: veggies of irregular shapes, which get thrown out anyway!
+They're impressed with what you've gotten so far. You are grateful, but ... well, it's a bit awkward. One major food group is still missing.
+"Oh!" you hear. "The faeries can fix that!" They provide detailed instructions on how to get home, but first, a detour to ...
+
+`Faerie Fair
+
+>sherry share
+by one point
+
+>berry bear
+by one point
+
+>cherry chair
+by one point
 
 `Wandering ... Where?
 
 >score
-You have scored a total of 47 out of 69 points and need 64 to win. You have found 5 of 10 bonus points so far.
+You have scored a total of 52 out of 76 points and need 69 to win. You have found 8 of 15 bonus points so far.
 
 >chrome craw
 by one point
@@ -607,7 +631,7 @@ by one point
 You hear a large creaking from the ground beneath, and lo and behold, a chrome craw rumbles up from the ground! It's a bit scary-looking, but you're curious to explore it. You can go DOWN into it.
 
 >score
-You have scored a total of 48 out of 69 points and need 65 to win. You have found 6 of 10 bonus points so far.
+You have scored a total of 53 out of 76 points and need 70 to win. You have found 9 of 15 bonus points so far.
 
 >d
 
@@ -621,17 +645,18 @@ by one point
 She sniffs and hands you a honeyed ham. Her charity done for the day, she brushes you aside with a hand gesture and then walks off impatiently, herself.
 
 >score
-You have scored a total of 49 out of 69 points and need 66 to win. You have found 7 of 10 bonus points so far.
+You have scored a total of 54 out of 76 points and need 71 to win. You have found 10 of 15 bonus points so far.
 
 >grey gruel
 by one point
 
 #testcase-run-vr-grey-gruel-rule-default
-The cray cruel fey fool hands you some surprisingly not-cray gray gruel and snickers before running off. What kind of square would actually LIKE gruel?
-But you want to be considerate about allergies, people trying to diet, people with vegan lifestyles, and so forth. It will be useful, you guess, as a base or paste.
+The cray cruel fey fool hands you a steaming covered bowl of surprisingly gray gruel, which seems not cray (if cruel as a constant diet,) and lectures you about how REAL gruel doesn't have any additives to make it taste better. How unnatural! They make you promise not to go adding anything to the gruel all sneakily now they've been so generous, before running off. You hear a "REMEMBER, YOU PROMISED!" in the distance.
+Upset at being ordered around thus, you figure it's just good in general to be considerate about allergies, people trying to diet, people with vegan lifestyles, and so forth. Perhaps it will be useful as a base or paste.
+Still, one sniff of the gruel leaves you thinking "Eh, ooh, ill!"
 
 >score
-You have scored a total of 50 out of 69 points and need 67 to win. You have found 8 of 10 bonus points so far.
+You have scored a total of 55 out of 76 points and need 72 to win. You have found 11 of 15 bonus points so far.
 
 >just jello
 by one point
@@ -640,7 +665,7 @@ by one point
 The fussed fellow seems relieved to hand you the Jell-O. It may be just Jell-O, but it's all different kinds of colors and flavors. Including pineapple! You remember when some smart-aleck in middle school said pineapple Jell-O would never be a thing. In fact, that smart-aleck snickered when you were chosen for the ceremony.
 
 >score
-You have scored a total of 51 out of 69 points and need 68 to win. You have found 9 of 10 bonus points so far.
+You have scored a total of 56 out of 76 points and need 73 to win. You have found 12 of 15 bonus points so far.
 
 >potpourri
 by one point
@@ -649,7 +674,7 @@ by one point
 You realize what the smell is. Well, not the specific ingredients. But it has to be potpourri. Where is it leaking from? Following your nose leads you to a large canister. It might be too much for the feast, but it can be used elsewhere -- and maybe even last until the next feast.
 
 >score
-You have scored a total of 52 out of 69 points and need 69 to win. You have found 10 of 10 bonus points so far.
+You have scored a total of 57 out of 76 points and need 74 to win. You have found 13 of 15 bonus points so far.
 
 >u
 
@@ -662,7 +687,7 @@ by one point
 You reflect on things. You recognize too much of this is bad. All the same, it puts you in a mindset to do what you must do.
 
 >score
-You have scored a total of 53 out of 69 points and need 69 to win. You have found 10 of 10 bonus points so far.
+You have scored a total of 58 out of 76 points and need 74 to win. You have found 13 of 15 bonus points so far.
 
 >believe below
 by one point
@@ -679,12 +704,28 @@ You use the copper key on the trap door down. And it works!
 There's a passage down, through the trap door you opened.
 
 >score
-You have scored a total of 54 out of 69 points and need 69 to win. You have found 10 of 10 bonus points so far.
+You have scored a total of 59 out of 76 points and need 74 to win. You have found 13 of 15 bonus points so far.
 
 #testcase-run-vr-leave-lo-rule-if-copper-key-is-moot
 >leave lo
 This is ambiguous now you've opened a passage DOWN as well as OUT.
 !Trappy
+
+>out
+
+>s
+
+>gain garnish
+
+>n
+
+>w
+
+>veiled vases
+
+>e
+
+>in
 
 >d
 
@@ -698,7 +739,7 @@ by one point
 Ah! You had confidence you could find a scrappy scrawl, and you do. The instructions seem to make sense. You need to look to break open a passage where there is none, yet. An unexpectedly hollow place. Apparently, from the scrawl, one that makes a special sort of noise. Not quite a THWIP or a THWUP. So where is the weak spot?
 
 >score
-You have scored a total of 55 out of 69 points and need 69 to win. You have found 10 of 10 bonus points so far.
+You have scored a total of 62 out of 76 points and need 76 to win. You have found 15 of 15 bonus points so far.
 
 >whappy wall
 by one point
@@ -710,7 +751,7 @@ Whunk. Whunk. The wall makes the same noise, until ... WHAP! There it is! You ta
 `Happy Hall
 
 >score
-You have scored a total of 56 out of 69 points and need 69 to win. You have found 10 of 10 bonus points so far.
+You have scored a total of 63 out of 76 points and need 76 to win. You have found 15 of 15 bonus points so far.
 
 >pappy paul
 by one point
@@ -719,7 +760,7 @@ by one point
 Pappy Paul appears when summoned, looking almost a bit too serious. He apologizes for this, but you reassure him this isn't a comedy roast. He chuckles slightly--the best compliment a joke can get from him!
 
 >score
-You have scored a total of 57 out of 69 points and need 69 to win. You have found 10 of 10 bonus points so far.
+You have scored a total of 64 out of 76 points and need 76 to win. You have found 15 of 15 bonus points so far.
 
 >sappy saul
 by one point
@@ -728,7 +769,7 @@ by one point
 Sappy Saul seems almost too happy to be summoned, then apologetic for his display. You vaguely encourage him to be himself.
 
 >score
-You have scored a total of 58 out of 69 points and need 69 to win. You have found 10 of 10 bonus points so far.
+You have scored a total of 65 out of 76 points and need 76 to win. You have found 15 of 15 bonus points so far.
 
 >lone laura
 by one point
@@ -737,7 +778,7 @@ by one point
 Lone Laura appears!
 
 >score
-You have scored a total of 59 out of 69 points and need 69 to win. You have found 10 of 10 bonus points so far.
+You have scored a total of 66 out of 76 points and need 76 to win. You have found 15 of 15 bonus points so far.
 
 >known nora
 by one point
@@ -746,7 +787,7 @@ by one point
 Known Nora appears!
 
 >score
-You have scored a total of 60 out of 69 points and need 69 to win. You have found 10 of 10 bonus points so far.
+You have scored a total of 67 out of 76 points and need 76 to win. You have found 15 of 15 bonus points so far.
 
 >cappy caul
 by one point
@@ -755,7 +796,7 @@ by one point
 You retrieve your ceremonial garb. For the first rite, you sacrifice Last Least Fast Feast. There are other copies of it.
 
 >score
-You have scored a total of 61 out of 69 points and need 69 to win. You have found 10 of 10 bonus points so far.
+You have scored a total of 68 out of 76 points and need 76 to win. You have found 15 of 15 bonus points so far.
 
 >yappy yall
 by one point
@@ -764,7 +805,7 @@ by one point
 Everyone has a say about the deceased.
 
 >score
-You have scored a total of 62 out of 69 points and need 69 to win. You have found 10 of 10 bonus points so far.
+You have scored a total of 69 out of 76 points and need 76 to win. You have found 15 of 15 bonus points so far.
 
 >bappy ball
 by one point
@@ -776,7 +817,7 @@ A long game of bappy-ball is played. Everyone is exhausted and hungry afterwards
 `Compete! Compel!
 
 >score
-You have scored a total of 63 out of 69 points and need 69 to win. You have found 10 of 10 bonus points so far.
+You have scored a total of 70 out of 76 points and need 76 to win. You have found 15 of 15 bonus points so far.
 
 >wheat well
 by one point
@@ -785,7 +826,7 @@ by one point
 Yes, the wheat well must be your destination. Now how to stumble across to it?
 
 >score
-You have scored a total of 64 out of 69 points and need 69 to win. You have found 10 of 10 bonus points so far.
+You have scored a total of 71 out of 76 points and need 76 to win. You have found 15 of 15 bonus points so far.
 
 >feet fell
 by one point
@@ -794,7 +835,7 @@ by one point
 Oops! With a bit of dream logic, you slip out of where you feel you need to show you are better than someone and to where you can reflect more.
 
 >score
-You have scored a total of 65 out of 69 points and need 69 to win. You have found 10 of 10 bonus points so far.
+You have scored a total of 72 out of 76 points and need 76 to win. You have found 15 of 15 bonus points so far.
 
 >sheet shell
 by one point
@@ -804,7 +845,7 @@ Yes, the Wheat Well could use a Sheet Shell.
 Suddenly, with the Sheet Shell in place, ready for a book, you hear your postal delivery person in the distance. You hope to rush to the door, wherever that is. You know if you don't show up, they won't leave any potential package. But how? You need motivation and hustle!
 
 >score
-You have scored a total of 66 out of 69 points and need 69 to win. You have found 10 of 10 bonus points so far.
+You have scored a total of 73 out of 76 points and need 76 to win. You have found 15 of 15 bonus points so far.
 
 >beat bell
 by one point
@@ -813,7 +854,7 @@ by one point
 Aaand ... pursuant to general dream/fantasy logic rules, you just make it! But now, what with the Internet taking over with emails, you often forget what your lovable mail carrier's name is! There must be a clue to who they are. As for how they got there, and how they know you're there, you'll just chalk it up to increased efficiency in the postal service due to progress in the ordinary sort of magic that everyone looks down on but would be terribly sorry if it vanished.
 
 >score
-You have scored a total of 67 out of 69 points and need 69 to win. You have found 10 of 10 bonus points so far.
+You have scored a total of 74 out of 76 points and need 76 to win. You have found 15 of 15 bonus points so far.
 
 >meet mel
 by one point
@@ -823,7 +864,7 @@ Yes! Mel the Mail Maven! It has a certain ring to it. You take Mel's delivery.
 Leet Lel, by Pete Pell. Memories come back to you, of Leet Lel, a larger-than-life figure that showed you so much, but who also seemed to have scorn for you. It was hard to tell.
 
 >score
-You have scored a total of 68 out of 69 points and need 69 to win. You have found 10 of 10 bonus points so far.
+You have scored a total of 75 out of 76 points and need 76 to win. You have found 15 of 15 bonus points so far.
 
 >x leet lel
 
@@ -835,7 +876,7 @@ Leet Lel left a complex legacy. You can't deny the practical help they gave,
 
 >missed
 Note that, because there are three different endings, you'll automatically have "missed" two of them, which I don't want to spoil. You can UNDO to track the others down.
-You found everything before the finale, though. Good job!
+However, you found all the hidden points before the finale. Great job!
 
 >undo
 
@@ -846,7 +887,7 @@ by one point
 
 >missed
 Note that, because there are three different endings, you'll automatically have "missed" two of them, which I don't want to spoil. You can UNDO to track the others down.
-You found everything before the finale, though. Good job!
+However, you found all the hidden points before the finale. Great job!
 
 >undo
 
@@ -865,4 +906,4 @@ by one point
 
 >missed
 Note that, because there are three different endings, you'll automatically have "missed" two of them, which I don't want to spoil. You can UNDO to track the others down.
-You found everything before the finale, though. Good job!
+However, you found all the hidden points before the finale. Great job!

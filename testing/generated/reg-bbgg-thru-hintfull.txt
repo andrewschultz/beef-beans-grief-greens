@@ -17,6 +17,8 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 
 >x
 
+>x ffss
+
 #testcase-values-from-number-of-last-least-fast-feast-is--5410
 >ll feast
 You notice one dot in the corner of the leet learner.
@@ -141,6 +143,9 @@ The leet learner's display lights up and scrolls through LCD numbers which settl
 by one point
 
 >played plug
+by one point
+
+>par porridge
 by one point
 
 >out
@@ -524,16 +529,19 @@ by one point
 >ll
 You notice one dot in the corner of the leet learner.
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
+dim
 
 #+testcase-values-from-number-of-zuzu-is-2602
 >ll zuzu
 You notice one dot in the corner of the leet learner.
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (2.00, 2.00.)
+dim
 
 #+testcase-values-from-number-of-loulou-is-2653
 >ll loulou
 You notice one dot in the corner of the leet learner.
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
+dim
 
 >poohpooh
 by one point
@@ -543,12 +551,14 @@ by one point
 Nothing comes up. The general area here has been changed enough.
 
 #+testcase-values-from-number-of-zuzu-is-2602
->ll zuzu
-Nothing comes up. You've rhymed Zuzu as much as you needed to.
+>ll didi
+(nothing with Didi, so you try the whole area)
+Nothing comes up. The general area here has been changed enough.
 
 #+testcase-values-from-number-of-loulou-is-2653
->ll loulou
-Nothing comes up. You've rhymed Loulou as much as you needed to.
+>ll mimi
+(nothing with Mimi, so you try the whole area)
+Nothing comes up. The general area here has been changed enough.
 
 >s
 
@@ -556,6 +566,9 @@ Nothing comes up. You've rhymed Loulou as much as you needed to.
 >ll bopper bee
 You notice one dot in the corner of the leet learner.
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
+
+>topper tea
+by one point
 
 >flopper flea
 by one point
@@ -566,6 +579,15 @@ You notice one dot in the corner of the leet learner.
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.50.)
 
 >veggie ville
+by one point
+
+>sherry share
+by one point
+
+>berry bear
+by one point
+
+>cherry chair
 by one point
 
 >chrome craw
@@ -622,6 +644,22 @@ by one point
 #+testcase-values-from-number-of-reeve-row-is-2753
 >ll
 Nothing comes up. The general area here has been changed enough.
+
+>out
+
+>s
+
+>gain garnish
+
+>n
+
+>w
+
+>veiled vases
+
+>e
+
+>in
 
 >d
 

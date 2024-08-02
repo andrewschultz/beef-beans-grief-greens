@@ -40,13 +40,13 @@ file=reg-bbgg-thru-hintfull.txt,hf/hfull,walkthrough testing HINTS full
 }$GONG1=A guide gong rings to notify you that you don't need to go back through
 }$GONG=That guide gong, again, rings to notify you that you don't need to go back through
 
-}}MAX=69
-}}CURMAX=69
+}}MAX=76
+}}CURMAX=76
 }}SCORE=0
-}}CURMIN=59
+}}CURMIN=61
 }}CURMINBONUS=0
-}}CURMAXBONUS=10
-}}MAXBONUS=10
+}}CURMAXBONUS=15
+}}MAXBONUS=15
 
 }$SCOS=You have scored a total of {SCORE} out of {MAX} points and need {CURMIN} to win. You have found {CURMINBONUS} of {MAXBONUS} bonus points so far.
 }$MISSINGONE=1 optional point is no longer available.
@@ -407,7 +407,42 @@ You are now repelled by a guide gong if you try to go down a path where you have
 >pride prong
 You are now blocked from paths with no points, critical or bonus, available in any branches.
 
+@rej
+##balance undo
+>leave lo
+You want to get going, but this feels like jumping the gun. It might be a good idea to have some idea what you're looking for. You were given instructions to examine.
+!by one point
+\\
+>think
+You think about more specific challenges you've encountered and not solved, and what you've done and tried, and what you can do.
+You can LEAVE LO once you have read up on what you need to find.
+\\
+>x llff
+\\
+>leave lo
+Whoah! That list of needed stuff is really long! You fear having to juggle a whole lot as you walk around goodness knows where.
+Perhaps examining things here in Reeve Row will help you feel more at ease.
+!by one point
+\\
+>think
+You can LEAVE LO once you feel more confident you have somewhere to dump a potentially huge pile of feast items you may find.
+\\
+>x ffss
+\\
+>think
+You can LEAVE LO now you feel more confident you have somewhere to dump a potentially huge pile of feast items you may find.
+\\
+>undo
+>undo
+>undo
+>undo
+>undo
+>undo
+>undo
+
 >x
+
+>x ffss
 
 @rej
 ##balance undo
@@ -1329,6 +1364,13 @@ You already got a played plug!
 @all
 >score
 {$SCOS}
+
+@!min
+>par porridge
+by one point
+}}CURMINBONUS++
+}}CURMIN++
+}}SCORE++
 
 >out
 
@@ -3066,7 +3108,7 @@ by one point
 {--rej}#testcase-check-vc-pie-po-rule-fallthrough
 {--all}#testcase-run-vr-pie-po-rule-default
 You realize you're kind of broke, and you figure out what the cheapest item on the menu might be. It looks surprisingly good, and it's large, too.
-Bri-Bro whispers to you, "So many people demand the house special. I give them something frou-frou, but it's not really what I enjoy cooking. Now I'll have to pretend to kick you out." He pushes you out of the establishment, but you complain you don't know the way back. Fortunately, he helps you...
+Bri-Bro hands it to you with a "My made pie! Paid!" Then he whispers to you, "So many people demand the house special. I give them something frou-frou, but it's not really what I enjoy cooking. Now I'll have to pretend to kick you out." He pushes you out of the establishment, but you complain you don't know the way back. Fortunately, he helps you...
 
 @all
 #+testcase-room-names-wandering-where
@@ -3106,40 +3148,77 @@ You think up a storm and realize, there is a way to such a place, though maybe i
 {$SCOS}
 
 @ha
+#these are all done on a case by case basis. I subvert the HA HALF for Zuzu and Loulou to tell you you're doing pretty well.
 #testcase-ha-half-table-of-verb-checks-36-boo
 >boo
 gesture as if to say, keep talking. You must be on the right track!
 \\
-#testcase-ha-half-table-of-verb-checks-37-coo
->coo zkoo
-gesture as if to say, keep talking. You must be on the right track!
+#testcase-ha-half-table-of-verb-checks-36-boo
+>boo zboo
+shake their heads, each holding up two fingers. Then they nod their heads, holding up one.
 \\
 #testcase-ha-half-table-of-verb-checks-37-coo-koo
->zcoo koo
-gesture as if to say, keep talking. You must be on the right track!
+>coo zkoo
+The HA HALF button on your Leet Learner lights up green.
+\\
+#+testcase-ha-half-table-of-verb-checks-37-coo-koo
+>coo
+The HA HALF button on your Leet Learner lights up green.
+\\
+#testcase-ha-half-table-of-verb-checks-37-coo-koo
+>coo zkoo
+The HA HALF button on your Leet Learner lights up green.
+\\
+#+testcase-ha-half-table-of-verb-checks-37-coo-koo
+>koo
+The HA HALF button on your Leet Learner lights up green.
 \\
 #testcase-ha-half-table-of-verb-checks-38-doo
 >doo zdoo
+shake their heads, each holding up two fingers. Then they nod their heads, holding up one.
+\\
+#+testcase-ha-half-table-of-verb-checks-38-doo
+>doo
 gesture as if to say, keep talking. You must be on the right track!
 \\
 #testcase-ha-half-table-of-verb-checks-39-ju
 >ju zju
+shake their heads, each holding up two fingers. Then they nod their heads, holding up one.
+\\
+#+testcase-ha-half-table-of-verb-checks-39-ju
+>ju
 gesture as if to say, keep talking. You must be on the right track!
 \\
 #testcase-ha-half-table-of-verb-checks-40-muu
 >muu zmuu
+shake their heads, each holding up two fingers. Then they nod their heads, holding up one.
+\\
+#+testcase-ha-half-table-of-verb-checks-40-muu
+>muu
 gesture as if to say, keep talking. You must be on the right track!
 \\
 #testcase-ha-half-table-of-verb-checks-41-poo-pooh
 >poo zpooh
-gesture as if to say, keep talking. You must be on the right track!
+shake their heads, each holding up two fingers. Then they nod their heads, holding up one.
 \\
 #+testcase-ha-half-table-of-verb-checks-41-poo-pooh
 >zpoo pooh
+shake their heads, each holding up two fingers. Then they nod their heads, holding up one.
+\\
+#+testcase-ha-half-table-of-verb-checks-41-poo-pooh
+>poo
+gesture as if to say, keep talking. You must be on the right track!
+\\
+#+testcase-ha-half-table-of-verb-checks-41-poo-pooh
+>pooh
 gesture as if to say, keep talking. You must be on the right track!
 \\
 #testcase-ha-half-table-of-verb-checks-42-tu
 >tu ztu
+shake their heads, each holding up two fingers. Then they nod their heads, holding up one.
+\\
+#+testcase-ha-half-table-of-verb-checks-42-tu
+>tu
 gesture as if to say, keep talking. You must be on the right track!
 
 @hfull
@@ -3418,7 +3497,7 @@ Now that you know what to look for, you are patient enough to look through the p
 >massive mitt
 You already got the massive mitt from the passive pit!
 
-@gong
+@gong,prong
 ##balance undos
 >s
 \\
@@ -3428,29 +3507,20 @@ by one point
 >veggie ville
 by one point
 \\
-#testcase-gong-checks-ooh-ooh
->n
-That guide gong, again, rings to notify you that you don't need to go back through Ooh, Ooh...!.
-\\
->undo
->undo
->undo
->undo
-
-@prong
-##balance undos
->s
-\\
->flopper flea
+>berry bear
 by one point
 \\
->veggie ville
+>cherry chair
 by one point
 \\
-#testcase-prong-checks-ooh-ooh
+{--prong}#testcase-prong-checks-ooh-ooh
+{--gong}#testcase-gong-checks-ooh-ooh
 >n
-The pride-prong you summoned earlier pokes you to go and see what's ahead, even if it might not be critical to your quest.
+{--gong}That guide gong, again, rings to notify you that you don't need to go back through Ooh, Ooh...!.
+{--prong}The pride-prong you summoned earlier pokes you to go and see what's ahead, even if it might not be critical to your quest.
 \\
+>undo
+>undo
 >undo
 >undo
 >undo
@@ -3522,6 +3592,18 @@ The Leet Learner shakes back and forth. Something you said sounded right, but it
 >dew dew
 The Leet Learner shakes back and forth. Something you said sounded right, but it didn't feel right.
 
+@rej
+##balance undos
+>poohpooh
+by one point
+\\
+#testcase-check-vc-poohpooh-rule-if-sco-poohpooh-is-true
+>poohpooh
+There's overdoing things, you reckon.
+\\
+>undo
+>undo
+
 @!min
 >doodoo
 by one point
@@ -3549,16 +3631,19 @@ The value of such a word or phrase drops quickly with each use.
 >ll
 You notice one dot in the corner of the leet learner.
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
+dim
 \\
 #+testcase-values-from-number-of-zuzu-is-2602
 >ll zuzu
 You notice one dot in the corner of the leet learner.
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (2.00, 2.00.)
+dim
 \\
 #+testcase-values-from-number-of-loulou-is-2653
 >ll loulou
 You notice one dot in the corner of the leet learner.
 The leet learner's display lights up and scrolls through LCD numbers which settle on the pair (1.00, 1.00.)
+dim
 
 @!min
 >poohpooh
@@ -3572,12 +3657,16 @@ by one point
 {--all}#testcase-run-vr-poohpooh-rule-default
 You show
 ways to dismiss this little thought experiment.
-wipe their brows after this latest feat of imagination. Nothing more to do here, really.
+wipe their brows after this latest feat of imagination. They indicate they need to get going. I mean, looking at their t-shirts, they have a family, and stuff. They can't hang with you forever.
+But wait! What is this? They slap hands tag-team style with two folks who look a lot like them.
+Some scribbling on the ground notes that your new mime-y acquaintances are 
+. However, they make the empty pockets gesture, as if to say, they can't actually give you anything. They're just here for entertainment and performances
+couldn't quite provide.
 
 @rej
 #testcase-check-vc-poohpooh-rule-if-sco-poohpooh-is-true
 >poohpooh
-There's overdoing things, you reckon.
+That worked for Zuzu and Loulou, but they're long gone.
 
 @all
 >score
@@ -3589,12 +3678,14 @@ There's overdoing things, you reckon.
 Nothing comes up. The general area here has been changed enough.
 \\
 #+testcase-values-from-number-of-zuzu-is-2602
->ll zuzu
-Nothing comes up. You've rhymed Zuzu as much as you needed to.
+>ll didi
+(nothing with Didi, so you try the whole area)
+Nothing comes up. The general area here has been changed enough.
 \\
 #+testcase-values-from-number-of-loulou-is-2653
->ll loulou
-Nothing comes up. You've rhymed Loulou as much as you needed to.
+>ll mimi
+(nothing with Mimi, so you try the whole area)
+Nothing comes up. The general area here has been changed enough.
 
 >s
 
@@ -3741,6 +3832,13 @@ That'd be somewhere to go, once you disposed of the bopper bee.
 >think
 You can visit VEGGIE VILLE once the bopper bee isn't distracting you.
 
+@!min
+>topper tea
+by one point
+}}CURMINBONUS++
+}}CURMIN++
+}}SCORE++
+
 >flopper flea
 by one point
 }}SCORE++
@@ -3786,10 +3884,42 @@ by one point
 @rej,all
 {--rej}#testcase-check-vc-veggie-ville-rule-fallthrough
 {--all}#testcase-run-vr-veggie-ville-rule-default
-You realize that the fruit and vegetable groups are sorely underrepresented--well, the greens, at least. It's time to fix that!
+You realize that the fruit and vegetable groups are sorely underrepresented in your haul so far. It's time to fix that! Well, the greens, at least.
 You know there will be many stores in the distance. So you begin your trek. On the way you ask the way to Veggie Ville. People are helpful.
-Once you get there, you worry you have no money to pay. But when they see the Last Least Fast Feast, they recognize what you are here for. Why, they have just the thing: veggies and fruits of irregular shapes, which get thrown out anyway!
-They're impressed with what you've gotten so far. They deem you a worthy leader of the ceremony. They wish you luck and provide directions back...
+Once you get there, you worry you have no money to pay. But when they see the Last Least Fast Feast, they recognize what you are here for. Why, they have just the thing: veggies of irregular shapes, which get thrown out anyway!
+They're impressed with what you've gotten so far. You are grateful, but ... well, it's a bit awkward. One major food group is still missing.
+"Oh!" you hear. "The faeries can fix that!" They provide detailed instructions on how to get home, but first, a detour to ...
+
+@all
+`Faerie Fair
+
+@!min
+>sherry share
+by one point
+}}SCORE++
+}}CURMIN++
+}}CURMINBONUS++
+
+@alt
+##balance undos
+>cherry chair
+by one point
+\\
+>berry bear
+by one point
+\\
+`Wandering ... Where?
+\\
+>undo
+>undo
+
+>berry bear
+by one point
+}}SCORE++
+
+>cherry chair
+by one point
+}}SCORE++
 
 @all
 `Wandering ... Where?
@@ -4057,8 +4187,9 @@ by one point
 @rej,all
 {--rej}#testcase-check-vc-grey-gruel-rule-fallthrough
 {--all}#testcase-run-vr-grey-gruel-rule-default
-The cray cruel fey fool hands you some surprisingly not-cray gray gruel and snickers before running off. What kind of square would actually LIKE gruel?
-But you want to be considerate about allergies, people trying to diet, people with vegan lifestyles, and so forth. It will be useful, you guess, as a base or paste.
+The cray cruel fey fool hands you a steaming covered bowl of surprisingly gray gruel, which seems not cray (if cruel as a constant diet,) and lectures you about how REAL gruel doesn't have any additives to make it taste better. How unnatural! They make you promise not to go adding anything to the gruel all sneakily now they've been so generous, before running off. You hear a "REMEMBER, YOU PROMISED!" in the distance.
+Upset at being ordered around thus, you figure it's just good in general to be considerate about allergies, people trying to diet, people with vegan lifestyles, and so forth. Perhaps it will be useful as a base or paste.
+Still, one sniff of the gruel leaves you thinking "Eh, ooh, ill!"
 
 @rej
 #testcase-check-vc-grey-gruel-rule-if-sco-grey-gruel-is-true
@@ -4448,6 +4579,29 @@ This is ambiguous now you've opened a passage DOWN as well as OUT.
 >heave ho
 There is nothing more to heave besides the rayed rug.
 
+@!min
+>out
+\\
+>s
+\\
+>gain garnish
+}}CURMINBONUS++
+}}CURMIN++
+}}SCORE++
+\\
+>n
+\\
+>w
+\\
+>veiled vases
+}}CURMINBONUS++
+}}CURMIN++
+}}SCORE++
+\\
+>e
+\\
+>in
+
 >d
 
 @all
@@ -4457,7 +4611,7 @@ There is nothing more to heave besides the rayed rug.
 @min
 #testcase-run-vr-cappy-caul-rule-if-sco-sassed-ceased-is-false
 >score
-You have scored a total of {SCORE} out of 69 points and need 59 to win. You have found 0 of {CURMAXBONUS} bonus points so far. You are locked out of 9 points. You can check for the maximum score dropping in the upper right, which usually happens when you take a one-way passage.
+You have scored a total of {SCORE} out of {MAX} points and need 61 to win. You have found 0 of {MAXBONUS} bonus points so far. You are locked out of 14 points. You can check for the maximum score dropping in the upper right, which usually happens when you take a one-way passage.
 \\
 #testcase-check-vc-chrome-craw-rule-if-trappy-trawl-is-visited
 >chrome craw
@@ -5801,7 +5955,7 @@ Leet Lel left a complex legacy. You can't deny the practical help they gave,
 @all
 >missed
 Note that, because there are three different endings, you'll automatically have "missed" two of them, which I don't want to spoil. You can UNDO to track the others down.
-You found everything before the finale, though. Good job!
+However, you found all the hidden points before the finale. Great job!
 
 @rej,all
 >undo
@@ -5815,7 +5969,7 @@ by one point
 \\
 >missed
 Note that, because there are three different endings, you'll automatically have "missed" two of them, which I don't want to spoil. You can UNDO to track the others down.
-You found everything before the finale, though. Good job!
+However, you found all the hidden points before the finale. Great job!
 \\
 >undo
 
@@ -5837,4 +5991,4 @@ by one point
 \\
 >missed
 Note that, because there are three different endings, you'll automatically have "missed" two of them, which I don't want to spoil. You can UNDO to track the others down.
-You found everything before the finale, though. Good job!
+However, you found all the hidden points before the finale. Great job!

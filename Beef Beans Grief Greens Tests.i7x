@@ -18,7 +18,7 @@ test wtrawl with "test wpretrawl/test w3".
 
 test wthru with "test wtrawl/test w3b/test w4/test w5/test w6/test w7".
 
-test wmin with "test w1/test w2w/out/pluck plate/test w2w3/test w2em/w/soy sauce/test w2s/n/penny piles/pie po/test w2n1/test w2n2/s/test w2f/test w2l1/test w2l2/test w3/test w4/test w5/test w6/test w7".
+test wmin with "test w1/test w2w/out/pluck plate/test w2w3/test w2em/w/soy sauce/test w2s/n/penny piles/pie po/test w2n1/test w2n2/s/test w2l1/test w2l2/test w3/test w4/test w5/test w6/test w7".
 
 book verified tests that are part of the game
 

@@ -12,6 +12,8 @@
 
 >x
 
+>x ffss
+
 >made mug
 by one point
 
@@ -150,6 +152,12 @@ by one point
 >veggie ville
 by one point
 
+>berry bear
+by one point
+
+>cherry chair
+by one point
+
 >in
 
 >grieve grow
@@ -162,7 +170,7 @@ by one point
 
 #testcase-run-vr-cappy-caul-rule-if-sco-sassed-ceased-is-false
 >score
-You have scored a total of 44 out of 69 points and need 59 to win. You have found 0 of 10 bonus points so far. You are locked out of 9 points. You can check for the maximum score dropping in the upper right, which usually happens when you take a one-way passage.
+You have scored a total of 46 out of 76 points and need 61 to win. You have found 0 of 15 bonus points so far. You are locked out of 14 points. You can check for the maximum score dropping in the upper right, which usually happens when you take a one-way passage.
 
 #testcase-check-vc-chrome-craw-rule-if-trappy-trawl-is-visited
 >chrome craw

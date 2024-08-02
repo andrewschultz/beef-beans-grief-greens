@@ -12,6 +12,10 @@
 
 >z
 
+>x ffss
+
+>x llff
+
 >jj
 After some thought, you consider a good way forward: LEAVE LO...
 
@@ -191,6 +195,12 @@ After some thought, you consider a good way forward: FLOPPER FLEA...
 
 >jj
 After some thought, you consider a good way forward: VEGGIE VILLE...
+
+>jj
+After some thought, you consider a good way forward: BERRY BEAR...
+
+>jj
+After some thought, you consider a good way forward: CHERRY CHAIR...
 
 >chrome craw
 by one point

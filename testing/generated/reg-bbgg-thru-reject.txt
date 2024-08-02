@@ -329,7 +329,40 @@ Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, 
 >zap zoo
 Your rhyming attempts bring up nothing. Or, if you tried a standard verb--well, Beef, Beans, Grief, Greens has eliminated a lot of them, so you can focus on the puzzle verbs. VERBS will give a list of useful, non-puzzle-solving verbs.
 
+>leave lo
+You want to get going, but this feels like jumping the gun. It might be a good idea to have some idea what you're looking for. You were given instructions to examine.
+!by one point
+
+>think
+You think about more specific challenges you've encountered and not solved, and what you've done and tried, and what you can do.
+You can LEAVE LO once you have read up on what you need to find.
+
+>x llff
+
+>leave lo
+Whoah! That list of needed stuff is really long! You fear having to juggle a whole lot as you walk around goodness knows where.
+Perhaps examining things here in Reeve Row will help you feel more at ease.
+!by one point
+
+>think
+You can LEAVE LO once you feel more confident you have somewhere to dump a potentially huge pile of feast items you may find.
+
+>x ffss
+
+>think
+You can LEAVE LO now you feel more confident you have somewhere to dump a potentially huge pile of feast items you may find.
+
+>undo
+>undo
+>undo
+>undo
+>undo
+>undo
+>undo
+
 >x
+
+>x ffss
 
 >leave lo
 by one point
@@ -636,6 +669,9 @@ You found something below the rug, and all its rays are dull. Best to tuck it aw
 #testcase-check-vc-played-plug-rule-if-sco-played-plug-is-true
 >played plug
 You already got a played plug!
+
+>par porridge
+by one point
 
 >out
 
@@ -956,7 +992,7 @@ by one point
 
 #testcase-check-vc-pie-po-rule-fallthrough
 You realize you're kind of broke, and you figure out what the cheapest item on the menu might be. It looks surprisingly good, and it's large, too.
-Bri-Bro whispers to you, "So many people demand the house special. I give them something frou-frou, but it's not really what I enjoy cooking. Now I'll have to pretend to kick you out." He pushes you out of the establishment, but you complain you don't know the way back. Fortunately, he helps you...
+Bri-Bro hands it to you with a "My made pie! Paid!" Then he whispers to you, "So many people demand the house special. I give them something frou-frou, but it's not really what I enjoy cooking. Now I'll have to pretend to kick you out." He pushes you out of the establishment, but you complain you don't know the way back. Fortunately, he helps you...
 
 >pondering pair
 by one point
@@ -1027,6 +1063,16 @@ You discuss, in an entirely sane manner, Swiss clocks with birds in them, and th
 >cuckoo
 It was almost too crazy the first time.
 
+>poohpooh
+by one point
+
+#testcase-check-vc-poohpooh-rule-if-sco-poohpooh-is-true
+>poohpooh
+There's overdoing things, you reckon.
+
+>undo
+>undo
+
 >doodoo
 by one point
 
@@ -1044,11 +1090,15 @@ by one point
 #testcase-check-vc-poohpooh-rule-fallthrough
 You show
 ways to dismiss this little thought experiment.
-wipe their brows after this latest feat of imagination. Nothing more to do here, really.
+wipe their brows after this latest feat of imagination. They indicate they need to get going. I mean, looking at their t-shirts, they have a family, and stuff. They can't hang with you forever.
+But wait! What is this? They slap hands tag-team style with two folks who look a lot like them.
+Some scribbling on the ground notes that your new mime-y acquaintances are 
+. However, they make the empty pockets gesture, as if to say, they can't actually give you anything. They're just here for entertainment and performances
+couldn't quite provide.
 
 #testcase-check-vc-poohpooh-rule-if-sco-poohpooh-is-true
 >poohpooh
-There's overdoing things, you reckon.
+That worked for Zuzu and Loulou, but they're long gone.
 
 >s
 
@@ -1059,6 +1109,9 @@ That'd be somewhere to go, once you disposed of the bopper bee.
 #testcase-think-table-of-verb-checks-vc-veggie-ville-rule
 >think
 You can visit VEGGIE VILLE once the bopper bee isn't distracting you.
+
+>topper tea
+by one point
 
 >flopper flea
 by one point
@@ -1079,10 +1132,20 @@ You can visit VEGGIE VILLE now the bopper bee isn't distracting you.
 by one point
 
 #testcase-check-vc-veggie-ville-rule-fallthrough
-You realize that the fruit and vegetable groups are sorely underrepresented--well, the greens, at least. It's time to fix that!
+You realize that the fruit and vegetable groups are sorely underrepresented in your haul so far. It's time to fix that! Well, the greens, at least.
 You know there will be many stores in the distance. So you begin your trek. On the way you ask the way to Veggie Ville. People are helpful.
-Once you get there, you worry you have no money to pay. But when they see the Last Least Fast Feast, they recognize what you are here for. Why, they have just the thing: veggies and fruits of irregular shapes, which get thrown out anyway!
-They're impressed with what you've gotten so far. They deem you a worthy leader of the ceremony. They wish you luck and provide directions back...
+Once you get there, you worry you have no money to pay. But when they see the Last Least Fast Feast, they recognize what you are here for. Why, they have just the thing: veggies of irregular shapes, which get thrown out anyway!
+They're impressed with what you've gotten so far. You are grateful, but ... well, it's a bit awkward. One major food group is still missing.
+"Oh!" you hear. "The faeries can fix that!" They provide detailed instructions on how to get home, but first, a detour to ...
+
+>sherry share
+by one point
+
+>berry bear
+by one point
+
+>cherry chair
+by one point
 
 #+testcase-think-table-of-verb-checks-vc-chrome-craw-rule
 >think
@@ -1124,8 +1187,9 @@ But you already got the honeyed ham!
 by one point
 
 #testcase-check-vc-grey-gruel-rule-fallthrough
-The cray cruel fey fool hands you some surprisingly not-cray gray gruel and snickers before running off. What kind of square would actually LIKE gruel?
-But you want to be considerate about allergies, people trying to diet, people with vegan lifestyles, and so forth. It will be useful, you guess, as a base or paste.
+The cray cruel fey fool hands you a steaming covered bowl of surprisingly gray gruel, which seems not cray (if cruel as a constant diet,) and lectures you about how REAL gruel doesn't have any additives to make it taste better. How unnatural! They make you promise not to go adding anything to the gruel all sneakily now they've been so generous, before running off. You hear a "REMEMBER, YOU PROMISED!" in the distance.
+Upset at being ordered around thus, you figure it's just good in general to be considerate about allergies, people trying to diet, people with vegan lifestyles, and so forth. Perhaps it will be useful as a base or paste.
+Still, one sniff of the gruel leaves you thinking "Eh, ooh, ill!"
 
 #testcase-check-vc-grey-gruel-rule-if-sco-grey-gruel-is-true
 >grey gruel
@@ -1182,6 +1246,22 @@ You already believed in, and found, a passage down.
 #testcase-check-vc-heave-ho-rule-if-sco-heave-ho-is-true
 >heave ho
 There is nothing more to heave besides the rayed rug.
+
+>out
+
+>s
+
+>gain garnish
+
+>n
+
+>w
+
+>veiled vases
+
+>e
+
+>in
 
 >d
 
@@ -1770,7 +1850,7 @@ by one point
 
 >missed
 Note that, because there are three different endings, you'll automatically have "missed" two of them, which I don't want to spoil. You can UNDO to track the others down.
-You found everything before the finale, though. Good job!
+However, you found all the hidden points before the finale. Great job!
 
 >undo
 
@@ -1789,4 +1869,4 @@ by one point
 
 >missed
 Note that, because there are three different endings, you'll automatically have "missed" two of them, which I don't want to spoil. You can UNDO to track the others down.
-You found everything before the finale, though. Good job!
+However, you found all the hidden points before the finale. Great job!

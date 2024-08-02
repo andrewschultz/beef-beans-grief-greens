@@ -12,6 +12,8 @@
 
 >x
 
+>x ffss
+
 #testcase-ha-half-table-of-verb-checks-2-leave
 >leave zlo
 The HA HALF button on your Leet Learner lights up green--one of the words you thought must be right.
@@ -227,6 +229,9 @@ The HA HALF button on your Leet Learner lights up green.
 by one point
 
 >played plug
+by one point
+
+>par porridge
 by one point
 
 >out
@@ -528,40 +533,77 @@ by one point
 >pondering pair
 by one point
 
+#these are all done on a case by case basis. I subvert the HA HALF for Zuzu and Loulou to tell you you're doing pretty well.
 #testcase-ha-half-table-of-verb-checks-36-boo
 >boo
 gesture as if to say, keep talking. You must be on the right track!
 
-#testcase-ha-half-table-of-verb-checks-37-coo
->coo zkoo
-gesture as if to say, keep talking. You must be on the right track!
+#testcase-ha-half-table-of-verb-checks-36-boo
+>boo zboo
+shake their heads, each holding up two fingers. Then they nod their heads, holding up one.
 
 #testcase-ha-half-table-of-verb-checks-37-coo-koo
->zcoo koo
-gesture as if to say, keep talking. You must be on the right track!
+>coo zkoo
+The HA HALF button on your Leet Learner lights up green.
+
+#+testcase-ha-half-table-of-verb-checks-37-coo-koo
+>coo
+The HA HALF button on your Leet Learner lights up green.
+
+#testcase-ha-half-table-of-verb-checks-37-coo-koo
+>coo zkoo
+The HA HALF button on your Leet Learner lights up green.
+
+#+testcase-ha-half-table-of-verb-checks-37-coo-koo
+>koo
+The HA HALF button on your Leet Learner lights up green.
 
 #testcase-ha-half-table-of-verb-checks-38-doo
 >doo zdoo
+shake their heads, each holding up two fingers. Then they nod their heads, holding up one.
+
+#+testcase-ha-half-table-of-verb-checks-38-doo
+>doo
 gesture as if to say, keep talking. You must be on the right track!
 
 #testcase-ha-half-table-of-verb-checks-39-ju
 >ju zju
+shake their heads, each holding up two fingers. Then they nod their heads, holding up one.
+
+#+testcase-ha-half-table-of-verb-checks-39-ju
+>ju
 gesture as if to say, keep talking. You must be on the right track!
 
 #testcase-ha-half-table-of-verb-checks-40-muu
 >muu zmuu
+shake their heads, each holding up two fingers. Then they nod their heads, holding up one.
+
+#+testcase-ha-half-table-of-verb-checks-40-muu
+>muu
 gesture as if to say, keep talking. You must be on the right track!
 
 #testcase-ha-half-table-of-verb-checks-41-poo-pooh
 >poo zpooh
-gesture as if to say, keep talking. You must be on the right track!
+shake their heads, each holding up two fingers. Then they nod their heads, holding up one.
 
 #+testcase-ha-half-table-of-verb-checks-41-poo-pooh
 >zpoo pooh
+shake their heads, each holding up two fingers. Then they nod their heads, holding up one.
+
+#+testcase-ha-half-table-of-verb-checks-41-poo-pooh
+>poo
+gesture as if to say, keep talking. You must be on the right track!
+
+#+testcase-ha-half-table-of-verb-checks-41-poo-pooh
+>pooh
 gesture as if to say, keep talking. You must be on the right track!
 
 #testcase-ha-half-table-of-verb-checks-42-tu
 >tu ztu
+shake their heads, each holding up two fingers. Then they nod their heads, holding up one.
+
+#+testcase-ha-half-table-of-verb-checks-42-tu
+>tu
 gesture as if to say, keep talking. You must be on the right track!
 
 >booboo
@@ -606,6 +648,9 @@ The HA HALF button on your Leet Learner lights up green.
 >flopper zflea
 The HA HALF button on your Leet Learner lights up green.
 
+>topper tea
+by one point
+
 >flopper flea
 by one point
 
@@ -618,6 +663,15 @@ The HA HALF button on your Leet Learner lights up green.
 The HA HALF button on your Leet Learner lights up green.
 
 >veggie ville
+by one point
+
+>sherry share
+by one point
+
+>berry bear
+by one point
+
+>cherry chair
 by one point
 
 #+testcase-ha-half-table-of-verb-checks-16-chrome
@@ -690,6 +744,22 @@ by one point
 
 >believe below
 by one point
+
+>out
+
+>s
+
+>gain garnish
+
+>n
+
+>w
+
+>veiled vases
+
+>e
+
+>in
 
 >d
 
