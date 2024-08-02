@@ -1056,6 +1056,7 @@ to fruit-check:
 	say "[line break]";
 	if core-faerie-score is 2:
 		say "You've got all you need. Your list of foods now feels very balanced. The faeries help you double-check your list. You're surprised how effective this non-magical solution is to nail things down. Everyone agrees you're close to the end.[paragraph break]Even better, they know a way back to [wandering] which they may or may not have gotten by magic. It certainly feels that way, given how lost you have gotten. You ask if there is any way to avoid getting lost again. They assure you you won't need to. Off you go.";
+		if sco-sherry-share is false, max-down;
 		drop-player-at Wandering Where;
 	else:
 		say "Well, you feel like you could use some more fruits. The faeries haven't sent you on your way yet. They seem to be expecting you to ask for a bit more, in fact.";

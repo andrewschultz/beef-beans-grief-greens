@@ -143,7 +143,10 @@ check going down in Reeve Row:
 	if copper key is not moot, say "But you haven't unlocked the way down yet." instead;
 	if number of stillneeded feastitems > 0, say "You look at [feast]. You don't have everything, yet[if debug-state is true]([list of stillneeded feastitems])[end if]." instead;
 	if oven-fixed-yet is false, say "But you haven't found a way to cook [the list of cookable feastitems] yet." instead;
-	if sco-chrome-craw is false, max-down;
+	if sco-chrome-craw is false, max-down; [ a word about what is reduced where: sassed ceased doesn't happen until after trawl. sherry share is reduced after leaving faerie fair. topper tea is reduced after bopper bee. ]
+	if sco-par-porridge is false, max-down;
+	if sco-veiled-vases is false, max-down;
+	if sco-gain-garnish is false, max-down;
 	decrease cur-max-bonus by (4 - slurry-score); [ max 4 ]
 	decrease cur-max-bonus by (7 - ooh-score); [ max 3 ]
 	decrease cur-max-bonus by (3 - stare-score); [ max 1 ]
@@ -598,7 +601,7 @@ chapter Scrappy Scrawl
 
 the scrappy scrawl is scenery in Trappy Trawl. "It's weird. It's a drawing of someone busting through a barrier with noises like THWUP and THWAP. You smack against the scrawl and hear such noises too. Then you wonder if one such noise would indicate a hidden passage here."
 
-from-number of scrappy scrawl is 2856. to-number of trappy trawl is 2856.
+from-number of scrappy scrawl is 2856. to-number of scrappy scrawl is 2804.
 
 book Happy Hall
 
