@@ -19,7 +19,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "made|maid"	"mug"	--	--	false	true	true	false	reeve row	vc-made-mug rule	vr-made-mug rule	--	"You can find a [b]MADE MUG[r] [once-now of vc-made-mug rule] [yrrr]."
 "jade"	"jug"	--	--	false	true	true	false	reeve row	vc-jade-jug rule	vr-jade-jug rule	--	"You can find a [b]JADE JUG[r] [once-now of vc-jade-jug rule] [yrrr]."
 "par"	"porridge"	--	--	false	true	false	false	reeve row	vc-par-porridge rule	vr-par-porridge rule	--	--
-"come"	"coda"	--	--	false	true	true	false	reeve row	vc-come-coda rule	vr-come-coda rule	--	--
+"come"	"coda"	--	--	false	true	false	true	reeve row	vc-come-coda rule	vr-come-coda rule	--	-- ["IDID" is true because I don't want to make doing everything and drinking soda an extra point]
 "laundering"	"lair"	--	--	false	true	true	false	wandering where	vc-laundering-lair rule	vr-laundering-lair rule	--	--
 "squandering"	"square"	--	--	false	true	true	false	wandering where	vc-squandering-square rule	vr-squandering-square rule	--	--
 "maundering"	"mare"	"mayor"	vh-maundering-mayor rule	false	true	true	false	wandering where	vc-maundering-mare rule	vr-maundering-mare rule	--	--

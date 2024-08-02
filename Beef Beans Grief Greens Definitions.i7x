@@ -315,16 +315,41 @@ to basic-trawl-max-score-check:
 	if sco-par-porridge is false, max-down;
 	if sco-veiled-vases is false, max-down;
 	if sco-gain-garnish is false, max-down;
+	if sco-sherry-share is false and core-faerie-score < 2, max-down;
+	if sco-topper-tea is false and faerie fair is unvisited, max-down; [note: it seems like fair/hill is unvisited is enough. And it is, unless we want to let the player carry the soda/gorp in the future. We probably don't, but this is more accurate and will eliminate headaches tracking down bugs in case we do.]
 	decrease cur-max-bonus by (4 - slurry-score); [ max 4 ]
-	decrease cur-max-bonus by (7 - ooh-score); [ max 3 ]
-	decrease cur-max-bonus by (3 - stare-score); [ max 1 ]
+	let ooh-temp be ooh-score;
+	if ooh-temp < 4, now ooh-temp is 4;
+	decrease cur-max-bonus by (7 - ooh-temp); [ max 3 ]
+	let stare-temp be stare-score;
+	if stare-temp < 2, now stare-temp is 2;
+	decrease cur-max-bonus by (3 - stare-temp); [ max 1 ]
+
+to jump-trawl-max-score-check:
+	if sco-sherry-share is false, max-down;
+	if sco-topper-tea is false, max-down
+
+definition: a rule (called ru) is stareish:
+	if ru is vc-baller-bear rule or ru is vc-dollar-dare rule or ru is vc-caller-care rule, yes;
+	no;
 
 to move-and-min-check (rm - a room):
 	if rm is compete compel and sco-sassed-ceased is false, max-down;
 	basic-trawl-max-score-check;
+	let fake-ooh-score be 0;
+	let fake-stare-score be 0;
 	repeat through table of verb checks:
 		if there is a best-room entry and best-room entry is rm, break;
+		if core entry is false, next;
+		if idid entry is true, next;
 		if core entry is true and idid entry is false:
+			if there is a best-room entry and best-room entry is ooh ooh:
+				if check-rule entry is not vc-massive-mitt rule:
+					if fake-ooh-score >= 4, next;
+					increment fake-ooh-score;
+			if check-rule entry is stareish:
+				if fake-stare-score >= 2, next;
+				increment fake-stare-score;
 			up-reg;
 	move player to rm;
 
