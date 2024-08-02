@@ -1189,7 +1189,7 @@ rule for printing a parser error when player is in ooh ooh (this is the ooh ooh 
 	else:
 		say "[zl] make the talky-talky gesture with their hands. Apparently, you are using too many words, even if it doesn't seem like you're using too many. You feel rebuked[if sco-doodoo is false and sco-poohpooh is false]. You wonder, however, if you could sneak a hyphenated or hyphen-able word in[end if][if ooh-score is 0].[paragraph break]Well, if you wanted a change from the usual rhymes so far, you got it, sort of[end if]";
 	if sco-prune-pride is false:
-		say ".[paragraph break]You do wonder, though, if a clearer idea of your goals might help you see more later, something they can't help you with";
+		say ".[paragraph break][zl] certainly take over here a bit. Maybe with a clearer idea of your goals, though, you can see through that mist for something they can't help you with";
 	else if sco-massive-mitt is false:
 		say ". But that passive pit, well, there might be something there";
 	say ".";

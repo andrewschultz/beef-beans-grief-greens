@@ -9,7 +9,7 @@ to say yrrr: say "you return[if player is in reeve row]ed[end if] to Reeve Row"
 table of verb checks [the order of things to solve is roughly alphabetical, so the lurking lump always gives you the best value, but this is subverted by if one rhyme pushes the game/story further than the others. So Leave Lo is first. Sassed can be anywhere for the bonus point, since the lump explicitly avoids bonus points.]
 w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	idid	best-room	check-rule	run-rule	wfull (topic)	think-advice (text)
 "sassed"	"ceased"	--	--	false	true	false	false	--	vc-sassed-ceased rule	vr-sassed-ceased rule	--	--
-"leave"	"lo"	"low"	vh-leave-low rule	false	true	true	false	reeve row	vc-leave-lo rule	vr-leave-lo rule	--	"You can [b]LEAVE LO[r] [once-now of vc-leave-lo rule] you [if fast feast is not examined]have read up on what you need[else]feel more confident you have somewhere to dump a potentially huge pile of feast items you may find[end if]."
+"leave"	"lo"	"low"	vh-leave-low rule	false	true	true	false	reeve row	vc-leave-lo rule	vr-leave-lo rule	--	"You can [b]LEAVE LO[r] [once-now of vc-leave-lo rule] you [if fast feast is not examined]have read up on what you need to find[else]feel more confident you have somewhere to dump a potentially huge pile of feast items you may find[end if]."
 "heave"	"ho"	"hoe"	vh-heave-hoe rule	false	true	true	false	reeve row	vc-heave-ho rule	vr-heave-ho rule	--	"You can [b]HEAVE HO[r] [once-now of vc-heave-ho rule] you're [here-in of reeve row] with someone strong enough to help you pull the rayed rug up."
 "prune"	"pride"	"pried"	vh-prune-pried rule	false	true	true	false	reeve row	vc-prune-pride rule	vr-prune-pride rule	--	--
 "spoon"	"spied"	--	--	false	true	true	false	reeve row	vc-spoon-spied rule	vr-spoon-spied rule	--	"You can get a [b]SPOON SPIED[r] [once-now of vc-spoon-spied rule] you have managed to consult the goon guide with a clear mind."
@@ -46,7 +46,7 @@ w1 (text)	w2 (text)	posthom (topic)	hom-txt-rule (rule)	think-cue	okflip	core	id
 "dented"	"dials"	--	--	false	true	true	false	gap goo	vc-dented-dials rule	vr-dented-dials rule	--	--
 "gain"	"garnish"	--	--	false	true	false	false	gap goo	vc-gain-garnish rule	vr-gain-garnish rule	--	--
 "boo"	"boo"	--	--	false	true	true	false	ooh ooh	vc-booboo rule	vr-booboo rule	"booboo"	--
-"coo"	"coo/koo"	--	--	false	true	true	false	ooh ooh	vc-cuckoo rule	vr-cuckoo rule	"cuckoo"	--
+"coo"	"koo"	--	--	false	true	true	false	ooh ooh	vc-cuckoo rule	vr-cuckoo rule	"cuckoo"	--
 "doo"	"doo"	"do/dew"	--	false	true	true	false	ooh ooh	vc-doodoo rule	vr-doodoo rule	"doodoo"	--
 "ju"	"ju"	--	--	false	true	true	false	ooh ooh	vc-juju rule	vr-juju rule	"juju"	--
 "muu"	"muu"	"moo/moomoo"	vh-moomoo rule	false	true	true	false	ooh ooh	vc-muumuu rule	vr-muumuu rule	"mumu/muumuu"	--
@@ -397,29 +397,6 @@ this is the vr-chrome-craw rule:
 	move chrome craw to Wandering Where;
 	now slow slurry is mapped below Wandering Where;
 	now Wandering Where is mapped above slow slurry;
-
-section bopper bee scoring
-
-a goodrhyme rule (this is the vc-flopper-flea rule):
-	if copper key is not touchable and bopper bee is not touchable, unavailable;
-	if sco-flopper-flea is true:
-		vcal "You already got rid of the bopper bee!";
-		already-done;
-	ready;
-
-this is the vh-flopper-flee rule:
-	say "You can't order the bee around, but maybe it's disguised as something else.";
-
-this is the vr-flopper-flea rule:
-	now sco-flopper-flea is true;
-	say "Wait! Something about the bee looks funny! Yes, it is not really a bee, but a less aggressive animal in disguise. Just knowing it is a flopper flea makes you less scared. Without fear, your running around gets more strategic, until it gets exhausted chasing you.[paragraph break]It buzzes and mumbles off. You're not surprised that, as it does, it drops a copper key, which you pick up.";
-	now player has copper key;
-	moot bopper bee;
-	if topper tea is touchable:
-		say "[line break]Oh yes. You pick up all the lovely packets of Topper Tea at your leisure.";
-		now player has topper tea;
-	else:
-		max-down;
 
 chapter ooh ooh scoring
 
@@ -1025,6 +1002,27 @@ this is the vr-veggie-ville rule:
 	now player has veggies;
 	move player to Faerie Fair;
 
+a goodrhyme rule (this is the vc-flopper-flea rule):
+	if copper key is not touchable and bopper bee is not touchable, unavailable;
+	if sco-flopper-flea is true:
+		vcal "You already got rid of the bopper bee!";
+		already-done;
+	ready;
+
+this is the vh-flopper-flee rule:
+	say "You can't order the bee around, but maybe it's disguised as something else.";
+
+this is the vr-flopper-flea rule:
+	now sco-flopper-flea is true;
+	say "Wait! Something about the bee looks funny! Yes, it is not really a bee, but a less aggressive animal in disguise. Just knowing it is a flopper flea makes you less scared. Without fear, your running around gets more strategic, until it gets exhausted chasing you.[paragraph break]It buzzes and mumbles off. You're not surprised that, as it does, it drops a copper key, which you pick up.";
+	now player has copper key;
+	moot bopper bee;
+	if sco-topper-tea is true:
+		say "[line break]Oh yes. You pick up all the lovely packets of Topper Tea at your leisure.";
+		now player has topper tea;
+	else:
+		max-down;
+
 a goodrhyme rule (this is the vc-topper-tea rule):
 	unless flea-rhymes-near, unavailable;
 	if sco-topper-tea is true:
@@ -1522,7 +1520,7 @@ to process-cocoa (nu - a number):
 	else if ooh-score is 6:
 		say "[zl] are starting to look exhausted from all this imagining.";
 	else if ooh-score is 7:
-		say "[zl] wipe their brows after this latest feat of imagination. They indicate they need to get going. I mean, looking at their t-shirts, they have a family, and stuff. They can't hang with you forever.[paragraph break]But wait! What is this? They slap hands tag-team style with two folks who look a lot like them.[paragraph break]Some scribbling on the ground notes that your new mime-y acquaintances are Mimi and Didi. However, they make the empty pockets gesture, as if to say, they can't actually give you anything. They're just here for entertainment [zl] couldn't quite provide.";
+		say "[zl] wipe their brows after this latest feat of imagination. They indicate they need to get going. I mean, looking at their t-shirts, they have a family, and stuff. They can't hang with you forever.[paragraph break]But wait! What is this? They slap hands tag-team style with two folks who look a lot like them.[paragraph break]Some scribbling on the ground notes that your new mime-y acquaintances are Mimi and Didi. However, they make the empty pockets gesture, as if to say, they can't actually give you anything. They're just here for entertainment and performances [zl] couldn't quite provide.";
 		move mimi to ooh ooh;
 		move didi to ooh ooh;
 		moot loulou;
