@@ -1,22 +1,32 @@
 This is a quick walkthrough for Beef, Beans, Grief, Greens, a submission to ParserComp 2024. It neglects bonus points.
 
-To get an idea of what you need to do here,
+First, to get an idea of what you need to do here,
 
 > X
 
-There are two things that can help you forward. Riffing on the room or the rug. Let's go with rug first.
+(This defaults to examining Last Least Fast Feast. You may be examining it a lot, so I didn't want to have to force you to write it out.)
+
+> X FFSS
+
+You actually need to examine both Last Least Fast Feast and Far-Forage Star Storage to leave. I didn't want you flying blind, and I wanted to add some realism to how you carried items around. FFSS will take all your immediately feast-related items and hold them until you're ready to move on.
+
+With custodial stuff out of the way, you have two things to focus on: riffing on the room or the rug. Let's go with rug first.
 
 Now, you can deal with the rug, if you want. There are two things which make immediate sense and help with the Last Least Fast Feast. There's another one that comes much later.
 
 > MADE MUG (1)
 
-Made or maid.
+Made or maid works here. There are a few places where homonyms and alternate spellings are okay. If they aren't, the right omonym should be hinted pretty clearly.
 
 > JADE JUG (2)
 
-There's one more thing you can get from the rug, but it won't have any immediate applications. So we'll skip it. There's something you can do with the Last Least Fast Feast.
+There's one more thing you can get from the rug, but it won't have any immediate applications. So we'll skip it.
+
+Now there's rhyming you can do with the Last Least Fast Feast, if you want to get all the points. It's a bonus point, so it's meant to be tricky.
 
 There'll be more to do later, but your home in Reeve Row is not well-furnished. Still, you can't just up and exit. You can, however, ...
+
+Also, you can find something perfectly average and bland hidden in the Star Storage. It's not critical for the game, and it wouldn't boost a feast THAT much.
 
 > LEAVE LO (3)
 
@@ -172,77 +182,87 @@ And now you are not sent to a side area. There is an optional one, though. First
 
 You'd think the bopper bee would hold a copper key, and you'd be right. But it won't give up so quickly!
 
+Also, you can shake out alternative food for the feast.
+
 > FLOPPER FLEA (41)
 
 And now you need to find a place to shop.
 
 > VEGGIE VILLE (42)
 
+This sends you to the Faerie Fair. It helps you cover a food group you kind of let slide, but it also has refreshments as a bonus point.
+
+Here are the foods. Fruits.
+
+> BERRY BEAR (43)
+
+> CHERRY CHAIR (44)
+
 > IN
 
 You should be able to go down .... but ... you're not emotionally prepared.
 
-> GRIEVE GROW (43)
+> GRIEVE GROW (45)
 
 And you still don't really have faith.
 
-> BELIEVE BELOW (44)
+> BELIEVE BELOW (46)
 
-Now you can go down!
+Now you can go down! But ... but ... if you're a perfectionist, there's a bit more.
 
 > D
 
 You wind up in the trappy trawl, with no clues. What clues can you look for?
 
-> SCRAPPY SCRAWL (45)
+> SCRAPPY SCRAWL (47)
 
 This gives you a clue where to smack the boundaries of the trappy trawl.
 
-> WHAPPY WALL (46)
+> WHAPPY WALL (48)
 
 And voila! You have made it to the Happy Hall! It has its own aura. You have people to summon.
 
-> PAPPY PAUL (47)
+> PAPPY PAUL (49)
 
-> SAPPY SAUL (48)
+> SAPPY SAUL (50)
 
-> LONE LAURA (49)
+> LONE LAURA (51)
 
-> KNOWN NORA (50)
+> KNOWN NORA (52)
 
 Be dressed properly.
 
-> CAPPY CAUL (51)
+> CAPPY CAUL (53)
 
 Time for discussion.
 
-> YAPPY YALL (52)
+> YAPPY YALL (54)
 
 Time for physical exercise.
 
-> BAPPY BALL (53)
+> BAPPY BALL (55)
 
 The ceremony is now over! It is time to find yourself.
 
 First you must get somewhere more substantial.
 
-> WHEAT WELL (54)
+> WHEAT WELL (56)
 
 Now how to jump down without feeling klutzy?
 
-> FEET FELL (55)
+> FEET FELL (57)
 
 Construct a private area.
 
-> SHEET SHELL (56)
+> SHEET SHELL (58)
 
 Oops! You need to get to the door in time.
 
-> BEAT BELL (57)
+> BEAT BELL (59)
 
 You forgot your postman's name.
 
-> MEET MEL (58)
+> MEET MEL (60)
 
 You remember the acquaintance who passed on.
 
@@ -252,5 +272,5 @@ Now there are three ways to end. With a positive, negative or neutral view of Le
 
 The neutral is the trickiest, so we'll list it here:
 
-> REPEAT REPEL (59)
+> REPEAT REPEL (61)
 

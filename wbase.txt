@@ -18,27 +18,41 @@ This is a walkthrough for Beef, Beans, Grief, Greens, a submission to ParserComp
 @min
 This is a quick walkthrough for Beef, Beans, Grief, Greens, a submission to ParserComp 2024. It neglects bonus points.
 
-To get an idea of what you need to do here,
+First, to get an idea of what you need to do here,
 
 > X
 
-There are two things that can help you forward. Riffing on the room or the rug. Let's go with rug first.
+(This defaults to examining Last Least Fast Feast. You may be examining it a lot, so I didn't want to have to force you to write it out.)
+
+> X FFSS
+
+You actually need to examine both Last Least Fast Feast and Far-Forage Star Storage to leave. I didn't want you flying blind, and I wanted to add some realism to how you carried items around. FFSS will take all your immediately feast-related items and hold them until you're ready to move on.
+
+With custodial stuff out of the way, you have two things to focus on: riffing on the room or the rug. Let's go with rug first.
 
 Now, you can deal with the rug, if you want. There are two things which make immediate sense and help with the Last Least Fast Feast. There's another one that comes much later.
 
 > MADE MUG (1)
 
-Made or maid.
+Made or maid works here. There are a few places where homonyms and alternate spellings are okay. If they aren't, the right omonym should be hinted pretty clearly.
 
 > JADE JUG (1)
 
-There's one more thing you can get from the rug, but it won't have any immediate applications. So we'll skip it. There's something you can do with the Last Least Fast Feast.
+There's one more thing you can get from the rug, but it won't have any immediate applications. So we'll skip it.
+
+Now there's rhyming you can do with the Last Least Fast Feast, if you want to get all the points. It's a bonus point, so it's meant to be tricky.
 
 @max
 > SASSED CEASED (1)
 ###skip test checking (optional explanation)
 
 There'll be more to do later, but your home in Reeve Row is not well-furnished. Still, you can't just up and exit. You can, however, ...
+
+Also, you can find something perfectly average and bland hidden in the Star Storage. It's not critical for the game, and it wouldn't boost a feast THAT much.
+
+@max
+> PAR PORRIDGE (1)
+###skip test checking
 
 > LEAVE LO (1)
 
@@ -208,11 +222,33 @@ And now you are not sent to a side area. There is an optional one, though. First
 
 You'd think the bopper bee would hold a copper key, and you'd be right. But it won't give up so quickly!
 
+Also, you can shake out alternative food for the feast.
+
+@max
+> TOPPER TEA (1)
+\\
+You can't take it right away, but don't worry. You will, once you get rid of the bee by exposing its real form.
+
 > FLOPPER FLEA (1)
 
 And now you need to find a place to shop.
 
 > VEGGIE VILLE (1)
+
+This sends you to the Faerie Fair. It helps you cover a food group you kind of let slide, but it also has refreshments as a bonus point.
+
+@max
+Here is the bonus point.
+\\
+> SHERRY SHARE (1)
+###skip test checking ("Sir, this is a walkthrough!")
+###(2024-07-31) this brings up the issue of whether we should have a flag in-file to skip test checking, as it's kind of a pain to keep up with the ###skip for walkthroughs.
+
+Here are the foods. Fruits.
+
+> BERRY BEAR (1)
+
+> CHERRY CHAIR (1)
 
 @max
 Here is the side area.
@@ -251,7 +287,30 @@ And you still don't really have faith.
 
 > BELIEVE BELOW (1)
 
-Now you can go down!
+Now you can go down! But ... but ... if you're a perfectionist, there's a bit more.
+
+@max
+To be specific, two points more.
+\\
+> OUT
+\\
+> S
+\\
+Vain varnish!
+\\
+> GAIN GARNISH (1)
+\\
+> N
+\\
+> W
+\\
+Failed faces.
+\\
+> VEILED VASES (1)
+\\
+> E
+\\
+> IN
 
 > D
 
