@@ -129,7 +129,7 @@ volume rooms
 
 book reeve row
 
-Reeve Row is a room in Home Haw. "You remember buying this from the old owner, Steve Stowe. He knew you were the right person to continue living here. But it feels empty now[if sco-leave-lo is true]. You feel you could go [b]OUT[r] again, if you wanted. No need for another [b]LEAVE LO[r][else]. You know you should go [b]OUT[r] sooner rather than later, but you don't feel confident enough. Boosting yourself with the right phrase might help[end if]."
+Reeve Row is a room in Home Haw. "You remember buying this from the old owner, Steve Stowe. He knew you were the right person to continue living here. But it feels empty now[if sco-leave-lo is true]. You feel you could go [b]OUT[r] again, if you wanted. No need for another [b]LEAVE LO[r][else]. You know you should go [b]OUT[r] sooner rather than later, but you don't feel confident enough. Boosting yourself with the right phrase might help[end if].[paragraph break]The elders also left you some magic consumables to help you speed things up in case you felt desperate: there's some soda, and you also see a packet of geared GORP."
 
 guess-table of Reeve Row is table of Reeve Row guesses.
 
@@ -271,11 +271,13 @@ guess-table of played plug is table of rayed rug guesses.
 
 chapter some soda
 
-there is a singular-named rhymable called some soda in Reeve Row. "Some soda lies here, unopened. [if some soda is not examined]You recall it has magical powers[else]Just in case you need to get on with things[end if].". description is "One read of the label and you see the 'some' is not 'just any soda' but 'some' in the 'boy, that's some soda' sense! Of course, you can't imagine how it tastes, with all those bizarre artificial ingredients, but the fine print also mentions its magic powers which will help you get the minimum of things you need aboveground with, sadly, no memory of everything you got after you drank it.[paragraph break][one of]Why, yes, this is a deus ex machina for people who may've gotten bottled up and canned things in release 1.[paragraph break]But you have to figure the phrase to activate it. Said phrase requires no tortured spelling tricks.[paragraph break][i][bracket][b]NOTE[r][i] for completionists: using this phrase once you're ready for the feast is not a bonus point.[close bracket][r][line break][or]The catch is, you need a magic phrase.[stopping]"
+there is a singular-named rhymable called some soda in Reeve Row. it is scenery. description is "One reading of the label shows the 'some' is not 'just any soda' but 'some' in the 'boy, that's some soda' sense! Of course, you can't imagine how it tastes, with all those bizarre artificial ingredients, but the fine print also mentions its magic powers which will help you get the minimum of things you need aboveground with, sadly, no memory of everything you got after you drank it.[paragraph break][one of]Why, yes, this is a deus ex machina for people who may've gotten bottled up and canned things in release 1.[paragraph break]But you have to figure the phrase to activate it. Said phrase requires no tortured spelling tricks.[paragraph break][i][bracket][b]NOTE[r][i] for completionists: using this phrase once you're ready for the feast is not a bonus point.[close bracket][r][line break][or]The catch is, you need a magic phrase.[stopping]"
 
 check taking some soda:
 	say "You can't bring yourself to take it. Soda isn't right for the feast. Besides, [if sco-sherry-share is true]you found a bubbly drink[else if faerie fair is visited]you missed a bubbly drink[else]there's a bubbly drink you can find along the way, if you're clever[end if].";
 	say "[line break][one of]It's not blasphemous or anything, it's just, well, humans introduced it, and the feast is for gnomes. Plus it makes non-humans burp even more. Which would ruin the solemnity of it all. [or][stopping]If you wish to use the soda to warp through, figure and say the phrase." instead;
+
+from-number of soda is 2704. to-number of soda is -2704.
 
 guess-table of soda is table of some soda guesses.
 
@@ -704,7 +706,7 @@ other-guy of Lone Laura is Known Nora.
 
 book Wheat Well
 
-Compete Compel is a room in Gnome Gnaw. printed name is "[if sco-feet-fell is false]Compete! Compel![else]Wheat Well[end if]". "[if sco-feet-fell is true]You've shook off the old 'I need to show I'm great' and have the humbler goal of just  sorting out your feelings.[else]You feel an urge to show you're the greatest. And yet you also recognize how unhealthy this is. You need a way out, and you need a place to go, but there's no easy way to walk. How could you slip away, and where?[end if]"
+Compete Compel is a room in Gnome Gnaw. printed name is "[if sco-feet-fell is false]Compete! Compel![else]Wheat Well[end if]". "[if sco-feet-fell is true]You've shook off the old 'I need to show I'm great' and have the humbler goal of just  sorting out your feelings.[else]After leading the ceremony, you feel an urge to show you're the greatest at mourning or grieving or reflecting or whatever. And yet you also recognize how unhealthy this is. You need a way out, and you need a place to go, but there's no easy way to walk. How could you slip away, and where?[end if]"
 
 from-number of compete compel is 2856. to-number of compete compel is 2754.
 
@@ -1220,7 +1222,7 @@ rule for printing a parser error when gender-variable is 0:
 	else:
 		say "Eve";
 		now player is female;
-	say ". You haven't felt yourself lately.";
+	say ". You haven't felt yourself lately. This small affirmation stabilizes you a bit.";
 	now gender-variable is temp;
 	the rule succeeds;
 

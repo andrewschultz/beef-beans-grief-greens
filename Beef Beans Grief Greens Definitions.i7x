@@ -352,6 +352,8 @@ to move-and-min-check (rm - a room):
 				increment fake-stare-score;
 			up-reg;
 	move player to rm;
+	now all carried things are in hidey house;
+	if player is not in compete compel, now player has last least fast feast;
 
 volume big rule
 

@@ -339,7 +339,7 @@ this is the vr-come-coda rule:
 	if all-but-varnish-faces and sco-gain-garnish is true and sco-veiled-vases is true:
 		say "[line break]It's more a celebratory thing for finding everything than a need to warp (and good job there!) It tastes really good, so good, in fact, you don't even care you weren't awarded a point for figuring the phrase out. (Well, the description DID say so.)";
 	else:
-		say "Everything's a blur. You're figuring out things to do left and right, gaining and using items as needed, but somehow it feels even more mechanical than it should, and the joy of adventuring just isn't there. But then it's a solemn feast. So you don't need that. It wouldn't pay to be all smiles and have the focus on yourself with stories of how fun it all was.";
+		say "[line break]Everything's a blur. You're figuring out things to do left and right, gaining and using items as needed, but somehow it feels even more mechanical than it should, and the joy of adventuring just isn't there. But then it's a solemn feast. So you don't need that. It wouldn't pay to be all smiles and have the focus on yourself with stories of how fun it all was.";
 		now all things carried by player are in Gazy Gap;
 		now player has Last Least Fast Feast;
 		move-and-min-check Trappy Trawl;
