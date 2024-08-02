@@ -1224,19 +1224,31 @@ table of final question options (continued)
 final question wording	only if victorious	topic	final response rule	final response activity
 "see the points you [b]MISSED[r]" 	true	"missed/misses"	show-misses rule	--
 
+to say ssslash:
+	if ss-end-slash is true:
+		say "[r] / [b]";
+	now ss-end-slash is true;
+
 this is the show-misses rule:
 	say "Note that, because there are three different endings, you'll automatically have 'missed' two of them, which I don't want to spoil. You can [b]UNDO[r] to track the others down.";
 	say "[line break]";
 	if cur-bonus is max-bonus:
 		say "However, you found all the hidden points before the finale. Great job!";
 		the rule succeeds;
+	if sco-come-coda is false:
+		say "[one of]You didn't use some soda's magic word, though you may've figured it out. [b]MISSED[r] again will show it[or]You could've warped ahead drinking some soda with [b]COME CODA[r][stopping].";
 	if sco-sassed-ceased is false:
 		say "You could've felt a bit more important with [b]SASSED CEASED[r] when you had the [feast].";
 	if sco-par-porridge is false:
 		say "You could've looked deeper in [star storage] for plain old [b]PAR PORRIDGE[r].";
-	if stare-score is 2:
-		say "You could've distracted the staller stare in Squalor Square a bit more with [b][if sco-baller-bear is false]BALLER BEAR[else if sco-caller-care is false]CALLER CARE[else]DOLLAR DARE[end if][r].";
-	if ooh-score < 7:
+	if squalor square is unvisited:
+		say "You warped ahead, and you missed the east zone where you needed two of three rhymes for part of a puzzle. I won't spoil it.";
+	else if stare-score < 3:
+		now ss-end-slash is false;
+		say "You could've distracted the staller stare in Squalor Square [if stare-score > 0]a bit more [end if]with [b][if sco-baller-bear is false][ssslash]BALLER BEAR[end if][if sco-caller-care is false][ssslash]CALLER CARE[end if][if sco-dollar-dare is false][ssslash]DOLLAR DARE[end if][r].";
+	if ooh ooh is unvisited:
+		say "You warped ahead, and you missed the north zone where you needed four of seven rhymes. I won't spoil it.";
+	else if ooh-score < 7:
 		say "You could've done or thought more with [zl].";
 		if sco-booboo is false:
 			say "-- You could've faked a [b]BOOBOO[r] around [zl].";
@@ -1253,7 +1265,7 @@ this is the show-misses rule:
 		if sco-tutu is false:
 			say "-- You could've suggested [zl] wear a [b]TUTU[r].";
 	if sco-chrome-craw is false:
-		say "There was a [b]CHROME CRAW[r] that rhymed with the regions after the room name on the status line. It held some bonus dishes and, well, not quite garnish. There was a specific window to visit it: after you'd seen all locations around [wandering] but before going down from Reeve Row.";
+		say "There was a [b]CHROME CRAW[r] [if wandering where is visited]in [wandering][else]just outside Reeve Row[end if] that rhymed with the regions after the room name on the status line. It held some bonus dishes and, well, not quite garnish. There was a specific window to visit it: after you'd seen all locations around [wandering] but before going down from Reeve Row.";
 	else:
 		if sco-honeyed-ham is false:
 			say "The Moneyed Ma'am would've given you a [b]HONEYED HAM[r].";
@@ -1263,7 +1275,9 @@ this is the show-misses rule:
 			say "The fussed fellow had [b]JUST JELLO[r] for you.";
 		if sco-potpourri is false:
 			say "The smell all around [slurry] was [b]POTPOURRI[r].";
-	if sco-topper-tea is false:
+	if sco-flopper-flea is false:
+		say "You missed an adventure with a malevolent flying thing.";
+	else if sco-topper-tea is false:
 		say "You could've also shaken the bopper bee down for [b]TOPPER TEA[r].";
 	if not all-but-varnish-faces:
 		say "You didn't get all the aboveground points, but if you had, it would've unlocked two other bonus points.";

@@ -46,6 +46,8 @@ section printing details
 
 name-loc is a truth state that varies.
 
+ss-end-slash is a truth state that varies. [ slashing stuff in Squalor Square for what you missed, VERY rare case if player visits then drinks soda ]
+
 chapter all around
 
 sco-sassed-ceased is a truth state that varies.
