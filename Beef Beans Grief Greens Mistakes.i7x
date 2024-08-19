@@ -223,6 +223,12 @@ table of fast feast guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 "past"	"pieced"	--	false	--	"The past will be pieced at the feast."
 
+table of ferret fake guesses
+mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
+"air it"	"ache"	--	false	--	"You whine a bit. It's therapeutic. Then you get back to gathering stuff for the ceremony about, well, more than just minor aches."
+"jarrett"	"jake"	--	false	--	"Yes, that [if player has carrot cake]would have been[else]would be[end if] a good name for the ferret."
+"tarot"	"take"	--	false	--	"You don't need anything supernatural for the ceremony."
+
 table of fussed fellow guesses
 mist-1 (text)	mist-2 (text)	mist-rule	got-yet	leet-rule	mist-txt
 "must|mussed"	"mellow"	--	false	--	"[if sco-just-jello is true]It's hard to be very agitated carrying Jell-O. Perhaps it's hard to be excited more positively, but nothing's perfect[else]Whenever you're fussed, you don't need to hear that[end if]."

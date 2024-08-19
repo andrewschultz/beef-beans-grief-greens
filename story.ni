@@ -62,19 +62,23 @@ volume feast items
 
 [this should be organized so it looks nice examining LLFF]
 
-the soup is a cookable feastitem. fdesc of soup is "an appetizer, sort of". description is "It looks delicious. Not too watery and not too chunky.".
-
-some cocoa is a cookable feastitem. description is "Well, it's currently powdered, but when the time comes to dump it in boiling water, or add it to desert for flavor, you have confidence you'll come through with aplomb!". fdesc is "powdered drink mix". guess-table of cocoa is the table of cocoa guesses.
+chapter edibles (cookable or okaycold)
 
 the beet boat is an okaycold feastitem. description is "It is about as jazzy as beets can get. You're not sure what sort of boat it is, but that doesn't matter.". fdesc is "violet-ish veggies".  guess-table of beet boat is table of bleat bloat guesses.
 
 the veggies are an okaycold feastitem. fdesc of veggies is "veggies in general". description is "All variety of shapes and colors, though green is prominent.".
+
+the soup is a cookable feastitem. fdesc of soup is "an appetizer, sort of". description is "It looks delicious. Not too watery and not too chunky.".
+
+some cocoa is a cookable feastitem. description is "Well, it's currently powdered, but when the time comes to dump it in boiling water, or add it to desert for flavor, you have confidence you'll come through with aplomb!". fdesc is "powdered drink mix". guess-table of cocoa is the table of cocoa guesses.
 
 the meat moat is a cookable feastitem. description is "Fortunately, it's a relatively small moat, without too much liquid, so it won't splash around as you carry it.". fdesc is "protein panorama". guess-table of meat moat is table of bleat bloat guesses.
 
 the pie po is a cookable feastitem. "I guess it is the pie equivalent of a po['] boy sandwich.". printed name is "pie (po['])". fdesc is "tasty pastry". guess-table of pie po is the table of hi ho guesses.
 
 the carrot cake is a cookable feastitem. fdesc of carrot cake is "cake, of course, for dessert". description is "Colorful and delicious.".
+
+guess-table of ferret fake is the table of ferret fake guesses.
 
 chapter drinkware
 
@@ -586,6 +590,8 @@ guess-table of tree troop is the table of tree troop guesses.
 chapter Ferret Fake
 
 the ferret fake is a rhymable. printed name is "ferret, fake". "A ferret (fake) scurries about here.". description is "You keep thinking of food when you look at it. You don't want to, like, cook and eat it, but it reminds you of something..."
+
+guess-table of ferret fake is the table of ferret fake guesses.
 
 from-number of ferret fake is 2804. to-number of ferret fake is 2804.
 
