@@ -7,8 +7,8 @@
 #--command usage to compare walkthrough to what's in the IDE: wch.py
 
 #  SO DON'T USE WDROP.PY. rbr.py incorporates wdrop because of the line below.
-file=walkthrough-pre.txt,min,minimum walkthrough
-file=walkthrough-full-pre.txt,max,maximum walkthrough
+file=walkthrough-pre.txt,abbr=min,desc=minimum walkthrough
+file=walkthrough-full-pre.txt,abbr=max,desc=maximum walkthrough
 postproc=wdrop.py
 cmdflags=58
 
@@ -74,11 +74,7 @@ This sends you back to Reeve Row. That oven's broken, though, and you'll need in
 
 > PRUNE PRIDE (1)
 
-Now you need to examine the goon guide.
-
-> X GUIDE
-
-And you can also use the goon guide to find something hidden!
+You don't have to examine the goon guide to find something hidden. You get slightly different responses if you do or don't.
 
 > SPOON SPIED (1)
 

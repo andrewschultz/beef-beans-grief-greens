@@ -8,20 +8,20 @@
 
 #NOTE: PRC.PY has a bug where it double-prints the text at the end if the final command fails
 
-file=reg-bbgg-thru-min.txt,min,minimum walkthrough
-file=reg-bbgg-thru-skip.txt,skip,skip room walkthrough
-file=reg-bbgg-thru-all.txt,all,walkthrough with all points and potential neutral retries
-file=reg-bbgg-thru-reject.txt,rej,walkthrough with all rejections and THINK
-file=reg-bbgg-thru-alt-verbs.txt,alt,walkthrough with altverb tests
-file=reg-bbgg-thru-guide-gong.txt,gong,walkthrough testing guide gong
-file=reg-bbgg-thru-pride-prong.txt,prong,walkthrough testing pride prong
-file=reg-bbgg-thru-mistakes.txt,mis,walkthrough testing all mistakes
-file=reg-bbgg-thru-ha-half.txt,ha,walkthrough testing half-right cases
-file=reg-bbgg-thru-homonyms.txt,hom,walkthrough testing homonyms
-file=reg-bbgg-thru-verbs.txt,ver,walkthrough testing special verbs
-file=reg-bbgg-thru-goto.txt,goto/gt/go,walkthrough testing GOTO
-file=reg-bbgg-thru-hints.txt,hin/hint/hints,walkthrough testing HINTS basic
-file=reg-bbgg-thru-hintfull.txt,hf/hfull,walkthrough testing HINTS full
+file=reg-bbgg-thru-min.txt,abbr=min,desc=minimum walkthrough
+file=reg-bbgg-thru-skip.txt,abbr=skip,desc=skip room walkthrough
+file=reg-bbgg-thru-all.txt,abbr=all,desc=walkthrough with all points and potential neutral retries
+file=reg-bbgg-thru-reject.txt,abbr=rej,desc=walkthrough with all rejections and THINK
+file=reg-bbgg-thru-alt-verbs.txt,abbr=alt,desc=walkthrough with altverb tests
+file=reg-bbgg-thru-guide-gong.txt,abbr=gong,desc=walkthrough testing guide gong
+file=reg-bbgg-thru-pride-prong.txt,abbr=prong,desc=walkthrough testing pride prong
+file=reg-bbgg-thru-mistakes.txt,abbr=mis,desc=walkthrough testing all mistakes
+file=reg-bbgg-thru-ha-half.txt,abbr=ha,desc=walkthrough testing half-right cases
+file=reg-bbgg-thru-homonyms.txt,abbr=hom,desc=walkthrough testing homonyms
+file=reg-bbgg-thru-verbs.txt,abbr=ver,desc=walkthrough testing special verbs
+file=reg-bbgg-thru-goto.txt,abbr=goto/gt/go,desc=walkthrough testing GOTO
+file=reg-bbgg-thru-hints.txt,abbr=hin/hint/hints,desc=walkthrough testing HINTS basic
+file=reg-bbgg-thru-hintfull.txt,abbr=hf/hfull,desc=walkthrough testing HINTS full
 
 ##--stable-file: this eventually says that the project is stable, and I shouldn't change the main/minimal file unless I really need to.
 #--strict-file: this says that the project requires strict section marking e.g. @all instead of ==t1.
